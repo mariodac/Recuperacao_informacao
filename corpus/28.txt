@@ -1,0 +1,702 @@
+Novas tecnologias, novas competências1
+New Tecnologies, new skills
+Geneviève Jacquinot Delaunay*
+RESUMO
+
+O texto aborda a relação dos jovens e adolescentes com tecnologias, nem “novas”
+nem “velhas”, e sim instrumentos para informar e comunicar, divertir, auxiliar
+nos trabalhos escolares. Apesar de reconhecer a familiaridade dessa geração com
+o que há de mais avançado em termos de tecnologia, aponta a necessidade de se
+compreender a complexidade desse novo cenário de aprendizagem, que envolve
+o aprofundamento de conceitos como interatividade e interação, linguagem
+numérica, multimídia, internet e hipertexto. Na seqüência, faz uma análise do
+contato dos jovens com essa diversidade de meios, suas implicações no processo
+cognitivo e suas conseqüências comunicacionais. Finalmente, reconhece que
+a aprendizagem é hipercomplexa e que – apesar de todo avanço científico – a
+máquina, mesmo interativa, não pode proporcionar ao indivíduo o aprendizado
+que lhe proporciona a interação com outras pessoas.
+ABSTRACT
+
+The paper discusses how young people relate to technology, not seen as new
+or old, but as an instrument to communicate and keep informed, amuse and to
+help in school projects. Although it is clear that the new generations are much
+more familiarized with new technology, the focus is on the need to understand
+the complexity of the new scenario, which requires a deeper understanding of the
+concepts of interactivity, multimedia, internet and hypertext. It is discussed how
+young people enter in contact with this diversity of instruments. It is stressed,
+however, that no matter how complex the computer can be, nothing can replace
+the role of interacting with other people in the learning process.
+1
+
+O texto foi traduzido do francês por Rosa Maria Dallacosta, professora do Departamento
+de Comunicação e do Programa de Pós-Graduação em Educação da UFPR.
+E-mail: rmcdcosta@ufpr.com.br.
+* Professora emérita em Ciências da Educação, especialista em Mídia, Educação e Formação;
+ex- vice-presidente da Universidade Paris VIII, titular da Cátedra da Unesco de Formação a Distância
+e chefe de redação da Revista MédiaMorphoses, editada pelo Instituto Nacional do Audiovisual,
+ed: A. Colin. E-mail:gjacq@noos.fr.
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+277
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+Para jovens que, desde que nascem, já conhecem a televisão, os vídeogames, os computadores, a Internet e os telefones celulares, não existem as “novas”
+e as “velhas” tecnologias: existem instrumentos para informar e comunicar,
+jogar ou ajudar nos trabalhos escolares.
+Essa é uma distinção de adultos – pais, avós, educadores – para os quais,
+a cada surgimento de nova tecnologia, se faz necessário adquirir novos conhecimentos e novas formas de usos sociais. Eles, os jovens, ao contrário, aprendem rapidamente a utilizar cada nova tecnologia que faz parte do seu mundo
+e de suas relações sociais. É isso o que mostrou uma grande enquete européia
+realizada em dez países, além de Israel, na qual os trabalhos foram publicados
+em francês e em inglês2, que testemunha a influência das evoluções midiáticas
+sobre a maneira como as novas gerações conduzem suas relações familiares,
+sociais e escolares.
+Esta enquete demonstra que apenas os livros – “velhos, com suas imagens
+em preto e branco”, diz uma estudante de 11 anos – diferem de suas práticas habituais, levando em conta seu acesso seqüencial, como abordaremos a seguir.
+Mas, se esses instrumentos lhes são assim familiares, isso não significa
+que esses jovens compreendam sua complexidade, nem que os utilizam adequadamente ou aproveitando todas as suas possibilidades. Além disso, as crianças
+não são iguais nem têm o mesmo acesso a esses diversos meios e aos serviços
+que eles podem oferecer. Na França, como em toda a Europa, e mais ainda nas
+diferentes partes do mundo, existem grandes disparidades tanto de equipamentos como de consumo e acesso aos meios, e é justamente por isso que a escola
+continua sendo um lugar privilegiado – ainda que imperfeito – para atenuar as
+desigualdades e para desenvolver não apenas uma prática instrumental, mas,
+sobretudo, um uso racional e uma cultura crítica dos meios e das redes que
+constituem o contexto do século XXI.
+Para fazê-lo, os educadores têm necessidade de saber o que há realmente
+de “novo” nessas “últimas novidades” tecnológicas e de praticá-las, dia a dia,
+para aproveitá-las em sala de aula, ao serviço das novas modalidades de aprendizagem, e evitar – como acontece com freqüência – de tentar fazer o “novo”
+com o “velho”!
+
+2
+
+“L’enquête comparative européenne”, in revue Réseaux, Paris, Hermès, vol.17, n. 92-93,
+pp 15-172, 1999; Sonia Livingston, Children and their changing meida environnement, Erlbaun,
+Londres, New Jersey, 2001.
+278
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+A verdadeira novidade das NTIC
+
+O computador e a linguagem numérica
+Sem entrar em detalhes técnicos, é necessário lembrar que foi através dos
+computadores que chegaram as “verdadeiras” novidades que nos fizeram passar
+progressivamente da era da reprodução técnica (foto-cinema-fonógrafo-vitrola)
+àquela que chamamos de era da “intertextualidade eletrônica”.
+A revolução eletrônica começou com o som e se desenvolveu com a banda
+magnética, depois atingiu a tecnologia da imagem com o vídeo e a televisão,
+mas é o computador e sua linguagem numérica que transformaram todo o setor
+de produção audiovisual. Lembramos:
+•
+
+que chamamos numérico ou digital (de digit = chiffre em inglês) a linguagem informatizada ou o sinal, constituído de impulsos elétricos,
+e transmitidos sob a forma de elementos binários, 0 ou 1 (e não com
+10 algarismos, como se considera no sistema de numeração decimal;
+nem com um sistema analógico que representa as variações de modo
+contínuo e não descontínuo, como é o caso do sinal de vídeo);
+
+•
+
+que o computador com sua linguagem numérica pode criar, por um só
+cálculo, imagens (que chamamos justamente de imagens de síntese),
+mas que ele pode também recodificar todos os velhos textos como todas as velhas imagens e os velhos sons segundo o processo chamado
+de numerização;
+
+•
+
+que o computador com sua linguagem numérica pode ainda misturar
+imagens, textos e sons de todas as origens e torná-los acessíveis, visíveis e auditíveis sobre uma mesma tela final: é essa intertextualidade
+eletrônica, o procedimento eletrônico que nos permite passar de um
+tipo de mensagem à multimídia.
+
+Sendo o resultado de cálculos lógicos indefinidamente repetíveis e modificáveis, as imagens de síntese ou numeralizadas vão permitir a formação de
+modelizações da realidade, que por sua vez permite a simulação ou “manipulação
+de imagens fictícias”, simulação de objetos, de imagens e mesmo simulações de
+papéis, como é o caso, no domínio lúdico dos vídeogames. Assim, podem ser
+criados, por simulação e acessíveis via interfaces mais ou menos sofisticadas, os
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+279
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+diálogos, mas também os mundos ditos “virtuais”, que existem apenas através
+do artefato da máquina: é esse o famoso diálogo homem-máquina.
+Em conseqüência, as principais características dessas NTIC, que são
+tão diferentes das mídias sonoras e audiovisuais anteriores (com a condição,
+naturalmente, de se ter acesso ao hardware correspondente) são: a velocidade
+e a potência do registro, do arquivo e da restituição das informações textuais,
+visuais ou sonoras; o acesso, a mistura e a manipulação direta (em tempo real),
+por combinação, distorção, alteração de dados arquivados na memória (do
+computador): todo mundo conhece o exemplo do célebre quadro da Gioconda,
+refeito à imagem de cada internauta!
+•
+
+a transportabilidade dos dados numéricos ou analógicos numeralizados, por diferentes canais de difusão (cabo, satélite, rede hertziana,
+fibra ótica...) e a conexão entre todas as redes; e a criação de “mundos
+virtuais” ou de “realidades artificiais” obtidas por modelização das
+formas do mundo real ou imaginário, e combináveis com os personagens e cenários reais como no caso dos imaginários ditos “híbridos”,
+tudo isso tornado acessível, para o utilizador, via interfaces mecanizadas, suportes de interatividade.
+
+Interatividade e Interação
+O que é falar de interatividade? É propriamente falar do diálogo com um
+programa de informatização que governa o acesso a diversos dados. Desenvolvido
+originalmente no universo da informática – e, portanto, eminentemente técnico – ,
+a noção de interatividade tem rapidamente escapado do mundo dos engenheiros
+para emigrar para diferentes esferas das atividades sociais ligadas às tecnologias,
+notadamente no domínio da imagem e dos meios (mídias).
+Existem diferentes graus e diferentes tipos de interatividade, mas existem
+também funções diferentes de interatividade, o que é particularmente importante
+na pedagogia onde há freqüentemente a tendência de fazer da interatividade uma
+panacéia da pedagogia ativa e de confundir a interatividade mecânica, possibilitada
+pela máquina e seu programa, com a interação significante, aquela que dá sentido
+à ação humana que ela possibilita.
+Se a interatividade é um conceito de origem técnica, relativamente novo,
+o da interação, ao contrário, é antigo e qualifica um processo de ação recíproca:
+em psicolingüística, são as trocas dialógicas entre duas ou mais pessoas; em
+psicologia social, a positividade das trocas em um grupo; em psicopedagogia, a
+influência recíproca e produtiva das trocas entre os alunos ou entre os alunos e
+o professor.
+280
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+É, portanto, necessário desconfiar um pouco da rápida transferência das
+capacidades interativas da máquina sobre as possibilidades de interações humanas,
+ou seja, intencionais. Se é verdade que, graças ao computador e à sua modalidade interativa, o espectador se torna “interativo” ou melhor “espectAtor”3, e que
+pode, por suas ações, influenciar o desenvolvimento do programa e o percorrer
+livremente, ainda é preciso saber (para aquele que concebe o programa) e que
+ele saiba (para aquele que o utiliza) o porquê: é necessário que seu gesto tenha
+sentido, tanto mais quando o objetivo perseguido é um objetivo de aprendizagem.
+Se, em um jogo didático, o resultado de um cálculo provoca a subida de bolas,
+não é suficiente que o aluno diga “é necessário fazer as bolas subirem”.
+Ou seja, não se pode confundir a interatividade própria da máquina com a
+interação mais ou menos significante que ela permite, de acordo com a maneira
+como foi concebido o programa e que dá forma à intenção que aquele que o concebeu tem da intenção de fazer que terá o aluno: “utilizar um programa didático é
+indiretamente engajar um diálogo entre os programadores/autores desse programa,
+procurar compreender suas intenções, objetivos e usos esperados.4
+O multimídia não é, a priori, superior a nenhum dos outros meios para
+aprendizagem, da mesma forma que a internet não resolve todos os problemas
+de acesso à informação e aos saberes.
+Multimídia e Internet
+Essas reflexões sobre as características das tecnologias numéricas nos
+permitem melhor compreender o que são exatamente o multimídia e a internet.
+No multimídia, por exemplo, é necessário distinguir, se queremos utilizá-lo com
+fins educativos, que ele pode ser:
+•
+
+enquanto suporte, um unimídia, pois nós podemos com uma mesma tela e com uma única máquina, o computador, ler, ver e entender
+mensagens para as quais anteriormente precisaríamos de aparelhos
+diferentes (gravador, projetor de slides ou de filmes...). E mais, pela
+primeira vez, também, com o multimídia e a internet, o instrumento
+de produção é o mesmo que o de difusão, o que não é o caso nem para
+o cinema, nem para a televisão, ou gravação de som e fotografia;
+
+3 A expressão é de Jean Louis Weisberg, Présences à distance, Déplacement virtuel et réseaux
+numériques, pourquoi nous ne croyons plus à la télévision, Paris: l’Harmattan/Communication,
+1999.
+4 Michele Grossen et Luc Olivier Pochon, “Learning mediated by computers: to what extend
+
+is it situated?” Workshop on learning in Human and machines, European Science Foundation, Aix
+en Provence, 1995, in Perriault, J.,op.cit.
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+281
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+•
+
+enquanto dispositivo técnico sensorial, um multimídia propriamente
+dito no sentido que ele mobiliza sentidos diferentes para a percepção
+das mensagens, a vista e o ouvido – mas também o odor, o gosto e o
+toque de certas simulações interativas;
+
+•
+
+enquanto modalidades lingüísticas, um multimodal no qual a multimídia mistura linguagens diferentes tendo cada uma seu modo de
+funcionamento, linguagem oral, escrita, gestual, imagem desenhada,
+cinematográfica, videográfica, barulhos, músicas;
+
+•
+
+enquanto estruturação, um hiperdocumento, uma organização não linear, ao contrário do livro, do filme ou da emissão televisiva clássica,
+mas reticular, como a chamam os que dizem que ela permite uma
+“navegação” através de caminhos diferentes: sem esquecer que o “espectAtor”, assim autônomo que seja, não poderá jamais parar aqui
+onde o programador/autor terá decidido jogar a tinta;
+
+•
+
+enquanto modo de difusão, o multimídia pode ser “integrado” em
+um CDrom, um DVDrom ou em um banco de dados, ou “repartido”
+quando ele é acessível pela rede internet: o que permite, nesse caso,
+a utilização coletiva, quer se trate dos jogos em rede ou do trabalho
+corporativo.
+
+As conseqüências cognitivas
+Se insistimos, na primeira parte deste capítulo, sobre as especificidades do
+numérico e, portanto das NTIC, é para mostrar que, contrariamente ao que se diz
+com freqüência, esses novos meios não são nem canais/tubos, nem instrumentos,
+mas sim “tecnologias intelectuais” as quais geram e nas quais são geradas condições de funcionamento de processos cognitivos: são máquinas que não trabalham
+mais a matéria bruta ou a energia, mas as informações e os conhecimentos e seus
+processos de apropriação. Elas vêm, assim, diretamente concorrer com a educação
+e os educadores no terreno tradicional do saber, justamente, a formação de saberes
+e a formação de espíritos – a famosa cabeça cheia e feita!
+
+282
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+Ora, é preciso desconfiar das facilidades e das possibilidades ofertadas pela
+máquina e seus usos testados5. A tradição do ensino (ao menos no Ocidente) repousa
+sobre a concepção do conhecimento concebido como acumulação, adição de saberes,
+“sobre a idéia de construir um edifício partindo do solo, partindo do zero e de começar
+a juntar peça por peça para construir”. As tecnologias da informação e da comunicação nos obrigam a mudar essa perspectiva, a não mais limitar o olhar à aparência do
+mundo, e o conhecimento aos traços da informação: novos modos de ver e de pensar
+o real, e novas modalidades de comunicação aparecem e, em conseqüência, novos
+modos de acesso e de apropriação de saberes.
+O Hyperdocumento6 e a leitura não-linear
+Pierre Lévy (1990) afirmava em seus primeiros livros que o “hipertexto ou
+o multimídia interativo se presta particularmente aos usos educativos, graças à sua
+dimensão reticular e não-linear, que favorece uma atitude exploratória, lúdica, diante
+do material a assimilar e que é, portanto, um instrumento bem adaptado a uma pedagogia ativa”.
+É no mínimo imprudente reforçar a crença tenaz nos meios pedagógicos que
+querem que a exploração de um hipertexto seja “de cara” mais fácil que a leitura de
+um texto – o que está bem longe de ser provado.
+As raras pesquisas empíricas existentes colocam em evidência, ao contrário,
+entre outros7:
+•
+
+a “sobrecarga cognitiva” que representa freqüentemente a ajuda à navegação: a energia e a atenção do aluno é freqüentemente dispersada
+em relação ao que é possível aprender em função de uma única atividade de navegação;
+
+•
+
+a diferença entre os indivíduos faz com que os alunos não tenham a
+mesma autonomia diante de um dispositivo interativo;
+
+•
+
+as diferenças entre os tipos de tarefas: parece que os sistemas de hipertexto são mais convenientes aos processos de resolução de problemas do que à aquisição de conceitos, por exemplo;
+
+5 Jacquinot, G., 1998, “Du cinema éducateur aux plaisirs interactifs:rives et derives cognitives” in Cinéma et dernières technologies, INA/De Boeck Université, Beau, F., Dubois, P., Leblanc,
+G., (ss dir de) pp 153-170.
+6
+
+Termo geral que inclui o hipertexto (navegação sobre dados textuais) e as hipermídias
+(sobre textos, mas também imagens e sons).
+7
+
+Ver especialmente, lês actes dês journées bi-annuelles Hypernmédias et apprentissages
+publiées par B de la Passardière et G L Baron., INRP/EPI/MASSI, 1994 a 2000.
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+283
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+•
+
+a difícil pesquisa da “compatibilidade cognitiva” entre o utilizador (aluno) e o sistema: pois se o sistema gera “conhecimentos” sobre os documentos, estes devem também estar assim na cabeça dos alunos: conhecimentos relativos à organização dos textos (então metalingüísticos) e
+conhecimentos relativos à situação de leitura (estratégicos) (ROUET, J.
+F.,1997).
+
+Em contrapartida, quando utilizado com pertinência, o computador e seus
+programas interativos fornecem novos suportes ao pensamento, favorecendo
+certos processos cognitivos e permitindo também desenvolver o novo. Em
+particular, sua capacidade de estocar e deixar traços de itinerários seguidos
+pelos utilizadores pode ser um bom instrumento de avaliação, ou ainda de autoavaliação: que obstáculos foram encontrados, como eles foram superados, por
+quais alunos? Sua capacidade de relacionar (associar) os documentos, os dados
+de origem diferente (no tempo e no espaço) se transforma em um instrumento a
+serviço da flexibilidade cognitiva e da aptidão da mudança. A navegação livre e a
+exploração dinâmica com vistas à resolução de um problema identificado abrem
+perspectivas interdisciplinares e tornam possíveis descobertas por caminhos
+ainda não traçados. A interatividade enfim, atenua a separação clássica entre
+a postura do autor e aquela do leitor, e o utilizador pode ser sucessivamente
+emissor e receptor, aquele que produz e aquele que reage.
+Contrariamente, então, a uma idéia já difundida nos meios pedagógicos,
+os sistemas multimídias, portanto interativos, não são “por natureza” os sistemas de aprendizagem pois a liberdade não é a chave de aprendizagem para
+todos e em todas as situações. Não é evidente que “avançar sobre um domínio
+desconhecido apareça como uma estratégia principal de aprendizagem”, e nem
+os recursos expressivos da escrita interativa necessitam de novos autores e de
+novos espectatores. Enfim, e, sobretudo, parece necessário elaborar um modelo
+cognitivo geral dos processos de leitura, de expressão e de compreensão adaptada
+aos sistemas eletrônicos.
+O multimídia e a imagem interativa
+Ao multimídia interativo e essas dificuldades próprias à estruturação
+não-linear, juntam-se outras dificuldades – que devem também dar lugar à
+aprendizagem para se tornarem possibilidades – a saber essa dimensão multimodal. A psicologia cognitiva há muito tempo valoriza a linguagem verbal
+em detrimento de outras modalidades de expressão e de comunicação, como a
+imagem ou o gesto. Ela reconhece agora que a imagem e a linguagem são dois
+grandes domínios da cognição, que o funcionamento cognitivo repousa sobre
+
+284
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+o tratamento de informações verbais e não-verbais (imagens, sons, gestos) em
+constante interação (teoria de duplo codificação8), de onde vem a noção de
+multimodalidade.
+A articulação das imagens e dos sons (comentário oral, texto escrito na
+tela, barulhos e músicas variadas) já era possível com os audiovisuais clássicos,
+e isso não se pode esquecer, com o multimídia.
+Retomemos brevemente9 (JACQUINOT, 1988) as características do pensamento analógico (visto no sentido das imagens) em relação ao pensamento
+lógico (funcionamento da linguagem):
+•
+
+menor estatuto metalingüístico da imagem que necessita, da parte
+daquele que exprime como daquele que lê, uma maior “bricolage semiogenética” (capacidade de dar sentido), pois a imagem não marca
+de maneira explícita as operações a serem efetuadas para produzir
+sentido, ela não é equivalente ao que chamamos os “conectores”da
+língua;
+
+•
+
+menor disposição da imagem de se ligar, de se absorver em figuras
+“secundarizadas” (no sentido dos processos secundários de Freud):
+ela escapa mais facilmente aos esquemas lógicos e resta então mais
+próxima do inconsciente e de suas modalidades próprias do encantamento (por condensação e deslocamento como em um sonho); para
+desempenhar uma significação, ela está mais próxima do imaginário
+e do afeto, e menos do lado racional;
+
+•
+
+disposição natural, pela combinação de materiais sonoros e visuais a
+fazer funcionar simultaneamente;
+
+•
+
+papel da montagem (entre imagens), esse “agitador de meninges” que
+permite suscitar as operações de raciocínio, fonte de atividades mentais. A imagem “permite acessar de uma outra maneira a compreensão, de se escorregar diferentemente na memória e de se apegar, para
+fixar e entreter a imaginação”10 – e a escola, salvo exceções, pouco a
+explorou.
+
+8 Teoria segundo a qual as informações verbais e as informações icônicas seriam tratadas
+por dois hemisférios diferentes do cérebro.
+9 “Pas sage como une image” (ditado francês que diz “não santo como uma imagem”) ou
+de l’utilisation des images em pédagogie, in Bulletin de psychologie, Tome XLI, n. 386, 1998, pp
+603-609.
+10 Baiblé, C. “La transmission du savoir” in Les genres télévisuels dans l’enseignement,
+1996, pp 53-67, op.cit.
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+285
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+Mas aqui, ainda, a interatividade introduz uma especificidade: a imagem
+(e mesmo o som que a acompanha algumas vezes) de “olhar” (e escutar), como
+era antigamente, se torna “ação”11; ou seja, ela necessita da parte do utilizador
+uma ação, um gesto (no mínimo, clicar) para prosseguir. É necessário não se
+enganar: no plano da interpretação, as coisas não mudaram, a saber, que no
+desenho, pintura, fotografia, cinema, televisão ou síntese, a imagem é sempre
+“construída” pelo leitor que lhe confere um sentido, ela exige sempre uma função
+simbólica. Mas no caso da imagem interativa, ou “ação”, a essa função simbólica
+se acrescenta uma outra “gestual”, que exige um ato: imagem que existe “para”
+e “pelo” gesto, quedeve agir para vê-la e ver as conseqüências de seu gesto.
+As operações cognitivas solicitadas são tão numerosas que merecem uma
+olhada: capacidade de previsão (o que clicar?), de observação (o que acontecerá?); mas também de análise das conseqüências do seu gesto (incidências
+recorrentes de um clicar) e de imaginação para dar sentido à associação produzida
+que afinal se trata de uma narração. Tantas outras ações a tratar freqüentemente
+em paralelo necessitam de uma capacidade de memorização, de recuperação no
+espaço, de antecipação e finalmente de atitude de mudança.
+O processo de tratamento da informação no computador
+A pesquisa informatizada das informações sobre internet, e mais especificamente sobre todo sistema documentário que relaciona o usuário e o computador,
+apresenta dificuldades para os alunos que não conseguem “aprender a aprender”
+com essas tecnologias. Tais dificuldades são de duas ordens: aquelas ligadas às
+palavras, conteúdos e objetivos a alcançar, e aquelas ligadas às ações, métodos
+e processos, sem falar da motivação (o que não é específico nessa atividade),
+mas também a eventuais dificuldades motoras (capacidade para lidar com o
+mouse ou com o teclado, por exemplo), o que é mais raro.
+Quando um aluno procura a informação em um sistema informatizado,
+ele tem um objetivo e, para alcançá-lo, ele deve fazer um certo número de
+operações. Ora, freqüentemente, ele tem apenas uma representação vaga do
+que é um sistema documental informatizado, ele não sabe sempre quais instrumentos escolher e como respeitar as ordens, ele pára freqüentemente diante da
+primeira dificuldade, ou quando não encontra a resposta esperada. Além disso,
+essa atividade está essencialmente ligada ao domínio da língua; se ele comete
+erros ortográficos ao conduzir sua pesquisa na máquina, ou se não possui um
+vocabulário rico e variado, não poderá interrogar o banco de dados em todas as
+11 L’image actée: scénarisations numériques, sous la direction de Pierre Barboza et Jean
+Louis Weisberg, l”Harmattan, Coll. Champs visuals, 2006.
+
+286
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+suas possibilidades, uma vez que todos os sistemas não são sempre “tolerantes
+ao erro”. Mas existem ainda outras dificuldades maiores ligadas à desconfiança
+do uso do instrumento: o aluno clica sobre todos os ícones antes de chegar àquele
+que lhe convém; ele consulta todas as respostas obtidas à primeira busca; mesmo
+se existam centenas, ao invés de modificar sua busca para afiná-la e obrigar o
+sistema a selecionar as principais respostas – notadamente utilizando pequenas
+palavras de articulação como “e, menos, ou”.
+Em pouco tempo, todas essas operações se tornam mais rápidas, mais
+exaustivas e mais pertinentes à pesquisa documental – temos acesso a todos os
+recursos documentais, sem sair do lugar, sem manipular numerosos fichários,
+segundo critérios de acesso diferentes, etc. – mas não atendem os objetivos,
+se nós não “aprendemos a aprender”, tanto para as operações físicas como
+para as operações intelectuais que elas implicam. Contrariamente ao que se diz
+com freqüência, esses novos meios multimídias e interativos não são nem nós,
+nem instrumentos mas sim “tecnologias intelectuais” que geram condições de
+funcionamento (também temporais) de processos cognitivos. Elas oferecem aos
+artistas como aos educadores e documentaristas e a todos aqueles que procuram
+ter acesso à informação, saberes ou obras, novas possibilidades, uma nova escrita
+na qual o domínio como a generalização ainda estão por vir: o “saber programar
+não aumenta a capacidade de criar um programa além de clicar uma máquina
+nem dá talento para se escrever uma poesia.”
+
+Conseqüências comunicacionais
+Estão ligadas às conseqüências cognitivas e, para torná-las mais claras nós
+a abordaremos separadamente. Em efeito, para que esses novos comportamentos
+e competências sejam solicitados pelo utilizador ou o aluno, é necessário que o
+dispositivo seja conhecido de alguma maneira e que as modalidades de expressão próprias da escrita numérica sejam utilizadas: nós falamos assim da “mise
+em scène da interatividade”. Qual idéia de cenarização? Sobre o que repousa a
+construção do programa de informática? Quais são os ícones que aparecem sobre
+na tela? A que eles remetem? Como dispor dos diversos recursos midiáticos,
+imagens, sons, textos? Quando e como permitir ao espectador intervir? Para
+que fazê-lo? Como gerenciar o que surge e criar sintaxes de navegação fáceis?
+Tudo isso necessita de novas competências e novos talentos.
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+287
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+Os recursos expressivos da interatividade
+É aqui que vamos poder relacionar a interatividade mecânica com a interação significante.
+Existem os cenários de interação que, no caso dos dispositivos com intenção educativa, remetem aos aspectos pedagógicos ou relacionais entre o usuário
+e o conteúdo que o suporte deve permitir de facilitar: trata-se de um diálogo
+socrático, de um comentário de texto como se fazia na Idade Média, de cenários
+behavioristas do estilo estímulo/resposta ou ainda de ambientes de aprendizagem
+tais como os concebe a teoria construtivista? Os multimídias, numerosos, que
+simulam a visita de um museu, por exemplo, reduzem a aprendizagem ao acesso
+à informação e ao passeio!
+Para o usuário, em efeito, não é pela interatividade mecânica que ele se
+torna um ator, ele retrocede sobre o programa. Mas o que permite ao espectador
+“desenvolver uma atividade sensorial afetiva e intelectual ao serviço da interpretação da mensagem” é a interação significante: a interatividade não substitui, ela
+pode favorecer, ao invés de inibir, mais ela não a substitui jamais.
+A interatividade que podemos chamar “intencional” é que se coloca entre
+o usuário e o autor, através dos engajamentos feitos por este durante a concepção
+do programa: ela remete à idéia de que o autor tem a intenção de que o usuário
+aprendiz tenha a intenção de fazer a partir do material que lhe é proposto, através
+da máquina e de seu programa.
+Desse ponto de vista, uma máquina pode ter um baixo grau de interatividade
+funcional, como o vídeo ou o gravador, e permitir uma boa interação cognitiva
+pelo lugar que deixa ao espectador, na elaboração do sentido, a emissão que lhe
+propõe. Inversamente, uma máquina com alto grau de interatividade funcional
+como o computador pode não permitir uma interação cognitiva se o programa
+não tiver sido concebido com uma real interatividade intencional.
+Os recursos expressivos da multimodalidade
+De fato, como já foi constatado inúmeras vezes, se os CD-ROM e os
+DVD-ROM são sonorizados, a internet o é bem menos: internet é uma “máquina
+textual”, muito mais ainda que um meio de expressão multimodal, ao menos
+até o presente.
+Existem razões técnicas – nós sabemos que a imagem necessita, para ser
+arquivada, de muito mais de memória sobre o disco rígido do computador do
+que o texto e mesmo o som. Mas há também razões estéticas, a escrita numérica
+interativa, como nova modalidade de expressão e de comunicação, está ainda
+em constituição. Mesmo quando eles testemunham a integração de elementos
+288
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+textuais, sonoros e visuais. Desse ponto de vista, não é desnecessário lembrar as
+especificidades de cada modalidade de expressão antes de pensar na sua articulação em dispositivos interativos, pois a interatividade e a imagem “ação” que
+ela produz, pelo gesto do usuário, recompõem as articulações entre as diversas
+modalidades de significação.
+A imagem analógica se desloca e se explora no espaço, enquanto a linguagem se desloca e se escuta em uma dimensão temporal segundo um desenvolvimento seqüencial assim como a música. Quanto aos elementos sonoros – fora
+do comentário no qual as funções de “ancoragem” e de “mudança” em relação
+à imagem foram há muito tempo exploradas e estudadas –, eles são sempre
+mais difíceis de ser analisados, pela sua natureza imaterial. O especialista do
+estudo do som no cinema, Michel Chion (1999), faz observações fundamentais:
+“para a imagem, há o quadro, para o som não existe equivalente do quadro. Nós
+podemos acrescentar sons ao infinito sem encontrar limites e esses sons podem
+ter níveis diferentes de realidade (música, voz em off, voz sincrônica), os sons
+se desfazem em relação ao quadro visual e ao seu conteúdo, é então em relação
+à imagem que os sons se repartem, uma repartição suscetível de ser colocada
+em questão a todo momento, desde que nós mudemos o que vemos”.
+Mas a situação evolui ainda quando se integra a essas especificidades a
+dimensão interativa: a imagem e o som interativos, mesmo que a dimensão interativa sonora, até o presente, por diversas razões,12 tenha sido menos explorada
+que a dimensão icônica, apresenta-se o problema do lugar e das funções do gesto
+na relação imagem-som. Nós podemos agir sobre diferentes parâmetros do som
+(duração, intensidade, timbre, efeito sonoro, espacialização) manipulando um
+objeto gráfico ou textual, jamais diretamente sobre o som, que não é representado
+fisicamente na tela, e a proximidade das diferentes modalidades expressivas, via
+unimídia, reforça o efeito de proximidade: a tal ponto que nós podemos dizer que
+em um dispositivo interativo multimídia “nós não sabemos mais se nós vemos o
+som, escutamos a imagem ou se tocamos a música” (Dominique Besson). Uma
+nova semiologia do som como da imagem interativa está nascendo.13
+
+12 Razões técnicas (peso dos fichários, desinteresse dos sistemas de autor pelo som) de natu-
+
+reza (seqüencial, imaterial) ou de cultura dos autores (vindos da imagem e do texto), mas a situação
+está mudando, de um lado no plano técnico (evolução do material e de programas) e, de outro, no
+plano do interesse dos autores e pesquisadores (em destaque, um deles, Hervé ZENOUDA).
+13
+
+Ver a contribuição e a elaboração dessa nova semiologia em Barboza e Weisberg op.cit.
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+289
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+As conseqüências pedagógicas
+Antes de estar prometida a todas as revoluções cognitivas e comunicacionais, cada mídia ou rede de mídia deve ser caracterizada ao menos pelas funções
+específicas que preenche – é o que tentamos fazer em relação às tarefas de
+aprendizagem, o que nos resta fazer agora. Não objetivamos aqui as aplicações
+pedagógicas concretas dessas “verdadeiras” novas tecnologias, o que necessitaria
+um conhecimento e uma explicitação dos contextos de intervenção. Queremos
+somente, para terminar, evocar algumas conseqüências pedagógicas globais
+inseridas nas características precedentemente colocadas.
+Não há o menor interesse nessas tecnologias além de nos fazer pensar
+nas questões da aprendizagem. Elas nos levam a tomar consciência de que a
+inteligência não se limita à racionalidade calculadora da inteligência justamente
+chamada “artificial” e que a aprendizagem é um processo hipercomplexo. As diferentes experiências sobre os dispositivos interativos, a serviço da comunicação
+como da informação, colocam justamente em evidência um dos problemas fundamentais da utilização de interfaces inteligentes: a saber “a estrutura de programa
+do sistema informático é forçosamente lógico quando a estrutura cognitiva é
+freqüentemente pouco lógica junto ao usuário”. Portanto, é necessário estabelecer
+uma comunicação entre os dois, e nós começamos a perceber as contradições que
+impõe essa famosa inteligência humana “a quatro mãos”. Dito de outra forma,
+a máquina não funciona de forma intersubjetiva: um indivíduo não aprende
+jamais sozinho, mas na interação com outras pessoas. Compreender o ponto de
+vista de outras pessoas é um aspecto essencial da atividade de aprendizagem,
+que a máquina – mesmo interativa – não pode lhe oferecer. Essa constatação é
+particularmente importante quando nós intencionamos colocar esses recursos
+eletrônicos a serviço da aprendizagem: uma nova pedagogia está a ser criada e
+como sempre são necessários inventores (JACQUINOT, 1985).
+Uma primeira precaução a ser tomada é a de saber fazer distinção sobre
+esse termo genérico de “novas tecnologias”, nascido do numérico, entre as técnicas eletrônicas de consulta e de tratamento da informação e os instrumentos
+de comunicação.
+Na primeira categoria nós podemos agrupar os programas didáticos, os CDROM e DVD-ROM, os programas de apresentação visual de informação (Power
+Point, Word, Flash...), os robôs pedagógicos, as bases de dados documentários,
+a consulta de sites. Na segunda, os grupos de discussão, os fóruns (por escrito,
+em asynchrone) ou os chat, o monitoramento à distância , as diferentes formas
+de áudio e de vídeo conferência e os correios eletrônicos, assim graciosamente
+chamados de “courriel” pelos quebequenses.
+290
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+Outros critérios permitem distinguir aqueles que se utilizam individualmente ou coletivamente, em sincronia (em tempo real) ou em não-sincronia
+(tempos diferenciados). Segundo essas categorias, a função de instrumentação
+– entendida como uma função que tem um instrumento para a realização de
+uma ação determinada – não é a mesma e a escolha deve se fazer em função da
+situação pedagógica e dos objetivos que se persegue.
+Desse ponto de vista, os hiperdocumentos são bem diferentes da internet
+e levam em consideração ou “instrumentalizam” diferentes funções, segundo a
+maneira como são concebidos, e segundo o que eles procuram mais ou menos
+guiar da demanda do aprendiz. Os hiperdocumentos têm fins de aprendizagem
+– quer sejam eles de simples intertextos ou de hipermídias (ROUET, 1997). Substituem a pesquisa manual de documentos em um ambiente físico complexo e de
+difícil acesso. Materializam relações de sentidos (semânticas) entre documentos
+individuais, relações que são freqüentemente implícitas mas que fazem parte de
+conhecimentos a serem adquiridos. Associam informações de diferentes tipos
+(textos literários, texto oficiais, definições, opiniões, de periódicos e de contextos diferentes...) e, portanto, favorecem tomadas e mudanças de perspectivas.
+Permitem, graças aos instrumentos de navegação, consultar as informações úteis
+para a tarefa evitando outras, inúteis, no momento da aprendizagem visada (e
+se a opção pedagógica tomada é a de guiar melhor o aprendiz).
+Não é o caso da internet, em revanche, onde as informações estão lá
+livremente, sem terem sido previamente selecionadas em função das necessidades de aprendizagem do aluno que as consulta. Ele deve afinar sua pesquisa
+de informação, avaliar a qualidade da informação encontrada, controlar sua
+veracidade, inseri-la no conjunto de outras fontes que ele já possui, memorizar
+as principais etapas do seu percurso, não perder de vista o que procura, estruturar todas essas informações, estruturação que sozinha lhe permite a passagem
+da informação ao conhecimento. Se aparecer um problema, deve aprender a
+lidar com o inesperado, procurar uma solução, simular e comparar diversas
+soluções para alternativas, guardar as etapas do seu percursos de pesquisa e
+compará-las a outras.
+Finalmente, instrumentos de informação e/ou de comunicação, uns e
+outros, implicam uma nova gestão do espaço e do tempo, uma nova relação
+com a presença e a ausência: as referências mudaram, os ritmos também. As
+diversas modalidades do nosso funcionamento cognitivo são diversamente
+valorizadas segundo as culturas, diversamente representadas segundo os
+indivíduos e diferentemente solicitadas segundo as máquinas e os recursos
+expressivos que privilegiam. O que podemos dizer com a simulação e a interatividade parece introduzir uma relação mais diretamente operatória, “sensorial
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+291
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+motora”, à experiência de aprender que ela permitia – ao menos por aqueles
+que não freqüentaram suficientemente cedo seu contexto social ou cultural – a
+cultura do livro e mesmo a cultura audiovisual: percebemos imediatamente
+as conseqüências de seu gesto.
+Mas convém ainda especificar o sentido dado a esse gesto, ou distinguir
+as diferentes funções da interatividade. Com efeito, graças a essa modalidade
+expressiva, e mediando a disponibilidade das interfaces e programas correspondentes, nós podemos procurar individualizar um percurso exploratório
+e de aprendizagem; dar um acesso a uma ajuda, seja ela da ordem de explicação de uma palavra desconhecida sobre a qual nós clicamos e damos uma
+definição, ou da ordem de uma indicação técnica (como fazer?) ou histórica
+(que tenho feito até o presente?); nós podemos nos relacionar com outros e
+colaborar coletivamente com uma mesma tarefa; podemos intervir diretamente na imagem ou mensagem para modificá-la; podemos também, graças
+a interfaces específicas, ter acesso a mundos virtuais, a ver, a sentir, a tocar...
+estar presente à distância14!
+Na realidade, com essas novas mídias, o que está em questão, tanto no
+plano estético como no pedagógico, são as novas situações de percepção e de
+representação, que necessitam, de novas teorias de significação e de novas
+concepções de aprendizagem – em conseqüência, para os educadores, como
+para os alunos, novas competências. A escrita interativa oferece com efeito a
+possibilidade de contribuir para o enriquecimento do regime de comunicação
+pedagógica, pela exploração dos recursos próprios aos meios eletrônicos – interatividade, simulação e hipermediação. Em que condição? A mesma que aquela
+que fazia os conceptores e realizadores pela utilização do cinema e da televisão
+com fins educativos e pedagógicos: evitar reproduzir, com os novos meios de
+expressão, o modelo canônico da mediação pedagógica clássica, linear e verbal.
+Explorar os recursos específicos dessas modalidades enunciativas e discursivas
+para “fazer aprender de outra maneira”.
+
+14
+
+G., Jacquinot-Delaunay, G. “Au-delà du modèle canonique de la relation maître-élève:
+les TIC ou comment faire circuler les signes de la présence”. In: Prtatiquer les TICE: former les
+enseignantes et les formateurs à de nouveaux usages”. De Boeck: Bruxwelles, 2002.
+292
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+DELAUNAY, G. J. Novas tecnologias, novas competências
+
+REFERÊNCIAS
+CHION, M. L’audio-vision. Paris: Nathan/Université, 1990.
+JACQUINOT, G.; LEBLANC, G. (Dir.). Les genres télévisuels dans l’enseignement.
+Paris: Hachette/Education CNDP. Traduit en italien sour le titre Appunti per una lettura
+del cinema e della televisione. Naples: Editoriale Scientifica, 1999.
+JACQUINOT, G.; MEUNIER, C. (Dir.). L’interactivité au service de l’aprentissage.
+Revue dês sciences de l’éducation, Québec, v. 25, n. 1, 1999.
+JACQUINTO, G. L’école devant lês écrans, Col. Science de l’Education. Paris: Edition
+ESF, octobre 1985. 135 p. Traduction espagnole actualisée: La escuela frente a las
+pantilas. Buenos Aires: AIQUE, 1996. 195 p.
+LÉVY, P. Lês techonogies de l’intelligence. Paris: La Découverte, 1990.
+LINARD, M. Dês machines et dês hommes: apprendre avec lês nouvelles tecnologies.
+Paris: Anthropos, 1996.
+PERRIAULT, J. Education et nouvelles technologies, théories et pratiques. Paris:
+Nathan/Université, 2002. coll. 128 (pages).
+ROUET, J. F. Le lecteur face à hypertexte. In: CRINON, J.; GAUTELLIER, C. (Dir.).
+Apprendre avec le multimedia: où en est-on? Paris: CEMEA/Retz, 1997. p. 165-180.
+WEISBERG, JL.; BARBOZA, P. (Dir.). L’image actée: scénarisations numériques,
+l”Harmattan, Coll Champs visuels, 2006.
+
+Texto recebido em 12 abr. 2007
+Texto aprovado em 27 set. 2007
+
+Educar, Curitiba, n. 31, p. 277-293, 2008. Editora UFPR
+
+293
+
+

@@ -1,0 +1,1009 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/220737344
+
+Inferindo as emoções do usuário pela face através de um sistema psicológico de
+codiﬁcação facial.
+Conference Paper · January 2008
+DOI: 10.1145/1497470.1497488 · Source: DBLP
+
+CITATIONS
+
+READS
+
+8
+
+1,312
+
+2 authors, including:
+Patricia Jaques
+Universidade do Vale do Rio dos Sinos
+131 PUBLICATIONS 728 CITATIONS
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Data-Informed Pedagogical Decision-Making View project
+
+PAT2Math View project
+
+All content following this page was uploaded by Patricia Jaques on 23 February 2014.
+
+The user has requested enhancement of the downloaded file.
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+
+Inferindo as emoções do usuário pela face
+através de um sistema psicológico de codificação facial
+Eduardo de Oliveira
+
+Patrícia Augustin Jaques
+
+PIPCA - UNISINOS
+Av. Unisinos, 950 Bairro Cristo Rei
+eduardoo@unisinos.br
+Fax: +55 (51) 3590-8162
+
+PIPCA - UNISINOS
+Av. Unisinos, 950 Bairro Cristo Rei
+pjaques@unisinos.br
+Fax: +55 (51) 3590-8162
+
+ABSTRACT
+
+interface básica de entrada existente entre o homem e o
+computador é praticamente a mesma nos últimos 30 anos, ou
+seja, mouse e teclado. Mais recentemente, deve-se
+considerar, também, em escala menor, mas crescente, o uso
+do microfone e da webcam.
+
+This paper presents a computing system to infer anger, fear,
+disgust, surprise, joy, and sadness emotions from user’s
+facial expressions through a webcam. The emotion detection
+is based on a facial psychological system, the Facial Action
+Coding System (FACS), and uses machine learning
+algorithms for its execution. Experiments using this system
+reached 60% success in average, achieving a success rate of
+90% for joy and sadness.
+
+A Interação Humano-Computador (IHC) é uma área de
+pesquisa que procura melhorar e evoluir a interface de
+relacionamento das pessoas com o computador, tornando as
+interações mais amigáveis, ágeis e claras [1]. Seus estudos
+vão desde melhorias em interfaces gráficas, a sistemas que
+utilizam as emoções expressas por usuários como parâmetros
+de entrada para aperfeiçoar a interação humano-computador.
+As pesquisas que consideram as emoções no computador
+foram agregadas em uma nova área chamada Computação
+Afetiva, que compreende pesquisas em diversas linhas, tais
+como Inteligência Artificial, Visão Computacional e
+Psicologia, além da IHC. Para Computação Afetiva, o
+computador deve entender as emoções humanas e/ou
+expressar afeto [17]. Visando melhorar as relações entre
+homem e computador, este artigo descreve um trabalho que
+infere as emoções básicas raiva, medo, repulsa, surpresa,
+alegria e tristeza demonstrada por uma pessoa à frente do
+computador, através das imagens estáticas provenientes de
+uma webcam. Para chegar a este objetivo, é necessário
+realizar alguns passos intermediários utilizando métodos de
+Visão Computacional (VC), como a detecção de faces (FaD,
+de Face Detection) e detecção de características faciais
+(FeD, de Feature Detection). Com base nestas detecções,
+são, posteriormente, realizadas classificações de emoções
+presentes em imagens utilizando algoritmos de aprendizado
+de máquina da Inteligência Artificial (IA) e esquemas de
+codificação de expressões faciais. Este artigo encontra-se
+organizado da seguinte maneira. Nas próximas três seções
+são introduzidos conceitos de emoções, um método de
+classificação das expressões faciais e sua aplicação para
+reconhecimento computacional de emoções por face. Após,
+alguns trabalhos relacionados são introduzidos e, na
+seqüência, são apresentadas as seções diretamente
+relacionadas ao trabalho proposto. A seção de Avaliação do
+Sistema apresenta os resultados obtidos pelo trabalho, que
+tem suas conclusões na última seção.
+
+RESUMO
+
+Este artigo apresenta um sistema computacional que infere as
+emoções raiva, medo, repulsa, surpresa, alegria e tristeza,
+através das expressões faciais do usuário captadas por uma
+webcam. A detecção das emoções está baseada no sistema
+psicológico de codificação facial FACS e se utiliza de
+algoritmos de aprendizagem de máquina para a sua
+inferência. Os resultados dos experimentos mostram uma
+taxa de sucesso média de 60%, chegando a 90% para as
+emoções alegria e tristeza.
+Author Keywords
+
+Affect, computer-mediated communication, emotion.
+ACM Classification Keywords
+
+J.Computer
+sciences.
+
+Applications.
+
+J.4
+
+Social
+
+and
+
+behavioral
+
+INTRODUÇÃO
+
+O computador, cada vez mais presente em nosso cotidiano,
+tem sido empregado nas mais diversas aplicações. Sua
+utilização vai desde tarefas profissionais, como ferramenta
+indispensável (atividades jornalísticas, controle bancário),
+até atividades de lazer, com uma vasta possibilidade de
+entretenimento (jogos, música, “passeios” na Internet). Este
+fenômeno crescente se deve pela sua evolução tecnológica,
+tanto em nível de hardware, quanto de software. Porém, a
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. To copy otherwise,
+or republish, to post on servers or to redistribute to lists, requires prior
+specific permission and/or a fee.
+IHC 2008 – VIII Simpósio Sobre Fatores Humanos em Sistemas
+Computacionais. October 21-24, 2008, Porto Alegre, RS, Brazil.
+Copyright 2008 SBC. ISBN 978-85-7669-203-4
+
+156
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+
+EMOÇÕES
+
+O modelo de emoções básicas, originado das expressões
+comportamentais humanas, apresenta uma grande quantidade
+de trabalhos relacionados, principalmente no que se refere ao
+reconhecimento computacional de emoções através de
+expressões faciais. O modelo de componentes tem atraído
+crescente atenção recentemente, porém sendo mais utilizado
+para inferência de emoções de usuários através de suas ações
+na interface do sistema computacional [11], se utilizando de
+modelos psicológicos cognitivos de emoções como o OCC
+[15].
+Neste trabalho é utilizado o modelo psicológico de
+classificação facial Facial Action Coding System – FACS [5]
+para inferência de emoções, que é baseado psicologicamente
+na teoria de emoções básicas.
+
+A utilização do termo emoção acontece muitas vezes de
+forma desmedida, mas, conceitualmente, emoção é
+considerada como um elemento do conjunto genérico de
+estados afetivos, no qual, também, se encontra o humor,
+entre outros [19]. Ao contrário do humor, que costuma ter
+uma duração mais longa (horas, dias) e não tem uma causa
+bem definida, a emoção é normalmente breve (minutos) e
+ocorre em função de um estímulo interno ou externo [18,
+20]. Neste contexto, uma expressão emocional é aquilo que é
+demonstrado
+a
+outras
+pessoas,
+voluntária
+ou
+involuntariamente [17].
+Embora não exista uma consolidação quanto à definição de
+emoções, estas podem ocupar uma lista de até vinte tipos
+[17]. Existem diversas teorias de emoções, como os modelos
+dimensionais que se baseiam em duas principais categorias,
+arousal (calmo/excitado) e valência (negativo/positivo), para
+diferenciar as emoções. Outra teoria de emoções bastante
+difundida é o modelo de emoções básicas, que recebem este
+nome por que elas têm as mesmas manifestações corporais
+em diferentes culturas. Ekman [3] desenvolveu estudos sobre
+seis expressões faciais emocionais básicas, que podem ser
+encontradas nas mais diversas e distantes localidades (Figura
+1). Estas expressões faciais foram constatadas por Ekman [3]
+como estando presentes, desde a infância, em crianças de
+qualquer parte do mundo.
+Atualmente, o modelo de componentes (componential
+model) tem recebido considerável atenção dos pesquisadores
+em emoções. Segundo este modelo, as emoções em humanos
+são caracterizadas pela presença de quatro componentes
+principais
+[15]:
+(i)
+componente
+motivacionalcomportamental, que diz respeito às inclinações de um
+indivíduo para agir de acordo com estas interpretações; (ii)
+componente subjetivo: responsável pela parte de “sentimento
+subjetivo” e é mais elaborado em seres humanos que estão
+habituados a rotular as emoções que sentem; (iii)
+componente somático: envolve a ativação dos sistemas
+nervosos central e automático e sua manifestação corporal e
+(iv) componente cognitivo: processos cognitivos que avaliam
+as situações e disparam as emoções.
+
+MODELO PSICOLÓGICO DE CLASSIFICAÇÃO FACIAL
+FACS
+
+Facial Action Coding System (FACS) é um modelo criado
+pelos psicólogos Paul Ekman e Wallace V. Friesen que
+categoriza as aparências faciais causadas por contrações
+musculares em Unidades de Ação (Action Units - AUs), que,
+com ou sem combinações, representam todas as expressões
+faciais possíveis. Por exemplo, a AU1 representa
+sobrancelhas levantadas. No modelo FACS, foram definidas
+44 AUs que permitem representar mais de 7.000 expressões
+faciais diferentes. Estes estudos sobre FACS foram
+expandidos na década de 80 para a criação de outro modelo,
+o Emotion FACS – EMFACS [8], que mapeia e seleciona as
+AUs que ocorrem na manifestação de emoções. Por
+exemplo, podemos observar que uma pessoa está sentindo a
+emoção medo pela ocorrência simultânea das AUs 1, 2, 4, 5
+e 25 na sua face.
+RECONHECIMENTO COMPUTACIONAL DE EMOÇÕES
+
+São várias as formas de uma pessoa manifestar suas emoções
+e mais variados, ainda, são os métodos para captar e
+reconhecer a emoção transmitida. A voz, as ações do usuário
+na interface com o sistema, as expressões faciais e os sinais
+fisiológicos são considerados os principais modos de
+reconhecimento de emoções [10].
+Os métodos atuais de reconhecimento de emoções de uma
+pessoa pelo computador se aproximam e, em alguns casos,
+superam o reconhecimento humano. Enquanto o
+reconhecimento de expressões faciais por humanos é de
+aproximadamente 87%, alguns algoritmos computacionais,
+em ambiente controlado, obtêm sucesso entre 74% e 98%
+[20]. No reconhecimento vocal existe equilíbrio entre
+humanos e computadores, por volta de 65%, entretanto
+alguns algoritmos alcançaram o nível de quase 80% de
+acerto [20]. Um problema que pode ocorrer na identificação
+de emoção pela voz, é a interferência de sons externos
+(ruídos) na captação sonora, caso se trate de ambiente não
+controlado. Sincronizando a movimentação labial com fala
+(mecanismo utilizado na percepção humana), é possível
+
+Figura 1. Seis expressões faciais emocionais básicas
+
+157
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+
+obter uma redução dos efeitos de ruído. Resultados ainda
+melhores de reconhecimento de expressões emocionais
+podem ser obtidos utilizando a combinação de mecanismos
+de reconhecimento, como facial e vocal, que são
+considerados como principais aspectos utilizados por uma
+pessoa para reconhecer emoções.
+Ocorre em Visão Computacional uma confusão freqüente
+entre
+reconhecimento
+de
+expressões
+faciais
+e
+reconhecimento de emoções humanas [7]. Para o
+reconhecimento de expressões faciais, são necessários dados
+sobre ações de características faciais, que são extraídos
+basicamente de imagens. Já, para o reconhecimento de
+emoções, é preciso considerar vários fatores, como variações
+de voz, de pose, gestos, direções de olhar e expressões
+faciais. Uma análise apenas da expressão labial, por
+exemplo, não tem como concluir se um sorriso refere-se
+realmente a uma emoção de alegria ou é apenas uma pose,
+mas fornece artefatos que podem aumentar essa
+possibilidade. Uma pessoa pode tentar expressar e convencer
+uma emoção que não sente, mas alguns músculos faciais
+acionados de determinado modo, somente quando algum tipo
+verdadeiro de emoção é manifestado, podem desmentir essa
+tentativa [2].
+Algumas metodologias são utilizadas pelos pesquisadores
+para que a identificação de expressões faciais e a posterior
+classificação
+sejam
+realizadas
+pelo
+computador.
+Inicialmente, é necessário encontrar a face humana em uma
+imagem e esta tarefa pode se tornar não trivial devido à
+ocorrência de alguns fatores negativos, como oclusão de
+partes da face e baixa resolução da imagem. Após obtenção
+da região onde se encontra um rosto, o desafio seguinte é
+localizar as características faciais relevantes numa expressão
+facial (por exemplo, boca, olhos etc.), que, neste caso, é
+realizado por técnicas de FeD similares ou iguais a FaD.
+Após isto, outros desafios são apresentados, por exemplo:
+“como classificar o que uma expressão facial demonstra?”.
+Neste caso, existem duas principais abordagens para
+inferência de emoções por expressões faciais: (i) usar
+classificadores; ou (ii) se basear em modelos psicológicos de
+codificação facial.
+A abordagem usando classificadores consiste em treinar um
+classificador com milhares de imagens que contenham as
+expressões desejadas de emoções, geralmente, fotografias de
+atores expressando as emoções desejadas. Um exemplo de
+um classificador que tem sido utilizado para esta função é o
+Haar-like features [21].
+A segunda abordagem consiste em usar um modelo
+psicológico de classificação facial, como, por exemplo, o
+FACS. Ela foi escolhida no presente trabalho, pois fornece
+mais informações que permitem o aperfeiçoamento da
+metodologia (o modelo psicológico de classificação facial),
+ao contrário dos classificadores que têm um funcionamento
+
+do tipo caixa-preta, exigindo, também, uma grande
+quantidade de dados (milhares de imagens de expressões de
+emoções) para treinamento.
+TRABALHOS RELACIONADOS
+
+Kobayashi e Hara [14] desenvolveram um sistema que
+objetiva o reconhecimento de emoções humanas pela
+classificação, por redes neurais, de expressões faciais. As
+emoções são retiradas de pontos (chamados de FCP - Facial
+Characteristic Point) situados em três características faciais,
+sobrancelhas, olhos e boca, conforme apresentado pela
+Figura 4.
+Os autores utilizaram as seis expressões básicas de emoção
+como categorias de expressões emocionais, que foram
+extraídas levando em consideração as alterações
+apresentadas na disposição de 30 pontos (marcados
+manualmente) agrupados sobre as três características.
+Os 30 pontos são agrupados por funções em 21 formas de
+expressões de dados, utilizados para explicar as
+características faciais, que vão servir de entrada para a
+classificação da expressão. O classificador, uma rede neural
+utilizando o algoritmo back propagation, foi treinado
+utilizando majoritariamente imagens coletadas de usuários
+que tiveram suas expressões faciais filmadas para realizar a
+identificação das seis emoções básicas. Ele realiza a
+classificação tanto sobre os 30 pontos, quanto sobre 21
+dados de informação facial. Ambas as formas de
+classificação obtêm bons resultados, 91,2% sobre os 21
+dados e 87,5% sobre os 30 pontos.
+Outro trabalho relacionado é o sistema desenvolvido por
+Pantic e Rothkrantz [16] que obtiveram até 86% de acerto na
+identificação de AUs do modelo FACs. A identificação é
+realizada com base em 19 pontos referenciais, que
+contornam componentes de faces em posição frontal, e/ou
+utilizando 10 pontos, da mesma face em perfil. Sobre
+imagens em perfil, são detectados até 24 AUs e, em imagens
+frontais, até 22 AUs, totalizando 32 AUs distintas.
+Na primeira etapa de execução do sistema, a face (tanto em
+perfil, quanto frontal) é localizada realizando busca pela cor
+de pele. Identificada a face, o processo para a localização dos
+componentes faciais é executado independentemente sobre a
+face em perfil e frontal. Para a face em perfil, são extraídos
+10 pontos da imagem utilizando funções que calculam as
+extremidades encontradas no contorno da face (picos e
+vales). Já, para a imagem frontal, os 19 pontos referenciais
+correspondem a vértices no contorno dos componentes
+faciais (boca, olhos, sobrancelhas, narina e queixo)
+localizados. Estes componentes são, previamente,
+identificados utilizando vários processos e algoritmos
+combinados (templates, detecção de bordas e contornos,
+redes neurais, classificadores baseados em regras).
+
+158
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+TRABALHO PROPOSTO
+A Figura 2 exemplifica a metodologia empregada neste
+
+Obtidos os pontos referenciais, a próxima etapa consiste na
+obtenção de parâmetros intermediários, que são resultado da
+diferença entre os pontos referenciais da face neutra com a
+face com expressão. Na última etapa, são utilizadas duas
+tabelas que definem as AUs com base em regras, uma para a
+face em perfil e outra para a face frontal. Nestas regras
+(criadas com base no sistema FACS), são testadas certas
+condições sobre os parâmetros intermediários, que poderão
+determinar a existência de uma AU.
+Um terceiro trabalho relacionado é o FED - Facial
+Expression Dictionary [12]. Nele, foi desenvolvido um
+dicionário que traduz expressões faciais através de consultas
+que podem ser desenvolvidas de cinco formas:
+Label query: retorna a descrição e um exemplo para uma
+expressão submetida, como alegria ou surpresa.
+Action Unit Query: as imagens de expressões faciais que
+contém AUs determinadas pelo usuário são obtidas nesta
+modalidade de consulta.
+Geometry Query: expressões faciais são obtidas com base
+nos estados de características faciais informadas.
+Incremental Query: nesta opção, o usuário possui imagens
+que contêm expressões. Cada uma delas possui mais dois
+níveis de especificidades que ele deve escolher. Da imagem
+escolhida, mais informações com exemplos são exibidos.
+Picture Query: com base em pontos marcados sobre
+determinadas características faciais contidas em uma imagem
+de entrada, expressões faciais são resultadas.
+Na implementação do FED, que foi direcionada para
+utilização via web, é possível, utilizando suas ferramentas,
+incluir expressões faciais que são parametrizadas pela edição
+de uma face virtual. O autor incluiu, na versão inicial, 56
+expressões faciais, que podem atingir o número de até 7.000
+expressões distintas.
+Em relação ao trabalho proposto, o sistema de Kobayashi e
+Hara, da mesma forma, realiza a identificação das emoções
+básicas, porém não é realizado o detalhamento das
+expressões faciais contidas em cada emoção, que no trabalho
+proposto ocorre pela identificação das AUs. Pantic e
+Rothkrantz realizam essa identificação de AUs, mas não
+realizam a inferência da possível emoção que pode estar
+contida em uma imagem como ocorre no trabalho proposto e
+no dicionário FED. Embora também obtenha as AUs e infira
+emoções, existem diferenças entre o FED e este trabalho. O
+primeiro realiza inferências de um sujeito comparando
+valores de exemplos presentes em sua base, o proposto
+compara valores de dados relacionados ao mesmo sujeito.
+Além disso, o trabalho proposto infere emoções das AUs
+encontradas, o que não é realizado por FED, que infere
+emoção diretamente sobre as deformações faciais.
+
+trabalho, mostrando o fluxo de processos que serão
+realizados pela aplicação construída, que se inicia pela
+obtenção de imagens capturadas por uma webcam de
+usuários à frente de um computador. Estas imagens serão
+submetidas a métodos de Visão Computacional para a
+localização da face. Sobre esta face encontrada, serão
+registradas coordenadas das extremidades das características
+faciais (bocas, olhos e sobrancelhas). Após, as coordenadas
+sofrem análises antropomórficas que indicarão a presença de
+determinadas ações faciais. Estas ações faciais trarão dados
+que evidenciam a ocorrência de alguma emoção. A
+metodologia empregada no desenvolvimento deste trabalho é
+detalhada na próxima seção.
+Metodologia
+
+Para reconhecer emoções por expressões faciais através de
+imagens estáticas usando a segunda abordagem que emprega
+um modelo psicológico de codificação facial, seis etapas são
+necessárias. (1) Primeiramente, é necessário encontrar a face
+na imagem (FaD). (2) Após detectar a face, é preciso
+encontrar as partes do rosto que serão analisadas para a
+inferência de emoções (FeD). Para a inferência de emoções,
+os olhos, sobrancelhas e boca são as características faciais
+mais relevantes e que serão consideradas neste trabalho. (3)
+A próxima etapa consiste em determinar certos pontos das
+extremidades das características faciais (são demarcados 30
+pontos), que são conhecidos como FCPs [14]. Os FCPs são
+utilizados para realizar cálculos de deformação geométrica
+das características faciais que permitem identificar as AUs,
+do modelo FACS [5]. Dessa maneira, (4) o próximo passo é
+realizar cálculos de deformações geométricas para verificar a
+ocorrência de AUs. Por exemplo, o seguinte cálculo permite
+verificar a deformação da sobrancelha:
+eb_height =
+
+a17.y + a19.y + a21.y a18.y + a20.y + a22.y
++
+3
+3
+2
+
+Na expressão matemática acima, a17, a18, a19, a20 e a21
+são FCPs das extremidades das sobrancelhas, como pode ser
+observado na Figura 4, e x e y representam as coordenadas x
+e y destes pontos bidimensionais.
+
+Figura 2. Metodologia da aplicação
+
+159
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+face, o método aplicado é o Haar-like features (Método de
+Viola- Jones [21]).
+
+Após, (5) comparando a deformação geométrica ocorrida na
+sobrancelha de uma imagem com expressão emocional com
+a deformação na face neutra, pode-se verificar a ocorrência
+de determinada AU. O exemplo abaixo identifica a
+ocorrência da AU1.
+if (eb_height> (eb_height_n+0.1)) then AU1.
+Finalmente, (6) as combinações de ações faciais (neste caso,
+AUs) encontradas são traduzidas em emoções. Por exemplo,
+sabe-se que a presença dos AUs 6+12 evidencia a presença
+da emoção alegria.
+Nas próximas subseções serão descritas as etapas deste
+processo, que é agrupado em quatro partes: detecção da face,
+detecção de características faciais, classificação da expressão
+facial e inferência da emoção. Em cada etapa, é explicado o
+funcionamento do protótipo desenvolvido e os métodos de
+Visão Computacional/IA utilizados.
+
+As imagens da webcam são submetidas à biblioteca
+OpenCV, que possui o método de Viola-Jones implementado
+e busca por uma face nessas imagens, demarcando a região
+onde esta se encontra (Figura 3 - A).
+A imagem da região demarcada contendo uma face é, então,
+salva em arquivos a cada 3s e será utilizada pelo segundo
+módulo (Figura 3 - B). Este tempo foi adotado, pois a duração
+de uma expressão emocional espontânea normalmente ocorre
+entre 0,5s e 5s [4].
+Detecção das características faciais
+
+A detecção de características faciais consiste em isolar na
+imagem determinadas partes do rosto que mais interessam a
+aplicação. No caso desta aplicação, boca, olhos e
+sobrancelhas são as características faciais que são
+identificadas, pois as AUs utilizadas para o reconhecimento
+da emoção estão presentes, em sua maioria, nestas partes do
+rosto.
+
+Projeto de aplicação
+
+Foi desenvolvido um protótipo que faz a captura de imagem
+de um usuário à frente de um computador, permite a
+marcação manual dos FCPs, analisa os dados coletados para
+que sejam identificadas as ações faciais, finalizando com a
+inferência da emoção sobre essas ações faciais. Esta
+aplicação foi desenvolvida utilizando, como apoio principal,
+as funções contidas na biblioteca OpenCV [9], especialmente
+sobre FaD e FeD, como comentado anteriormente. OpenCV
+é uma biblioteca aberta que possui implementados métodos
+bastante conhecidos em VC, IA, além de funções para edição
+gráfica e cálculos matemáticos. Além da entrada de imagens
+realizada por uma câmera, o aplicativo tem capacidade de
+obter imagens de vídeos (filmes) ou de imagens estáticas
+(arquivos contendo imagens únicas).
+A implementação da aplicação foi realizada na linguagem C,
+utilizando o IDE DEV C++, com o compilador gcc para
+Windows. Foram utilizadas as funções de detecção de
+objetos (face), desenho (pontos FCP) e cálculo de matrizes
+(para correção de ângulo da figura) da biblioteca OpenCV.
+A aplicação teve sua construção dividida em três módulos.
+No primeiro, é realizada a detecção da face. No segundo, são
+identificados pontos das extremidades das características
+faciais das faces selecionadas pelo módulo anterior. Por fim,
+o terceiro módulo analisa os pontos obtidos pelo segundo,
+identifica as AUs e infere a emoção existente na combinação
+destas AUs.
+Esta divisão da aplicação em módulos foi realizada por dois
+motivos: (i) existe um gap entre a obtenção da face e a
+detecção das características faciais (marcação manual dos
+FCPs) e (ii) esta divisão organiza os módulos pelos passos da
+metodologia da aplicação (Figura 2).
+
+Figura 3. Detecção de Face
+
+Detecção da face
+
+O primeiro módulo do aplicativo realiza a detecção de face
+sobre as imagens obtidas por uma webcam. Na detecção da
+
+Figura 4. FCPs, detalhes do ponto de origem e valor base
+
+160
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+Normalização dos dados
+
+Nas definições de Kobayashi e Hara, existem três métodos
+de normalização que devem ser aplicados sobre FCPs:
+translação, rotação e escala. Existem duas variáveis
+principais previamente necessárias para os cálculos de
+normalização de dados: base e ponto de origem.
+
+Figura 5. Arquivo de Saída – Coordenadas
+
+Valor base e ponto de origem: o valor base (distância de
+
+Após detectar as características faciais, é necessário marcar
+certos pontos que se encontram nas extremidades destas, que
+são os FCPS [14]. Esta etapa foi realizada manualmente,
+utilizando recursos gráficos contidos na biblioteca OpenCV.
+
+Manhattan entre os pontos dos cantos internos dos olhos),
+utilizado como valor de referência para os demais cálculos, é
+realizado pela seguinte equação:
+
+Na abordagem adotada para marcação de características
+faciais e extração de ações faciais, é necessário realizar,
+inicialmente, o posicionamento dos 30 pontos sobre as
+características faciais (FCPs de Kobayashi e Hara [14]).
+Estes pontos devem ser inseridos sobre posições específicas
+definidas pelos autores (Figura 4), que correspondem às
+bordas e extremidades das características faciais
+consideradas (boca, olhos e sobrancelha).
+
+Obtido o valor base, a etapa seguinte é o cálculo do ponto de
+origem. Este ponto, que se localiza na região próxima a
+ponta do nariz (ver Figura 4), é definido neste local para
+manter uma simetria entre os demais pontos anotados sobre
+as características faciais.
+
+Para realizar esta tarefa, foi implementado o segundo módulo
+da aplicação, que escreve, em cada linha de um arquivo texto
+de saída (Figura 5), as coordenadas (x e y) de cada um dos
+pontos FCP que são marcados sobre as figuras geradas pelo
+primeiro módulo. Estes FCPs devem ser marcados em
+posições específicas, mostradas na Figura 4.
+
+Desta forma, pode-se prever a localização aproximada de
+uma coordenada. Por exemplo, uma coordenada com valor
+(30, -40) deve se localizar no lado esquerdo da boca, pois
+essa região só pode possuir valor negativo no eixo y
+(vertical) e, o valor positivo do eixo x (horizontal) representa
+o lado esquerdo da pessoa na imagem.
+
+O arquivo texto gerado (Figura 5) será utilizado como
+entrada pelo terceiro módulo.
+
+Translação: na translação, os 30 pontos que compõem os
+FCPs têm suas coordenadas alteradas para que se orientem
+ao valor do ponto de origem (para a região próxima a ponta
+do nariz) (Figura 6 b). Antes da translação, os pontos têm
+como ponto de origem, o ponto mais extremo do canto
+superior esquerdo da figura (Figura 6 a).
+
+Classificação das expressões faciais
+Com as coordenadas dos FCPs disponíveis, é possível
+
+calcular o deslocamento das características faciais e, com
+isso, encontrar as respectivas AUs definidas em FACS [5].
+Existem combinações de AUs que, normalmente, ocorrem
+em algumas expressões faciais que compõem as seis
+emoções básicas e são consideradas na inferência de uma
+emoção [6]. Um exemplo é baixar e aproximar as
+sobrancelhas, movimentação que representa a AU 4 (Brow
+Lowerer).
+
+Foi utilizado o seguinte pseudocódigo para realizar a
+translação dos pontos:
+n = 1;
+enquanto ( n < 31 )
+{
+a'[n].x = a[n].x - origem.x;
+a'[n].y = a[n].y - origem.y*(-1);
+n = n + 1;
+}
+
+Em posse das coordenadas obtidas no segundo módulo,
+prossegue-se no terceiro módulo, onde estas coordenadas
+serão utilizadas como parâmetro de entrada. Este módulo
+tem duas saídas: as AUs correspondentes à expressão facial
+realizada pela pessoa (descrita nesta seção) e a emoção
+contida nestas AUs (descrita na próxima subseção). Mas,
+para encontrar estas AUs, é necessário, anteriormente,
+normalizar as coordenadas FCPs e submetê-las a critérios
+que interpretam os seus deslocamentos geométricos. Estes
+deslocamentos são as ações faciais que, quando submetidas a
+regras definidas em FACS [5], resultam em AUs
+correspondentes.
+
+Figura 6. Comparação entre orientação de pontos antes e após
+translação
+
+161
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+Escala
+
+A escala é ajustada pela divisão dos FCPs pelo valor base.
+Realizando este cálculo, são compensadas as variações que
+podem ocorrer na distância entre a câmera e a face de uma
+pessoa, mantendo a mesma proporção entre as possíveis
+variações de distância entre pontos. O seguinte pseudocódigo
+ilustra como é realizado este ajuste de escala:
+n = 1;
+enquanto ( n < 31 )
+{
+a'[n].x = a[n].x / base;
+a'[n].y = a[n].y / base;
+n = n + 1;
+}
+
+Ações faciais
+
+Com os pontos já normalizados, são realizados cálculos
+sobre as variáveis de deformações geométricas das
+características faciais, utilizando a Tabela 1, desenvolvida
+com base em Jongh [12]. Nesta tabela, três variáveis foram
+incluídas às demais: distância entre sobrancelhas
+(eeb_distance), altura do lábio superior (mul_height) e altura
+do lábio inferior (mll_heigth). Isto foi necessário devido a
+carência na identificação de algumas AUs (mais
+especificamente AUs 7, 10, 16 e 17) pelas variáveis
+restantes.
+Em uma segunda tabela (Tabela 2), também baseada no
+trabalho de Jongh [12], estão os critérios que definem as
+AUs. Esta tabela é composta pela associação das
+combinações de variáveis de deformações faciais e regras
+definidas pelo FACS. Ela contém as variáveis de deformação
+da Tabela 1 com sua correspondente expressão facial neutra
+(ex: eb_height e eb_height_n).
+
+Tabela 1. Variáveis de deformação facial
+
+Rotação: a rotação dos pontos para um ângulo alinhado ao
+horizonte toma como base a inclinação dos pontos a1 e a2
+(cantos internos dos olhos), conforme a equação abaixo:
+
+É aplicada, sobre todos os pontos, a correção da inclinação
+utilizando o ângulo obtido pela equação anterior,
+multiplicando os pontos pelo valor do seno e cosseno do
+ângulo (an.x*sinθ, an.y*cosθ).
+
+Tabela 2. Critérios dos Estados de Características Faciais
+
+162
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+
+As variáveis de deformação de uma imagem contendo uma
+face sem expressão emocional (neutra) são utilizadas
+juntamente com as variáveis de deformação de uma face
+contendo alguma expressão emotiva (Tabela 2).
+
+surpresa, 11 para medo, 2 para alegria, 15 para tristeza, 6
+para repulsa, e 30 para raiva).
+Esta tabela contendo 71 combinações para as seis emoções
+básicas foi submetida à ferramenta See5 [18] para a
+construção da árvore de decisão. See5 é a versão comercial e
+atualizada do algoritmo de classificação C4.5, que é utilizado
+para a indução de árvores de decisão ou conjunto de regras
+com base nas informações contidas em uma base de dados. A
+Figura 7 exibe a árvore de decisão construída pelo See5
+sobre a tabela de combinação de AUs. Pode-se observar
+nesta figura que a existência de determinadas AUs (caixas)
+denuncia uma provável emoção (elipses).
+As definições contidas na árvore de decisão (Figura 7) foram
+implementadas dentro do terceiro módulo da aplicação,
+utilizando, para isto, regras de produção (cadeias de “ifs”),
+para realizar as classificações de AUs para emoções.
+
+Inferência da emoção
+
+Algumas combinações de AUs costumam estar presentes em
+certas expressões faciais que ilustram emoções [6].
+Conhecidas as AUs contidas em uma expressão facial, estas
+serão submetidas a uma árvore de decisão que indicará se
+este conjunto se ajusta a alguma combinação que representa
+uma emoção. A AU 4, por exemplo, pode estar contida nas
+emoções de medo, tristeza e raiva.
+Neste trabalho, a inferência da emoção é realizada pela
+conversão dos valores de AUs para emoção. Para tanto, é
+utilizada a tabela criada por Ekman, Friesen e Hager [6],
+onde são agrupadas as AUs que mais comumente são
+encontradas nas expressões faciais das emoções básicas. A
+Tabela 3 contém uma amostra destas relações para as
+emoções de surpresa, medo e alegria.
+A Tabela 3 foi utilizada como referência para a criação de
+outra tabela que contém, em cada linha, uma das possíveis
+combinações de AUs presentes na primeira tabela para as
+AUs: 1, 2, 4, 5, 6, 7, 9, 10, 12, 15, 16, 17, 20, 22, 23, 24, 25,
+26 e 27. Nesta nova tabela, foram retiradas três AUs: AU 11,
+AU 54 e AU 64. A primeira foi retirada por ser de difícil
+detecção pela aplicação e por, aparentemente, não impactar
+significantemente nos resultados. Já, as AUs 54 e 64 foram
+excluídas por serem dispensáveis (opcionais) na inferência e
+não detectáveis pela aplicação. A tabela resultante contém 71
+possíveis combinações entre as 6 emoções básicas (7 para
+
+Tabela 3. Prognóstico de emoções para combinações de AUs
+
+Figura 7. Árvore de decisão para inferência de emoção baseada em AUs
+
+163
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+
+AVALIAÇÃO DO SISTEMA
+
+Nos testes da aplicação foram utilizadas 154 imagens de 39
+pessoas da base de expressões faciais Cohn-Kanade AUCoded Facial Expression Database - AU-CFED [13],
+manifestando 116 expressões faciais (sendo 38 de alegria, 7
+de medo, 7 de raiva, 17 de repulsa, 20 de surpresa e 27 de
+tristeza). Esta base foi escolhida por possuir a identificação
+das AUs presentes na expressão realizada pela pessoa em
+suas imagens. Nos testes foram verificados os índices de
+acerto de AUs detectadas pela aplicação em relação às AUs
+definidas para as imagens das pessoas da base, assim como a
+taxa de acerto para a inferência das emoções.
+A Tabela 4 mostra o número de imagens analisadas (coluna
+Casos), o número de imagens inferidas corretamente (coluna
+Correta) e a taxa de sucesso para a inferência das 6 emoções
+básicas (coluna %).
+Como pode ser observada na última linha da Tabela 4, a taxa
+de sucesso média é de 60,34%, porém o sistema atinge uma
+taxa de inferência maior que humana ou equivalente para as
+emoções alegria (80,47%), raiva (71,43%) e tristeza (92,59
+%).
+
+Tabela 7. Taxa de sucesso da árvore de decisão
+
+Através da Matriz de Confusão (Tabela 5) é possível
+observar melhor quais os problemas que estão ocorrendo na
+inferência das emoções repulsa, surpresa e medo, que
+obtiveram piores taxa de sucesso (5,88%; 10% e 42,86%
+respectivamente). Expressões com a emoção repulsa estão
+sendo erroneamente inferidas como tristeza (10 dos 17
+casos) e raiva (5 dos 17 casos). Além disso, a surpresa é,
+geralmente, inferida como medo (16 dos 20 casos) pelo
+sistema. As taxas de sucesso da inferência das AUs (Tabela
+6) destas emoções (repulsa, surpresa e medo) não são baixas,
+chegando a ser maior do que a taxa para a emoção tristeza
+(que tem acerto de 92,59% para inferência de emoção).
+Os resultados dos experimentos acima evidenciam que as
+piores taxas devem-se, possivelmente, a limitações na árvore
+de decisão. Dessa forma, foi realizado um terceiro
+experimento para verificar qual a taxa de sucesso na
+inferência de emoções da árvore se fornecidas as AUs
+corretas manualmente (esta informação é fornecida pela base
+de dados AU-CFED para comparação nas avaliações). Os
+resultados deste experimento podem ser observados na
+Tabela 7. Como se pode observar, as emoções repulsa e
+surpresa têm taxas de sucesso bastante baixas na árvore de
+decisão, chegando a ser nula para a repulsa. Isso explica a
+baixa taxa de sucesso da inferência da emoção pelo
+protótipo. Além disso, como para algumas emoções não é
+necessária a identificação de todas as AUs para a inferência
+correta da emoção (para algumas AUs, apenas a sua presença
+já evidencia certa emoção), o sistema consegue obter taxas
+de sucesso na inferência da emoção melhores que a taxa de
+sucesso na inferência das AUs que compõem uma emoção.
+
+Tabela 4. Taxa de Sucesso na Inferência Emocional
+
+Tabela 5. Matriz de Confusão
+
+CONCLUSÃO E TRABALHOS FUTUROS
+
+Neste artigo foi apresentado um sistema capaz de inferir as
+emoções de um usuário através das imagens estáticas
+provenientes de uma webcam. A taxa de sucesso média da
+aplicação é de 60,34% para a inferência das 6 emoções
+básicas: alegria, medo, raiva, repulsa, surpresa e tristeza.
+Porém, considerando-se a análise, apenas, das emoções
+alegria, raiva e tristeza, que são mais interessantes para os
+sistemas de IHC, a aplicação obtém uma taxa de sucesso
+média de 84,5%.
+
+Tabela 6. Taxa de sucesso na inferência de AUs
+
+164
+
+IHC 2008 | Artigos Completos
+
+21-24 Outubro | Porto Alegre – RS, Brasil
+
+Experimentos adicionais mostraram que a pior taxa de
+sucesso das emoções repulsa e surpresa, em grande parte, se
+deve à árvore de decisão que precisa ser aperfeiçoada. Já,
+para a emoção medo, é necessário aperfeiçoar a inferência
+das AUs que diferenciam esta emoção da emoção tristeza,
+como mostra a Matriz de Confusão na Tabela 5.
+Além desses aperfeiçoamentos, como trabalho futuro
+pretende-se, também, realizar automaticamente a detecção
+das características faciais e a marcação dos FCPs. Uma vez
+encontradas as características faciais, a marcação dos FCPs
+se torna uma tarefa mais fácil, visto que estes pontos se
+encontram nas extremidades da boca, olhos e sobrancelhas
+ou em distâncias pré-determinadas (ver base na seção
+Normalização dos dados).
+
+Informática na Educação: Teoria e Prática 8, (2005),
+15-38.
+11. Jaques, P. A. and Viccari, R. M. A BDI Approach to
+Infer Student’s Emotions. Computers and education 49,
+2, (2007), 360-384
+12. Jongh, E.J.D. FED: An online facial expression
+dictionary as a first step in the creation of a complete
+nonverbal dictionary. TU Delft, 2002.
+13. Kanade, T., Cohn, J. and Tian, Y. Comprehensive
+Database for Facial Expression Analysis. Proc. FGR
+2000, IEEE Computer Society (2000), 46-53.
+14. Kobayashi, H. and Hara, F. The Recognition of Basic
+Facial Expressions by Neural Network. Proc. IJCNN
+1991, IEEE Computer Society (1991), 460-466.
+
+REFERÊNCIAS
+
+1.
+
+Booth, P.A. An Introduction To Human-Computer
+Interaction. Lawrence Erlbaum Associates Ltd, Hove,
+Reino Unido, 1995.
+
+15. Ortony, A., Clore, G. and Collins, A. The Cognitive
+Structure of Emotions. Cambridge University Press,
+Cambridge, UK (1988).
+
+2.
+
+Ekman, P. Facial Expression and Emotion. American
+Psychologist 48, (1993), 384-392.
+
+3.
+
+Ekman, P. Facial Expressions. The Handbook of
+Cognition and Emotion. John Wiley & Sons, Sussex,
+Reino Unido, 1999.
+
+16. Pantic, M. and Rothkrantz, L.J.M. Facial action
+recognition for facial expression analysis from static
+face images. IEEE Transactions on Systems, Man and
+Cybernetics, 34, 3, (2004) 1449-1461.
+
+4.
+
+5.
+
+17. Picard, R.W. Affective
+Cambridge, EUA, 1997.
+
+Ekman, P. Darwin, deception, and facial expression.
+Annals New York Academy of sciences, 1000 (2003),
+205-221.
+
+Ekman, P., Friesen, W.V. and Hager, J.C. Facial Action
+Coding System: Investigator’s guide. Research Nexus
+division of Network Information Research Corporation,
+Salt Lake City, Estados Unidos, 2002.
+
+7.
+
+Fasel, B. and Luettin, J. Automatic facial expression
+analysis: a survey. Pattern Recognition 36, (2003), 259275.
+
+8.
+
+Friesen, W.V. and Ekman, P. EMFACS-7: Emotional
+Facial Action Coding System.
+http://www.face-andemotion.com/dataface/facs/emfacs.jsp
+
+9.
+
+INTEL. OpenCV: Open source Computer Vision
+Library. 2007.
+http://www.intel.com/technology/computing/opencv/ind
+ex.htm.
+
+Press,
+
+19. Scherer, K. Skin colour detection under changing
+lighting conditions. The neuropsychology of emotion
+(2000), 137-162.
+20. Sebe, N. et al. Multimodal approaches for emotion
+recognition. Proc. SPIE 2005, The International Society
+for Optical Engineering (2005), 56-67.
+21. Viola, P.A. and Jones, M.J. Rapid Object Detection
+using a Boosted Cascade of Simple Features. CVPR
+2001, IEEE Computer Society (1) (2001), 511-518.
+
+10. Jaques, P.A. and Viccari, R.M. Estado da Arte em
+Ambientes Inteligentes de Aprendizagem que
+Consideram a Afetividade do Aluno. Revista
+
+165
+
+View publication stats
+
+MIT
+
+18. RuleQuestResearch Data mining tools See5 and C5.0.
+2001.
+http://www.rulequest.com/see5-info.html.
+
+Ekman, P., Friesen, W.V. and Hager, J.C. Facial Action
+Coding System: The manual. Research Nexus division
+of Network Information Research Corporation, Salt
+Lake City, Estados Unidos, 2002.
+
+6.
+
+Computing.

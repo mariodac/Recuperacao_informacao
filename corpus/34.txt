@@ -1,0 +1,879 @@
+183
+ARS
+ano 17
+n. 35
+
+Artigo inédito
+
+Sergio José Venancio Júnior*
+Arte e inteligências artificiais: implicações para a
+criatividade.
+Art and Artificial Intelligences: implications for creativity.
+
+Sergio José Venancio Júnior
+0000-0003-4635-0033
+
+palavras-chave:
+arte; inteligência artificial;
+autonomia; criatividade
+
+O artigo propõe uma reflexão sobre as obras de arte dotadas de inteligência artificial,
+tangendo questões como autonomia e criatividade. Primeiro são oferecidas algumas
+obras como exemplos, e discute-se o problema da autonomia criativa sob a
+qual estas iniciativas são comumente interpretadas. Referências dos algoritmos
+evolutivos e da Cibernética culminam em um modelo particular de análise de
+obras em termos de sintaxe, semântica e pragmática. Tal modelo oferece possível
+segmentação dos espectros da criatividade humana, enquanto esclarece alguns
+desafios para o desenvolvimento de máquinas criativas. Finalmente, apresenta-se
+uma proposta artística que utiliza recursos de inteligência artificial para gerar
+desenhos, trazendo uma situação em que a máquina influencia, interfere e redefine
+um processo criativo que dilui intencionalidades do artista.
+
+keywords:
+art; artificial intelligence;
+autonomy; creativity
+
+This article proposes a reflection on the analysis of artworks endowed with
+artificial intelligence, raising questions such as autonomy and creativity.
+First, some contemporary artworks are offered as examples while the problem
+of creative autonomy in which these artworks are commonly interpreted is
+discussed. References to evolutive algorithms and Cybernetics culminate
+in a particular model for artwork analysis in terms of syntax, semantics
+and pragmatics. Such model offers a possible segmentation of the spectra
+of human creativity, while clarifying some of the current challenges for the
+development of creative machines. Finally, an artistic proposal is shown,
+which uses artificial intelligence to make drawings, in a situation in which the
+machine influences, interferes and redefines a creative process that dilutes
+the artist’s intentionality.
+
+*Universidade de
+São Paulo [USP], Brasil.
+DOI: 10.11606/issn.2178-0447.
+ars.2019.152262
+
+Introdução
+
+184
+Sergio José Venancio
+Júnior
+
+Em janeiro de 2018 foi concluída a exposição “Arte e estética de
+inteligência artificial” no Instituto Okinawa de Ciência e Tecnologia,
+em Okinawa, Japão. Tal exposição foi marcada pela seguinte pergunta:
+poderia uma inteligência artificial realmente produzir arte1? Para responder a esta questão, os curadores da exposição a dividiram em quatro categorias: (1) Arte Humana/Estética Humana; (2) Arte Humana/
+Estética de Máquina; (3) Arte de Máquina/Estética Humana; e (4) Arte
+de Máquina/Estética de Máquina.
+Na primeira categoria a exposição trouxe obras de arte convencionais desde o Renascimento até o Modernismo, buscando mostrar
+a transformação histórica da estética, que se afastou de questões religiosas e se aproximou da diversidade subjetiva humana. Na segunda
+categoria encontravam-se obras de arte cuja produção se deu a partir de
+regras bem definidas ou fórmulas, como muitas obras do Minimalismo –
+a lógica de máquinas e de produção serial alteraram o senso estético
+humano. A terceira categoria envolveu trabalhos gerados por sistemas
+de inteligência artificial, como a série Deep Rembrandt, constituída
+por imagens de pinturas de Rembrandt reinterpretadas por algoritmos
+de deep dream da empresa Google2. O resultado imagético deste caso
+indica claramente que se trata de reproduções de pinturas icônicas do
+artista holandês, porém constituídas de figurações translúcidas de animais diversos, como peixes, répteis e aves.
+Podemos entender desta terceira categoria que os algoritmos
+utilizados foram programados conforme objetivos e julgamentos
+humanos, e isto indica que a inteligência artificial esteve a serviço de
+uma intenção humana. Isto nos leva ao possível pensamento de que
+a quarta categoria, finalmente, teria obras geradas a partir de intencionalidades da própria inteligência artificial. No entanto, a quarta
+categoria não possuía obras, exceto por algumas pequenas pinturas
+feitas por chimpanzés.
+O esvaziamento da quarta categoria nos indica que nenhuma
+inteligência artificial ainda foi capaz de gerar arte com intenção e
+estética próprias, e existem dúvidas se algum dia conseguirá fazê-lo. No entanto, o fato de haver pinturas de chimpanzés no local –
+todas abstratas e caóticas para a compreensão humana – serviu para
+demonstrar como seria a nossa relação com a produção de uma inteligência artificial fazendo arte por motivações próprias. Foi comprovado que chimpanzés conseguem pintar por puro e despretensioso
+prazer3, e não por algum outro objetivo primário, como sobrevivência
+
+Arte e inteligências artificiais:
+implicações para a criatividade
+1. NAKAZAWA, Hideki. Waiting
+for the Robot Rembrandt.
+Nautilus, New York,
+n. 57, 2018. Disponível em:
+http://nautil.us/issue/57/
+communities/waiting-for-therobot-rembrandt. Acesso em:
+3 jul. 2018.
+
+2. Cf. GOOGLE. Deep
+dream generator. 2017.
+Disponível em: https://
+deepdreamgenerator.com/.
+Acesso em: 15 nov. 2018.
+
+3. NAKAZAWA, Hideki. Op. cit.
+
+185
+ARS
+ano 17
+
+ou reprodução. De forma análoga se comportariam as inteligências
+artificiais com vontade própria.
+
+n. 35
+
+Para a inteligência artificial chegar ao ponto em que estão os chimpanzés, são
+necessários dois passos. Primeiro, a inteligência artificial deve ser capaz de gerar seus próprios objetivos. (…) O segundo passo necessário é que a inteligência artificial seja capaz de elevar as metas secundárias – as que existem apenas
+4. NAKAZAWA, Hideki. Op. cit.,
+tradução minha.
+
+para servir à sua meta principal – à condição de metas primárias.4
+
+Isto significa que, para realmente fazer arte, a inteligência artificial precisaria ter autonomia suficiente para estabelecer seus próprios
+critérios estéticos, sem qualquer interferência de um humano, e fazê-lo
+sem que isto esteja subjugado a outros propósitos. A máquina deveria
+fazer “arte pela arte” e tal questão está em aberto, pois abstrair para a
+forma de algoritmos os processos de formação de elementos tão subjetivos, como um julgamento estético, não é tarefa simples. E sabemos que
+um artista adquire tal senso ao longo de sua formação de vida, aprendendo, experimentando, adquirindo habilidades corporais e mentais,
+evoluindo seus critérios e sua poética. Portanto, será que um dia as inteligências artificiais conseguirão ter autonomia criativa equiparável à de
+um artista humano? Em busca desta resposta, muitos artistas, também
+interessados em entender como seria a arte produzida por inteligências
+artificiais, investigam e experimentam com tais entidades, chegando a
+resultados bastante provocantes e enriquecedores para a discussão.
+
+Simulações, aprendizados e evoluções
+
+5. Cf. COHEN, Harold. Aaron’s
+home. 2005. Disponível em:
+http://www.aaronshome.com.
+Acesso em: 15 nov. 2018.
+
+Uma abordagem que artistas encontraram para fazer as inteligências artificiais gerarem obras inéditas e de alto valor estético reside
+na simulação computacional de processos comportamentais de artistas
+humanos. Um dos artistas pioneiros nesta abordagem foi Harold Cohen
+(1928-2016), criador de Aaron, uma máquina que foi programada ao
+longo de quatro décadas5. Aaron simulou comportamentos de composição, gestual de desenho e pintura, e análise constante de imagens
+enquanto as produzia. Tais comportamentos permitiram à máquina
+adquirir independência para desenhar formas figurativas e pintá-las. E
+embora Aaron gerasse imagens únicas e imprevisíveis, Cohen nunca
+afirmou que sua obra foi criativa em seus próprios termos, mas apenas
+dentro das regras que o artista delimitava, indicando que as questões
+interessantes à arte não estavam nos desenhos produzidos, mas sim nos
+processos de criar uma máquina geradora de trabalhos artísticos. Ao
+
+186
+
+final de sua vida, Cohen pintava os desenhos que Aaron gerava, em uma
+espécie de sociedade artística entre homem e máquina.
+Por outro lado, o artista britânico Simon Colton cria inteligências artificiais que buscam produzir obras com conteúdo convincente o
+suficiente para que o público credite a máquina como criativa. Sua obra
+The painting fool6, diferente de Aaron, é programada por diferentes pessoas, e o julgamento do público serve de retorno para se especializar o
+software, enquanto se busca uma estética culturalmente variada e finalmente única em suas produções. Colton confere a seu sistema habilidades de observação através de câmera, análise de imagens por visão computacional e renderizações que se distanciam de imagens fotográficas
+enquanto se aproximam de resultados de processos manuais. Em um
+de seus experimentos, o artista e sua equipe treinaram uma inteligência
+artificial para reconhecer sentimentos no rosto de pessoas retratadas, e
+refletir isto no estilo do desenho, simulando uma observação sensibilizada. Colton espera que um dia o público possa levar a sério a criatividade de sua máquina, como a de um artista qualquer.
+Fazer uma inteligência artificial aprender ao longo do tempo se
+torna um processo fundamental nesta busca por máquinas que consigam criar de forma autônoma. Técnicas de aprendizado de máquina,
+como as redes neurais e o deep learning, têm produzido inteligências
+capazes de absorver o estilo e características de determinadas imagens
+e reinterpretá-las ou construir outras aplicando o que foi aprendido.
+O projeto The Next Rembrandt, desenvolvido pela empresa ING em
+parceria com a Microsoft, envolveu a absorção do estilo e de características de retratos feitos pelo famoso pintor, através de análise formal de
+imagens e texturas, e treinamento de redes neurais parametrizado por
+extração de características e proporções faciais, além de paleta de cores,
+pinceladas e técnicas de luz e sombra típicas do artista7. O resultado
+foi a geração de um novo retrato feito por tecnologias digitais, bastante
+similar a outras obras originais do pintor.
+O tipo de aprendizagem aqui realizado pelas redes neurais é
+direcionado: humanos oferecem diretrizes sobre o que a máquina
+deve aprender como estilo, e como ela deve aplicar o estilo adquirido.
+Trata-se de um dos mais avançados exemplos de inteligência artificial a
+serviço de uma estética humana, como apontou Nakazawa na terceira
+categoria da exposição de Okinawa.
+Ainda assim, muitos artistas acreditam que é possível fazer inteligências artificiais criarem obras de forma autônoma e com valor estético próprio, sem intervenção humana. O caminho para tais máquinas
+neste caso não está apenas na imitação de processos comportamentais
+
+Sergio José Venancio
+Júnior
+Arte e inteligências artificiais:
+implicações para a criatividade
+
+6. Cf. COLTON, Simon.
+The painting fool. 2018.
+Disponível em: http://www.
+thepaintingfool.com/. Acesso
+em: 15 nov. 2018.
+
+7. Cf. ING; MICROSOFT. The
+Next Rembrandt. 2016.
+Disponível em: https://www.
+nextrembrandt.com/. Acesso
+em: 15 nov. 2018.
+
+187
+ARS
+ano 17
+n. 35
+
+8. Cf. LAURENTIZ, Silvia.
+Processos computacionais
+evolutivos na arte. Ars,
+São Paulo, v. 1, n. 2,
+p. 45-55, 2003.
+
+9. Cf. GALANTER, Philip.
+Computational aesthetic
+evaluation: past and future,
+apud MCCORMACK, Jon;
+D’INVERNO, Mark. Computers
+and creativity. Berlim:
+Springer, 2012. p. 255-293.
+
+de artistas ou aprendizados supervisionados por humanos, mas principalmente na abordagem dos sistemas evolutivos, simulando processos de
+geração de indivíduos por mutação e recombinação, bem como de seleção destes indivíduos, através de função de fitness. Esta função descarta
+indivíduos que não estão aptos a evoluir, enquanto permite aos sobreviventes se modificarem e recombinarem para as próximas gerações. A cada
+geração, os indivíduos melhoram dentro do critério de fitness, e com o
+tempo, a tendência é que evoluam para indivíduos otimizados8.
+Em um contexto de geração sistêmica de obras de arte, um algoritmo evolutivo considera uma obra que passa por mutação/recombinação de seus constituintes e por processos de seleção das melhores
+características ao longo do tempo. Uma boa obra seria aquela cujos
+constituintes “sobreviveram” aos processos seletivos enquanto acumulou as melhores características. Não é difícil perceber que a chave desta
+abordagem está no próprio critério de fitness e que, neste contexto, tal
+critério é estético. Se o critério de fitness é estipulado por humanos,
+mesmo com toda a automação na geração de obras, não há como dizer
+que existe autonomia criativa para a máquina. Resta o caso em que a
+função de fitness seria gerada computacionalmente e de forma independente. E uma possível abordagem para que estas funções surjam
+espontaneamente é relacionada à interação concorrente ou colaborativa
+entre duas ou mais inteligências artificiais, inseridas em um ambiente
+propenso a variações9. Em outras palavras, um ecossistema de agentes
+inteligentes que interagem entre si e que se automodificam por razões
+de sobrevivência ou otimização poderia proporcionar a emergência de
+critérios de seleção imprevisíveis e, consequentemente, obras imprevisíveis e com estética própria. Veremos a seguir o que está em jogo na
+análise de autonomia criativa destes agentes.
+
+Cibernética, automação e autonomia
+
+10. Cf. LAURENTIZ, Silvia.
+Sistemas autônomos,
+processos de interação e
+ações criativas. Ars,
+São Paulo, v. 9, n. 17,
+p. 101-115, 2011.
+
+A Cibernética, definida originalmente como ciência da comunicação e do controle e hoje ampliada para um campo de estudo interdisciplinar dos sistemas complexos e adaptativos, traz a esta discussão os
+conceitos de cibernética de primeira e de segunda ordem. A de primeira
+ordem se refere aos sistemas autorreguladores, que possuem um objetivo ou meta e que agem de modo a buscar e manter este objetivo10. Estes
+sistemas são capazes de perceber perturbações nos ambientes em que
+estão inseridos, enquanto medem constantemente seu desempenho. Se
+alguma perturbação fizer o sistema se desviar de seu objetivo, ele responderá a estas perturbações e analisará novamente seu desempenho.
+
+188
+
+O sistema então se retroalimenta das consequências de suas próprias
+ações, enquanto verifica se seu desempenho está de acordo com sua
+meta, e assim repete o ciclo de percepção-ação até atingir o objetivo e
+manter estabilidade (Fig. 1). Tais sistemas apenas “sobrevivem”, pois
+não há mudanças de objetivo, e sua organização não se modifica, ela
+apenas reage a diferentes perturbações enquanto busca manter tudo
+sob controle. Hugh Dubberly classifica estes sistemas como “reativos”11,
+pois reagem de forma automática, porém previsível. São autômatos.
+Já a cibernética de segunda ordem envolve sobreposição de sistemas de primeira ordem: um sistema autorregulador que disponha
+de um ou mais sistemas autorreguladores e que seja capaz de alterar
+os objetivos/metas de cada um deles conforme sua própria percepção
+do ambiente e seu próprio objetivo/meta (Fig. 1). Dubberly chama de
+“aprendizado” esta relação de observar o ambiente e ajustar os objetivos
+de primeira ordem conforme um objetivo superior, de segunda ordem.
+Os sistemas de segunda ordem buscam manter seu objetivo superior
+enquanto testam diferentes objetivos para seus sistemas de primeira
+ordem. O aprendizado ocorre a partir destes testes, quando o sistema
+pode inferir quais objetivos de primeira ordem são mais ou menos favoráveis ao alcance do objetivo superior, e assim guardar memória destas
+decisões para o futuro. Estes sistemas são considerados autônomos,
+pois são capazes de ajustar seus objetivos à necessidade própria. Só é
+autônomo o sistema capaz de criar condições de autorregulação interna
+para atingir seu objetivo superior, de forma autorreferente12.
+
+No contexto de inteligências artificiais em propostas artísticas, esta autonomia de um sistema cibernético de segunda ordem
+por si só ainda não corresponde à autonomia criativa citada anteriormente por Nakazawa, que permitiria à máquina modificar seu
+
+Sergio José Venancio
+Júnior
+Arte e inteligências artificiais:
+implicações para a criatividade
+
+11. Cf. DUBBERLY, Hugh;
+PANGARO, Paul; HAQUE,
+Usman. What is interaction?
+Are there different types?
+2009. Disponível em: http://
+www.dubberly.com/articles/
+what-is-interaction.html.
+Acesso em: 11 jul. 2018.
+
+12. Cf. LAURENTIZ, 2011,
+p. 108
+
+Fig 1.
+Sistemas cibernéticos de
+primeira e segunda ordem,
+respectivamente (adaptado de
+DUBBERLY, Hugh; PANGARO,
+Paul; HAQUE, Usman. Op. cit.,
+p. 72, tradução minha).
+
+189
+ARS
+ano 17
+n. 35
+
+objetivo de segunda ordem ou promover trocas entre objetivos primários e secundários. Uma máquina de segunda ordem precisa de
+um objetivo constante para nortear o controle dinâmico sobre os
+sistemas de primeira ordem subordinados a ela. Mesmo existindo
+memória e aprendizado, estes também são regulados pelo objetivo
+maior. Qual a natureza, afinal, destes objetivos de segunda ordem
+para as máquinas? Uma importante constatação é que objetivos de
+primeira ordem, reativos, podem visar simplesmente a estabilidade,
+o cumprimento estrito de uma meta, a sobrevivência. Já objetivos
+de segunda ordem possivelmente incorporam melhorias de situação,
+de performance ou controle, ou mesmo de reprodução de espécie.
+Ambos costumam ser claramente parametrizáveis quando aplicados
+em contextos de inteligências artificiais e sistemas evolutivos. No
+entanto, um objetivo como “arte pela arte” pode indicar uma busca
+de lazer/prazer despretensiosa, que não se caracterizaria como estabilidade ou melhoria. Um objetivo estético, totalmente subjetivo,
+também teria dificuldades para se tornar um objetivo de segunda
+ordem. Como uma inteligência artificial poderia parametrizar estes
+tipos de (não) necessidades e operar em prol delas? Ainda, como uma
+inteligência artificial poderia chegar espontaneamente a uma necessidade desta natureza? Ao pensar nestas diferentes naturezas de
+objetivos, verifica-se que um sistema de segunda ordem possui autonomia apenas dentro de parâmetros bem definidos, que o permitem
+verificar como se tornar mais eficiente, ter mais controle, melhorar
+seus processos, dentre outras coisas. A evolução deste tipo de sistema, portanto, pode ser reduzida a um problema de otimização. E
+assim também operam os algoritmos evolutivos, nos quais a função
+de fitness geralmente é dada por parâmetros e resultantes quantificáveis, que culminam na resolução de problemas de otimização.
+Poderia a criatividade ser reduzida a um problema de otimização?
+
+Heurísticas para a criatividade
+Um ecossistema de agentes inteligentes que interagem entre si
+parece ser um dos poucos caminhos onde uma inteligência artificial
+poderia gerar objetivos ou critérios de fitness espontaneamente, pois seu
+aprendizado e adaptação ocorreriam através de interações com outras
+inteligências artificiais providas de objetivos muitas vezes distintos.
+Obviamente, o elemento humano estaria presente nas definições iniciais de tal ecossistema, porém a tendência é que cada agente aprenda e
+mude seus objetivos internos sem nenhuma intervenção humana, o que
+
+190
+
+potencializa as chances de surgirem comportamentos e padrões imprevisíveis e surpreendentes.
+Para Peter Cariani, o conceito de “emergência” é útil para observar a criatividade. “Emergência é a aparição de novas entidades que
+de nenhuma maneira poderiam ser previstas pelo que veio antes”13.
+Trata-se do surgimento de algo “fundamentalmente novo”, em dimensões micro e macro, que faça sentido no âmbito da forma, das estruturas materiais, das organizações, funções, perspectivas e modos de ser.
+Especificamente quando fala sobre o surgimento de novas perspectivas
+e formas de ver o mundo, Cariani chama este fenômeno de “emergência
+epistêmica”, e afirma que sua ocorrência decorre do desenvolvimento
+de novos sensores, naturais ou tecnológicos. O homem desenvolve e
+amplifica seus sentidos quando, por exemplo, cria próteses sensoriais
+como termômetros, telescópios e smartphones.
+Cariani ainda define como “autonomia epistêmica” a capacidade
+de uma entidade selecionar seus próprios sensores, sendo um sensor
+não apenas um mecanismo físico, mas também um ponto de vista, um
+conceito ou mesmo paradigma. Mais do que isso: para aumentar sua
+autonomia, a entidade pode exercer emergência epistêmica, desenvolvendo novos sensores, novas formas de percepção e análise, e assim
+expandir as dimensões de seu espaço de possibilidades. Cariani então
+sugere que “conceitos de emergência têm alguma utilidade como heurísticas para a criatividade”14 e que processos emergentes podem ser utilizados para amplificar a criatividade humana.
+O autor explica que sistemas complexos são constituídos por um
+conjunto de partes, e também de regras que combinam tais partes em
+novas formas. Tais partes, quando atômicas/indivisíveis, são chamadas
+de “primitivas”, pois não são constituídas por combinação de nenhuma
+outra parte do sistema. Dadas as primitivas e suas regras de combinação, é possível delimitar as dimensões de possibilidades de um sistema
+complexo. Diante desta definição, Cariani propõe que os processos de
+criação podem ocorrer por simples recombinação de primitivas, o que
+o autor chama de “emergência combinatória”, ou pela criação de novas
+primitivas para novas possibilidades de combinação, configurando uma
+“emergência criativa”.
+A emergência combinatória constitui uma estratégia criativa e
+dinâmica à medida que constantemente gera novas combinações de elementos. Entretanto, seu uso de um conjunto fixo de primitivas significa
+que o conjunto de possibilidades é fechado, ainda que muito amplo.
+Ao observar os algoritmos evolutivos, Cariani vê um nítido processo de
+emergência combinatória, dado o caráter de recombinação de pais para
+
+Sergio José Venancio
+Júnior
+Arte e inteligências artificiais:
+implicações para a criatividade
+13. CARIANI, Peter.
+Emergence and creativity.
+2008. Disponível em:
+http://www.cariani.com/
+CarianiNewWebsite/
+Publications_files/
+CarianiItauCultural2008Emergence.pdf. Acesso em: 10
+jul. 2018. p. 1, tradução minha.
+
+14. Ibidem, p. 4,
+tradução minha, grifo do autor.
+
+191
+ARS
+ano 17
+n. 35
+
+15. Ibidem, p. 6,
+tradução minha.
+
+16. Cf. Ibidem, p. 8.
+
+gerar filhos, e um processo de seleção que classifica os indivíduos para
+que continuem ou não nas próximas gerações. Neste processo evolutivo, as etapas de geração e seleção são classificadas por Cariani como
+fases de “expansão” e “contração”, respectivamente. “A etapa de expansão é o reino da imaginação, de criação livre e aberta, enquanto a fase
+de contração é o reino da clareza sóbria e do rigor”15. Importa notar que,
+quando a seleção é desempenhada por humanos capazes de julgar ou
+programar a função de fitness conforme critérios subjetivos, a evolução
+ao longo das gerações tende a produzir indivíduos alinhados a interesses
+e objetivos humanos.
+Por sua vez, a emergência criativa implica criação de novas primitivas, que, no caso de inteligências artificiais, podem ser representadas pelos sensores. Cariani traz um exemplo de sistema desta vertente
+na instalação eletroquímica do ciberneticista Gordon Pask16, originalmente um mecanismo que formava pontes de limalha de ferro em meio
+aquoso para condutividade entre diversos eletrodos. As pontes que se
+mostravam mais sensíveis eram recompensadas, de forma que o sistema
+aprendeu a formar pontes cada vez mais sensíveis. Inesperadamente, o
+dispositivo adquiriu a capacidade de distinguir vibrações sonoras que
+perturbavam a condutividade das pontes em dois níveis de frequência,
+aos quais o sistema reagia de forma distinta. Pask afirmava que o dispositivo, ainda que de forma rudimentar, desenvolveu um “ouvido” para
+frequências sonoras; para Cariani isto representou a adição de uma
+nova primitiva ao sistema, e consequentemente a expansão do espaço
+de possibilidades. No entanto, o desenvolvimento deste novo “sensor”
+é ainda combinação de outras primitivas eletroquímicas do sistema.
+Mesmo após algum tempo de aprendizado e de reações cada vez mais
+rápidas a estímulos sonoros, o sistema ainda percebe tais perturbações
+pelos mesmos meios exclusivamente eletroquímicos. Como o autor
+explica, o novo sensor não necessariamente é um dispositivo físico, mas
+pode ser um novo conceito, outra forma de ver um problema, e isto
+se configura como emergência epistêmica. Este novo sensor assume
+um protagonismo que permitiria ao sistema um pequeno grau de emergência criativa, uma mudança nas formas que a instalação dispõe para
+perceber o ambiente.
+Cariani então propõe um modelo de classificação dos sistemas
+cibernéticos de acordo com categorias semióticas – sintática, semântica
+e pragmática – e analisa as manifestações de emergência combinatória
+e criativa nestas três dimensões. Sintaxe descreve as relações definidas
+por regras entre as primitivas de um sistema. Semântica envolve a relação das primitivas com o ambiente, considerando as causalidades de
+
+192
+
+sensores e atuadores dos sistemas. Pragmática envolve os propósitos do
+sistema, em que cada objetivo pode ser considerado uma primitiva. A
+Tabela 1 representa tal modelo:
+
+Sergio José Venancio
+Júnior
+Arte e inteligências artificiais:
+implicações para a criatividade
+
+Tabela 1. E
+ mergência combinatória e criativa
+em dispositivos cibernéticos17
+Dimensão
+
+Primitivas
+
+Sistemas
+estáveis
+(estrutura fixa)
+
+Sistemas
+combinatórios
+
+Sistemas
+criativos
+
+(buscam/
+otimizam
+possibilidades
+existentes)
+
+(adicionam
+possibilidades,
+evoluem)
+
+Modificam
+computações
+(máquinas
+treináveis)
+
+Novos estados e
+regras
+
+Sintática
+
+Estados,
+computações
+
+Autômatos
+finitos
+determinísticos
+(fixos)
+
+Semântica
+
+Métricas,
+ações
+
+Sensores e
+atuadores fixos
+
+Pragmática
+
+Objetivos
+
+Objetivos fixos
+
+Buscam
+Novas métricas
+combinações
+e ações
+de sensores
+(autonomia
+e atuadores
+epistêmica)
+existentes
+Buscam
+Novos objetivos
+combinações de (autodirecionaobjetivos
+mento criativo)
+
+O modelo classificatório de Cariani se mostra interessante por
+estabelecer aspectos complementares para entendimento da criatividade. Em contextos de inteligências artificiais, o modelo revela diferentes níveis de autonomia, e possui um importante quesito de análise para
+o universo de percepção e atuação destas inteligências, que pode ser
+fechado, nos casos estável e combinatório, ou de “final aberto” no caso
+criativo. A máquina de Pask, por exemplo, poderia ser considerada criativa no nível semântico, mas não no sintático ou pragmático, pois ela
+não altera as regras naturais da Eletroquímica, tampouco exerce autodirecionamento criativo – não modifica seu objetivo superior de melhorar as condutividades entre os eletrodos do sistema. É curioso pensar
+que uma máquina modifica suas relações semânticas com o ambiente
+a ponto de priorizar a interpretação das perturbações sonoras, criando
+uma espécie de ouvido. No entanto, a significação de que tal esquema
+se configura como um ouvido é elaborada por um humano; é ele quem
+define esta mudança, no papel de observador. Em termos cibernéticos,
+os sistemas estáveis seriam de primeira ordem, os combinatórios seriam
+de segunda ordem, e os criativos podem ser interpretados como sistemas de segunda ordem capazes de adquirir novos sensos e modificar seu
+próprio objetivo superior conforme estas novas percepções de mundo.
+
+17. Ibidem, p. 11, tradução
+minha.
+
+193
+ARS
+ano 17
+n. 35
+
+A visão de Cariani inclui diferentes formas de observar e considerar a criatividade no contexto das inteligências artificiais, mas o autor
+nos alerta que, na prática, os resultados de uma máquina criativa dificilmente dirão se o que foi produzido decorreu de emergência combinatória ou criativa ou se terá valor artístico suficiente para ser notável. Ao
+analisar inteligências artificiais que geram obras de arte, o observador
+humano precisa investigar o processo de formação destas inteligências,
+e identificar mudanças sintáticas, semânticas ou pragmáticas ocorridas de forma espontânea, bem como emergências combinatórias ou
+criativas. Se uma inteligência artificial for capaz de alterar suas regras,
+modos de percepção e objetivos ao longo do tempo, e se tais alterações
+não servirem a nenhum propósito maior, finalmente teremos uma condição semelhante à autonomia criativa humana.
+
+Intervenções maquínicas em processos criativos
+Sob o entendimento de que possíveis manifestações de criatividade nas máquinas não garantem valor artístico em suas produções, é
+preciso olhar para as diferentes maneiras com que artistas interpretam
+e direcionam o desenvolvimento destas tecnologias. Apresentamos um
+projeto de pesquisa que propõe o desenvolvimento de uma inteligência
+artificial inserida em um processo artístico de produção de desenhos. O
+projeto Extentio (nome provisório) traz atualmente um software que captura imagens através de uma câmera digital e que, por meio de técnicas
+de visão computacional, extrai destas imagens informações úteis para a
+geração automática de retratos desenhados. Entendemos que o desenho
+é fundamento das Artes Visuais, configurando-se como pensamento antes
+de ser manifestação expressiva ou registro, sem se limitar a instrumentos
+e meios clássicos como lápis e papel. Consideramos o uso dos fundamentos da computação e suas capacidades de cálculo, repetição e decisão em
+alta velocidade de processamento, além de recursos de armazenamento e
+recuperação de dados, como potenciais e inovadores meios de desenho. A
+pesquisa procura novas possibilidades e entendimentos das dimensões do
+desenho e das relações entre homem e máquina.
+O algoritmo desenvolvido neste projeto se baseia na simulação
+de um processo de desenho de rostos humanos por observação, e atualmente consiste em:
+• detectar faces em imagens-fonte capturadas pela câmera;
+• escolher e enquadrar uma destas faces;
+• extrair paleta de cores por análise de histograma;
+
+194
+
+• cada cor determina uma “caneta” que traçará com linhas retas
+curtas sobre uma tela em branco;
+• o destino de cada linha se limita à proximidade cromática
+entre os pixels da imagem-fonte, respeitando a regra de não
+sobrepor os vértices que conectam linhas;
+• reanalisar frequentemente a imagem sendo criada, em busca
+de uma nova detecção facial;
+• parar uma “caneta” caso esta não encontre pixels cromaticamente próximos;
+• parar todas as “canetas” quando detectada uma nova face ou
+caso esgote um tempo predeterminado;
+• salvar o desenho em arquivo vetorial;
+• reiniciar a detecção de faces para fazer novos retratos.
+
+Sergio José Venancio
+Júnior
+Arte e inteligências artificiais:
+implicações para a criatividade
+
+Alguns resultados podem ser observados nas Figuras 2, 3 e 4.
+
+Fig 2.
+Retrato 628_952_d14, 2018.
+Imagem digital, dimensões
+não definidas
+
+195
+ARS
+ano 17
+n. 35
+
+Fig 3.
+Retrato 621_146_d78, 2018.
+Imagem digital, dimensões
+não definidas
+
+Fig 4.
+Retrato 1112_2249_d2, 2018.
+Imagem digital, dimensões
+não definidas
+
+196
+
+Cada imagem produzida é única, uma vez que as “canetas”
+tracejam aleatoriamente enquanto concorrem entre si pelo posicionamento irrepetível de vértices sobre a tela em branco. O software
+possui critério de parada imprevisível, uma vez que a formação de
+cada retrato não segue um procedimento ordenado, tornando também imprevisível a redetecção facial sobre a imagem em construção,
+e consequentemente a determinação do fim de um desenho. Todos
+estes recursos potencializam emergências combinatórias de sensores
+(câmera, detecção facial) e atuadores (canetas), que resultam em imagens imprevisíveis e surpreendentes, inclusive para o próprio artista
+dentro de seu processo criativo. Em termos cibernéticos, os objetivos
+deste sistema estão diluídos a partir do momento em que não há metas
+rígidas, o que faz com que cada ação e reação do sistema não busque
+nenhuma estabilidade.
+O projeto Extentio não visa a autonomia criativa da máquina,
+embora permita atuações cada vez maiores das inteligências artificiais
+dentro do processo criativo. O interesse da pesquisa está em perceber
+como tais inteligências podem influenciar, interferir e redefinir uma
+produção artística, sem intenções de substituir a figura do artista, mas
+sim estendendo suas capacidades e amplificando seus processos. O trabalho de pensar e fazer desenhos através de código segue um ciclo de
+experimentações conforme o diagrama da Figura 5.
+
+Sergio José Venancio
+Júnior
+Arte e inteligências artificiais:
+implicações para a criatividade
+
+IDEIA
+
+abstração
+
+REGRA
+
+modificação de regras
+
+experimentação
+formalização lógica
+ARTISTA
+
+CÓDIGO
+modificação do código
+Interpretação da
+máquina e execução
+avaligação/julgamento
+IMAGEM/SIMULAÇÃO
+
+OBRA
+FINAL
+
+Fig 5.
+Diagrama representativo do
+processo criativo no projeto
+Extentio, 2018
+
+197
+ARS
+ano 17
+n. 35
+
+É interesse do projeto buscar novas maneiras pelas quais uma
+inteligência artificial possa interferir neste ciclo. Hoje, algumas inserções do software em processos de avaliação/julgamento já podem ser
+observadas à medida que o algoritmo avalia constantemente os desenhos sendo feitos para determinar quando parar. Existem atualmente
+quatro objetivos de desenvolvimento do algoritmo Extentio:
+• Observar: trata-se de extrair informações úteis para um desenho de observação, como cores e contrastes, objetos, figurações, faces, corpos. Há bons desenvolvimentos nas áreas de
+Visão Computacional e Aprendizado de Máquina que poderão
+ser incorporados a este algoritmo.
+• Desenhar: envolve experimentações em código com as informações úteis extraídas anteriormente, convertendo-as em
+novas visualidades, trabalhando linhas, planos, volumes, luz
+e sombra, além do “gestual” de desenhos.
+• Avaliar: manter constante observação sobre o desenho que vai
+sendo feito, considerando aspectos de composição como densidades, equilíbrio de cores, posicionamentos e formação de
+figuras/objetos, portanto as técnicas de Visão Computacional
+também são úteis aqui. Tais considerações poderão redirecionar os objetivos de observar e desenhar. Hoje, o algoritmo faz
+uso de detecção facial como critério de parada de um desenho.
+• Evoluir: trata da mudança das formas de desenhar ao longo
+do tempo, e se baseia no aprendizado. Após cada desenho, o
+sistema deverá receber algum julgamento (externo, de humanos, ou interno, com critérios próprios) que o fará considerar
+mudar ou manter suas decisões para um próximo desenho.
+Espera-se que o sistema modifique seu estilo e objetivos de
+desenho com supervisão do artista, sem perder sua característica de imprevisibilidade.
+Estas quatro vertentes de desenvolvimento refletem a absorção
+dos estudos sobre criatividade em inteligências artificiais. Embora não
+se busque a máquina autônoma e criativa, os parâmetros de sintaxe,
+semântica e pragmática propostos por Cariani direcionam os desenvolvimentos propostos e balizam análises sobre como a inteligência artificial pode interferir no processo criativo.
+Dentro do objetivo de evoluir, um dos principais desenvolvimentos a implementar futuramente neste projeto envolve o aprendizado de
+máquina, que permitiria ao sistema considerar cada desenho como um
+
+198
+
+experimento parametrizado e absorver dados de cada produção para futuras comparações e tomadas de decisão. Neste cenário, é possível imaginar
+o sistema modificando ou mesmo estabelecendo novas regras de desenho
+para assumir papéis ainda maiores neste ciclo. Processos de aprendizado
+de máquina costumam envolver a supervisão humana, cuja função é
+avaliar os experimentos e direcionar as futuras interpretações de dados
+pelo sistema. O papel do artista neste contexto é treinar a inteligência
+artificial conforme seus interesses, regulando o quanto de si mesmo ele
+pode conferir ao sistema, ou o quanto pode deixar de delegar, permitindo
+que surjam emergências combinatórias ou criativas. Trata-se de uma
+relação homem-máquina que busca novos processos criativos.
+
+Sergio José Venancio
+Júnior
+Arte e inteligências artificiais:
+implicações para a criatividade
+
+Conclusões
+A provocação proposta pela quarta categoria da exposição “Arte e
+estética de inteligência artificial” no Japão nos aponta uma provável resposta para a questão: podem as inteligências artificiais ser criativas e produzir arte? Sendo otimistas, diríamos que estamos longe desta realidade.
+Vimos que, para ser considerada verdadeiramente criativa, uma
+inteligência artificial deveria ser capaz de gerar espontaneamente seus
+objetivos e trocá-los conforme a necessidade. A Cibernética nos diz, através dos conceitos de cibernética de primeira e segunda ordem, que os
+objetivos de uma máquina podem ser hierárquicos e ter focos distintos,
+como sobrevivência e melhorias. Ela define uma importante distinção para
+entendermos as inteligências artificiais: automação e autonomia.
+(…) é preciso notar que, quando nos deparamos com termos como “edifícios
+inteligentes”, “agentes inteligentes”, “máquinas inteligentes”, “dispositivos
+inteligentes”, estamos diante, na verdade, de sistemas ainda muito aquém
+de possuírem autonomia e aprendizagem nos moldes que foram colocados
+neste texto.18
+
+Mas para fazer arte é preciso outro tipo de objetivo, que pouco
+teria a ver com estabilidades ou otimizações, mas sim com necessidades
+de lazer/prazer ou autorrealização. No entanto, a parametrização deste
+tipo de objetivo é tarefa difícil. Mais do que objetivos, Cariani nos mostra que a autonomia criativa se relaciona com capacidades de adicionar ou alterar regras e estados, métricas, percepções e ações. Sintaxe,
+semântica e pragmática são elementos complementares que conferem
+uma imensa complexidade ao assunto criatividade. Se as inteligências
+artificiais não conseguem estabelecer novas primitivas em todas estas
+
+18. LAURENTIZ, Silvia, 2011,
+p. 113.
+
+199
+ARS
+ano 17
+n. 35
+
+dimensões, ao menos elas têm enorme potencial para combinar primitivas já existentes, e assim gerar resultados imprevisíveis e surpreendentes – emergências combinatórias em potencial.
+E quanto aos ecossistemas de agentes inteligentes? Ainda que
+existam interações de inteligências artificiais que consigam estabelecer novas primitivas sintáticas, semânticas ou pragmáticas, apenas o
+elemento humano observador é capaz de interpretar tais emergências
+e significá-las. Significar é processo consciente e criativo que produz e
+interpreta signos. E o problema da consciência se mostra ainda como
+um dos maiores argumentos contra uma inteligência artificial ser considerada criativa. Para Fernando Fogliano, tais sistemas:
+São inteligentes, mas não conscientes. Não podem discernir, julgar conscientemente suas decisões. Podem ser máquinas muito úteis, mas são destituídas de julgamento. Leem mas não entendem, detectam padrões, mas não
+lhe atribuem significado. Podem substituir humanos em tarefas repetitivas
+
+19. FOGLIANO, Fernando. Arte
+interativa e o inconsciente
+maquínico. DATJournal, v. 3,
+n. 1, p. 39-48, 2018. Disponível
+em: https://ppgdesign.
+anhembi.br/datjournal/index.
+php/dat/article/view/69/60.
+Acesso em: 19 jul. 2018.
+
+20. NAKAZAWA, Hideki.
+Op. cit., tradução minha.
+
+e monótonas apenas.19
+
+No entanto, todas as pesquisas que buscam autonomia criativa para as máquinas o fazem de maneira progressiva, explorando
+as tecnologias da inteligência artificial para obtenção de resultados
+imprevisíveis e surpreendentes, muitas vezes inovadores para o campo
+das artes. A autonomia destas máquinas, porém, está bastante aquém
+de alcançar o patamar criativo humano, e mesmo que o faça, será
+inicialmente de forma rudimentar. Em referência às pinturas feitas
+por chimpanzés e exibidas na quarta categoria da exposição japonesa,
+Nakazawa aposta: “A verdadeira arte criada por inteligência artificial
+será ao mesmo tempo dolorosamente entediante e altamente estimulante, e isso representará progresso”20.
+Diante destes desafios impostos à criatividade de máquinas
+inteligentes, fica evidente que a arte nunca se dissocia do elemento
+humano. O projeto Extentio não busca estabelecer uma máquina totalmente autônoma, mas diferentes formas de as inteligências artificiais
+afetarem um processo artístico. Aqui, o artista utiliza a linguagem de
+programação como linguagem expressiva, enquanto delega à máquina
+decisões constituintes de seu processo. Em contrapartida, a máquina produz imagens de forma experimental e absorve parâmetros para futuras
+tomadas de decisão que passam a se distanciar das decisões iniciais do
+artista. Invariavelmente, cabe ao artista significar as emergências, julgar os
+resultados e retrabalhar o código, em um processo interativo cíclico. Um
+dos objetivos deste projeto é delegar cada vez mais decisões à máquina,
+
+200
+
+buscando nos desenvolvimentos da área de Inteligência Artificial novos
+recursos que permitam ao artista diluir suas intenções criativas e transformar seu processo criativo em um diálogo sempre renovado com as
+potencialidades da máquina.
+
+Bibliografia
+BODEN, Margaret A. Creativity & art: three roads to surprise. Oxford:
+Oxford University Press, 2011.
+CARIANI, Peter. Emergence and creativity. 2008. Disponível
+em:
+http://www.cariani.com/CarianiNewWebsite/Publications_files/
+CarianiItauCultural2008-Emergence.pdf. Acesso em: 10 jul. 2018.
+COHEN, Harold. Aaron’s home. 2005. Disponível em: http://www.
+aaronshome.com. Acesso em: 15 nov. 2018.
+COLTON, Simon. The painting fool. 2018. Disponível em: http://
+www.thepaintingfool.com/. Acesso em: 15 nov. 2018.
+DUBBERLY, Hugh; PANGARO, Paul; HAQUE, Usman. What is
+interaction? Are there different types? 2009. Disponível em: http://www.
+dubberly.com/articles/what-is-interaction.html. Acesso em: 11 jul. 2018.
+FOGLIANO, Fernando. Arte interativa e o inconsciente maquínico.
+DATJournal, v. 3, n. 1, p. 39-48, 2018. Disponível em: https://ppgdesign.
+anhembi.br/datjournal/index.php/dat/article/view/69/60. Acesso em:
+19 jul. 2018
+GOOGLE. Deep Dream Generator. Disponível
+deepdreamgenerator.com/. Acesso em: 15 nov. 2018.
+
+em
+
+https://
+
+ING; MICROSOFT. The Next Rembrandt. 2016. Disponível em:
+https://www.nextrembrandt.com/. Acesso em: 15 nov. 2018
+LAURENTIZ, Silvia. Processos computacionais evolutivos na arte. Ars,
+São Paulo, v. 1, n. 2, p. 45-55, 2003.
+LAURENTIZ, Silvia. Sistemas autônomos, processos de interação e
+ações criativas. Ars, São Paulo, v. 9, n. 17, p. 101-115, 2011.
+
+Sergio José Venancio
+Júnior
+Arte e inteligências artificiais:
+implicações para a criatividade
+
+201
+ARS
+ano 17
+n. 35
+
+MCCORDUCK, Pamela. Aaron’s code: meta-art, artificial
+intelligence, and the work of Harold Cohen. New York: W. H. Freeman
+and Company, 1990.
+MCCORMACK, Jon; D’INVERNO, Mark. Computers and creativity.
+Berlim: Springer, 2012.
+NAKAZAWA, Hideki. Waiting for the Robot Rembrandt. Nautilus, New
+York, n. 57, 2018. Disponível em: http://nautil.us/issue/57/communities/
+waiting-for-the-robot-rembrandt. Acesso em: 3 jul. 2018.
+NÖTH, Winfried. Máquinas semióticas. Galáxia, São Paulo, n. 1,
+p. 51-73, 2001.
+
+Sergio José Venancio Júnior é mestrando no Programa de Pós-Graduação em Artes
+Visuais da Escola de Comunicações e Artes da Universidade de São Paulo [ECA/USP],
+onde desenvolve pesquisas sobre a relação entre Artes Visuais e inteligências artificiais.
+É bacharel em Artes Visuais (2005) e em Ciência da Computação (2011) pela Universidade
+Artigo recebido em 30 de
+novembro de 2018 e aceito em
+8 de janeiro de 2019.
+
+Estadual de Campinas [Unicamp]. É docente no curso de Especialização em Design
+Gráfico do Instituto de Artes da Unicamp, onde ministra disciplinas e orienta projetos
+nas áreas de Design de Interfaces e Design de Experiência do Usuário.
+
+

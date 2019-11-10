@@ -1,0 +1,1046 @@
+257
+
+Avaliação biológica de Foeniculum vulgare (Mill.) (Umbelliferae/Apiaceae)
+ARAUJO R,O.*1; SOUZA I.A.2; SENA K.X.F.R2; BRONDANI, D.J.; SOLIDÔNIO, E.G.4
+1
+Programa de Pós-Graduação em Ciencias Farmacêuticas-Universidade Federal de Pernambuco – UFPE,
+Brasil. 2Departamento de Antibióticos-Universidade Federal de Pernambuco – UFPE, Brasil. 3Departamento
+de Ciências Farmacêuticas-Universidade Federal de Pernambuco – UFPE, Brasil. 4Departamento de Energia
+Nuclear- Universidade Federal de Pernambuco-UFPE, Brasil. *rosilma23@hotmail.com
+RESUMO: Foeniculum vulgare Mill. é espécie herbácea da família Umbelliferae, nativa da
+região do Mediterrâneo e da Ásia Menor, amplamente distribuída em todo o território brasileiro.
+É conhecida popularmente como funcho ou erva-doce e usada na medicina como analgésico,
+digestivo, carminativo, diurético, expectorante, lactígeno, anti-inflamatório, e antiespasmódico.
+O extrato bruto etanólico para a verificação das atividades biológicas foi preparado a partir
+de sementes compradas no comércio. Para a realização do perfil fitoquímico foi utilizada a
+cromatografia em camada delgada analítica; a atividade antimicrobiana foi determinada pelo
+teste de difusão em disco de papel e da concentração inibitória mínima (CIM); a atividade
+antinociceptiva foi realizada pelo método de contorções abdominais em cobaias. Os microorganismos testados foram isolados clínicos multirresistentes obtidos do Setor de Bacteriologia
+do Hospital das Clínicas de Pernambuco. O estudo fitoquímico identificou a maioria dos
+compostos secundários presentes na fração metanólica das sementes, sendo eles: triterpenos,
+glicosídeos de flavanóides, terpenos menores (monoterpenóides, sesquiterpenóide e
+diterpenóides), e açúcares redutores. Os resultados obtidos mostraram que o extrato etanólico
+apresentou maior atividade frente à Micrococcus spp. (CIM=250µg/mL). Os resultados da
+avaliação da atividade antinociceptiva demonstraram que apenas a dosagem de 298 mg/
+Kg quando comparado com o padrão indometacina conseguiu uma redução significativa no
+número de contorções abdominais dos animais. Estudos posteriores deverão ser realizados
+para a identificação e isolamento de alguns compostos secundários, bem como a realização
+de outros protocolos de analgesia.
+Palavras-chave: erva-doce, atividade antimicrobiana, Foeniculum vulgare.
+ABSTRACT: Biological evaluation of Foeniculum vulgare (Mill.) (Umbelliferae/Apiaceae).
+Foeniculum vulgare Mill. (Umbelliferae) is a herbaceous plant of the family Umbelliferae, native
+to the Mediterranean and Asia Minor region and widely distributed all over the Brazilian territory.
+It is commonly known as fennel or “erva-doce” and has been used in medicine as analgesic,
+digestive, carminative, diuretic, expectorant, lactigenous, anti-inflammatory, and antispasmodic
+agent. Crude ethanolic extract for the verification of biological activities was prepared from seeds
+bought in the market. For the phytochemical profile, analytical thin-layer chromatography was
+used; the antimicrobial activity was determined by the paper disc diffusion test and minimum
+inhibitory concentration (MIC); the antinociceptive activity was verified by the method of
+abdominal writhings in the animals. The tested microorganisms were multiresistant clinical
+isolates obtained from the Bacteriology Sector of the Clinical Hospital of Pernambuco. The
+phytochemical study identified the majority of secondary compounds present in the methanolic
+fraction of seeds, as follows: triterpenes, flavanoid glycosides, smaller terpenes (monoterpenoids,
+sesquiterpenoids and diterpenoids) and reducing sugars. The obtained results showed that the
+ethanolic extract had greater activity against Micrococcus spp. (MIC=250µg/mL). Results of
+the evaluation of the antinociceptive activity demonstrated that only the dosage of 298 mg/Kg,
+compared to the indomethacin pattern, led to a significant reduction in the number of abdominal
+writhings in the animals. Further studies will be carried out for the identification and isolation of
+some secondary compounds, as well as other analgesic protocols.
+Keywords: fennel, antimicrobial activity, Foeniculum vulgare.
+Recebido para publicação em 27/08/2011
+Aceito para publicação em 29/11/2012
+
+Rev. Bras. Pl. Med., Campinas, v.15, n.2, p.257-263, 2013.
+
+258
+
+INTRODUÇÃO
+Foeniculum vulgare Mill. família
+Umbelliferae/Apiaceae é uma erva aromática
+anual, bienal ou perene, dependendo da variedade,
+conhecida desde a antiguidade na Europa e na
+Ásia Menor. Segundo alguns autores, é originária
+do continente africano, Ilha da Madeira e Açores,
+outros acreditam que é nativa da Europa Meridional,
+Central e da Ásia Menor. Possivelmente, veio para
+o Brasil junto com os colonos portugueses (SILVA,
+2001).
+Trabalhos prévios mostraram que o óleo
+essencial de Foeniculum vulgare Mill. contém anetol,
+estragol e fenchona mais uns 18 componentes
+adicionais os quais incluem α-pineno, camfeno,
+β-pineno, β-felandreno, myrceno, limoneno,
+â-felandreno, o γ-terpineno, o cis-ocimeno,
+terpinoleno, carvacol, cânfora, borneol, cineol e
+p-cimeno ( RUBERTO et al., 2000; MIMICA-DUKIC,
+2003). Estes compostos, em especial carvacol,
+borneol, cânfora e anetol, foram relatados por inibir
+o crescimento de infestações de Phytophora, fungo
+fitopatogênico causador da doença da ferrugem,
+principalmente em culturas de tomate . A produção
+de esporangial foi inibida pelo óleo essencial da
+erva-doce (SOYLU; SOYLU; KURT, 2006)
+As atividades antiinflamatória, analgésica e
+antioxidante da fruta da erva-doce foram relatadas
+por Choi e Hwang (2004). O óleo essencial
+da erva-doce exibiu atividade anti-bacteriana
+(RUBERTO et al, 2000). Os extratos aquosos e
+etanólico das sementes de erva-doce exibiram
+potenciais propriedades antioxidantes em estudos
+in vitro (OKTAY; GULCIN; KUFREVIOGLU, 2003).
+Extratos metanólicos da planta inteira administrada
+por quatro dias sucessivos melhorou o efeito
+amnésico da escopolamina (0.4 mg/kg) e o
+envelhecimento induziu déficits de memória nos
+ratos. Esta propriedade da planta pode ser útil
+para o tratamento de desordens cognitivas como
+demência e doença de Alzhemier (JOSHI, 2006).
+Vários estudos biológicos têm sido
+realizados com o óleo essencial desta espécie.
+Dentre as mesmas óleo essencial de sementes
+de erva-doce demonstrou atividades caminativa
+e estimulante, assim como ações espasmolíticas
+no músculo liso de animais experimentais. Outros
+efeitos benéficos têm sido descritos na literatura
+quando da utilização da erva-doce como os
+relatados por Singh & Kale (2008) quanto as
+propriedades antiinflamatórias, analgésicas e
+antioxidantes das sementes da erva-doce.
+O uso de extratos de plantas e seus
+constituintes fitoquímicos, com conhecidas
+propriedades antimicrobianas, são de grande
+importância terapêutica em infecções. A ação
+antimicrobiana deve-se a síntese de componentes
+
+do metabolismo secundário dos vegetais, tais como
+óleos essenciais, compostos fenólicos e taninos.
+Com base em relatos da literatura esta pesquisa
+investigou o perfil fitoquímico, a ação antimicrobiana
+frente a isolados clínicos Gram-positivos e a
+atividade antinociceptiva do extrato etanólico das
+sementes de Foeniculum vulgare Mill.
+MATERIAL E MÉTODOS
+Material botânico
+Amostras das sementes de Foeniculum
+vulgare Mill foram adquiridas através de compra no
+estabelecimento M. J. Bandeira-Produtos Naturais
+(localizado na Praça Dom Vital, Nº. 101- São JoséRecife-PE) em de outubro de 2007.
+O material vegetal acondicionado em
+sacos plásticos foi levado ao Horto do Biotério do
+Departamento Antibióticos da Universidade Federal
+de Pernambuco e mantido em local arejado, à
+temperatura ambiente.
+Uma exsicata da espécie vegetal foi
+depositada no Herbário Professor Geraldo Mariz
+do Departamento de Botânica/CCB/UFPE com o n°
+50.572.
+Preparação do extrato
+Para obtenção do extrato das sementes do
+Foeniculum vulgare Mill. foi utilizado o processo de
+maceração. O material, após limpeza e pesagem,
+foi submetido a maceração com álcool absoluto.
+Permaneceu em contato com o solvente por um
+período de 48 horas à temperatura ambiente, sendo
+agitado manualmente, esporadicamente, e mantido
+ao abrigo da luz. O extrato bruto etanólico (EBE)
+obtido após filtração foi concentrado, à temperatura
+ambiente em rotaevaporador até secura. Sendo o
+redimento obtido utilizando-se 1060g do material seco
+de 39,85g para o EBE, e para as demais partições de
+12,41g; 6,86g; 3,28g; 3,16g e 3,04g, respectivamente
+para extrato hexânico, acetato de etila, butanólico,
+metánólico e acetônico.
+Investigação fitoquímica
+Para a execução dos ensaios fitoquímicos
+cerca de 3 g do extrato bruto etanólico seco foi
+submetido à infusão metánolica, hexânica, acetato
+de etila, butanólica e acetona durante 30 minutos
+respectivamente. Alíquotas destes extratos (10µL)
+foram submetidas à cromatografia em camada
+delgada analítica (CCDA), empregando-se como
+fase estacionária placas cromatográficas prontas de
+gel de sílica (Merck-Alemanha, art.105554), diversas
+fases móveis e reveladores consoante a classe de
+compostos a analisar.
+
+Rev. Bras. Pl. Med., Campinas, v.15, n.2, p.257-263, 2013.
+
+259
+
+Avaliação da atividade antimicrobiana
+A atividade antimicrobiana foi verificada in
+vitro, pelo método de difusão em disco de papel
+(BAUER; KIRBY, 1966). Discos de 6 mm de diâmetro
+foram impregnados com 10µL da solução do extrato
+bruto a 200.000µg/mL, de modo que cada disco ficou
+com a concentração de 2.000µg/mL.
+Os discos foram colocados sobre a superfície
+do meio semeado com as suspensões microbianas
+padronizadas pela turvação equivalente ao tubo
+0,5 da escala de McFarland em solução fisiológica
+(BARRY, 1986; KONEMAN, 1997), correspondente
+a uma concentração de aproximadamente 107UFC/
+mL para leveduras e 108UFC/mL para bactérias,
+em placas de Petri. As placas foram incubadas a
+35Ú C, por um período adequado de acordo com
+o microrganismo. Após o período de incubação foi
+realizada a leitura dos resultados, pela medição do
+diâmetro do halo de inibição formado em volta do
+disco.
+Foram considerados resultados significativos
+halos de 12 mm ou mais para os isolados clínicos. Os
+testes foram realizados em triplicata e os resultados
+expressos pela media aritmética dos diâmetros
+dos halos de inibição em mm e calculado o desvio
+padrão. Foram usados com padrões a Ampicilina
+e a Cefalexina nas concentrações 10µg e 30µg,
+respectivamente. O extrato etanólico foi testado
+frente os isolados clínicos, de diversas origens e
+setores hospitalares, obtidos e identificados no Setor
+de Bacteriologia da Unidade Laboratorial do Hospital
+das Clínicas da UFPE. As cepas desses microorganismos sua maioria apresentam multirresistência.
+Foram testadas 12 cepas de Staphylococcus aureus,
+2 de Micrococcus spp. e 8 de Entecococcus spp.
+A concentração inibitória mínima (CIM) do
+extrato etanólico de F. vulgare Mill foi determinada
+para todos os micro-organismos testados, pelo
+método de diluições seriada em meio sólido (Carvalho
+et al. 2002). Alíquotas de diferentes volumes (1,0; 0,5;
+0,25; 0,125; 0,06, 0,03 e 0,01mL) de uma solução a
+20.000µg/mL foram colocadas em placa de Petri e
+homogeneizadas com 10mL do meio de cultura ideal
+para o crescimento de cada microrganismo. Os microorganismos teste foram semeados, em estrias, sobre
+a superfície do meio e as placas foram incubadas à
+35ºC e 30ºC por 24 h e 48 h. Valores de CIM iguais
+ou superiores a 1000µg/mL não foram considerados
+satisfatórios (HOLETZ et al. 2002).
+Contorções abdominais
+Cinco grupos de 6 camundongos cada,
+mantidos em jejum de 6 a 12 horas foram tratados
+por via oral (gavagem) com o extrato etanólico nas
+dosagens de 74,5 , 149 e 298mg/ Kg , indometacina
+(10mg/ Kg) e controle (NaCl 0,9%). Após 60 minutos
+do tratamento, foi administrado ácido acético a 1%
+
+diluído em salina (0,1ml/ 10g, i.p.).
+As contrações da parede abdominal seguido
+de torções do tronco e extensão dos membros
+posteriores (KOSTER; ANDERSON; BEER, 1959)
+produzidas pelo ácido acético foram contadas durante
+30 minutos. Os resultados foram expressos como o
+número de contorções abdominais acumuladas a
+cada 5 minutos durante 30 minutos.
+RESULTADOS E DISCUSSÃO
+A abordagem fitoquímica da espécie F.
+vulgare Mill. realizada na fração metanólica e na
+fração acetato de etila das sementes do vegetal,
+indicou a marcante presença de triterpenos,
+glicosídeos de flavanóides, terpenos menores
+(monoterpenóides, sesquiterpenóide e diterpenóides)
+e açucares redutores. Enquanto que na fração
+hexânica não foram observados os glicosídeos de
+flavanóides, embora alguns derivados cafeoil foram
+visualizados. A ausência dos compostos polifenóis
+nesta fração pode ser explicada pelo fato deste
+composto ser bastante polar devido à presença de
+hidroxilas no mesmo (tabela 1).
+Os polissacarídeos foram verificados no
+extrato, ocorrendo a presença do açúcar (glicose). Os
+polissacarídeos pertencem a uma importante classe
+dos produtos naturais dotados de atividade bioativas
+como: antiinflamatórios, antivirais, hipoglicemiantes,
+anticoagulantes, imunoestimuladores, antitumorais
+e como quimioprevenção a diversos tipos de câncer
+(SIMÕES, 2004).
+Na fração acetônica foram visualizados
+monoterpenóides, sesquiterpenóide e diterpenóides,
+bem como triterpenos. Estes compostos terpenóides
+são as primeiras substancias que compõem
+as misturas chamadas óleos voláteis e são os
+responsáveis por atividades farmacológicas com
+anti-séptico e expectorante, bem como bactericida
+fungicida, analgésica e antitumoral, dados já relatados
+sobre o óleo essencial de F. vulgare Mill (MENDES,
+2004). Todos os outros grupos investigados não foram
+constatados, nem mesmo como traços.
+O extrato etanólico apresentou atividade
+antimicrobiana intermediária para Staphylococcus
+aureus, sensível para Micrococcus spp, entretanto
+demonstrou baixa atividade frente às cepas de
+Enterococcus faecalis.
+A padronização dos halos de inibição em
+mm para os antibióticos utilizados nos antibiogramas
+das cepas de Staphylococcus aureus, Micrococcus
+spp., Enterococcus faecalis de acordo com o
+CLSI ( Clinical Laboratory Standards Institute /
+M100-S14) estabelece que para a Ampicilina 10µg
+é considerado halo sensível > 29, intermediário não
+existe halo definido e halo resistente < 28. Para a
+Cefalexina 30µg halo sensível > 18, halo intermediário
+
+Rev. Bras. Pl. Med., Campinas, v.15, n.2, p.257-263, 2013.
+
+260
+
+TABELA 1 - Metabólitos secundários das frações das sementes de F. vulgare Mill.
+Metabólitos
+
+Frações
+Metanólica Hexânica
+
+Alcalóides
+
+Acetato de etila Butanólica
+
+Acetônica
+
+-
+
+-
+
+-
+
+-
+
+-
+
+e diterpenóides
+
+-
+
+-
+
++++
+
+-
+
+++
+
+Triterpenóides
+
++++
+
+-
+
++++
+
+-
+
++++
+
+-
+
+-
+
+-
+
+-
+
+-
+
+Monoterpenóides, sesquiterpenóides
+
+Iridóides
+Saponinas
+
+-
+
+-
+
+-
+
+-
+
+-
+
+Açúcares redutores
+
++++
+
+-
+
+-
+
+-
+
+-
+
+Glicosídeos de Flavanóides
+
++++
+
++
+
++
+
++
+
++
+
+Expressão dos resultados: (+) = positivo; (-) = negativo; (+++) = fortemente positivo
+
+15-17 e halo resistente < 14.
+Para as cepas de S. aureus de numeração
+1, 2, 3, 4, 9, 10 o extrato etanólico apresentou halos
+de inibição de 11,3±0,6; 12,0±0,0; 13,0±1,0; 11,0±
+0,0; 12,0±0,0; 11,3±0,6 respectivamente, estes
+resultados indicam uma atividade antimicrobiana
+baixa. Com relação aos padrões utilizados para
+estes microrganismo verificou-se que as cepas 1
+e 2 apresentaram resistência à Cefalexina 30µg
+(0,0±0,0 e 12,6± 0,6), enquanto as cepas 3, 4, 9, 10
+foram sensíveis (33,6±0,6; 26,6±0,6; 31,6± 0,6; 28,3±
+0,6), para o padrão Ampicilina 10 µg apresentaram
+resistência as cepas: 1, 2, 3 e 10 (0,0±0,0; 13,3±0,6;
+16,6±0,6 e 22,3± 0,6), enquanto as cepas 4 e 9
+
+foram sensíveis (39,3±0,6 e 35,6±0,6). A avaliação
+da concentração inibitória mínima (CIM) do extrato
+das sementes de F. vulgare Mill para estas estirpes
+microbianas foi de 2000 µg/mL (Tabela2).
+Em relação às cepas de S. aureus de
+numeração 5 e 11 o extrato promoveu halos de
+inibição de 14,3± 0,6 e 14,6± 0,6, desta forma
+o extrato apresentou atividade antimicrobiana
+intermediária. Em comparação com os padrões, a
+cepa 11 foi resistente a Cefalexina 30µg (11,6± 0,6)
+e resistente a Ampicilina 10µg (15,6±0,6), enquanto
+que a cepa 5 foi sensível a Cefalexina 30µg (34,3±
+0,6) e e resistente a Ampicilina 10µg (28,6±0,6).
+A concentração inibitória mínima (CIM) do extrato
+
+TABELA 2. Atividade antimicrobiana de extrato bruto etanólico e CIM das sementes de Foeniculum vulgare Mill.
+realizada a partir da planta seca (2000 µg/disco) frente a cepas de Staphylococcus aureus.
+Padrões
+Micro-organismos
+
+EBE
+
+Cefalexina
+
+Ampicilina
+
+CIM
+
+(2000 µg/disco)
+
+30µg
+
+10 µg
+
+(µg/mL)
+
+Halos de inibição em mm (X±δ)
+1.[21231] S. aureus
+
+11,3 ± 0,6
+
+0,0 ± 0,0
+
+0,0 ± 0,0
+
+2000
+
+2.[20981] S. aureus
+
+12,0 ± 0,0
+
+12,6 ± 0,6
+
+13,3 ± 0,6
+
+2000
+
+3.[21036] S. aureus
+
+13,0 ± 1,0
+
+33,6 ± 0,6
+
+16,6 ± 0,6
+
+2000
+
+4.[20489] S. aureus
+
+11,0 ± 0,0
+
+26,6 ± 0,6
+
+39,3 ± 0,6
+
+2000
+
+5.[20794] S. aureus
+
+14,3 ± 0,6
+
+34,3 ± 0,6
+
+28,6 ± 0,6
+
+1000
+
+6.[20905] S. aureus
+
+17,0 ± 1,0
+
+0,0 ± 0,0
+
+0,0 ± 0,0
+
+500
+
+7.[20092] S. aureus
+
+16,0 ± 0,0
+
+0,0 ± 0,0
+
+10,3 ± 0,6
+
+500
+
+8.[20449] S. aureus
+
+18,0 ± 0,6
+
+0,0 ± 0,0
+
+13,3 ± 0,6
+
+500
+
+9.[19924] S. aureus
+
+12,0 ± 0,0
+
+31,6 ± 0,6
+
+35,6 ± 0,6
+
+2000
+
+10.[20696] S. aureus
+
+11,3 ± 0,6
+
+28,3 ± 0,6
+
+22,3 ± 0,6
+
+2000
+
+11.[21141] S. aureus
+
+14,6 ± 0,6
+
+11,6 ± 0,6
+
+15,6 ± 0,6
+
+1000
+
+12.[S.IDT] S. aureus
+
+16,6 ± 0,6
+
+29,6 ± 0,6
+
+34,6 ±0,6
+
+500
+
+EBE: Extrato bruto etanólico; S. aureus: Staphylococcus aureus; S.IDT: sem identificação
+
+Rev. Bras. Pl. Med., Campinas, v.15, n.2, p.257-263, 2013.
+
+261
+
+para estas cepas microbianas foi de 1000 µg/mL
+(Tabela 2).
+Com relação à atividade do extrato etanólico
+de F. vulgare Mill frente às cepas de Staphylococcus
+aureus verificou-se uma atividade satisfatória para
+as cepas de numeração 6, 7, 8, 12 verificando
+halos de inibição de 17,0± 1,0; 16,0± 0,0; 18,0±
+0,6 e 16,6± 0,6, respectivamente. Correlacionando
+com os padrões observou-se que as cepas 6, 7 e
+8 demonstraram resistência a Cefalexina 30µg
+(0,0± 0,0; 0,0± 0,0 e 0,0± 0,0), embora a cepa 12 foi
+sensível (29,6±0,6), o mesmo resultado também foi
+verificado para a Ampicilina 10 µg onde as cepas 6,
+7 e 8 foram resistentes (0,0± 0,0; 10,3± 0,6 e 13,3±
+0,6) e a cepa 12 sensível (34,6± 0,6).A concentração
+inibitória mínima (CIM) do extrato para estas estirpes
+microbianas foi de 500 µg/mL (Tabela 2).
+O extrato etanólico demonstrou baixa
+atividade antimicrobiana para a maioria das cepas
+de Enterococcus faecalis como: 1, 2, 3, 4, 5, 7 e 8
+apresentando halos de inibição (10,0± 0,0; 11,3±
+1,5; 11,0± 0,0; 11,3± 1,5; 8,3± 1,1; 8,3± 1,1 e 10,0
+± 1,00 respectivamente. Embora o extrato tenha
+
+demonstrado atividade intermediária frente a cepa
+6 (14,3± 0,6). Todas as cepas 1, 2, 3, 4, 5, 6, 7 e
+8 mostraram suscetibilidade intermediária frente à
+Cefalexina 30µg (15,6± 0,6; 14,3± 0,6; 16,6± 0,6;
+17,3± 2,0; 16,6± 0,6; 15,6± 0,6; 16,3± 1,1 e 17,3±
+2,0). Da mesma maneira todas as cepas 1, 2, 3, 4, 5,
+6, 7 e 8 foram sensíveis a Ampicilina 10 µg (39,6±
+0,6; 37,6± 0,6; 38,3± 0,6; 36,6± 0,6; 37,6± 0,6; 36,0±
+1,0; 37,3 ± 0,6 e 38,6± 0,6). A concentração inibitória
+mínima (CIM) do extrato para as estirpes microbianas
+1, 2, 3, 4, 5, 6, 7 e 8 foi de 2000 µg/mL e para a cepa
+6 foi de 1000 µg/mL (Tabela 3).
+Para as estirpes de Micrococcus spp de
+numeração 1 e 2 o extrato apresentou halos de
+inibição de 20,3±0,6 e 24,0±1,0, permitindo concluir
+que o mesmo possui atividade satisfatória frente a
+estas cepas. Com relação aos padrões utilizados
+para estes micro-organismos verificou-se que as
+cepas 1 e 2 foram sensíveis à Cefalexina 30µg
+(35,3± 0,6 e 35,6± 0,6), para o padrão Ampicilina 10
+µg apresentaram também sensibilidade (36,3± 0,6 e
+34,6± 0,6). A concentração inibitória mínima (CIM)
+do extrato para as estirpes 1 e 2 foi de 250µg/mL e
+
+TABELA 3. Atividade antimicrobiana de extrato bruto etanólico e CIM das sementes de Foeniculum vulgare
+Mill. Realizada a partir da planta seca (2000 µg/disco) frente a cepas de Entecococcus faecalis.
+Padrões
+Micro-organismos
+
+EBE
+
+Cefalexina
+
+Ampicilina
+
+CIM
+
+(2000 µg/disco)
+
+30µg
+
+10 µg
+
+(µg/mL)
+
+Halos de inibição em mm (X±δ)
+1.[21675] E. faecalis
+
+10,0 ± 0,0
+
+15,6 ± 0,6
+
+39,6 ± 0,6
+
+2000
+
+2.[21752] E. faecalis
+
+11,3 ± 1,5
+
+14,3 ± 0,6
+
+37,6 ± 0,6
+
+2000
+
+3.[21944] E. faecalis
+
+11,0 ± 0,0
+
+16,6 ± 0,6
+
+38,3 ± 0,6
+
+2000
+
+4.[24614] E. faecalis
+
+11,3 ± 1,5
+
+17,3 ± 2,0
+
+36,6 ± 0,6
+
+2000
+
+5.[24622] E. faecalis
+
+8,3 ± 1,1
+
+16,6 ± 0,6
+
+37,6 ± 0,6
+
+2000
+
+6.[24708] E. faecalis
+
+14,3 ± 0,6
+
+15,6 ± 0,6
+
+36,0 ± 1,0
+
+1000
+
+7.[24902] E. faecalis
+
+8,3 ± 1,1
+
+16,3 ± 1,1
+
+37,3 ± 0,6
+
+2000
+
+8.[25392] E. faecalis
+
+10,0 ± 1,0
+
+17,3 ± 2,0
+
+38,6 ± 0,6
+
+2000
+
+EBE: Extrato bruto etanólico; E. faecalis: Enterococcus faecalis
+
+TABELA 4. Atividade antimicrobiana de extrato bruto etanólico e CIM das sementes de Foeniculum vulgare
+Mill. Realizada a partir da planta seca (2000 µg/disco) frente a cepas de Micrococcus spp.
+Padrões
+Micro-organismos
+
+EBE
+
+Cefalexina
+
+Ampicilina
+
+CIM
+
+(2000 µg/disco)
+
+30µg
+
+10 µg
+
+(µg/mL)
+
+Halos de inibição em mm (X±δ)
+1.[21061] Micrococcus spp
+
+20,3±0,6
+
+35,3 ± 0,6
+
+36,3 ± 0,6
+
+250
+
+2.[21068] Micrococcus spp
+
+24,0±1,0
+
+35,6 ± 0,6
+
+34,6 ± 0,6
+
+500
+
+EBE: Extrato bruto etanólico;
+
+Rev. Bras. Pl. Med., Campinas, v.15, n.2, p.257-263, 2013.
+
+262
+
+Contorções abdominais
+Número de ontorções
+
+500µg/mL, respectivamente (Tabela 4).
+Os resultados obtidos em relação às cepas
+de S. aureus mostraram-se muito variáveis, uma vez
+que cada cepa apresentava um padrão de resistência
+diferente entre si à antibióticos padronizados e
+previamente testados no local de coleta, onde
+algumas cepas eram multirresitentes, enquanto
+outras eram bastante sensíveis.
+Em relação aos Enterococcos faecalis
+como geralmente são cepas freqüentemente
+multirresistentes, os resultados obtidos eram
+esperados. E para as cepas de Micrococcus spp o
+extrato demonstrou boa atividade antimicrobiana.
+Em comparação com outros trabalhos a
+atividade antimicrobiana de F. vulgare Mill frente
+às bactérias Gram-positivas verificada no presente
+estudo, não foi constatada para o óleo essencial
+extraído das raízes, da haste, das sementes e das
+folhas da erva-doce pelo método da destilação de
+vapor da água frente a S. aureus ATCC 25923 e B.
+subtilis (ABED, 2007).
+Estudos realizados por Mininja; Thoppil
+(2002) demonstraram que o óleo essencial das
+sementes de Foeniculum vulgare Mill. possui
+atividade antimicrobiana contra bactérias e fungos,
+principalmente contra a Candida albicans. A
+atividade antimicrobiana é atribuída a presença
+de componentes biologicamente ativos presentes
+no óleo essencial, principalmente o anetol que
+corresponde à 99.69% do óleo essencial presente
+nas sementes.
+Segundo Cantore et al (2004), o óleo
+essencial da semente de Foeniculum vulgare
+Mill, inibiu o crescimento de cepas de importantes
+bactérias patogênicas de plantas tais como: gênero
+de bactérias Gram-negativas (Pseudomonas, Erwinia,
+Xantomonas e Agrobacterium) e gênero de bactérias
+Gram-positivas (Clavibacter, Curtobacterium e
+Rhodococcus).
+Vários estudos referentes à atividade
+antimicrobiana estão sendo realizados com
+Foeniculum vulgare Mill, entretanto, a maioria dos
+estudos é realizada com bactérias pertencentes a
+coleções microbianas. Por isso, a ausência de dados
+referentes a estudos antimicrobianos com cepas de
+isolados clínicos dificulta a discussão do presente
+estudo.
+Os resultados obtidos com a administração
+prévia do extrato etanólico de F. vulgare Mill, nas
+doses de 298, 149 e 74,5mg/Kg demonstraram que
+apenas a dosagem de 298mg/Kg quando comparado
+com o padrão indometacina conseguiu uma redução
+significativa no número de contorções abdominais dos
+animais. As demais dosagens apresentaram efeito
+dose-resposta, uma vez que a diminuição gradativa
+das dosagens implicou em resultados semelhantes
+aos obtidos com o controle salina (Figura 1).
+
+25
+20
+15
+10
+5
+0
+
+8
+
+29
+
+g
+
+K
+
+g/
+
+m
+
+8
+
+14
+
+g
+
+K
+
+g/
+
+m
+
+,5
+
+74
+
+g
+
+a
+et
+
+m
+
+do
+
+in
+
+na
+
+ci
+
+K
+
+g/
+
+m
+
+a
+
+lin
+
+sa
+
+FIGURA 1. Efeito do extrato etanólico de F. vulgare
+Mill. nas dosagens de 298, 149 e 74,5 mg/Kg
+nas contorções abdominais em camundongos.
+Resultados expressos em média ±desvio padrão.
+*P <. 0,05 vs. controle.
+Uma vez que este teste permite a avaliação
+de substâncias analgésicas de ação central e/ou
+periféricas dotadas dos mais variados mecanismos
+de ação, os resultados obtidos neste trabalho
+corroboram com o estudo de Choi; Hwang (2004) no
+qual, a administração oral de 200mg/kg do extrato
+metanólico de F. vulgare Mill. reduziu significativamente
+a estimulação térmica do hot-plate. O teste do Hotplate é usado normalmente para estudar os efeitos
+analgésicos centrais das drogas. Conseqüentemente,
+é provável que o extrato metanólico de F. vulgare Mill.
+produza seus efeitos analgésicos centralmente ou,
+como já conhecido para os AINE’S, pois ele inibiu os
+receptores da dor no local da inflamação.
+Os estudos de Choi; Hwang, 2004 também
+relataram a administração oral do extrato metanólico
+das sementes da erva-doce que exibiu efeito inibitório
+frente às doenças inflamatórias agudas, subagudas
+e reações alérgicas tipo IV além de ter mostrado um
+efeito analgésico central. Foi observado um aumento
+significativamente das atividades específicas
+da superóxido dismutase (SOD) e da catalase,
+assim como a significativa diminuição do nível da
+lipropoteína de alto peso molecular do colesterol
+adicionada a uma diminuição no dano peroxidativo.
+Estudos adicionais são necessários para
+melhor elucidar o mecanismo de ação da atividade
+analgésica do extrato etanólico de F. vulgare Mill.
+CONCLUSÃO
+O estudo fitoquímico identificou a maioria dos
+compostos secundários presentes na fração metanólica
+e na fração acetato de etila das sementes do vegetal,
+sendo eles: triterpenos, glicosídeos de flavanóides,
+terpenos menores (monoterpenóides, sesquiterpenóide
+
+Rev. Bras. Pl. Med., Campinas, v.15, n.2, p.257-263, 2013.
+
+263
+
+e diterpenóides) e açucares redutores.
+O extrato etanólico das sementes de F.
+vulgare Mill. apresentou atividade intermediária
+frente a S. aureus, satisfatória para Micrococcus spp
+e baixa para E. faecalis. Vale ressaltar que esses
+resultados são de extrema importância devido aos
+fatos das amostras testadas serem multirresistentes
+e isoladas de ambiente hospitalar.
+A atividade antimicrobiana observada
+para os extratos das sementes de F. vulgare Mill.
+representa mais uma alternativa terapêutica para
+infecções com micro-organismos resistentes aos
+antibióticos sintéticos disponíveis no mercado.
+Os resultados da avaliação da atividade
+antinocipeptiva demonstraram que apenas a
+dosagem de 298mg/Kg quando comparada ao
+padrão indometacina conseguiu uma redução
+considerável de contorções abdominais dos animais.
+REFERÊNCIA
+ABED, K. F. Antimicrobial Activity of Essential Oils of some
+Medicinal Plants from Saudi Arabia. Saudi Journal of
+Biological Sciences. v.14, n.1, p.53-60, 2007.
+BARRY, A.L. Procedure for testing antimicrobial agents
+in agar media: theoretical considerations. In: Lorian
+V (ed) Antibiotics in Laboratory Medicine. Baltimore:
+Williams & Wilkins. p.13, 1986.
+BAUER, A. W.; KIRBY, W. M. Antibiotic susceptibility
+testing by a standardized single disc method. American
+Journal fo Clinical Pathology. v.45, p.493-499, 1966.
+CANTORE, P. et al. Antibacterial Activity of Coriandrum
+sativum L. and Foeniculum vulgare Miller Var. Vulgare
+(Miller) Essential oils. Journal of Agricultural and Food
+Chemistry. v.52, p.7862-7866, 2004.
+CARVALHO, A.A. et al. Atividade antimicrobiana in
+vitro de extratos hidroalcoólico de Psidium guajava L.
+sobre bactérias Gram-negativas. Acta Farmaceutica
+Bonaerense. v.21, p. 255-258, 2002.
+CHOI, E.; HWANG, J. Antiinflammatory, analgesic and
+antioxidant activities of the fruit of Foeniculum vulgare.
+Fitoterapia. v.75, p.557-565, 2004.
+HOLETZ, F.B. et al, 2002. Screening of some plants
+used in the Brazilian folk medicine for the treatment of
+infectious diseases. Memórias do Instituto Oswaldo
+Cruz. 97: 1027-1031.
+KONEMAN, E.W., 1997. Diagnóstico microbiológico.
+México: J. B. Lippincott Co.
+KOSTER, R.; ANDERSON, M.; BEER, E.J. Acetic acid
+for analgesic screening. Federal procedures. v.18, p.
+412, 1959.
+JOSHI, H. Cholinergic basis of memory-strengthening effect
+of Foeniculum vulgare Linn. Journal of Food Medicine.
+v.9, n.3, p.413–417, 2006. In: SINGH, B.; KALE, R.K.
+Chemomodulatory action of Foeniculum vulgare
+(Fennel) on skin and forestomach papillomagenesis,
+enzymes associated with xenobiotic metabolism and
+
+antioxidant status in murine model system. Food and
+Chemical Toxicology. v.46, p.3842–3850, 2008.
+MENDES, C.L.A. Triterpenóides e sua atividade
+antiinflamatória. Portugual: Faculdade de Ciências e
+Tecnologias da Universidade Nova Lisboa. 2004.
+MIMICA-DUKIC, N. Essential oil composition and antifungal
+activity of Foeniculum vulgare Mill obtained by different
+distillation conditions. Physiotherapy Research
+International. v.17, n.4, p. 368-71, 2003. In: ABED, K.F.
+Antimicrobial Activity of Essential Oils of some Medicinal
+Plants from Saudi Arabia. Saudi Journal of Biological
+Sciences. v.14, n.1, p.53-60, 2007.
+MININJA, J.; THOPPHIL, J.E., 2002. Studies on Essensial
+oil composition and microbicidal activities of two
+south Indian spices of the Apiaceae. The Intern. J. of
+Aromatherapy. 12 (4): 215.
+OKTAY, M., GULCIN, I., KUFREVIOGLU, I., 2003.
+Determination of in vitro antioxidant activity of fennel
+(Foeniculum vulgare) seed extracts. Lebensm. Wisser
+Technology: 36, 263–271. In: SINGH, B.; KALE, R.K.,
+2008. Chemomodulatory action of Foeniculum vulgare
+(Fennel) on skin and forestomach papillomagenesis,
+enzymes associated with xenobiotic metabolism and
+antioxidant status in murine model system. Food and
+Chemical Toxicology: 46, 3842–3850.
+RUBERTO, G. et al. Antioxidant and antimicrobial activity
+of Foeniculum vulgare and Crithmum maritimum
+essential oils. Planta Med. v.66, n.8, p.689–693, 2000.
+In: SINGH, B.; KALE, R.K. Chemomodulatory action of
+Foeniculum vulgare (Fennel) on skin and forestomach
+papillomagenesis, enzymes associated with xenobiotic
+metabolism and antioxidant status in murine model
+system. Food and Chemical Toxicology. v.46,
+p.3842–3850, 2008.
+SILVA, R. C. Plantas Medicinais na Saúde Bucal.
+Vitória. 2001.
+SIMÕES, C.M.O. et al. Farmocognosia: da planta ao
+medicamento. 4. ed. Porto Alegre / Florianópolis: Ed.
+Universidade/UFRGS / Ed. UFSC. p.13-40, 2004.
+SINGH, B.; KALE, R.K. Chemomodulatory action of
+Foeniculum vulgare (Fennel) on skin and for estomach
+papillomagenesis, enzymes associated with xenobiotic
+metabolism and antioxidant status in murine model
+system. Food and Chemical Toxicology. v.46,
+p.3842–3850, 2008.
+SHUKLA, H.S., DUBEY, P., CHATUVEDI, R.V. Antiviral
+properties of essential oils of Foeniculum vulgare and
+Pimpinella anisum L. Agronomia. v.9, p.277–279,
+1988. In: SINGH, B.; KALE, R.K. Chemomodulatory
+action of Foeniculum vulgare (Fennel) on skin and
+forestomach papillomagenesis, enzymes associated
+with xenobiotic metabolism and antioxidant status in
+murine model system. Food and Chemical Toxicology.
+v.46, p.3842–3850, 2008.
+SOYLU, E.M.; SOYLU, S.; KURT, S. Antimicrobial
+activities of the essential oils of various plants against
+tomato late blight disease agent Phytopthora infestans.
+Mycopathologia. v.161, n.2, p.119-28, 2006. In: ABED,
+K.F. Antimicrobial Activity of Essential Oils of some
+Medicinal Plants from Saudi Arabia. Saudi Journal of
+Biological Sciences. v.14, n.1, p.53-60, 2007.
+
+Rev. Bras. Pl. Med., Campinas, v.15, n.2, p.257-263, 2013.
+
+

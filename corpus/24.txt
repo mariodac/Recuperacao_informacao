@@ -1,0 +1,619 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/309881749
+
+Empatia e reconhecimento de expressões faciais de emoções básicas e
+complexas em estudantes de Medicina
+Article · September 2016
+DOI: 10.1590/0047-2085000000126
+
+CITATIONS
+
+READS
+
+2
+
+231
+
+4 authors, including:
+Daiene Morais
+
+Marcos Hortes N. Chagas
+
+Universidade Federal de São Carlos
+
+Universidade Federal de São Carlos
+
+5 PUBLICATIONS 7 CITATIONS
+
+99 PUBLICATIONS 1,593 CITATIONS
+
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Guidelines for pharmacological treatment View project
+
+Usability for different audiences: principles and applications View project
+
+All content following this page was uploaded by Marcos Hortes N. Chagas on 19 December 2016.
+
+The user has requested enhancement of the downloaded file.
+
+SEE PROFILE
+
+ARTIGO ORIGINAL
+
+Empatia e reconhecimento de expressões
+faciais de emoções básicas e complexas
+em estudantes de Medicina
+Empathy and facial expression recognition of basic
+and complex emotions in medical students
+Ramon Felix de Ávila1, Daiene de Morais2, Ana Julia Bomfim2, Marcos Hortes N. Chagas2
+RESUMO
+
+Palavras-chave
+Empatia, reconhecimentos
+de emoções faciais,
+cognição social, estudantes
+de Medicina.
+
+Objetivo: Avaliar a empatia e a capacidade de reconhecimento de emoções básicas e complexas e suas correlações em estudantes de Medicina. Métodos: O desenho do estudo foi
+transversal. Foram avaliados 86 alunos do 3º e 4º ano do curso de Medicina de uma faculdade
+de Medicina do interior do estado de São Paulo com os seguintes instrumentos: (i) escala
+Jefferson de empatia, (ii) tarefa de Reconhecimento de Expressões Faciais de emoções básicas (REF) e (iii) Reading the mind in the eyes test (RMEt). Resultados: A média geral de acertos
+no REF foi 15,6 (DP: ±2,3). Houve diferença estatisticamente significante no número de acertos da emoção tristeza no sexo feminino comparado com o masculino (t84 = 2,30; p = 0,02).
+Em relação ao RMEt, a média geral de acertos foi de 26,5 (DP: ±3,3) com diferença estatisticamente significante entre os gêneros com maior número de acertos entre as estudantes do
+sexo feminino (t84 = 3,43; p < 0,01). O escore total médio na escala de empatia foi 121,3 (DP:
+±9,8). Houve correlação positiva fraca entre o escore total da escala de empatia e o número
+de acertos para a emoção tristeza (r = 0,29; p < 0,01). Conclusão: O número de acertos para
+a emoção tristeza no REF e o escore total do RMEt foi maior no sexo feminino comparado
+com sexo masculino. Além disso, a empatia parece estar diretamente relacionada com a capacidade de reconhecer a emoção tristeza. Outros estudos parecem pertinentes para avaliar
+de forma mais profunda aspectos de empatia e reconhecimento de expressões faciais da
+emoção em estudantes de medicina.
+
+ABSTRACT
+Objective: The aim was to evaluate empathy and facial expression recognition of basic and
+complex emotions and their correlations in medical students. Methods: A cross-sectional
+study was performed in a medical school of the state of São Paulo. We evaluated 86 third and
+fourth year medical students with the following instruments: (i) Jefferson Scale of Empathy,
+(ii) Facial Expression Recognition of basic emotions task (REF) and (iii) Reading the Mind in
+the Eyes test (RMEt). Results: The overall mean score in the REF was 15.6 (SD: ±2.3). There
+
+1 Faculdade de Ciências da Saúde de Barretos Dr. Paulo Prata.
+2 Universidade Federal de São Carlos (UFSCar), Centro de Ciências Biológicas e da Saúde.
+Recebido em
+22/4/2016
+Aprovado em
+25/7/2016
+
+DOI: 10.1590/0047-2085000000126
+
+Endereço para correspondência: Marcos Hortes N. Chagas
+Universidade Federal de São Carlos
+Centro de Ciências Biológicas e da Saúde
+Rodovia Washington Luís, Km 235
+13565-905 – São Carlos, SP, Brasil
+Telefone: (55 16) 3306-6938
+E-mails: setroh@hotmail.com
+mchagas@ufscar.br
+
+210
+
+ARTIGO ORIGINAL
+
+Ávila RF et al.
+
+Keywords
+Empathy, facial emotion
+recognition, social
+cognition, medical
+students.
+
+was a statistical significant difference in the number of correct responses in sadness emotion
+in female gender compared to male (t84 = 2.30; p = 0.02). Regarding RMEt, the overall mean
+score was 26.5 (SD: ±3.3) with statistically significant difference between genders with higher
+number of correct responses among female students (t84 = 3.43; p < 0.01). The mean score
+on the empathy scale was 121.3 (SD: ±9.8). There was significant weak positive correlation
+between the total score of empathy scale and the recognition of sadness facial emotion (r =
+0.29; p < 0.01). Conclusion: The number of correct responses to sadness emotion in the REF
+and the total score of RMEt was higher in female students compared to male. In addition,
+empathy seems to be directly related to the ability to recognize sadness. Other studies are
+needed to provide a deeper understanding of empathy and facial emotion recognition in
+medical students.
+
+INTRODUÇÃO
+As Diretrizes Curriculares Nacionais para graduação no curso
+de Medicina preconizam que o graduado tenha formação
+generalista, humanista, crítica e reflexiva1. Dessa forma, o médico será capacitado a atuar pautado em princípios éticos e
+dimensões humanísticas, desenvolvendo atitudes e valores
+adequados para uma relação médico-paciente de confiança.
+Nesse contexto, a empatia com certeza é um dos elementos
+essenciais para boa relação médico-paciente2.
+A empatia consiste na habilidade social de compreender
+o sentimento e a perspectiva do outro3. Assim, ela é componente essencial para eficácia terapêutica e está associada à melhora da qualidade de vida dos pacientes, visto que
+melhores resultados clínicos são encontrados em pacientes
+cujos médicos se mostravam mais empáticos2,4.
+A empatia pode ser dividida em aspectos cognitivos e
+afetivos, destacando-se no contexto médico e do futuro médico a empatia afetiva5. Stepien e Baernstein apontam que
+a competência médica precisa ir além do processo intelectual, exigindo também habilidade empática6. Apesar disso,
+o desenvolvimento e a manutenção de um comportamento
+empático adequado no estudante de Medicina podem encontrar barreiras devido aos diversos fatores estressores presentes na graduação7. Dentre esses fatores, encontra-se na
+literatura a sobrecarga de trabalho, a privação do sono e as
+questões sobre o planejamento da carreira8.
+A habilidade para reconhecer emoções básicas e complexas no outro é capacidade essencial para a vida em sociedade e está inserida em um domínio cognitivo complexo
+denominado cognição social9. Esse domínio inclui a capacidade de entender as intenções de outra pessoa, de compreender normas, procedimentos e regras sociais9,10.
+Diversos instrumentos são utilizados para avaliar a cognição social, destacando aqueles que avaliam a teoria da
+mente e o reconhecimento de expressões faciais de emoções básicas. Premack e Woodruff foram os primeiros pesquisadores a investigar a existência de uma teoria da mente,
+a qual está relacionada com a habilidade de inferir estados
+mentais a si e aos outros11. Entre os testes de teoria da mente
+que avaliam aspectos emocionais, destaca-se o Reading the
+J Bras Psiquiatr. 2016;65(3):209-14.
+
+Mind in the Eyes, que avalia a capacidade de reconhecimento de uma emoção complexa a partir da região dos olhos12.
+Esse instrumento possibilita a avaliação de emoções, além
+das básicas13, tais como apavorado, preocupado, arrependido, chateado, desafiador, hostil, entre outras. As emoções
+complexas são construídas a partir das emoções básicas e da
+cultura na qual se insere cada indivíduo14.
+Em relação ao reconhecimento de expressões faciais
+de emoções básicas, os primeiros estudos relativos à universalidade das emoções faciais humanas básicas remontam à publicação de Darwin no ano de 1872 intitulada
+“A expressão das emoções no homem e nos animais”15.
+Atualmente, o caráter universal das emoções básicas e sua
+importância na interação social são reconhecidos, propondo-se a existência de seis emoções básicas: tristeza, alegria, nojo, medo, raiva e surpresa16. Estudos com diferentes
+paradigmas são utilizados para avaliar o reconhecimento
+de expressões faciais de emoções básicas17,18 e a maioria
+utiliza as faces de Ekman e Friesen16, também empregadas
+neste estudo.
+É interessante notar que tanto os níveis de empatia como
+a capacidade de reconhecimento de expressões faciais das
+emoções parecem ser mais altos em mulheres comparados com homens, independentemente da amostra estudada. Uma revisão sistemática recente avaliou 26 estudos,
+dos quais 16 apontaram para um melhor desempenho das
+mulheres no reconhecimento de expressões faciais19. No
+mesmo sentido, Santos et al. encontraram níveis de empatia
+maiores em estudantes de Medicina do sexo feminino comparado com o sexo masculino20.
+Apesar da importância do reconhecimento de expressões faciais e empatia em estudantes de Medicina, nenhum
+estudo foi realizado até o momento para a avaliar a correlação entre essas variáveis. A hipótese deste estudo é de
+que estudantes com maiores níveis de empatia apresentam
+maior capacidade de reconhecer emoções faciais. Dessa
+forma, este estudo tem como objetivo avaliar a empatia e
+a capacidade de reconhecimento de emoções básicas e
+complexas e suas correlações em estudantes de medicina
+do 3º e 4º anos de uma faculdade do interior do estado de
+São Paulo.
+ARTIGO ORIGINAL
+
+MÉTODOS
+Local e participantes
+O estudo foi realizado em uma faculdade particular do interior do estado de São Paulo, com alunos do curso de Medicina. O curso tem entrada anual de 60 alunos e a faculdade
+foi implantada em 2012. Dessa forma, os participantes deste
+estudo são alunos da primeira e segunda turma da faculdade. Outra característica importante é que a faculdade possui
+apenas o curso de graduação em Medicina.
+Neste estudo, foram avaliados todos os alunos do 3º e 4º
+anos, totalizando 86 alunos, o que corresponde a 74% dos
+alunos matriculados no ciclo clínico. Os demais estudantes
+não aceitaram participar do estudo. Neste estudo, foi definido
+avaliar apenas alunos do ciclo clínico pelo maior contato com
+os pacientes comparado com o ciclo básico (1o e 2o anos).
+
+Instrumentos
+Os seguintes instrumentos foram utilizados:
+Reconhecimento de Expressões Faciais de emoções
+básicas (REF)
+Esta tarefa foi feita e apresentada com a utilização do
+software Superlab 4.0 (Cedrus corporation®) em um computador com tela de 13 polegadas da marca Dell® (modelo 7348).
+A tarefa consistiu na apresentação de 28 imagens, sendo as
+duas primeiras para treinamento do participante. Durante o
+teste, imagens de faces de dois atores (um homem e uma
+mulher) eram apresentadas de forma aleatória, sendo 24 de
+emoções básicas (alegria, tristeza, medo, nojo, raiva e surpresa) nas intensidades de 30% e 70% e duas faces neutras. A escolha dessas intensidades emocionais foi baseada em outros
+estudos que utilizaram paradigmas semelhantes21,22. As fotografias, todas nas cores branco e preto, foram retiradas do
+banco de estímulos criado e validado por Ekman e Friesen16.
+O participante teve cinco segundos para observar a imagem
+e então deveria escolher entre sete opções que apareciam
+na tela (alegria, tristeza, medo, nojo, raiva, surpresa, neutro).
+Para escolha da opção, o participante utilizava o mouse. Não
+existia tempo limite para responder, de forma que o participante passa para a próxima imagem automaticamente ao
+responder a anterior.
+Reading the Mind in the Eyes test (RMEt)
+Este teste avalia a habilidade de compreender as intenções,
+os sentimentos e os pensamentos de outra pessoa por meio
+de suas expressões faciais, especialmente na região dos
+olhos12. Foi aplicada a versão computadorizada do RMEt. O
+teste contém 36 figuras de emoções complexas da região
+da face do meio do nariz até pouco acima da sobrancelha,
+todas em preto e branco. Cada imagem está cercada por
+quatro palavras representando estados mentais. Os participantes devem escolher a palavra que melhor representa o
+
+Empatia e reconhecimento de emoções
+
+211
+
+estado mental apresentado. O resultado do teste foi avaliado
+em termos de pontuação total de acertos. Esse teste foi recentemente validado e adaptado para o Brasil23.
+Escala Jefferson de Empatia médica (versão para
+estudantes)
+Esta escala autoaplicada apresenta 20 itens, divididos em
+itens positivos e negativos. Os itens positivos variam de 1
+(discorda fortemente) a 7 (concorda fortemente) e os itens
+negativos de forma inversa de 1 (concorda fortemente) a 7
+(discorda fortemente). Dessa forma, o escore total da escala varia de 20 a 140 com maiores escores significando maior
+empatia24. A escala é composta por três domínios: tomada de
+perspectiva (10 itens), compaixão (8 itens), e a capacidade de
+se colocar no lugar do paciente (2 itens)24. A versão brasileira
+da escala foi validada por meio de um estudo realizado com
+319 estudantes de medicina da Universidade de São Paulo25.
+
+Procedimentos
+O aluno foi convidado a participar das avaliações de reconhecimento de expressões faciais e empatia. Esse convite foi feito
+pelos pesquisadores e, assim que o aluno concordou em participar, foi combinado um horário apropriado para a coleta
+de dados. As coletas foram realizadas de forma individual no
+campus da faculdade, em sala de aula, após o término desta,
+buscando a garantia de um ambiente adequado e tranquilo.
+O projeto foi aprovado no Comitê de Ética em Pesquisa
+(CAAE: 39732814.0.0000.5378, parecer: 959.395) e todos os
+participantes assinaram o termo de consentimento livre e
+esclarecido.
+
+Análise de dados
+Os dados sociodemográficos foram analisados por meio do
+teste t de Student para dados contínuos com distribuição
+normal, teste não paramétrico de Mann-Whitney para dados
+contínuos sem distribuição normal e pelo qui-quadrado (X2)
+para dados nominais. Para variáveis quantitativas, foram calculadas média, desvio-padrão (DP) e erro-padrão da média
+(EP). As correlações entre o número de acertos (total e por
+emoção) das tarefas de reconhecimento de expressões faciais das emoções (REF e RMEt) e o escore total da escala de
+empatia foram analisadas pelos coeficientes de correlação
+de Pearson (dados com distribuição normal) e Spearman
+(dados sem distribuição normal). A distribuição da amostra
+foi avaliada pelo teste de Kolmogorov-Smirnov.
+Os dados foram analisados usando o programa SPSS-21 e
+o nível de significância adotado foi p < 0,05.
+
+RESULTADOS
+Em relação às características da amostra, a idade média foi
+22,4 anos (DP: ±2,09; EP: ±0,23), 75,6% (n = 65) da amostra
+J Bras Psiquiatr. 2016;65(3):209-14.
+
+ARTIGO ORIGINAL
+
+Ávila RF et al.
+
+212
+
+era do sexo feminino, 97,7% dos estudantes eram solteiros e
+96,5% declararam ser brancos.
+Considerando os escores do REF, a média de acertos totais foi 15,6 (DP: ±2,25; EP: ±0,24) com mínimo de 10 acertos e máximo de 20 acertos. A média do número de acertos
+totais para emoções em intensidade de 70% foi 10,1 (DP:
+±1,40; EP: ±0,15) [min: 7; máx: 12] e para emoções em intensidade de 30% foi 3,9 (DP: ±1,53; EP: ±0,16) [min: 1; máx: 7].
+A Tabela 1 mostra a porcentagem de participantes de acordo com o número de acertos em cada emoção no REF.
+Em relação ao sexo, houve diferença estatisticamente significante no número de acertos da emoção tristeza no sexo
+feminino comparado com o masculino (t84 = 2,30; p = 0,02).
+Não houve diferenças para o escore total e demais emoções.
+No RMEt, a média de acertos totais foi 26,5 (DP: ±3,32;
+EP: ±0,36) com escore mínimo de 18 e máximo de 33. Neste
+instrumento, o sexo feminino também apresentou escore
+mais elevado comparado com o sexo masculino (t84 = 3,43;
+p < 0,01).
+O escore total médio na escala Jefferson de empatia foi
+121,3 (DP: ±9,84; EP: ±1,06) com pontuação mínima de 78 e
+máxima de 140. Não houve relação entre empatia e dados
+sociodemográficos avaliados.
+Em relação às correlações entre a empatia e os instrumentos REF e RMEt, os escores de empatia apresentaram
+correlação positiva fraca com o reconhecimento da emoção
+tristeza na tarefa REF (r = 0,29; p < 0,01). Não houve correlação com as demais emoções e com o RMEt.
+Tabela 1. Porcentagem de participantes de acordo com o
+número de acertos no Teste de Reconhecimento de Expressões
+Faciais de Emoções Básicas divididos por emoções
+Número
+de
+acertos
+
+Alegria
+
+Tristeza
+
+Raiva
+
+Nojo
+
+Surpresa
+
+Medo
+
+Neutro
+
+0
+
+0%
+
+0%
+
+0%
+
+2,3%
+
+0%
+
+7%
+
+7%
+
+1
+
+22,1%
+
+24,4%
+
+2,3%
+
+14%
+
+3,5%
+
+16,3%
+
+24,4%
+
+2
+
+51,2%
+
+43%
+
+23,3%
+
+60,5%
+
+29,1%
+
+40,7%
+
+68,6%
+
+3
+
+26,7%
+
+31,4%
+
+54,7%
+
+20,9%
+
+54,7%
+
+31,4%
+
+-
+
+4
+
+0%
+
+1,2%
+
+19,8%
+
+2,3%
+
+12,8%
+
+4,7%
+
+-
+
+DISCUSSÃO
+Entre os resultados, os seguintes aspectos devem ser destacados: a capacidade de reconhecer a emoção básica tristeza
+e emoções complexas foi maior no sexo feminino, comparado com o masculino em nossa amostra. Além disso, houve
+correlação positiva fraca entre a empatia e a capacidade de
+reconhecer a emoção tristeza.
+O escore médio de empatia encontrado em nossa amostra foi maior do que em relação a outros estudos que utilizaram a mesma escala. No estudo de validação do instrumento
+no Brasil, a média na escala Jefferson de empatia foi 114,9
+J Bras Psiquiatr. 2016;65(3):209-14.
+
+(DP: ±12,4)25. Da mesma forma, um estudo26 realizado com
+estudantes japoneses encontrou escore médio de 104,3
+(DP: ±13,1) e outro27 com estudantes do Reino Unido e da
+Nova Zelândia encontrou escore de 111,4 (DP: ±12,0). Essas
+diferenças entre os estudos podem estar relacionadas a características da amostra, como gênero, ano de formação do
+estudante e características curriculares do curso. Por exemplo, escolas médicas com grade curricular com maior número de disciplinas com formação humanística ou com mais
+estudantes do sexo feminino poderiam se relacionar com
+maiores escores de empatia. Na faculdade estudada, deve-se destacar a presença de disciplinas humanísticas desde o
+primeiro ano do curso e a ligação extremamente próxima
+com um hospital filantrópico para o tratamento de câncer.
+Todavia, deve-se destacar também que diversos estudos
+realizados em estudantes de Medicina apontam para um
+declínio significativo na empatia durante a graduação28-31,
+o que reforça ainda mais a necessidade de disciplinas humanísticas na grade curricular do curso de Medicina. Riess
+et al. testaram um protocolo de treinamento de empatia em
+médicos-residentes e encontraram melhora nos escores de
+empatia e aumento na habilidade de reconhecer emoções
+faciais32.
+Apesar de a correlação entre empatia e o reconhecimento da emoção tristeza ter sido fraca, esse achado pode
+revelar processos cognitivos envolvidos nas diferenças de
+níveis de empatia encontrados entre as pessoas. Considerando que a empatia pode ser definida como a capacidade
+de se colocar na perspectiva do outro3, esse processo passa primeiramente pela habilidade de reconhecer a emoção
+presente no outro seja por estímulos verbais como não verbais9. Dessa forma, o reconhecimento de estado emocional
+a partir da face poderia ser um dos pontos de partida para
+a habilidade empática. De maneira semelhante, um estudo
+que avaliou a relação entre o RMEt e a empatia demonstrou
+correlação fraca entre os escores33, reforçando uma possível
+relação entre empatia e reconhecimento de emoções faciais.
+Considerando apenas a correlação entre tristeza e empatia,
+vale lembrar que o mecanismo de empatia é muitas vezes
+relacionado com reconhecimento de presença de dor no
+outro, possivelmente devido a processos evolutivos34. Esses
+achados podem ser extrapolados para o achado do estudo
+considerando a relação entre dor e tristeza.
+Em relação à maior porcentagem de acerto de reconhecimento de emoções faciais por estudantes do sexo feminino,
+outros estudos apontaram na mesma direção e encontraram
+maior capacidade das mulheres em reconhecer emoções faciais independente da amostra utilizada19. Dessa forma, esse
+achado pode não ter relação direta especificamente com
+a amostra de estudantes de Medicina. A hipótese para o
+melhor desempenho do sexo feminino está associada aos
+aspectos culturais e evolutivos. A atribuição de cuidar de
+uma criança, especialmente na fase pré-verbal do desenvolvimento, pode auxiliar no desenvolvimento de habilidades
+necessárias para o reconhecimento de emoções19,35.
+Considerando os achados mencionados, fica clara a necessidade de mais estudos que explorem a empatia e o reconhecimento de expressões faciais das emoções em estudantes de Medicina. Assim, devem-se apontar as limitações deste
+estudo que incluem o desenho de estudo transversal utilizando apenas alunos do ciclo clínico (3º e 4º anos) e a amostra
+pequena. Outros estudos poderiam incluir todos os anos da
+formação, apresentar desenho longitudinal e comparar grades curriculares das diferentes escolas médicas. Além disso,
+poder-se-ia incluir instrumentos de reconhecimento de emoções com paradigmas diferentes de preferência com maior
+número de imagens por emoção básica. Futuros estudos
+também deverão considerar aspectos como medidas de inteligência dos respondentes e presença de transtornos psiquiátricos, considerando suas influências na cognição social. Por
+fim, deve-se salientar que as tarefas foram realizadas independentemente do período do ciclo menstrual das respondentes
+femininas e sabe-se que esse fator pode interferir na acurácia
+de tarefas de reconhecimento das expressões faciais36.
+
+CONCLUSÕES
+O número de acertos para a emoção tristeza no REF e o escore total do RMEt foram maiores no sexo feminino comparado
+com sexo masculino, o que apenas confirmou um achado
+da literatura, que aponta para esse resultado independente
+da amostra. Além disso, os escores de empatia foram diretamente relacionados com o reconhecimento da emoção
+básica tristeza. Apesar de essa correlação ser fraca, ela pode
+indicar que o reconhecimento e o processamento cognitivo
+da emoção facial do outro podem estar relacionados com
+a capacidade empática. Estudos que avaliem o impacto de
+disciplinas de formação humanística nos níveis de empatia
+seriam desejáveis, assim como os que abordem mais aspectos da relação analisada nesta pesquisa, visto a importância
+destes na formação médica.
+
+Empatia e reconhecimento de emoções
+
+213
+
+CONFLITOS DE INTERESSE
+Os autores declararam não haver conflitos de interesse.
+
+AGRADECIMENTOS
+Agradecemos ao Centro de Bioética do Conselho Regional
+de Medicina do Estado de São Paulo (Cremesp) pelo financiamento da pesquisa.
+
+REFERÊNCIAS
+1.
+
+Brasil. Ministério da Educação. Conselho Nacional de Educação. Câmara de Educação Superior. Resolução CNE/CES 3/3014. Institui diretrizes curriculares nacionais do curso de
+graduação em medicina. Diário Oficial da União. Brasília, 23 jun. 2014; Seção 1. p. 8-11.
+
+2.
+
+Halpern J. What is clinical empathy? J Gen Intern Med. 2003;18(8):670-4.
+
+3.
+
+Melloni M, Lopez V, Ibanez A. Empathy and contextual social cognition. Cogn Affect Behav
+Neurosci. 2014;14(1):407-25.
+
+4.
+
+Stewart MA. Effective physician-patient communication and health outcomes: a review.
+CMAJ. 1995;152(9):1423-33.
+
+5.
+
+Hojat M, Gonnella JS, Mangione S, Nasca TJ, Veloski JJ, Erdmann JB, et al. Empathy in medical students as related to academic performance, clinical competence and gender. Med
+Educ. 2002;36(6):522-7.
+
+6.
+
+Stepien KA, Baernstein A. Educating for empathy. A review. J Gen Intern Med.
+2006;21(5):524-30.
+
+7.
+
+Park KH, Kim D, Kim SK, Yi YH, Jeong JH, Chae J, et al. The relationships between empathy,
+stress and social support among medical students. Int J Med Educ. 2015;6:103-8.
+
+8.
+
+Levey RE. Sources of stress for residents and recommendations for programs to assist
+them. Acad Med. 2001;76(2):142-50.
+
+9.
+
+Mitchell RLC, Phillips LH. The overlapping relationship between emotion perception and
+theory of mind. Neuropsychologia. 2015;70:1-10.
+
+10. American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders.
+5th ed. Washington DC: American Psychiatric Press; 2013.
+11. Premack D, Woodruff G. Does the chimpanzee have a theory of mind? Behav Brain Sci.
+1978;1(4):515-26.
+12. Baron-Cohen S, Wheelwright S, Hill J, Raste Y, Plumb I. The “Reading the Mind in the Eyes”
+Test revised version: a study with normal adults, and adults with Asperger syndrome or
+high-functioning autism. J Child Psychol Psychiatry. 2001;42(2):241-51.
+13. Maurage P, Grynberg D, Noël X, Joassin F, Hanak C, Verbanck P, et al. The “Reading the
+Mind in the Eyes” test as a new way to explore complex emotions decoding in alcohol
+dependence. Psychiatry Res. 2011;190(2-3):375-8.
+14. Ekman P, Sorenson ER, Friesen WV. Pan-cultural elements in facial displays of emotion.
+Science. 1969;164(3875):86-8.
+
+CONTRIBUIÇÕES INDIVIDUAIS
+
+15. Darwin C. A expressão das emoções no homem e nos animais. São Paulo: Companhia das
+Letras; 2009.
+
+Ramon Félix de Ávila – Elaboração da estrutura do trabalho, aplicação dos testes, avaliação dos resultados, primeira
+redação do artigo.
+Daiene de Morais – Elaboração da estrutura do trabalho, correção e redação final do artigo.
+Ana Julia Bomfim – Elaboração da estrutura do trabalho, correção e redação final do artigo.
+Marcos Hortes Nisihara Chagas – Elaboração da estrutura do trabalho, análise estatística dos dados, correção e
+redação final do artigo.
+
+16. Ekman P, Friesen W. Pictures of Facial Affect. Palo Alto: Consulting Psychologists; 1976.
+17. Machado-de-Sousa JP, Arrais KC, Alves NT, Chagas MH, de Meneses-Gaya C, Crippa JA,
+et al. Facial affect processing in social anxiety: tasks and stimuli. J Neurosci Methods.
+2010;193(1):1-6.
+18. da Silva Ferreira GC, Crippa JAS, de Lima Osório F. Facial emotion processing and recognition among maltreated children: a systematic literature review. Front Psychol. 2014;5:1460.
+19. Forni-Santos L, Osório FL. Influence of gender in the recognition of basic facial expressions:
+a critical literature review. World J Psychiatry. 2015;5(3):342-51.
+20. Santos MA, Grosseman S, Morelli TC, Giuliano ICB, Erdmann TR. Empathy differences by
+gender and specialty preference in medical students: a study in Brazil. Int J Med Educ.
+2016;7:149-53.
+J Bras Psiquiatr. 2016;65(3):209-14.
+
+214
+
+Ávila RF et al.
+
+21. Kornreich C, Blairy S, Philippot P, Dan B, Foisy M, Hess U, et al. Impaired emotional facial
+expression recognition in alcoholism compared with obsessive-compulsive disorder and
+normal controls. Psychiatry Res. 2001;102(3):235-48.
+22. Foisy ML, Kornreich C, Fobe A, D’Hondt L, Pelc I, Hanak C, et al. Impaired emotional facial
+expression recognition in alcohol dependence: do these deficits persist with midterm abstinence? Alcohol Clin Exp Res. 2007;31(3):404-10.
+23. Sanvicente-Vieira B, Kluwe-Schiavon B, Wearick-Silva LE, Piccoli GL, Scherer L, Tonelli
+HA, et al. Revised Reading the Mind in the Eyes Test (RMET) – Brazilian version. Rev Bras
+Psiquiatr. 2014;36(1):60-7.
+24. Hojat M, Mangione S, Nasca TJ, Cohen MJ, Gonnella JS, Erdmann JB, et al. The Jefferson
+Scale of Physician Empathy: Development and Preliminary Psychometric Data. Educ Psychol Meas. 2001;61(2):349-65.
+25. Paro HBMS, Daud-Gallotti RM, Tibério IC, Pinto RMC, Martins MA. Brazilian version of the
+Jefferson Scale of Empathy: psychometric properties and factor analysis. BMC Med Educ.
+2012;12(1):73.
+26. Kataoka HU, Koide N, Ochi K, Hojat M. Measurement of empathy among Japanese medical
+students: psychometrics and score differences by gender and level of medical education.
+Acad Med. 2009;84(9):1192-7.
+27. Quince TA, Kinnersley P, Hales J, da Silva A, Moriarty H, Thiemann P, et al. Empathy among
+undergraduate medical students: a multi-centre cross-sectional comparison ofstudents
+beginning and approaching the end of their course. BMC Med Educ. 2016;16(1):92.
+
+J Bras Psiquiatr. 2016;65(3):209-14.
+View publication stats
+
+ARTIGO ORIGINAL
+
+28. Chen D, Lew R, Hershman W, Orlander J. A cross-sectional measurement of medical student empathy. J Gen Intern Med. 2007;22(10):1434-8.
+29. Hojat M, Mangione S, Nasca TJ, Rattner S, Erdmann JB, Gonnella JS, et al. An empirical
+study of decline in empathy in medical school. Med Educ. 2004;38(9):934-41.
+30. Hojat M, Vergare MJ, Maxwell K, Rattner S, Erdmann JB, Gonnella JS, et al. The devil is in
+the third year: a longitudinal study of erosion of empathy in medical school. Acad Med.
+2009;84(9):1182-91.
+31. Neumann M, Edelhäuser F, Tauschel D, Fischer MR, Wirtz M, Woopen C, et al. Empathy decline and its reasons: a systematic review of studies with medical students and residents.
+Acad Med. 2011;86(8):996-1009.
+32. Riess H, Kelley JM, Bailey RW, Dunn EJ, Phillips M. Empathy training for resident physicians:
+A randomized controlled trial of a neuroscience-informed curriculum. J Gen Intern Med.
+2012;27(10):1280-6.
+33. Youssef FF, Nunes P, Sa B, Williams S. An exploration of changes in cognitive and emotional
+empathy among medical students in the Caribbean. Int J Med Educ. 2014;5:185-92.
+34. Danziger N, Prkachin KM, Willer JC. Is pain the price of empathy? The perception of others’
+pain in patients with congenital insensitivity to pain. Brain. 2006;129(Pt 9):2494-507.
+35. Kret ME, De Gelder B. A review on sex differences in processing emotional signals. Neuropsychologia. 2012;50(7):1211-21.
+36. Derntl B, Kryspin-Exner I, Fernbach E, Moser E, Habel U. Emotion recognition accuracy in
+healthy young females is associated with cycle phase. Horm Behav. 2008;53(1):90-5.
+

@@ -1,0 +1,1794 @@
+página
+
+A Influência da Taxa de Câmbio e
+Renda Mundial Sobre as Exportações Brasileiras
+de Soja (2000-2015)1
+Francisco Laercio Pereira Braga2 e Ana Claudia Sampaio de Oliveira3
+
+Resumo: Este trabalho propõe-se a testar a possível existência de uma relação de longo
+prazo entre as variáveis taxa de câmbio e renda mundial sobre o desempenho das
+exportações brasileiras de soja. Para este fim, estima-se um modelo econométrico capaz
+de descrever o nível de sensibilidade (elasticidade) das variáveis explicativas entre janeiro
+de 2000 e dezembro de 2015. A estratégia empírica adotada foi o uso dos métodos de
+séries temporais, teste de raiz unitária, teste de cointegração de Johansen, modelo vetorial
+autorregressivo (VAR) mais completo, denominado modelo vetor de correção de erros
+(VECM), a função impulso-resposta e a decomposição dos erros de previsão da variância.
+Os resultados demonstraram que apenas a variável renda mundial mostrou-se relevante
+para explicar as oscilações ocorridas ao longo do tempo na variável dependente exportação
+de soja, revelando a importância da conjuntura internacional para as vendas brasileiras
+da commodity. A variável taxa de câmbio apresentou sinal contrário à teoria econômica;
+contudo, registrou um coeficiente significativo. Na análise de curto prazo, observou-se que
+existe certa defasagem de tempo para que os desequilíbrios ocorridos no curto prazo sejam
+corrigidos no longo prazo.
+Palavras-chaves: Exportação de soja, renda mundial, modelo VEC.
+Abstract: This paper proposes to test the possible existence of a long-term relationship between
+the exchange rate and world income variables on the performance of Brazilian soybean exports.
+For this purpose, an econometric model capable of describing the level of sensitivity (elasticity) of
+the explanatory variables between January 2000 and December 2015 is estimated. The empirical
+strategy adopted was the use of time series methods, unit root test, Johansen cointegration test,
+autoregressive vector model (VAR), called error correction vector model (VECM), impulse-response
+function and the decomposition of variance prediction errors. The results showed that only the global
+income variable was relevant to explain the oscillations that occurred over time in the dependent
+soybean export variable, revealing the importance of the international scenario for the Brazilian sales
+of the commodity. The variable exchange rate showed a sign contrary to economic theory; however,
+
+1. Data de submissão: 8 de fevereiro de 2017. Data de aceite: 26 de fevereiro de 2018.
+2. Universidade Estadual do Ceará. Fortaleza, Ceará – Brasil. E-mail: laercio.braga@uece.br
+3. Universidade Federal do Ceará. Fortaleza, Ceará – Brasil. E-mail: anasampaio2812@gmail.com
+
+it registered a significant coefficient. In the short-term analysis, it was observed that there is a certain time lag for short-term
+imbalances to be corrected in the long run.
+Key-words: Soybean export, world income, VEC model.
+Classificação JEL: C10, C32, F10, Q17.
+DOI: http://dx.doi.org/10.1590/1234-56781806-94790560407
+
+1. Introdução
+A
+conjuntura
+econômica
+nacional
+vem
+passando por transformações importantes, como o
+enfrentamento à competitividade asiática, o processo
+de desindustrialização e a reprimarização da pauta
+exportadora brasileira. Nesse contexto, é fácil
+compreender porque a China vem despontando como
+importante parceiro comercial brasileiro na última
+década, o que fez a corrente de comércio Brasil-China
+alcançar níveis recordes a partir de 2011, com forte
+concentração na participação de produtos básicos na
+pauta exportadora (MELO e HOLANDA, 2013).
+Destarte, o artigo analisa se as variáveis econômicas, taxa de câmbio e renda mundial, foram importantes para o crescimento das exportações de soja
+brasileiro no mercado internacional entre janeiro de
+2000 e dezembro de 2015. Assim, o presente trabalho
+propõe-se a testar a possível existência de uma relação
+de longo prazo entre as variáveis sobre o desempenho das exportações brasileiras de soja. Para este fim,
+estima-se um modelo econométrico capaz de descrever o nível de sensibilidade (elasticidade) das variáveis
+explicativas no período em questão.
+A relevância para tal estudo pauta-se, inicialmente,
+pela expansão da atividade agrícola e de mudanças
+macroeconômicas significativas ocorridas a partir da
+década de 1990 no cenário nacional. Contudo, percebe-se, ainda, a necessidade de estudos que analisem o
+impacto das principais variáveis macroeconômicas,
+como o câmbio e a renda dos países compradores dos
+produtos nas exportações do País. Diante desse pano-
+
+rama, é de conhecimento que fatores que impactam
+significativamente as exportações, em geral, podem
+não afetar com a mesma intensidade as exportações
+de um produto específico, no caso, a soja brasileira.
+Em seguida, a produção da oleaginosa, em especial,
+tem papel importante na economia brasileira, sobretudo no que se refere à geração de divisas para o País,
+pois, entre 2000 e 2015, a receita obtida com as exportações brasileiras de soja (em dólar) tiveram elevação
+de 860%, com média de crescimento de 18% ao ano
+(BRASIL, 2016).
+O artigo, além desta introdução, tem um resgate
+teórico sobre os trabalhos desenvolvidos envolvendo
+modelos econométricos e dinâmica recente da soja no
+mercado externo. Em seguida, são apresentados os
+aspectos metodológicos adotados, com natureza, fonte
+dos dados e métodos de análise. Na terceira etapa,
+estão os resultados e suas discussões. Por fim, nas últimas seções, têm-se as conclusões do estudo e as referências bibliográficas.
+
+2. Estudos sobre os modelos teóricos
+Os trabalhos desenvolvidos por Braga e Markwald
+(1983) e Zini Júnior (1988) têm em comum, primeiramente, o estabelecimento inicial da suposição de equilíbrio entre oferta e demanda e, em seguida, a imposicão
+de uma dinâmica de desequilíbrio. Os modelos advindos destes estudos são estimados por meio do uso do
+método de equações simultâneas, como mínimos quadrados de três estágios, que partem do pressuposto
+que as séries temporais são estacionárias.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+Francisco Laercio Pereira Braga e Ana Claudia Sampaio de Oliveira 
+
+Os estudos de Portugal (1993), por sua vez, mostram que a estimação das equações de demanda e
+oferta para exportação e importação eram baseadas nas
+seguintes hipóteses: (a) substituição imperfeita (leve
+diferenciação entre produtos domésticos e estrangeiros); (b) preços diferenciados; (c) hipótese do país
+pequeno (a participação do país no comércio mundial
+é pequena).
+Segundo Maia e Lima (2004, p. 7), a análise de um
+modelo econométrico estrutural deve ter por base,
+necessariamente, seu arcabouço teórico com objetivo
+primordial “[...] captar os efeitos marginais e as elasticidades das interações de variáveis exógenas em relação às variáveis endógenas”. Assim, nesse quadro, cada
+grupo de modelo será considerado mais adequado, ou
+não, para responder a determinados questionamentos,
+haja visto o consenso quanto à não existência de um
+modelo que seja universalmente aceito.
+No modelo keynesiano simplificado, o objeto de
+destaque está na introdução imediata do setor externo
+como elemento da demanda agregada por meio das
+exportações, bem como de um elemento de vazamento da renda, as importações. O primeiro componente, a exportação (X), depende, fundamentalmente,
+da renda do resto do mundo (Yx) e da taxa de câmbio
+(θ), enquanto o segundo elemento, a importação (M),
+é considerado como função crescente apenas da renda
+interna, numa proporção fixa, dada pela propensão
+marginal a importar (m) (OLIVEIRA et al., 2015).
+A renda do resto mundo pode ser considerada uma
+variável de choque externo à economia de um país.
+Contudo, a presença de choques frequentes torna-se
+relevante para os países em desenvolvimento, cuja instabilidade advinda de choques externos é uma tarefa
+árdua de promoção do crescimento (COSTA JUNIOR,
+2013). Esse quadro intensifica-se quando os países são
+dependentes de exportações de commodity ou que
+tenham cestas de vendas externas mais limitadas, pois
+acabam sensíveis a instabilidades que possam aparecer
+na demanda global, incluindo a renda dos principais
+parceiros comerciais do país.
+A renda externa é, ainda, uma das principais
+variáveis responsável pelas exportações domésticas e
+atua diretamente sobre a demanda dos outros países,
+considerando-se a demanda por bens normais. Logo,
+tem-se uma relação direta entre as exportações locais
+e a renda externa, ou seja, se ocorrer um aumento da
+renda de um país espera-se, ao final, um efeito posi-
+
+665
+
+tivo na demanda por bens produzidos no exterior
+(RAMALHO e TARGINO, 2004).
+A taxa de câmbio pode ser apontada como outra
+variável que influencia fracamente ou fortemente o
+desempenho de um país no comércio mundial, pois
+é identificada como principal caminho para alcançar
+maior competitividade internacional. Dessa maneira,
+alterações na taxa podem influenciar o desempenho
+dos fluxos comerciais, dado que afeta as decisões de
+oferta e demanda na economia (CARNEIRO, 2013).
+A importância da taxa de câmbio real efetiva está
+vinculada ao fato de um país não possuir apenas um
+único parceiro, mas comercializar com vários outros
+distintos. Desse modo, a taxa de câmbio efetiva pode
+ser entendida como a média ponderada das várias
+taxas de câmbio reais, com seus pesos definidos de
+acordo com a importância de cada parceiro no comércio internacional (OLIVEIRA et al., 2015).
+Diante deste cenário teórico, a análise do desempenho das exportações brasileiras no período de 1977
+a 1996, desenvolvida por Cavalcanti e Ribeiro (1998),
+mostrou que, para os produtos básicos, semimanufaturados e manufaturados, as exportações dependiam,
+principalmente, das condições de demanda do mercado internacional, tais como: renda mundial e preços
+dos produtos exportados relativamente aos bens substitutos. Por outro lado, as vendas externas dos produtos industriais são afetadas por fatores ligados à oferta:
+taxa de rentabilidade e capacidade produtiva. Por
+fim, as exportações de produtos industrializados são
+influenciadas pelo nível de comércio externo. Os autores utilizaram como método econométrico o modelo
+VAR (Vector Autoregressive Analysis) para mensurar o
+impacto sobre as exportações.
+Se existir uma verdadeira simultaneidade entre
+um conjunto de variáveis, todas elas devem ser tratadas igualmente, ou seja, não pode haver qualquer tipo
+de distinção entre as variáveis edógenas e exógenas.
+Portanto, o modelo VAR pode ser considerado simples, sem ocorrer preocupações em quais variáveis são
+endógenas e exógenas (GUJARATI, 2006).
+Outros autores trabalharam nos estudos sobre os
+efeitos da renda externa, taxa de câmbio real efetiva e
+do preço de exportação de commodities como grãos de
+café e açúcar. Silva e Maia (2003) utilizaram o modelo
+VAR para grãos de café no período de 1961 a 2011 e
+chegaram a algumas conclusões pertinentes. Primeira,
+que o valor das exportações do café foi mais impactado
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+666
+
+ A Influência da Taxa de Câmbio e Renda Mundial Sobre as Exportações Brasileiras de Soja (2000-2015)
+
+pelos choques no preço do café em gãos e da renda
+externa do que pelos choques na taxa de câmbio real.
+Segunda conclusão, diagnosticaram, ainda, que as inovações na renda externa tiveram efeitos positivos nas
+exportações da commodity brasileira a curto prazo.
+Alves e Bachi (2004) optaram por estimar uma função de oferta de exportação brasileira de açúcar para o
+período de 1995 a 2002 e também utilizaram a metodologia VAR. Dentre os resultados, os autores perceberam
+que as exportações brasileiras de açúcar elevaram-se à
+medida que a moeda nacional desvalorizou-se perante
+o dólar norte-americano e que o efeito da taxa de câmbio sobre o quantum exportado é mais expressivo após
+três meses de choque. Com o uso da metodologia VAR/
+VECM para o açúcar bruto brasileiro, sendo consideradas as propriedades de integração e cointegração das
+séries utilizadas, Silva e Bachi (2005) demosntraram
+que as exportações do produto em estudo dependem
+primordialmente das condições do mercado externo,
+da taxa de câmbio e do preço doméstico.
+O impacto da taxa de câmbio sobre as vendas de
+produtos agrícolas brasileiros no mercado internacional,
+por exemplo, foi analisado em dois períodos diferentes por Maia (2003). O primeiro período compreendeu
+o intervalo de janeiro de 1980 até dezembro de1990,
+enquanto o segundo iniciou-se em janeiro de 1990 e
+foi até dezembro de 2001. Para os objetivos propostos,
+o autor usou a abordagem de macroeconomia aberta a
+partir do modelo Mundell-Fleming e, em termos metodológicos, o modelo VAR com causalidades contemporâneas como modelo teórico. Os principais resultados
+obtidos revelaram que a taxa de câmbio apresentou-se
+significativa na determinação das exportações agrícolas
+brasileiras, tanto no curto como no longo prazo.
+
+3. A dinâmica recente da soja
+no comércio exterior
+O consumo de soja em grãos no mundo vem registrando crescimento expressivo na última década, que
+pode ser associado ao crescimento da população mundial e ao aumento do poder aquisitivo das pessoas,
+em especial nos países em desenvolvimento como a
+China, Índia e Brasil. Paralelamente, a produção mundial apresentou momentos de altos e baixos entre 2000
+e 2015. Nesse mesmo intervalo, a produção de soja em
+grãos aumentou cerca de 100%, enquanto que, entre
+2011 e 2016, a expectativa de crescimento foi de 33%,
+saindo de 240 milhões para 320 milhões de toneladas
+em agosto de 2016 (Tabela 1).
+Neste cenário, os Estados Unidos despontam
+como grande produtor mundial de soja em grãos nas
+duas últimas safras do período considerado, com crescimento de 26% em 2016 face à safra de 2011/12. O
+Brasil, com 97 milhões de toneladas, conseguiu elevar
+em 46% a produção de soja na comparação com a temporada de 2011/12.
+Dados do World Bank (2013) mostram que, nos
+anos de 1980, 1990 e 2000, os preços da soja no mercado internacional registraram valores de US$ 296,00,
+US$ 247,00 e US$ 212,00 por tonelada, respectivamente.
+De 2000 a 2015, o preço dessa mercadoria oscilou em
+determinados períodos, com destaque para o período
+de 2006-2008, quando ocorreram taxas de crescimento
+mais significativas. Em 2009, houve queda de 16,49%
+em relação ao ano anterior, influenciada por fatores
+externos como a crise econômica mundial e a consequente redução da demanda por essa commodity. Em
+2012, os preços se elevaram em 42%, revelando a recu-
+
+Tabela 1. Mundo: produção de soja (milhões de toneladas)
+Estados Unidos
+Brasil
+Argentina
+Subtotal dos 3 principais
+China
+Índia
+Paraguai
+Canadá
+Outros
+Total
+
+2011/12
+84,29
+66,50
+40,10
+190,89
+14,49
+11,70
+4,04
+4,47
+14,84
+240,43
+
+2012/13
+82,79
+82,00
+49,30
+214,09
+13,05
+12,20
+8,20
+5,09
+16,20
+268,83
+
+2013/14
+91,39
+86,70
+53,50
+231,59
+12,20
+9,50
+8,19
+5,36
+16,41
+283,25
+
+2014/15
+108,01
+94,50
+60,80
+263,31
+12,35
+9,80
+8,40
+6,05
+19,45
+319,36
+
+2015/16 agosto
+106,59
+97,00
+57,00
+260,59
+11,50
+11,50
+8,80
+6,20
+21,46
+320,05
+
+Variação (2016/2011)
+26%
+46%
+42%
+37%
+-21%
+-2%
+118%
+39%
+45%
+33%
+
+Fonte: USDA, 2015 apud Conab, 2015. Elaboração própria.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+Francisco Laercio Pereira Braga e Ana Claudia Sampaio de Oliveira 
+
+667
+
+Figura 1. Evolução do Preço médio da Tonelada da Soja no Mercado Mundial (em US$)
+600,00
+500,00
+400,00
+300,00
+200,00
+100,00
+0,00
+
+2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
+
+Fonte: Indexmundi, 2016. Elaboração própria.
+
+peração no mercado mundial. Contudo, a partir desse
+último ano, os preços começaram uma trajetória de
+queda (Figura 1).
+A patir da década de 2000, constatou-se, também,
+que o comércio externo brasileiro registrou modificações importantes na estrutura de suas pautas de
+exportação e importação. A intensidade tecnológica
+dos produtos brasileiros transacionados no mercado
+mundial apresentou parcela crescente negativa nos
+saldos dos setores classificados como de alta intensidade tecnológica, média alta e média baixa e resultado
+positivo apenas para os setores classificados como de
+baixa intensidade tecnológica (BRASIL, 2016). De fato,
+a pauta exportadora nacional registrou movimento
+em direção à primarização com a China, o qual despontou como principal responsável por esse efeito.
+Dessa forma, notou-se a elevação da participação de
+produtos básicos direcionados ao mercado chinês,
+concentrando-se em minérios de ferro, soja e óleos
+brutos de petróleo (MELO e HOLANDA, 2013).
+Assim, diante deste contexto, a produção de soja
+aparece com papel importante na economia brasileira,
+sobretudo no que se refere à geração de divisas para
+o País. Portanto, nota-se que a soja é uma commodity
+agrícola que, no último decênio, sustentou a demanda
+dinâmica no mercado mundial. Essa característica do
+produto confere grande oportunidade para a expansão
+da produção nacional na medida em que este é destinado, fundamentalmente, ao mercado externo. A partir de 2010, as exportações brasileiras de soja tiveram
+como principal destino a China, que adquiriu 75% dos
+embarques totais de soja do Brasil em 2015. Outros países adquiriram esse produto com menor representatividade, como a Espanha, que participou com 4% das
+compras, e Tailândia, com 3% (BRASIL, 2016).
+
+Entre 2000 e 2015, a receita obtida com as exportações brasileiras de soja subiu 860%, uma média de
+crescimento de 18% ao ano, com o maior valor exportado em 2014. Ja com relação ao volume, (kg), o crescimento foi de 372% no mesmo intervalo de tempo,
+com média de crescimento em torno de 10% ao ano.
+Enquanto o preço médio (US$/kg) das exportações de
+soja, no mesmo período citado, passou de 0,19 para
+0,39 no final de 2015, com elevação superior a 100%
+(BRASIL, 2016).
+Paralelamente ao crescimento das exportações de
+soja, tanto em valores quanto em volume, foram registradas modificações importantes no ambiente econômico nacional. Na verdade, nas décadas de 1990, 2000
+e na primeira metade dos anos 2010, a economia brasileira passou por diversas transformações importantes
+que marcaram uma nova fase na economia nacional,
+tais como: processo de abertura comercial da economia
+brasileira, implantação do Plano Real, maior flexibilidade em relação ao movimento internacional de capitais e liberalização do mercado de câmbio.
+Desta forma, constata-se que a expansão da
+demanda mundial por soja, notadamente da China,
+foi decisiva para a ascensão dos preços desse produto
+no mercado internacional. As exportações desta commodity brasileira para a China e para o mundo, entre
+2000 e 2015, estiveram focadas no produto soja, mesmo
+triturada, exceto para semeadura4. Assim, regiões que
+até então não eram tradicionais produtoras de soja
+no cenário nacional, como Bahia, Maranhão e Piauí,
+
+4. Produto representado pela numeração de oito dígitos
+(12019000) correspondente à Nomenclatura Comum do
+Mercosul (NCM) (BRASIL, 2017).
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+668
+
+ A Influência da Taxa de Câmbio e Renda Mundial Sobre as Exportações Brasileiras de Soja (2000-2015)
+
+ganharam destaque nos últimos anos como grandes
+exportadores.
+As tradicionais regiões exportadoras de soja no
+Brasil são Centro-Oeste e Sul. No entanto, a segunda
+perdeu participação em receita em 2015, em comparação ao ínicio da série. A perda de participação também ocorreu para as vendas da região Sudeste, que
+saíram de 12%, em 2000, para 9% em 2015. No caminho inverso, tem-se o ganho de mercado da soja das
+regiões Norte e Nordeste do País (Tabela 2).
+Contudo, alguns gargalos podem comprometer
+as transações externas dessa mercadoria e, por conseguinte, o aproveitamento das oportunidades internacionais que ora se apresentam. Dentre estes gargalos,
+destaca-se a precariedade da logística de escoamento
+da produção, tanto rodoviária quanto portuária. A precariedade reflete em cancelamento de encomendas
+contratadas e não entregues no prazo (MELO, BRAGA
+e HOLANDA, 2013).
+
+4. Metodologia
+Nas seções que se seguem, será possível encontrar conceitos importantes para o desenvolvimento do
+objeto deste ensaio. Dessa maneira, além da apresentação da natureza e fonte dos dados analisados, tem-se
+uma breve exposição do modelo teórico selecionado,
+que servirá para indicar prováveis restrições sobre as
+
+equações do modelo. No corpo metodológico estão,
+ainda, alguns conceitos teóricos pertinentes ao método
+de análise dos dados baseados, dentre outros, no trabalho de Oliveira et al. (2015).
+
+4.1. Natureza e fonte dos dados
+A análise do trabalho será realizada, primeiramente, com dados de origem secundária referente às
+exportações do produto soja, mesmo triturada, exceto
+para semeadura, sendo esses distribuídos em frequência mensal que se estende de janeiro de 2000 a
+dezembro de 2015, e foram extraídos do Ministério da
+Indústria e Comércio (MDIC), através do sistema Alice
+Web, que classifica os setores em dois dígitos (01 a 99)
+e segue a metodologia da Nomenclatura Comum do
+Mercosul (NCM). O produto soja está incluído no setor
+12 (sementes e frutos oleaginosos, grãos), segundo a
+NCM.
+O marco teórico deste trabalho é de um modelo de
+economia aberta (IS-LM-BP) com variáveis para compor o conjunto de dados na formulação desse modelo a
+saber: exportação de soja, mesmo triturada, exceto para
+semeaduras (x_soja), que é a variável dependente do
+modelo; renda mundial (r_mund) e taxa de câmbio efetiva real (t_camb), variáveis independentes. Destaca-se,
+ainda, o fato de que todas as variáveis são trabalhadas
+em logaritmo natural, dada a praticidade na estimação
+das elasticidades parciais e para reduzir a variabilidade
+
+Tabela 2. Brasil: participação em receita nas exportações de soja segundo região (2000-2015) (%)
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+
+Sul
+46
+46
+42
+48
+39
+20
+25
+44
+34
+34
+39
+40
+32
+38
+35
+36
+
+Nordeste
+6
+4
+4
+4
+6
+7
+6
+6
+8
+9
+10
+10
+11
+8
+8
+9
+
+Sudeste
+12
+10
+11
+7
+12
+10
+10
+5
+6
+6
+6
+6
+8
+9
+8
+9
+
+Centro-Oeste
+36
+41
+42
+39
+41
+58
+55
+42
+48
+48
+42
+41
+45
+41
+44
+39
+
+Norte
+0
+0
+1
+1
+2
+4
+4
+3
+4
+3
+4
+4
+5
+4
+5
+6
+
+Fonte: Brasil, 2016. Elaboração própria.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+Francisco Laercio Pereira Braga e Ana Claudia Sampaio de Oliveira 
+
+das séries originais. A hipótese subjacente é de que as
+variáveis macroeconômicas citadas são relevantes para
+explicar o crescimento das exportações de um produto
+específico – no caso, a soja brasileira.
+A série de exportação de soja (x_soja) foi deflacionada pelo IPA, Índice de Preços por Atacado da
+China, principal parceiro comercial do Brasil, que consumiu mais de 75% da soja brasileira, divulgado pelo
+National Statistcs Republic of China, período-base 2011.
+Deve-se salientar que a opção em se utilizar o IPA
+em vez de um Índice de Preço ao Consumidor (IPC)
+deve-se ao fato de refletir a evolução dos preços de
+produtos industriais e agrícolas que podem ser caracterizados como comercializáveis com o resto do mundo
+(tradeable), enquanto o segundo índice inclui bens e serviços que estão à margem do comércio internacional
+(non-tradeable) (ZINI, 1993, p. 32 apud MARGARIDO,
+2001),
+Como proxy para a renda mundial (r_mund),
+utilizou-se a soma dos produtos internos brutos
+(PIB´s) em valores reais dos dois principais países
+importadores da soja brasileira (China e Espanha) que,
+juntos, importaram 79% do produto nacional em 2015.
+É importante frisar que, como os dados dos respectivos
+PIB’s estão disponíveis apenas trimestralmente, optou-se, desta forma, em considerar uma taxa de crescimento constante a cada três meses para que os mesmos
+fossem transformados em uma série mensal, conforme
+metodologia de Nakabashi, Cruz e Scatolin (2008).
+E, finalmente, como proxy para a taxa de câmbio,
+este trabalho se propôs a formular uma série para a
+taxa de câmbio efetiva real (t_camb). Deve-se salientar
+que a política cambial impacta tanto sobre as importações quanto exportações via setor externo do País.
+Os dados referentes à taxa de câmbio são oriundos
+do Instituto de Pesquisa Econômica Aplicada (Ipea).
+Espera-se, ao final, que choques positivos na renda
+mundial e na taxa de câmbio gerem impactos positivos
+nas exportações de soja.
+Para a metodologia de cálculo da taxa de câmbio
+efetiva real, considerou-se uma taxa de câmbio efetiva real cotada de forma direta, ou seja, quantidade
+de moeda nacional por unidade de moeda estrangeira, transformada em índice. Vale ressaltar que a
+escolha pela transformação em índice deve-se à inexistência de unidade de medida da variável taxa de
+câmbio efetiva real. Destaca-se, ainda, a ideia de que
+“[...] quanto maior (ou menor) é este índice, mais (ou
+
+669
+
+menos) desvalorizada está a moeda doméstica em termos reais” (LAMAS, 2006, p. 72).
+Posteriormente, foram estabelecidas as ponderações dos dois países que são os maiores parceiros comerciais – China e Espanha – por destino das exportações,
+em valor, no período de jan/2000 a dez/2015, com dados
+da AliceWeb, do Ministério do Desenvolvimento,
+Indústria e Comércio Exterior (BRASIL, 2016). A escolha de apenas dois destinos pauta-se pela representatividade conjunta dos dois países.
+Outro importante passo na construção de uma
+taxa de câmbio efetiva real é a escolha do deflator mais
+adequado. Para tanto, respeitando-se as restrições
+quanto à disponibilidade e uniformização dos dados
+para cada país, foram utilizados os Índices de Preços
+por Atacado (IPA) conforme a metodologia utilizada
+por instituições brasileiras, como o Ipea (OLIVEIRA et
+al., 2015). De tal modo, a fórmula utilizada para calcular o índice taxa de câmbio efetiva real pode ser representada por:
+
+T_CAMBt =
+
+%
+
+2
+i=1
+
+^eit P it*hwit
+
+Pit
+
+(1)
+
+Em que:
+T_CAMBt – Taxa de câmbio efetiva real no período t;
+Π – operador do produtório;
+wit – o peso do país i em relação aos dois países no
+período t;
+eit – taxa de câmbio nominal do país i no período t;
+P*- nível de preços do país i no período t; e
+Pit – nível de preços do Brasil no período t.
+
+4.2. Tratamento e limitação dos dados
+Todas as observações coletadas foram selecionadas a partir dos bancos de dados e nas pesquisas de
+órgãos internacional e nacional, e foram, assim, ajustadas com a finalidade de atender aos questionamentos levantados aos objetivos do presente trabalho. O
+método de tratamento utilizado será, sobretudo, por
+meio de análise de conteúdo gráfico e econométrico. Já
+a análise empírica foi realizada através da utilização de
+regressões econométricas e por métodos de defasagens
+distribuídas para analisar o impacto do crescimento
+da renda externa dos dois principais parceiros comerciais do Brasil e taxa de câmbio. A inclusão das defasagens deve-se à existência de certa discrepância entre
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+670
+
+ A Influência da Taxa de Câmbio e Renda Mundial Sobre as Exportações Brasileiras de Soja (2000-2015)
+
+mudanças no câmbio e renda dos parceiros comerciais
+sobre as exportações.
+No que se refere à limitação da pesquisa, pode-se apontar a abrangência temporal que está restrita ao
+período analisado (2000-2015), pois foi nesse período
+que presenciou-se uma mudança significativa, com a
+inserção de um importante player no comércio internacional (China) como principal demandante da soja
+brasileira.
+
+4.3. Modelo teórico
+As funções de exportação e importação de um
+determinado produto estão representadas, aqui, nas
+equações (2) e (3). Na equação (2) é possível verificar que a exportação de soja é definida como função
+dependente da taxa de câmbio efetiva real (t_camb) e
+da renda externa mundial (r_mund), enquanto que a
+importação (Eq. 3) é influenciada pela mesma taxa de
+câmbio e renda interna (r_int).
+
+X = X(t_camb, r_mund)
+
+(2)
+
+M = M (t_camb, r_int)
+
+(3)
+
+O modelo mais completo de economia aberta de
+um país contém uma curva de equilíbrio do balanço de
+pagamentos, curva BP, além das curvas IS e LM. A primeira representará todas as combinações possíveis de
+taxa de juros e renda que levam ao equilíbrio na conta
+balanço de pagamentos para uma determinada taxa de
+câmbio (FROYEN, 2013). Dessa forma, a curva BP será
+representada da seguinte forma:
+
+X(t_camb, r_mund) – M(t_camb, r_int,) + F(r, rx) = 0 (4)
+Em que: r é a taxa de juros interna; rx é a taxa de juros
+internacional.
+Desta equação 4, observa-se, ainda, termos referentes à balança comercial (exportações líquidas),
+representados por X e M, como já mencionados anteriormente, e o termo que diz respeito à entrada líquida
+de capitais autônomos, no caso, o F da expressão matemática (FROYEN, 2013). Assim, torna-se possível representar as relações entre o saldo da conta corrente e suas
+principais variáveis explicativas a partir das equações
+a seguir:
+
+CC = X – M
+
+(5)
+
+CC = X(t_camb, r_mund) – M(t_camb, r_int) (6)
+
+A partir das equações (5) e (6), verifica-se que as
+exportações são influenciadas pela taxa de câmbio efetiva real (t_camb) e da renda externa (r_mund), exercendo relação direta com ambas as variáveis; do lado
+da importação, nota-se a dependência desta variável
+em relação à taxa de câmbio efetiva real (t_camb) e da
+renda interna (r_int). Nesse caso, constata-se que as
+compras exibem relação inversa com uma variável e
+direta com a outra, respectivamente.
+Deve-se salientar que o modelo de economia
+aberta (IS-LM-BP) desenvolvido neste trabalho envolverá apenas um item da balança de bens, que no caso é
+referente à exportação de soja, registrada, por sua vez,
+do lado dos débitos da conta Transações Correntes.
+Contudo, espera-se que as relações expostas no
+modelo mantenham-se para este caso particular citado,
+assim como foi representado no modelo de Oliveira et
+al. (2015). Dessa maneira, a função exportação de soja
+como uma função linear nos logaritmos com um componente estocástico (εt) pode ser representada conforme equação (7):
+
+Ln(XM) = β0 + β1 Ln(t_camb) +
++ β2 Ln(r_mund) + εt
+
+(7)
+
+Em que: XM são as exportações de soja e as constantes
+β1 e β2 são os coeficientes de elasticidade parcial da função de demanda mundial da soja brasileira.
+A definição de elasticidade aborda não somente
+aspectos microeconômicos, mas, também, macroeconômicos, que relacionam tanto o preço e a quantidade
+demandada (ou ofertada) de um determinado produto, quanto àqueles relacionados aos níveis de renda
+e de compras de um dado país, sendo este o modelo
+utilizado conforme Oliveira et al. (2015).
+A utilização de vetores autorregressivos permite
+expressar modelos econômicos completos e com possibilidade da estimação dos seus parâmetros. Dessa
+forma, trabalhar com as metodologias VAR e VECM
+tornou-se importante na apreciação de questões macroeconômicas. Dentre essas, a identificação da possível
+existência e intensidade dos resultados das variáveis
+taxa de câmbio e renda mundial sobre as exportações
+da soja nacional.
+A tendência estocástica e determinística do
+modelo será observada a partir da análise empírica, que envolve a observação gráfica das séries. Na
+etapa seguinte, os testes para determinar a ordem
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+Francisco Laercio Pereira Braga e Ana Claudia Sampaio de Oliveira 
+
+de integração e cointegração das séries são realizados (em geral se I(0) ou I(1)), com ou sem tendência
+determinística.
+Após a identificação da ordem de integração das
+variáveis utilizadas, estima-se o modelo VAR com as
+defasagens adequadas para o modelo dinâmico com
+base em critérios de escolha. Ressalta-se que, se uma
+ou mais séries forem I(1), faz-se o teste de cointegração
+proposto por Johansen (1991) para definir a existência
+(ou ausência) e o número das relações de cointegração
+(ou, de longo prazo) entre as variáveis de estudo integradas de mesma ordem. O referido autor coloca ainda
+que, para testar o número dos vetores de cointegração, deve-se utilizar dois instrumentos: o teste do traço
+(λtrace) e o teste do máximo autovalor (λmax).
+Conforme Oliveira et al. (2015), caso não sejam
+verificadas equações de cointegração (posto nulo),
+deve-se estimar um VAR para as séries em primeira
+diferença; entretanto, sendo comprovada a existência
+de uma ou mais equações de cointegração, estima-se
+um VECM. Os conceitos de raiz unitária, critérios de
+seleção de modelos, cointegração, decomposição da
+variância do erro e função de impulso resposta estão
+intimamente relacionados aos aspectos teóricos do
+modelo VAR (FABRIS e MEURER, 2007).
+O modelo autorregressivo de p-ésima ordem VAR
+(p) por um vetor com n variáveis endógenas, Yt, estão
+conectados entre si por meio da matriz A, de acordo
+com a seguinte expressão:
+
+AYt = Ω0 + Φ1Yt-1 + Φ2Yt-2 + ... + ΦPYt-p + εt
+
+(8)
+
+Em que:
+A – é uma matriz n x n que define as restrições contemporâneas entre as variáveis que constituem o vetor
+n x 1, Yt;
+Ω0 – é um vetor de constantes n x 1 (vetor de
+interceptos);
+Φp – são matrizes dos parâmetros de ordem n x n;
+e, εt – é um vetor n x 1 de perturbações aleatórias não
+correlacionadas entre si (termo de erro estocástico).
+Destarte, as relações entre as variáveis endógenas resultante de um modelo econômico teoricamente
+estruturado estão representados na equação (8). Assim,
+a metodologia VAR pode ser estimada por meio do
+método de Mínimos Quadrados Ordinários (MQO),
+levando-se em consideração, principalmente, a interação entre as variáveis do sistema.
+
+671
+
+4.3.1. Vetor de correção de erros (VEC)
+De acordo com a teoria abordada, o modelo original pode ser descrito na forma de um VECM (Vetor
+de Correção de Erros) caso as variáveis sejam estacionárias com dinâmica comum, podendo-se dizer que
+têm componentes tanto de longo prazo como de curto
+prazo. Assim, para que seja possível fazer inferências
+com o uso de séries temporais, faz-se necessário que
+os estimadores obtidos tenham propriedades desejáveis, ou seja, que as variáveis do vetor autorregressivo
+sejam estacionárias. Ou seja, de acordo com Pereira,
+Silva e Maia (2017), caso seja diagnosticada a existência
+de raiz unitária nas séries, a equação deve ser reparametrizada e submetida, novamente, ao teste ADF em
+diferenças até tornar-se estacionária.
+Engle e Granger (1987, p. 253) apresentam a cointegração para uma melhor compreensão da seguinte
+forma: os elementos do vetor Xt, n x 1 são ditos cointegrados de ordem (d, b), denotados por Xt ~ CI(d, b) se:
+i) Todos os elementos de Xt são integrados de ordem d,
+ou seja, são I(d); ii) Existe um vetor não nulo, β, tal que:
+ut = Xt’β ~ I(d – b), b > 0. Assim, o vetor β é chamado
+de vetor de cointegração.
+Bueno (2011, p.204) reforça que, na primeira
+condição (i) “[...] todas as variáveis constantes de Xt
+devem ter a mesma ordem para que possam ser cointegradas [...]”, ou seja, guardam uma relação de equilíbrio de longo prazo. A segunda condição (ii), diz-se
+que existe equilíbrio de longo prazo quando Xt’β =
+0, isto é, “[...] o vetor β, chamado vetor de cointegração, define uma combinação linear entre os elementos de Xt perfeita no sentido de seguir uma tendência
+comum, sem desvio”.
+Desta maneira, é possível inferir que a teoria de
+cointegração se atenta, principalmente, a dois aspectos: o primeiro, refere-se a testar os resíduos ut para
+confirmar sua estacionariedade; e o segundo, se confirmada essa estacionariedade, utilizar a informação para
+melhor ajustar o modelo VAR, passando a ser denominado de modelo VEC, uma vez que ele incorpora o
+erro de equilíbrio, justificando, portanto, a denominação modelo vetor de correção de erros.
+Os autores Campbell e Perron (1991) apresentam, por sua vez, a definição de cointegração de
+maneira mais ampla, no qual não impõem a restrição
+de mesma ordem de integração para a existência de
+cointegração, e complementam que basta que ocorra
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+672
+
+ A Influência da Taxa de Câmbio e Renda Mundial Sobre as Exportações Brasileiras de Soja (2000-2015)
+
+a segunda condição citada anteriormente para que
+os elementos de um vetor Xt, n x1 sejam cointegradas de ordem (d,b), denotados por Xt ~ CI(d,b). Logo,
+nesse caso, devem existir pelo menos duas variáveis
+integradas de mesma ordem na ordem máxima de
+integração dentre todas as variáveis, para que haja
+cointegração. Segundo Veríssimo e Silva (2013), a vantagem dessa definição é a permissão que se tem em
+trabalhar modelos que relacionam variáveis não estacionárias com estacionárias.
+
+Diante do que foi colocado, segue-se a análise da
+distribuição F com gl = (k, n1 – n2 – 2k). Se o F calculado por meio da equação (9) exceder o valor crítico
+de F no nível escolhido α, rejeita-se a hipótese de que
+as regressões (obtidas das subamostras) são iguais, ou
+seja, rejeita-se a hipótese de estabilidade estrutural
+(GUJARATI, 2006).
+
+4.3.2. Teste de estabilidade do modelo:
+o Teste de Chow
+
+A previsão de variáveis econômicas é uma parte
+relevante na análise da literatura sobre séries temporais. Assim, a aplicação do teste de estacionariedade
+das séries ou teste de raiz unitária, e o teste de estabilidade estrutural, são alguns dos instrumentos que
+darão respaldo à ideia básica que constitui o objeto
+desta seção. Ou seja, analisar a dependência estatística
+da variável exportação da soja brasileira em relação
+às variáveis taxa de câmbio efetiva real e renda mundial, ora representada pela renda dos principais países
+importadores da mesma commodity.
+
+Ao se trabalhar com séries históricas de determinadas variáveis, existe um risco de estas, ao longo do
+tempo, apresentarem a possibilidade de quebra estrutural, o que poderá influenciar a consistência dos valores estimados e torná-los inadequados para previsões
+de valores de estimadores futuros.
+Com o teste de Chow, estima-se o modelo desde
+sua observação inicial até uma data t. Na sequência,
+observa-se o erro cometido na projeção em t + 1 e
+comparam-se os resíduos do período de t = 0 até t, com
+o resíduo de t + 1 através de um teste F.
+Gujarati (2006) coloca que as hipóteses que fundamentam o teste de Chow são duas: 1) u1t ~ N (0, σ²) e u2t
+~ (0, σ²), ou seja, os termos de erro nas regressões dos
+subperíodos se distribuem normalmente, com média
+zero e variância constante (homoscedástica); e 2) os
+dois termos de erro, u1t e u2t, têm distribuições independentes. Assim, a mecânica do teste de Chow, com
+aplicação do teste F, tem por base o uso de um modelo
+restrito (composto por toda a amostra) e modelos irrestritos (equações com dados dos períodos anteriores
+e posteriores à suposta quebra) (GUJARATI, 2006). O
+referido teste é definido por:
+
+F=
+
+^SQRR − SQRSRh /k
+
+^SQRSRh / ^n1 − n2 − 2 k h
+
+~F 6k, ^n1 + n2 − 2 k h@
+
+(9)
+
+Em que:
+SQRR – Soma restrita dos quadrados dos resíduos da
+regressão de MQO da amostra completa; SQRSR – Soma
+sem restrição dos quadrados dos resíduos de MQO das
+duas subamostras, com n1 e n2 dados.
+k – número de parâmetros da equação.
+
+5. Resultados e discussão
+
+5.1. Análise gráfica das variáveis
+Para uma análise prévia e visual dos dados expressos neste estudo, os gráficos a, b e c, dispostos na Figura
+2, demonstram a evolução das séries temporais mensais exportação de soja (x_soja), taxa de câmbio efetiva
+real (t_camb) e renda mundial (r_mund) para o período
+que se estende de janeiro de 2000 a dezembro de 2015,
+correspondendo a um total de 192 observações para
+cada série.
+Segundo Gujarati (2006) e Bueno (2011), uma
+representação gráfica dos dados é, geralmente, o primeiro passo para análise de séries temporais e a primeira impressão que se tem é de que todas as séries,
+embora não uniformes, parecem tender para cima ou
+para baixo. Na verdade, como será possível provar por
+meio de testes específicos, todas estas (em nível) são
+séries temporais não estacionárias.
+O estudo empírico realizado com arrimo nos gráficos e regressões econométricas utilizou o modelo de
+correção de erros (VEC) para analisar o impacto das
+taxas de câmbio e da renda mundial sobre as exportações da soja brasileira, e teve como suporte para a análise o software econométrico Eviews 5.0.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+Francisco Laercio Pereira Braga e Ana Claudia Sampaio de Oliveira 
+
+673
+
+Figura 2. Brasil: evolução das variáveis selecionadas no período de janeiro de 2000 a dezembro de 2015
+(a) Exportação de soja
+
+(b) Renda Mundial
+
+600.000,00
+
+y = 1E + 07x - 1E + 08
+R2 = 0,3253
+
+500.000,00
+400.000,00
+300.000,00
+200.000,00
+
+y = 656,71x + 279131
+R2 = 0,2639
+
+-
+
+2000.01
+2000.11
+2001.09
+2002.07
+2003.05
+2004.03
+2005.01
+2005.11
+2006.09
+2007.07
+2008.05
+2009.03
+2010.01
+2010.11
+2011.09
+2012.07
+2013.05
+2014.03
+2015.01
+2015.11
+
+100.000,00
+2000.01
+2000.11
+2001.09
+2002.07
+2003.05
+2004.03
+2005.01
+2005.11
+2006.09
+2007.07
+2008.05
+2009.03
+2010.01
+2010.11
+2011.09
+2012.07
+2013.05
+2014.03
+2015.01
+2015.11
+
+4.500.000.000
+4.000.000.000
+3.500.000.000
+3.000.000.000
+2.500.000.000
+2.000.000.000
+1.500.000.000
+1.000.000.000
+500.000.000
+0
+-500.000.000
+
+(c) Taxa de câmbio
+
+1,200
+
+y = -0,003x + 0,8841
+R2 = 0,7408
+
+1,000
+0,800
+0,600
+0,400
+0,000
+
+2000.01
+2000.12
+2001.11
+2002.10
+2003.09
+2004.08
+2005.07
+2006.06
+2007.05
+2008.04
+2009.03
+2010.02
+2011.01
+2011.12
+2012.11
+2013.10
+2014.09
+2015.08
+
+0,200
+
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+5.2. Estacionaridade das variáveis
+O primeiro passo na análise de séries temporais é
+verificar se elas são estacionárias, para que seja possível
+fazer inferências (ou previsões) e que possam ser úteis
+no processo de tomada de decisões nos âmbitos político
+e econômico, conforme Oliveira (2013). Assim, caso as
+séries não sejam estacionarias em nível, deve-se aplicar
+a primeira diferença nas mesmas para estacionarizá-las. Destaca-se que a maioria das séries econômicas é
+I(1), ou seja, integradas de primeira ordem. Então, para
+verificar a estacionariedade (ou não estacionariedade)
+foram utilizados os seguintes testes de raiz unitária:
+Augmented Dickey-Fuller (ADF)5, Phillips-Perron (PP)6
+e Kwiatkowski-Phillips-Schmidt-Shin (KPSS)7.
+5. DICKEY, D. A. e FULLER, W. A. Distribution of the
+Estimators for Autoregressive Time Series with a Unit
+Root. Journal of the American Statistical Association, v. 74,
+p. 427-431.
+
+Pela análise dos testes estabelecidos, verificou-se que apenas a variável exportação de soja (x_soja)
+mostrou-se estacionária em nível para os testes ADF
+e PP, enquanto as demais se mostraram não estacionárias. No entanto, para o teste KPSS, a situação foi
+inversa, ou seja, enquanto as variáveis taxa de câmbio efetiva real (t_camb) e renda mundial (r_mund)
+mostraram-se estacionárias, apenas a variável exportação de soja (x_soja) apresentou-se como não estacionária. Deve-se ressaltar, ainda, que o teste Dickey-Fuller
+Aumentado foi realizado com defasagens baseadas no
+Critério de Informação de Schwarz, conforme Modensi
+(2008) e Freire Jr. e Paiva (2014) (Tabela 3).
+Aplicada a primeira diferença nas séries exportação de soja (x_soja), taxa de câmbio efetiva real (t_camb)
+e renda mundial (r_mund), as mesmas se tornaram
+estacionárias, conforme dados da Tabela 4.
+
+6. PHILLIPS, P. C. B. e PERRON, P. Testing for a Unit Root in
+Time Series Regression. Biometrika, v. 75, 1988, p. 335-346.
+7. KWIATKOWSKI, D. et al. (1992). Testing the null hypothesis of stationarity against the alternative of a unit root:
+
+how sure are we that economic time series have a unit
+root? Journal of Econometrics, v. 54, p. 159-178.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+674
+
+ A Influência da Taxa de Câmbio e Renda Mundial Sobre as Exportações Brasileiras de Soja (2000-2015)
+
+Tabela 3. Teste de Raiz Unitária para variáveis em nível
+Variável
+x_soja
+t_camb
+r_mund
+
+ADF
+-7,804343ns
+-2,090751*
+-2,447200*
+
+L
+11
+1
+12
+
+PP
+-17,13887ns
+-2,033611*
+-1,822079*
+
+L
+16
+6
+67
+
+KPSS
+0,121936*
+1,432606ns
+0,807456ns
+
+L
+15
+11
+11
+
+Legenda: *Indica rejeição da hipótese nula ao nível de 5%; L = número de defasagens de cada variável.
+Nota 1: H0: a série possui uma raiz unitária, ou seja, é não estacionária.
+Nota 2: Os valores críticos para o nível de significância de 5% são: Tc(ADF)= -2,876595; Tc(PP)= -2,876515; Tc(KPSS)= 0,463000.
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+Tabela 4. Teste de Raiz Unitária para variáveis em 1ª diferença
+Variável
+D(x_soja)
+D(t_camb)
+D(r_mund)
+
+ADF
+-14,73476*
+-10,21806*
+-2,816506ns
+
+L
+11
+0
+11
+
+PP
+-135,3362*
+-9,772978*
+-12,92221*
+
+L
+188
+14
+104
+
+KPSS
+0,177770*
+0,285185*
+0,273627*
+
+L
+60
+5
+100
+
+Legenda: * Indica rejeição da hipótese nula ao nível de 5%; L = número de defasagens de cada variável.
+Nota 1: H0: a série possui uma raiz unitária, ou seja, é não estacionária.
+Nota 2: Os valores críticos para o nível de significância de 5% são: Tc(ADF)= -2,876595; Tc(PP)= -2,876515; Tc(KPSS)= 0,463000.
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+Na próxima seção, será realizada a escolha do
+número de defasagens, a seleção da estrutura do
+modelo a ser testado pelo programa econométrico, a
+partir dos resultados obtidos no teste de cointegração
+de Johansen e, posteriormente, na definição do tipo de
+modelo a ser adotado, se VAR ou VEC, com base nos
+resultados do mesmo teste.
+
+5.3. Teste de Cointegração de Johansen
+Após a conclusão dos testes de raiz unitária, serão
+apresentados os testes de cointegração de Johansen.
+Na elaboração do teste é fundamental determinar o
+
+número de defasagens. Para isso, estimou-se um VAR
+irrestrito com as séries em nível, observando os critérios de Akaike (AIC), de Schwarz (SC) e de HannanQuinn (HQ) para selecionar o número de defasagens
+a ser empregado. Os critérios AIC e HQ sugeriram a
+utilização de sete (07) e quatro (04) defasagens para o
+modelo, respectivamente (Tabela 5).
+No entanto, optou-se por trabalhar com o critério
+de Shwarz pois, conforme Bueno (2011), este critério é
+mais consistente quando se trabalha com um número
+significativo de amostras. Assim, tendo por base o critério de informação de Schwarz, adotou-se uma (01)
+defasagem no modelo.
+
+Tabela 5. Critério de seleção da ordem de defasagens do modelo VAR para as variáveis x_soja, t_camb e r_mund
+Lag
+0
+1
+2
+3
+4
+5
+6
+7
+8
+
+LogL
+-84,79048
+645,1834
+669,3361
+684,9252
+745,6089
+766,4661
+787,6784
+816,1343
+831,2521
+
+AIC
+0,965114
+-6,795472
+-6,884088
+-6,879622
+-7,365314
+-7,418110
+-7,474765
+-7,10155*
+-7,600567
+
+SC
+1,035004
+-6,446023*
+-6,255079
+-5,971053
+-6,177186
+-5,950422
+-5,727518
+-5,583348
+-5,294200
+
+HQ
+0,993441
+-6,653836
+-6,629142
+-6,511368
+-6,883751*
+-6,823238
+-6,766584
+-6,788665
+-6,665767
+
+Notas: 1) * Indica a ordem selecionada pelo critério; 2) AIC = Critério de Informação de Akaike, SC = Critério de Informação de Schwarz e HQ =
+Critério de Informação de Hannan-Quinn.
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+Francisco Laercio Pereira Braga e Ana Claudia Sampaio de Oliveira 
+
+675
+
+Tabela 6. Resultado do teste de cointegração de Johansen para as variáveis x_soja, t_camb e r_mund (2000 a 2015)
+Hipótese Nula
+(Ho)
+r ≤ 0*
+r≤1
+r≤2
+
+Hipótese Alternativa
+(Ho)
+r>0
+r>1
+r>2
+
+Estatística
+λtraço
+60,77859*
+6,958437
+0,065422
+
+Valor Crítico
+λtraço
+24,27596
+12,32090
+4,129906
+
+Estatística
+λMáx. Autovalor
+53,82015*
+6,893015
+0,065422
+
+Valor Crítico
+λMáx. Autovalor
+17,79730
+11,22480
+4,129906
+
+Nota: Os Testes do Traço indica que há 1 equação de cointegração ao nível de 5%.
+Legenda: * Denota rejeição da hipótese nula ao nível de 5%.
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+Tabela 7. Estimativa de longo prazo do vetor de cointegração para o
+modelo de exportação de soja – 2000 a 2015
+x_soja
+1,000000
+
+r_mund
+-1,653463
+(0,13569)
+
+t_camb
+0,212154
+(0,36829)
+
+Nota: Os valores entre parênteses representam os erros padrão das estimativas.
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+Para testar a presença (ou não) de vetores de cointegração, os testes do traço (λtraço) e do máximo autovalor (λmáx), adotando um valor crítico tabelado ao nível
+de significância de 5%, sugere a presença de, pelo
+menos, um vetor de cointegração, o que significa que
+as séries apresentam uma relação de longo prazo.
+Na Tabelas 6 são apresentados os resultados dos
+testes e, como é possível observar, tanto a hipótese nula
+do teste do traço (λtrace), como a hipótese nula do teste
+do máximo autovalor (λmax) foram rejeitadas ao nível de
+5%, tendo em vista que o valor calculado da estatística
+foi superior ao valor crítico.
+Assim, como foi possível observar, o teste de
+cointegração de Johansen detectou a presença de
+um vetor de cointegração num sistema envolvendo
+três variáveis, podendo-se inferir que a aplicação do
+modelo de correção de erros (VECM) é o mais indicado para determinar o comportamento dinâmico das
+exportações de soja, em detrimento da aplicação do
+modelo vetorial autorregressivo (VAR).
+
+5.4. Vetor de Correção de Erros (VECM)
+Dando início à análise dos resultados referentes
+ao primeiro vetor de cointegração – os resultados da
+função de longo prazo – é possível observar que nem
+todos os sinais dos parâmetros são condizentes com o
+esperado. Ademais, os resultados demonstrados são
+relativos à equação de equilíbrio de longo prazo, que
+
+corresponde ao autovetor, normalizado para as exportações, assim, os sinais devem ser interpretados de
+maneira inversa (Tabela 7).
+No que se refere à taxa de câmbio, esta não apresentou sinal de acordo com a teoria econômica, indo
+de encontro à chamada condição de Marshall-Lerner8,
+conforme Monte (2015). No entanto, tal situação corrobora com o que fora observado na Figura 1, que
+demonstra que as duas variáveis (exportação de soja
+e taxa de câmbio) caminharam, em geral, em direções
+opostas ao longo do período analisado.
+Quanto à variável renda mundial, a análise
+demonstrou que a mesma afetou positivamente as
+exportações da soja brasileira no longo prazo e que um
+aumento de 1% na renda mundial poderá elevar as
+exportações em cerca de 1,6%, o que indica uma elasticidade da renda mundial positiva. Ademais, o coeficiente estimado foi estatisticamente significativo.
+Assim, os coeficientes demonstraram que existe
+uma relação direta entre a variável exportação de soja
+e a variável explicativa renda mundial, e uma relação
+8. Abba P. Lerner, economista russo, estabeleceu as condições
+nas quais uma mudança na taxa de câmbio de um país
+melhoraria sua balança comercial. Esta condição é também chamada Condição Marsall-Lerner e estabelece que,
+supondo altos preços da elasticidade da oferta, uma desvalorização cambial melhorará a situação em conta corrente de um país se a soma das elasticidades da demanda
+interna por importações mais a demanda externa por
+exportações for maior que a unidade (SANDRONI, 2014).
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+676
+
+ A Influência da Taxa de Câmbio e Renda Mundial Sobre as Exportações Brasileiras de Soja (2000-2015)
+
+inversa entre as exportações de soja e a da taxa de câmbio, sendo que ambas se mostraram significativas.
+A exemplo da análise realizada por Monte (2015),
+é possível inferir que o crescimento das exportações
+nacionais não dependerá tanto da taxa de câmbio,
+mas “o crescimento da renda mundial e, consequentemente, da demanda mundial” será mais significativo
+para explicar o resultado das exportações dessa commodity no País. Ademais, é importante mencionar que
+a pauta das exportações brasileiras ainda é altamente
+dependente das commodities e, com o crescimento de
+blocos econômicos como o Brics, com destaque para
+a China (principal importador da soja brasileira). A
+demanda por esse produto tem aumentado significantemente nos últimos anos, o que contribui para o incremento das exportações.
+Quanto à dinâmica de curto prazo, os resultados
+da estimação do modelo de correção de erro mostraram que os coeficientes estimados foram significativos a 5%. Ademais, observou-se que os coeficientes em
+análise são pequenos, demonstrando que a velocidade
+de ajustamento é baixa, ou seja, a correção no curto
+prazo se dá de maneira lenta para o equilíbrio no longo
+prazo (Tabela 8).
+
+Ainda sobre a dinâmica de curto prazo, o termo
+de correção de erros indicou que são necessários,
+aproximadamente, dois períodos (1/0,4750) para que
+os desequilíbrios de curto prazo sejam corrigidos em
+longo prazo. Assim, para a variável exportação, esses
+desequilíbrios são corrigidos de forma relativamente
+rápida, o que não acontece para as variáveis taxa de
+câmbio e renda mundial.
+Sabendo-se que, de modo geral, não é possível
+identificar todos os parâmetros necessários para uma
+perfeita estruturação de um modelo, devido à necessidade da inclusão de infinitas restrições adicionais ao
+mesmo, o próximo passo será a análise das funções de
+resposta a impulsos, para definir o efeito de choques
+exógenos nas variáveis selecionadas sobre as exportações de soja. A análise das funções de impulso-resposta,
+por sua vez, busca verificar, principalmente, o impacto
+dos choques da taxa de câmbio e da renda mundial
+sobre as exportações de soja. Assim, como é possível
+observar na Figura 2, o choque não antecipado de um
+desvio padrão na variável renda mundial gera, inicialmente, uma queda acentuada no nível das exportações
+de soja da ordem de aproximadamente 0,2% já no primeiro período, seguindo, a partir daí, numa trajetória
+
+Tabela 8. Estimativa de curto prazo dos vetores de cointegração
+D(x_soja)
+-0,475040
+(0,06406)
+
+D(r_mund)
+0,002553
+(0,00302)
+
+D(t_camb)
+0,002568
+(0,00247)
+
+Nota: 1) Os valores entre parênteses representam os erros padrão das estimativas; 2) D = significa a primeira diferença da
+variável.
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+Figura 3. Função de resposta a impulsos
+Response of
+LNEXP_SOJA to LNR_MUND
+
+Response of
+LNEXP_SOJA to LNTCER
+
+Response of
+LNEXP_SOJA to LNEXP_SOJA
+
+1,2
+
+1,2
+
+1,2
+
+0,8
+
+0,8
+
+0,8
+
+0,4
+
+0,4
+
+0,4
+
+0,0
+
+0,0
+
+0,0
+
+-0,4
+
+2
+
+4
+
+6
+
+8 10 12 14 16 18 20
+
+-0,4
+
+2
+
+4
+
+6
+
+8 10 12 14 16 18 20
+
+-0,4
+
+2
+
+4
+
+6
+
+8 10 12 14 16 18 20
+
+Notas: 1) LN = indica que as variáveis estão expressas em logaritmos.
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+Francisco Laercio Pereira Braga e Ana Claudia Sampaio de Oliveira 
+
+ascendente até o sétimo período, quando se estabiliza. Tal trajetória permite inferir que a variável renda
+exerce influência sobre as exportações de soja.
+Quanto à ocorrência de um choque não antecipado
+sobre a variável taxa de câmbio, causa um curto efeito
+positivo sobre as exportações somente no segundo mês
+após o choque e, mesmo assim, de maneira pouco significativa, vindo, no entanto, a se estabilizar.
+A metodologia VECM permite, em complemento
+à análise das funções de impulso-resposta, a realização
+do exercício de decomposição da variância, com o propósito de verificar que porcentagem da variância do
+erro de previsão decorre de cada variável endógena ao
+longo do período de previsão. Na Tabela 9, são apresentados os resultados da decomposição para as exportações de soja.
+Analisando os resultados da decomposição da
+variância dos erros de previsão para a variável exportação de soja, é possível observar que, nos primeiros
+períodos, a variância da mesma é quase que totalmente
+explicada pela própria variável dependente. Passados
+12 períodos, no entanto, ganham importância, ainda
+que relativamente pequena, a variação na renda mundial que segue todo o período relativamente superior
+ao da taxa de câmbio, revelando novamente a importância do cenário internacional para as exportações da
+soja brasileira.
+Vale destacar o fato de que o efeito dos choques
+da renda mundial sobre as exportações vai se elevando
+ao longo de 12 períodos, passando de 2,5% para 3,6%.
+Importante destacar ainda que, para a presente análise, também se adotou o ordenamento de Cholesky
+(r_mund, t_camb e x_soja). Neste, a matriz de relações
+contemporâneas entre as variáveis do modelo impõe
+uma estrutura recursiva de modo que “a primeira
+variável não seja afetada contemporaneamente por
+
+nenhuma das demais, a segunda seja afetada apenas
+pela primeira, a terceira seja afetada pelas duas primeiras, e assim por diante”, conforme Cavalcanti (2010).
+
+6. Considerações finais
+O mercado chinês vem se destacando como importante parceiro comercial brasileiro ao longo da década
+de 2000. O Brasil, nesse cenário, surge como tradicional fornecedor de commodities para o mercado mundial e tem aproveitado os bons momentos da expansão
+da demanda advindos das taxas de crescimento econômico da China. A pauta exportadora brasileira nos
+últimos anos tem registrado movimento em direção à
+primarização das exportações, e a China aparece como
+uma das principais responsáveis por esse efeito.
+Diante deste panorama, viu-se que a soja tem despontado como produto de relevância na pauta exportadora brasileira para o mundo e, em especial, para a
+China. Os preços internacionais dessa commodity, por
+exemplo, contribuíram para alavancar o resultado positivo das transações comerciais desse produto nacional
+no comércio internacional, e a China teve papel fundamental nesse processo por ter puxado de forma expressiva a demanda por essa commodity. Em 2015, para se
+ter uma ideia, a venda de soja para esse país alcançou cerca de 75% do que foi exportado de soja para
+o mundo, revelando já possível importância da renda
+chinesa nos resultados comerciais do Brasil.
+Assim, o presente artigo se propôs a analisar a possível existência de uma relação de longo prazo entre
+as variáveis taxa de câmbio efetiva real, renda mundial
+e as exportações brasileiras de soja em um cenário de
+importantes transformações e constatou que, no que
+se refere à análise de cointegração, as variáveis x_soja,
+
+Tabela 9. Resultados da decomposição da variância dos erros de previsão da variável
+Exportação de Soja (%) – 2000 a 2015
+Variável
+
+Ex_soja
+
+Período
+1
+2
+3
+6
+9
+12
+
+677
+
+x_soja
+97,43357
+97,24675
+96,10423
+95,46857
+94,72177
+94,08109
+
+r_mund
+2,565613
+2,349753
+3,176374
+3,595569
+3,602286
+3,648784
+
+t_camb
+0,000821
+0,403495
+0,719396
+0,935863
+1,675943
+2,270123
+
+Fonte: Elaboração própria a partir dos dados da pesquisa, 2016.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+678
+
+ A Influência da Taxa de Câmbio e Renda Mundial Sobre as Exportações Brasileiras de Soja (2000-2015)
+
+t_camb e r_mund têm uma relação de longo prazo, apresentando um vetor de cointegração. Nas estimativas de
+longo prazo do vetor de cointegração, a variável taxa de
+câmbio apresentou sinal contrário à teoria econômica;
+contudo, com coeficiente significativo. Já a variável
+renda mundial mostrou-se coerente com a teoria, apresentando elasticidade relativamente significativa.
+Quanto à dinâmica de curto prazo, os valores dos
+coeficientes demonstram que a velocidade de ajustamento é baixa para as variáveis renda mundial e taxa
+de câmbio, ou seja, a correção no curto prazo se dá de
+maneira lenta para o equilíbrio cointegrante, ou de
+longo prazo. Ainda em relação à dinâmica de curto
+prazo, o termo de correção de erros indicou que, para a
+variável exportação, esses desequilíbrios são corrigidos
+de forma relativamente rápida.
+Na análise das funções de impulso-resposta,
+por sua vez, o choque não antecipado de um desvio
+padrão na variável renda mundial gerou, inicialmente,
+uma queda acentuada no nível das exportações de soja
+já no primeiro período, seguindo, a partir daí, numa
+trajetória ascendente até o sétimo período, quando se
+estabiliza. Tal trajetória permite inferir que a variável
+renda mundial exerce alguma influência positiva sobre
+as exportações de soja. Quanto à ocorrência de um
+choque não antecipado sobre a variável taxa de câmbio, esta causa um efeito positivo sobre as exportações
+somente no segundo mês após o choque e, mesmo
+assim, de maneira relativamente baixa, estabilizando-se a partir do sétimo período.
+Ademais, analisando os resultados da decomposição da variância dos erros de previsão para a variável
+exportação de soja, é possível observar que, nos primeiros períodos, a variância das exportações de soja é
+quase que totalmente explicada pela própria variável
+exportação de soja. Passados 12 períodos, no entanto,
+ganha importância, ainda que pouco significativa, a
+variação na renda mundial, que segue todo o período
+relativamente superior à taxa de câmbio, revelando,
+novamente a importância daquela variável no cenário
+internacional para as exportações da soja brasileira.
+
+7. Referências
+ALVES, L. R. A. e BACCHI, M. R. P. Oferta de exportação
+de açúcar do Brasil. Revista de Economia e Sociologia
+Rural, Brasília, DF, v. 42, n. 1, p. 9-33, 2004.
+
+BRAGA, H. C. e MARKWALD, R. A. Funções de oferta
+e de demanda das exportações de manufaturados no Brasil:
+estimação de um modelo simultâneo. (Texto para
+Discussão Interna, 57). Rio de Janeiro: Ipea, 1983.
+BRASIL. Ministério do Desenvolvimento, Indústria e
+Comércio Exterior. Alice Web. Disponível em: <http://
+aliceweb2.mdic.gov.br/>. Acesso em: out. 2016.
+BUENO, R. de L. da S. Econometria de séries temporais.
+São Paulo: Cengage Learning, 2011.
+CAMPBELL, J. Y. e PERRON, P. Pitfalls and
+opportunities: what macroeconomists should know
+about unit roots. In: BLANCHARD, O. J. e FISCHER,
+S. (Ed.). NBER Macroeconomics annual. Cambridge, CA:
+The MIT Press, 1991. p. 141-201.
+CARNEIRO, F. L. A influência da taxa de câmbio sobre o
+desempenho comercial. 2013. Dissertação (Mestrado) –
+Universidade de Brasília, Brasília, 2013.
+CAVALCANTI, M. A. F. H. Identificação de modelos
+VAR e causalidade de Granger: uma nota de
+advertência. Economia Aplicada, v. 14, n. 2, Ribeirão
+Preto, abr./jun. 2010. Disponível em: <http://
+www.scielo.br/scielo.php?script=sci_arttext&pi
+d=S1413-80502010000200008>. Acesso em: set. 2017.
+______. e RIBEIRO, M. A. As exportações no período
+1977/96: desempenho e determinantes. (Texto para
+Discussão, 545). Brasília: Ipea, 1998.
+COMPANHIA NACIONAL DE ABASTECIMENTO.
+Perspectivas para a agropecuária. Companhia Nacional
+de Abastecimento. Vol. 1. Brasília, 2015. Disponível em:
+<http://www.conab.gov.br>. Acesso em: nov. 2016.
+COSTA JÚNIOR, C. J. Choques estocásticos na renda
+mundial e os efeitos na economia brasileira. Revista
+Economia & Tecnologia (RET), v. 9, n. 4, p. 51-60, out./
+dez. 2013.
+ENGLE, R. F. e GRANGER, C. W. J. Co-Integration
+and Error Correction: representation, estimation and
+testing. Econometrica, v. 55, n. 2, p. 251-276, 1987.
+FABRIS, T. R. e MEURER, R. O comportamento de
+curto e longo prazo das exportações catarinenses. In:
+Encontro de Economia Catarinense, 1, 2007, Rio do Sul.
+Anais eletrônicos. Rio do Sul: APEC, 2007.
+FREIRE JÚNIOR, J. e PAIVA, W. L. Efeitos da taxa de
+câmbio e da renda mundial sobre as exportações cearenses
+de produtos industrializados. (Textos para Discussão – nº
+103). Fortaleza, Ipece, 2014. Disponível em: <http://
+www.ipece.ce.gov.br/textos_discussao/TD_103.pdf>.
+Acesso em: set. 2017.
+FROYEN, R. T. MACROECONOMICS: theories
+and policies. Globa Editon. Tenth Edition. Pearson
+Education Limited, 2013.
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+Francisco Laercio Pereira Braga e Ana Claudia Sampaio de Oliveira 
+
+GUJARATI, D. N. Econometria básica. 4. ed. Tradução de
+Maria José Cyhlar Monteiro. Rio de Janeiro: Elsevier, 2006.
+INDEXMUNDI. Índice de preços da soja. Disponível em:
+<http://www.indexmundi.com/pt/pre%E7os-de-merc
+ado/?mercadoria=soja&meses=180&mercadoria=alg
+od%C3%A3o>. Acesso em: nov. 2016.
+IPEADATA – Instituto de Pesquisa Econômica Aplicada.
+Série histórica. Disponível em: <www.ipeadata.gov.
+br>. Acesso em: dez. 2016.
+JOHANSEN, S. Estimation and hypothesis test of
+coingration vector in Gaussian vector a autoregressive
+models. Econometrica, v. 59, p. 1551-1580, 1991.
+LAMAS, E. Taxa de câmbio efetiva real para o Rio
+Grande do Sul – 1996-05. Indicadores Socioeconômicos
+FEE. Porto Alegre, v. 34, n. 3, p. 71-82, dez. 2006.
+MAIA, S. F. Determinantes das exportações agrícolas
+em cenário de macroeconomia aberta: abordagem por
+modelos de séries de tempo. In: Encontro Nacional
+de Economia da Anpec, 31. 2003, Porto Seguro. Anais
+eletrônicos. Porto Seguro: ANPEC, 2003.
+______. e LIMA, R. C. Analisando o efeito da taxa de
+juros e da taxa de câmbio sobre as exportações agrícolas
+brasileira pós-abertura econômica. Recortes Setoriais da
+Economia Nordestina. Lúcia Maria Góis Moutinho (Org.).
+Fortaleza: CAEN/Banco do Nordeste do Brasil, 2004.
+MARGARIDO, M. A. Aplicação de Testes de Raiz
+Unitária com Quebra Estrutural em Séries Econômicas
+no Brasil na década de 90. Informações Econômicas, São
+Paulo, v. 31, n. 4, abr. 2001.
+MELO, M. C. P., BRAGA, F. L. P. e HOLANDA, D.
+H. O comércio exterior do nordeste brasileiro e seu fluxo
+caudatário. São Paulo: Editora Nelpa, 2014.
+MELO, M. C. P. e HOLANDA, D. H. Implicações das
+Transações Comerciais da China com o Nordeste do
+Brasil: o caso da soja. Sociedade Brasileira de Economia,
+Administração e Sociologia Rural. Anais eletrônicos.
+Belém - PA, 21 a 24 de julho de 2013.
+MONTE, E. Z. Influência da Taxa de Câmbio e da Renda
+Mundial nas Exportações do Estado do Espírito Santo.
+Análise Econômica, v. 63, n. 33, 2015. Disponível em:
+<http://seer.ufrgs.br/index.php/AnaliseEconomica/
+article/view/31840>. Acesso em: jan. 2017.
+NAKABASHI, L., CRUZ, M. J. V. e SCATOLIN, F. D.
+Efeitos dos juros e do câmbio sobre as exportações da
+indústria brasileira. Revista de Economia Contemporânea,
+Rio de Janeiro, v. 12, n. 3, p. 433-461, set./dez. 2008.
+Disponível em: <www.scielo.br/pdf/rec/v12n3/02.
+pdf>. Acesso em: 11 mar. 2012.
+
+679
+
+NATIONAL STATISTICS REPUBLIC OF CHINA
+(Taiwan). Statistics by Categories. Wholesale Price
+Indices. Disponível em: <https://eng.stat.gov.tw/
+ct.asp?xItem=12093&ct Node=1558&mp=5>. Acesso
+em: dez. 2016.
+OLIVEIRA, A. C. S. Análise dos efeitos das taxas de
+câmbio, de juros e da renda mundial sobre as exportações
+brasileiras do mel brasileiro. 104f. Dissertação (Mestrado
+em Economia Rural) – Universidade Federal do Ceará,
+Fortaleza, 2013.
+______. et al. Análise dos efeitos das taxas de câmbio,
+de juros e da renda mundial sobre as exportações
+brasileiras de mel. Revista Econômica do Nordeste, v. 46,
+n. 3, p. 61-78, 2015.
+PEREIRA, E. L., SILVA, J. R. e MAIA, S. F. Os efeitos
+da taxa de câmbio e dos Preços do Petróleo nos preços
+Internacionais das Commodities Brasileiras. Revista
+Econômica do Nordeste, Fortaleza, v. 48, n. 1, p. 131-144,
+2017.
+PORTUGAL, M. S. A instabilidade dos parâmetros
+nas equações de exportações brasileiras. Pesquisa e
+Planejamento Econômico, Rio de Janeiro, v. 23, n. 2,
+p. 313-348, ago. 1993.
+RAMALHO, H. M. de B. e TARGINO, I. A evolução
+das exportações brasileiras de cacau: uma análise do
+período 1950-2000. In: MOUTINHO, L. M. G. (Org.).
+Recortes setoriais da economia nordestina. Fortaleza:
+CAEN; Banco do Nordeste do Brasil, 2004.
+SANDRONI, P. Dicionário de Economia do Século XXI.
+8. ed. Rio de Janeiro: Record, 2014.
+SILVA, E. K. e MAIA, S. F. As exportações brasileiras
+de café (1961-2001): uma análise usando vetores
+autoregressivos. In: Congresso da Sociedade Brasileira
+de Economia, Administração e Sociologia Rural, 41,
+Juiz de Fora. Anais eletrônicos. Juiz de Fora, 2003.
+SILVA, M. V. S. S. e BACCHI, M. R. P. B. Condicionantes
+das exportações brasileiras de açúcar bruto. Agricultura
+em São Paulo, São Paulo, v. 52, n. 2, p. 99-110, 2005.
+VERÍSSIMO, M. P. e SILVA, C. G. Taxa de Câmbio,
+Preços das Commodities e Exportação de Produtos
+Básicos nas Regiões Brasileiras. Revista Econômica do
+Nordeste, Fortaleza, v. 44, n. 3, p. 777-794, 2013.
+WORLD BANK. Commodity price forecast, 2013.
+Disponível em: <www.worldbank.org/pt/country/
+brazil>. Acesso em: fev./mar. 2016.
+ZINI JÚNIOR, A. A. Funções de exportação e de
+importação para o Brasil. Pesquisa e Planejamento
+Econômico, Rio de Janeiro, v. 18, n. 3, p. 615-662, 1988.
+
+Todo o conteúdo deste periódico, exceto onde estiver identificado, está licenciado sob uma
+Licença Creative Commons (cc by 4.0).
+
+RESR, Piracicaba-SP, Vol. 56, Nº 04, p. 663-680, Out./Dez. 2018 – Impressa em Janeiro de 2019
+
+

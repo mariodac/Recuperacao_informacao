@@ -1,0 +1,463 @@
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v42n3RB20180115EDITORIAL1
+
+Inteligência artificial, o Futuro da Medicina
+e a Educação Médica
+Artificial Intelligence, the Future of Medicine
+and Medical Education
+Luiz Carlos LoboI
+
+RESUMO
+
+Inteligência artificial (IA) é um ramo da ciência da computação que usando algoritmos definidos por
+especialistas é capaz de reconhecer um problema, ou uma tarefa a ser realizada, analisar dados e tomar
+decisões, simulando a capacidade humana.
+
+PALAVRAS CHAVE:
+–– Inteligência artificial,
+–– relação médico-paciente,
+
+Sistemas computadorizados de apoio à decisão já existem há décadas, mas o aumento da velocidade de
+processamento e de armazenamento de informação dos computadores, permitiu analisar um grande
+volume de dados em nanosegundos propondo soluções de problemas, orientando a proposta e tomada
+de decisões, realizando tarefas sem receber instruções diretas de humanos.
+
+–– uso de tecnologias,
+–– dispositivos vestíveis,
+–– análise de imagens,
+–– sistemas de suporte à decisão,
+
+Já utilizadas em um grande número de atividades em áreas como o comércio, bancos, transporte,
+atendimento a usuários e, mesmo, gestão de recursos materiais e do capital humano, IA tem ampliado
+significativamente a sua aplicação em saúde.
+
+–– equipes multiprofissionais,
+–– prática médica,
+
+Em saúde IA analisa dados disponíveis em bases de dados de nascimentos, mortalidade, hospitalizações, doenças de notificação compulsória e de dados de pacientes registrados em prontuários eletrônicos. Busca, seja indicar a prevalência e evolução de enfermidades, possibilitando antecipar surtos
+epidêmicos e propor medidas preventivas com oportunidade, seja analisar, por exemplo, a coerência
+entre uma hipótese diagnóstica de um paciente e exames solicitados e terapia prescrita.
+
+–– educação médica,
+–– flexibilidade de aprendizado
+
+IA reconhece imagens, permite interações computadorizadas em linguagem aberta, escrita e falada,
+percebe relações e nexos, entende conceitos e não apenas processa dados, segue algoritmos e cria sua
+própria experiência (“machine learning”).
+A constatação de que 32% dos erros médicos no Estados Unidos decorrem de problemas na relação
+médico-paciente, de um exame clínico deficiente, ou falha na avaliação de dados e de resultados de exames complementares, tem ressaltado a necessidade de se redefinir a prática médica, visando reservar
+tempo numa consulta para garantir uma boa comunicação e orientação do paciente.
+O uso de linguagem natural no registro de dados em prontuários eletrônicos, melhoria do relacionamento através da internet, emprego de computadores na comunicação médico-paciente, emprego de
+dispositivos vestíveis e corporais na obtenção de dados (“wearable devices”), telemedicina, trabalho em
+equipes multiprofissionais, visam otimizar o desempenho do médico no atendimento de seu paciente.
+A redefinição da prática médica resultará, necessariamente, em mudanças na formação do médico.
+Essa preocupação se refletiu no estabelecimento de um consórcio de escolas, estabelecido pela Associação Americana de Medicina, para discutir mudanças curriculares, ajustando a formação profissional
+a uma época caracterizada pelo uso intensivo de tecnologias e inteligência artificial.
+O autor faz considerações sobre a formação médica, propondo um núcleo de conhecimento que deverá
+alicerçar uma maior flexibilidade do aprendizado, ajustando-o às motivações e orientações dos alunos.
+
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License, which permits
+unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+REVISTA BRASILEIRA DE EDUCAÇÃO MÉDICA
+42 (3) : 3-8; 2018
+
+I
+
+Professor Honoris Causa da UnB, Professor aposentado da UFRJ e Consultor Sênior da UNASUS-FIOCRUZ
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v42n3RB20180115EDITORIAL1
+
+ABSTRACT
+
+KEY WORDS:
+–– artificial Intelligence,
+–– physician-patient relationship,
+–– use of technologies,
+–– pattern recognition,
+–– decision support systems,
+–– multiprofessional teams,
+–– medical practice,
+–– medical education,
+–– flexible learning
+
+Artificial Intelligence (AI) is a branch of computer science that using algorithms defined by specialists
+can recognize a problem, or a task to be performed, analyzing data and taking decisions simulating
+the human being.
+Decision support systems were developed decades ago but were reemphasized as a consequence of the
+incredible increase in computer storage and data processing, creating the concept of “big data”.
+AI is already part of a large number of activities in sectors like commerce, banking, transportation,
+communication, and administration of human and material resources.
+The impact of AI in health allows the analysis of data banks such as birth, death, diseases of compulsory
+declaration, hospitalization of patients and data registered in electronic health records, indicating
+the prevalence and evolution of diseases, anticipating epidemic outbreaks and proposing preventive
+measures to be taking by the population.
+Picture analysis and pattern recognition of radiologic, dermatologic and ophthalmologic images is
+being now widely used.
+The processing of medical records is being also done to discuss cases and detect inconsistencies
+between diagnosis, complementary tests requested, and treatment prescribed.
+The indication that 32% of medical errors in the USA were due to inadequate time for patient
+assessment, resulting in less accurate diagnosis, not recognition of a problem, or the urgency of the
+case, has made urgent a reappraisal of the patient-physician relationship, trying to reserve time in the
+consultation for the physician hear, discuss the case and orient the patient.
+The use of natural language in the registration of patient data in electronic medical records, employment
+of computers and internet to communicate with patients, use of data collected in wearable devices,
+telemedicine, multi-professional team work in the delivery of health care, are proposals to optimize the
+medical attention to patients.
+The redefinition of medical practice will result, consequently, in the reform of the medical graduation.
+The American Medical Association established in 2013 a medical school consortium (“the work of
+the AMA accelerating change in medical education”) to foster these curricular changes needed to
+graduate physicians able to cope with innovation and artificial intelligence.
+The author makes considerations on medical graduation, proposing a core curriculum that will
+provide the competencies of a general practitioner, which will be complemented by flexible courses to
+take into consideration students’ orientations.
+
+Recebido em:28/5/18
+Aceito em: 22/6/18
+
+INTRODUÇÃO
+O advento do computador trouxe uma enorme ampliação da
+dimensão do homem, aumentando a sua capacidade de calcular e armazenar grandes volumes de informação e isso em
+nanosegundos. Ampliou significativamente sua memória e o
+tempo de recuperação de uma informação. O “aqui e agora”
+passou a ser o mote do mundo atual, caracterizando uma sociedade em mudança rápida e constante.
+
+4
+
+Inteligência artificial (IA) é um ramo da ciência da computação que se propõe a desenvolver sistemas que simulem
+a capacidade humana na percepção de um problema, identificando seus componentes e, com isso, resolver problemas e
+propor/tomar decisões.
+Outra definição de Inteligência Artificial indica que seria
+a criação de sistemas inteligentes de computação capazes de
+realizar tarefas sem receber instruções diretas de humanos (os
+
+REVISTA BRASILEIRA DE EDUCAÇÃO MÉDICA
+42 (3) : 3 – 8 ; 2018
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v42n3RB20180115EDITORIAL1
+
+“robôs” são exemplos disso). “Robôs” seguem uma programação computadorizada de movimentos e ações conformando, desde logo, a definição de Inteligência Artificial.
+Usando diferentes algoritmos e estratégias de tomada de
+decisão e um grande volume de dados, sistemas de IA são capazes de propor ações, quando solicitados.
+Inteligência Artificial já está transformando a vida humana, mudando o conceito de transporte, com seus veículos autodirigidos, com suas cirurgias feitas por robôs, com sistemas
+de comunicação automatizados, com a automação de serviços financeiros e bancários, enfim, com um número cada vez
+maior de usos e funções.
+O armazenamento de dados passou a ser gigantesco, levando ao conceito de “big data”. Estima-se em 2,5 exabytes
+(exabyte corresponde a 10 à potência 18; para comparação gigabyte é 10 à potência 9) com um crescimento anual previsto
+de 57% no período de 2014-2019 (1), chegando a 24,3 exabites
+em 2019, admitindo-se que em 2019 vídeos deverão corresponder a 50% do tráfego na internet.
+“Big data“ está sendo gradualmente introduzido no sistema de atenção à saúde, como já influi em áreas como consumo, serviços bancários e financeiros, logística e gestão de
+capital humano. Dados de prevalência, incidência e evolução
+de enfermidades, permitiriam gerar dados estatísticos, antecipar surtos epidêmicos e prescrever ações preventivas.
+IA envolve várias etapas ou competências como reconhecer padrões e imagens, entender linguagem aberta escrita e falada, perceber relações e nexos, seguir algoritmos de decisão
+propostos por especialistas, ser capaz de entender conceitos e
+não apenas processar dados, adquirir “raciocínios” pela capacidade de integrar novas experiências e, pois, se auto aperfeiçoar
+(“self learning”), resolvendo problemas, ou realizando tarefas.
+Estudos (2 ) tem sido realizados comparando IA e “machine learning” (ML) com medicina por evidências (EBM em
+inglês. Assim, indicou-se que enquanto EBM examina o relacionamento entre um número limitado de variáveis pré-definidas numa amostra de pequenas dimensões (centenas ou milhares de pessoas), ML examina o relacionamento entre muitas
+variáveis, não previamente definidas, em um grande volume
+de dados (centenas de milhares de pacientes), obtidos em várias fontes (prontuários eletrônicos, dados administrativos,
+dispositivos vestíveis e corporais, genomas, e determinantes
+sociais) processando algoritmos propostos. A dificuldade de
+entender o processamento de dados e como se formulam decisões em ML preocupa os médicos, sobretudo, se comparados
+com a transparência de pesquisas com os conceitos da EBM.
+Há atualmente a proposta de que as duas estratégias se
+complementem. ML pode oferecer melhores indicações de
+
+riscos e de implicações da correlação entre diagnósticos e terapias, dados que poderão ser posteriormente confirmadas
+por estudos randomizados e controlados em uma amostra de
+pacientes.
+Sistemas computadorizados de apoio à decisão clínica têm
+indicado um alto grau de acurácia em suas propostas diagnósticas. Ao mesmo tempo, o supercomputador Watson da IBM
+registrou toda a informação médica disponível no PubMed e
+Medline (3), tornando mais fácil, idealmente, o acesso à informação em saúde.
+Atualmente, o uso de dispositivos vestíveis (“wearable
+devices”) têm sido introduzidos obtendo informações continuas sobre glicemia, ECG e movimento, por exemplo, que
+podem gerar ações automatizadas como injetar insulina, reconhecer uma arritmia e, eventualmente, dar uma descarga
+elétrica de um desfibrilador subcutâneo, ou variar a dose de
+um medicamento em pacientes com doença de Parkinson. Informações desses “gadgets” são capturados pelo celular do
+paciente e podem ser transmitidos ao seu médico, facilitando
+o acompanhamento de casos crônicos.
+Pesquisa recente da empresa de consultoria Price Waterhouse &Coopers (4) realizada em 12.000 indivíduos de 12
+países da Europa, Oriente Médio e África indicou que 54%
+aceitariam ser atendidos por um robô com Inteligência Artificial (94% na Nigéria, 85% na Turquia e 41% na Alemanha
+e 39% na Inglaterra) aptos a responder a questões de saúde,
+realizar exames, fazer diagnósticos baseados nesses exames e.
+mesmo, recomendar um tratamento.
+Poder-se-ia argumentar que robôs não têm empatia e não
+atendem pacientes de forma individualizada e humana, mas
+pacientes dizem que muitos médicos, na atualidade, também
+não o fazem.
+Em 2009 verificou-se que 32% dos erros médicos nos
+EEUU resultavam da diminuição do tempo de interação do
+médico com pacientes, produzindo diagnósticos equivocados,
+não reconhecimento da urgência, ou piora da evolução do
+paciente que demandariam prescrever ou realizar ações pertinentes. Mesmo em hospitais dispondo de prontuários médicos eletrônicos (5), com a possibilidade de uma melhor coleta
+de dados, admite-se que em torno de 78,9% dos erros médicos
+estariam relacionados a problemas na relação médico-paciente, num exame clínico deficiente, na falha de avaliação dos dados do paciente, ou falta de exames comprovando a hipótese
+diagnóstica feita.
+Na verdade, de regra, existem uma série de barreiras na
+comunicação médico-paciente. Além da grande assimetria de
+informação, há por vezes uma dificuldade de comunicação e,
+frequentemente, uma barreira cultural.
+
+5
+
+REVISTA BRASILEIRA DE EDUCAÇÃO MÉDICA
+42 (3) : 3 – 8 ; 2018
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v42n3RB20180115EDITORIAL1
+
+Segundo Eric Topol (6) a assimetria de informação tende a diminuir com a facilidade atual de acesso do paciente
+à informação sobre saúde, levando ao seu empoderamento.
+Um colega me dizia outro dia que um paciente o procurou no
+consultório dizendo: “doutor, vim ter uma segunda opinião
+sobre o meu problema de saúde, porque a primeira já tive no
+Google”!
+Admitir que o paciente será cada vez mais bem informado e pretenderá entender e participar na discussão de seu caso
+é uma premissa a ser considerada nos nossos tempos.
+O uso de “smart-phones” tem possibilitado a gravação da
+consulta médica pelo próprio paciente (7), muitas vezes sem
+informar o médico. O desejo de registrar o que o médico fala,
+o orientando e discutindo os exames solicitados e medicação
+indicada é a justificativa da gravação (por vezes usadas pelo
+paciente em casos de erro médico).
+Isso reforça o empoderamento do paciente na discussão e
+solução do seu problema de saúde.
+A dificuldade de comunicação advém do emprego pelo
+médico de termos próprios à profissão e desconhecidos pelo
+paciente e, por vezes, por fatores culturais. Há 20 anos a Faculdade de Medicina de Maastricht (8) inclui um curso longitudinal de habilidades de comunicação ao longo do curso médico
+para capacitar o aluno a estabelecer melhor comunicação com
+o paciente, lidar com questões de língua e cultura e com pacientes problemáticos
+Colocávamos fora dos consultórios médicos da Unidade
+Integrada de Saúde de Sobradinho, hoje hospital regional,
+quando o mesmo era operado por docentes e alunos da Faculdade de Medicina da UnB, uma auxiliar de enfermagem
+que perguntava ao paciente o que o médico lhe havia falado e
+prescrito. Praticamente 100% dos pacientes não sabiam contar
+a entrevista, o que fazia com a que a auxiliar tivesse que explicar a prescrição e os exames solicitados.
+À época realizamos uma pesquisa cronometrando não só
+o tempo da consulta, mas o tempo destinado à identificação e
+anamnese, exame físico, pedido de exames e prescrição e de
+orientação ao pacientes e equipe médica. Quando havia mais
+pressa, dada a pressão assistencial, cortava-se primeiro o tempo da orientação do paciente, a seguir anamnese, pedido de
+exames e prescrição, mantendo-se mais fixo o tempo dedicado
+ao exame físico do paciente.
+O tempo de consulta variava de 15 a 30 minutos, diminuindo ao longo da sessão de atendimento. Interessante é que
+o número de exames solicitados aumentava com a diminuição
+do tempo da consulta.
+Mas como melhorar o atendimento na rede pública, por
+exemplo, na qual cada médico tem pelo menos 16 pacientes
+
+marcados para prestar atendimento em uma jornada de quatro horas.
+Um estudo realizado pela Universidade de São Paulo,
+campus de Ribeirão Preto (9), avaliando 480 consultas, indicou
+que pacientes atendidos em 11,4 e 15 minutos consideravam o
+atendimento excelente, consultas de 7,6 a 11,3 minutos foram
+consideradas boas, sendo que consultas de 3,8 a 7,5 eram consideradas regulares e que pacientes com consultas realizadas
+em menos de 3,7 minutos achavam serem mal atendidas!
+
+6
+
+COMO SERÁ A PRÁTICA DO MÉDICO NO FUTURO,
+CONSIDERANDO IA
+Há que se considerar que a identificação de problemas e padrões (“pattern recognition”) pelo computador, reconhecendo,
+por exemplo, uma lesão dermatológica, ou fazendo um laudo
+em um exame de imagem, ou, ainda, pelo processamento de
+um grande volume de dados de pacientes (“big data”), poderá
+indicar o “know what” de um problema de saúde.
+Mas caberá ao médico discutir o caso com seu paciente
+agregando o seu “know-why”, orientando-o e aliviando suas
+tensões, já que o computador não tem emoções e uma compreensão do “outro”.
+Mas como fazer isso no SUS, considerando que o médico
+tem pelo menos 16 pacientes marcados para prestar atendimento em uma jornada de quatro horas, como já indicado?
+Ou seja, dedicar a cada doente escassos 15 minutos. Na rede
+conveniada, o parâmetro é que os profissionais atendam
+igualmente quatro pacientes por hora – ou seja, os mesmos 15
+minutos para cada um.
+Há que se pensar em mudanças na prática médica, de
+modo a reservar mais tempo para que o médico possa ouvir,
+obter e/ou analisar dados do paciente, explicar e propor soluções para seu problema, aliviando suas tensões, o que deverá
+ocorrer considerando o uso de IA, com medidas como segue:
+• Emprego de sistemas de processamento de linguagem natural para registrar dados em prontuários eletrônicos;
+• Uso de sistemas de interação paciente/médico através de
+um computador, ou “smartphone”
+• Adoção de tecnologias que auxiliem a obtenção de dados
+dos pacientes (dispositivos vestíveis e disponíveis em
+“smart phones”) e o acompanhamento de doentes crônicos;
+• Uso de tecnologias de reconhecimento de imagens (radiologia, dermatologia, oftalmologia, cardiologia, etc.);
+• Emprego de sistemas de apoio à decisão clínica orientando, a partir dos sintomas e sinais apresentados pelo paciente, hipóteses de diagnóstico, exames e tratamentos a
+serem prescritos;
+
+REVISTA BRASILEIRA DE EDUCAÇÃO MÉDICA
+42 (3) : 3 – 8 ; 2018
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v42n3RB20180115EDITORIAL1
+
+• Trabalho em equipes multiprofissionais, delegando ações de
+saúde e, definindo prioridades para o atendimento médico;
+• Utilização de robôs em cirurgias, realização de exames
+complementares e no acompanhamento de pacientes em
+domicílio;
+• Adoção da telemedicina no atendimento remoto, reconhecimento de lesões e imagens e avaliação de problemas de
+saúde;
+• Adoção de protocolos e diretrizes que norteiem o seu trabalho;
+• Emprego de sistemas de interação médico-paciente pela
+internet, sobretudo no controle de pacientes crônicos, ou
+tratando-os em domicílio;
+• Considerar a participação e o empoderamento dos pacientes;
+• Participar de redes colaborativas para intercambiar experiência e discutir casos clínicos;
+
+• Estudos de sistemas de saúde “considerado como o terceiro pilar da educação médica”, além do estudo de ciências
+básicas e clínicas
+• Estudo dos determinantes sociais da saúde
+• Trabalho em equipe multidisciplinar da saúde e liderança.
+• Disponibilização de prontuários eletrônicos “ajustados”
+ao aprendizado
+• Desenvolvimento de base de dados para dar suporte ao
+estudo de saúde da população
+• Desenvolvimento de habilidades de comunicação, sobretudo considerando barreiras de cultura e linguagem
+• Inserção de estudantes em serviços comunitários de saúde
+ao longo de seu curso
+• Cursos flexíveis baseado em competências
+• Desenvolvimento de hábitos de estudo e auto avaliação
+dos conhecimentos
+• Telemedicina e atendimento em áreas rurais e remotas
+Algumas universidades indicaram mudanças curriculares de maior relevância, como a Universidade de Nova York
+que criou um currículo baseado em números (“health care
+by the numbers”) para capacitar os alunos no manejo de “big
+data” buscando melhorar a coordenação da atenção em saúde,
+melhorar a qualidade e a saúde da população.
+A Universidade da Dakota do Norte, por sua vez, usa tecnologia no desenvolvimento de simulações com manequins
+com alta tecnologia incorporada e o uso de computadores
+para atendimento remoto.
+Ênfase em educação continuada, com aprendizado flexível e adaptado ao projeto do aluno, foi salientado em várias
+universidades, como Harvard, Vanderbilt, Michigan, Oregon,
+Nova York.
+Mas o interessante é se constatar que só recentemente as
+universidades americanas descobriram a importância de se
+estudar sistemas de saúde, de se enfatizar o trabalho em equipes multiprofissionais, de se incorporar os alunos a serviços
+comunitários de saúde e discutir problemas de comunicação
+entre médico e paciente.
+
+IA E EDUCAÇÃO MÉDICA
+A deficiência na interação com o paciente e na realização de
+seu exame clínico e a dependência de exames complementares
+no diagnóstico médico, são fatores que irão enfatizar cada vez
+mais o uso do computador e da IA em medicina.
+A mudança da prática médica deverá se refletir num currículo médico ajustado a esses novos paradigmas resultantes
+da mudança de uma época da informação e do conhecimento
+para uma época caracterizada por novas tecnologias e pela inteligência artificial (10).
+Tópicos como comunicação, trabalho em equipe, avaliação e manejo de risco, uso de novas tecnologias, capacidade
+de analisar dados de pacientes e da população deverão ser incorporados aos currículos de formação médica.
+De um período centrado em avaliação da informação centrada em pesquisas controladas de evidências clínicas, conferindo relevância, acurácia, oportunidade dessa informação,
+passa-se em nossos dias à utilização de IA e “machine learning” processando um grande volume de dados de pacientes
+na avaliação de risco e no estudo de correlações entre diagnósticos, genomas, determinantes sociais e tratamentos.
+Em 2013 a Associação Americana de Medicina criou (11)
+um consórcio, inicialmente de 11 escolas médicas, para discutir o impacto de novas tecnologias na atenção à saúde e na
+formação de novos profissionais. Esse número de escolas foi
+acrescido em 2015 de mais 21 instituições; um total de 19.000
+estudantes de medicina estudam nas 32 escolas do consórcio.
+O sumário desse estudo está contido no relatório (12):
+“Creating a Community of Innovation – The work of the AMA
+accelerating change in medical education”. Esse estudo indicou as seguintes propostas
+
+7
+
+COMO DEVERÁ SER A FORMAÇÃO MÉDICA
+NO FUTURO
+A Universidade deverá oferecer aos alunos uma formação
+geral, que o prepare para exercer funções no atendimento de
+pacientes em unidades de atenção primária.
+Para tal, deverá definir um núcleo de conhecimentos
+(“core curriculum”) visando preparar um profissional com
+bons conhecimentos de ciências básicas, incluindo biologia
+celular, molecular e genética, cursos de fisiopatologia de sistemas orgânicos e determinantes biológicos e sociais das doenças, integrando ciências básicas, clínicas e sociais.
+
+REVISTA BRASILEIRA DE EDUCAÇÃO MÉDICA
+42 (3) : 3 – 8 ; 2018
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v42n3RB20180115EDITORIAL1
+
+O ciclo clínico de sua formação deverá se desenvolver
+como parte de uma equipe multiprofissional de atenção à
+saúde atuando em vários cenários: da comunidade e unidades de atenção primária, hospital secundário e unidades de
+emergência. Cursos integrados, com objetivos bem definidos
+e oferta ampla de oportunidades de aprendizagem, com supervisão contínua e oferta de auto avaliação, permitindo ao
+aluno desenvolver as competências de um médico atuando
+em serviços de saúde oferecendo a cobertura de necessidades
+e demandas de uma população.
+O aprendizado em pediatria, por exemplo, deverá contemplar a atuação do aluno na comunidade, escola, residência
+dos pacientes, atendimento ambulatorial e hospitalar, incluindo sala de parto e berçários, participando, ademais, de programas de vacinação, pré-natal e crescimento e desenvolvimento.
+A Universidade deverá oferecer uma gama de oportunidades de aprendizagem, mediadas por professores, ajustadas
+aos interesses e vocações dos alunos
+Oferecer cursos modulares e de acesso livre (Humboldt
+já propunha isso em 1808 ao criar a Universidade de Berlim),
+validar conhecimentos, oferecer novas oportunidades de
+aprendizagem, sistematizar os conhecimentos e as habilidades necessárias a outorgar a sua licença profissional, além de,
+obviamente, pesquisar e desenvolver novos conhecimentos.
+Aprender a aprender e buscar seu autodesenvolvimento, de acordo com sua vocação, seu interesse, e em função
+das oportunidades que antevê na sua vida, deve ser a meta
+dos alunos. Flexibilidade no aprender e se adaptar a novos
+encargos e funções, deverá ser o objetivo de uma geração de
+estudantes conectada, mas inquieta e seguindo seus próprios
+ideais e anseios de vida.
+O aprendizado flexível deverá prevalecer numa sociedade em que a Inteligência Artificial terá cada vez mais importância.
+
+4. https://www.pwc.com/gx/en/industries/healthcare/
+publications/ai-robotics-new-health/survey-results.html
+5. Castaneda,C.,Nafley,k.,Mannion,C.,Bhattacharyya,P.,
+Blake,P.,Pecora,A.,Goy,A e Suh,K.S., Clinical Decision
+Support Systems for Improving Diagnostic Accuracy
+and Achieving Precision Medicine, J.Clin. Bioinforma.,
+2015: 5,4, em: www.ncbi.nlm.nih.gov/pmc/articles/
+PMC4381462/
+6. Topol, E., The Patient Will See You Now, The future of medicine is in your hands, Basic Books, NY, 2015
+7. Tsulukidzem, Grande, Stuart W. Thompson, Rachel, Rudd,
+Kenneth, e Elwyn,Glyn, Linkov, Igor, Patients Covertly
+Recording Clinical Encounters: Threat or Opportunity? A
+Qualitative Analysis of Online, TextsPLoS One. 2015; 10(5):
+e0125824.
+8. Van Dalen, j., Zuidweg, J., Collet, J., The curriculum of communication skills teaching at Maastricht Medical School
+Med Educ. 1989 Jan;23(1):55-61.
+9. h t t p s : / / i s t o e . c o m . b r / 1 8 2 3 0 0 _ A + P R A G A + D A S +
+CONSULTAS+A+JATO/
+10. Wartman Steven, A., Combs, C.D., Medical Education
+Must Move from the Information Age to the Age of Artificial Intelligence, Acad. Med, 2017 Nov 1, DOI 10.197/
+ACM.0000000000002044 (EPUB. AHEAD OF PRINT)
+11. Innovations & Oucomes of the AMA Consortium, in htps://
+www.ama-assm.org/innovations-oucomes-consortium
+12. Creating a Community of Innovation: The work of the AMA
+Acclerating Change in Medical Education Consortium
+
+REFERÊNCIAS
+1. CISCO VNI Mobile,2015, Cyber Academy. Global Mobile
+Traffic Forestage = Computed Annual Growth Rate. Edinburgh.
+2. Scott, I.A., Machine learning and evidence based medicine, Ann Intern Med. 2018; doi: 10.7326/M18-0115
+3. http://www.businessinsider.com/ibms-watson-may-soon-be-the-best-doctor-in-the-world-2014-4
+
+COLABORAÇÃO DOS AUTORES
+Autor único.
+ENDEREÇO PARA CORRESPONDÊNCIA.
+Luiz Carlos Lobo. Rua Raul Pompéia 94 ap. 1007. Copacabana – Rio de Janeiro. CEP: 22080-002 RJ. E-mail:luizcarloslobo@
+gmail.com
+CONFLITO DE INTERESSES:
+O autor nega haver qualquer conflito de interesse.
+
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License, which permits
+unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+
+8
+
+REVISTA BRASILEIRA DE EDUCAÇÃO MÉDICA
+42 (3) : 3 – 8 ; 2018
+

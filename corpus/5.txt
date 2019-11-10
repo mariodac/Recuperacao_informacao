@@ -1,0 +1,228 @@
+International Journal of Cardiovascular Sciences. 2017;30(3):187-188
+
+187
+
+EDITORIAL
+
+Inteligência Artificial e Machine Learning em Cardiologia – Uma Mudança de
+Paradigma
+Artificial Intelligence and Machine Learning in Cardiology - A Change of Paradigm
+Claudio Tinoco Mesquita
+Professor do Departamento de Medicina Clínica do Hospital Universitário Antônio Pedro, Universidade Federal Fluminense (UFF), Niterói, RJ – Brasil
+
+A robot may not injure a human being or, through inaction,
+allow a human being to come to harm.
+First Law of Robotics - Isaac Asimov
+
+Vivenciamos uma mudança de paradigma na vida
+moderna. Com a presença de computadores e máquinas
+inteligentes em todos os lugares, as predições dos livros
+de ficção científica de anos atrás passam gradativamente
+a se tornar realidade; são os tempos da computação
+úbíqua. Entre as ferramentas computacionais mais
+frequentemente mencionadas em estudos clínicos e vistas
+com entusiasmo por parte da comunidade científica
+se destacam a Inteligência Artificial e o consequente
+aprendizado das máquinas, que é melhor citado na
+sua forma original em inglês, o Machine Learning.
+De modo geral a Inteligência Artificial é definida como a
+constelação de itens (algoritmos, robótica, redes neuronais)
+que permitem que um software tenha propriedades de
+inteligência que se comparam às de um ser humano, entre
+elas o aprendizado com mínima interferência humana a
+partir de bancos de dados.1
+Recentemente Obermeyer e Emanuel escreveram um
+editorial afirmando que o Machine Learning tornou‑se
+disseminado e indispensável para a resolução de
+problemas complexos nos diversos campos da ciência,
+sendo que na área médica sua utilização irá transformar
+a prática.2 A utilização de inteligência artificial está
+evoluindo de modo crescente na cardiologia e já há
+
+Palavras-chave
+Inteligência Artificial/tendências, Aprendizado
+de Máquinas/tendências, Doenças cardiovasculares,
+Ecocardiografia/tendências. Medicina Nuclear/tendências.
+
+excelentes exemplos em diversas áreas. Utilizando um
+sistema sofisticado de aprendizado para interpretação
+eletrocardiográfica Li e colaboradores3 conseguiram
+que padrões eletrocardiográficos fossem reconhecidos
+automaticamente com acurácia de 88% para classificação
+dos ritmos anormais. Uma das limitações mais
+importantes do sistema estudado foi a qualidade do sinal
+eletrocardiográfico para interpretação e aprendizado,
+o que ressalta uma das características essenciais do
+Machine Learning, que é a necessidade de informações
+acuradas e reprodutíveis para formação de bancos de
+dados.2,3 Como os bancos de dados são, geralmente
+produzidos a partir de pacientes selecionados por sua
+condição de base, um dos mais importantes pontos
+para o desenvolvimento é a criação de bases de dados
+mais amplas e generalizáveis, que não induzam vieses
+na interpretação dos achados, ponto em que a indústria
+está investindo intensamente no momento.2
+Na ecocardiografia muitos estudos estão avaliando o uso
+do Machine Learning na interpretação de imagens, como
+o de Narula et al.4 que através de um banco de dados de
+pacientes com miocardiopatia hipertrófica e de indivíduos
+com hipertrofia fisiológica que foram submetidos a Speckle
+Tracking, conseguiram criar um sistema computacional
+baseado em Machine Learnig que foi capaz de assistir
+ecocardiografistas pouco experientes na distinção entre
+as duas condições com excelente acurácia. Tajik,5 em um
+entusiasmado editorial, assinalou que o Machine Learning
+deverá reduzir ou mesmo eliminar a variabilidade intra e
+interobservador dos exames ecocardiográficos e reduzir
+acentuadamente os erros cognitivos. Neste ponto o uso da
+inteligência artificial depara-se com a ética médica, pois
+as dúvidas que podem ocorrer em casos de erros poderão
+estar ligadas à atribuição de responsabilidades: errou o
+médico ou errou o software? As experiências com o uso de
+
+Correspondência: Cláudio Tinoco Mesquita
+Hospital Universitário Antônio Pedro. Rua Marquês do Paraná, 303 – Centro. CEP 24033-900 – Niterói, RJ – Brasil
+E-mail: claudiotinocomesquita@gmail.com
+
+DOI: 10.5935/2359-4802.20170027
+
+Artigo recebido em 13/03/2017, revisado em 12/04/2017, aceito em 12/04/2017.
+
+Int J Cardiovasc Sci. 2017;30(3):187-188
+
+Mesquita
+
+Editorial
+
+pilotos automáticos na aviação poderão servir de base para a
+discussão ética que ocorrerá, tendo em vista que sempre há
+pelo menos um ser humano responsável pelo voo mesmo
+com uso dos modernos dispositivos da aviação comercial.
+Neste ponto, Obermeyer e Emanuel2 chamam a atenção para
+o fato de que haverá uma redução maciça da necessidade
+de médicos em situações em que os computadores poderão
+ser alimentados diretamente por informações digitais como
+na radiologia e na patologia, pois a grande quantidade de
+informações digitais disponíveis permitirá a formação de
+bancos de dados confiáveis que levarão a uma performance
+das máquinas superior à humana.
+Quando a inteligência artificial é empregada em
+contextos clínicos mais complexos ainda há um caminho
+mais longo a ser percorrido. Austin et al.6 utilizaram um
+sistema de Machine-Learning e de mineração de dados para
+avaliar e classificar pacientes com insuficiência cardíaca e
+encontraram que apesar do sistema ser superior aos métodos
+convencionais para predição de insuficiência cardíaca com
+fração de ejeção preservada, não houve vantagens em relação
+à tradicional regressão logística. Liu et al.7 desenvolveram um
+sistema de predição de eventos adversos coronarianos em
+pacientes com dor torácica na sala de emergência baseado
+em Machine Learning e o compararam com o TIMI escore.
+Embora a performance do novo sistema seja confiável para
+predição de mortalidade e de eventos cardíacos em 30 dias,
+os próprios autores reconhecem que as decisões clínicas
+são dependentes de fatores que ainda não podem ser
+completamente incorporados às máquinas, sendo um deles
+a experiência dos médicos.7
+Em cardiologia nuclear Arsanjani et al.8 avaliaram o
+uso da ferramenta de Machine Learning para predição
+
+Inteligência Artificial e Machine Learning em Cardiologia
+
+de revascularização miocárdica a partir de dados da
+cintilografia de perfusão miocárdica, encontrando
+uma acurácica comparável ou mesmo superior à de
+examinadores experientes na interpretação do exame
+cintilográfico. Garcia et al.,9 em excelente revisão sobre o
+tema apontam que os sistemas de suporte à decisão clínica
+e de inteligência artificial servem como alertas para os
+vieses cognitivos dos clínicos e reduzem a variabilidade
+intra e interobservador, permitindo interpretar os exames
+mais rapidamente e com maior acurácia, como observado
+em estudos em que a interpretação diagnóstica do exame
+pelo computador é similar à dos experts.10 De um modo
+geral concordamos com esta visão e consideramos
+que o amparo à tomada de decisão clínica e melhoria
+da performance diagnóstica e prognóstica devem ser
+encorajados e suportados pelos médicos das diversas
+especialidades. A preocupação frequente com a eventual
+substituição definitiva do médico pelas máquinas não
+é consubstanciada pelos fatos. A profissão médica é de
+uma complexidade e subjetividade que tornam a tarefa
+impossível de ser realizada na sua totalidade pelas
+máquinas, pelo menos no estágio atual do conhecimento.
+A utilização adequada da computação permite não só a
+melhoria da performance médica mas também a busca
+da solidariedade entre pacientes, com experiências bem
+sucedidas na criação de redes sociais para pacientes.11
+Apenas o estudo do impacto aprofundado para
+desenvolvimento e utilização destas ferramentas poderá
+trazer as respostas para as perguntas que hoje estão nas
+mentes dos médicos e dos seus pacientes. O International
+Journal of Cardiovascular Sciences estimula seus leitores e
+contribuintes a enviar comunicações científicas sobre o
+tema para publicação.
+
+Referências
+1.
+
+Forsting M. Hot Topics: Will Machine Learning Change Medicine? J
+Nucl Med. 2017;58(3):357-8.
+
+2.
+
+Obermeyer Z . Emanuel EJ. Predicting the future: big data, machine
+learning, and clinical medicine. N Engl J Med. 2016;375(13):1216–9.
+
+3.
+
+Li Q, Rajagopalan C, Clifford GD. A machine learning approach to
+multi-level ECG signal quality classification. Comput Methods Programs
+Biomed . 2014;117(3):435-47.
+
+4.
+
+Narula S, Shameer K, Salem Omar AM, Dudley JT, Sengupta PP.
+Machine-Learning Algorithms to Automate Morphological and Functional
+Assessments in 2D Echocardiography. J Am Coll Cardiol. 2016;68(21):2287–95.
+
+5.
+
+Tajik AJ. Machine Learning for Echocardiographic Imaging: Embarking
+on Another Incredible Journey. J Am Coll Cardiol.2016;68(21):2296-8.
+
+6.
+
+Austin PC, Tu J V, Ho JE, Levy D, Lee DS. Using methods from the
+data-mining and machine-learning literature for disease classification
+and prediction: a case study examining classification of heart failure
+subtypes. J Clin Epidemiol. 2013;66(4):398-407.
+
+7.
+
+Liu N, Lee MAB, Ho AFW, Haaland B, Fook-Chong S, Koh ZX, et al.
+Risk stratification for prediction of adverse coronary events in emergency
+department chest pain patients with a machine learning score compared
+with the TIMI score. Int J Cardiol . 2014;177(3):1095-7.
+
+8.
+
+Arsanjani R, Dey D, Khachatryan T, Shalev A, Hayes SW, Fish M, et al.
+Prediction of revascularization after myocardial perfusion SPECT by
+machine learning in a large population. J Nucl Cardiol. 2014;22(5):877–84.
+
+9.
+
+Garcia E V, Klein JL, Taylor AT. Clinical decision support systems in
+myocardial perfusion imaging. J Nucl Cardiol. 2014;21(3):427–39.
+
+10. Arsanjani R, Xu Y, Dey D, Vahistha V, Shalev A, Nakanishi R, et al.
+Improved accuracy of myocardial perfusion SPECT for detection of
+coronary artery disease by machine learning in a large population. J
+Nucl Cardiol. 2013;20(4):553–62.
+11. Medina EL, Mesquita CT, Loques Filho O. Healthcare social networks
+for patients with cardiovascular diseases and recommendation systems.
+Int J Cardiovasc Sci. 2016;29(1):80-5.
+
+188
+

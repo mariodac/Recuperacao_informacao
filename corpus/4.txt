@@ -1,0 +1,1062 @@
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+Desenvolvimento de um sistema de
+apoio à decisão com a técnica de
+raciocínio baseado em casos
+Eduardo Urnau
+Mestre em Sistemas e Processos Industriais.
+UNISC – Universidade de Santa Cruz do Sul.
+Posição atual: Gerente de TI – Professor
+Universitário.
+Liane Mahlmannn Kipper
+Professora Doutora do Departamento de Química
+e Física da Universidade de Santa Cruz do Sul
+(UNISC). Doutorado em Engenharia da Produção
+pela Universidade Federal de Santa Catarina
+(UFSC)
+Rejane Frozza
+Professora
+Doutora
+do
+Departamento
+de
+Informática e do Programa de Pós-Graduação em
+Sistemas e Processos Industriais da Universidade
+de Santa Cruz do Sul (UNISC). Doutorado em
+Ciência da Computação pela Universidade Federal
+do Rio Grande do Sul (UFRGS)
+
+http://dx.doi.org/10.1590/1981-5344/1636
+O trabalho descreve o desenvolvimento de um sistema
+para apoio à tomada de decisão percorrendo os temas
+que abordam o conhecimento, as estratégias utilizadas
+nas empresas e o uso da técnica de raciocínio baseado
+em casos. A técnica de Inteligência Artificial atendeu o
+desafio de tornar o conhecimento parte da cultura
+organizacional. O estudo de caso foi realizado
+proporcionando à empresa análises detalhadas dos
+resultados. Modelos foram utilizados, para tornar esta
+aplicação diferenciada: linear da faixa de interesse para
+cada atributo; matriz simétrica de similaridade e tabela de
+definição dos valores por atributos. Os resultados
+apresentam melhoria significativa na acurácia das
+informações em tempo real, auxiliando na tomada de
+decisões.
+Palavras-chave: Gestão do conhecimento, planejamento
+estratégico, capital intelectual, técnica de raciocínio
+baseado em casos.
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+118
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+This paper describes the development of a system to
+support decision making covering issues related to the
+knowledge, the strategies used in businesses and the use
+of the technique of case-based reasoning. The Artificial
+Intelligence achieved the challenge to become the
+knowledge part of the organizational culture. Case study
+was conducted to provide detailed analysis of the results.
+Models were used to make this application differentiated:
+linear band of interest for each attribute; symmetric
+similarity matrix and table to definition of attributes
+values. The results show significant improvement in the
+accuracy of the information in real time to decision
+making.
+Keywords: Knowledge Management, strategic planning,
+intellectual capital, case-based reasoning technique.
+Recebido em 01.12.2012 Aceito em19.08.2014
+
+1 Introdução
+No atual mundo globalizado, ficar sem informações é praticamente
+inadmissível e altamente arriscado, principalmente dentro de um contexto
+empresarial. A fundamental preocupação da análise dos recursos da
+empresa deve ser determinar as vantagens competitivas que a empresa
+tem sobre seus concorrentes (ANGELONI, 2003). Desta forma, o auxílio
+aos gestores na tomada de decisões com evidências objetivas, obtendo
+informações nos momentos importantes, distribuindo informações
+adequadamente aos envolvidos e fomentando o armazenamento de
+informações úteis para a empresa, foi um dos focos desta pesquisa.
+Utilizando-se de recursos tecnológicos, processos inteligentes e resultados
+eficazes.
+A tomada de decisão é de grande importância para o sucesso da
+estratégia, já que as informações precisam ser manipuladas para gerar
+conhecimento e, assim, auxiliar na escolha de alternativas mais
+adequadas para a situação em questão. Os gestores precisam identificar,
+analisar e solucionar possíveis problemas, implementando ações eficazes
+e em tempo hábil. Mas, muitas vezes a informação disponível não é
+suficiente para a toma da de decisão. Segundo Vick e Nagano (2012) as
+organizações valorizam as informações pessoais, assim, quando
+encontrados, os sistemas de informações não são satisfatórios para um
+efetivo gerenciamento estratégico da informação.
+A proposta deste trabalho foi de utilizar os recursos da inteligência
+artificial, com o uso da técnica de sistemas baseados em conhecimento,
+para analisar continuamente informações oriundas do planejamento
+estratégico da empresa, no setor comercial, com a finalidade de identificar
+padrões de conhecimento existentes nos resultados e nas decisões
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+119
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+tomadas. Assim, será possível realizar análises detalhadas e não somente
+sintéticas, contribuindo para a qualidade da decisão tomada pelo gestor
+da empresa.
+Neste contexto, a valorização do capital intelectual das organizações
+é um diferencial competitivo e atualmente o conhecimento humano
+apresenta-se como uma das principais fontes de vantagem competitiva
+para as organizações. Assim, cada vez mais, as empresas serão
+diferenciadas com base naquilo que sabem (BETHLEM, 2009). Com essa
+visão, as organizações sempre procuram usar e valorizar o conhecimento,
+pelo menos implicitamente.
+Porém, as empresas ainda não sabem como gerenciar com
+consciência este relacionamento. Davenport e Prusak (1998) comentam
+que muitas empresas no mundo estão se voltando ao conhecimento como
+forma de sobrevivência e de modernização, algumas com consciência e
+outras por modismo. A correlação da realização do trabalho com eficiência
+e o uso do conhecimento é um relacionamento que está estreitamente
+ligado, cada vez mais os colaboradores e as empresas percebem o
+diferencial que o conhecimento pode lhes proporcionar.
+Com relação a um conceito geral de inteligência pode-se dizer que é
+a capacidade de adquirir e de aplicar conhecimentos, a faculdade de
+pensar e de raciocinar, ou seja, pode ser entendida como a tarefa de
+acumular informação. E artificial é definido como aquilo feito pelo homem,
+em vez de ocorrer na natureza (FERNANDES, 2005). Os sistemas
+computacionais que procuram explorar a inteligência artificial baseiam-se
+na inteligência humana em realizar determinadas tarefas, aprender novos
+procedimentos e decisões, entender linguagens e resolver problemas com
+as técnicas do raciocínio.
+Um sistema baseado em conhecimento procura fazer uso da
+experiência dos membros de uma organização. O conhecimento de
+especialistas humanos é adquirido, organizado e disponibilizado em uma
+base de conhecimento. Neste processo de aquisição, organização e
+disponibilidade, é que se constrói um sistema baseado em conhecimento.
+No contexto dos sistemas baseados em conhecimento, encontramse os sistemas de raciocínio baseado em casos (RBC), que armazenam o
+conhecimento na forma de casos (estrutura formal) que são usados para
+inferir novos resultados, a partir de casos anteriormente ocorridos e
+armazenados em uma base de conhecimento. Sugere-se que o
+levantamento dos casos ocorridos, bem como sua análise, deva ser feito
+pelos especialistas humanos da área em questão.
+Os sistemas de RBC representam um modelo cognitivo de raciocínio.
+Sua técnica é utilizar experiências passadas, para encontrar soluções aos
+novos problemas. Solucionar novos problemas pela adaptação de soluções
+que foram utilizadas em problemas similares é a filosofia básica da
+metodologia dos Sistemas de Raciocínio Baseado em Casos. Segundo
+Ganascia (1997),
+O Sistema RBC pode significar adaptar velhas soluções para
+atender às novas demandas, utilizando processos antigos para
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+120
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+explicar situações novas, utilizando processos antigos para
+criticar novas soluções, ou a aplicação de precedentes para
+interpretar uma nova situação (bem como o advogado faz) ou
+criar uma solução equitativa para um novo problema (muito
+mais como mediadores de um determinado trabalho).
+Um exemplo de raciocínio baseado em casos é o que se utiliza no
+dia a dia, para o raciocínio do senso comum. Os sistemas de raciocínio
+baseado em casos representam o ato humano de relembrar um episódio
+passado em relação a uma situação similar, adaptá-la na busca de
+entendimento sobre uma situação atual.
+No desejo de compreender como as pessoas conseguem recuperar
+informações resolvendo problemas a partir da lembrança de como
+solucionaram casos similares no passado, é que se encontra a motivação
+para a modelagem e o desenvolvimento de aplicações com o uso da
+técnica de raciocínio baseado em casos.
+Este artigo está organizado nas seguintes seções: a seção 2
+descreve as etapas de um sistema de RBC, contemplando os elementos
+básicos do RBC e o ciclo de sistema de RBC, juntamente a todas as etapas
+envolvidas no ciclo do sistema RBC. A seção 3 aborda um comparativo
+entre diversos estudos relacionados. A seção 4 percorre sobre as
+metodologias aplicadas para a obtenção de resultados no decorrer do
+desenvolvimento deste sistema. A seção 5 ressalta os resultados e
+discussões que nortearam a aplicação prática do sistema no ambiente
+corporativo.
+
+2. Etapas do sistema de raciocínio baseado em casos
+(RBC)
+A seguir, apresentam-se os elementos básicos de um RBC e as
+etapas que o constituem.
+
+2.1 Elementos básicos do raciocínio baseado em casos
+Kolodner (1993) e outros autores descrevem os elementos básicos
+de um sistema de raciocínio baseado em casos da seguinte forma:
+1. Representação do conhecimento: Em um sistema de
+RBC, o conhecimento é representado principalmente em
+forma de casos que descrevem experiências concretas.
+No entanto, se for necessário, também outros tipos de
+conhecimentos sobre o domínio de aplicação podem ser
+armazenados em um sistema de RBC (por exemplo,
+casos abstratos e generalizados, tipos de dados,
+modelos de objetos usados como informação).
+2. Medida de similaridade: Um caso será similar ao outro
+quando as características que representam realmente o
+seu conteúdo e o seu contexto forem semelhantes. A
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+121
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+avaliação da similaridade do caso a ser solucionado se
+faz comparando-se aos casos candidatos, sendo que o
+que torna um caso similar a outro é a semelhança das
+características que irão representar realmente o
+conteúdo e o contexto da experiência (QUEL, 2006).
+3. Adaptação: Por nenhum problema passado ser
+exatamente igual a um problema atual, soluções
+passadas geralmente são adaptadas para solucionar
+novos problemas (GANASCIA,1997). A adaptação tem a
+função de alterar um caso, se houver necessidade, para
+solucionar o problema de entrada.
+4. Aprendizado: Aprendizagem em um sistema de RBC,
+também é comentada por Ganascia (1997), acontece
+principalmente ao acumular novas experiências em sua
+memória de casos, e na correta indexação dos
+problemas. Incorporando o que é útil do problema
+resolvido, após passar pela avaliação e possíveis ajustes
+que possam ser necessários.
+Considerando a representação do conhecimento na forma de casos,
+a definição de uma medida de similaridade, as formas de adaptação dos
+casos, se necessário para resolver um problema e o aprendizado no
+momento da construção e uso de uma memória de casos podemos
+compor um sistema baseado em casos. A partir destes elementos básicos
+é desenvolvido o ciclo de RCB apresentado a seguir.
+
+2.2 Ciclo do sistema de raciocínio baseado em casos
+As etapas que envolvem o ciclo do sistema de raciocínio baseado em
+casos compreendem os processos de recuperação, que consiste em
+realizar uma busca na memória de casos; a reutilização, que é
+caracterizada pela adaptação da solução armazenada em um caso
+recuperado; revisão, que surge como uma oportunidade para aprender a
+partir da falha; retenção, que envolve selecionar qual informação é
+relevante. A figura 1 apresenta o ciclo do raciocínio baseado em casos.
+Figura 1 – Ciclo do Raciocínio Baseado em Casos
+
+Fonte: Adaptado de Wangenheim e Wangenheim (2003).
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+122
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+O sistema efetua uma busca na base de casos, a partir de um novo
+problema, e recupera um conjunto de casos similares que possam atender
+à solução do problema em questão. Os casos recuperados são avaliados
+para posterior utilização e/ou armazenamento na base. A seguir,
+apresenta-se a definição de cada etapa que compõe o Sistema de RBC.
+
+2.2.1 Etapa de recuperação
+A etapa de recuperação inicia com uma descrição do problema e
+termina com a recuperação de casos similares. A busca por casos é feita
+através de algoritmos que selecionam os casos de acordo com a sua
+similaridade em relação ao problema descrito na entrada do ciclo. As
+tarefas envolvidas na etapa de recuperação de casos são as avaliações de
+similaridade, indexação e seleção.
+A avaliação de similaridade ocorre após a identificação das
+características do problema de entrada. Com isso, os índices do caso de
+entrada são comparados aos índices de cada caso candidato da base,
+gerando uma média de similaridade para cada caso da base. A
+similaridade é o ponto crucial do raciocínio baseado em casos, é a partir
+dela que todo o processo de raciocínio fundamenta-se, tornando esta
+técnica viável (GANASCIA, 1997).
+Já a função da indexação é permitir conexão relevante entre
+um problema atual e o conhecimento armazenado na memória. O
+conjunto de índices que representa características relevantes nos casos é
+o que torna um caso similar a outro. Rabuske (1995) comenta que a
+indexação é a essência do raciocínio na base de casos, pois guia a
+determinação da similaridade.
+Uma medida de similaridade frequentemente utilizada é a técnica do
+“vizinho mais próximo (Nearest Neighbour Retrieval)” (KOLODNER, 1993).
+A similaridade entre o novo caso e o caso existente é determinada para
+cada atributo do caso. Esta medida deve ser multiplicada por um fator
+(peso) e calculado o somatório de todos os atributos, o que permite
+estabelecer a medida de similaridade entre os casos da base de casos e o
+novo caso. A atribuição do peso faz com que os casos sejam apontados
+como semelhantes, implicando nesta recuperação os pesos atribuídos pelo
+especialista humano.
+O cálculo será repetido para toda a base de casos, para a obtenção
+da classificação da similaridade. Um conjunto dos casos é apresentado
+pela tarefa de seleção, considerando as melhores escolhas durante o
+processo. Nesta lista, o caso que melhor satisfaz a consulta do problema,
+poderá ser o mais útil.
+A faixa escolhida pelos especialistas foi de “0” até “10” para o fator
+(peso) que pode ser definido para cada atributo do caso. A definição desta
+variação ocorreu a partir da escolha feita pelos especialistas humanos
+(Gerente Administrativo, Financeiro e Comercial). Para o fator peso na
+fórmula do vizinho mais próximo, o critério pode ser definido livremente.
+O que a fórmula matemática exige é que seja um algarismo numérico,
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+123
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+podendo ser representado de “0,0” até “1,0”, de “0” até “100” ou “0” a
+“1000”, entre outros.
+Três fatores foram decisivos para determinar a faixa do valor a ser
+atribuído ao peso. O primeiro fator é que, os valores entre “0” até 10
+permitem representar adequadamente a faixa de interesse para cada
+atributo, qualificando este interesse entre (Nenhum, Pouco, Parcial,
+Bastante e Total) conforme figura 2.
+Figura 2 - Faixa de interesse para cada atributo
+
+Fonte: Elaborado pelos autores.
+
+O segundo fator diz respeito ao produto final da equação, com os
+valores variando entre zero e dez. O resultado da fórmula não retorna um
+valor muito alto e extenso. E o terceiro fator é que nesta faixa de valores,
+a discrepância entre os resultados finais permite uma oscilação que
+melhor representa as similaridades ou dissimilaridades entre os casos,
+sendo mais condizente com as realidades testadas. Para outros valores
+testados, como “0,0” até “1,0”, a discrepância entre os valores foi
+considerada pouca, causando a interpretação que todos os casos
+recuperados eram similares. Já com os valores de “0” a “100” ou “0” a
+“1000”, os resultados testados eram extensos e uma discrepância grande,
+causando a interpretação que todos os casos recuperados não tinham
+similaridade. Assim justificando a melhor escolha pela faixa entre os
+valores “0” até “10”.
+
+2.2.2 Etapa de reutilização
+A adaptação pode ser uma complexa modificação na estrutura da
+solução, ou uma simples substituição de um atributo da solução por outro.
+É possível perguntar ao usuário se ele deseja que o sistema faça
+adaptação. Caso a resposta seja afirmativa, a adaptação deve ser feita de
+modo que o usuário possa interagir com as modificações, decidindo por
+sua aplicação. As modificações ficam registradas na base de
+conhecimento.
+
+2.2.3 Etapa de revisão
+O primeiro passo da revisão focaliza na detecção de falhas nas
+soluções atribuídas pelo sistema. A etapa de revisão confirma a escolha do
+caso e avalia suas diferenças com o problema de entrada do caso,
+orientando assim a adaptação. A razão do não enquadramento da solução
+proposta pelo sistema deve ser investigada. A medida de similaridade
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+124
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+também poderá ser revisada, de forma que possa sugerir outro caso para
+a solução do problema de entrada.
+
+2.2.4 Etapa de retenção
+Nesta etapa o sistema incorpora ao caso tudo o que foi útil na
+resolução do problema. A retenção envolve selecionar qual informação é
+relevante, a forma de retê-la, como organizar o caso para posterior
+utilização e ainda integrar o novo caso na estrutura da memória de casos.
+O armazenamento de um caso cuja solução foi confirmada como útil é o
+processo de retenção.
+
+2.2.5 Validação e verificação
+O teste ou avaliação de um sistema de raciocínio baseado em casos
+envolve dois processos separados, denominados verificação e validação.
+Ganascia (1997) comenta que a verificação avalia o grau de precisão na
+realização das tarefas propostas, já a validação avalia a sua eficiência.
+Além de avaliar a eficiência e qualidade, deve-se considerar se o
+aumento de robustez resultante da aprendizagem irá realmente beneficiar
+a qualidade do sistema ou diminuir sua velocidade, utilidade e eficiência.
+Ao contrário dos sistemas baseados em regras, os sistemas de raciocínio
+baseado em casos são dinâmicos e adquirem os casos para a base através
+de aprendizagem, por isso a base de casos se expande continuamente
+(GANASCIA, 1997).
+
+3 Trabalhos relacionados
+Com a finalidade de fundamentar as possibilidades de
+desenvolvimento deste sistema, se realizou estudos de trabalhos
+relacionados, publicados em textos acadêmicos nacionais e internacionais
+na busca de evidências e efetividades. Porém, “propor” algo é
+relativamente fácil, difícil é mostrar que a proposta apresentada agrega
+algum tipo de melhoria em relação a outras propostas semelhantes.
+A tabela comparativa construída apresenta os resultados de diversos
+atributos de cada obra estudada, demonstrando que a ideia não é criar
+algo, simplesmente diferente de tudo que já existe, mas algo que
+incorpore várias características importantes em linhas de estudos e uma
+aplicação diferente das demais pesquisadas. Também, contribui de forma
+positiva na validação do sistema, pois o mesmo apresenta um novo
+cenário para aplicação das técnicas de RBC nas empresas.
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+125
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+Tabela 1: Tabela Comparativa
+
+X
+
+(Carvalho, 2008)
+
+X
+
+Todos
+
+Não definido
+
+X
+
+Operacional
+
+Confecções
+
+X
+
+Estratégico
+
+Operacional
+Gerencial/Custo
+s
+
+Não definido
+Indústri de
+Fumo
+Produção peças
+Projetos/Orçam
+entos
+
+(Lacerda et al., 2008)
+
+Operacional
+
+RBC Web
+CommonK
+ADS
+Workflow
+
+RBC
+
+(Savi et al., 2010)
+(Marzouk e Ahmed,
+2011)
+
+X
+
+(Fu e Fu, 2012)
+
+X
+
+X
+
+Operacional
+
+Custos
+
+RBC/MASCCM
+
+X
+
+X
+
+Tomada decisão
+
+Policial/Jurídico
+
+RBC
+
+X
+
+Estratégico
+
+Comercial
+
+RBC
+
+(Wah e Muniandy,
+2014)
+(Urnau et al., 2010 e
+Kipper et al., 2014)
+
+X
+X
+
+X
+
+X
+
+Modelagem de sistema
+
+X
+
+Avalia técnicas eficazes de
+recuperação do RBC
+
+X
+
+Não definido
+Medicina
+
+Ferramenta utilizada
+
+X
+
+Estratégico
+Todos
+
+Segmento de mercado
+
+X
+
+Aplicabilidade nos níveis
+organizacionais
+
+X
+
+Apresenta vantagem competitiva
+
+Gestão do conhecimento em rede
+
+(Silva, 2008; Firmino,
+2008)
+(Goulart et al., 2008)
+
+Aborda o conhecimento nas
+organizações
+
+AUTORES
+(Moresi, 2000)
+(Silva et al, 2005)
+
+X
+
+RBC
+RBC
+
+X
+
+X
+
+X
+X
+
+X
+
+Fonte: Elaborado pelos autores.
+
+O estudo de diversos trabalhos acadêmicos e artigos científicos que
+envolvem o tema de inteligência artificial e a técnica de raciocínio baseado
+em caso, reafirma que RBC justifica sua aplicação para o
+armazenamento/registro do legado de conhecimento que existe nas mais
+diversas organizações. Sua flexibilidade através dos casos, que RBC utiliza
+como sua principal forma de representação do conhecimento, permite
+adaptá-lo para os mais diversos ramos de negócios e serviços prestados.
+Acrescentamos ainda que o RBC permite sua escalabilidade, através
+da harmonização/integração com outras técnicas e normas já
+conceituadas. Ampliando assim se necessário a gama recursos para
+apuração das melhores informações a serem utilizadas na resolução de
+problema.
+
+4. Metodologia
+A pesquisa é do tipo exploratória e descritiva. É exploratória porque
+realizou investigações por meio de visitas, observações, aplicação da
+técnica de Brainstorming e de conversas informais. Segundo Gil (1991) a
+pesquisa exploratória é a pesquisa que “tem como objetivo principal o
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+126
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+aprimoramento de ideias ou a descoberta de intuições”. É também
+descritiva porque faz o registro e o relato, de forma sistemática,
+descrevendo como foi realizada a pesquisa em todas as suas etapas.
+A fundamentação teórica foi realizada tendo como base o
+levantamento bibliográfico em livros, artigos, dissertações, teses, revistas,
+documentos eletrônicos e outros. Para obtenção das informações através
+de procedimentos de coleta, com métodos práticos para o registro das
+informações necessárias à construção do estudo de caso desse trabalho,
+se realizou em primeiro momento as técnicas de visitas (para realizar as
+observações), entrevista estruturada e de levantamento de casos.
+Entre as diversas reuniões foi apresentado o modelo de registro dos
+casos, explicando para os participantes a definição da estrutura do
+registro dos casos. Os casos foram definidos com a seguinte estrutura:
+identificação do caso; descrição do problema; descrição da solução;
+conclusão; data de inclusão; especialista que realizou a inclusão; data de
+alteração; especialista que realizou a alteração.
+A aplicação destas técnicas se fez necessário em virtude da
+disseminação do conhecimento, assim os participantes denominados
+especialistas puderam contribuir relatando suas experiências, através dos
+relatos foi possível criar os casos. Com a base de casos formada
+iniciaram-se os testes em buscas de novas soluções. Na próxima seção
+apresenta-se os resultados e os passos para modelar os dados na prática.
+
+5 Resultados e discussões: modelando os dados na
+prática
+Para realizar a modelagem do sistema para apoio à tomada de
+decisão com uso da técnica de raciocínio baseado em casos, inicialmente
+foram definidos valores de similaridade. Logo após esta definição, foi
+desenvolvida uma indexação com a definição de valores por atributos para
+o estudo de caso. A definição de uma fórmula para a recuperação de
+casos também foi desenvolvida. A seguir encontram-se detalhes sobre
+estes resultados.
+
+5.1 Definição dos valores da similaridade
+A definição dos valores de similaridade tem um papel importante
+nos sistemas de RBC, pois a similaridade é o raciocínio que dá suporte ao
+sistema. Os valores foram definidos de zero (0) a dez (10), sendo dez o
+valor de maior similaridade, e zero o valor sem similaridade entre os
+assuntos. Os valores entre zero e dez também podem ser indicados em
+percentual, sendo o valor dez com 100% de similaridade e o valor zero
+com 0% de similaridade, e qualquer outro valor entre esta faixa de zero a
+dez tem o seu respectivo valor indicados em percentual.
+Para a construção da tabela 2, os especialistas debateram sobre os
+grupos de assunto (Produtos, Clientes, Crediário e Metas), analisando as
+características, procurando axiomatizar dentro de processos cognitivos os
+valores adequados para a determinação da tabela de similaridade local.
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+127
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+Para isso, são considerados conhecimentos tácitos (inerente de cada
+pessoa, sua existência é melhor percebida nas realizações práticas.),
+explícitos (conhecimento adquirido através de estudos, leituras, é um
+conhecimento teórico) e de domínio (adquirido através da experiência, no
+caso em questão o conhecimento comercial/administrativo/gerencial). A
+estruturação da tabela assume um modelo de similaridade formal,
+concebendo similaridade com relação aos casos, fatos e objetos
+postulando uma qualificação nos possíveis conteúdos registrados nos
+casos.
+Tabela 2: Valores da similaridade local
+Valor da
+Produto
+similaridade
+Produto
+10
+Cliente
+5
+Crediário
+2
+Metas
+0
+Fonte: Elaborado pelos autores.
+
+Cliente
+
+Crediário
+
+Metas
+
+5
+10
+2
+0
+
+2
+2
+10
+5
+
+0
+0
+5
+10
+
+A tabela 2 com a similaridade entre os assuntos necessita estar
+integrada num processo cognitivo. Esta ligação entre os assuntos permite
+que o usuário possa fazer uso do conhecimento atribuído em outro caso,
+mesmo que não seja diretamente relacionado ao assunto solicitado por
+ele. Entende-se como processo cognitivo o princípio de aprender com os
+casos anteriores, avaliando as similaridades.
+A similaridade pode ser definida também como utilidade, sendo que
+o caso recuperado que apresentar maior similaridade, provavelmente será
+útil para um problema atual.
+
+5.2 Indexação
+Para que seja possível encontrar casos similares na base de casos
+para um problema qualquer, é preciso definir quais atributos são
+necessários para realizar a comparação entre um caso armazenado e a
+situação do problema atual (caso atual). Na tabela 3 apresenta-se esta
+construção para o estudo de caso realizado. A definição destes atributos,
+utilizados para a determinação de casos adequados para comparação, são
+denominados índices. Os índices de um caso são os conjuntos de seus
+atributos mais importantes, que permitem diferenciar um caso dos
+demais, e identificar casos úteis para um problema pesquisado.
+O valor do atributo que apresenta a informação “Não definido”
+determina a inexistência de valor para o mesmo. Desta forma, o sistema
+ignora este atributo para a definição do conjunto de índices que
+representa o caso.
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+128
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+Tabela 3: Definição dos valores por atributos
+Nome do Atributo
+Valores
+Produto
+Não definido/Produtos/Clientes
+Marca
+Não definido/Amanco/Brastemp/Cadence e etc.
+Sazonalidade
+Não definido/Sim/Não
+Venda a Crediário
+Não definido/Sim/Não
+Forma de Pagamento
+Não definido/A Vista/A Prazo
+Atingiu Metas
+Não definido/Sim/Não
+Fonte: Elaborado pelos autores.
+
+5.3 Definição da fórmula para recuperação de casos
+O processo de recuperação dos casos utiliza a métrica do vizinho
+mais próximo, onde para cada atributo pode-se obter um resultado de
+medida da distância entre o novo problema e os casos já registrados,
+possibilitando ainda a cada atributo possuir um peso diferenciado,
+determinando a importância do atributo para os resultados.
+O cálculo utiliza o valor da similaridade entre os atributos definidos
+para a consulta e multiplica pelo respectivo peso, calculando o somatório
+de todos os atributos.
+A normalização do resultado calculado é determinada através da
+divisão do valor total da similaridade pela soma total dos pesos
+determinados pelo usuário. Fernandes (2005) define desta forma a
+métrica de similaridade do vizinho mais próximo ponderado. Conforme é
+apresentado a seguir na equação 1.
+
+(1)
+
+O cálculo da similaridade é realizado para cada atributo escolhido
+pelo usuário, sendo percorrida toda a base de casos. Realizando-se o
+cálculo para todos os casos existentes, o resultado é apresentado levando
+em consideração a ordem de maior similaridade encontrada nos casos.
+A tabela 4 demonstra o valor encontrado para um caso já
+armazenado na base de dados. O sistema realiza a soma da multiplicação
+de todos os atributos, dividindo pelo somatório do valor dos pesos
+informados pelo usuário. Conforme demonstrado na última linha da tabela
+4. Determinando assim que a similaridade entre o caso buscado e o caso
+armazenado na base de casos é igual a 3,8461.
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+129
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+Tabela 4: Demonstração de cálculo da similaridade
+Similaridade
+ATRIBUTOS
+Peso Caso Buscado
+Caso 1
+local
+Cliente/Produto
+3
+Produto
+Produto
+10
+Marca
+10
+Brastemp
+Amanco
+2
+Sazonal/Sim/Não
+0
+Sim
+Crediário/Sim/Não
+0
+Sim
+Metas/Sim/Não
+0
+Sim
+Atingiu meta/Sim/Não
+0
+Sim
+Valor da Similaridade Global: Caso 1 (3*10 + 10*2)/(3+10)= 3,8461
+Fonte: Elaborado pelos autores.
+
+5.4 O sistema desenvolvido
+Esta seção apresenta, de forma sucinta, o sistema desenvolvido e
+suas funcionalidades. A figura 3 apresenta a tela principal do sistema e
+suas opções: cadastro dos casos, recuperação de casos, informações
+sobre o sistema e relatórios
+Figura 3 - Sistema de RBC
+
+Figura 4 – Tela da base de Casos
+
+A figura 4 apresenta a tela da Base de Casos, onde os casos são
+registrados. O campo “Caso” possui um valor sequencial numérico para
+manter o caso registrado único. Existem três grupos distintos de campos
+que são identificados da seguinte forma, “ATRIBUTOS PARA PRODUTOS”,
+“ATRIBUTOS PARA CREDIÁRIO” e “ATRIBUTOS PARA METAS” estas três
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+130
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+divisões são necessárias para atender o planejamento estratégico do setor
+comercial adotado pela Empresa.
+Os campos do grupo “ATRIBUTO PARA PRODUTOS” são, “Produto/Cliente”,
+neste campo o usuário pode optar por registrar o caso com destaque para o cliente
+ou produto. Campo seguinte é “Marca” o usuário escolhe uma marca se o caso
+registrado merecer a sua identificação. Já o campo “Sazonalidade” refere-se à
+informação do caso ser relevante a uma determinada data promocional do ano.
+O grupo “ATRIBUTOS PARA CREDIÁRIO” contém dois campos, um é
+“Crediário”, que possibilita o usuário afirmar se o caso teve ligação com o
+sistema de crédito e pagamento da empresa. O campo “A vista/ A prazo”,
+define qual a modalidade de pagamento relacionada ao caso.
+Figura 4 – Base de Casos
+
+No grupo “ATRIBUTOS PARA METAS” são definidos os valores
+relativos à meta das vendas, o campo “Metas” considera as possibilidades
+de afirmar o vínculo do caso com o grupo metas do planejamento
+estratégico da empresa. O campo “Meta atingida” é utilizado pelo usuário
+para determinar se o resultado das vendas atingiu a meta ou não.
+Para todos os campos que fazem parte dos três grupos citados,
+existe a possibilidade que o usuário escolha o valor “Não definido” para os
+campos. Esta escolha atribui o valor zero para campo. O valor zero será
+gravado na tabela do banco de dados, assim o software desconsidera este
+campo em seu cálculo de similaridade.
+A figura 5 mostra a tela relativa à busca de casos. As opções de
+seleção desta tela estão divididas nos seguintes grupos, “Lista de
+Atributos”, “Peso dos Atributos”, um grupo de botões com possibilidade de
+criar novos casos e adaptar casos já criados.
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+131
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+Figura 5 – Sistema em Busca de Casos
+
+Os atributos no grupo “Lista dos Atributos” referem-se aos campos
+definidos nos casos, os valores que cada atributo pode assumir também
+correspondem aos valores previamente cadastrados nos casos. A escolha
+por atribuir um valor ou não a um atributo é relativo ao interesse de
+busca que o usuário pretende fazer. Somente o campo “Quantidade de
+Casos a Recuperar” é definido pelo usuário para que o sistema retorne a
+quantidade de casos do seu interesse.
+No grupo “Peso dos Atributos”, o usuário pode utilizar estes campos
+para atribuir um valor entre zero (0) e dez (10) para determinar um grau
+de importância em determinado campo. Sendo zero o valor sem
+importância e dez o valor de maior importância.
+O botão “Similaridade” equivale ao processo de recuperação. Os
+próximos ciclos de RBC são reutilização, solução adaptada, revisão,
+solução confirmada, retenção e caso armazenado.
+
+6 Conclusões
+O estudo e o desenvolvimento deste trabalho proporcionaram
+atender a demanda por informações existente na grande maioria das
+empresas, que estão em um ambiente complexo de negócios onde a
+informação no momento da tomada de decisão é fator crucial.
+A ferramenta desenvolvida possibilita o acesso a qualquer
+informação cadastrada de maneira contínua num curto intervalo de
+tempo, assegurando o uso efetivo da informação em tempo real.
+A descrição dos casos, juntamente com as soluções ou resultados
+alcançados, permite aos gestores analisarem o problema descrito no
+momento da sua ocorrência e com uma visão mais ampla e detalhada.
+Os diversos casos registrados na base de casos permitiram
+consultas frequentes, as interpretações e compreensão dos casos
+remetem os usuários às lembranças de situações anteriores.
+A visualização destas informações permite os gestores fazem
+associações na busca por uma solução mais adequada para o problema
+enfrentado.
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+132
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+Acrescentado a isso o desenvolvimento do software como
+ferramenta de apoio, demonstrando que a tecnologia pode facilitar e
+auxiliar nos processos de tomada de decisões, apresentando-se como
+meio para o sucesso de uma tomada de decisão efetivando um sistema de
+gestão do conhecimento. O compartilhamento de experiências pode trazer
+benefícios para um ambiente de trabalho que requer interatividade,
+conhecimento,
+compartilhamento,
+competitividade
+e
+excelência,
+quebrando assim o paradigma antes existente, e demonstrando na prática
+a ideia de que todos devem incentivar o reuso do conhecimento
+disponível.
+Acrescenta-se ainda que o fato do conhecimento estar armazenado
+permite consultar, compartilhar e contribuir, atendendo assim os
+princípios da gestão do conhecimento. A participação continuada dos
+tomadores de decisão, registrando os casos no sistema, permite uma
+cultura de compartilhamento gerando conhecimento em rede.
+
+Referências
+ANGELONI, M. T. Organizações do conhecimento: infra-estrutura, pessoas
+e tecnologias. São Paulo: Saraiva, 2003.
+BETHLEM, A. de S. Estratégia empresarial: conceitos, processo e
+administração estratégica. 6. ed. São Paulo: Atlas, 2009.
+CARVALHO, Alexey. Raciocínio baseado em casos aplicado ao processo
+decisório. Rev. de Ciências Gerenciais. V. 12, n. 16, p. 25-35, 2008.
+DAVENPORT, T. H.; PRUSAK, L. Conhecimento empresarial: como as
+organizações gerenciam o seu capital intelectual. 6. ed. Rio de Janeiro:
+Campus, 1998.
+FERNANDES, A. M. da R. Inteligência
+Florianópolis: VisualBooks, 2005.
+
+Artificial:
+
+noções
+
+gerais.
+
+FIRMINO, S. Aplicação do CommonKADS na análise de crédito
+empresarial: Um estudo no Setor Empresarial da Caixa Econômica
+Federal. 2008. Trabalho de conclusão de curso (Sistemas de Informação Bacharel) – Universidade Federal de Santa Catarina, Florianópolis, 2008.
+FU, J.; FU, Y. Case-Based Reasoning and Multi-Agents for Cost
+Collaborative Management in Supply Chain. Procedia Engineering. v. 29,
+p. 1088 – 1098, 2012.
+GANASCIA, J. G. Inteligência Artificial. São Paulo: Editora Ática, 1997.
+GIL, A. C. Como elaborar projetos de pesquisa. 6. ed. São Paulo: Atlas,
+2008.
+MORESI, E. A. D. Delineando o valor do sistema de informação de uma
+organização. Ciências da Informação, Brasília, v. 29, n. 1, p. 14-24,
+jan./abr. 2000.
+GOULART, M. A. M.; FROZZA, R.; FURTADO, J. C. Proposta de um modelo
+workflow como ferramenta de apoio à decisão na otimização da linha de
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+133
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+produção de uma empresa de confecções. Dissertação (Mestrado em
+Sistemas e Processos Industriais) – Universidade de Santa Cruz do Sul
+(UNISC), Santa Cruz do Sul, 2008.
+KIPPER , L. M.; FROZZA, R.; URNAU, E. Modelagem de um sistema para
+apoio á tomada de decisão com uso de técnicas de raciocínio baseado em
+casos. Tecno-Lógica. v. 18, 1, p. 49-59, jan./jul. 2014.
+KOLODNER, J. Case-based reasoning. San Mateo: Morgan Kaufmann
+Publishers, 1993.
+LACERDA, R. Técnica de Raciocínio Baseado em Casos para Apoio à
+Decisão no Processo de Fumo em Folha. Anais do XXVIII Encontro
+Nacional de Engenharia de Produção – XXVIII ENEGEP, Rio de Janeiro,
+2008.
+MARZOUK, M. M.; AHMED,R. M. A case-based reasoning approach for
+estimating the costs of pump station projects. Journal of Advanced
+Research v. 2, p. 289–295, 2011.
+QUEL, L. F. Gestão de conhecimentos e os desafios da complexidade nas
+organizações. São Paulo: Saraiva,2006.
+RABUSKE, R. A. Inteligência artificial. Florianópolis: Ed. da UFSC, 1995.
+SAVI, A. F.; GONÇALVES FILHO, E. V.; SOUZA E SAVIC E M. de.
+Armazenamento de conhecimento explícito referente ao DFA (Design for
+Assembly ) utilizando regras baseadas em casos. Produção. v. 20, n. 1, p.
+66-76, jan./mar. 2010.
+SILVA, S. de C. Uma modelagem para um sistema do conhecimento para
+a integração das cadeias produtivas baseada no commonkads. Anais do
+XXVIII Encontro Nacional de Engenharia de Produção – XXVIII ENEGEP,
+rio de Janeiro, 2008.
+SILVA, Renata de Paiva. et al. Proposta de um Modelo RBC para
+Construção de um Sistema de Apoio ao Diagnóstico Médico. Anais do V
+Workshop de Informática Médica – V WIM 2005, Porto alegre, 2005.
+URNAU, E.; KIPPER, L. M.; FROZZA, R. Técnica de raciocínio baseado em
+caso para auxiliar processos de toma da de decisão estratégica. Anais do
+XXX Encontro Nacional de Engenharia de Produção – XXX ENEGEP, São
+Carlos, 2010.
+VICK T. E.; NAGANO, M. S. Processos dependentes de informação em
+empresas incubadas e graduadas de base tecnológica: um estudo
+comparativo de casos. Perspectivas em Ciência da Informação, v. 17, n. 3,
+p. 67-81, jul/set, 2012.
+WAH, T. K.; MUNIANDY, M. a/p. Courtroom Decision Support System
+Using Case Based Reasoning. Procedia - Social and Behavioral Sciences. v.
+129, p. 489 – 495, 2014.
+WANGENHEIM, C. G.; WANGENHEIM, A. V. Raciocínio Baseado em Casos.
+São Paulo: Manole Ltda., 2003.
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+134
+
+Desenvolvimento de um sistema de apoio à decisão com a
+técnica de raciocínio baseado em casos
+
+Eduardo Urnau, Liane Mahlmannn Kipper,
+Rejane Frozza
+
+Perspectivas em Ciência da Informação, v.19, n.4, p.118-135, out./dez. 2014
+
+135
+

@@ -1,0 +1,478 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/304689698
+
+MR-SoccerServer: Um Simulador de Futebol de Robôs usando RealidadeMista
+Conference Paper · January 2009
+
+CITATIONS
+
+READS
+
+2
+
+151
+
+5 authors, including:
+Jose Grimaldo Da Silva
+
+Adailton Cerqueira
+
+University of Grenoble
+
+Universidade Estadual da Bahia
+
+10 PUBLICATIONS 17 CITATIONS
+
+9 PUBLICATIONS 4 CITATIONS
+
+SEE PROFILE
+
+SEE PROFILE
+
+Juliana Fajardini Reichow
+
+Fagner Pimentel
+
+Universidade Estadual da Bahia
+
+Universidade Federal da Bahia
+
+2 PUBLICATIONS 2 CITATIONS
+
+11 PUBLICATIONS 5 CITATIONS
+
+SEE PROFILE
+
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Multi-Agent Systems Applied for Intelligent Supervision of Industrial System Operation States View project
+
+Coordenação de sistemas multiagentes para robôs bípedes autônomos View project
+
+All content following this page was uploaded by Fagner Pimentel on 02 July 2016.
+The user has requested enhancement of the downloaded file.
+
+MR-SoccerServer: Um Simulador de Futebol de Robôs
+usando Realidade Mista ∗
+José Grimaldo da S. Filho1 , Adailton de J. Cerqueira Jr. 1 , Juliana F. Reichow1 ,
+Fagner de A. M. Pimentel1 , Elen M. R. de J. Casaes2
+1
+
+Núcleo de Arquitetura de Computadores e Sistemas Operacionais (ACSO)
+Universidade do Estado da Bahia (UNEB) – Salvador – BA – Brasil
+
+{jose.jgrimaldo, adailton.junior, jufajardini, fagnerpimentel}@gmail.com
+2
+
+Centro Universitário da Bahia (FIB)
+Salvador – BA – Brasil
+elenmargareth@gmail.com
+
+Abstract. This article describes the scientific and technical work of the BahiaMR team in 2007 to 2009. The BahiaMR is the current latin american and
+brazillian champion in the mixed reality category, obtaining, respectively, the
+fourth and third places in the world competitions on Robocup in 2007 and 2008.
+During this period the team worked in the construction of a new server to the
+soccer game, and was used officialy for the first time during the Latin American
+RoboCup Open 2008. This article describes the concept of mixed reality and
+how it serves the purpose of the RoboCup initiative. We describe the implementation of the MR-SoccerServer and the MR-Simulator: two important tools for
+the mixed reality (MR) sub-league.
+Resumo. Este artigo descreve o trabalho técnico-cientı́fico da equipe BahiaMR
+no perı́odo 2007/2009. O BahiaMR é o atual campeão brasileiro e latino americano na modalidade Realidade Mista da RoboCup e obteve respectivamente o
+quarto e terceiro lugares nos torneios de futebol das competições Mundiais RoboCup em 2007 e 2008 nesta modalidade. Neste perı́odo a equipe trabalhou na
+construção do novo servidor do jogo de futebol que foi usado pela primeira vez
+numa competição oficial durante o Latin American RoboCup Open 2008. Este
+artigo explica o conceito de realidade mista e como ele serve aos propósitos da
+iniciativa RoboCup. Nós descrevemos a implementação do MR-SoccerServer e
+MR-Simulator: importantes ferramentas para sub-liga Realidade Mista (MR).
+
+1. Introdução
+A RoboCup (Robot World Cup Initiative) é uma iniciativa internacional de educação
+e pesquisa que objetiva impulsionar as pesquisas na área de Inteligência Artificial e
+robótica propondo um problema real onde diversas tecnologias podem ser integradas,
+dentro da RoboCup existem quatro categorias: Futebol de Robôs (RoboCup Soccer),
+Resgate de Vı́timas de Desastres (RoboCup Rescue), Desafios Domésticos (RoboCup
+@Home) e RoboCup Junior [Kitano et al. 1997a]. No RoboCup Soccer estão englobadas as competições de futebol robótico: Middle size league (Liga de robôs de médio
+∗
+
+Este projeto é parcialmente financiado pela UNEB, FAPESB e PICIN/UNEB
+
+porte), Small size league (Liga de robôs pequenos), Standard plataform league (Liga de
+Plataforma padrão) , Simulation league (Liga de Simulação) e Humanoid league (Liga de
+robôs humanóides).
+Na liga de simulação agentes autônomos jogam futebol em um campo virtual,
+através de um software simulador (servidor) comum aos dois times em competição, e é
+o único que sabe todas as informações do jogo de futebol, ambos os times recebem do
+simulador a informação visual restringida sobre o estado do jogo. A liga de simulação é
+subdividida em 2D, 3D e Realidade Mista (Mixed Reality).
+Em 2007, a liga de simulação de futebol de robôs (Soccer Simulation) da RoboCup
+iniciou a subliga Realidade Mista - originalmente denominada Visualização Fı́sica (Physical Visualization) - apresentando a mistura de robôs reais com ambientes simulados,
+segundo o conceito de Realidade Aumentada [Guerra et al. 2008b, Guerra et al. 2007b].
+Desde o primeiro ano, a equipe BahiaMR obteve qualificação para disputar a liga
+Mixed Reality(MR), participando na RoboCup 2007 em Atlanta e 2008 em Suzhou, na
+China. Nestas competições obteve o quarto e terceiro lugar, respectivamente, no torneio
+de futebol. Outras importantes conquistas sÃ£o o bicampeonato brasileiro (2007/2008)
+na Brazilian RoboCup Open e o tÃtulo latino americano na Latin American RoboCup
+Open (2008).
+Nesta liga, além do torneio de futebol de robôs, as equipes disputam competições
+de desenvolvimento em que as contribuições em termos de hardware ou software para a
+infra-estrutura da liga são avaliadas. Também são avaliadas propostas de novas aplicações
+utilizando o conceito de realidade mista. Em 2008, o BahiaMR obteve o quarto lugar na
+RoboCup.
+Este artigo relata duas contribuições para a plataforma de realidade mista da RoboCup: um servidor-simulador para o futebol (seção 4), e um simulador genérico (seção
+5). Na seção 2 será descrito o conceito de realidade mista e como ele serve aos propósitos
+da iniciativa RoboCup. A seção 3 descreve a arquitetura de software desenvolvida para a
+liga realidade mista da RoboCup.
+
+2. O conceito de Realidade Mista na Iniciativa RoboCup
+Uma das formas de fomentar e testar técnicas de Inteligência Artificial (IA) é através de
+desafios padrão. Em 1997, o Deep Blue, um computador, venceu o campeão mundial de
+xadrez, Garry Kasparov. Na mesma década, alguns pesquisadores visualizaram que o jogo
+de futebol fornecia um ótimo campo de desafios para a IA e a robótica inteligente, por
+apresentar um ambiente multiagentes competitivo e colaborativo, dinâmico, estocástico,
+de tempo real, parcialmente observável, sequencial e contı́nuo[Russel and Norvig 2002,
+Kitano et al. 1995].
+Com este intento, surge a iniciativa RoboCup, para apoiar o desenvolvimento da
+Robótica Inteligente, fomentando a Inteligência Artificial, a Robótica e as áreas relacionadas [Kitano et al. 1997a, Kitano et al. 1997b]. Na iniciativa RoboCup o futebol é usado
+como desafio padrão. As técnicas desenvolvidas neste contexto posteriormente podem
+servir de base para sistemas de gerenciamento de tráfego, de energia, para comunicação
+entre robôs autônomos etc. Para atingir estes objetivos, foi criada uma organização denominada RoboCup Federation que passou a organizar um evento anual - RoboCup - que
+
+reúne um simpósio cientı́fico e competições de robôs. A meta desta iniciativa é que, até
+2050, um time de futebol de robôs humanóide completamente autônomos seja capaz de
+vencer o time humano campeão mundial do momento[Kitano et al. 1997b].
+Neste artigo iremos abordar apenas a liga de simulação Realidade Mista1. Dentro
+do escopo da RoboCup, esta nova liga traz alguns pontos interessantes:
+• Funcionar, possivelmente, como uma ponte entre as ligas simuladas e
+fı́sicas[Gerndt et al. 2008].
+• Mudar o foco das competições do desenvolvimento intra-equipes de agentes jogadores para a colaboração com vistas a um sistema de propostas e desenvolvimentos auto-suficiente, cı́clico e cooperativo, que possa manter a liga em constante
+evolução[Guerra et al. 2008a, Guerra et al. 2007a].
+• Preencher a lacuna entre a RoboCupJunior e as ligas Sênior da RoboCup (nas quais tradicionalmente estão envolvidos pesquisadores com nı́vel
+de mestrado ou doutorado), abrindo espaço então para estudantes de
+graduação[Guerra et al. 2008a].
+Outro diferencial para a iniciativa RoboCup é justamente trazer o conceito de Realidade
+Mista, e suas potencialidades[Gerndt et al. 2008], para as competições.
+A Realidade Mista localiza-se dentro do chamado Continuum RealidadeVirtualidade (ver figura 1) que representa a mudança gradual do mundo real para o virtual.
+Ela se estende da realidade aumentada à virtualidade aumentada[Milgram et al. 1994,
+Milgram and Kishino 1994, Stapleton et al. 2002, Drascic and Milgram 1996], e denomina a superposição de real e virtual. Para mais informações acerca destes conceitos,
+veja [Azuma 1997, Biocca and Levy 1995, Vince 2004, Vince 1995].
+
+Figura 1.
+Representação simplificada de um continuum RealidadeVirtualidade[Milgram et al. 1994]
+
+A realidade aumentada pode ser definida como a inserção de objetos virtuais em
+um ambiente fı́sico. O contrário, a inserção de objetos reais em um ambiente virtual,
+é denominado virtualidade aumentada. Então, o torneio de futebol da MR, parte das
+competições desta sub-liga, é um exemplo virtualidade aumentada, pois apresenta minirobôs fı́sicos (os agentes jogadores) interagindo com elementos virtuais: a bola, as flags
+localizadoras, o campo. Um aspecto interessante do sistema provido pela MR é que outras aplicações podem se beneficiar das mesmas configurações deste, mas para trabalhar com a realidade aumentada. Um exemplo dessa outra abordagem é o Labirinto do
+Minotauro[SILVA et al. 2007], jogo concebido pelo grupo no qual os mini-robôs devem
+salvar Atenienses virtuais contra um Minotauro enquanto atravessam um labirinto que
+possui paredes fı́sicas (e não apenas simuladas). Assim, esta sub-liga oferece um bom
+1
+
+Para detalhes sobre outras ligas, consultar http://www.robocup.org
+
+ambiente de testes para que pesquisadores atuem largamente no espectro da simulação e
+interação entre o real e o virtual. Mais detalhes em uma análise sobre as possibilidades
+em simulação dentro da MR podem ser encontrados em [Gerndt et al. 2008].
+A configuração do ambiente provido pela MR, para possibilitar o discutido acima
+está descrita em [Guerra et al. 2007a]: um ou mais mini-robôs jogam sobre uma tela plana
+LCD, onde o ambiente em si, bem como outros objetivos virtuais, é mostrado. Os robôs
+podem interagir, também, com outros objetos fı́sicos. Seus movimentos são capturados
+por uma câmera de alta resolução e as imagens processadas são utilizadas para alimentar o simulador, que envia a visão individual para cada agente, depois de processar os
+efeitos das últimas ações enviadas para si no ambiente simulado. Tais decisões são feitas pelos agentes, hospedados em computadores, e enviadas aos mini-robôs através de
+comandos infra-vermelho. Mudanças ocorridas no mundo simulado podem ser acompanhadas através do display.
+A primeira versão do software para amparar este ambiente era monolı́tica e, portanto, pouco flexı́vel. Descreveremos, a partir de agora, os esforços desenvolvidos, no
+âmbito da sub-liga MR, conjuntamente com equipes de paı́ses como Alemanha e Canadá,
+no sentido de prover um sistema modularizado e mais robusto como plataforma para a
+liga.
+
+3. Arquitetura de Software da Liga Realidade Mista
+Com a criação da liga em 2007, foi desenvolvido um servidor com uma arquitetura monolı́tica, cuja manutenção e atualização eram extremamente penosas e complexas. Após
+a RoboCup 2007, as equipes participantes da liga trabalharam conjuntamente para definir uma arquitetura modular para o software de suporte à simulação em Realidade Mista.
+Esta arquitetura prevê um baixo acoplamento entre os módulos permitindo inclusive que
+os mesmos sejam desenvolvidos e aperfeiçoados de forma independente. A figura 2 ilustra
+esta nova arquitetura.
+
+Figura 2. Nova arquitetura modular da subliga Realidade Mista
+
+Nas subseções seguintes descreveremos sucintamente cada módulo da arquitetura
+
+e o protocolo de comunicação desenvolvido usando XML para a comunicação entre os
+módulos.
+3.1. Os módulos da arquitetura
+Conforme pode ser visto na figura 2, há um módulo independente responsável por enviar
+os comandos aos robôs, genericamente chamado de Robot Control (RC). Ele recebe os
+comandos endereçados aos robôs em mensagens com uma linguagem de alto nı́vel - o
+XML -, e os traduz em comandos básicos de baixo nı́vel, compreendidos pelos robôs.
+Alé disso, também trata dos detalhes técnicos do infravermelho, através do qual é feita a
+comunicação com os micro-robôs. O tratamento das imagens é feito pelo Vision Tracking
+(VT), que a partir das capturas de imagens sem tratamento feitas pela câmera, reconhece
+a localização dos objetos que estejam no campo, especialmente os robôs, e envia os dados
+sobre a captura interpretada para a aplicação, também em XML. O Graphics pode exibir
+as imagens da simulação; normalmente está conectado ao monitor sobre o qual estão os
+agentes. Estão também previstos no protocolo os clientes - Clients, que tanto podem ser
+baseados em um cliente básico provido por alguma equipe, atualmente desenvolvido pela
+UNEB, quanto serem desenvolvidos independentemente, desde que sigam o protocolo de
+comunicação e conexão da aplicação.
+É possı́vel haver um operador - Operator - conectado à aplicação, para receber
+possı́veis mensagens de erro ou autorizar alguma ação no decorrer dos jogos. No contexto
+do jogo de futebol, o operador poderia ser o juiz humano que, apoiado pelas informações
+e controles providos pelo servidor de futebol, dá a palavra final sobre os eventos mais importantes da partida - como um gol. Um simulador do ambiente está sendo desenvolvido
+pelo time BahiaMR, no qual são dispensadas as utilizações do Robot Control e Vision
+Tracking, como descrito na seção 5.
+3.2. O protocolo de comunicação XML
+Como a arquitetura, o protocolo XML foi um trabalho em conjunto, como citado na
+subseção anterior. A construção do protocolo tem como objetivo a comunicação entre os
+módulos, que foram desenvolvidos por equipes geograficamente distintas, funcionasse de
+um modo coeso, pois a definição de um protocolo de comunicação permite uma interface
+padronizada. A linguagem escolhida foi a Extensible Markup Language (XML), tornando
+o protocolo mais adaptável às possı́veis demandas que surjam, como novos softwares
+agregados à subliga.
+A atual versão, 1.3, contempla aspectos genéricos, como o formato das mensagens
+enviadas ao módulo gráfico oficial, mas apresenta também conteúdos mais voltados à
+aplicação de futebol. O simulador de futebol descrito na próxima seção é completamente
+compatı́vel com tais especificações.
+
+4. O Desenvolvimento do MR-SoccerServer
+Conforme citado na seção 2, o futebol é uma das possı́veis aplicações do conceito de realidade mista. Nós desenvolvemos um simulador/servidor, o MR-SoccerServer, responsável
+por todas as funcionalidades relacionadas ao futebol, controlando questões como modos
+de jogo (i.e., tiro de meta, meio de campo), gols e placar da partida relativo a cada time.
+
+O operador, módulo que auxilia o controle do fluxo da partida (começar, pausar, autorizar um gol, por exemplo), também depende diretamente do servidor para realização desta
+tarefa.
+Estas funcionalidades proporcionam muitas vantagens em relação ao servidor utilizado no primeiro ano da liga, em 2007 (RoboCup Atlanta), e também em 2008, na
+RoboCup China. Tornou-se mais fácil dar manutenção e extender o software, bem como
+adicionar novas funcionalidades, como detecção automática de gols, tiros de meta, controle automático do tempo, controle do jogo remotamente, e, como um trabalho ainda
+em desenvolvimento, podemos citar também detecção de faltas, escanteios e prorrogação.
+Atualmente, o servidor comporta partidas com 12 jogadores, 6 em cada time. Note-se
+que, no primeiro software, eram permitidos apenas dois mini-robôs por time.
+4.1. Desgin do Software
+As caracterı́sticas apresentadas por esta sub-liga mostraram-se um grande desafio em termos de design de software. É preciso levar em conta as limitaçes de tempo-real impostas
+pelos requisitos não funcionais da liga, como também necessidades de gerenciar o aumento natural de complexidade na medida em que novas regras e requisitos são criados.
+Analisar e desenvolver tais soluções baseados em Padrões de Projeto provou-se uma tarefa
+difı́cil.
+Um software simploriamente planejado pode levar a uma rápida decadência de
+seu código. As razões disto estão descritas em muitos estudos, e sintetizadas por
+[Erich Gamma 1995] e [Eick et al. 2001]. Cada módulo é independente em funcionalidade, mas eles estão ligados por um pocote genérico de classes e funções que guiam o
+desenvolvimento do código. Eles compartilham uma framework composta de padrões de
+reutilização, que pode orientar apropriadamente o processo de desenvolvimento; esta framework inclui funcionalidade para gerar logs, comunicação e identificação. Prover tais
+caracterı́sticas de um modo que vise a reutilização foi um dos aspectos principais durante
+o desenvolvimento do MR-SoccerServer.
+Esta abordagem provê, também, mais segurança e robustez ao software, permitindo a detecção de erros de forma mais fácil e segura. Tradicionalmente, os grupos
+que produzem software para competições cientı́ficas de robótica negligenciam as boas
+práticas de engenharia de software e o uso de padrões de projeto, tornando os ambientes
+instáveis e com ciclo de vida reduzido. Portanto, o método adotado no desenvolvimento
+do MR-SoccerServer representa uma significativa inovação dentro desta comunidade.
+4.2. Fluxo de Informação
+Uma definição lógica do fluxo de informação no Soccer Server pode ser dividida em fases. É interessante, de todo modo, notar como um ambiente de realidade mista difere de
+uma simulação pura, como citado em [Noda and Stone 2003]. A cada ciclo do servidor
+(que dura 66 milissegundos), a informação é recebida e processada conforme mostrado
+na figura 3. É importante observar que é recebida uma mensagem de imagem por ciclo2 .
+Antes de aplicar as ações dos clientes ao jogo, a nova informação recebida da câmera (Vision Tracking) é aplicada: a despeito do fato de que esta informação não estava disponı́vel
+2
+
+66 milissegundos é o tempo mı́nimo necessário para o Vision Tracking receber a processar a imagem
+da câmera.
+
+Figura 3. O fluxo de informação
+
+para o cliente, não faz sentido que um chute seja baseado na posição não atualizada do
+mini-robô, já que para os expectadores humanos poderia parecer que o robô está chutando
+em ângulos ou posições inesperados. Os clientes devem levar em consideração o pequeno
+intervalo entre a mensagem que é enviada e sua ação afetar o ambiente, o que aumenta
+o realismo, criando todo um conjunto de novas estratégias, como diminuir a velocidade
+para aumentar a precisão do chute.
+Após o recebimento da informação das posições dos mini-robôs do Vision Tracking, o servidor atualiza o estado do mundo, simula a partida e envia aos clientes dados
+como posição dos robôs e da bola, da perpectiva do agente. Os clientes têm no máximo
+66 milissegundos para processá-los, decidir a melhor ação a tomar (atualmente, chutar ou
+mover-se), e responder ao servidor. Se nenhuma ação for tomada, ou se chegar após o
+final do ciclo, o cliente perde a chance de fazer algo neste ciclo, e terá de esperar pelo
+próximo. Na versão atual do servidor, os seguintes comandos são permitidos aos clientes:
+• wheel velocities (velocidade das rodas): o cliente envia informação sobre a velocidade de cada roda
+• kick (chutar): ação de chutar a bola com ângulo e força determinados
+Após a ação ser recebida e especificada, o comando de chute é processado
+dentro do motor de simulação de fı́sica utilizado, a ODE - Open Dynamics Engine
+[Smith et al. 2005] -, e a força resultante é aplicada á bola. As velocidades do comando
+para as rodas são repassadas para o módulo Robot Control, para tradução e transmissão
+sobre infra-vermelho (veja a seção 3 para mais detalhes).
+O juiz resolve uma preocupação transversal em reforçar as regras de futebol no
+jogo, e pode atuar sobre diversos locais pré-definidos. Os pontos principais de ação ocorrem após o final do ciclo, principalmente depois do passo de simulação. Isto é útil para
+muitas ações, como cancelar ações de agentes baseado no estado do jogo, ou sinalizar a
+ocorrência de um gol (e por conseguinte alterar o estado da partida). O juiz possui uma
+funcionalidade distinta e bem definida, e sempre checa o estado do jogo antes de realizar qualquer ação. Tais funcionalidades também estão definidas apenas para momentos
+escolhidos, e não para todas as possı́veis fases de jogo.
+
+O MR-SoccerServer já foi utilizado oficialmente durante o Latin American RoboCup Open em outubro de 2008 em Salvador e será utilizado durante o German RoboCup
+Open na Alemanha (abril de 2009) e o Japan RoboCup Open no Japão (maio de 2009).
+Com os relatórios de erros e demandas por melhorias que vêm sendo continuamente gerados, o software irá chegar até a RoboCup 2009 em Graz (Áustria) no mês de julho pronto
+para ser usado como simulador oficial da liga.
+
+5. MR-Simulator: simulando o ambiente completo
+Apesar de a MR estar enquadrada dentro da liga de simulação da RoboCup, ela é, como
+dito na seção 2, um misto de realidade e virtualidade. Deste modo, alguns elementos
+deste ambiente não são simulados, como robôs, câmera, transmissores infra-vermelho.
+Entretanto, nem todos os times em potencial já têm toda esta infra-estrutura montada em
+seus laboratórios. Isto torna difı́cil testar os agentes e trazer novos desenvolvimentos para
+a liga.
+Por outro lado, uma das principais propostas da liga é prover uma ferramenta educacional para tornar fácil ensinar a programação de robôs. Quando usando esta ferramenta
+em larga escala, em escolas com pouca infra-estrutura, é difı́cil dispor de muitas câmeras,
+transmissores infra-vermelhos, grandes telas e robôs. Por estas razões, é altamente desejável obter uma ferramenta que simule todos os elementos fı́sicos deste ambiente. Assim, grupos de estudantes e cientistas poderiam compartilhar a mesma infra-estrutura
+fı́sica, que serviria para testes e competições, e desenvolver as suas pesquisas utilizando a
+simulação.
+O MR-simulator, um trabalho em fase de desenvolvimento, está apto a simular o
+comportamento de robôs reais, substituindo os módulos RC e VT descritos na seção 3.
+Assim, é possı́vel rodar jogos sem usar câmeras, robôs e transmissores infravermelhos.
+Este simulador é compatı́vel com a arquitetura modular apresentada, podendo ser usado
+para qualquer aplicação, e não só para jogos de futebol.
+O principal problema do MR-simulator é simular a trajetória correta dos robôs.
+Ele recebe como entrada as posições atuais e comandos enviados para o robô e a saı́da
+deve ser a posição futura do robô. Iremos descrever agora como simulamos estas trajetórias.
+Considere a sucessão de tempos ti = t0 , t1 , ..., tn em que as velocidades v1,i
+(esquerda) e v2,i (direita) das duas rodas são atualizadas. A posição das rodas em cada
+tempo tk é dada pelo par de coordenadas (x1,k , y1,k ) (esquerda) e (x2,k , y2,k ) (direita).
+Durante cada intervalo de tempo Ii = [ti , ti+1 ) as velocidades de ambas rodas são
+mantidas constantes e iguais à velocidade configurada como t = ti . Seja ∆t o passo da
+atualização de cada roda. Então, durante o intervalo Ii um total de mi = (ti+1 − ti )/∆t
+movimentos do robô deve ser completado. Definindo a0 como a distância entre as rodas,
+(x1,1 , y1,1 ) e (x2,1 , y2,1 ) a posição inicial da roda esquerda e direita, respectivamente,
+f = 0.5 um fator de correção simétrica. É definido também k = 1 e executadas as
+seguintes operações:
+Para cada intervalo de tempo i = 1, 2, ..., n faça:
+1. ey = y2,k − y1,k
+
+2. ex = x2,k − x1,k
+3. ct = ey /a0
+4. st = −ex /a0
+5. mi = (ti+1 − ti )/∆t
+Para cada movimento do robô j = 1, 2, ..., mi faça:
+1.
+2.
+3.
+4.
+
+x1,k+1 = x1,k + v1,i ct ∆t
+x2,k+1 = x2,k + v2,i ct ∆t
+y1,k+1 = y1,k + v1,i st ∆t
+y2,k+1 = y2,k + v2,i st ∆t
+Corrija a posição da roda
+(a)
+(b)
+(c)
+(d)
+(e)
+
+ey = y2,k+1 − y1,k+1
+sy = sign(ey )
+ex = x2,k+1 − x1,k+1
+sx = q
+sign(ex )
+ea = e2y + e2x − a0
+Para correção da velocidade dependente defina
+i. f2 = v2,i /(v2,i + v1,i )
+ii. f1 = 1 − f2
+
+x2,k+1 = x2,k+1 − sx ea f2
+x1,k+1 = x1,k+1 + sx ea f1
+y2,k+1 = y2,k+1 − sy ea f2
+y1,k+1 = y1,k+1 + sy ea f1
+coloque a roda esquerda nas coordenadas (x1,k+1 , y1,k+1) e a roda direita em
+(x2,k+1 , y2,k+1).
+9. k=k+1
+
+5.
+6.
+7.
+8.
+
+Como trabalho em andamento, estamos investigando o tratamento de colisão durante tais trajetórias. As seguintes colisões devem ser tratadas: robô-bola, robô-robô,
+robô-parede e bola-parede.
+A subliga MR está em constante evolução e uma das metas de curto-prazo é rodar
+jogos 5x5. Como o MR-Simulator é completamente compatı́vel com MR-SoccerServer
+(veja seção 4), uma de suas caracterı́sticas é estar apto a alcançar esta expectativa de
+simular com qualquer número de robôs. Outra função presente no simulador é o controle
+manual dos robôs virtuais. Neste momento, o sistema apenas aceita comandos para a
+direita, esquerda, cima e baixo, possibilitando estudos de movimento e tornando fácil
+criar situações de teste. Usando esta caracterı́stica, é possı́vel reposicionar o robô no
+campo.
+
+6. Conclusões e Trabalhos Futuros
+Este artigo apresentou o MR-SoccerServer, um software funcional concebido para apoiar
+as competições da sub-liga de Realidade Mista da RoboCup. Conforme mostramos, esta
+aplicação está apta a prover um jogo de futebol mais completo (e portanto mais realista),
+além trazer um desenvolvimento mais planejado e robusto do que das versões utilizadas
+
+nos eventos de 2007 e 2008. Através de técnicas de engenharia de software, desenvolvemos uma aplicação mais estável, que pode trazer mais avanços para a liga.
+Outro trabalho em andamento, em fase de validação, aqui apresentado é o MRSimulator, uma ferramenta complementar que habilita pesquisadores e estudantes a desenvolver trabalhos na liga, não necessariamente no âmbito do futebol, e se beneficiar
+dos conceitos da realidade mista mesmo sem acesso à infra-estrutura requerida (câmera,
+tela, mini-robôs). Mostramos, aqui, o modelo matemático para calcular mais fielmente a
+trajetória dos robôs simulados.
+Como trabalhos futuros, trabalheremos para tornar o modo de comunicação mais
+robusto, para que seja possı́vel trabalhar com 11 jogadores por time. Outra meta é encapsular o cliente nos robôs, algo factı́vel, já que o mini-robô possui em seu hardware um
+processador ARM AT91SAM7X256, dedicado atualmente a decodificar os comandos recebidos do infra-vermelho. Com isso, poderemos ter agentes completamente autônomos
+na liga. Para atingir este objetivo, já começamos a trabalhar com escalonamento de temporeal adaptativo, para ser parte do sistema embarcado do mini-robô[Simoes et al. 2008]. O
+citado Labirinto do Minotauro será desenvolvido e apresentado para a comunidade da liga
+como uma possı́vel aplicação educacional que se utiliza dos conceitos de realidade mista.
+
+Referências
+Azuma, R. (1997). A survey of augmented reality.
+MASSACHUSETTS-, 6:355–385.
+
+PRESENCE-CAMBRIDGE
+
+Biocca, F. and Levy, M. R. (1995). communication in the age of virtual reality. Lawrence
+Erlbaum Associates.
+Drascic, D. and Milgram, P. (1996). Perceptual issues in augmented reality. In
+PROCEEDINGS-SPIE THE INTERNATIONAL SOCIETY FOR OPTICAL ENGINEERING, pages 123–134. SPIE INTERNATIONAL SOCIETY FOR OPTICAL.
+Eick, S., Graves, T., Karr, A., Marron, J., and Mockus, A. (2001). Does code decay?
+assessing the evidence from change management data. IEEE TRANSACTIONS ON
+SOFTWARE ENGINEERING, pages 1–12.
+Erich Gamma, Richard Helm, R. J. J. M. V. (1995). Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley Professional.
+Gerndt, R., Schridde, C., and da Silva Guerra, R. (2008). On the aspects of simulation
+in the robocup mixed reality soccer systems. In Workshop at International Conference
+on Simulation, Modeling and Programming for Autonomous Robots.
+Guerra, R., Boedecker, J., and Asada, M. (2007a). Physical visualization sub-league:
+A new platform for research and edutainment. In 24th SIG-CHALLENGE Workshop,
+pages 15–20.
+Guerra, R., Boedecker, J., Mayer, N., Yanagimachi, S., Hirosawa, Y., Yoshikawa, K.,
+Namekawa, M., and Asada, M. (2008a). Introducing physical visualization sub-league.
+In Lecture Notes in Computer Science.
+Guerra, R., Boedecker, J., Mayer, N., Yanagimachi, S., Hirosawa, Y., Yoshikawa, K.,
+Namekawa, M., and Asada, M. (2008b). RoboCup 2007: Robot Soccer World Cup
+
+XI, volume 5001 of Lecture Notes on Computer Science, chapter Introducing Physical
+Visualization Sub-League, pages 496–503. Springer.
+Guerra, R., Boedecker, J., Yanagimachi, S., and Asada, M. (2007b). Introducing a new
+minirobotics platform for research and edutainment. In Symposium on Autonomous
+Minirobots for Research and Edutainment (AMIRE’07), Buenos Aires.
+Kitano, H., Asada, M., Kuniyoshi, Y., Noda, I., and Osawa, E. (1997a). Robocup: The
+robot world cup initiative. In AGENTS ’97: Proceedings of the first international
+conference on Autonomous agents, pages 340–347, New York, NY, USA. ACM.
+Kitano, H., Asada, M., Kuniyoshi, Y., Noda, I., Osawa, E., and Matsubara, H. (1997b).
+Robocup: A challenge problem for ai. AI magazine, 1(18):13.
+Kitano, H., Tambe, M., Stone, P., Veloso, M., Noda, I., OSAWA, E., and ASADA, M.
+(1995). The robocup synthetic agents challenge. In Proceedings of the International
+Joint Conference on Artificial Intelligence (IJCAI).
+Milgram, P. and Kishino, F. (1994). A taxonomy of mixed reality visual displays. IEICE
+TRANSACTIONS ON INFORMATION AND SYSTEMS E SERIES D, 77:1321–1321.
+Milgram, P., Takemura, H., Utsumi, A., and Kishino, F. (1994). Augmented reality: A
+class of displays on the reality-virtuality continuum. In Telemanipulator and Telepresence Technologies, volume 2351. SPIE.
+Noda, I. and Stone, P. (2003). The RoboCup Soccer Server and CMUnited Clients: Implemented Infrastructure for MAS Research. Autonomous Agents and Multi-Agent
+Systems, 7(1):101–120.
+Russel, S. and Norvig, P. (2002). Artificial Intelligence. Prentice-Hall, 2 edition.
+SILVA, H., FERREIRA, F., SIMOES, M. A. C., MEYER, J., ARAGAO, H., and LIMA,
+R. (2007). Bahia-pv: The robotics soccer team in augmented reality environment. In
+Brazilian Symposium on Intelligent Automation, Florianopolis, Brazil. Brazilian Society on Automation (SBA).
+Simoes, M. A. C., Lima, G., and Camponogara, E. (2008). A ga-based approach to dynamic reconfiguration of real-time systems. In Proceedings of Workshop on Adaptive and
+Reconfigurable Embedded Systems (APRES ’08), St. Louis, MO, USA. IEEE Computer Society.
+Smith, R. et al. (2005). Open Dynamics Engine. Computer Software. Retrieved December
+28, 2005, from http://www. ode. org.
+Stapleton, C., Hughes, C., and Moshell, J. (2002). Mixed reality and the interactive
+imagination. In Proceedings of the First Swedish-American Workshop on Modeling
+and Simulation, pages 30–31.
+Vince, J. A. (1995). Virtual Reality Systems. Addison-Wesley.
+Vince, J. A. (2004). Introduction to Virtual Reality. Springer-Verlag, 2nd edition edition.
+
+View publication stats
+
+

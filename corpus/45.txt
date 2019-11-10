@@ -1,0 +1,1946 @@
+Mortalidade por câncer do colo do útero no estado do Rio
+Grande do Norte, no período de 1996 a 2010:
+tendência temporal e projeções até 2030*
+
+Artigo
+original
+
+doi: 10.5123/S1679-49742016000200010
+
+Cervical cancer mortality in the state of Rio Grande do Norte, Brazil, 1996-2010:
+time trends and projections up to 2030
+Aretha Maria Virgínio de Sousa1
+Cinthia Carla Alves Teixeira1
+Sidney da Silva Medeiros1
+Samira Jucinara Claudino Nunes1
+Pétala Tuani Cândido de Oliveira Salvador1
+Rosires Magali Bezerra de Barros1
+Fernanda Fabíola Santos de Lima1
+Gésica Gabriela Costa do Nascimento1
+Juliano dos Santos2
+Dyego Leandro Bezerra de Souza3
+Aline Patrícia dos Santos Bezerra4
+Karina Cardoso Meira1
+Universidade Federal do Rio Grande do Norte, Escola de Saúde, Natal-RN, Brasil
+Instituto Nacional do Câncer, Hospital do Câncer III, Rio de Janeiro-RJ, Brasil
+3
+Universidade Federal do Rio Grande do Norte, Departamento de Saúde Coletiva, Natal-RN, Brasil
+4
+Secretaria Municipal de Saúde de Natal, Departamento de Vigilância Epidemiológica, Natal-RN, Brasil
+1
+2
+
+Resumo
+
+Objetivo: analisar a tendência da mortalidade por câncer do colo do útero no estado do Rio Grande do Norte e em suas
+microrregiões de saúde, no período de 1996 a 2010, e realizar projeções para os quinquênios, de 2011 a 2030. Métodos:
+estudo ecológico de series temporais; empregou-se regressão binomial negativa para análise das tendências e projeções.
+Resultados: foram observadas taxas acima de 5,0 óbitos por 100 mil mulheres em todas as microrregiões, com tendência
+estacionária para o estado e ascendente nas microrregiões com piores condições socioeconômicas; as projeções indicaram
+redução nas taxas de mortalidade no estado, de 5,95/100 mil mulheres (2006-2010) para 3,67 (2026-2030), embora seja
+previsto aumento de 22% no número absoluto de óbitos. Conclusão: apesar da previsão de redução nas taxas de mortalidade,
+estas ainda apresentam-se elevadas, sinalizando a necessidade de revisão e fortalecimento do programa de controle do câncer
+do colo do útero no estado.
+Palavras-chave: Mortalidade; Neoplasias do Colo do Útero; Distribuição Temporal; Distribuição Binomial Negativa.
+
+Abstract
+
+Objective: to analyze cervical cancer mortality trends in the state of Rio Grande do Norte and its health microregions from 1996 to 2010, as well as to make projections for five-year periods from 2011 to 2030. Methods: this was
+an ecological time series study; negative binomial regression was used to analyze trends and projections. Results:
+rates above 5.0 deaths per 100,000 women were observed in all the micro-regions, with a stationary trend in the state
+as a whole and an upward trend in the micro-regions with the worst socioeconomic conditions; projections indicated
+reduction in mortality rates in the state, from 5.95/100,000 women (2006-2010) to 3.67 (2026-2030), although a 22%
+increase in the absolute number of deaths is expected. Conclusion: although a reduction in mortality rates is projected,
+they continue to be high, indicating the need for review and strengthening of the state’s cervical cancer control program.
+Key words: Mortality; Uterine Cervical Neoplasms; Temporal Distribution; Negative Binomial Distribution.
+* Trabalho de Conclusão de Curso de Aretha Maria Virgínio de Souza, desenvolvido e apresentado junto ao Curso Superior de
+Tecnologia em Gestão Hospitalar, da Escola de Saúde da Universidade Federal do Rio Grande do Norte (UFRN), para obtenção do
+grau de Tecnólogo, em 2015.
+Endereço para correspondência:
+Karina Cardoso Meira – Av. Senador Salgado Filho, s/n. Universidade Federal do Rio Grande do Norte, Escola de Saúde, Lagoa
+Nova, Natal-RN, Brasil. CEP: 59078-970
+E-mail: cardosomeira@yahoo.com.br
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+311
+
+Mortalidade por câncer do colo do útero no Rio Grande do Norte
+
+Introdução
+O câncer do colo do útero é um importante problema de Saúde Pública, de alta transcendência e
+magnitude, tendo como causa necessária para seu
+desenvolvimento a infecção pelo papilomavírus humano – humanpapilloma virus (HPV). Destaca-se
+por ser uma morbidade considerada prevenível e
+apresentar história natural conhecida, com etapas
+bem definidas, possibilitando a prevenção secundária
+pelo exame de Papanicolaou. Desde o início dos anos
+2000, foram disponibilizadas vacinas profiláticas
+contra o HPV dos subtipos 6,11,16 e 18.1-3
+Apesar das medidas de prevenção primária e secundária, o câncer do colo do útero continua a apresentar
+altas taxas de incidência e mortalidade, especialmente
+nos países com baixa e média renda. Em 2012, no
+mundo, foram estimados 528 mil casos incidentes de
+câncer do colo do útero e 266 mil óbitos, dos quais
+87,0% ocorreram nestes países.4-6
+
+O câncer do colo do útero é um
+importante problema de Saúde
+Pública, de alta transcendência
+e magnitude, tendo como causa
+necessária para seu desenvolvimento a
+infecção pelo papilomavírus humano
+– humanpapilloma virus (HPV).
+No Brasil, foram estimados, para o ano de 2014,
+15.590 casos novos do câncer do colo do útero e
+um risco de 15,33 casos por 100 mil mulheres. No
+país, e no mundo, as maiores taxas de incidência e
+mortalidade pela doença são observadas nas regiões
+de piores condições socioeconômicas.6-7 O câncer do
+colo do útero representa o câncer mais incidente em
+mulheres na região Norte – excluído o câncer de pele
+não melanoma –, e o segundo nas regiões Nordeste
+e Centro-Oeste.7 As taxas de mortalidade nacionais
+permaneceram superiores às encontradas nos países
+de renda alta, onde, em média, são inferiores a 5,0
+óbitos/100 mil mulheres.4,8
+Tal realidade persiste, não obstante a existência do
+Programa Nacional de Controle do Câncer do Colo do Útero
+(PNCCC), implantado em 2001, dando prosseguimento
+ao Programa Viva Mulher. Acredita-se que esse quadro
+
+312
+
+possa ser explicado pela característica do programa de
+rastreamento brasileiro, realizado de maneira oportunística, permitindo que algumas mulheres façam o exame
+mais do que o necessário e outras nunca o realizem.9-10
+Logo, faz-se necessária a avaliação da evolução das
+taxas de mortalidade por câncer do colo do útero, bem
+como a realização de projeções para avaliar o padrão
+de sua ocorrência, identificando as regiões com maior
+risco de morte pela doença.
+O presente estudo teve por objetivo analisar a
+tendência da mortalidade por câncer do colo do útero
+no estado brasileiro do Rio Grande do Norte e em
+suas microrregiões de saúde, no período de 1996 a
+2010, e realizar projeções dessa tendência para os
+quinquênios no período de 2011 a 2030.
+Métodos
+Trata-se de estudo ecológico sobre a tendência da
+mortalidade por câncer do colo do útero no estado do
+Rio Grande do Norte e em suas microrregiões de saúde,
+no período de 1996 a 2010. Optou-se por esse período
+de análise porque um dos objetivos desta pesquisa foi
+analisar o padrão da mortalidade por essa neoplasia
+no triênio que antecedeu a implantação do PNCCC e
+nos triênios após sua implantação.
+O Rio Grande do Norte caracteriza-se como a 16ª
+Unidade da Federação brasileira mais populosa e a
+décima mais povoada: 3.168.027 habitantes, distribuídos em 167 municípios que ocupam uma área de
+52.810,699 km², resultando em uma densidade de 60
+hab./km². Esse contingente populacional corresponde
+a 1,7% da população brasileira e 6% da população da
+região Nordeste, de acordo com o Censo Demográfico
+2010, realizado pela Fundação Instituto Brasileiro de
+Geografia e Estatística (IBGE).
+Em 2010, o estado encontrava-se dividido em oito
+Regiões de Saúde (RS):
+1ª RS – São José de Mipibu –, com 351.502 habitantes,
+distribuídos pelos 27 municípios que a compõem;
+2ª RS – Mossoró –, que reunia 15 municípios, a segunda
+região de saúde mais populosa, com 448.904
+habitantes, concentrando 14,17% do total de
+habitantes do estado;
+3ª RS – João Câmara –, com 25 municípios e 312.919
+habitantes;
+4ª RS – Caicó –, também formada por 25 municípios,
+com 295.726 habitantes;
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+Aretha Maria Virgínio de Sousa e colaboradores
+
+5ª RS – Santa Cruz –, com 21 municípios e 185.719
+habitantes;
+6ª RS – Pau dos Ferros –, que aglutinava 36 municípios
+e 230.042 habitantes;
+7ª RS – Metropolitana –, constituída por cinco municípios, reunindo o maior contingente populacional,
+1.187.899 habitantes, ou 37,5% da população
+residente no estado, concentrada na capital,
+Natal, e também distribuída entre as localidades de Extremoz, Macaíba, Parnamirim e São
+Gonçalo do Amarante; e
+8ª RS – Vale do Açu –, composta por 13 municípios,
+com 155.316 habitantes.
+Em 2010, a microrregião Metropolitana apresentava
+a maior renda média per capita (R$ 821,23), seguida
+por Mossoró (R$ 484,73), Caicó (R$ 416,67), Açu (R$
+364,06), Pau dos Ferros (R$ 302,87), João Câmara
+(R$ 295,03), São José do Mipibu (R$ 293,54) e Santa
+Cruz (R$ 265,74).
+Os registros de óbito por (i) câncer do colo do
+útero, (ii) câncer do corpo do útero e (iii) câncer
+do útero de porção não especificada foram obtidos
+no Sistema de Informações sobre Mortalidade (SIM),
+implantado pelo Departamento de Informática do
+Sistema Único de Saúde (Datasus), e referem-se ao
+período de 1996 a 2010 e às seguintes faixas etárias:
+20-29, 30-39, 40-49, 50-59, 60-69, 70-79 e 80 e mais
+anos. Ressalta-se que as informações demográficas
+também foram obtidas no sítio eletrônico do Datasus;
+e os dados demográficos para os anos intercensitários,
+estimados pelo IBGE.
+Com vistas a corrigir a grande proporção de óbitos
+classificados como câncer do útero de porção não
+especificada (C55) – o que se configura como má
+qualidade da informação –, realizou-se a redistribuição
+proporcional desses óbitos, por ano e faixa etária, para
+os registros de câncer do colo do útero (C53) e câncer
+do corpo do útero (C54). Esse método é realizado
+em quatro etapas: na primeira, os óbitos classificados
+como câncer do colo do útero e câncer do corpo do
+útero são somados; na segunda etapa, verificam-se as
+proporções de óbitos por câncer do colo do útero e
+corpo do útero relativas ao total de óbitos (câncer do
+colo do útero + câncer do corpo do útero); na terceira
+etapa, multiplicam-se essas proporções pelo número de
+óbitos classificados como câncer do útero de porção
+não especificada, por ano e faixa etária; e na quarta
+etapa, soma-se o valor obtido na etapa anterior com
+
+o número de óbitos originais de câncer do colo do
+útero e câncer do corpo do útero, obtendo-se, assim,
+o número de óbitos corrigidos.5
+Após essa redistribuição, foram calculadas as seguintes taxas de mortalidade por 100 mil mulheres,
+para câncer do colo do útero: taxas médias segundo
+faixa etária; e taxas trienais, para o período de 1996
+a 2010. Ademais, padronizaram-se as taxas pelo
+método direto, após a redistribuição, utilizando-se
+como padrão a população mundial proposta por Segi
+e modificada por Doll.11
+Mapas foram construídos sobre as taxas trienais, com
+o intuito de avaliar a progressão da mortalidade por
+câncer do colo do útero nas microrregiões de saúde
+do estado, antes e após a implantação do PNCCC. Para
+tanto, utilizou-se o software Terraview 4.2.2, gerando-se
+mapas de mortalidade em quintis.
+Em seguida, avaliou-se a tendência de mortalidade
+no período de 1996 a 2010, a partir da regressão binomial negativa. Destaca-se que mesmo em se tratando
+de dados provenientes de contagem, a regressão de
+Poisson não mostrou ser o método mais adequado,
+pois os dados apresentavam superdispersão (variância
+maior que a média).12
+Nesta análise, o número de óbitos esperados para
+cada ano foi a variável dependente; e o ano calendário
+centralizado, a variável independente.
+Como a diferença de tamanho populacional entre
+o estado e as microrregiões de saúde é bastante
+acentuada, optou-se por trabalhar com um modelo
+de regressão ponderado, atribuindo pesos a cada
+unidade de observação, proporcionais a seu tamanho
+populacional. O procedimento consiste em adicionar à
+equação de regressão um parâmetro conhecido como
+offset que, neste trabalho, consistiu no logaritmo da
+população da microrregião.13,14 Todas as análises foram
+realizadas pelo programa estatístico R versão 3.1.0.
+A tendência temporal foi classificada como estacionária, decrescente ou ascendente, de acordo com
+o valor do risco relativo (RR, obtido pela exponencial
+do coeficiente da regressão) e seu respectivo intervalo
+de confiança de 95% (IC95%). Foram consideradas
+séries temporais com tendência estacionária aquelas
+em que o limite inferior do intervalo de confiança foi
+menor que 1 e o superior maior que 1. Foram consideradas séries com tendência descendente aquelas
+que apresentaram RR, limites inferior e superior do
+IC95% menores que um. E as séries ascendentes, as que
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+313
+
+Mortalidade por câncer do colo do útero no Rio Grande do Norte
+
+mostraram valores de RR, limites inferior e superior
+maiores do que 1.13,14
+As projeções foram feitas para cada período, utilizando-se o modelo idade-período-coorte do programa Nordpred, inscrito no programa estatístico R. As
+projeções foram realizadas para o conjunto do estado
+do Rio Grande do Norte. Os dados foram compilados
+em blocos de cinco anos (quinquênios), e o grupo de
+idade limite considerado para a análise foi o primeiro
+com mais de dez casos para o período combinado. Tal
+limitação do método impossibilitou estimar projeções
+por microrregiões.
+Como resultado, apresentaram-se as taxas observadas e esperadas para cada período-quinquênio.
+Foram calculadas as taxas de mortalidade ajustadas
+com base na população mundial-padrão para comparações globais, expressas por 100 mil mulheres
+por ano (ASW∕100 mil hab.).15 Foram calculadas as
+mudanças anuais no número de casos do último período projetado (2026-2030) comparado ao número
+de casos do último período observado (2006-2010),
+considerando-se a proporção da mudança ocorrida,
+seja em função dos riscos para a doença, seja em
+função das características demográficas (tamanho
+ou estrutura da população). Esses dois componentes
+podem ser diferentes de zero, apresentando uma direção positiva ou negativa. O cálculo pode ser expresso
+da seguinte forma:15
+Δ tot = Δ risk + Δ pop =
+(Nfff – Noff) + (Noff – Nooo)
+onde Δ tot é a mudança total, Δ risk é a mudança
+em função do risco, Δ pop é a mudança em função da
+população, Nfff é o número de casos projetados, Noff
+é o número de casos esperados quando as taxas de
+mortalidade aumentam durante o período observado
+e Nooo é o número de casos observados.
+Por se trabalhar com dados secundários, disponíveis
+em bancos de dados públicos, o estudo foi dispensando
+de apreciação por Comitê de Ética em Pesquisa.
+Resultados
+No período de 1996 a 2010, foram registrados no
+estado do Rio Grande do Norte (RN) 1.462 óbitos por
+câncer do útero, sendo 905 (61,9%) óbitos por câncer
+do colo do útero (CCL), 459 (31,3%) óbitos por câncer
+
+314
+
+do útero de porção não especificada e 99 (6,7%) óbitos
+por câncer do corpo do útero (CCU).
+Nesse cenário, os maiores números de óbitos por
+câncer do útero foram observados na microrregião
+Metropolitana (n=679; 46,2%), seguida das microrregionais de Mossoró (n=210; 14,3%), João Câmara
+(n=146; 9,9%), Caicó (n=129; 8,7%), Pau dos Ferros
+(n=94; 6,4%), São José de Mipibu (n=88; 5,9%),
+Santa Cruz (n=62; 4,2%) e Açu (n=55; 3,7%). Em
+todas as microrregiões, verificou-se grande proporção de óbitos classificados como câncer do útero de
+porção não especificada, sendo, inclusive, maiores
+as taxas por esse registro de óbito do que por câncer
+do corpo do útero.
+Após a redistribuição proporcional desses óbitos
+entre os óbitos classificados como câncer do colo
+do útero e câncer do corpo do útero, verificou-se
+um aumento de 46,0% nas taxas médias de mortalidade por câncer do colo do útero e de 57,3% por
+câncer do corpo do útero. Se inicialmente, a taxa
+média do estado do Rio Grande do Norte era de
+7,36 óbitos/100 mil mulheres para câncer do colo
+do útero, 0,75 óbitos/100 mil mulheres para câncer
+do corpo do útero e 3,80 óbitos/100 mil mulheres
+para câncer do útero de porção não especificada,
+após a redistribuição, as taxas de mortalidade média
+(por 100 mil mulheres) verificadas para câncer do
+colo do útero e câncer do corpo do útero foram,
+respectivamente, de 10,78 óbitos e 1,18 óbitos.
+Modificação semelhante também foi evidenciada
+nas taxas de mortalidade por essas causas entre as
+microrregiões de saúde (Tabela 1).
+As maiores taxas médias de mortalidade por essa
+neoplasia foram observadas nas microrregionais de
+saúde Metropolitana, Mossoró e João Câmara, no
+período estudado. Em contrapartida, as menores taxas
+foram evidenciadas pelas microrregionais de Santa Cruz
+e São José do Mipibu (Tabela 1).
+Embora as microrregiões de saúde de Mossoró e
+Metropolitana tenham apresentado as maiores taxas
+de mortalidade, quando comparadas às demais microrregiões, ambas sinalizaram perfil decrescente em
+sua evolução ao longo do período. Já a microrregião
+de São José do Mipibu apresentou as menores taxas de
+mortalidade em todo o período analisado; no entanto,
+essa mesma microrregião e a microrregião de Caicó
+mostram uma evolução dessas taxas indicativa de tendência ascendente (Figura 1).
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+Aretha Maria Virgínio de Sousa e colaboradores
+
+Tabela 1 – Taxa de mortalidade (por 100 mil mulheres)a por câncer do colo do útero (CCL) e câncer do corpo do útero
+(CCU) segundo faixa etária, após a redistribuição dos óbitos registrados como câncer do útero de porção
+não especificada no estado do Rio Grande do Norte, 1996 a 2010
+Faixa etária (em anos)
+Causa básica 20-29 30-39
+Estado do Rio Grande do Norte
+
+Região Metropolitana
+
+Região de Mossoró
+
+Região de Açú
+
+Região de Pau dos Ferros
+
+Região de Caicó
+
+Região de João Câmara
+
+Região de São José de Mipibu
+
+Região de Santa Cruz
+
+40-49
+
+50-59
+
+60-69
+
+70-79
+
+80 e mais
+
+Total
+
+4,21
+
+10,74
+
+18,11
+
+23,61
+
+26,63
+
+43,81
+
+11,11
+
+–
+
+–
+
+0,99
+
+1,54
+
+2,90
+
+5,89
+
+7,47
+
+1,19
+
+CCL
+
+1,49
+
+4,59
+
+12,01
+
+21,86
+
+27,53
+
+40,86
+
+67,63
+
+13,80
+
+CCU
+
+–
+
+–
+
+1,22
+
+2,46
+
+4,29
+
+10,06
+
+15,34
+
+1,87
+
+CCL
+
+0,55
+
+3,91
+
+11,44
+
+20,27
+
+28,62
+
+18,19
+
+62,20
+
+12,34
+
+CCU
+
+–
+
+–
+
+0,93
+
+0,94
+
+7,68
+
+10,23
+
+2,39
+
+1,77
+
+CCL
+
+1,71
+
+4,17
+
+10,21
+
+18,70
+
+18,33
+
+21,18
+
+25,95
+
+9,84
+
+CCU
+
+–
+
+–
+
+–
+
+–
+
+–
+
+–
+
+5,19
+
+0,09
+
+CCL
+
+0,35
+
+2,09
+
+6,72
+
+15,21
+
+20,35
+
+31,41
+
+18,64
+
+5,84
+
+CCU
+
+–
+
+–
+
+0,52
+
+0,69
+
+1,94
+
+1,50
+
+–
+
+0,51
+
+CCL
+
+0,82
+
+1,92
+
+8,86
+
+15,02
+
+28,53
+
+15,92
+
+27,18
+
+9,40
+
+CCU
+
+–
+
+–
+
+1,27
+
+0,58
+
+–
+
+2,27
+
+8,36
+
+0,59
+
+CCL
+
+0,27
+
+7,40
+
+17,88
+
+18,32
+
+18,17
+
+24,47
+
+28,29
+
+11,80
+
+CCU
+
+–
+
+–
+
+–
+
+3,27
+
+5,45
+
+–
+
+5,66
+
+1,22
+
+CCL
+
+0,75
+
+3,29
+
+8,97
+
+9,06
+
+12,70
+
+9,04
+
+24,61
+
+4,6
+
+CCU
+
+–
+
+–
+
+–
+
+0,60
+
+0,79
+
+5,16
+
+4,92
+
+0,52
+
+CCL
+
+0,49
+
+5,70
+
+4,16
+
+13,32
+
+10,39
+
+11,93
+
+25,50
+
+6,60
+
+CCU
+
+–
+
+–
+
+0,83
+
+–
+
+5,19
+
+9,94
+
+10,93
+
+1,45
+
+CCL
+
+b
+
+0,98
+
+CCU
+
+c
+
+Taxa de mortalidade por 100.000 mulheres
+
+a) TM: taxa média por 100 mil mulheres, padronizada pela população mundial proposta por Segi e corrigida por Doll.11
+
+30,00
+25,00
+20,00
+15,00
+10,00
+5,00
+0,00
+
+1997
+Mossoró
+
+1998
+
+1999
+
+Metropolitana
+
+2000
+
+2001
+
+2002
+
+São José do Mibipu
+
+2003
+Caicó
+
+2004
+St Cruz
+
+2005
+
+2006
+
+Pau dos ferros
+
+2007
+
+2008
+
+João Câmara
+
+2009
+Açu
+	  
+
+Figura 1 – Taxa de mortalidade (por 100 mil mulheres) por câncer do colo do útero após a redistribuição dos óbitos
+registrados como câncer do útero de porção não especificada, depois da suavização por meio de médias
+móveis trienais, microrregões de saúde do estado do Rio Grande do Norte, 1996 a 2012
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+315
+
+Mortalidade por câncer do colo do útero no Rio Grande do Norte
+
+A distribuição espacial das taxas médias trienais de
+mortalidade por câncer do colo do útero nos mapas da
+Figura 2 revela que as maiores taxas médias trienais
+estão concentradas nas microrregiões de Mossoró,
+João Câmara e Metropolitana, enquanto as taxas mais
+baixas, nos cinco triênios, foram observadas nas
+microrregiões de Santa Cruz e São José do Mipibu.
+Em relação à evolução das taxas de mortalidade
+por câncer do colo do útero, verificou-se tendência
+ascendente em duas microrregiões de saúde – São
+José de Mipibú e Caicó – e perfil descendente na
+microrregião Metropolitana. As demais microrregiões
+(Pau dos Ferros, Mossoró, Açu, Santa Cruz, João Câmara), assim como o conjunto do estado, mostraram
+tendência estacionária (Tabela 2).
+As projeções indicam que para o conjunto do Rio
+Grande do Norte, haverá uma redução nas taxas de
+mortalidade por câncer do colo do útero. No último
+período observado (2006-2010), essa taxa, que foi de
+5,95 mortes/100 mil mulheres/ano, dever-se-á reduzir
+para 3,67 mortes/100 mil mulheres/ano no último
+período projetado (2026-2030). Ao calcular as mudanças provocadas no número de mortes, chegou-se
+a um aumento total de 22,0% de mortes esperadas,
+sendo 85,0% do aumento resultado das mudanças
+populacionais. Outrossim, projetou-se uma redução
+no risco de -63,0% (Tabela 3).
+Discussão
+No presente estudo, observou-se que a tendência
+de mortalidade por câncer do colo do útero no estado do Rio Grande do Norte foi estacionária e apenas
+uma microrregião de saúde apresentou tendência
+descendente. Outra informação importante é que as
+taxas médias de mortalidade do estado e de todas as
+microrregiões de saúde foram superiores a 5,0 óbitos
+por 100 mil mulheres.
+Destaca-se, ainda, a grande proporção de registros
+classificados como câncer do útero de porção não
+especificada. Trata-se de um dado indicativo da falta
+de assistência, dificuldade de acesso aos serviços de
+prevenção, diagnóstico e tratamento, como também de
+assistência inadequada na ocasião do óbito.6
+Tamanha proporção de óbitos classificados como
+câncer do útero de porção não especificada, sobretudo
+nas faixas etárias acima dos 50 anos, foi semelhante
+àquela observada em outros estudos brasileiros.16-20
+
+316
+
+Alguns autores advogam que tal constatação se explique
+pelo fato de a causa mortis ser menos investigada
+em idosos do que em pessoas mais jovens. Alguns
+estudos apontam menor cobertura de exame preventivo
+ginecológico com o avançar da idade, deduzindo-se
+daí que muitos casos são diagnosticados em estágio
+avançado, não sendo possível identificar a topografia
+exata da lesão.
+O Rio Grande do Norte e suas microrregiões de saúde
+apresentaram altas taxas de mortalidade por câncer do
+colo do útero, quando comparadas às taxas de países
+desenvolvidos – inferiores a 5,0 óbitos por 100 mil
+mulheres – no ano de 2008. As taxas de mortalidade
+do estado nordestino também foram mais elevadas
+que as verificadas para Minas Gerais18 e o conjunto
+do Brasil.21 Contudo, deve-se ter maior cuidado ao
+comparar os resultados obtidos neste estudo com os
+de outras pesquisas realizadas no país: muitas delas
+não se propõem à correção dos óbitos registrados
+como câncer do útero de porção não especificada,
+podendo gerar taxas de mortalidade subestimadas
+para essa neoplasia.
+Na análise de tendência das taxas de mortalidade,
+verificou-se evolução ascendente nas microrregiões
+de saúde de São José de Mipibu e Caicó. Observou-se,
+também, que a região com melhor condição socioeconômica – Metropolitana – apresentou tendência
+descendente. Esses achados são compatíveis com os
+resultados de três estudos, realizados nos Estados
+Unidos da América (EUA), no Japão e Nordeste do
+Brasil,6,22,23 demonstrativos de que a mortalidade por
+câncer do colo do útero está fortemente associada
+com as condições socioeconômicas e de acesso aos
+serviços de saúde.
+Observe-se os resultados desses três estudos.
+Singh e colaboradores22 identificaram que mulheres
+habitando regiões dos EUA com piores condições socioeconômicas apresentaram 20,0% (IC95%: 10%;40%)
+maior probabilidade de serem diagnosticadas com
+câncer cervical – ou do colo do útero – em estádios
+avançados. O estudo desenvolvido no Japão,23 por sua
+vez, evidenciou que mulheres residentes em municípios
+com alta taxa de desemprego apresentaram maior
+probabilidade de serem diagnosticadas com câncer
+do colo do útero localmente avançado, comparativamente às que viviam em regiões com baixa taxa de
+desemprego (61,0% versus 51,6%; p<0,0001). E
+a pesquisa realizada, na região Nordeste do Brasil,
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+2005-2007
+
+1996-1998
+
+7.10 ~ 8.99
+8.99 ~ 9.11
+9.11 ~ 10.57
+10.57 ~ 12.42
+12.42 ~ 24.70
+
+4.89 ~ 7.85
+7.85 ~ 8.05
+8.05 ~ 9.85
+9.85 ~ 13.40
+13.40 ~ 41.43
+
+2e
+
+2b
+
+2008-2010
+
+1999-2001
+
+5.84 ~ 9.11
+9.11 ~ 9.76
+9.76 ~ 10.70
+10.70 ~ 10.77
+10.77 ~ 29.35
+
+3.68 ~ 7.00
+7.00 ~ 10.04
+10.04 ~ 10.60
+10.60 ~ 34.37
+34.37 ~ 72.70
+
+2c
+
+0
+
+2f
+
+60
+
+Quilômetros
+
+2002-2004
+
+120
+
+180
+
+O
+S
+
+N
+L
+
+São José de Mipibu
+Mossoró
+João Câmara
+Caicó
+Santa Cruz
+Pau dos Ferros
+Metropolitana
+Açu
+
+3.48 ~ 5.02
+5.02 ~ 6.10
+6.10 ~ 11.08
+11.08 ~ 13.78
+13.78 ~ 37.39
+
+Figura 2 – Taxas médias trienais de mortalidade (por 100 mil mulheres) por câncer do colo do útero nas microrregiões de saúde do estado do Rio Grande do Norte,
+1996 a 2010
+
+2d
+
+2a
+
+Aretha Maria Virgínio de Sousa e colaboradores
+
+317
+
+Mortalidade por câncer do colo do útero no Rio Grande do Norte
+
+Tabela 2 – Tendência da taxa de mortalidade (por 100 mil mulheres) por câncer do colo do útero segundo faixa
+etária, após a redistribuição dos óbitos registrados como câncer do útero de porção não especificada
+nas microrregiões de saúde do estado do Rio Grande do Norte, 1996 a 2010
+Microrregião
+de Saúde
+
+Metropolitana
+
+Pau dos Ferros
+
+Caicó
+
+São José do
+Mipibu
+
+Faixa
+etária
+RR a
+(em anos)
+
+IC95% b
+
+Tendência
+
+Faixa
+Microrregião de etária
+Saúde
+(em anos)
+
+RR a
+
+IC95% b
+
+Tendência
+
+20-29
+
+0,87
+
+0,76;0,97
+
+Descendente
+
+20-29
+
+1,32
+
+1,00;1,74
+
+Ascendente
+
+30-39
+
+0,93
+
+0,88;0,97
+
+Descendente
+
+30-39
+
+0,92
+
+0,84;1,00
+
+Estacionária
+
+40-49
+
+0,95
+
+0,90;1,01
+
+Estacionária
+
+40-49
+
+1,08
+
+0,99;1,17
+
+Estacionária
+
+50-59
+
+0,93
+
+0,90;0,96
+
+Descendente
+
+50-59
+
+0,93
+
+0,87;0,99
+
+Descendente
+
+60-69
+
+0,96
+
+0,92;1,00
+
+Estacionária
+
+60-69
+
+0,94
+
+0,86;1,04
+
+Estacionária
+
+70-79
+
+0,98
+
+0,93;1,04
+
+Estacionária
+
+70-79
+
+1,07
+
+1,00;1,15
+
+Ascendente
+
+≥80
+
+1,02
+
+0,96;1,08
+
+Estacionária
+
+≥80
+
+1,03
+
+0,98;1,09
+
+Estacionária
+
+Total
+
+0,97
+
+0,94;0,99
+
+Descendente
+
+Total
+
+0,99
+
+0,96;1,03
+
+Estacionária
+
+20-29
+
+0,87
+
+0,54;1,41
+
+Estacionária
+
+20-29
+
+0,98
+
+0,69;1,37
+
+Estacionária
+
+30-39
+
+1,17
+
+0,93;1,49
+
+Estacionária
+
+30-39
+
+0,93
+
+0,85;1,01
+
+Estacionária
+
+40-49
+
+0,92
+
+0,79;1,07
+
+Estacionária
+
+40-49
+
+0,97
+
+0,86;1,08
+
+Estacionária
+
+50-59
+
+0,99
+
+0,91;1,07
+
+Estacionária
+
+50-59
+
+0,97
+
+0,85;1,11
+
+Estacionária
+
+60-69
+
+1,01
+
+0,90;1,13
+
+Estacionária
+
+60-69
+
+1,00
+
+0,88;1,14
+
+Estacionária
+
+70 -79
+
+1,07
+
+0,96;1,18
+
+Estacionária
+
+70-79
+
+1,17
+
+0,94;1,50
+
+Estacionária
+
+≥80
+
+1,23
+
+1,03;1,50
+
+Ascendente
+
+≥80
+
+1,15
+
+0,88;1,5
+
+Estacionária
+
+Total
+
+1,02
+
+0,97;1,07
+
+Estacionária
+
+Total
+
+1,01
+
+0,95;1,07
+
+Estacionária
+
+20-29
+
+0,97
+
+0,76;1,24
+
+Estacionária
+
+20-29
+
+0,87
+
+0,53;1,41
+
+Estacionária
+
+30-39
+
+1,01
+
+0,81;1,26
+
+Estacionária
+
+30-39
+
+1,05
+
+0,90;1,24
+
+Estacionária
+
+40-49
+
+1,04
+
+0,93;1,15
+
+Estacionária
+
+40-49
+
+0,84
+
+0,67;1,06
+
+Estacionária
+
+50-59
+
+0,98
+
+0,88;1,09
+
+Estacionária
+
+50-59
+
+1,09
+
+0,96;1,24
+
+Estacionária
+
+60-69
+
+1,07
+
+0,99;1,16
+
+Estacionária
+
+60-69
+
+0,96
+
+0,83;1,09
+
+Estacionária
+
+70-79
+
+1,01
+
+0,90;1,13
+
+Estacionária
+
+70-79
+
+1,04
+
+0,83;1,32
+
+Estacionária
+
+≥80
+
+1,25
+
+1,06;1,50
+
+Ascendente
+
+≥80
+
+1,05
+
+0,81;1,33
+
+Estacionária
+
+Total
+
+1,05
+
+1,01;1,10
+
+Ascendente
+
+Total
+
+1,30
+
+0,96;1,11
+
+Estacionária
+
+20-29
+
+0,87
+
+0,53;1,41
+
+Estacionária
+
+20-29
+
+1,10
+
+0,69;1,77
+
+Estacionária
+
+Mossoró
+
+Açú
+
+Santa Cruz
+
+30-39
+
+1,05
+
+0,89;1,24
+
+Estacionária
+
+30-39
+
+1,01
+
+0,90;1,13
+
+Estacionária
+
+40-49
+
+0,84
+
+0,67;1,05
+
+Estacionária
+
+40-49
+
+0,98
+
+0,90;1,07
+
+Estacionária
+
+50-59
+
+1,09
+
+1,07;1,24
+
+Ascendente
+
+50-59
+
+0,98
+
+0,88;1,09
+
+Estacionária
+
+60-69
+
+0,95
+
+0,83;1,09
+
+Estacionária
+
+60-69
+
+1,07
+
+0,96;1,19
+
+Estacionária
+
+70-79
+
+1,05
+
+0,83;1,32
+
+Estacionária
+
+70-79
+
+1,01
+
+0,92;1,11
+
+Estacionária
+
+≥80
+
+1,15
+
+0,88;1,50
+
+Estacionária
+
+≥80
+
+1,24
+
+1,02;1,52
+
+Ascendente
+
+Total
+
+1,09
+
+1,03;1,11
+
+Ascendente
+
+Total
+
+1,02
+
+0,97;1,07
+
+Estacionária
+
+João Câmara
+
+a) RR: risco relativo
+b) IC95%: intervalo de confiança de 95%
+
+318
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+Aretha Maria Virgínio de Sousa e colaboradores
+
+Tabela 3 – Número de óbitos e taxa de mortalidade padronizada (por 100 mil mulheres) por câncer do colo do útero,
+observados e estimados para o estado do Rio Grande do Norte, 1996 a 2030
+Observado
+1996-2000
+
+Estimado
+
+2001-2005
+
+2006-2010
+
+2011-2015
+
+2016-2020
+
+2021-2025
+
+2026-2030
+
+Idade (em anos)
+20-29
+
+13
+
+15
+
+8
+
+14
+
+14
+
+13
+
+14
+
+30-39
+
+37
+
+62
+
+36
+
+35
+
+38
+
+38
+
+36
+
+40-49
+
+81
+
+83
+
+87
+
+91
+
+78
+
+73
+
+81
+
+50-59
+
+103
+
+96
+
+95
+
+97
+
+102
+
+103
+
+91
+
+60-69
+
+72
+
+93
+
+96
+
+94
+
+86
+
+90
+
+98
+
+70-79
+
+53
+
+53
+
+79
+
+89
+
+97
+
+96
+
+92
+
+80 ou mais
+
+33
+
+38
+
+82
+
+94
+
+121
+
+152
+
+178
+
+392
+
+440
+
+483
+
+514
+
+535
+
+565
+
+588
+
+6,94
+
+6,73
+
+5,95
+
+5,26
+
+4,6
+
+4,09
+
+3,67
+
+Total
+Taxa de mortalidade padronizada
+
+a
+
+a) Taxa de mortalidade padronizada pela população mundial, proposta por Segi e modificada por Doll.
+
+11
+
+no período de 1995 a 2006, evidenciou correlação
+positiva entre as localidades com altas taxas de mortalidade e indicadores sociais relacionados às piores
+condições de vida.6
+Sobre a evolução das taxas de mortalidade por câncer
+do colo do útero no Rio Grande do Norte, observou-se
+um comportamento distinto à tendência descendente
+apresentada, por exemplo, no município de São Paulo
+(1980 a 2009),16 nos estados do Rio Grande do Sul
+(1979 a 1998)17 e de Minas Gerais (1980 a 2009),18
+no mesmo estado de Minas Gerais entre 1980 e 2005,24
+na cidade de Recife (1980 a 2005)25 e no Brasil como
+um todo (1981 a 2006).21 Não obstante, os achados
+do presente estudo são semelhantes aos resultados da
+pesquisa de Gamarra e cols.6 na região Nordeste, onde
+verificaram padrão ascendente nas taxas de mortalidade,
+com maior intensidade nos municípios do interior:
+especificamente, nos municípios do interior do estado
+do Rio Grande do Norte, os autores do referido estudo
+encontraram uma variação anual de 14,4% no período
+de 1996 a 2005.
+
+Os resultados da presente pesquisa são preocupantes, tendo em vista que desde 2001, o Instituto
+Nacional de Câncer José Alencar Gomes da Silva
+(INCA)/Ministério da Saúde desenvolve o Programa Nacional de Controle do Câncer do Colo do
+Útero – PNCCC. Perceberam-se diferenças entre a
+evolução das tendências temporais por câncer colo
+do útero no Rio Grande do Norte e as projeções.
+Quanto à análise de tendência dos dados agrupados
+para todo o estado, apresentou-se estacionária; as
+projeções (2011 a 2030) revelaram declínio nas
+taxas de mortalidade.
+As projeções têm como base as mudanças ocorridas
+nos grupos de idade, nas coortes de nascimento, na
+comparação entre as mudanças anuais no número
+de óbitos do último período observado (2006-2010)
+com o último período projetado (2026-2030). Por
+conseguinte, seus resultados podem expressar os
+efeitos de mudanças recentes, como a ampliação
+da cobertura da Estratégia Saúde da Família entre
+os municípios do estado a partir dos anos 2000 – e
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+319
+
+Mortalidade por câncer do colo do útero no Rio Grande do Norte
+
+sua potencial eficácia e efetividade no diagnóstico
+precoce do câncer do colo do útero, o que não se
+expressou nas análises de tendência temporal. Nesse
+sentido, o PNCCC poderia ser apontado como uma
+das razões para essa redução no futuro, assim como
+para a melhoria nas condições de vida e no acesso
+aos serviços de saúde.26
+No Brasil, o PNCCC tem como objetivo garantir
+o acesso ao exame preventivo para mulheres da
+faixa etária prioritária, qualificação do diagnóstico
+e tratamento das lesões precursoras. 9 Apesar da
+melhoria nos indicadores de mortalidade alcançada,
+essa redução está aquém da esperada e pode-se
+explicar pelas características do programa de controle: oportunístico, não organizado, permite que
+algumas mulheres realizem mais exames do que o
+preconizado, enquanto outras nunca o realizam,
+sobretudo aquelas em piores condições socioeconômicas e de saúde.
+Outras importantes questões, a serem levantadas
+em próximas pesquisas, referem-se à qualidade
+dos exames de citologia oncótica realizados,
+acesso aos serviços para realização da biópsia e
+confirmação diagnóstica, exames diagnósticos para
+estadiamento dos casos confirmados, e acesso a
+tratamento oncológico: cirurgia, radioterapia e
+quimioterapia.9-10
+A avaliação do rastreamento do câncer do colo
+do útero no Brasil, no período de 2002 a 2006,
+evidenciou periodicidade de realização do exame
+de Papanicolau menor que a desejada, além de alto
+percentual de amostras insatisfatórias e ASC-US, o
+que é preocupante: 2 a 8% dos resultados insatisfatórios podem apresentar lesões pré-câncer após
+exame de repetição.26
+Foi com o propósito de minimizar a principal
+limitação deste trabalho, relacionada à qualidade
+dos dados secundários, que se decidiu pela correção da grande proporção de registros classificados
+
+como câncer do útero de porção não especificada
+(processo devidamente explicitado na exposição
+dos Métodos do estudo), produzindo taxas de
+mortalidade por câncer do colo do útero mais
+fidedignas. É possível que persista uma subestimação residual nas taxas, haja vista a região Nordeste
+apresentar problemas relacionados à cobertura dos
+óbitos (subnotificação) e qualidade do Sistema
+de Informações sobre Mortalidade – SIM –, com
+alta proporção de registros cuja causa de óbito é
+mal definida.
+Apesar dessas limitações, este relato sinaliza a
+necessidade da avaliação da prevenção e controle do
+câncer do colo do útero no estado do Rio Grande do
+Norte. Nesse sentido, é urgente analisar a cobertura
+e a qualidade do exame de Papanicolaou, o acesso a
+exames diagnósticos, cirurgias – e cirurgias de alta
+frequência –, radioterapia e quimioterapia. Essas
+medidas são capazes de auxiliar o planejamento e a
+gestão em saúde, ao permitirem a identificação dos
+principais problemas que têm contribuído para a
+situação descrita por este estudo.
+Contribuição dos autores
+Sousa AMV, Teixeira CCA, Medeiros SS, Nunes SJC,
+Lima FFS e Nascimento GGC participaram da análise
+e interpretação dos dados, bem como da redação ou
+revisão crítica relevante do conteúdo intelectual e
+aprovação da versão final do manuscrito.
+Salvador PTCO, Santos J, Souza DLB, Bezerra APS,
+Barros RMB e Meira KC contribuíram substancialmente
+com a concepção e delineamento do estudo, análise
+crítica dos dados, redação ou revisão crítica relevante
+do conteúdo intelectual e aprovação da versão final
+do manuscrito.
+Todos os autores aprovaram a versão final do manuscrito e declaram serem responsáveis por todos os aspectos do trabalho, garantindo sua precisão e integridade.
+
+Referências
+1. Jemal A, Bray F, Center MM, Ferlay J, Ward E, Forman
+D. Global cancer statistics. CA Cancer J Clin. 2011
+Mar-Apr; 61(2):69-90.
+2. Saslow D, Castle PE, Cox JT, Davey DD, Einstein
+MH, Ferris DG, et al. American Cancer Society
+Guideline for human papillomavirus (HPV)
+
+320
+
+vaccine use to prevent cervical cancer and
+its precursors. CA Cancer J Clin. 2007 JanFeb;57(1):7-28.
+3. Leyden WA, Manos MM, Geiger AM, Weinmann
+S, Mouchawar J, Bischoff K,et al.Cervical cancer
+in women with comprehensive health care acess:
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+Aretha Maria Virgínio de Sousa e colaboradores
+
+attributable factors in screening process. J Natl Cancer
+Inst. 2005 May;97(9):675-83.
+4. Ferlay J, Soerjomataram I, Ervik M, Forman D, Bray
+F,Dikshit R, et al. Globocan 2012: estimated cancer
+incidence, mortality and prevalence worldwide in
+2012 [Internet]. Lyon: International Agency for
+Research on Cancer; 2012 [cited 2015 Feb 28].
+Available from: http://globocan.iarc.fr
+5. Silva AG, Girianelli VR, Guamarra CJ, BustamanteTeixeira MT. Cervical cancer mortality trends
+in Brazil, 1981-2006. Cad Saude Publica. 2010
+Dec;26(12):2339-407.
+6. Gamarra CJ, Valente JG, Silva GA. Magnitude
+da mortalidade por câncer do colo do útero
+na Região Nordeste do Brasil e fatores
+socioeconômicos. Rev Panam Salud Publica. 2010
+ago;28(2):100-6.
+7. Facina T. Estimativa 2014: incidência de câncer
+no Brasil. Rev Bras Cancerol. 2014 janmar;60(1):63-4.
+8. Brustugun OT, Moller B, Helland A. Years of life lost
+as a measure of cancer burden on a national level. Br
+J Cancer. 2014 Aug;111(5):1014-20.
+9. Brito-Silva K, Bezerra AFB, Chaves LDP, Tanaka
+OY.Integrality in cervical cancer care: evaluation
+of access. Rev Saude Publica. 2014 Apr;
+48(2):240-8.
+10. Paléncia L, Espelet A, Rodríguez-Sanz M, Puigpinos
+R, Pons-Vigué M, Pasarini MI, et al. Socioeconomic inequalities in breast and cervical cancer
+screening practices in Europe: influence of the
+type of screening program. Int J Epidemiol. 2010
+Jun;39(3):757-65.
+11. Doll R, Muir C, Waterhouse J, editors. Cancer
+incidence in five continents.1 vol. Berlin: SpringerVerlag;1966.
+12. Morettin PA, Toloi CMC. Análise de séries temporais.
+2ed. São Paulo: Edgard Blücher; 2006.
+
+incidence in the Nordic countries: empirical
+comparison of different approaches. Stat Med. 2003
+Sep;22(17):2751-66.
+16. Meira KC, Silva GA, Silva CMFP, Valente JG. Efeito
+idade-período-coorte na mortalidade por câncer
+do colo uterino. Rev Saude Publica. 2013 abr;
+47(2):274-82.
+17. Kalakun L, Bozzetti MC. Evolution of uterine cervical
+cancer mortality from 1979 to 1998 in the State of
+Rio Grande do Sul, Brazil. Cad Saude Publica. 2005
+Jan-Feb;21(1):299-305.
+18. Meira KC, Ferreira AA, Silva CMFP, Valente JG, Santos
+J. Mortalidade por câncer do colo do útero no estado
+de Minas Gerais, análise do efeito da idade-períodocoorte de nascimento. Cad Saude Coletiva. 2012
+Jun;20(3):381-8.
+19. Müller EV, Biazevic MGH, Antunes JLF, Crosato
+EM. Tendência e diferenciais socioeconômicos da
+mortalidade por câncer do colo do útero no estado
+do Paraná (Brasil), 1980-2000. Cienc Saude Coletiva.
+2011maio;16(5):2495-500.
+20. 20.Rodriguez AD. Bustamante-Teixeira MT.
+Mortalidade por câncer de mama e câncer de colo
+do útero em município de porte médio da Região
+Sudeste do Brasil, 1980-2006. Cad Saude Publica.
+2011 fev;27(2):241-8.
+21. Guimarães RM, Muzi CD, Ayres ARG, Ribeiro MS,
+Chagas CC, Oliveira JSC. Aplicação de três técnicas
+para avaliação de tendência de mortalidade
+por câncer do colo do útero em série temporal
+no Brasil, 1980-2009. Rev Bras Cancerol 2012
+mar;58(3):359-67.
+22. Singh GK, Miller BA, Hankey BF, Edwards BK.
+Persistent area socioeconomic disparities in
+U.S incidence of cervical cancer, mortality,
+stage, and survival, 1975-2000.Cancer. 2004
+Sep;101(5):1051-7.
+
+13. Nelder JA, Wedderburn RWM. Generalized linear
+models.J R Stat Soc Ser A.1972;135(3):370-84.
+
+23. Ueda K, Kawachi I, Tsuhumra H. Cervical and corpus
+cancer survival disparities by socioeconomic status
+in a metropolitan area Japan. Cancer Sci. 2006 Apr;
+97(4):283-91.
+
+14. Oliveira TCR, Latorre MRDO. Tendências da
+internação e da mortalidade infantil por diarréia:
+Brasil,1995 a 2005. Rev Saude Publica. 2010 fev;
+44(1):102-11.
+
+24. Alves CMM, Guerra MR, Bastos RR. Tendência de
+mortalidade por câncer de colo de útero para o
+estado de Minas Gerais, Brasil, 1980-2005. Cad Saude
+Publica. 2009 ago;25(8):1693-700.
+
+15. Moller B, Fekjaer H, Hakulinen T, Sigvaldason H,
+Storm HH, Talbäck M, et al. Prediction of cancer
+
+25. Mendonça VG, Lorenzato FRB, Mendonça JG, Menezes
+TC, Guimarães MJB. Mortalidade por câncer do
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+321
+
+Mortalidade por câncer do colo do útero no Rio Grande do Norte
+
+colo do útero: características sociodemográficas
+das mulheres residentes na cidade de Recife,
+Pernambuco. Rev Bras Ginecol Obstet. 2008
+maio;30(5):248-55.
+
+Recebido em 11/07/2015
+Aprovado em 25/01/2016
+
+26. Dias MBK, GláuciaJ, Assis TM. Rastreamento do
+câncer de colo do útero no Brasil: análise de dados
+do Siscolo no período de 2002 a 2006.Epidemiol Serv
+Saude. 2010 jul-set;19(3):293-306.
+
+322
+
+Epidemiol. Serv. Saude, Brasília, 25(2):311-322, abr-jun 2016
+
+

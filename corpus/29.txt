@@ -1,0 +1,507 @@
+173
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+http://dx.doi.org/10.1590/1982-25542014216190
+
+Agenciamentos semióticos
+em ambientes de streaming de
+músicas: mente, aprendizado
+e continuidade
+Geane Carvalho Alzamora
+Natália Moura Pacheco Cortez
+
+Resumo: Este artigo investiga os agenciamentos híbridos entre agentes de interface e agentes humanos
+nos ambientes sociocomunicacionais de streaming de músicas LastFM, Grooveshark e Deezer,
+com base nas noções de agenciamento (Deleuze e Guattari) e semiose (Peirce). O modelo
+peirceano da semiose é tomado como parâmetro conceitual para explicar o funcionamento
+do agenciamento híbrido entre homem e máquina nesses ambientes. Propõe-se a noção de
+agenciamento semiótico para compreender o aprendizado contínuo e aprimorado da máquina
+a partir das ações humanas nos ambientes pesquisados, assim como as articulações das ações
+humanas baseadas nos mecanismos de recomendação. As relações de continuidade entre
+as mentes dos agentes humanos e as dos agentes de interface são abordadas na perspectiva
+da Teoria do Sinequismo de Peirce, relacionada à sua noção de semiose.
+Palavras-chave: semiose; agenciamento; streaming de músicas.
+Abstract: Semiotics in music streaming environments: mind, learning and continuity – Based on the
+notions of agency (Deleuze and Guattari) and semiosis (Peirce), this paper discusses a study of
+the hybrid forms of interaction between interfaces and human agents in the music streaming
+environments LastFM, Grooveshark, and Deezer. The Peircean model of semiosis is taken as
+the conceptual framework to explain how the hybrid forms of agency interact at the interface
+between humans and machines. This paper proposes the notion of “semiotic agency” as a
+conceptual tool in the study of the learning processes whereby machines acquire knowledge
+about human preferences and decisions and are able to transform them into recommendations.
+The relationship of continuity between human minds and interface agents is discussed from
+the Peircean perspective of synechism and semiosis as a continuous process.
+Keywords: semiosis; agency; music streaming.
+
+174
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+Introdução
+Ambientes de streaming de músicas baseiam-se nas ações dos internautas combinadas
+às ações maquínicas, configurando sofisticados processos sociocomunicacionais de
+recomendação e compartilhamento. É relativamente consensual abordar esse tema pela
+perspectiva do hibridismo em rede, mas permanece pouco explorado o que caracteriza tal
+hibridismo e seus matizes sociocomunicacionais. Buscando contribuir com esse debate,
+propõe-se considerar o hibridismo investigado como resultado de agenciamentos que se
+estabelecem entre agentes de interface1 e agentes humanos2, com base nas noções de
+agenciamento (DELEUZE; GUATTARI, 1977) e semiose (PEIRCE, 2008).
+Em ambientes sociocomunicacionais de streaming de música, agentes de interface
+desempenham funções mecânicas de reconhecimento de padrões e hábitos dos agentes
+humanos para fins de recomendação, enquanto os agentes humanos conferem significados
+a tais informações por meio de registro, acesso e compartilhamento. Conjuntamente, agentes
+humanos e agentes de interface configuram agenciamentos singulares nesses ambientes
+sociocomunicacionais. Assim, embora lidem com uma mesma perspectiva sociocomunicacional,
+cada ambiente de streaming de música a especifica no contexto de sua rede sociotécnica3.
+A questão é aqui discutida no âmbito de três ambientes sociocomunicacionais de
+streaming de música, considerados semelhantes em função de seu design de interação:
+LastFM4, Grooveshark5 e Deezer6. Os três operam como aplicativos para desktop e dispositivos
+móveis, sendo significativos seus acervos e a quantidade de internautas cadastrados7.
+Os ambientes investigados são acessados pelos internautas para ouvir músicas,
+criar listas de reprodução e compartilhar informações por meio de outros ambientes
+sociocomunicacionais, tais como Facebook e Twitter. São plataformas de serviços
+de streaming, de recomendações e de redes de vizinhança musical que se baseiam nos registros
+das interações dos internautas. LastFM é um ambiente pioneiro na ecologia de streaming de
+música8, fundada em 2002, Grooveshark foi criado em 2006, e Deezer em 2007.
+1
+
+2
+3
+
+4
+5
+6
+7
+
+8
+
+O conceito de agente de interface surgiu em 1950 a partir do software Advice, desenvolvido por John McCarthy,
+mas se tornou popular apenas em 1989, quando a Apple lançou um vídeo intitulado The Knowledge Navigator,
+que apresentava um agente antropomorfo em um Power-Book (JOHNSON, 2001).
+De acordo com Giddens (cf. JORGE, 2012), os agentes humanos têm natureza social, sendo caracterizados por
+fluxos de ação intencional, embora as consequências dessas ações não sejam limitadas pela intencionalidade.
+A rede sociotécnica conecta elementos de natureza variada, tais como sociais, naturais, materiais e institucionais.
+Como observa Latour (1994), essa rede se apresenta real como a natureza, narrada como discurso e coletiva
+como a sociedade.
+http://www.lastfm.com.br/
+http://grooveshark.com/
+http://www.deezer.com/br/
+Na plataforma LastFM, por exemplo, as playlists baseiam-se em álbuns completos dos artistas ouvidos, que
+são recomendados a partir de sua similaridade com outros artistas da biblioteca do internauta. Grooveshark
+recomenda live broadcasts, definidos como experiências em tempo real trazidas por outros internautas, e Deezer
+possui editores que têm destaque no papel de recomendação. Os regimes de afetação recíproca, assim como
+a tendência ao compartilhamento, variam de um ambiente a outro. Grooveshark e Deezer disponibilizam
+recomendações de outros internautas e editores, já na LastFM o agente de interface tem papel preponderante
+na configuração dos regimes de afetação recíproca. Informações coletadas nas plataformas em: 29. set. 2013.
+A ecologia dos meios funda-se na ideia de que os meios de comunicação configuram ambientes nos quais sujeitos e
+técnicas afetam-se reciprocamente e um meio interfere no outro. A metáfora da ecologia pressupõe que os meios sejam
+espécies que transitam e evoluem no ecossistema comunicacional. Sobre o assunto ver, por exemplo, Scolari (2013).
+
+175
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+Os três ambientes se qualificam como sistemas de recomendação baseados nos
+gostos e preferências dos internautas, que recebem recomendações a partir do registro de
+suas ações, hábitos musicais de outros internautas e também de informações relacionadas
+à organização do conteúdo no ambiente.
+LastFM destaca como vizinhos musicais os internautas com gosto musical parecido e
+recomenda com base nos artistas que compõem as bibliotecas dos internautas. Grooveshark
+recomenda com base nas músicas ouvidas recentemente pelo internauta por meio de
+playlists com nomes de estilos musicais e playlists criadas por outros internautas. Deezer
+e Grooveshark indicam artistas preferidos. Embora não apresente estilos musicais a partir
+das playlists, como o fazem LastFM e Grooveshark, Deezer destaca os artistas favoritos do
+internauta a partir das músicas que ouve e sugere músicas de outros artistas como similares.
+Diferente de LastFM, que sugere vizinhos musicais, Grooveskark e Deezer criam
+conexões entre internautas não por meio da ideia de vizinhança musical, mas pela relação
+de seguidos e seguidores na atividade musical. Nos três ambientes as ações dos internautas
+são mediadas pelas ações dos agentes de interface, que por sua vez operam mediante
+os registros das ações dos agentes humanos no sistema.
+
+Agentes de interface: recomendações e processos associativos
+Agentes de interface são representantes maquínicos aos quais podem ser delegadas
+certas funções sociocomunicacionais. Não se trata, porém, de meros prolongamentos
+da atividade humana nos ambientes pesquisados, uma vez que refinam as possibilidades
+de compartilhamento por vizinhança musical ou rede de seguidores e, desse modo, eles
+participam efetivamente dos processos sociocomunicacionais.
+Nesses ambientes, os agentes de interface recomendam músicas aos internautas
+a partir dos registros de seus hábitos, observando padrões de co-ocorrência de músicas
+em playlists, artistas ouvidos e outras possíveis relações com base na comparação que
+estabelecem entre perfis de internautas e preferências musicais próximas. Agem, portanto,
+por associação de informações em rede.
+Segundo Johnson (2001, p. 127-149), os agentes podem ser diferenciados de acordo
+com as tarefas que desempenham: buscar informações, filtrar dados, monitorar condições
+e alertar sobre mudanças, entre outras. Pode-se também diferenciá-los segundo seu
+habitat. Alguns habitam o disco rígido de um computador e outros habitam a Internet.
+Como propõe o autor, os agentes também podem ser classificados segundo suas funções
+e comportamentos da seguinte maneira: o agente pessoal, o viajante e o social. O agente
+pessoal realiza tarefas mais rudimentares e tem capacidade reduzida de tomar decisões.
+O agente viajante é aquele que “levanta âncora do computador hospedeiro”, como
+destaca Johnson (2001, p. 133), e sai para buscar informações no ciberespaço. Ele também
+monitora condições e alerta o internauta quando necessário, podendo tomar decisões por
+
+176
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+ele próprio. Já o agente social é extrovertido, pois, em conversas com outros agentes e
+internautas troca recomendações e compila informações relevantes para melhor atender
+às necessidades que lhe foram apresentadas.
+O grau de autonomia que apresentam é um aspecto muito relevante em sua
+diferenciação. Os agentes de interface aqui investigados conseguem pistas sobre preferências
+dos internautas a partir da descoberta de padrões em suas ações e, ao incorporar novos
+elementos que passam a conhecer por meio de sua experiência na interação, agregam
+a seus repertórios novas informações que os habilitam a tomar decisões diferenciadas.
+A variedade de ações que podem desempenhar no sistema, assim como a diversidade
+de graus de autonomia que apresentam, constitui matizes relevantes para se compreender
+as especificidades sociocomunicacionais dos agentes de interface nos ambientes de
+streaming de música. Esses aspectos são aqui discutidos na perspectiva do modelo
+peirceano da semiose, o qual revela as condições lógicas pelas quais os agentes de interface
+realizam recomendações com base em processos associativos em rede.
+
+A semiose do registro, recomendação, acesso e compartilhamento
+A semiose trata das relações logicamente possíveis entre signo, objeto e interpretante, cujo
+desdobramento contínuo resulta em processos comunicacionais e cognitivos cada vez mais
+aprimorados. Esse é o fundamento pragmático da ação sígnica, a qual integra as operações
+semióticas de determinação e representação na conformação do signo, ou mediação9.
+É o caráter mediador do signo que impulsiona a semiose a expandir-se continuamente.
+A operação semiótica de determinação condiciona o modo pelo qual o objeto
+determina, de modo parcial e sempre incompleto, o interpretante pela mediação do signo.
+Já a operação semiótica de representação refere-se ao modo pelo qual o interpretante
+representa a determinação oriunda do objeto pela mediação do signo, associando novos
+signos à semiose por experiência colateral10.
+Conforme essa abordagem, os agentes de interface desempenham melhor sua
+capacidade de recomendação por similaridade musical à medida que aumentam seus
+repertórios e, consequentemente, suas possibilidades de efetuarem associações sígnicas
+mais refinadas. Operam, assim, como signos mediadores entre a instância semiótica
+da determinação, relacionada aos registros dos internautas, e a instância semiótica da
+representação, relacionada à capacidade que os agentes de interface apresentam de
+associar novas informações aos registros dos internautas, configurando a vizinhança
+musical por experiência colateral. Em um estágio posterior dessa semiose, as ações de
+recomendação feitas pelos agentes de interface operam como objeto das futuras ações
+9
+
+10
+
+De acordo com Santaella e Nöth (2004), a noção de mediação é definida como qualquer processo no qual dois
+elementos são colocados em articulação através da intervenção de um terceiro, que tem como função permitir
+a passagem de alguma propriedade de um para outro elemento. A comunicação é um traço essencial de toda
+semiose, uma vez que permite a passagem, a comunicação, de um elemento ao outro.
+Sobre o assunto ver, por exemplo, Colapietro (1989).
+
+177
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+de acesso e compartilhamento dos agentes humanos no sistema, então situadas no lugar
+lógico do interpretante.
+As ações de correlacionar músicas na medida em que aparecem nas playlists,
+indicando um padrão de regularidade a conjuntos de elementos tidos como semelhantes
+a partir da mecanização dos processos associativos, relacionam-se a graus variados de
+autonomia semiótica. Como discute Nöth (2001, p. 71), nenhum dos critérios de semiose
+encontra-se totalmente ausente das mentes maquínicas. O autor argumenta ainda que
+a distância entre a semiose da máquina e a semiose humana está diminuindo, uma vez
+que a inteligência computacional avança em ritmo acelerado, criando mentes maquínicas
+capazes de desempenhar processos de raciocínio cada vez mais elaborados e variados
+com base na observação dos processos de raciocínio humanos11.
+Segundo Peirce, o raciocínio é a observação de relações e o entendimento que
+se constrói a partir dessa observação (cf. SANTAELLA, 2004). A abdução, a indução e
+a dedução são entendidas como espécies de raciocínio por Peirce (2008). A abdução
+corresponde à fase relativa à geração de hipóteses, sendo uma função da imaginação
+criativa do indivíduo, como discute Santaella (2004). Construída a hipótese, passa-se
+ao estágio seguinte de testá-la, o que corresponde aos processos indutivos que particularizam
+as condições gerais da investigação, relacionadas à dedução. Na fase da indução
+o pesquisador julga a natureza e a veracidade da hipótese para verificar se as consequências
+observáveis permitem generalizações. Segundo Santaella (2004), a dedução é o desenrolar
+de consequências experimentais a partir de hipóteses explanatórias, extraindo delas
+consequências experimentais.
+Nos três ambientes de streaming de música pesquisados, os agentes de interface não
+são capazes de raciocinar abdutivamente, mas são capazes de raciocínios parcialmente
+dedutivos, baseados na observação de padrões que relacionam indutivamente na forma de
+vizinhança musical ou rede de seguidores. Eles melhoram seu desempenho à medida que
+associam novas informações provenientes das ações dos internautas, as quais concorrem
+para refinar os padrões de similaridade musical fornecidos pelos agentes de interface na
+forma de aumento de repertório. Aprimora-se, assim, a capacidade de o agente de interface
+recomendar músicas, aumentando as chances de acerto nessas recomendações à medida
+que mais e mais internautas registram suas ações no ambiente.
+Esse processo remete à noção de coletividades híbridas (SANTAELLA, 1997), que se
+assemelha à noção de coletividade pensante homens-coisas (LÉVY, 1993). Santaella (1997)
+define essas coletividades híbridas como redes nas quais mentes humanas e maquínicas,
+saberes e técnicas, entre outros elementos, interagem configurando formas híbridas de
+cognição, de produção e de circulação de sentidos.
+11
+
+Nöth (2001) propõe pensar o processamento de signos no computador como quase-semiose, dada sua
+incapacidade de atingir graus sofisticados de terceiridade. Mas entende que uma máquina capaz de aprender
+com a experiência ambiental e capaz de autocorreção automática pode ser entendida como uma máquina
+semiótica genuína, uma vez que reage por reconstrução de seu programa com o propósito de desenvolver sua
+eficiência futura.
+
+178
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+As questões que permeiam essas coletividades apontam para as feições de uma
+cultura bioeletrônica que, observada pela noção de agenciamento, revela a integração
+entre sistemas cibernéticos e psíquicos, redes neuronais artificiais e naturais, como
+propõe Santaella (1997). Tais coletividades, na perspectiva de Lévy (1993), se propagam
+em meio constituído pelas mentes humanas e pelas redes técnicas de armazenamento
+e de circulação de informações. Consideramos que esse meio, híbrido em sua essência,
+configura teia semiótica que agencia as mentes maquínicas e humanas em regime de
+afetação recíproca continuamente aprimorável.
+
+Sobre as noções de agência e agenciamento
+A noção peirceana de agência, como discute Jorge (2012), permeia diferentes
+temáticas abordadas em sua obra, tais como cosmologia, percepção, cognição e
+pragmatismo. Um dos significados de agência apresentados por Jorge (2012), com base
+em sistematização feita por Silveira (cf. JORGE, 2012) a partir de fragmentos de Collected
+Papers of Charles S. Peirce, fundamenta-se na diferenciação entre causalidade eficiente e
+causalidade final. Recuperamos aqui essa distinção por nos parecer muito relevante para
+compreender a questão no âmbito dos ambientes de streaming de música pesquisados.
+A causalidade eficiente cria uma ação compulsiva que desencadeia uma mudança
+de modo perfeitamente determinado, enquanto que a causação final “não determina de
+que modo particular um resultado geral é desencadeado, mas somente que o resultado
+terá um caráter geral” (CP 1.212, apud NÖTH, 2001). A causalidade eficiente se relaciona
+a ação diádica, mecânica ou dinâmica e a causação final à ação triádica, inteligente, que
+equivale à semiose, como discute Jorge (2012).
+Nos ambientes de streaming de músicas pesquisados, o agente de interface atua
+ancorado em relações diádicas, relacionadas à causalidade eficiente. Embora amplie
+sua memória e crie novas relações a partir do aprendizado com as ações humanas
+registradas no ambiente, sua mente maquínica não atinge graus muito sofisticados de
+generalização, demandando a integração com a mente humana para constituir processos
+mais elaborados de semiose. Orientada por fins, a mente humana atua no sentido de
+buscar a causalidade final, sem que isso signifique ruptura com a causação mecânica,
+como ilustra o agenciamento híbrido nos ambientes de streaming de música investigados.
+Jorge (2012) recusa a abordagem mecanicista da agência e postula que os sistemas
+de signos devem, eles próprios, ser considerados agentes – abordagem que coaduna com
+a nossa. A autora relaciona a noção de agência à “capacidade de ação de uma pessoa,
+de um mecanismo, ou de qualquer outra coisa pela qual alguma força seja exercida e,
+consequentemente, uma mudança seja produzida” (JORGE, 2012, p. 3).
+
+179
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+Essa noção dialoga, em certa medida, com a noção de agenciamento proposta por
+Deleuze e Guattari (1997)12, segundo a qual o agenciamento se refere às relações entre
+diferentes entidades, sem previsibilidade nem determinismo. Os autores afirmam que
+o agenciamento não é uma relação entre dois termos dados, mas comunicação entre
+fluxos heterogêneos, sejam eles sociais, culturais, biológicos, técnicos etc.
+Na perspectiva da semiose peirceana, conforme se postula aqui, o agenciamento –
+ou agência – é a ação comunicativa que se estabelece entre fluxos heterogêneos, sendo
+a heterogeneidade sempre de ordem sígnica. Isso não exclui fluxos sociais ou culturais
+do processo, mas os apreende signicamente, buscando enfatizar suas possibilidades de
+conformação lógica na cadeia da semiose.
+A noção de agenciamento, de acordo com Deleuze e Guattari (1997), implica
+na observação das relações entre diferentes entidades, seja qual for sua natureza, como
+relações de afetação recíproca. Importa o que ocorre entre, o que se conforma a partir
+dessas relações, sendo que todas as entidades envolvidas no processo de agenciamento
+são capazes de ação e são impactadas pela ação das outras entidades envolvidas.
+A ação, na abordagem peirceana, implica em semiose, ou seja, na capacidade
+do signo desdobrar-se continuamente em outro. Assim, postulamos que observar a atividade
+comunicacional entre agentes de interface e agentes humanos como um agenciamento
+híbrido implica não apenas na perspectiva de não dualidade entre homem-máquina,
+como propõem Deleuze e Guattari (1997), mas principalmente na convicção de que
+o que age, age signicamente, conforme as possibilidades lógicas da semiose. Por conta
+dessa especificidade, propomos abordar a questão com base na noção de agenciamento
+semiótico, com a qual buscamos enfatizar o delineamento lógico do agenciamento pelo
+modelo peirceano da semiose.
+
+Agenciamento semiótico: mente, pensamento e continuidade
+A semiose, na teoria peirceana, relaciona-se à ideia de mente, pensamento, cognição
+e produção de sentido. Como modelo, pode descrever todos os processos sígnicos
+logicamente possíveis. O estudo da semiose é feito no âmbito da Semiótica, entendida
+12
+
+De acordo com Deleuze e Guattari (1997), o agenciamento comporta dois segmentos: um de conteúdo e
+o outro de expressão. Por um lado ele é agenciamento maquínico de corpos, ou seja, mistura de corpos reagindo
+uns sobre os outros, e por outro lado, agenciamento coletivo de enunciações, que são atribuídas aos corpos.
+Em seu aspecto material ou maquínico, o agenciamento remete a um estado preciso de misturas de corpos
+em uma sociedade, compreendendo todas as atrações e repulsões, as alianças, as alterações e expansões que
+afetam os corpos de todos os tipos, uns em relação aos outros. Trata-se de uma máquina por meio da qual fluxos
+cognitivos e técnicos conectam-se na interação entre internauta e instrumento, homens e máquinas. Por outro
+lado, segundo eles, o agenciamento tem uma face coletiva, pois não é apenas técnico, mas também social,
+visto que opera por meio de acoplamentos com internautas, conhecimentos e outros elementos que compõem
+sua rede de relações. A noção da face coletiva do agenciamento refere-se a essa multiplicidade de processos
+que compõem sua rede de relações, sendo que tais processos se desenvolvem além e aquém dos indivíduos,
+no nível molecular dos agenciamentos e no nível molar das formas visíveis, como discutem os autores.
+
+180
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+por Peirce (2008) como uma filosofia dos signos, sendo que gestos, ideias e cognições
+eram por ele considerados entidades semióticas. Mas a Semiótica, embora ocupe lugar
+central no pensamento peirceano, é apenas uma faceta de seu pensamento.
+A arquitetura filosófica de Peirce articula-se em subdivisões relacionadas, entre
+outras, à Fenomenologia, Ciências Normativas e Metafísica. Segundo Santaella (2000),
+o Sinequismo ocupa o lugar do sistema metafísico nessa relação e tem como objeto
+de investigação o mundo objetivo. Já a Lógica ou Semiótica - uma das três ciências
+normativas - investiga a estrutura do pensamento com base na articulação lógica de suas
+três categorias fenomenológicas. De acordo com Santaella (2000), no contexto metafísico
+do Sinequismo a mente se refere à continuidade, à tendência universal da aquisição de
+hábitos e, no contexto da Lógica, a mente é sinônimo de semiose.
+Pensar o agencimento semiótico em ambientes de streaming de música na perspectiva
+peirceana da mente significa pensá-lo do ponto de vista da aquisição continuada de
+novos hábitos, o que corresponde, de modo mais amplo, à finalidade metafísica do
+Sinequismo. Isso implica em abordar o agenciamento semiótico em dinâmica mediadora
+que não distingue semiose maquínica de semiose humana. Em vez disso, situa condições
+logicamente prováveis de produção sígnica no agenciamento semiótico, o qual integra
+as mentes humana e maquínica na perspectiva da aquisição híbrida de novos hábitos.
+As condições logicamente prováveis de produção sígnica referem-se às condições
+fenomenológicas de relação entre objeto, signo e interpretante.
+A Fenomenologia, que fundamenta o edifício teórico erigido por Peirce, articula-se
+em suas três categorias universais: Firstness (Primeiridade), Secondness (Secundidade) e
+Thirdness (Terceiridade). A Primeiridade relaciona-se à noção de mônada e corresponde
+à qualidade imediata do sentimento. A Secundidade relaciona-se à noção de díada,
+à alteridade, extensão física entre ação e reação. Já a Terceiridade é a categoria da mediação,
+que relaciona um segundo a um terceiro por meio de síntese intelectual. Refere-se à
+inteligibilidade do pensamento em signos. Essa categoria fenomenológica, relacionada ao
+crescimento contínuo, corresponde à definição de signo genuíno como processo relacional
+triádico, que conduz a noção de semiose infinita, como discute Santaella (2008).
+A continuidade típica da Terceiridade se refere ao Sinequismo, enquanto que o acaso,
+típico da Primeiridade, se refere ao Tiquismo, seu oposto complementar, segundo Santaella
+(2000). Na concepção de Peirce (cf. SANTAELLA, 2000), a observação da natureza mostra
+elementos de uniformidade, mas as regularidades que se observa não são exatas nem
+universais, como explica a autora. A regularidade das leis é constantemente violada em
+algum grau, ou seja, os fatos não se ajustam precisamente às leis. O Tiquismo resulta dessa
+regularidade imperfeita da natureza e o acaso é um de seus traços objetivos. A continuidade
+é, porém, um estado disposicional que infinitamente se espalha, como discute Santaella
+(2000). Trata-se de uma tendência generalizante e autogerativa.
+
+181
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+O Sinequismo e seu oposto complementar, o Tiquismo, são aqui abordados para situar
+o escopo dinâmico e continuamente provisório do agenciamento semiótico em ambientes
+de streaming de música, nos quais a tendência à aquisição de novos hábitos abriga a
+possibilidade indeterminada do acaso. Essa perspectiva é mais bem compreendida quando
+se pensa em agentes humanos, mas dada a impossibilidade de isolar os agentes humanos
+dos agentes de interface nesses ambientes, deve-se pensá-los na perspectiva de uma mente
+híbrida agenciada semioticamente, ou seja, conforme o modelo peirceano da semiose,
+o qual situa possibilidades lógicas variadas de relação entre signo, objeto e interpretante.
+É com base nessa perspectiva que se analisa aqui as semelhancas e diferenças entre
+os três ambientes de streaming de música mencionados, os quais apresentam sutis variações
+em suas dinâmicas sígnicas, embora se articulem de modo integrado na dinâmica semiótica do
+consumo de música online. Com isso queremos afirmar que os hábitos de consumo de música
+online adquiridos em um ambiente determinam, em certa medida, o consumo de música
+online em outro. Esse determismo, porém, é relativizado pelo modo como cada ambiente
+representa o anterior de modo peculiar, associando novos signos à dinâmica de consumo de
+música online por experiência colateral. Trata-se, assim, de uma dinâmica sígnica de consumo
+de música online constantemente expansível e aprimorável, na qual cada ambiente reflete,
+amplia e simultaneamente especifica as condições de consumo de música online.
+Os ambientes de streaming de músicas mencionados fundam-se na possibilidade de
+os internautas conhecerem novas músicas a partir dos registros de suas ações e de outros
+internautas. A afinidade é o princípio estético que delineia o agenciamento semiótico
+nesses ambientes. Como afirma Jorge (2012), a afinidade se manifesta na continuidade da
+mente. A partir desse argumento, parece coerente compreender que similaridade, afetação
+e tendência constituem-se como o primeiro, segundo e terceiro graus fenomenológicos
+do agenciamento semiótico em ambientes de streaming de músicas. As recomendações
+baseadas em similaridade, ao serem aceitas pelos internautas, geram tendências de
+consumo ancoradas na afetação recíproca. Em cada um dos ambientes de streaming
+de música mencionados, observa-se que os agenciamentos semióticos conformam não
+apenas estilos musicais a partir da similaridade de artistas e suas músicas, como também
+permitem a criação de redes de seguidores e vizinhos musicais. Essa dinâmica de afetação
+recíproca, baseada nos padrões de similaridade de gosto musical, condiciona a tendência
+de consumo musical nesses ambientes.
+Em LastFM, por exemplo, as playlists baseiam-se em álbuns completos dos
+artistas ouvidos, que são recomendados a partir de sua similaridade com outros artistas
+da biblioteca do internauta. Já Grooveshark e Deezer recomendam também playlists
+criadas por outros internautas. LastFM não disponibiliza playlists recomendadas por outros
+internautas e tem como forte aspecto da organização de seu conteúdo a atribuição de tags
+às faixas e a criação de redes de relacionamento entre os internautas.
+
+182
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+Os regimes de afetação recíproca, assim como a tendência ao compartilhamento, variam
+de um ambiente a outro. Grooveshark e Deezer disponibilizam recomendações dos internautas,
+que podem agir, assim, independentes dos agentes de interface. Já em LastFM o agente de
+interface tem papel preponderante na configuração dos regimes de afetação recíproca.
+
+Considerações finais
+Os agenciamentos semióticos em ambientes de streaming de música revelam não
+apenas a indissociabilidade sociocomunicacional entre agentes humanos e agentes de
+interface, como também a diversidade lógica de suas dinâmicas. Caracterizam-se pela
+continuidade entre as mentes humana e maquínica, pela aquisição de novos hábitos e pela
+associação sígnica baseada em afinidade, afetação recíproca e tendência de consumo de
+música online, sendo esta relacionada ao reconhecimento de padrões de consumo em cada
+ambiente. Apresentam, assim, sutis variações em suas dinâmicas sociocomunicacionais.
+Em LastFM, por exemplo, observa-se maior ênfase nas ações de recomendação
+provenientes dos agentes de interface, enquanto Grooveshark e Deezer disponibilizam
+também recomendações dos internautas. Essa diferenciação é reveladora do predomínio
+fenomenológico nesses ambientes. Em LastFM o foco nas ações de recomendações
+feitas pelo agente de interface demonstra predomínio de ancoragem na ação diádica,
+determinista. Já Grooveshark e Deezer se abrem para a indeterminação do acaso
+relacionada à aquisição imprevisível de novos hábitos por associação sígnica,
+em predomínio da ação triádica.
+A constatação, deve-se ressaltar, não separa as agências humanas das agências
+mecânicas nesses ambientes, apenas enfatiza que as dinâmicas sociocomunicacionais de
+streaming de música operam por predomínios fenomenológicos variados. Isso nos leva a crer
+que o agenciamento semiótico nesses ambientes é matizado por especificidades sígnicas que
+podem ser averiguadas pelo prisma das classes de signo de Peirce, assunto não abordado
+neste artigo. Acreditamos que esse será um desdobramento necessário deste estudo.
+
+Geane Carvalho Alzamora é professora do Departamento
+de Comunicação Social da UFMG e pesquisadora do
+Centro de Convergência de Novas Mídias. Agradece ao
+CNPq e à Fapemig por auxílios em pesquisas que dialogam
+com este artigo
+geanealzamora@ufmg.br.
+
+183
+
+ALZAMORA, G.; CORTEZ, N.M.P. Agenciamentos semióticos em ambientes de streaming de músicas: mente,
+aprendizado e continuidade. Galaxia (São Paulo, Online), n. 28, p. 173-183, dez. 2014.
+
+Natália Moura Pacheco Cortez é doutoranda no Programa
+de Pós-Graduação em Comunicação Social da UFMG e
+pesquisadora do Centro de Convergência de Novas Mídias.
+nmpcortez@gmail.com
+
+Referências
+COLAPIETRO, Vincent. Peirce’s approach to the self: A semiotic perspective on human subjectivity.
+Albany: State University of New York Press, 1989.
+DELEUZE, Gilles; GUATTARI, Félix. Kafka: por uma literatura menor. Trad. Júlio C. Guimarães. Rio
+de Janeiro: Imago, 1977.
+______. Mil platôs: capitalismo e esquizofrenia. vol. 2. São Paulo: Ed. 34, 1997.
+JOHNSON, Steven. Cultura da interface: como o computador transforma nossa maneira de criar e
+comunicar. Rio de Janeiro: Jorge Zahar, 2001.
+JORGE, Ana Maria Guimarães. Uma releitura de “agency” entrevisto pela consciência e propósito.
+Semeiosis, São Paulo, n. 4, jun. 2012. Disponível em: <www.semeiosis.com.br/uma-releitura-de“agency”-entrevisto-pela-consciência-e-propósito/> Acesso em: 26. set. 2013.
+LATOUR, Bruno. Jamais fomos modernos: ensaios de antropologia simétrica. Rio de Janeiro: Ed.
+34, 1994.
+LÉVY, Pierre. As tecnologias da inteligência: o futuro do pensamento na era da informática. Rio de
+Janeiro: Ed. 34, 1993.
+NÖTH, Winfried. Máquinas semióticas. Galáxia, São Paulo, n.1, p. 51-57, 2001. Disponível em:
+<http://revistas.pucsp.br/index.php/galaxia/article/view/1057/694> Acesso em:10 jun. 2013.
+PEIRCE, Charles Sanders. Semiótica. São Paulo: Perspectiva, 2008.
+SANTAELLA, Lúcia. O homem e as máquinas. In: DOMINGUES, Diana (org.). A Arte no século XXI:
+a humanização das tecnologias. São Paulo: Editora Unesp, 1997. p. 33-44.
+______. Os significados pragmáticos da mente e o sinequismo em Peirce. Cognitio, São Paulo,
+n. 3, p. 97-106, 2002. Disponível em: <http://revistas.pucsp.br/index.php/cognitiofilosofia/article/
+view/13254/9769> Acesso em: 05 mai. 2013.
+______. O método anticartesiano de C.S. Peirce. São Paulo: Editora Unesp, 2004.
+______. A teoria geral dos signos: como as linguagens significam as coisas. São Paulo: Cengage
+Learning, 2008.
+SANTAELLA, Lúcia; NÖTH, Winfried. Comunicação e semiótica. São Paulo: Hacker, 2004.
+SCOLARI, Carlos. Media evolution: emergence, dominance, survival, and extinction in the media
+ecology. International Journal of Communication, Los Angeles, v. 7, p. 1418-1441, 2013. Disponível
+em: < http://ijoc.org/index.php/ijoc/article/view/1919> Acesso em: 15 mai. 2013.
+
+Artigo recebido em agosto
+e aprovado em novembro de 2013.
+
+

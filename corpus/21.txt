@@ -1,0 +1,700 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/322007156
+
+Eigenface vs Random Forest: Um Estudo Comparativo em Reconhecimento
+Facial
+Conference Paper · November 2017
+
+CITATIONS
+
+READS
+
+0
+
+251
+
+3 authors, including:
+Jardel Ribeiro
+
+Rosalvo Ferreira de Oliveira Neto
+
+Universidade Federal do Vale do São Francisco (UNIVASF)
+
+Universidade Federal do Vale do São Francisco (UNIVASF)
+
+3 PUBLICATIONS 1 CITATION
+
+21 PUBLICATIONS 24 CITATIONS
+
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Granularity Transformations in Relational Databases View project
+
+All content following this page was uploaded by Rosalvo Ferreira de Oliveira Neto on 22 December 2017.
+The user has requested enhancement of the downloaded file.
+
+SEE PROFILE
+
+Eigenface vs Random Forest: Um Estudo Comparativo em
+Reconhecimento Facial
+Jardel Ribeiro de Lima1 e Rosalvo Fereira Oliveira Neto1
+1
+
+Colegiado de Engenharia da Computação
+Universidade Federal do Vale do São Francisco (Univasf)
+Caixa Postal 15.064 – 91.501-970 – Juazeiro – BA – Brasil
+jardelribeiro.lima@gmail.com, rosalvo.oliveira@univasf.edu.br
+
+Abstract. Face recognition is a biometric technique that has some advantages
+when compared to other existing biometrics techniques, for example, it is not
+an invasive method. This technique has several specific methods used for recognition that were developed in years of research, such as Eigenface. On the
+other hand, Artificial Intelligence techniques have been used in face recognition
+and have obtained good results. This paper presents a performance comparison between these two approaches, applied to two databases from two known
+benchmarks. The selected techniques were Eigenface and Random Forest. The
+comparison was performed by measuring the error rate, training time, classification time and memory consumption on the training fase.
+Resumo. Reconhecimento facial é uma técnica de biometria que apresenta algumas vantagens quando comparada com outras técnicas de biometria existentes. Esta técnica possui vários métodos especı́ficos usados para reconhecimento que foram desenvolvidos em anos de pesquisa, tal como o Eigenface.
+Por outro lado, técnicas de Inteligência Artificial vêm sendo utilizadas para reconhecimento facial e apresentam bons resultados. Este artigo apresenta uma
+comparação de performance entre essas duas abordagens, aplicadas em duas
+base de dados de dois conhecidos benchmarks. As técnicas selecionadas foram
+Eigenface e Random Forest, sendo comparado os valores de taxa de erro, tempo
+de treinamento, tempo de classificação e memória consumida no treinamento.
+
+1. Introdução
+Diversos sistemas fornecem aos seus usuários mecanismos como senhas e cartões
+magnéticos com o objetivo de identificá-los e permitir-lhes acesso a determinados recursos. No entanto, estes mecanismos não garantem que as pessoas que os possuem são
+realmente as pessoas autorizadas a acessar o sistema, pois esses recursos de segurança
+podem ser extraviados. Uma alternativa para solucionar esse problema é a utilização de
+técnicas de biometria para identificação e autenticação de usuários [Unar et al. 2014].
+Técnicas biométricas são métodos automáticos capazes de identificar uma pessoa
+com base em suas caracterı́sticas fisiológicas ou comportamentais [Wayman et al. 2005].
+Esses métodos proporcionam uma maior confiabilidade na questão de autenticação de
+usuário, uma vez que as caracterı́sticas fı́sicas de uma pessoa são únicas e intransferı́veis
+[Jain and Nandakumar 2012].
+
+Existem muitas aplicações que utilizam biometria como mecanismo de
+autenticação. Caixas eletrônicos, celulares, controle de fronteiras, casas inteligentes
+e eleições eletrônicas são alguns exemplos de aplicações que utilizam autenticação
+biométrica. O corpo humano possui várias medidas biométricas que podem ser
+usadas para reconhecimento e autenticação de indivı́duos, entre elas podemos citar: digital, ı́ris, mão, retina, odor do corpo, forma da orelha, face, entre outros
+[Bhattacharyya et al. 2009].
+Reconhecimento Facial é uma técnica biométrica que tem como objetivo verificar
+e identificar se um indivı́duo faz parte de uma base de dados de imagens de faces conhecidas [Tolba et al. 2008]. Ela possui algumas vantagens em relação às outras técnicas
+biométricas, dentre elas podemos destacar: não é um método invasivo; é um método que
+pode ser validado por uma pessoa; não está associado ao crime; os dados requeridos são
+obtidos facilmente [Tolba et al. 2008]. Tais vantagens e o fato de ser um método que possui muitas aplicações comerciais e de segurança fez com que Reconhecimento Facial recebesse atenção de várias pesquisas nos últimos anos [Zhao et al. 2003] [Jain and Li 2011].
+O estudo na área de Reconhecimento Facial tem se intensificado nas últimas
+décadas, o que resultou na criação de métodos especı́ficos para esta tarefa. Alguns
+métodos usam caracterı́sticas geométricas faciais, como a distância entre olhos e a posição
+da boca e do nariz. Outros métodos utilizam a imagem da face como um todo para realizar o reconhecimento, que é o caso do Eigenface [Jain and Li 2011]. Esses métodos
+especı́ficos serão chamados neste trabalho de métodos tradicionais de reconhecimento
+facial. Por outro lado, métodos gerais de Inteligência Artificial (IA) têm sido usados
+para reconhecimento facial por imagem e têm obtido bons resultados [Reddy et al. 2011].
+Uma caracterı́stica esperada de um sistema de reconhecimento facial é que ele possua uma
+baixa taxa de erro e um baixo custo computacional. Nesta perspectiva, este artigo realizou
+um estudo comparativo entre um método tradicional, o Eigenface, e um método de IA, o
+Random Forest. O Eigenface foi escolhido por ser um método tradicional simples e eficiente [Gupta et al. 2010], enquanto que o Random Forest foi selecionado pelo seu bom
+desempenho em relação a outros métodos de IA [Breiman 2001]. Para validar o estudo,
+foram utilizadas duas bases de dados de dois conhecidos benchmarks. A comparação foi
+realizada através do processo de validação cruzada repetido 3 vezes para definir os intervalos de confiança para a avaliação de desempenho, medido pela taxa de erro, tempo de
+classificação, tempo e memória consumida para treinamento dos modelos.
+O restante do artigo está dividido como segue. A seção 2 apresenta os trabalhos
+relacionados. A seção 3 descreve a técnicas selecionadas. A seção 4 apresenta os materiais e métodos adotados no estudo. A seção 5 apresenta os resultados obtidos. Por fim, a
+seção 6 conclui o trabalho e propõe trabalhos futuros.
+
+2. Trabalhos Relacionados
+Diversos trabalhos encontrados na literatura realizaram comparação de performance entre métodos de reconhecimento facial. No entanto, de acordo com o levantamento bibliográfico realizado nesta pesquisa, nenhum comparou o Eigenface e o Random Forest. Dentre os trabalhos mais próximos podemos destacar: [Kremic and Subasi 2016],
+[Diniz et al. 2013] e [Delac et al. 2005].
+[Kremic and Subasi 2016] realizaram um estudo comparativo de desempenho entre os classificadores Random Forest e Support Vector Machine (SVM) em reconhecimento facial. O estudo utilizou o conjunto de imagens de faces da Universidade Internacional de Burch. Esse conjunto é composto por imagens de indivı́duos com diferentes poses, expressões faciais, orientações de rosto e qualidade de imagem, algumas imagens apresentam elementos externos, como óculos. Na metodologia usada por
+[Kremic and Subasi 2016] em cada imagem era realizada a detecção da cor da pele, com o
+objetivo de remover ruı́do. A ferramenta Weka foi utilizada para a execução dos métodos.
+A métrica de avaliação de desempenho utilizada no estudo foi a taxa de erro. De acordo
+com o estudo, o classificador que obteve melhor resultado foi o Random Forest com uma
+taxa de acerto de 97.10%.
+[Diniz et al. 2013] compararam a performance de três métodos de IA em Reconhecimento Facial. Os métodos selecionados foram: o K-NN, Random Forest e o K-Star.
+O banco de imagens utilizado foi obtido pelos próprios pesquisadores e era composto por
+1280 imagens de 64 pessoas em ângulos diferentes. As imagens foram redimensionadas
+para diferente tamanhos e transformadas para a escala de cinza. Para o K-NN, foram
+utilizados 3 diferentes tipos de medidas de distância para a realização da identificação:
+distância Euclidiana, Euclidiana Normalizada e a distância de Manhattan. Os parâmetros
+dos classificadores foram empiricamente modificados com o objetivo de encontrar os melhores resultados. Para o treinamento do classificador K-NN foram utilizadas 5 imagens
+para o treinamento e 15 para testes por pessoa. Nos outros classificadores, foram utilizados o software Weka utilizando como método de avaliação 10-fold-cross-validation. Foi
+analisada a taxa de acerto apresentada por cada configuração de cada classificador a fim
+de determinar a melhor configuração. A melhor configuração de todos os classificadores
+utilizados obteve uma taxa de acerto em torno de 90%. De acordo com o estudo, o melhor
+classificador foi o K-NN com valor de k = 1 e usando a distância Euclidiana Normalizada,
+obtendo uma taxa de 91,98%.
+Motivados pela falta de material em que algoritmos de reconhecimento facial fossem comparados de maneira direta e bem detalhada, [Delac et al. 2005] realizou um estudo com quatro métodos de projeção utilizadas para reconhecimento facial. Os métodos
+foram comparados sobre as mesmas condições de pré-processamento e implementação
+dos algoritmos. Foram comparados os métodos Eigenface, Análise Discriminante Linear
+(LDA), e duas variações de Análise de Componente Independente (ICA). O conjunto de
+imagens de faces utilizados foi FERET. Esse conjunto é dividido em galeria, utilizada para
+treinamento, e quatro conjuntos de imagens de teste com diferentes caracterı́sticas. Após
+a construção dos subespaços pelos métodos citados, todas as imagens do conjunto foram
+projetadas nesses subespaços. O reconhecimento foi realizado por meio do classificador
+k-NN, utilizando as medidas de distância quarteirão (L1), Euclidiana (L2), distância cosseno (COS) e distância Mahalanobis (MAH). O Eigenface obteve os melhores resultados
+em todos conjuntos de treinamento quando utilizando a medida L1, atingindo uma taxa
+de acerto de 82.26 % para um dos conjuntos.
+Trabalhos em que os autores propuseram uma nova abordagem, seja quanto ao
+método de extração de caracterı́sticas ou ao método de reconhecimento, também realizaram comparações entre métodos de reconhecimento facial existentes e a abordagem
+proposta. Existem centenas de novas abordagens encontradas na literatura e descrever
+todas seria inviável devido a limitação de espaço do artigo, no entanto, para ilustrar este tipo de trabalho podemos citar [Gonçalves et al. 2010].
+[Gonçalves et al. 2010] propuseram um método baseado em grafos que utiliza a
+metodologia de Redes Complexas para a extração de caracterı́sticas da imagem. Redes
+Complexas é um campo de pesquisa que combina análise de grafos e fı́sica estatı́stica.
+Para comprovar a eficiência do método proposto, foi realizado um estudo comparativo
+entre a nova abordagem e quatro métodos tradicionais: Eigenface, Fisherface, Laplancianface e o Neighborhood Preserving Embedding (NPM). A base de dados utilizada foi
+o conjunto público de imagens de face ORL do Laboratório AT&T de Cambridge, que
+é composta por 400 imagens de 40 indivı́duos. Os resultados mostram que o método
+proposto obteve um taxa de acerto superior aos demais métodos, 93,64%.
+Algumas limitações foram observadas nos trabalhos apresentados, dentre elas podemos destacar: os trabalhos utilizaram apenas uma base de imagens nos experimentos, o que não permite fazer uma maior generalização dos resultados obtidos; o trabalho de [Diniz et al. 2013] não deixa clara a metodologia utilizada e apenas o trabalho de
+[Delac et al. 2005] realizou uma análise estatı́stica para validar os resultados.
+
+3. Técnicas Selecionadas
+A seguir, serão descritos os dois métodos que foram comparados nesse estudo: o Eigenfaces, e o Random Forest.
+3.1. Eigenfaces
+Eigenface é um método de reconhecimento facial proposto por [Turk and Pentland 1991].
+Este método usa a Análise de Componentes Principais (do Inglês Principal Component Analysis, PCA) para extrair caracterı́sticas faciais que possuem um alto grau
+de variância e construir um espaço dimensional reduzido com tais caracterı́sticas.
+Ele é um dos métodos mais simples e eficientes na área de reconhecimento facial [Gupta et al. 2010] e é usado como base de comparação em vários trabalhos
+[Heseltine et al. 2003][He et al. 2005a][He et al. 2005b] [Cai et al. 2006].
+A Figura 1 mostra o fluxograma do Eigenface. Dado um conjunto de imagens
+de faces, primeiro, cada imagem que é uma matriz de pixel é transformada em um vetor
+de pixel, no qual cada posição representa um pixel da imagem. Em seguida, é calculada
+uma imagem média para que se possa construir um vetor com a variância existente entre
+o vetor que representa a face original e o vetor que representa a face média para cada face
+do conjunto [Georgescu 2011]. A partir dos vetores de variância de cada imagem de face
+é construı́da a matriz de covariância. O próximo passo é encontrar os autovetores para a
+matriz de covariância. No Eigenface, esses autovetores são chamados de eigenfaces, pois
+está associado ao fato de que quando os autovetores são montados na forma matricial
+é formado algo parecido com uma face [Gupta et al. 2010]. A Figura 2 mostra cinco
+eigenfaces de um conjunto de imagens de face. A matriz de covariância tem dimensões
+D2 xD2 , sendo D a largura ou altura da imagem em pixel. Para um conjunto de imagens
+de tamanho 256x256 teremos uma matriz de covariância com 65.536 autovetores, que
+não é computacionalmente eficiente, pois a maioria desses autovetores não são relevantes
+[Gupta et al. 2010]. São realizadas algumas manipulações matemáticas com matrizes e é
+montada uma outra matriz de covariância M xM , sendo M o número de imagens da base
+de imagens. São escolhidos N eigenfaces que possuem os autovalores mais elevados, essas N eigenfaces formarão o espaço de face [Heseltine 2005]. Uma imagem de face
+será representada por uma combinação linear dessas N eigenfaces. O reconhecimento
+no Eigenface será realizado através de dois passos: 1) a projeção da imagem no espaço
+de faces [Georgescu 2011] e 2) calculando a distância euclidiana entre essa projeção da
+imagem e as projeções das classes das faces conhecidas.
+
+Figura 1. Fluxograma da construção do Eigenfaces.
+
+Figura 2. Eigenfaces de um conjunto de imagens de faces [Heseltine 2005].
+
+3.2. Random Forest
+O Random Forest é um classificador de aprendizagem combinada (ensemble learning)
+do tipo bagging1 proposto por [Breiman 2001]. Esse tipo de classificador é uma junção
+de vários classificadores responsáveis por gerar uma saı́da de forma individual que será
+combinada com o objetivo de apresentar uma classificação final [Kouzani et al. 2007].
+O ensemble learning combina classificadores que isoladamente não apresentam um bom
+desempenho, mas quando agrupados são capazes de obter um desempenho melhor.
+No contexto do ensemble learning, Random Forest é um conjunto de árvores de
+decisão que compõe uma floresta. Cada árvore da floresta será construı́da independentemente de acordo com o fluxograma da Figura 3.
+Para cada árvore é obtido uma amostra bootstrap2 do conjunto de treinamento,
+para cada nó da árvore m variáveis são aleatóriamente selecionadas. Em seguinda, é
+1
+2
+
+Combinação de Bootstrap com aggregating proposto por [Breiman 1996].
+Amostras com repetição e de mesmo tamanho [Efron 1979].
+
+Figura 3. Fluxograma da construção do Random Forest.
+
+usada, entre essas m variávies, a que proporciona a melhor ramificação do nó, isso será
+feito até que a árvore seja completamente construı́da. Esse processo se repete até que todas as árvores da floresta sejam construı́das. Na fase de classificação, cada árvore receberá
+o dado a ser classificado e votará em qual classe esse dado pertence, como cada árvore
+poderá gerar uma saı́da diferente, a floresta escolherá a classe com maior quantidade de
+votos (aggregating) [Khan et al. 2010].
+De acordo com [Breiman 2001], o Random Forest tem um bom desempenho
+quando comparado com outros classificadores tradicionais, como o SVM e redes neurais. Uma das principais vantagens do Random Forest é sua facilidade de uso, uma
+vez que só possui dois parâmetros: número de árvores da floresta e número de atributos escolhidos aleatoriamente para determinar a melhor ramificação dos nós das árvores
+[Liaw and Wiener 2002]. [Belle 2008] pontua mais algumas vantagens do Random Forest: aprendizado direto; representação local; classificação com oclusão; paralelismo e
+rápido tempo de treinamento.
+
+4. Materiais e Métodos
+Essa seção descreve os materiais e métodos que foram utilizados paro o desenvolvimento
+do presente trabalho. Como o principal objetivo desta pesquisa foi realizar um estudo
+comparativo entre as técnicias selecionadas de reconhecimento facial, o formalismo apresentado nesta seção é crucial para a relevância do artigo.
+4.1. Bases de Imagens
+Foram utilizadas duas bases de dados. A primeira base de imagens de face escolhida foi
+a ORL do Laboratório AT&T de Cambridge [Cambridge 2002]. Ela é uma base simples
+onde as imagens estão em escala de cinza e o rosto dos indivı́duos estão bem enquadrados.
+Essa base é composta por 400 imagens de 40 indivı́duos, tendo 10 fotos por indivı́duo.
+Algumas imagens de indivı́duos possuem pequenas variações de iluminação, diferentes
+expressões faciais (olhos fechados/abertos, sorrindo/sério), detalhes faciais (usando/não
+usando óculos) e em alguns casos as imagens de um indivı́duo foram obtidas em diferentes
+datas. A Figura 4 é uma pequena amostras do base ORL.
+
+Figura 4. Amostra de imagens da base ORL [Cambridge 2002].
+
+A segunda base de imagens de face escolhida foi da Universidade de Yale
+[Yale 1997]. Ela é composta por 165 imagens em escala de cinza de 15 indivı́duos. São
+11 imagens por indivı́duo com variações de iluminação, expressão facial e usando ou não
+óculos. A Figura 5 é uma amostra da base de Yale. Os criadores da base disponibilizaram alguns tratamentos das imagens, por exemplo, existe um tratamento em que todas as
+imagens tiveram as faces centralizadas em imagens de 195x231 pı́xeis, essa foi a variação
+usada neste experimento.
+
+Figura 5. Amostra de imagens da base de Yale [El Aroussi 2009].
+
+4.2. Métricas de Avaliação de Desempenho
+A comparação entre os métodos utilizou as seguintes métricas de avaliação de desempenho: 1) a taxa de erro 3 para medir a acurácia, 2) tempo para treinamento do modelo, 3)
+tempo para classificar uma nova face e 4) consumo de memória durante o treinamento do
+modelo. Essas três últimas foram selecionadas para comparar a eficiência computacional
+entre os dois métodos.
+4.3. Método de Avaliação de Desempenho
+O método de Validação Cruzada k-fold é uma forma amplamente aceita para dividir uma
+única amostra [Jain and Mao 2000] em k conjuntos de testes estatisticamente independentes, permitindo a construção de intervalos de confiança para a medida de desempenho
+utilizada como critério de avaliação. Para o estudo foi utilizado o método de Validação
+Cruzada com k = 5. Cada base de dados foi divida em 5 conjuntos (folds) de mesmo tamanho, sendo 4 folds usados para treinamento e um fold usado para teste. O treinamento
+foi repetido até que todos os folds fossem usados para teste. O método Validação Cruzada
+k-fold foi repetido 3 vezes para obtenção de uma amostra maior para construção do teste
+de hipóteses. A Figura 6 representa a divisão de uma base imagens em 5 folds.
+3
+
+
+Razão entre a quantidade de faces incorretamente classificadas e a quantidade total de faces classificadas.
+
+Figura 6. Representação da separação de uma base de imagens usado 5-foldcross-validation. Para cada indivı́duo da base de imagens (S1 a Sn) 2 imagens
+serão escolhidas para formar cada fold
+
+4.4. Teste t-Student emparelhado
+O teste t-Student emparelhado é um caso especial de teste de hipóteses que
+se aplica quando as observações nas duas populações de interesse são coletadas em pares, tendo cada par de observações tomado sob condições homogêneas
+[Montgomery and Runger 2010]. Para este estudo, as métrica de desempenho de interesse foram a diferença na média da taxa de erro, consumo de memória no treinamento,
+tempo de treinamento e tempo de renconhecimento obtido por cada uma das técnicas
+quando avaliadas para cada conjunto de teste. A configuração do teste utilizada neste
+estudo está detalhada abaixo.
+ Hipótese nula: µ1 − µ2 = 0
+ Hipótese alternativa: µ1 < µ2
+Onde
+ µ1 representa a média da métrica que obteve o menor resultado;
+ µ2 representa a média da métrica que obteve o maior resultado.
+4.5. Configuração Experimental
+Os métodos comparados neste estudo foram executados a partir de bibliotecas gratuitas
+e de código aberto. O Eigenface foi utilizado por meio da biblioteca OpenCV 4 versão
+3.0. O Random Forest foi executado por meio da biblioteca Python scikit-learn5 versão
+0.18.1. As medidas de consumo de memória dos treinamentos dos modelos foram obtidas
+pela biblioteca Python memory profiler6 versão 0.47, as medidas de memória são dadas
+em MiB (1 MiB ∼
+= 1,05 MB ). Para evitar problemas causados por incompatibilidade de
+software e diferentes configurações de hardware, todos os experimentos foram executados
+na mesma máquina. Um computador Intel Core i3 CPU M 350 2.27 GHz, com 2,9 GiB
+de memória RAM, com o sistema operacional Ubuntu 16.04 de 32 bits e HD de 500 GB
+e 5400 rpm.
+Os parâmetros dos métodos estudados influenciam em sua performance, por isso
+foram escolhidos parâmetros baseados em recomendações encontradas na literatura para
+4
+
+http://opencv.org/
+http://scikit-learn.org
+6
+https://pypi.python.org/pypi/memory profiler
+5
+
+cada método nas duas bases de dados. As recomentações utilizadas foram: [Yang 2002]
+para o Eigenface na base de ORL e na base de Yale. [Kouzani et al. 2007] para o Random Forest na base ORL. Para o Random Forest na base de Yale não foram encontradas recomendações, por isso foi realizado um estudo preliminar para definição destes
+parâmetros. A Tabela 1 mostra os parâmetros utilizado em cada método para as duas bases de dados. O código fonte necessário para execução dos experimentos realizados neste
+estudo está diponı́vel em https://github.com/jardel-lima/FaceRecognitionExperiment. A
+Figura 7 exibe um resumo da metodologia experimental adotada no estudo.
+Tabela 1. Valores dos parâmetros dos métodos utilizados.
+
+Base
+Método
+Eigenface
+Random Forest
+
+ORL
+40 eigenfaces
+255 árvores
+9 variáveis aleatórias
+
+Yale
+30 eigenfaces
+100 árvores
+212 variáveis aleatórias
+
+Figura 7. Procedimento para construção e treinamento dos modelos usando o
+Eigenface e o Random Forest.
+
+5. Resultados
+As simulações foram realizadas de acordo com a configuração experimental descrita anteriormente para cada base de dados. A Figura 8 ilustra os gráficos com as métricas
+de avaliação de desempenho para a base de dados ORL. Como pode ser observado, o
+Random Forest apresentou um maior poder preditivo, pois sua taxa de erro foi sistematicamente inferior a taxa de erro apresentada pelo Eigenface. Os gráficos mostram também
+que o Random Forest possui um custo computacional menor do que o Eigenface para
+construção da solução, pois apresentou um menor tempo para o treinamento do modelo
+
+Taxa de Erro ()
+
+5
+4
+3
+2
+1
+0
+0
+
+2
+
+4
+
+6
+
+8
+
+10 12 14 16
+
+Tempo de Treinamento (s)
+
+Figura 8. Resultados do experimento Eigenface vs Random Forest com a base
+ORL.
+4
+3
+2
+1
+0
+0
+
+2
+
+4
+
+6
+
+0.2
+0.15
+0.1
+5 · 10−2
+0
+0
+
+2
+
+4
+
+6
+
+8
+
+10 12 14 16
+
+Fold
+
+10 12 14 16
+
+Fold
+
+Consumo de Memória (MiB)
+
+Tempo de Classificação (s)
+
+Fold
+
+8
+
+60
+40
+20
+0
+0
+
+2
+
+4
+
+6
+
+8
+
+10 12 14 16
+
+Fold
+
+Eigenface Random Forest
+
+e um menor consumo de memória no treinamento. Por outro lado, o Eigenface foi mais
+rápido para classificar uma imagem após o modelo ser construı́do.
+A Tabela 2 exibe o resumo dos resultados obtidos no teste t-Student emparelhado
+com a base ORL. O Random Forest apresentou uma taxa de erro 40,06% menor, foi
+47,19% mais rápido para construção do modelo e consumiu 75,06% menos memória.
+No entanto, o Eigenface foi 21400% mais rápido para classificar uma imagem após a
+construção da solução. Uma vez que o p-value é menor que 0.05 para todas as métricas,
+os dados indicam que o Random Forest possui um maior poder preditivo, um menor
+custo computacional para construção da solução, e um maior custo computacional para
+classificação de uma nova imagem do que o Eigenface com um nı́vel de confiança de
+95%.
+Tabela 2. Resultado do teste t-Student emparelhado com os dados do experimento com a base ORL.
+
+Métrica
+Taxa de erro (%)
+Tempo de treinamento (s)
+Consumo de memória
+para treinamento (MiB)
+Tempo de classificação (s)
+
+µ1
+1,583
+2,276
+
+µ2
+2,666
+4,310
+
+µ1 - µ2
+-1,083
+-2,034
+
+p-value
+0.01334
+2.2e-16
+
+19,239
+
+77,155
+
+-57,916
+
+7.7e-15
+
+0,001
+
+0,215
+
+-0,214
+
+2.2e-16
+
+A Figura 9 ilustra os gráficos com as métricas de avaliação de desempenho para a
+base de dados Yale. Como pode ser observado, os gráficos corroboram com os resultados
+
+Tabela 3. Resultado do teste t-Student emparelhado com os dados do experimento com a base de Yale.
+
+Métrica
+Taxa de erro (%)
+Tempo de treinamento (s)
+Consumo de memória
+para treinamento (MiB)
+Tempo de classificação (s)
+
+µ1
+6,222
+2,225
+
+µ2
+16,666
+2,882
+
+µ1 - 2
+-10,444
+-0,657
+
+p-value
+5.733e-05
+2.2e-16
+
+23,623
+
+139,91
+
+-116,287
+
+2.2e-16
+
+0,003
+
+0,084
+
+-0,081
+
+2.2e-16
+
+obtidos com a base de dados ORL. A Tabela 3 exibe o resumo dos resultados obtidos
+no teste t-Student emparelhado com a base Yale. O Random Forest apresentou uma taxa
+de erro 62,67% menor, foi 22,8% mais rápido para construção do modelo e consumiu
+83,12% menos memória. No entanto, o Eigenface foi 2700% mais rápido para classificar
+uma imagem após a construção da solução. Uma vez que o p-value é menor que 0.05
+para todas as métricas, os dados indicam que o Random Forest possui um maior poder
+preditivo, um menor custo computacional para construção da solução, e um maior custo
+computacional para classificação de uma nova imagem do que o Eigenface com um nı́vel
+de confiança de 95%.
+
+35
+30
+25
+20
+15
+10
+5
+0
+0
+
+2
+
+4
+
+6
+
+8
+
+10 12 14 16
+
+Tempo de Treinamento (s)
+
+Taxa de Erro (%)
+
+Figura 9. Resultados do experimento Eigenface vs Random Forest com a base
+YALE.
+3
+2.5
+2
+1.5
+1
+0.5
+0
+0
+
+2
+
+4
+
+6
+
+·10−2
+8
+6
+4
+2
+0
+0
+
+2
+
+4
+
+6
+
+8
+
+10 12 14 16
+
+Fold
+
+10 12 14 16
+
+Fold
+Comsumo de Memória (MiB)
+
+Tempo de Classificação (s)
+
+Fold
+
+8
+
+140
+120
+100
+80
+60
+40
+20
+0
+0
+
+2
+
+4
+
+6
+
+8
+
+10 12 14 16
+
+Fold
+
+Eigenface Random Forest
+
+6. Conclusões
+Este trabalho apresentou uma comparação entre duas abordagens para Reconhecimento
+Facial, Eigenface e Random Forest. A comparação foi realizada utilizando dois bancos
+de dados considerados benchmarks para a área. Como metodologia experimental, foi aplicado o teste t-Student emparelhado unicaudal sobre o desempenho medido por quatro
+métricas de avaliação de desempenho nos conjuntos de teste gerados pelo processo de
+validação cruzada 5 fold repetido 3 vezes. O estudo mostrou que o Random Forest supera
+de forma estatisticamente significativa o Eigenface em poder preditivo e custo de treinamento com um nı́vel de confiança de 95%. No entanto, apresentou um maior tempo para
+classificação após a construção do modelo.
+Os resultados obtidos corroboram com resultados recentes que mostram que o
+Random Forest é bem adequado para problemas com alta-dimensionalidade e com amostras pequenas, que foi a configuração das bases de dados utilizadas neste estudo. O maior
+poder preditivo do Random Forest pode ser justificado por sua estratégia de criar ensembles de árvores de decisão. Outro resultado importante deste estudo, é que ele mostra que
+soluções de Reconhecimento Facial com o Random Forest apresentam um custo computacional competitivo e que podem ser utilizadas em equipamentos com um menor poder
+computacional.
+Como trabalhos futuros, este estudo será ampliado para que o equipamento de
+execução dos experimentos seja um smartphone de preço acessı́vel, que em geral, possui uma configuração menor. Desta forma, será possı́vel verificar se os resultados serão
+mantidos. Além disso, considerar mais dois métodos de Inteligência Artificial e mais uma
+base de dados.
+
+Referências
+Belle, V. (2008). Detection and recognition of human faces using random forests for a
+mobile robot. Master of Science Thesis, Academic Knowledge-based Systems Group.
+Bhattacharyya, D., Ranjan, R., Alisherov, F., Choi, M., et al. (2009). Biometric authentication: A review. International Journal of u-and e-Service, Science and Technology,
+2(3):13–28.
+Breiman, L. (1996). Bagging predictors. Machine learning, 24(2):123–140.
+Breiman, L. (2001). Random forests. Machine learning, 45(1):5–32.
+Cai, D., He, X., Han, J., and Zhang, H.-J. (2006). Orthogonal laplacianfaces for face
+recognition. IEEE transactions on image processing, 15(11):3608–3614.
+Cambridge, A. L. (2002). The database of faces. Acesso em: 02 mar. 2017.
+Delac, K., Grgic, M., and Grgic, S. (2005). Independent comparative study of pca, ica,
+and lda on the feret data set. International Journal of Imaging Systems and Technology,
+15(5):252–260.
+Diniz, F. A., Neto, F. M. M., Júnior, F. d. C. L., and Fontes, L. M. O. (2013). Redface:
+um sistema de reconhecimento facial baseado em técnicas de análise de componentes
+principais e autofaces. Revista Brasileira de Computação Aplicada, 5(1):42–54.
+Efron, B. (1979). Bootstrap methods: another look at the jackknife. The annals of Statistics, pages 1–26.
+El Aroussi, M. (2009). Information fusion towards a robust face recognition system.
+Georgescu, D. (2011). A real-time face recognition system using eigenfaces. Journal of
+Mobile, Embedded and Distributed Systems, 3(4):193–204.
+
+Gonçalves, W. N., de Andrade Silva, J., and Bruno, O. M. (2010). A rotation invariant
+face recognition method based on complex network. In Iberoamerican Congress on
+Pattern Recognition, pages 426–433. Springer.
+Gupta, S., Sahoo, O., Goel, A., and Gupta, R. (2010). A new optimized approach to face
+recognition using eigenfaces. Global Journal of Computer Science and Technology,
+10(1).
+He, X., Cai, D., Yan, S., and Zhang, H.-J. (2005a). Neighborhood preserving embedding. In Computer Vision, 2005. ICCV 2005. Tenth IEEE International Conference on,
+volume 2, pages 1208–1213. IEEE.
+He, X., Yan, S., Hu, Y., Niyogi, P., and Zhang, H.-J. (2005b). Face recognition using laplacianfaces. IEEE transactions on pattern analysis and machine intelligence, 27(3):328–
+340.
+Heseltine, T., Pears, N., Austin, J., and Chen, Z. (2003). Face recognition: A comparison
+of appearance-based approaches. In Proc. VIIth Digital image computing: Techniques
+and applications, volume 1.
+Heseltine, T. D. (2005). Face recognition: Two-dimensional and three-dimensional techniques. PhD thesis, University of York.
+Jain, A. K. and Li, S. Z. (2011). Handbook of face recognition. Springer.
+Jain, A. K. and Nandakumar, K. (2012). Biometric authentication: System security and
+user privacy. IEEE Computer, 45(11):87–92.
+Khan, R., Hanbury, A., and Stoettinger, J. (2010). Skin detection: A random forest approach. In Image Processing (ICIP), 2010 17th IEEE International Conference on, pages
+4613–4616. IEEE.
+Kouzani, A., Nahavandi, S., and Khoshmanesh, K. (2007). Face classification by a random forest. In TENCON 2007-2007 IEEE Region 10 Conference, pages 1–4. IEEE.
+Kremic, E. and Subasi, A. (2016). Performance of random forest and svm in face recognition. Int. Arab J. Inf. Technol., 13(2):287–293.
+Liaw, A. and Wiener, M. (2002). Classification and regression by randomforest. R news,
+2(3):18–22.
+Montgomery, D. C. and Runger, G. C. (2010). Applied statistics and probability for
+engineers. John Wiley & Sons.
+Reddy, N. V., Krishna, D. A., Reddy, P. S., and Shirisha, R. (2011). Neural network
+based intelligent local fac e recognition using local pattern averaging. In 2011 3rd
+International Conference on Electronics Computer Technology, pages 363–367.
+Tolba, A., El-Baz, A., and El-Harby, A. (2008). Face recognition: A literature review.
+Turk, M. A. and Pentland, A. P. (1991). Face recognition using eigenfaces. In Computer
+Vision and Pattern Recognition, 1991. Proceedings CVPR’91., IEEE Computer Society
+Conference on, pages 586–591. IEEE.
+Unar, J., Seng, W. C., and Abbasi, A. (2014). A review of biometric technology along
+with trends and prospects. Pattern recognition, 47(8):2673–2688.
+Wayman, J., Jain, A., Maltoni, D., and Maio, D. (2005). An introduction to biometric
+authentication systems. Springer.
+Yale, U. (1997). The yale face database. Acesso em: 02 jun. 2017.
+Yang, M.-H. (2002). Kernel eigenfaces vs. kernel fisherfaces: Face recognition using
+kernel methods. In Fgr, volume 2, page 215.
+Zhao, W., Chellappa, R., Phillips, P. J., and Rosenfeld, A. (2003). Face recognition: A
+literature survey. ACM computing surveys (CSUR), 35(4):399–458.
+
+View publication stats

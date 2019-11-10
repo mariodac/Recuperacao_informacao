@@ -1,0 +1,1137 @@
+Revista Brasileira de Meteorologia, v. 31, n. 1, 11-23, 2016
+DOI: http://dx.doi.org/10.1590/0102-778620140092
+
+rbmet.org.br
+
+Artigo
+
+Modelagem Hidrológica Estocástica Aplicada ao Rio Tocantins
+para a Cidade de Marabá-PA
+Renata Kelen Cardoso Câmara1, Edson José Paulino Rocha1, João Marcelo Brazão Protázio2,
+Joaquim Carlos Queiroz1, Wanda Maria do Nascimento Ribeiro1, Ionara Santos Siqueira1,
+Aline Maria Meiguins De Lima1
+1
+
+2
+
+Instituto de Geociências, Universidade Federal do Pará, Belém, PA, Brasil.
+Instituto de Ciências Exatas e Naturais, Universidade Federal do Pará, Belém, PA, Brasil.
+Recebido 21/08/2013 – Aceito 4/5/2015
+
+Resumo
+Estudos na área da hidrologia mostraram que podemos evitar desastres naturais através de previsões hidrológicas. Nesse
+trabalho foi utilizada a metodologia de Box-Jenkins de séries temporais multivariadas para previsão diária de nível
+fluviométrico do rio Tocantins para o município de Marabá- PA, que sofre anualmente com eventos de enchentes,
+ocasionado pelo aumento periódico do rio Tocantins e pela situação de vulnerabilidade da população que residem em
+áreas de riscos. Foram utilizados dados de níveis diários observados nas estações fluviométricas de Marabá e Carolina e
+Conceição do Araguaia da Agência Nacional de Águas (ANA), do período de 01/12/2008 a 31/03/2011. Evidenciou-se
+que o modelo ajustado conseguiu capturar a dinâmica das séries temporais, com bons prognósticos para o período de sete
+dias, com erro absoluto máximo de 0,08m, e com precisão na previsão acima de 99,00%. Assim, a pesquisa mostrou que
+o modelo de previsão teve um bom ajuste apresentando bons resultados, podendo ser utilizado como ferramentas de
+apoio para Defesa Civil, auxiliando no planejamento e preparo de ações preventivas para o município de Marabá.
+Palavras chave: bacias hidrográficas, modelos estocásticos multivariados, previsões.
+
+Hydrological Stochastic Modeling applied to the Tocantins River
+to the City of Maraba (PA)
+Abstract
+Hydrology studies show that it is possible to avoid natural disasters through the proper use of hydrological forecasts. In
+this work we used the Box-Jenkins Methodology (Time Series Analysis) to model the daily level of the Tocantins river
+in the city of Maraba - PA, in order to predict floods caused by its regular increase, an event that usually puts the resident
+population of risk areas in vulnerable situations. For the study, we used the daily levels of data observed in gauged stations of Maraba and Carolina and Conceição do Araguaia National Water Agency (ANA), the period of 01/12/2008 to
+31/03/2011. It was evident that the adjusted model was able to capture the dynamics of time series with good prognosis
+for a period of seven days with a maximum absolute error of 0.08 m and with precision in forecasting over 99%. The
+forecasting model showed good results and can then be used as support tools for Civil Defense, assisting in the planning
+and preparation of preventive actions for the city of Maraba.
+Keywords: river basins, multivariate stochastic models, forecast.
+
+1. Introdução
+Os modelos de previsão com o objetivo de alertar a
+sociedade sobre a ocorrência de eventos extremos devem
+ser continuamente aperfeiçoados para geração de informações que deem suporte às medidas de prevenção de
+impactos gerados pela ação de fenômenos naturais (en-
+
+chentes, estiagem e outros), minimizando assim os danos e
+prejuízos ocasionados as populações afetadas. Portanto,
+estudos na área da hidrologia mostraram que se podem
+evitar grandes desastres naturais através de previsões hidrológicas, sendo que as primeiras experiências de previsão
+estão relacionadas com a busca do homem em prever a
+ocorrência de enchentes (Rodda, 2000).
+
+Autor de correspondência: Renata Kelen Cardoso Câmara, renatakelenc@gmail.com
+
+12
+
+Segundo Tucci (2002) a modelagem é uma ferramenta desenvolvida para entender, representar e prever o
+comportamento do ciclo hidrológico de uma bacia hidrográfica. A simulação hidrológica é limitada pela heterogeneidade física da bacia e pelos processos envolvidos,
+sendo que o modelo por si só não é um objetivo, mas uma
+ferramenta para alcançá-lo. Este é usado para antecipar os
+eventos críticos, com a possibilidade, por exemplo, avaliar
+os impactos da urbanização de uma bacia para que se
+possam efetivar as medidas preventivas necessárias.
+A estrutura do modelo hidrológico é determinada a
+partir do objetivo que se pretende alcançar; podendo ser
+adotados modelos físicos (determinísticos e chuva-vazão)
+e/ou estocásticos (Daniel et al., 2011); os primeiros procuram representar os processos físicos de transformação de
+chuva em vazão, enquanto que os modelos estocásticos
+baseiam-se na análise da estrutura de dependência temporal
+das séries de afluências.
+Nos modelos físicos, as previsões são obtidas a partir
+de dados de precipitações observadas ou estimadas, enquanto que os modelos estocásticos contém variáveis aleatórias que seguem distribuições probabilísticas que permitem previsões de vazões para o planejamento de médio e
+curto prazos. Carvalho (2001) empregando séries diárias de
+vazões afluentes aos aproveitamentos de Jupiá, Sobradinho, Tucuruí e Foz do Areia, utilizou uma modelagem
+estocástica, para previsão de curto prazo (7 dias).
+Santos (2008) desenvolveu um modelo hidrometeorológico para a Bacia do rio Tocantins (TO), com a finalidade de prever enchentes (dezembro a maio) e estiagens
+(junho a novembro) para Marabá-PA, onde foi usado um
+modelo estatístico empírico e estocástico baseado no método de regressão linear múltipla. Neste foram empregadas
+séries temporais fluviométricas (vazão) e pluviométricas
+(chuva) como ferramenta principal do modelo para previsão com antecedência de 2 e 4 dias para enchente e de 3 e 5
+para estiagem.
+Modelos tipo ARIMA foram utilizados por Modarres
+e Eslamian (2006) para modelar vazões médias mensais do
+rio Zayandehrud, localizado na Província de Isfahan Ocidental, no Irã. Lucas et al. (2009) aplicaram dois modelos,
+um determinístico e outro estocástico do tipo ARIMA, para
+simular a vazão média mensal das sub-bacias da região
+hidrográfica do Xingu no Estado do Pará. Segundo os
+autores, o modelo estocástico ARIMA conseguiu capturar a
+dinâmica das séries temporais, apresentando resultados
+muito satisfatórios na simulação da vazão média mensal.
+Souza (1989) afirma que os modelos multivariados
+(ARIMA e Função de Transferência) são modelos capazes
+de realizar várias previsões ao mesmo tempo, as séries de
+interesse são explicadas em função não apenas do comportamento da própria série, mas também de outras séries,
+permitindo, desta forma, obter relações de interdependência e causalidade. Esses modelos apresentam uma estrutura
+
+Câmara et al.
+
+capaz de estimar a curto, médios e longos prazos diversas
+séries simultaneamente.
+Lucas (2007) sugere que o modelo deve ser aplicado
+com cautela no período chuvoso, quando ocorrem eventos
+extremos de precipitação e consequentemente vazões de
+pico. As pesquisas realizadas com a utilização da metodologia de Box & Jenkins (Anderson, 1977) indicam que a
+mesma consegue simular o comportamento do nível (vazão) dos rios para uma previsão de curto prazo (Ghanbarpour et al., 2010; Meghea, 2011; Musa, 2013).
+Musa (2013) afirma que os modelos de series temporais multivariados que usam função de transferência são
+modelos capazes de realizar boas previsões. Neste caso, as
+séries de interesse são explicadas em função não apenas do
+comportamento da própria série, mas também de outras
+séries, permitindo a obtenção de relações de interdependência e causalidade, fatores estes necessários no processo
+de previsão de ocorrências de cheias.
+Considerando a recorrente frequência de eventos de
+cheias nos rios amazônicos que trazem consequências sociais e econômicas em função do processo de ocupação nas
+margens das drenagens que cruzam os centros urbanos, este
+trabalho teve por objetivo desenvolver um modelo hidrológico estocástico de curto prazo que realize previsões
+diárias, aplicado a sede municipal de Marabá (bacia hidrográfica do rio Tocantins) no Estado do Pará, que anualmente é afetada pela cheia do rio Tocantins com geração
+direta de diversos prejuízos socioeconômicos.
+Para tanto, utilizou-se o modelo hidrológico empírico
+e estocástico, com base em dados diários de níveis e na
+metodologia de Box e Jenkins (BJ) ou ARIMA “Auto Regressive Integrated Moving Average”. Este método tem
+como vantagem em relação aos outros, usar o modelo de
+regressão linear, e ainda utilizar o modelo ARIMA para
+suavização de erros aleatórios.
+
+2. Materiais e Métodos
+2.1 Caracterização da área de estudo
+A área de aplicação do modelo está inserida na
+Região Hidrográfica Tocantins-Araguaia (RHTA) com
+cerca de 920.000 km2 (aproximadamente 11% do território
+nacional) abrangendo os estados de Goiás, Tocantins, Pará,
+Maranhão, Mato Grosso e Distrito Federal.
+O clima da RHTA é tropical, com temperatura média
+anual de 26 °C, apresentando dois períodos climáticos bem
+definidos: o chuvoso (outubro a abril), que corresponde a
+aproximadamente mais de 90% da precipitação, com existência de alguns dias secos entre janeiro e fevereiro (veranico); e o seco (maio a setembro), com baixa umidade
+relativa. No rio Tocantins, a época de cheia estende-se de
+outubro a abril, com pico em fevereiro, no curso superior, e
+em março, nos cursos médio e inferior; seu principal
+afluente, o Araguaia, apresenta cheias mais pronunciadas,
+que ocorrem com um mês de defasagem em relação ao
+
+Modelagem Hidrológica Estocástica Aplicada ao Rio Tocantins para a Cidade de Marabá-P
+
+Tocantins e o período de estiagem é bem definido, com
+vazões mínimas em junho e julho (Costa et al., 2003;
+Brasil, 2006; Fan et al., 2014).
+A área de aplicação do modelo foi na sede do município de Marabá-PA (05º21’54” S e 49º42’30” O), situada
+na confluência dos rios Tocantins e Itacaiúnas (Figura 1). O
+município de Marabá compreende uma área de
+15.092,268 km2 e cerca de 233.462 habitantes (censo
+demográfico 2010 do Instituto Brasileiro de Geografia e
+Estatística) sendo a nona cidade mais populosa da Amazônia. A cidade desenvolveu-se a partir do Distrito Marabá
+Pioneira e formada basicamente por 5 núcleos urbanos:
+Marabá Pioneira, Cidade Nova, São Felix, Morada Nova e
+Nova Marabá, sendo interligados por rodovias e separados
+por rios ou áreas alagáveis.
+Os registros de nível do rio Tocantins em Marabá
+tiveram início no ano de 1972, pelo Departamento Nacional
+de Água e Energia Elétrica (DNAEE). Desde o início das
+observações até a atualidade, em apenas 5 eventos de cheia
+(1972 - 9.52 m, 1976 - 8.99 m, 1996 - 8.00, 1998 - 7.02 m e
+1999 - 9.41 m) o nível de alerta definido pela Defesa Civil
+(10 m) não foi ultrapassado.
+Os períodos das maiores cheias foram marcados por
+valores superiores a 14 m, com níveis de: 14.47 m (1978),
+14.45 m (1979), 17.42 m (1980) e 14.40 (1990) m. Os
+maiores níveis registrados ocorreram em 1980 e 1990.
+Foram empregados como referência as estações fluvio-
+
+13
+
+métricas instaladas em Carolina e Marabá (no rio
+Tocantins) e de Conceição do Araguaia (no rio Araguaia).
+2.2 Base de dados
+No desenvolvimento do modelo de série temporal
+foram utilizados os níveis médios diários de 858 observações entre 01 dezembro de 2008 a 07 de abril de 2011
+(Sistema Hidroweb/Agência Nacional de Águas). E executados os procedimentos de calibração do modelo (456
+observações - 01 de janeiro de 2010 a 31 de março de
+2011), previsão para sete dias (01 a 07 de abril a 2011) e
+comparação para o mesmo período de previsão, como forma de validação do modelo.
+2.3 Metodologia
+Os modelos ARIMA (Auto Regressive Integrated
+Moving Average) foram propostos no decorrer da década
+de 1960, pelos professores George Edward Pelham Box e
+Gwilym M. Jenkins (Box e Jenkins, 1976; Anderson, 1977;
+Fischer, 1982; Morettin; Toloi, 2006). Para aplicação da
+metodologia de BJ, tem-se a necessidade primeiramente,
+de analisar três hipóteses, a fim de obter melhores resultados. A primeira é relativa ao tamanho inicial da amostra,
+que deve ser no mínimo, 50 observações (Box e Jenkins,
+1976). A segunda exige que a série seja estacionária, isto é,
+que a série varie em torno da média constante e com uma
+variância constante, e caso a série não seja estacionária,
+
+Figura 1 - Área de estudo limitada pelos municípios de Carolina, Conceição do Araguaia e Marabá, inserida na Região Hidrográfica Tocantins-Araguaia,
+destacando na RHTA os rios Conceição do Araguaia, Tocantins e Itacaiúnas.
+
+14
+
+Câmara et al.
+
+faz- se a diferenciação para torna- lá estacionária. A terceira
+hipótese para os modelos ARIMA é de que a série seja
+homocedástica, isto é, tenha uma variância constante ao
+longo do tempo (Goldberger, 2001).
+A metodologia ARIMA (p, d, q) trata da junção de
+dois modelos: um Autorregressivo (AR) de parâmetros p e
+outro de Médias Móveis (MA) de parâmetros q e a parte de
+integração (d), usada para estabilizar a série de dados. Na
+implementação do ARIMA adotou as etapas definidas por
+Makridakis et al. (1998) correspondentes a Identificação,
+Estimação, Teste de Diagnóstico (ou validação) e Previsão
+(ou aplicação) (Figura 2).
+O modelo ARIMA é adequado para séries multivariadas, utiliza a função de transferência que funciona
+como vínculo (filtro linear) entre as variáveis explicativas e
+variáveis respostas. O uso da função de transferência (também conhecida como modelo de função de transferência)
+serve para encontrar a combinação linear entre duas ou
+mais séries, utilizando a análise do comportamento das
+correlações cruzadas entre as variáveis de entrada e saída.
+Utiliza um modelo estocástico com o menor erro médio
+quadrático.
+Os Modelos de funções de transferências são algumas
+vezes referidos como modelos de regressão dinâmicos.
+Consideram que Xt e Yt são séries adequadamente transformadas de modo que ambas sejam estacionárias. Em um
+sistema linear de entrada e saída simples, as séries de
+entrada Xt e saída Yt são relacionadas através de um filtro
+linear, mostrado na Eq. (1).
+Y t = n( B ) + X t + N t
+
+(1)
+
+onde n( B ) = å -¥ n j B j . É referido como o filtro da função
+¥
+
+de transferência geral, por Box e Jenkins (1976) e Nt é a
+série de ruído do sistema que é independente da série de
+
+Figura 3 - Sistema da função de transferência (Fonte: Wei, 1990).
+
+Figura 2 - Estágio de construção do modelo. Fonte: Fluxograma do ciclo
+iterativo de Box & Jenkins, adaptado de Makridakis et al. (1998) e
+DeLurgio (1998).
+
+entrada Xi. O sistema da função de transferência é apresentado na Figura 3.
+O objetivo da modelagem de função de transferência
+é identificar e estimar a função de transferência n(B) e o
+modelo de ruído para Nt com base na informação disponível
+das séries de entrada Xt e da série de saída Yt. Os coeficientes do modelo da função de transferência (Eq. (1)) são
+frequentemente chamados de pesos da resposta impulso. O
+modelo de função de transferência é considerado estável se
+
+Modelagem Hidrológica Estocástica Aplicada ao Rio Tocantins para a Cidade de Marabá-P
+
+a sequência desses pesos da resposta impulso for finita ou
+absolutamente somável (å v i < ¥). Portanto, um sistema
+estável uma entrada limitada sempre produz uma saída
+limitada, sendo expresso pela Eq. (2).
+Y t = v 0 + v 1 X t - 1 + v 2 X t - 2 +K+ N t
+
+(2)
+
+A construção do modelo multivariado de função de
+transferência é realizada em duas etapas. A 1° etapa é a
+construção dos modelos univariados com séries temporais
+dos níveis fluviométrico de Carolina, Conceição do Araguaia e Marabá como equações explicativas do modelo
+multivariado na 2° etapa.
+2.3.1 Identificação
+
+Segundo Morettin e Toloi (2006) essa etapa é a mais
+crítica do ciclo iterativo do método de BJ, pois a identificação do modelo é baseada, principalmente, com base nas
+autocorrelações e autocorrelações parciais. Geralmente, essa técnica é muito eficiente, mas, é importante salientar que
+pode ser identificado mais de um modelo para mesma série.
+Os elementos principais considerados são: a execução de
+diferenciações (d) para tornar a série estacionária; a definição das ordens de p (parte autoregressiva) e q (média
+móvel) utilizando a Função de Autocorrelação (FAC) e a
+Função de Autocorrelação Parcial (FACP), para identificação da estrutura do modelo (Gujarati, 2000); e de acordo, com o comportamento dos correlogramas dessas funções, a escolha dos modelos preliminares.
+A FAC (Eq. (3)) mede o grau de correlação de uma
+variável, considerando as observações defasadas (lags). O
+padrão da autocorrelação para o lag 1, 2,..., k, pode ser
+definido como a razão entre a autocovariância e a variância
+para um conjunto de dados.
+n- k - 1
+
+r=
+
+å
+t=0
+
+(X t - X )
+( X t+ k - X )
+
+n- 1
+
+å (X
+
+t
+
+-X )
+
+15
+
+as outras defasagens sobre Yt e Yt-k A FACP é calculada
+como o valor do coeficiente qkk (Eq. (4)).
+X t = q k1 X t -1 + q k2 X t -2 + q k3 X t -3 +
+K+ q kk X t - k + e t
+
+(4)
+
+O modelo estocástico de série temporal ARIMA é
+representada pela Eq. (5), denominada equação de diferenças, utilizada nas previsões (Fava, 1999).
+Wt = g + f1Wt - 1 +K+ fp Wt - p +
+a t - q 1 a t - 1 -K-q q a t - q
+
+(5)
+
+onde Wt é série temporal estacionária, g é o termo constante
+gerada pelo modelo estimado, at é o erro aleatório e fp e qq
+são, respectivamente, os parâmetros auto-regressivos e de
+médias móveis a serem estimados.
+2.3.2 Estimação
+
+Nessa etapa são estimados os valores dos parâmetros
+do modelo ARIMA obtidos através correlogramas da FAC
+e FACP. Esta estimativa é feita por meio da função de
+máxima verossimilhança com os dados observados, os
+quais são mais verossímeis e maximizam a função verossimilhança L(q, y), onde y é fixo e q é a variável. O estimador
+de máxima verossimilhança q$ é o vetor que faz
+$ y) > L(q, y), onde q é qualquer outro estimador de q
+L(q,
+(Makridakis et al., 1998).
+Para decidir entre um ou outro modelo, inicialmente
+propõe-se analisar medidas associadas ao ajuste do modelo
+obtido como: a) Erro Padrão (SE – Standard Error) realizado para cada parâmetro; b) Estatística Z ou Z score (Standard score), c) Critério de Informação de Akaike (AIC –
+Akaike Information Criterion) e d) Critério de Informação
+Bayesiano de Schwarz (BIC – Baysean Information Criterion), descritos na Tabela 1.
+
+(3)
+
+2
+
+t=0
+
+onde r é o coeficiente de autocorrelação, n representa o
+comprimento da série temporal (ST), t é o tempo inicial, Xt
+é o valor observado das observações no instante t, Xt+k é o
+valor observado das observações defasadas (k) e X representa a média aritmética da série.
+O coeficiente de autocorrelação (r) da ST varia entre
+-1 e 1. Quando r assume o valor 1, diz-se que as duas
+variáveis medidas possuem uma autocorrelação positiva
+absoluta, caso contrário (r = -1), diz-se que a autocorrelação é negativa absoluta. Quando r assume valor zero,
+não existe autocorrelação entre as variáveis, ou seja, as
+observações são independentes (Morettin e Toloi, 2006).
+A FACP é um instrumento bastante útil durante a
+etapa de identificação do modelo a ser ajustado aos dados
+observados. A FACP representa a correlação entre Yt e Yt-k
+como uma função da defasagem k, filtrado o efeito de todas
+
+2.3.3 Diagnósticos
+
+Os diagnósticos ou calibragem do modelo objetiva-se
+em analisar os resíduos do modelo, no qual se pergunta: Os resíduos resultaram em “ruído branco”? Ou seja, o
+modelo foi tão bem ajustado que somente restou à aleatoriedade dos dados que não podem ser explicados matematicamente? Essa etapa consiste em verificar se o modelo
+estimado é adequado. Em caso positivo, pode-se adotá-lo
+para previsão. Em caso negativo, outra especificação deve
+ser escolhida para modelar a série, o que implica em refazer
+as etapas de identificação e estimação (Vasconcellos e
+Alves, 2000).
+No teste do diagnóstico são examinados os resíduos
+(erro = valor observação – valor ajustado). Calcula-se a
+FAC e FACP dos resíduos estimados e verifica-se se eles
+satisfazem a condição de ruído branco (erros são estatisticamente independentes, ou seja, não são autocorrelacionados) (Granger e Newbold, 1986). E as métricas (Tabela 2): Erro Padrão dos Resíduos (RSE), Erro Médio (ME),
+
+16
+
+Câmara et al.
+
+Tabela 1 - Critérios de seleção (penalizadores de modelos).
+Critério
+
+Descrição
+
+SE
+
+Avalia a precisão do cálculo da média da série. E o valor desta estatística deve ser pequeno, próximo à zero.
+Se =
+
+Z
+
+É uma medida estatística para determinar a validade dos resultados obtidos. Baseia-se na curva normal, e mede quanto um
+determinado resultado (valor) afasta-se da média em unidades de desvio padrão.
+Z=
+
+AIC
+
+s
+, onde: s é o desvio padrão da distribuição e n = número da amostra.
+n
+
+X -X
+, onde: X= valor qualquer da variável aleatória, X = Valor média da distribuição e s é o desvio padrão da distribuição.
+s
+
+É um critério e um guia para seleção do número de termos de uma equação. Ele está baseado na soma do quadrado dos resíduos, mas
+coloca penalidade sobre coeficientes excedentes (Akaike, 1974). O melhor modelo é aquele possuir o menor valor para os AIC será o
+de melhor ajuste.
+AIC = -2ln(L) + 2k, onde L = função de verossimilhança n = número de resíduos que podem ser computados para a série de dados
+temporais e k= número de parâmetros livres.
+
+BIC
+
+É um critério alternativo ao AIC, que reduz ao máximo o fator de verossimilhança, porque o número de parâmetros é igual ao número
+de parâmetros do modelo de interesse (Schwarz, 1978). O melhor modelo é aquele com menor valor para BIC.
+BIC = -2ln(L) + ln(n)k, onde L = função de verossimilhança n = número de resíduos que podem ser computados para a série de dados
+temporais, k = número de parâmetros livres e ln = logaritmo de base neperiana.
+
+Tabela 2 - Métricas de diagnóstico.
+Métricas
+
+Descrição
+
+RSE
+
+É dado pela raiz quadrada da variância estimada dos resíduos e indica o grau de dispersão dos erros de previsão dentro da amostra.
+
+RSE
+
+RSE =
+
+å (e )
+n-2
+
+ME
+
+1 n
+ME = å (et )
+n t=1
+
+MSE
+
+MSE =
+
+1 n
+å (et )2
+n t=1
+
+MPE =
+
+1 n æ et
+åç
+n t=1 çè A t
+
+MPE
+
+onde et = (At - Ft) é o erro (resíduos), At é o valor observado, Ft é o valor estimado, e n é o
+número de observações comparadas.
+
+2
+
+t
+
+É a média dos erros de previsão
+É determinado pelo somatório dos erros, penalizando os erros grandes elevando-os ao quadrado e dividido pelo número de erros usados no cálculo.
+ö
+÷÷
+ø
+
+Leva em consideração o erro relativo de cada previsão em relação aos valores observados da
+série. Se os erros positivos forem compensados pelos erros negativos, o resultado deve ser
+aproximadamente nulo.
+
+Erro Quadrático Médio (MSE) e Erro Médio Percentual
+(MPE).
+2.3.4 Aplicação
+
+A última etapa corresponde à previsão para Marábá
+(Xt), e a partir dos modelos univariados: Carolina (Zt),
+Conceição do Araguaia (Ft) e Marabá (Xt); e multivariado
+M(Xt), e considerando como variáveis explicativas os modelos univariados Zt, Ft e Zt usando as séries de Carolina e
+Conceição do Araguaia, todos em instantes de tempo posteriores a n.
+Nesse estudo as series de Carolina e Conceição do
+Araguaia foram consideradas variáveis explicativas (X)
+usadas na função de transferência, já que o modelo ARIMA
+aplicado para séries multivariadas utiliza esta função como
+vínculo (filtro linear) entre as variáveis explicativas e a
+variável resposta (estação de Marabá). O uso da função de
+transferência considera que Xt (entrada) e Yt (saída) são
+séries estacionárias, relacionadas através de um filtro linear
+(Eq. (1)).
+
+Na modelagem de função de transferência deve-se
+identificar e estimar n(B) – função de transferência – e o
+modelo de ruído para a variável resposta representada pela
+serie Marabá. Os coeficientes da função de transferência
+são obtidos pela análise da Função de Correlação Cruzada
+(FCC) a entre a variável resposta e as variáveis explicativas. A FCC é uma medida útil de direção e intensidade
+entre duas variáveis aleatórias.
+Para dois processos estocásticos Xt e Yt (t = 0, ± 1, ±
+2,...) tem-se que Xt e Yt são variáveis estacionárias se ambas
+correspondem a processos univariados estacionários; e a
+covariância (Xt, Yt) é uma função somente da diferença de
+tempo (s – t) (wei, 2005) (Eq. (6)).
+g xy ( k ) = E[( X t - m x )(Y t - m y )]
+
+(6)
+
+onde E representa a esperança matemática (média). Para
+k = 0, ± 1, ± 2,..., sob padronização e sx e sy os desviospadrão de Xt e Yt, a FCC pode ser representada pela Eq. (7).
+
+Modelagem Hidrológica Estocástica Aplicada ao Rio Tocantins para a Cidade de Marabá-P
+
+r xy ( k ) =
+
+g xy ( k )
+sx s y
+
+(7)
+
+É importante notar que a função de covariância cruzada gxy(k) e as funções de correlação cruzada rxy(k) são
+generalizações das funções de autocovariância e autocorrelação porque gxx(k) = gx(k) e rxx(k) = rx(k) . Contudo, ao
+contrário da função de autocorrelação rx(k), que é simétrica
+em relação à origem, i.e., rx(k) = rx(-k), a função de correlação cruzada não é simétrica, ou seja, rxy(k) ¹ rxy(-k)
+(Eq. (8)).
+g xy ( k ) = E ( X t - m x )(Y t - k - m y ) =
+E (Y t - k - m y )( X t - m x ) = d yx ( -k )
+
+(8)
+
+Deste modo, a função de correlação cruzada, FCC,
+mede não somente a intensidade de uma associação, mas
+também sua direção.
+Na etapa final foi realizada a previsão de nível para
+Marabá adotou-se os modelos univariados (Xt, Ft e Zt) como
+variáveis explicativas. Aplicou-se analises estatística: Erro
+da previsão (FE - Forecast Error), Erro Absoluto (AE - Absolute Error), Porcentagem absoluta do erro (APE- Absolute Percentage of Error) e Precisão da previsão (FA Forecast Accuracy) para os valores da previsão de sete (7)
+dias para confirmar a acurácia do modelo estocásticos multivariado.
+
+3. Resultados e Discussões
+3.1 Identificação-estimação
+O comportamento diário do nível dos rios Araguaia e
+Tocantins é observado na Figura 4, nota-se, nessa figura, que
+o nível do rio Tocantins em Carolina (linha contínua), e o
+nível do rio Araguaia em Conceição do Araguaia (linha
+pontilhada) segue o mesmo padrão de regime fluviométrico,
+
+17
+
+do rio de Marabá (linha tracejada), com valores máximos no
+trimestre de março, abril e maio, valores mínimos no trimestre de agosto, setembro e outubro. Entretanto, em Conceição
+do Araguaia, o comportamento é mais suavizado.
+A análise do gráfico da série de níveis diários de
+Carolina, Conceição do Araguaia e Marabá (Figura 4)
+constatou a necessidade de estabilizar as séries para eliminar a componente da tendência. Realizou-se apenas a
+primeira diferença (d = 1), para eliminar essa componente.
+Deste modo, as séries diferenciadas foram denominadas
+como: Carolina-D1, Conceição do Araguaia-D1 série Marabá-D1.
+Para identificar os modelos univariados foram analisados os correlogramas da FAC e FACP da série de
+Carolina-D1 (Figuras 5a), Conceição do Araguaia-D1 (Figuras 5b) e Marabá-D1 (Figuras 5c). Para série de Carolina-D1, foram testados modelos usando os lags (1, 3, 4, 9,
+16, 23 e 24) significativos da FAC para obter a ordem do
+modelo de médias móveis (MA), mais adequado. Já no
+correlograma da FAC e FACP da série de Conceição do
+Araguaia-D1, foram analisados dos lags significativos (1 a
+24) da FAC e os lags (1, 3, 4, 7 e 14) da FACP, assim
+identificados o modelo autorregressivo de médias móveis,
+ou seja, um ARMA. E usando as análises do correlograma
+da FAC e FACP da série de Marabá-D1, para os lags (1, 3,
+4, 9, 16, 23 e 24) significativos da FACP foi identificado o
+modelo autorregressivo (AR).
+Os mais apropriados foram o modelo de médias móveis de quarta ordem (MA (4)) para Carolina (Zt), o modelo
+autorregressivo de médias móveis de segunda ordem
+(ARMA (2)) para Conceição do Araguaia (Yt) e o autorregressivo de quarta ordem (AR (4)) para Marabá (Xt). Os
+modelos identificados estão representados nas Eqs. (9),
+(10) e (11), respectivamente.
+Z t = d Zt + (1+ qB + qB 2 + qB 4 + qB 9 )a t
+
+(9)
+
+Figura 4 - Comportamento das séries temporais de níveis médios diários do rio Araguaia em Carolina e Conceição do Araguaia, e rio Tocantins em
+Marabá para o de dezembro de 2008 a outubro de 2010.
+
+18
+
+Câmara et al.
+
+Figura 5 - Correlogramas da FAC e da FACP das séries diferenciadas (a)Carolina-D1, (b)Conceição do Araguaia-D1 e (c)Marabá-D1. As linhas azuis
+representam o intervalo de confiança e as barras vermelhas são os valores de correlações obtidos para 25 defasagens.
+
+(1+ qB 2 )Ft = dYt + (1+ jB )a t
+
+(10)
+
+(1+ jB + jB 2 + jB 6 + jB 13 ) X t = d X t + a t
+
+(11)
+
+onde B é o operador diferença, Bk Zt = Zt-k; d Zt , dYt e d X t é a
+média aritmética da série, at são os erros aleatórios e jn e qn
+são parâmetros que ajustam valores passados.
+Identificados os modelos para Carolina (MA (4)),
+Conceição do Araguaia (ARMA (2)) e Marabá (AR (2)), foi
+estimado os parâmetros j e q, usando a máxima verossimilhança. A Tabela 3 apresentadas às estatísticas (erro-padrão e estatística t(z)) obtidos para os parâmetros autoregressivos (j) de acordo com cada modelo. Os parâmetros
+estimados para modelo Zt foram j1 = -0,66746,
+j2 = -0,13400, j4 = 0,06668 e j9 = 0,09848. Os parâmetros
+estimados foram significativos, sendo que, j1 e j2 apresen-
+
+taram o nível descritivo p < 0,001 e j4 e j9 apresentaram
+p £ 0,05). Os resultados dos testes de AIC (-929,6972) e
+BIC (-905,9652) confirmam que o modelo obtido tem um
+bom ajuste, com valores bem inferiores aos vários modelos
+testados.
+No modelo Yt observou-se que todas as estimativas
+foram significativas a um nível abaixo de p < 0,001. Os
+valores dos parâmetros estimados foram de q2 = 0,16395 e
+j1 = 0,95127. Os valores de AIC (-938,6732) e BIC
+(-907,9552) enfatiza o desempenho satisfatório do modelo.
+Para modelo Xt os parâmetros estimados foram de
+j1 = 0,23931, j2 = 0,22891 significativos a um nível descritivo p < 0,001, e j6 = 0,10619 e j13 = 0,11015 significativos
+ao nível descritivo p £ 0,05. A qualidade adequado do
+ajuste do modelo também foi confirmada com os valores de
+AIC (-924,5632) e BIC (-904,7652) obtidos.
+
+Tabela 3 - Parâmetros estimados para os modelos univariados Zt, Yt e Xt.
+Estimativas de máxima verossimilhança
+Modelos
+Zt
+
+Yt
+
+Xt
+
+Parâmetros Estimados
+
+Erro Padrão (SE)
+
+Valor de t(z)
+
+P-valor > xxx
+
+d Zt = 0,01148
+
+0,01178
+
+0,97
+
+0,3298
+
+j1 = -0,66746
+
+0,03391
+
+-19,68
+
+< 0,0001
+
+j2 = -0,13400
+
+0,03489
+
+-3,84
+
+0,0001
+
+j4 = 0,06668
+
+0,02840
+
+2,35
+
+0,0189
+
+j9 = 0,09848
+
+0,02733
+
+3,60
+
+0,0003
+
+dYt = 0,00793
+
+0,01066
+
+0,74
+
+0,4571
+
+q2 = 0,16395
+
+0,03599
+
+4,56
+
+< 0,0001
+
+j1 = 0,95127
+
+0,01113
+
+85,46
+
+< 0,0001
+
+d X t = 0,01051
+
+0,01488
+
+0,71
+
+0,4802
+
+j1 = 0,23931
+
+0,03289
+
+7,28
+
+< 0,0001
+
+j2 = 0,22891
+
+0,03308
+
+6,92
+
+< 0,0001
+
+j6 = 0,10619
+
+0,03168
+
+3,35
+
+< 0,0008
+
+j13 = 0,11015
+
+0,03170
+
+3,47
+
+< 0,0005
+
+Modelagem Hidrológica Estocástica Aplicada ao Rio Tocantins para a Cidade de Marabá-P
+
+Estimados os parâmetros dos modelos univariados,
+reescrevendo as Eqs. (9), (10) e (11) e substituindo os
+coeficientes pelos valores dos parâmetros obtidos, temos
+respectivamente:
+Z t = 0,011612 + (1+ 0,66B + 0,134B 2 (1- 0,163B 2 )Y t = 0,006612 + (1- 0,951B )a t
+
+(13)
+
+(1- 0,01B - 0,239B - 0,106B - 0,110B ) X t = (14)
+0,009176 + a t
+6
+
+Os resultados obtidos para as correlações cruzadas
+entre Marabá e Conceição do Araguaia, apresentam as
+seguintes características: Correlações significativas em
+atrasos negativos somente no lag - 19 e correlações significativas somente no atraso 3.
+
+(12)
+
+0,666B 4 - 0,098B 9 )a t
+
+2
+
+19
+
+13
+
+Após as análises residuais nos modelos univariados,
+verificou-se que todos (Zt, Yt e Xt) tiveram um bom ajuste,
+uma vez que os resíduos podem ser considerados como
+ruído branco (média zero e variância constante). Do mesmo
+modo, Fadiga Jr et al. (2008), tratou da previsão diária de
+vazões para a Bacia Incremental à UHE Itaipu, considerando os resíduos como ruído branco para o modelo estocástico linear (MEL).
+3.2 Construção do modelo multivariado
+Na identificação do modelo multivariado foram feitos
+dois correlogramas da Função de Correlação Cruzada
+(FCC) para 24 defasagens. A Figura 6 representa o correlograma cruzado de Marabá vs. Carolina e a Figura 7 o de
+Marabá vs. Conceição do Araguaia. Os resultados obtidos
+para as correlações cruzadas entre Marabá e Carolina, apresentam as seguintes características: i) Correlações significativas em atrasos negativos (-2 e -22), indício de que as
+séries podem estar defasadas entre si; ii) Correlações significativas nos atrasos 3, 4, 5, 6, 20, 21 e 22.
+
+Com base na análise das funções de correlações cruzadas foi identificado o modelo multivariado para Marabá
+(Mt) apresentado na Eq. (15). Observa-se que o tempo de
+resposta do movimento da água de Carolina (Zt) até Marabá
+(Mt) é de t - 4 (atraso), notando que o efeito dessa variável
+sobre o nível do rio Tocantins em Marabá leva um determinado tempo para ser observado. Já o tempo de resposta
+do movimento da água de Conceição do Araguaia (Yt) até
+Marabá (Mt) é de t - 3 (atraso), ou seja, o tempo para fazer
+efeito no nível do rio em Marabá é menor que o de Carolina.
+Podendo-se afirmar que a diferença da resposta do movimento d’água, de Carolina e Conceição do Araguaia, até
+Marabá é de quatro e três dias, respectivamente:
+DM t = m + ( w 01 )DZ t - 4 + ( w 02 + w 2 B 2 )DFt - 3 +
+at
+
+(15)
+
+(1- fB 2 )
+onde D é o operador diferença, DZ = Zt - Zt-1; B é o operador
+atraso, BZt = Zt-1; at é o erro aleatório; Mt – é a variável
+resposta (nível em Marabá); m representa uma constante
+gerada pelo modelo estimado; w01, w02, w2 e f são parâmetros do modelo; Zt é a variável explicativa (Nível em
+Carolina); Yt é a variável explicativa (Nível em Conceição
+do Araguaia);
+
+Figura 6 - Correlograma cruzado Marabá vs. Carolina, os limites (linhas tracejadas) são 2 erros-padrão e as barras são as correlações (positivas e
+negativas) para o intervalo de -25 a 25 lags.
+
+20
+
+Câmara et al.
+
+Figura 7 - Correlograma cruzado Marabá vs. Conceição do Araguaia, os limites (linhas tracejadas) são 2 errospadrão e as barras são as correlações
+(positivas e negativas) para o intervalo de -25 a 25 lags.
+
+Estimados os parâmetros do modelo multivariado
+(Mt), reescreve-se a Eq. (15) e substituindo os coeficientes
+pelos valores dos parâmetros obtidos, temos:
+DM t = 0,01+ ( 0,242)DZ t - 4 +
+( 0,482 - 0,461B 2 )DFt - 3 +
+
+(16)
+
+at
+(1- 0,136B )
+2
+
+A avaliação do ajuste da função de transferência foi
+feita pela observação das correlações cruzadas entre os
+resíduos e as variáveis de entrada. Para as séries de Carolina
+e Conceição do Araguaia, essas correlações cruzadas são
+estatisticamente não significativas. Deste modo, é aceitável
+considerar que as correlações cruzadas das duas variáveis
+de entrada com os resíduos do modelo não foram significativas, indicando que o modelo de função de transferência
+se ajusta aos dados. Na análise residual, as correlações
+foram não significativas, o que indica a presença de ruído
+branco e um bom ajuste do modelo aos dados observados.
+3.3 Diagnóstico e aplicação do modelo
+A Figura 8 mostra o modelo ajustado para um intervalo de confiança de 95% juntamente com os dados observados de Marabá. Pode-se verificar que houve um bom
+ajuste entre modelo ajustado e os dados observados. A
+precisão no ajuste é confirmada pelos intervalos de confiança, no qual os valores estimados não ultrapassaram esse
+intervalo. Lucas (2007) e Ghanbarpour et al. (2010) usando
+a modelagem univariada ARIMA encontraram ajustes satisfatórios, no primeiro caso para simulação de vazões
+mensais nas estações da bacia hidrográfica do Xingu e no
+segundo para a avaliação do comportamento das vazões em
+
+uma bacia hidrográfica localizada em áreas cársticas. Os
+estudos dos autores citados ratificam que a metodologia de
+Box & Jenkins (BJ) tem excelentes ajustes usando outras
+variáveis.
+A Figura 9 mostra a previsão para sete dias (1 a 7 de
+abril de 2011), em que o modelo representou bem o comportamento da série, não ultrapassando seus valores do
+intervalo de confiança. A Tabela 4 apresenta os erros de
+previsão observados para os modelos multivariados estocásticos de previsão de curto prazo de nível fluviométrico
+para Marabá e a comparação dos dados observados de
+níveis fluviométricos com o prognóstico para 7 dias.
+O modelo Mt exibiu erros abaixo de 0,08 m. Analisando o FE notou-se que, em geral, os valores foram na
+maioria positivo, ou seja, a previsão subestimou os valores
+observados, na maioria das estimações. Os valores de APE
+foram à maioria abaixo de 1%, indicando uma boa precisão
+da previsão. No dia 01, o do modelo registou o maior APE
+de 0,71% e dia 02 teve o menor APE de 0,09%. Os resultados das previsões em relação à acurácia, realizadas pelo
+FA, mostra que o modelo Mt apresentou uma assertiva
+acima de 99%, indicando que o prognóstico realizado pelo
+modelo para o nível do rio Tocantins em Marabá-PA possui
+uma acurácia considerada ótima.
+Os valores obtidos indicam que o modelo multivariado usando a função de transferência é adequado para previsão do Nível do rio Tocantins em Marabá-PA. Este resultado é se semelhante ao obtido por Queiroga et al. (2005)
+para quatro modelos estocásticos para previsão de vazão de
+curto prazo (3, 5 e 7 dias de antecedência) das vazões
+afluentes à bacia do Rio Grande em Camargos-MG. E foi
+melhor que o obtido por Santos (2008) também para Mara-
+
+Modelagem Hidrológica Estocástica Aplicada ao Rio Tocantins para a Cidade de Marabá-P
+
+21
+
+Figura 8 - Comportamento do Modelo ajustado com os dados observados de níveis fluviométricos no rio Tocantins para Marabá, para um intervalo de
+confiança de 95%.
+
+Figura 9 - Comparação da previsão para sete dias com os valores observados.
+
+bá, onde foi empregado um modelo empírico que adotou a
+regressão linear e o método dos mínimos quadrados ajustados a uma equação.
+
+4. Conclusões
+Os modelos estocásticos são historicamente utilizados de maneira satisfatória para descrever o comportamen-
+
+to de variáveis hidrológicas. Neste trabalho foi realizado o
+ajuste de um modelo estocástico multivariado da classe
+ARIMA para uma série de dados diários de níveis fluviométricos do rio Tocantins para Marabá-PA. O modelo hidrológico desenvolvido conseguiu simular o regime fluviométrico do rio Tocantins, com pequenos erros absolutos e
+fornece boas previsões de nível para previsão até sete dias
+de antecedência, com erro absoluto máximo de 0,12 m. A
+
+22
+
+Câmara et al.
+
+Tabela 4 - Comparação dos dados observados de níveis fluviométricos de Marabá-PA, com o prognóstico para 7 dias.
+Modelo
+Mt
+
+Período (dias)
+
+MO
+
+MP
+
+FE
+
+AE
+
+APE (%)
+
+FA (%)
+
+01/04/2012
+
+11,31
+
+11,23
+
+0,08
+
+0,08
+
+0,71
+
+99,29
+
+02/04/2012
+
+11,30
+
+11,29
+
+0,01
+
+0,01
+
+0,09
+
+99,91
+
+03/04/2012
+
+11,22
+
+11,27
+
+-0,05
+
+0,05
+
+0,45
+
+99,55
+
+04/04/2012
+
+11,22
+
+11,24
+
+-0,02
+
+0,02
+
+0,18
+
+99,82
+
+05/04/2012
+
+11,26
+
+11,24
+
+0,02
+
+0,02
+
+0,18
+
+99,82
+
+06/04/2012
+
+11,32
+
+11,26
+
+0,06
+
+0,06
+
+0,53
+
+99,47
+
+07/04/2012
+
+11,36
+
+11,29
+
+0,07
+
+0,07
+
+0,62
+
+99,38
+
+MO =Marabá Observado; MP= Marabá Previsto; FE= Forecast Error; AE= Absolute Error; APE= Absolute Percentage of Error; FA= Forecast Accuracy.
+
+acurácia mostrou que o modelo Mt, teve uma assertiva
+muito alta, logo o modelo alcançou o objetivo com uma
+acurácia considerada ótima.
+Portanto as previsões indicam seu uso como ferramenta de auxílio na previsão de riscos de enchentes por
+parte da Defesa Civil, no sentido de minimizar os impactos
+ambientais e nas atividades econômicas e sociais do Município. Os modelos hidrológicos para previsão de níveis nos
+anos de eventos extremos são importantes ferramentas que
+a Defesa Civil vem utilizando no planejamento e preparo de
+ações nos locais atingidos. Assim, essa metodologia também poderá ser utilizada para o planejamento urbano das
+cidades através da definição das áreas de risco que não
+podem ser alocadas para a construção de residências.
+
+Agradecimentos
+A FINEP (Financiadora de Estudos e Projetos) e ao
+LEMHA (Laboratório de Estudos e Modelagem HidroAmbientais) pelo apoio em termos de infraestrutura e recursos financeiros; e ao Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq, pelo suporte
+dado a pesquisa na categoria de bolsista.
+
+Referências
+AKAIKE, H. A new look at the statistical model identification.
+IEEE Transactions on Automatic Control., Boston, v.19,
+n.6, p.716-723, Dec. 1974.
+ANDERSON, O. D. The Box-Jenkins approach to time series
+analysis. Recherche opérationnelle, tome 11, n. 1, p. 3 - 29,
+1977.
+BOX, G.; JENKINS, G. Time series analysis: forecasting and
+control. San Francisco, CA, USA: Holden Day, 1976, 575
+p.
+BRASIL. Caderno Regional da Região Hidrográfica do Tocantins-Araguaia. Brasília – DF: Secretaria de Recursos
+Hídricos, Agência Nacional de Águas, 2006, 50 p.
+CARVALHO, A. R. L. Previsão de afluências diárias para horizontes de 1 a 7 dias através de uma abordagem estocástica. 2001. 89f. Dissertação (mestrado em engenharia
+civil), Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2001.
+COSTA, M. H.; BOTTA, A.; CARDILLE, J. A. Effects of largescale changes in land cover on the discharge of the Tocantins
+
+River, Southeastern Amazonia. Journal of Hydrology, 283,
+p. 206 - 217, 2003.
+DANIEL, E. B.; CAMP, J. V.; LEBOEUF, E. J.; PENROD, J. R.;
+DOBBINS, J. P.; ABKOWITZ, M. D. Watershed Modeling
+and its Applications: A State-of-the-Art Review. The Open
+Hydrology Journal, n. 5, p. 26 - 50, 2011.
+FADIGA JR., F. M.; LOPES, J. E. G.; MARTINS, J. R. S.
+Modelos de Previsão de Vazões para a bacia incremental à
+UHE Itaipu. Revista Brasileira de Recursos Hídricos, v.
+13, n. 2, 2008, p. 65 - 75.
+FAN, F.; COLLISCHONN, W.; JIMENÉS, K.; SORRIBAS, M.;
+BUARQUE, D.; SIQUEIRA, V. Ensemble flood forecasting
+on the Tocantins River - Brazil. Geophysical Research Abstracts, v. 16, p. 1818, 2014.
+FAVA, V. L. Análise de Séries de tempo. In: VASCONCELLOS,
+M. A. S.; ALVES, D. (Org.). Manual de Econometria:
+Nível Intermediário. São Paulo: Atlas, 1999, v. 1, p. 199204.
+FISCHER, S. Séries univariantes de tempo: metodologia de
+Box e Jenkins. Porto Alegre: FEE, 1982. 186 f. Dissertação
+(Mestrado em Economia), Fundação de Economia e Estatística, 1982.
+GHANBARPOUR, M. R.; ABBASPOUR, K. C.; JALALVAND,
+G.; MOGHADDAM, G. A. Stochastic modeling of surface
+stream flow at different time scales: Sangsoorakh karst basin, Iran. Journal of Cave and Karst Studies, v. 72, n. 1, p.
+1 - 10, 2010.
+GOLDBERGER, A course in Econometrics. Cambridge, Mass.:
+Harvard University Press, 1991. 432p.
+GRANGER, C. W. J.; NEWBOLD, P. Forecasting economic
+times series. London: Academic Press, 1986, 211 p.
+GUJARATI, D. N. Econometria Básica. São Paulo: Pearson Education do Brasil, 2000, 848 p.
+HANNA, E. J.; QUINN, B. G.The determination of the order of an
+autoregression. Journal of the Royal Statistical Society,
+B41, p. 190-195.1979.
+LUCAS, E. W. M. S. Aplicação de modelos hidrológicos determinístico e estocástico mensais na bacia hidrográfica do
+Xingu - Pará. 2007. 112f. Dissertação (Mestrado em Meteorologia). Universidade Federal de Campina Grande,
+Campina Grande, 2007.
+MAKRIDAKIS, S.; WHEELWRIGT, S.C.; HYNDMAN, R. J.
+Forecasting: methods and applications. New York: John
+Wiley & Sons, 1998, 642 p.
+MEGHEA, M. M. Box Jenkins methodology applied to the environmental monitoring data. Applied Sciences, v. 13, 2011,
+p. 74-81, 2011.
+
+Modelagem Hidrológica Estocástica Aplicada ao Rio Tocantins para a Cidade de Marabá-P
+
+MODARRES, R.; ESLAMIAN, S. S. Streamflow time series
+modeling of Zayandehrud river. Iranian Journal of Science & Technology, Transaction B, Engineering, v. 30, n.
+B4, p. 565 - 570, 2006.
+MORETTIN, P. A.; TOLOI, C. M. Análise de Séries Temporais.
+São Paulo: Edgard Blucher, 2006, 564 p.
+MUSA, J. J. Stochastic Modelling of Shiroro River Stream flow
+Process. American Journal of Engineering Research, v.
+2, n. 6, p. 49 – 54, 2013.
+QUEIROGA, Y. G. A.; NAGHETTINI, M. C.; NASCIMENTO,
+N. O. Avaliação de um método de assimilação de erros nas
+previsões de vazões de curto prazo afluentes ao reservatório
+da UHE Camargos. Revista Brasileira de Recursos Hídricos, v. 10, p. 63-74, 2005.
+QUINN, B. G. Order determination for a multivariate autoregression. Journal of the Royal Statistical Society, B42, p.
+182-185. 1980.
+RODDA, J.C.; RODDA, H.J.E. Hydrological forecasting: dealing with natural disasters. The Royal Society, London,
+2000. p. 75-99. Disponível em www.royalsoc.ac.uk. Acesso
+em Fevereiro de 2010.
+
+23
+
+SANTOS, D. M. Análise e modelagem hidrometeorológica na
+Bacia do rio Tocantins em Marabá. 2008. 119f. Dissertação (mestrado em ciências ambientais), Universidade
+Federal do Pará, Museu Paraense Emilio Goeldi, Embrapa,
+Centro de Geociências, Pós-Graduação em Ciências
+Ambientais, Belém, 2008.
+SCHWARZ, G. Estimating the dimensional of a model. Annals
+of Statistics, Hayward, v.6, n.2,p.461-464, Mar. 1978.
+SOUZA, R. C. Modelos estruturais para previsão de séries
+temporais: abordagens clássica e bayesiana.Rio de Janeiro, IMPA, 1989. 171p
+TUCCI, C. E. M. Hidrologia: ciência e aplicação. 3 ed. Porto
+Alegre: Ed. da UFRGS/ABRH, 2002. 944p.
+VASCONCELOS, M. A. S.; ALVES, D. C. O. Manual de econometria: nível intermediário. São Paulo: Atlas, 2000,
+380 p.
+WEI, W. W. S. Time Series Analysis: Univariate and Mutivariate Methods. 2. Ed. Boston: Addison-Wesley, 2005.
+624p.
+All the contents of this journal, except where otherwise noted, is licensed under a Creative
+Commons Attribution License CC-BY.
+
+

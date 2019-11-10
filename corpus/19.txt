@@ -1,0 +1,1481 @@
+COORDENAÇÃO DOS ATUADORES DAS PERNAS DE ROBÔS MÓVEIS
+USANDO APRENDIZADO POR REFORÇO: SIMULAÇÃO E
+IMPLEMENTAÇÃO
+
+Jeeves Lopes dos Santos∗
+
+Cairo Lúcio Nascimento Júnior∗
+
+jeeves@ita.br
+
+cairo@ita.br
+
+Laboratório de Máquinas Inteligentes - LMI
+Divisão de Engenharia Eletrônica
+Instituto Tecnológico de Aeronáutica - ITA
+São José dos Campos, São Paulo, Brasil
+
+∗
+
+ABSTRACT
+Actuator Coordination for Legged Mobile
+Robots Using Reinforcement Learning: Simulation and Implementation
+This article presents a solution to the problem of how
+to coordinate the actuators of a legged robot such that
+its frontal speed is maximized. It is assumed that the
+position of each leg actuator is described by a periodic
+function that has to be determined using a reinforcement
+learning technique called Learning Automata. Analysis
+of the robot morphology is used to group similar legs and
+decrease the number of actuator functions that must be
+determined. MATLAB/Simulink and the SimMechanics Toolbox are used to simulate the robot walking on
+a flat surface. The simulated robot response is evaluated by the reinforcement learning technique considering: 1) the robot frontal speed, 2) the smoothness of
+the robot movements, 3) the largest torque required by
+all actuators, and 4) the energy consumption. After
+the reinforcement learning algorithm converges to a solution, the actuators functions are applied to the real
+robot that was built using the Bioloid Comprehensive
+Kit, an educational robot kit manufactured by Robotis.
+The response of the real robot is then evaluated and
+Artigo submetido em 16/02/2011 (Id.: 01271)
+Revisado em 18/04/2011, 04/06/2011
+Aceito sob recomendação do Editor Associado Prof. Guilherme Pereira
+
+78
+
+compared with the simulated robot response. This article presents two case studies: a quadrupedal robot and
+a tripedal robot. In both cases, each leg has three actuators. The solutions obtained by the proposed methodology are presented and shown to be satisfactory.
+KEYWORDS: Mobile Robotics, Walking Machines,
+Legged Robots, Reinforcement Learning, Learning Automata, Applied Artificial Intelligence.
+
+RESUMO
+Este artigo apresenta uma solução para o problema de
+coordenação dos atuadores das pernas de robôs móveis
+com o objetivo principal de maximizar a sua velocidade
+frontal. É assumido que a posição no tempo de cada
+atuador é descrita por uma função periódica que deve
+ser determinada de forma iterativa por um algoritmo de
+aprendizado por reforço. As pernas similares do robô são
+identificadas e agrupadas visando diminuir o número de
+funções que precisam ser determinadas. O toolbox SimMechanics do software MATLAB/Simulink é usado para
+simular o caminhar do robô em uma superfı́cie plana. O
+desempenho do robô simulado é medido considerando:
+a) a velocidade frontal e a suavidade na locomoção do
+robô, e b) o máximo torque e o consumo de energia dos
+atuadores. As funções que foram determinadas no ambiente de simulação pelo algoritmo de reforço são então
+usadas nos atuadores do robô real construı́do usando o
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+kit de robótica educacional Bioloid Comprehensive Kit.
+O desempenho do robô real é então medido e comparado com o desempenho do robô simulado. Este artigo
+apresenta dois estudos de caso: um robô quadrúpede e
+um trı́pode. Nos dois casos os robôs possuem três atuadores por perna. As soluções obtidas pela aplicação
+do método proposto são apresentadas e se mostraram
+satisfatórias.
+PALAVRAS-CHAVE: Robôs Móveis, Robôs com Pernas,
+Inteligência Artificial, Aprendizado por Reforço.
+
+1
+
+INTRODUÇÃO
+
+A robótica móvel constitui-se como uma vertente no âmbito da robótica que almeja aumentar a versatilidade de
+diversos tipos de equipamentos com o advento da locomoção. Neste contexto, a utilização de rodas corresponde à configuração mais comum para os robôs que se
+locomovem em terra devido à sua facilidade de operação
+e ao seu desempenho em terrenos regulares. Porém, o
+uso de rodas pode se tornar inviável em terrenos acidentados. Neste tipo de ambiente, os robôs com pernas,
+também conhecidos como walking machines, constituem
+uma opção promissora.
+Além da maior possibilidade de mobilidade em relação
+aos robôs com rodas, existem outras vantagens que podem ser verificadas na utilização dos robôs com pernas:
+Utilização das pernas para outros fins: As pernas
+utilizadas na locomoção não estão necessariamente
+limitadas a essa aplicação. Dentre as possibilidades, esses elementos do robô podem manipular e
+transportar objetos como verificado em alguns seres vivos (Silva e Machado, 2007);
+Maior tolerância a falhas: Como as rodas necessitam constantemente estar em contato com a superfı́cie de locomoção, a falha de uma delas (p. ex.,
+travamento) pode inviabilizar a locomoção do robô.
+Por outro lado, como os robôs com pernas podem
+possuir pernas redundantes, há a possibilidade dos
+mesmos manterem um caminhar após ter uma ou
+mais pernas danificadas (Spenneberg et al., 2004;
+Yang, 2003);
+Maior identificação entre homem e robô: As pernas podem proporcionar um maior grau de identificação entre o homem e o robô, facilitando a inserção desses equipamentos em seu cotidiano (Pfeifer
+e Scheier, 1999).
+Pesquisas sobre a locomoção dos seres vivos: As
+pesquisas desenvolvidas com os robôs dotados de
+
+pernas podem ser utilizadas para testar idéias de
+como funciona o sistema de locomoção dos seres
+vivos (Ijspeert, 2008);
+Desenvolvimento de equipamentos: Os
+avanços
+obtidos com os robôs dotados de pernas podem
+ser utilizados para desenvolver equipamentos para
+auxiliar pessoas com dificuldade de locomoção.
+Um exemplo desse tipo de equipamento consiste
+nos chamados exoesqueletos (Santos et al., 2009;
+Siqueira et al., 2008; Winter et al., 2008).
+Coordenar os atuadores que compõem um robô com pernas corresponde a um dos grandes desafios nessa área de
+pesquisa devido à complexidade da dinâmica do robô e
+ao número de variáveis envolvidas no seu controle.
+Na literatura existem duas grandes linhas de pesquisa
+na busca de soluções para o problema da coordenação
+dos atuadores dos robôs com pernas. A primeira usa
+uma abordagem matemática do problema para obter o
+modelo dinâmico do robô e gerar as leis de controle para
+os atuadores, como em (Westervelt et al., 2007; Mistry
+et al., 2007; Plestan et al., 2003).
+A segunda linha usa alguma técnica de aprendizado
+de máquina (Mitchell, 1997) para realizar a busca por
+uma solução adequada em um espaço de possibilidades. Nessa, soluções candidatas são tipicamente testadas
+em um robô simulado usando algum pacote de software
+computacional de forma tal que os modelos cinemático e
+dinâmico do robô não precisam ser explicitados pelo projetista. Como exemplos, (Belter e Skrzypczynski, 2010;
+Heinen e Osório, 2008; Xu et al., 2006) utilizam algoritmos genéticos para realizar a coordenação dos atuadores
+dos robôs com pernas, enquanto que, dentro do campo
+do aprendizado por reforço, (Holland e Snaith, 1992)
+utiliza uma técnica conhecida como Q-learning e (Porta,
+2000) utiliza uma variação dessa técnica denominada de
+ρ-learning. Além do Q-learning e suas variações que são
+comumente encontradas na literatura, outras técnicas
+também são utilizadas para esse fim como o stochastic
+gradient ascent (Murao et al.,2001), hill-climbing algorithm (Tal, et al., 2005) e model-based reinforcement
+learning (Morimoto et al., 2004).
+Os pesquisadores que utilizam técnicas de aprendizado
+de máquina na coordenação dos atuadores de robôs com
+pernas tentam minimizar o número de tentativas necessárias através da simplificação do problema. Uma alternativa se baseia numa caracterı́stica observada nos animais, onde, para um estilo de locomoção intermitente,
+há um padrão que se repete por um longo perı́odo caracterizando assim um movimento cı́clico (Alexander,
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+79
+
+1989). Essa propriedade vem sendo utilizada por pesquisadores ao compor o comportamento dos atuadores
+dos seus robôs (Heinen, 2007; Still e Douglas, 2006; Kohl
+e Stone, 2004).
+O lado negativo dessa estratégia corresponde à limitação da utilização do robô em terrenos regulares, uma vez
+que, para as superfı́cies irregulares, há a necessidade do
+robô se adaptar às diferentes condições do terreno onde
+está sendo realizada a locomoção. Como alternativa,
+existem as técnicas de caminhar livre (free gait), onde
+a sequencia dos movimentos realizados durante a locomoção raramente se repetem. Como exemplo, (Erden
+e Leblebicioglu, 2008) utiliza uma técnica onde é realizada uma escolha aleatória de um estado a partir de um
+subconjunto de estados estáveis que satisfazem determinadas caracterı́sticas e (Porta e Celaya, 2004) utiliza um
+efeito de reação para realizar o controle das pernas do
+robô.
+É importante salientar que, apesar de uma das maiores vantagens da utilização dos robôs com pernas ser a
+sua utilização em terrenos irregulares, o problema da
+locomoção de walking machines em terrenos planos e
+regulares ainda não foi totalmente resolvido.
+Com o objetivo de viabilizar a locomoção de robôs com
+pernas em uma determinada direção e sentido desejados em uma superfı́cie plana e regular, este artigo propõe uma metodologia para a coordenação das pernas de
+robôs utilizando a técnica de aprendizado por reforço conhecida como Learning Automata para buscar soluções
+que satisfaçam múltiplos critérios.
+
+essa etapa, a solução encontrada no ambiente de
+simulação é também testada no robô real construı́do com o kit de robótica educacional BIOLOID
+Comprehensive Kit fabricado pela empresa Robotis
+(http://www.robotis.com/xe/bioloid_en).
+A generalidade da solução proposta é demonstrada por
+dois estudos de caso onde os robôs apresentam diferentes
+morfologias: um robô com quatro pernas (quadrúpede)
+e outro com três pernas (trı́pode). Em ambos os casos
+as pernas dos robôs possuem 3 atuadores.
+Neste artigo a seção 2 apresenta a composição geral das
+morfologias utilizadas na montagem dos robôs, a seção 3
+descreve a formulação do problema abordado no artigo,
+a seção 4 apresenta a proposta de solução adotada, a
+seção 5 expõe os estudos de casos realizados e a seção
+6 apresenta as conclusões e as propostas para trabalhos
+futuros.
+
+2
+
+MORFOLOGIA DOS ROBÔS
+
+De forma simplificada, os robôs dotados de pernas são
+compostos por um corpo principal e pelas pernas. As
+pernas correspondem a um conjunto de elementos rı́gidos com uma ou mais articulações que podem ou não
+ser acionadas por atuadores (Figura 1). Um robô pode
+possuir desde uma perna até um grande número delas
+que, em relação à locomoção, têm como finalidade sustentar/equilibrar o corpo do robô e gerar o impulso necessário para o seu deslocamento. Já o corpo principal
+corresponde à parte do robô onde as pernas estão conectadas.
+
+Neste artigo, as soluções obtidas são avaliadas considerando quatro medidas:
+1. a velocidade de locomoção na direção e sentido desejados;
+2. a suavidade da locomoção;
+3. o consumo de energia, e
+4. o máximo torque exigido pelos atuadores.
+Neste trabalho, resolver o problema de coordenação das pernas do robô significa propor um conjunto de funções periódicas a serem utilizadas como
+referências angulares pelos atuadores localizados nas
+articulações das pernas do robô.
+A solução do
+problema é encontrada usando um ambiente de simulação construı́do com o SimMechanics Toolbox
+do programa MATLAB R2009b fornecido pela empresa MathWorks (http://www.mathworks.com). Após
+80
+
+Figura 1: Exemplo de uma perna cuja morfologia possui 3 corpos rı́gidos (A, B e C) e 3 articulações (1, 2 e 3).
+
+Os robôs dotados de pernas são classificados pelo número de pernas que possuem, podendo ser monópodes
+(uma perna), bı́pedes (duas pernas), trı́podes (três pernas), quadrúpedes (quatro pernas), etc.
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+Nas morfologias utilizadas neste trabalho (quadrúpede e
+trı́pode), cada articulação de cada perna possui apenas
+um grau de liberdade angular que é acionado por um
+pequeno servomotor localizado na articulação. A velocidade e o ângulo desse servomotor são ajustados pelo
+seu controlador local que recebe um sinal de referência
+enviado por um controlador principal através de uma
+rede de comunicação serial cabeada tipo ”daisy-chain”.
+Assim sendo, a solução do problema de coordenação das
+pernas de um robô é obtida pela geração do sinal temporal de referência para cada articulação em cada perna.
+
+3
+
+FORMULAÇÃO DO PROBLEMA
+
+Neste artigo, o sinal de referência angular utilizado pelo
+atuador a da perna p é caracterizado como uma função
+periódica no tempo fpa (t) que é definida por um conjunto
+de N E pontos linearmente interpolados entre si, como
+ilustrado pela Figura 2.
+
+Visando simplificar o problema, pode-se levar em consideração as simetrias existentes no robô para minimizar
+o número de variáveis a serem ajustadas, como realizado
+em (Santos et al., 2010). Para tal, as pernas que são simétricas em relação ao Centro de Massa do robô (CM)
+e possuem uma mesma estrutura podem ser agrupadas
+tal que as pernas de um mesmo grupo compartilhem
+as mesmas funções fpa (t), porém com uma determinada
+defasagem φg (p) para cada perna do grupo g (uma das
+pernas do grupo é adotada como a perna de referência
+e, por definição, assume o no 1 no grupo e φg (1) = 0).
+Utilizando essa estratégia, considerando que todas as
+pernas do exemplo acima citado sejam similares, haveria
+a necessidade de se definir 3 funções com 4 pontos cada
+(uma função por atuador), 3 defasagens (1 defasagem
+por perna) e o perı́odo T . Assim, o número de variáveis
+N v diminui de 49 para 16.
+Em suma, além do perı́odo T , o algoritmo de aprendizado deve ajustar (N E N a + N p − 1) variáveis para
+cada grupo de pernas similares que for identificado pela
+análise da morfologia do robô, pois:
+• a função periódica usada como função de referência
+da posição angular do k-ésimo atuador da perna 1
+do grupo, denotada por f1k (t), é definida pelos seus
+valores nos N E instantes de tempo t = (j − 1) NTE ,
+onde j ∈ {1 : N E};
+
+Figura 2: Representação da função aplicada no atuador a da
+perna p.
+
+Dessa forma, para cada atuador existente no robô, devese ajustar os valores dos N E pontos que descrevem a
+função, juntamente com o perı́odo de tempo T .
+Dado que o robô possui N atuadores, o mesmo necessitará de N funções para descrever seus movimentos.
+Assim, levando em consideração que cada uma das N
+funções é caracterizada por N E pontos e todas possuem
+o mesmo perı́odo T , o número total de variáveis que precisam ser determinadas (N v) é dado pela Equação (1).
+
+Nv = NE N + 1
+
+(1)
+
+Como exemplo, para um robô quadrúpede (N p = 4) com
+três articulações por perna (N a = 3) e quatro pontos
+por função (N E = 4), N v = N E N p N a + 1 = 49.
+
+• se o grupo tem mais de uma perna (N p > 1), então
+é preciso determinar a defasagem φ(p) da perna p
+do grupo, onde p ∈ {2 : N p}.
+Definidas as variáveis a serem ajustadas, a busca pelos
+seus valores leva em consideração o desempenho do robô
+através da resposta obtida durante a simulação do seu
+caminhar. Usando como base um sistema de coordenadas inercial formado pelos eixos x, y e z onde o robô
+está inicialmente posicionado tal que a sua frente está
+alinhada no sentido positivo do eixo x, os seguintes sinais são observados na simulação:
+1. Vx (t), Vy (t), Vz (t): velocidades lineares do CM nos
+eixos x, y e z;
+2. Wx (t), Wy (t), Wz (t): velocidades angulares observadas no corpo principal do robô em torno dos eixos
+x, y e z (velocidades de rolagem, arfagem e guinada)
+com a origem das coordenadas localizada no CM do
+robô;
+3. τpa (t): torque no atuador a da perna p;
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+81
+
+4. Wpa (t): velocidade angular do atuador a da perna
+p.
+IW =
+
+Utilizando as variáveis medidas, as seguintes matrizes
+amostradas são definidas:
+
+
+V (x, 1)
+V =  V (y, 1)
+V (z, 1)
+
+
+W (x, 1)
+W =  W (y, 1)
+W (z, 1)
+
+V (x, 2)
+V (y, 2)
+V (z, 2)
+
+W (x, 2)
+W (y, 2)
+W (z, 2)
+
+...
+...
+...
+
+
+
+V (x, N )
+V (y, N ) 
+V (z, N )
+
+
+... W (x, N )
+... W (y, N ) 
+... W (z, N )
+
+s
+
+P3
+
+i=1 (
+
+(3)
+
+• V (i, j) corresponde à velocidade linear do CM no
+eixo x, y ou z (i = 1, 2 ou 3 respectivamente) no
+instante de amostragem j (j = 1 a N );
+
+Ec =
+
+N a Z
+X
+
+a=1
+
+Para mensurar essas variações, são definidas as taxas de variações das velocidades lineares (IV ) e das
+velocidades angulares (IW ). A primeira é mensurada a partir das variações das velocidades lineares
+observadas no CM, cujo valor é obtido através da
+Equação (4).
+
+IV =
+
+s
+
+P3
+
+i=1 (
+
+PN
+
+j=1 (V
+
+(i, j) − V (i))2 )
+
+N
+
+(4)
+
+A taxa de variação das velocidades angulares (IW )
+é obtida de forma análoga à IV . Para tal, utiliza-se
+a Equação (5) (Golub e Hu, 2003).
+82
+
+N
+
+(5)
+
+O valor de Ec é dado pela Equação 6, onde ti e tf
+são os instantes de tempo inicial e final da realização
+de um passo.
+
+• W (i, j) corresponde à velocidade angular do CM
+em torno do eixo x, y ou z (i = 1, 2 ou 3 respectivamente) no instante de amostragem j (j = 1 a
+N ).
+
+2. Suavidade da locomoção do robô: Deseja-se minimizar as variações das velocidades lineares e angulares observadas no CM do robô para evitar que, ao
+carregar uma carga, o seu conteúdo seja danificado.
+
+− W (i))2 )
+
+4. Consumo de energia: Visando maximizar o tempo
+de operação do robô sem a necessidade de paradas
+para a recarga das suas baterias, a minimização do
+consumo de energia é considerada. Para tal, buscase minimizar a soma da energia cinética rotacional
+verificada em todos os atuadores (Ec).
+
+onde:
+
+1. Velocidade: Visando viabilizar que o robô chegue
+ao seu destino rapidamente, busca-se um comportamento que maximize a média da velocidade linear
+(V ) do CM do robô no sentido positivo do eixo x;
+
+j=1 (W (i, j)
+
+3. Máximo torque exigido: No intuito de evitar a saturação do atuador real e permitir que robôs com
+atuadores menos potentes possam viabilizar o desempenho desejado, busca-se minimizar o máximo
+torque instantâneo aplicado pelos atuadores considerando todas as pernas (τmax ). Dessa maneira,
+implicitamente assume-se que todos os atuadores
+são iguais.
+
+(2)
+
+Com esses sinais obtidos, quatro ı́ndices são utilizados
+para avaliar a qualidade da resposta obtida:
+
+PN
+
+tf
+
+τpa (t) Wpa (t) dt
+ti
+
+
+
+(6)
+
+Dessa forma, essas grandezas escalares compõem o vetor
+de desempenho J = [Vx IV IW τmax Ec] que quantifica
+o resultado obtido com a utilização de um determinado
+conjunto de funções fpa (t).
+
+4
+
+PROPOSTA DE SOLUÇÃO
+
+Para ajustar as variáveis que definem as funções de referência de cada atuador, este artigo utiliza uma técnica de
+aprendizado por reforço conhecida como Learning Automata (Narendra e Thathachar, 1974).
+O Aprendizado por Reforço (AR) corresponde a um
+meio de mapear situações em ações visando maximizar um sinal de reforço numérico. Para tal, avalia-se
+o conhecimento acumulado pela aplicação de propostas
+de soluções para direcionar a busca por melhores soluções (Sutton e Barto, 1998; Thathachar e Sastry, 2002).
+Dessa forma, o AR caracteriza-se como um método de
+aprendizado com supervisão fraca, cujo supervisor apenas fornece informações de sucesso ou fracasso durante a
+fase de treinamento (Nascimento Jr. e Yoneyama, 2000).
+As técnicas existentes em AR são compostas por quatro
+elementos:
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+Polı́tica de Ações: Define a ação em um dado momento do aprendizado, podendo ser comparado na
+psicologia como as regras de respostas a estı́mulos
+ou associações. Na aplicação em questão, esse elemento corresponde à descrição de um determinado
+conjunto de funções fpa (t) a serem testadas;
+Função Objetivo: Corresponde à função que avalia o
+desempenho da ação tomada. Esta função tem
+como objetivo fornecer um reforço, uma contribuição imediata que, em sistemas biológicos, pode ser
+comparado ao prazer e à dor;
+Função de Avaliação: Avalia a qualidade como um
+todo das possı́veis ações a serem tomadas levando
+em consideração um longo perı́odo. Dessa forma,
+é feita uma avaliação mais refinada e abrangente,
+definindo numericamente o conhecimento obtido;
+Modelo do Sistema: Com a função de descrever o
+comportamento do sistema que se está aplicando o
+aprendizado por reforço, este ı́tem é optativo nesse
+tipo de aplicação.
+Com esses elementos, o aprendizado por reforço utiliza a
+experiência com as tentativas para obter o conhecimento
+desejado. Para tal, o conhecimento armazenado na função de avaliação é utilizado para selecionar a próxima
+polı́tica de ações a serem tomadas. Após executadas, o
+resultado é então avaliado quantitativamente através da
+função objetivo que, por sua vez, define o reforço a ser
+utilizado na atualização da função de avaliação. Este
+ciclo é então repetido até que haja a convergência do
+conhecimento.
+Nesse contexto, o Learning Automata (LA) é uma técnica de AR que tem como base os chamados autômatos
+que correspondem à modelagem matemática das Máquinas de Estados Finitos (MEF). Uma MEF é uma representação do comportamento de um sistema através
+de um conjunto de estados, transições e ações, tal que
+(Hopcroft et al., 2006):
+• Os estados correspondem a um conjunto mı́nimo
+de variáveis capazes de descrever o sistema em um
+determinado instante;
+• As transições correspondem às mudanças entre estados que ocorrem regidas por condições;
+• As ações são atividades que devem ser realizadas em
+um determinado instante (ao entrar ou sair de um
+estado, durante uma transição entre estados, etc.).
+
+Nesse contexto, o LA tem como função ajustar a função de avaliação representada pelo conjunto de probabilidades associadas às possı́veis transições do autômato
+utilizando os conceitos de AR.
+Para aplicar a teoria desenvolvida em LA na pesquisa
+aqui apresentada, cada variável a ser ajustada é associada a um autômato com apenas um estado e um conjunto de possı́veis transições discriminadas pelo projetista (Thathachar e Sastry, 2003).
+
+4.1
+
+Armazenamento do Conhecimento
+
+O primeiro passo para a implementação do LA consiste
+em gerar a estrutura capaz de armazenar o conhecimento, em outras palavras, gerar a função de avaliação.
+Para tal, este artigo utiliza um vetor coluna PT e duas
+matrizes Pφg e Pfg para cada grupo de pernas similares g.
+Com essa representação, o vetor e cada coluna das matrizes armazena a função de avaliação de um autômato
+especı́fico.
+Associado às posições angulares que descrevem as funções fpa (t), Pfg tem dimensões N P P x N E x N ag , onde:
+• N P P é o número de possı́veis posições angulares
+para os atuadores;
+• N E é o número de pontos nas funções de referência
+dos atuadores, e
+• N ag é o número de atuadores em uma das pernas
+do grupo g.
+Assim, na matriz Pfg (Figura 3):
+Linhas: cada linha corresponde a uma possı́vel posição
+angular do atuador;
+Colunas: cada coluna corresponde a um instante de
+tempo;
+Profundidades: cada profundidade corresponde a um
+atuador.
+Analisando a morfologia do robô, deve-se definir a matriz θ g com dimensão N P P x N ag associada à matriz
+Pfg . O elemento θ g (i, k) representa uma possı́vel posição
+angular para o k-ésimo atuador da perna de referência
+do grupo de pernas similares g. Assim, os elementos da
+k-ésima coluna da matriz θ g são definidos de forma linearmente espaçados entre as posições angulares mı́nima
+e máxima do k-ésimo atuador.
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+83
+
+e N E − 1. Portanto, como f1k (t) denota a função periódica do k-ésimo atuador da perna 1 (perna de referência
+do grupo), então a função periódica do k-ésimo atuador
+da j-ésima perna será dada por:
+
+fjk (t)
+
+Figura 3: Organização da matriz Pfg que armazena o conhecimento adquirido pelo aprendizado por reforço para as posições
+angulares dos atuadores.
+
+Com essa representação, o valor do elemento da matriz Pfg (i, j, k) representa a estimativa de probabilidade
+de sucesso quando o elemento θ g (i, k) define o j-ésimo
+ponto da função de referência do k-ésimo atuador da
+perna de referência do grupo g. Assim, a soma dos valores de uma mesma coluna da matriz Pfg deve ser sempre
+1.
+Inicialmente, como ainda não foi adquirido nenhum conhecimento a respeito dos pontos que irão compor cada
+função, todas as probabilidades Pfg (i, j, k) assumem o
+valor 1/N P P .
+A matriz Pφg (Figura 4) armazena o conhecimento referente às defasagens das pernas do grupo g e tem dimensão N E x N pg onde N pg é o número de pernas no
+grupo g. Essa matriz é organizada da seguinte forma:
+Linhas: cada linha corresponde a um possı́vel valor de
+defasagem;
+Colunas: cada coluna corresponde a uma perna do
+grupo de pernas similares.
+
+=
+
+f1k
+
+
+
+T
+t + φ (j)
+NE
+g
+
+
+
+(7)
+
+Como a primeira coluna da matriz Pφg está associada à
+perna de referência (cuja defasagem por definição é 0),
+então tal coluna é definida como Pφg (:, 1) = [1, 0, ..., 0]T
+e não é alterada pelo algoritmo de aprendizado. Os elementos das demais colunas da matriz Pφg são definidos
+inicialmente como 1/N E.
+Por fim, o projetista deve ainda definir os vetores VT
+e PT com o mesmo número de elementos. O vetor VT
+contém os possı́veis valores para o parâmetro T (perı́odo
+das funções de referência de todos os atuadores do robô).
+O Apêndice A deste artigo mostra como o projetista
+pode definir os elementos do vetor VT .
+O elemento PT (i) representa a estimativa da probabilidade de sucesso quando o valor VT (i) é usado como o
+perı́odo das funções de referência de todos os atuadores
+do robô.
+Como no caso das colunas das matrizes Pfg e Pφg , inicialmente PT (i) = 1/N P T , onde N P T corresponde ao
+tamanho do vetor VT .
+
+4.2
+
+Algoritmo de aprendizado
+
+Para implementar o algoritmo de aprendizado proposto
+(LA) segue-se os seguintes passos a cada iteração:
+1. Seleção da solução a ser testada;
+2. Quantificação da qualidade da resposta obtida utilizando da representação simulada do robô;
+3. Ajuste das probabilidades de sucesso e verificação
+da convergência do conhecimento.
+4.2.1
+
+Figura 4: Organização da matriz Pφg que armazena o conhecimento adquirido pelo aprendizado por reforço para as defasagens entre as pernas de um mesmo grupo de pernas similares.
+
+As defasagens das pernas de um mesmo grupo (elementos do vetor φg ) admitem valores inteiros entre 0
+84
+
+Seleção da Solução a Ser Testada
+
+O primeiro passo do algoritmo de aprendizado corresponde à seleção da solução a ser testada, ou seja, a definição da polı́tica de ações composta pelas funções de
+referências fpa (t). Os parâmetros que caracterizam as
+referidas funções são selecionados aleatóriamente considerando as probabilidades registradas no vetor PT e nas
+matrizes Pfg e Pφg .
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+Para tal, inicialmente seleciona-se um elemento do vetor VT considerando o vetor de probabilidades PT . Em
+seguida, para cada grupo de pernas similares g:
+• são selecionadas as defasagens de cada perna, onde
+a definição da defasagem da j-ésima perna considera as probabilidades registradas na coluna Pφg (:
+, j);
+• são selecionados os N E pontos que definem as funções de referência de cada atuador da perna de referência (p = 1) considerando os valores da coluna
+θg (:, k), as probabilidades registradas nas colunas
+Pfg (:, :, k) e a máxima velocidade angular especificada para os atuadores reais (Wmax ) (Maiores detalhes sobre a seleção dos pontos que descrevem as
+funções f1a (t) podem ser vistos no Apêndice B deste
+artigo).
+4.2.2
+
+Avaliação da Resposta Obtida Utilizando o
+Robô Simulado
+
+O comportamento do robô usando a solução selecionada
+na etapa anterior é então avaliado em um ambiente de
+simulação através do vetor de desempenho J (apresentado na seção 3).
+Neste artigo, o ambiente de simulação foi criado
+usando o SimMechanics Toolbox do MATLAB/Simulink
+R2009b (http://www.mathworks.com).
+Essa ferramenta permite descrever e simular o modelo de complexos equipamentos mecânicos através de um diagrama
+composto por um conjunto de blocos representando uma
+combinação de corpos rı́gidos conectados entre si por
+juntas translacionais e/ou rotacionais. Dessa forma, o
+modelo oferece uma simulação fı́sica da cinemática e da
+dinâmica do robô, com parâmetros e resultados que consideram gravidade, peso, colisões, etc. Como exemplo,
+a Figura 5 ilustra a conexão entre esses elementos de tal
+forma a gerar a simulação desejada1 .
+4.2.3
+
+Ajuste das Probabilidades de Sucesso e Verificação da Convergência do Conhecimento
+
+Após o cálculo do vetor de desempenho J, o mesmo é
+utilizado para ajustar a função de avaliação composta
+pelo vetor PT e pelas matrizes Pf e Pφ . Os detalhes
+desse procedimento são mostrados no Apêndice C deste
+artigo.
+1 Maiores
+
+informações sobre a utilização e o funcionamento do SimMechanics podem ser encontradas em
+http://www.mathworks.com/products/simmechanics/.
+
+Figura 5: Modelo de simulação do robô móvel quadrúpede
+usado no SimMechanics Toolbox do MATLAB e a representação gráfica gerada pelo mesmo software.
+
+Ao final do ajuste das probabilidades associadas aos parâmetros que definem a polı́tica de ações selecionada,
+o passo seguinte consiste em verificar se houve convergência do conhecimento. Neste artigo, o critério usado
+para identificar a convergência do conhecimento foi a
+presença de um elemento com valor superior a 0,95 no
+vetor PT e em todas as colunas das matrizes Pf e Pφ de
+todos os grupos de pernas.
+Não sendo verificada a convergência, uma nova iteração
+é realizada, caso contrário o treinamento é finalizado e
+o conjunto final de funções fpa (t) é definido. Para tal,
+sendo N g o número de grupos de pernas similares existentes, a solução final é identificada pelos valores dos parâmetros com maior probabilidade associada utilizando
+o seguinte algoritmo:
+
+5
+
+ESTUDOS DE CASO
+
+Para analisar o desempenho da metodologia de coordenação aqui proposta, foram utilizadas duas morfologias
+de robôs móveis com pernas: um robô quadrúpede e um
+robô trı́pode (Figura 6).
+Os
+robôs reais foram
+construı́dos utilizando o
+BIOLOID Comprehensive Kit da empresa ROBOTIS (http://www.robotis.com/xe/bioloid_en) que contém um conjunto de componentes que podem ser disencontre i∗ = {i que maximiza PT (i)}
+T = VT (i∗ )
+for g = 1 → N g do
+for k = 1 → N ag do
+for j = 1 → N E do
+encontre i∗ = {i que maximiza Pfg (i, j, k)}
+h
+i
+f1k (j − 1) NTE = θg (i∗ , k)
+end for
+end for
+if N p > 1 then
+for p = 1 → N pg do
+encontre i∗ = {i que maximiza Pφg (i, p)}
+i
+h
+fpk (t) = f1k t + (i∗ − 1) NTE
+end for
+end if
+end for
+
+5.1
+
+Robô Móvel Quadrúpede
+
+Com as caracterı́sticas apresentadas na Tabela 1 e os
+limites das posições angulares dos atuadores do robô
+apresentadas na Tabela 2, todas as pernas do robô quadrúpede podem ser agrupadas em um único grupo ao
+verificar a similaridade do robô. Assim, o algoritmo de
+aprendizado deve definir os valores para 16 variáveis que
+são:
+• o perı́odo de tempo T , usando os vetores VT e PT ,
+• os 12 pontos que formam as funções de referência
+dos 3 atuadores da perna de referência, com 4 pontos por função (usando as matrizes θ e Pf ), e
+• as 3 defasagens das outras 3 pernas (usando a matriz Pφ ).
+
+Tabela 1: Caracterı́sticas do robô quadrúpede.
+
+Np
+4
+
+Na
+3
+
+Peso
+(kg)
+1, 54
+
+Dimensões (cm)
+X
+Y
+Z
+30 19, 5
+11
+
+Figura 6: Robôs utilizados nos testes.
+
+postos de diversas formas viabilizando a montagem de
+robôs com pernas, garras e/ou rodas. Os referidos componentes correspondem a:
+
+1. Uma unidade de processamento microcontrolada
+conhecida como CM-5 que age como o coordenador
+central e é responsável por gerenciar os demais elementos (atuadores e sensores) através de uma rede
+de comunicação serial cabeada tipo ”daisy-chain”
+embarcada no robô;
+2. Servomotores microcontrolados que são usados
+como atuadores em cada junta; o microcontrolador
+de cada servomotor recebe a função de referência
+da posição angular e gera os sinais de controle para
+o servomotor;
+3. Diversos tipos de armações para conectar os componentes, permitindo montar o robô almejado.
+
+Em ambos os estudos de caso os processos de aprendizado utilizaram um N P P = 20, um N P T = 20 e um
+N E = 4.
+86
+
+Tabela 2: Limites das posições angulares dos 3 atuadores de
+cada perna do robô quadrúpede.
+
+1
+Min
+−42, 5o
+
+Max
+57, 5o
+
+Atuador
+2
+Min Max
+−90o
+0o
+
+3
+Min
+−60o
+
+Max
+12o
+
+Utilizando um vetor de pesos F = [1 2 1 1] (Maiores
+detalhes sobre o vetor F podem ser vistos no Apêndice
+C), um Tmin = 0, 28 s e um Tmax = 1 s, obteve-se o
+resultado cujo progresso está representado na Figura 7
+através de três gráficos, onde:
+• o primeiro gráfico mostra o histórico das taxas de
+convergência (T xc) do vetor PT e das matrizes Pf
+e Pφ (a taxa de convergência do vetor PT é definida
+pelo seu valor máximo e a taxa de convergência das
+matrizes Pf e Pφ é definida pela média dos valores
+máximos de todas as suas colunas);
+• O segundo gráfico apresenta a média móvel com
+20 iterações das velocidades V ao longo do treinamento. Para se obter a média móvel com N iterações, o seu elemento i corresponde à média dos
+resultados obtidos na iteração i − N + 1 à iteração
+i;
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+• O último gráfico mostra a porcentagem móvel de
+quedas detectadas com 50 iterações. A porcentagem móvel é obtida de forma análoga à média móvel, ou seja, o elemento i corresponde à porcentagem das quedas verificadas na iteração i − N + 1 à
+iteração i. Já a queda do robô é identificada quando
+a posição do seu CM em relação ao eixo z atinge
+uma altura de 0 m.
+
+Figura 8: Funções de referência angular obtidas pelo processo
+de aprendizado para o robô quadrúpede.
+
+na mesma diagonal estão em fase (pernas 1 e 4 e pernas
+2 e 3). A numeração das pernas do robô quadrúpede é
+apresentada na Figura 6.
+A Tabela 3 mostra a medida de desempenho da solução
+obtida pelo processo de aprendizado (componentes do
+vetor J) para o robô quadrúpede simulado2 .
+Figura 7: Progresso do aprendizado do robô quadrúpede ao
+longo do treinamento.
+
+O primeiro gráfico da Figura 7 mostra que o perı́odo do
+passo (T ) foi o primeiro parâmetro a convergir, seguido
+pelas defasagens (vetor φ) e pelos pontos que descrevem
+as funções de referência (f1a (t)).
+Seguindo a análise do processo de aprendizado, o segundo e o terceiro gráficos confirmam o progresso verificado no anterior. Neles verifica-se que a média móvel
+da velocidade do robô aumenta à medida que as taxas
+de convergência aumentam enquanto que a porcentagem
+móvel de quedas diminui.
+
+Tabela 3: Medida de desempenho da solução obtida pelo processo de aprendizagem para o robô quadrúpede simulado.
+
+V
+27, 87 cm
+s
+
+IV
+0, 14 rad
+s
+
+IW
+0, 27 m
+s
+
+τmax
+26, 21N m
+
+Ec
+0, 44J
+
+Ao aplicar a solução obtida pelo processo de aprendizado
+no robô real2 (Figura 9), obteve-se uma velocidade de
+26, 60 cm/s, ou seja, cerca de 95% da velocidade obtida
+na simulação.
+Como o robô real não possui sensores, atualmente não
+há como verificar o máximo torque exigido, a potência
+média e as taxas de variações das velocidades lineares e
+angulares ao executar o movimento no robô real.
+
+Após a convergência do processo de aprendizado, que
+ocorreu com 5108 iterações, o perı́odo T foi ajustado
+para 0, 32 s e obteve-se as funções f11 (t), f12 (t) e f13 (t)
+apresentadas na Figura 8 para as juntas 1, 2 e 3 (respectivamente as juntas do quadril, joelho e tornozelo da
+perna do robô).
+
+Com as caracterı́sticas apresentadas na Tabela 4, o robô
+trı́pode corresponde a uma morfologia com maior dificuldade para determinar o modo de caminhar quando
+
+O processo de aprendizado também ajustou a defasagem
+das 4 pernas para [0 2 2 0], ou seja, as 2 pernas traseiras
+(pernas 1 e 2) estão defasadas 180o entre si e as pernas
+
+2 O caminhar obtido para o robô quadrúpede simulado e para
+o robô real são mostrados nos vı́deos disponı́veis em:
+ftp://labattmot.ele.ita.br/ele/jeeves/videos/C&A2011_4ps.wmv
+ftp://labattmot.ele.ita.br/ele/jeeves/videos/C&A2011_4pr.wmv
+
+5.2
+
+Robô Móvel Trı́pode
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+87
+
+• 4 pontos para a função de referência de cada um
+dos 3 atuadores da perna de referência do Grupo 1
+(sub-total: 12 variáveis), e
+• o mesmo que o item anterior para a perna de referência do Grupo 2.
+
+Figura 9: Comportamento verificado no quadrúpede real com
+as funções obtidas no aprendizado.
+
+comparado ao robô quadrúpede. O principal fator que
+aumenta essa complexidade corresponde ao fato de que,
+para uma postura estaticamente estável, há a necessidade das três pernas estarem em contato com a superfı́cie de suporte. Assim, quando uma perna do robô
+trı́pode é levantada do chão para executar o movimento
+de caminhar, a postura do robô fica instável.
+
+Utilizando um vetor de pesos F = [1 0 1 1], um
+Tmin = 0, 76 s e um Tmax = 1 s, obteve-se a evolução apresentada na Figura 10 onde é mostrada a maior
+dificuldade para a convergência do processo de aprendizado nesse caso quando comparado ao caso do robô quadrúpede. Nesse procedimento foram necessários 11458
+iterações para que o algoritmo de aprendizado atingisse
+a convergência em todas as variáveis envolvidas na coordenação das pernas do robô.
+
+Tabela 4: Caracterı́sticas do robô trı́pode.
+
+Np
+3
+
+Na
+3
+
+Peso
+(kg)
+1, 05
+
+Dimensões (cm)
+X
+Y
+Z
+11 22, 6
+19
+
+Outro fator que dificulta a convergência do conhecimento é o número de variáveis a serem ajustadas. Ao
+analisar a similaridade do robô, obtém-se dois grupos
+de pernas: a) o Grupo 1 é formado pelas pernas traseiras 1 e 2, e b) o Grupo 2 é formado apenas pela perna
+dianteira 3 (pernas numeradas conforme Figura 6). A
+Tabela 5 mostra os limites das posições angulares dos 3
+atuadores dos 2 grupos de pernas.
+Tabela 5: Limites das posições angulares dos 3 atuadores de
+cada grupo de pernas.
+
+Grupo
+1
+
+2
+
+Atuador
+3
+2
+1
+3
+2
+1
+
+Min
+−150o
+−90o
+−90o
+−12o
+−90o
+−90o
+
+Max
+150o
+90o
+90o
+150o
+90o
+90o
+
+Para este robô o processo de aprendizado precisa determinar 26 variáveis:
+• o perı́odo T ,
+• a defasagem da perna 2 do Grupo 1,
+88
+
+Figura 10: Evolução observada durante o processo de aprendizado para o robô trı́pode.
+
+Como resultado da etapa de aprendizado, obteve-se
+as curvas apresentadas na Figura 11 com um perı́odo
+T = 0, 82 s, onde as juntas 1, 2 e 3 correspondem aos
+atuadores superior, central e inferior, respectivamente.
+Para o grupo de pernas 1 obteve-se uma defasagem nula
+entre as pernas. Com essas caracterı́sticas, o caminhar
+obtido3 para o robô apresentou o desempenho ilustrado
+pela Tabela 6.
+3 O caminhar obtido para o robô trı́pode simulado e para o robô
+real são mostrados nos vı́deos disponı́veis em:
+ftp://labattmot.ele.ita.br/ele/jeeves/videos/C&A2011_3ps.wmv
+ftp://labattmot.ele.ita.br/ele/jeeves/videos/C&A2011_3pr.wmv
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+a necessidade de se aprimorar o modelo utilizado para
+simular o efeito das forças de atrito que incidem nos pés.
+
+6
+
+CONCLUSÕES E TRABALHOS FUTUROS
+
+Este artigo apresentou uma metodologia capaz de gerar
+a coordenação dos atuadores de robôs com pernas para
+duas distintas morfologias de robôs, onde pode-se esperar que tal metodologia possa também ser adotada para
+outras morfologias.
+A metodologia proposta procura:
+
+Figura 11: Funções de referência angular obtidas pelo processo
+de aprendizado para as juntas 1, 2 e 3 dos dois grupos de pernas
+do trı́pode.
+
+Tabela 6: Medida de desempenho da solução obtida pelo processo de aprendizagem para o robô trı́pode simulado.
+
+V
+28, 21 cm
+s
+
+IV
+0, 40 rad
+s
+
+IW
+1, 99 m
+s
+
+τmax
+52, 07N m
+
+Ec
+1, 81J
+
+Quando testado no ambiente real3 (Figura 12) o robô
+apresentou uma velocidade de 18, 59 cm/s que corresponde a cerca de 66% da velocidade atingida durante a
+simulação.
+
+1. maximizar a velocidade do robô na sua direção frontal;
+2. maximizar a suavidade do deslocamento do robô;
+3. minimizar o máximo torque e o consumo de energia
+dos atuadores localizados nas juntas do robô.
+Para ajustar as variáveis envolvidas no deslocamento,
+uma técnica de aprendizado por reforço foi utilizada e
+a simetria entre as pernas foi levada em consideração
+no intuito de facilitar e, consequentemente, agilizar o
+aprendizado.
+Nesse contexto, o projetista deve equilibrar a relação entre a velocidade de convergência e a exploração dos conjuntos de possı́veis parâmetros que descrevem as funções
+de referência utilizadas no controle dos atuadores. Para
+tal, deve-se ajustar o número de pontos que descrevem
+as referidas funções (N E), o número de possı́veis posições angulares que podem compor esses pontos (N P P )
+e o número de possı́veis perı́odos (N P T ).
+Nos estudos de caso, a metodologia foi testada em 2
+morfologias (robôs com 4 e 3 pernas) em ambiente simulado e em protótipos dos robôs reais. Apesar da diferença verificada entre os desempenhos de velocidade na
+simulação e no robô trı́pode real, os resultados obtidos
+mostram que a metodologia proposta atinge o resultado
+desejado ao viabilizar a coordenação das pernas de diferentes morfologias.
+
+Figura 12: Comportamento verificado no Trı́pode real com as
+funções obtidas no aprendizado.
+
+Ao comparar o caminhar simulado e o real, constata-se
+que no segundo ocorrem momentos onde os pés traseiros derrapam enquanto que no robô simulado isso não
+ocorre. Sendo assim, a diferença de velocidade verificada
+tem como principal fator esse efeito, indicando que há
+
+Algumas possibilidades de trabalhos futuros são:
+1. Ajuste dos modelos usados na simulação que descrevem a força de reação de contato e o atrito entre
+os pés do robô e a superfı́cie onde ele se locomove;
+2. Inserção de mais sensores nos robôs reais de tal
+forma a viabilizar a extração de mais informações a
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+89
+
+cerca da interação entre o robô e o ambiente de navegação. Dentre as opções, podem ser adicionados
+sensores de pressão sob os pés dos robôs, um sensor inercial com 6 graus de liberdade para medição
+de posição e orientação, sensor infravermelho para
+identificar e localizar possı́veis obstáculos, dentre
+outros;
+3. Continuação do aprendizado usando o robô real,
+após a obtenção da solução usando o ambiente de
+simulação;
+
+1:
+2:
+3:
+4:
+5:
+
+6:
+
+7:
+
+4. Avaliação da influência da variação dos valores de
+N E, N P P e N P T no desempenho do robô e na
+velocidade de convergência.
+
+Os autores agradecem o suporte financeiro concedido
+pela CAPES (Projeto Pró-Engenharias PE-041-2008) e
+pela FAPESP (Processo no. 2006/06005-0) e o apoio da
+Divisão de Engenharia Eletrônica do ITA ao Laboratório
+de Máquinas Inteligentes (LMI).
+
+APÊNDICE A
+O vetor VT possui N P T elementos que são definidos
+de forma linearmente espaçada entre o Tmin dado pela
+Equação A.1 e o Tmax definido pelo projetista.
+max(|4θ|i+3 )
+Wmax
+
+(A.1)
+
+onde:
+• max(|4θi+3 |) é a variação angular máxima entre
+as posições representadas pelos elementos θ g (i, k) e
+θg (i + 3, k), para k variando de 1 a N ag considerando todos os grupos de pernas;
+• Wmax é a velocidade máxima que os atuadores podem atingir.
+
+APÊNDICE B
+A seleção dos pontos da função de referência do k-ésimo
+atuador da perna de referência do grupo g é realizada
+seguindo o seguinte algoritmo:
+
+APÊNDICE C
+90
+
+10:
+11:
+12:
+
+AGRADECIMENTOS
+
+Tmin = N E
+
+8:
+9:
+
+13:
+14:
+15:
+
+for j = 1 → N E do
+if j = 1 then h
+i
+Seleciona f1k (j − 1) NTE utilizando θ g (:, k) e
+
+Pfg (:, j, k)
+else
+Li h = mı́nimo
+i tal que θ g (i, k)
+≥
+i
+W
+NE
+T
+f1k (j − 2) N E − max
+T
+Ls h = máximo
+i tal que θ g (i, k) ≤
+i
+NE
+f1k (j − 2) NTE + Wmax
+T
+θaux = θg (Li : Ls , k) e Paux = Pfg (Li : Ls , j, k)
+PLs −Li
+if i=1
+Paux < 0, 01 then
+j=1
+else
+Normalize Paux
+h
+i
+Seleciona f1k (j − 1) NTE utilizando θaux e
+Paux
+end if
+end if
+end for
+
+Após a avaliação da resposta obtida através do vetor J, o
+ajuste das probabilidades de sucesso associadas aos elementos que compõem a solução selecionada é realizado
+através da atribuição de um sinal de reforço R. Além
+de favorecer o desempenho almejado, R segue algumas
+outras caracterı́sticas:
+
+1. R favorece uma evolução do desempenho obtido,
+ou seja, o valor de R será positivo se o desempenho
+observado na iteração atual for superior a uma determinada média obtida pelo histórico de iterações
+realizadas;
+2. R estimula apenas os resultados considerados
+”bons”, em outras palavras, caso o reforço calculado (Rc ) seja positivo, o mesmo é aplicado nas
+estimativas das probabilidades de sucesso das variáveis selecionadas, caso contrário, nenhum ajuste
+é realizado;
+3. Rc deve estar compreendido entre os limites determinados pelo projetista viabilizando que o mesmo
+influencie na velocidade de convergência.
+
+Dessa forma, R é determinado pela Expressão (C.1),
+onde RG corresponde ao limite de reforço superior informado pelo projetista para Rc .
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+
+RG
+
+
+
+Rc
+R=
+0
+
+
+
+0
+
+se
+se
+se
+se
+
+Rc ≥ RG
+RG > Rc > 0
+Rc ≤ 0
+o robô cair.
+
+(C.1)
+
+• PK é a estimativa de probabilidade de sucesso após
+o ajuste, e
+
+Já o valor de Rc é obtido através da Equação (C.2), onde
+RP equivale ao limite de reforço inferior determinado
+pelo projetista e fR representa a função de reforço.
+
+Rc = f R
+
+
+
+RG − R P
+2
+
+
+
++
+
+RG + R P
+2
+
+• Pk−1 corresponde a cada uma das estimativas de
+probabilidades de sucesso prévias das variáveis selecionadas (Pf , PT e Pφ );
+
+• F cc é um fator de correção de convergência que tem
+por finalidade equilibrar o tempo de aprendizado
+entre as diferentes variáveis que compõem a solução
+testada.
+
+(C.2)
+
+A função fR é calculada a partir da Equação (C.3), onde:
+N c , τ N c e EcN c correspondem, respectiva1. IVN c , IW
+max
+mente, às médias de IV , IW , τmax e Ec nas últimas
+N c iterações que não houve a queda do robô, sendo
+N c determinado pelo projetista;
+
+2. V+N c corresponde à média das velocidades obtidas
+nas últimas N c iterações onde as médias das velocidades Vx foram positivas;
+3. F (Expressão (C.4)) é um vetor de pesos onde o
+projetista pode ajustar a influência que cada elemento do vetor J tem sobre a função fR ;
+4. Cf r é uma constante calculada pela Equação (C.5)
+que é utilizada para equilibrar fR de tal forma que
+seu valor tenda a 0 quando os valores do vetor J
+tenderem às médias das suas últimas N c iterações.
+
+fR =
+1 + FI
+
+IW
+Nc
+IW
+
+1 + FV VNx c
+V
+! +
+−Cf r
+I
+τ
+Ec
+V
+max
++ N c + Fτ N c + FEc N c
+τmax
+Ec
+IV
+(C.3)
+
+F = [FV FI Fτ FEc ]
+
+Cf r =
+
+1 + F (1)
+P4
+1 + F (2) + i=2 (F (i))
+
+(C.4)
+
+(C.5)
+
+Determinado o reforço oriundo do comportamento gerado pelos parâmetros e defasagens selecionados, é necessário ajustar as probabilidades associadas à cada um
+desses elementos. Para tal, utiliza-se a Equação (C.6),
+onde:
+
+PK = PK−1
+
+
+
+R
+1+
+100F cc
+
+
+
+(C.6)
+
+O valor de F cc é dado pela Expressão (C.7), onde:
+• T xc(Pi ) representa a taxa de convergência da matriz de probabilidade, cujo valor é calculado como
+sendo a média das máximas probabilidades de cada
+coluna existente na matriz Pi ;
+• min(T xc) é o valor mı́nimo dentre T xc(Pf ),
+T xc(Pφ ) e T xc(PT ).
+
+F cc =
+
+
+
+
+
+
+
+1
+T xc(Pi )
+min(T xc)
+
+T xc(Pi )
+≤1
+min(T xc)
+T xc(Pi )
+se
+>1
+min(T xc)
+
+se
+
+(C.7)
+
+Depois de ajustar as probabilidades dos parâmetros e
+defasagens utilizados na iteração em questão, todas as
+probabilidades de cada coluna são normalizadas fazendo
+com que a sua soma resulte em 1.
+Neste artigo, em ambos os estudos de caso realizados,
+utiliza-se: N c = 20, RP = −20 e RG = 20.
+
+REFERÊNCIAS
+Alexander, R. M. (1989). Optimization and gaits in the
+locomotion of vertebrates, Physiological Reviews, v.
+69, n. 4, pp. 1199-1227.
+Belter, D., Skrzypczynski, P. (2010). A biologically
+inspired approach to feasible gait learning for a hexapod robot, Applied Mathematics and Computer
+Science, v. 20, pp. 69-84.
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+91
+
+Erden, M. S., Leblebicioglu, K. (2008). Free gait generation with reinforcement learning for a six-legged
+robot, Robotics and Autonomous Systems, v. 56, n.
+3, pp. 199-212.
+
+Narendra, K. S., Thathachar, M. A. L. (1974). Learning automata - A survey, IEEE Transactions on
+Systems, Man, and Cybernetics, vol. SMC-4, no.
+4, pp. 323-334.
+
+Golubovic, D., Hu, H. (2003). GA-based gait generation of Sony quadruped robots, 3th IASTED International Conference on Artificial Intelligence and
+Applications (AIA 2003), Benalmadena, Espanha,
+pp. 118-123.
+
+Nascimento Jr., C. L., Yoneyama, T. (2000). Inteligência Artificial em Controle e Automação, São Paulo,
+Editora Edgard Blücher.
+
+Heinen, M. R. (2007). Controle inteligente de caminhar de robôs móveis simulados, Dissertação de
+Mestrado, Universidade do Vale do Rio dos Sinos,
+Porto Alegre, RS.
+Heinen, M. R., Osório, F. S. (2008). Morphology and
+gait control evolution of legged robots, IEEE Latin American Robotic Symposium (LARS 2008),
+Washington, DC, pp. 111-116.
+Hopcroft, J. E., Motwani, R., Ullman, J. D. (2006).
+Introduction to Automata Theory, Languages, and
+Computation, 3. ed., Addison Wesley, Hardcover.
+Ijspeert, A. J. (2008). Central pattern generator for locomotion control in animals and robots: A review,
+Neural Networks, vol. 21, no. 4, pp. 642-653.
+Kohl, N., Stone, P. (2004). Policy gradient reinforcement learning for fast quadrupedal locomotion,
+IEEE International Conference on Robotics and
+Automation (ICRA 2004), New Orleans, LA, USA,
+pp. 2619-2624.
+Mistry, M., Nakashi, J., Schaal, S. (2007). Task space
+control with prioritization for balance and locomotion, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2007), San Diego,
+CA, USA, pp. 331-338.
+Mitchell, T.M. (1997). Machine Learning, McGrawHill, New York, USA.
+Morimoto, J., Cheng, G., Atkeson, C. G., Zeglin, G.
+(2004). A simple reinforcement learning algorithm
+for biped walking, IEEE International Conference
+on Robotics and Automation (ICRA 2004), New
+Orleans, LA, USA, pp. 3030-3035.
+Murao, H., Tamaki, H., Kitamura, S. (2001). Walking
+pattern acquisition for quadruped robot by using
+modular reinforcement learning, IEEE International Conference on Systems, Man and Cybernetics
+(SMC 2001), Tucson, AZ, USA v. 3, pp. 14021405.
+92
+
+Pfeifer, R., Scheier, C. (1999). Understanding Intelligence, MIT Press.
+Plestan, F., Grizzle, J., Westervelt, E., Abba, G.
+(2003). Stable walking of a 7-dof biped robot, IEEE
+Transactions on Robotics and Automation, v. 19,
+n. 4, pp. 653-668.
+Porta, J.M. (2000). Rho-learning: a robotics oriented reinforcement learning algorithm, Technical
+Report IRI-DT-00-03, Institut de Robòtica i Informàtica Industrial, CSIC-UPC. Disponı́vel em
+http://www.iri.upc.edu/publications/show/520.
+Porta, J. M., Celaya, E. (2004). Reactive free-gait generation to follow arbitrary trajectories with a hexapod robot, Robotics and Autonomous Systems, v.
+47, n. 4, p. 187-201.
+Santos, D., Siqueira, A. A. G. (2009). ADAMS/Matlab
+Co-simulation of an Exoskeleton for Lower Limbs,
+International Congress of Mechanical Engineering
+(COBEM 2009), Gramado, RS.
+Santos, J. L., Nascimento Jr., C. L. e Barbosa, L. F. W.
+(2010). Desenvolvimento de um sistema de aprendizado para o controle do caminhar de um robô utilizando aprendizado por reforço, XVIII Congresso
+Brasileiro de Automática (CBA 2010), Bonito, MS,
+pp. 5024-5035.
+Silva, M. F. e Machado, J. T. (2007). A historical
+perspective of legged robots, Journal of Vibration
+and Control, vol. 13, no. 9-10, pp. 1447-1486.
+Siqueira, A. A. G., Jardim, B., Vilela, P. R., Winter,
+T. F. (2008). Analysis of Gait-Pattern Adaptation
+Algorithms Applied in an Exoskeleton for Lower
+Limbs, 16th Mediterranean Conference on Control
+and Automation, Ajaccio, Corsica, France.
+Spenneberg, D., McCullough, K., Kirchner, F. (2004).
+Stability of walking in a multilegged robot suffering
+leg loss, IEEE International Conference on Robotics
+and Automation (ICRA 2004), New Orleans, LA,
+USA, pp. 2159-2164.
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+Still, S., Douglas, R. J. (2006). Neuromorphic walking gait control, IEEE Transactions on Neural
+Networks, v. 17, pp. 496-508.
+Sutton, R. S., Barto, A. G. (1998). Reinforcement Learning: An Introduction, MIT Press.
+Tal, D., Kallen, H., Atelier, E., Ch-Rufenach
+(2005). Robot and locomotion controller design
+optimization for a reconfigurable quadruped robot, Universities Space Research Association /
+Research Institute for Advanced Computer Science at NASA Ames Research. Disponı́vel em
+http://citeseerx.ist.psu.edu/viewdoc/summary?doi
+=10.1.1.130.7181.
+Thathachar, M. A. L., Sastry, P. S. (2003). Networks
+of Learning Automata: Techniques for Online Stochastic Optimization, Secaucus, NJ, USA: SpringerVerlag New York, Inc.
+Xu, K., Chen, X., Liu, W., Williams, M. (2006). Legged robot gait locus generation based on genetic
+algorithms, International Symposium on Practical
+Cognitive Agents and Robots (PCAR 2006), New
+York, NY, USA, pp. 51-62.
+Westervelt, E. R., Grizzle, J. W., Chevallereau, C.,
+Choi, J. H. e Morris, B. (2007). Feedback Control
+of Dynamic Bipedal Robot Locomotion, CRC Press.
+Winter, T. F., Siqueira, A. A. G. (2008). Modelagem
+e Simulação de um Exoesqueleto para Membros Inferiores, XVII Congresso Brasileiro de Automática
+(CBA 2008), Juiz de Fora, MG.
+Yang, J. (2003). Fault-tolerant gait generation for locked joint failures, IEEE International Conference
+on Systems, Man and Cybernetics (SMC 2003),
+Washington, DC, USA, pp. 2237-2242.
+
+Revista Controle & Automação/Vol.23 no.1/Janeiro e Fevereiro 2012
+
+93
+
+

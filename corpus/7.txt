@@ -1,0 +1,927 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/324844857
+
+Aprendizagem profunda de máquinas: conceitos, técnicas e bibliotecas
+Article · December 2017
+
+CITATIONS
+
+READS
+
+0
+
+1,140
+
+2 authors:
+William Reis Fernandes
+
+Rodrigo Cezario da Silva
+
+Faculdade Avantis
+
+Faculdade Avantis
+
+3 PUBLICATIONS 0 CITATIONS
+
+10 PUBLICATIONS 26 CITATIONS
+
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Grupo de Pesquisa em Informática na Educação View project
+
+Aprendizagem profunda de máquinas: conceitos, técnicas e bibliotecas. View project
+
+All content following this page was uploaded by William Reis Fernandes on 30 April 2018.
+The user has requested enhancement of the downloaded file.
+
+SEE PROFILE
+
+Aprendizagem profunda de máquinas: conceitos, técnicas e bibliotecas.
+William Reis Fernandes, Rodrigo Cezario da Silva
+Faculdade Avantis
+Curso de Bacharelado em Sistemas de Informação
+Balneário Camboriú, SC, Brasil
+{william.fernandes, rodrigo.cezario}@avantis.edu.br
+RESUMO
+A Aprendizagem Profunda, do inglês
+Deep Learning (DL) é uma divisão da
+Aprendizagem de Máquina que pesquisa
+técnicas para simular o comportamento
+do cérebro humano em tarefas como
+reconhecimento visual, reconhecimento
+de fala e processamento de linguagem
+natural. Algoritmos de aprendizagem
+profunda
+objetivam
+produzir
+representações hierárquicas de alto nível
+dos dados de entrada, por meio de
+categorias de processamento sequencial
+em uma rede neural artificial. Partindo
+desse princípio, este trabalho demonstra
+os fundamentos da aprendizagem
+profunda e apresentar 3 bibliotecas do
+mesmo: Tensorflow, Theano e Keras.
+Palavras-chave
+Aprendizagem profunda. Bibliotecas.
+Algoritmos. Tensorflow. Theano. Keras.
+ABSTRACT
+Deep Learning (DL) is a division of
+Machine Learning that researches
+techniques to simulate human brain
+behavior in tasks such as visual
+recognition, speech recognition, and
+natural language processing. Deep
+learning algorithms aim to produce highlevel hierarchical representations of input
+data by means of sequential processing
+categories in an artificial neural network.
+Based on this principle, the present article
+intends to demonstrate the fundamentals
+of deep learning and to present 3 libraries
+of the same: Tensorflow, Theano and
+Keras.
+Categories and Subjects Descriptors
+Misc.; D.2 [Software Engineering]: Misc.
+
+General Terms
+IA. Machine Learning, Deep Learning.
+Keywords
+Deep Learning. Library. Algorithms.
+TensorFlow. Theano. Keras.
+1. INTRODUÇÃO
+A tecnologia chegou de maneira
+reservada em nosso cotidiano. Porém,
+dia após dia, tem marcado presença em
+nossas vidas, seja em nossa residência,
+ambientes corporativos, veículos ou nos
+aparelhos
+que
+utilizamos
+para
+comunicação como tablets, smartphones,
+aparelhos de televisão e videogames. A
+Inteligência Artificial ganhou importância
+e têm gerado grandes expectativas desde
+2012, quando foi utilizada em uma
+competição de Visão por Computador
+denominada ImageNet, empregando-se
+a técnica de inteligência artificial
+Aprendizagem Profunda. [1]
+A Aprendizagem Profunda é uma
+tecnologia ininterrupta de aprendizado de
+máquinas com elevada desempenho na
+resolução de problemas implexos e
+flexibilidade de aproveitamento de seus
+algoritmos. [2]. Dentre as principais
+aplicações estão o reconhecimento de
+imagens, voz e texto; a previsão de
+eventos e desenvolvimento de sistemas
+de recomendação, como tornar a
+experiência do cliente única e a detecção
+de
+fraudes.
+A Aprendizagem Profunda oferece
+admiráveis prerrogativas na comparação com
+metodologias
+clássicas
+de
+aprendizagem de máquina e, inclusive,
+ultrapassa a atuação humana em
+problemas que envolvem o diagnóstico
+de grandes volumes de dados não
+estruturados. [2]
+O grande diferencial da Aprendizagem
+Profunda está na ocorrência de que o
+modelo criado é mais flexível na decisão
+do uso dos dados para que se tenha a
+melhor decorrência possível. Sendo
+assim, não se perde tanto tempo
+tentando
+descobrir
+quais
+inputs
+necessitam ser contidos, já que os
+modelos de Aprendizagem Profunda
+podem analisar todos os parâmetros e
+assim, definir a melhor combinação dos
+valores de entrada. Apesar de os
+conceitos matemáticos por trás da
+Aprendizagem Profunda estarem entre
+nós há muito tempo, bibliotecas de
+programação
+de
+computadores
+destinadas a criar e treinar os modelos de
+Aprendizagem
+Profunda
+surgiram
+apenas nos últimos anos, e muitas delas
+possuem verdadeiros desafios entre
+flexibilidade e possibilidade de uso.
+Bibliotecas flexíveis são extraordinárias
+para pesquisa e desenvolvimento de
+novas arquiteturas, mas não estão
+acabadas para uso em produção com
+aplicações críticas de sistemas web por
+exemplo. Por outro lado, existem
+bibliotecas rápidas e eficientes para
+execução em ambiente paralelo e
+difundido (e, portanto, excelentes
+alternativas para o ambiente de
+produção), mas que são especializadas
+em apenas alguns tipos de redes neurais
+e possuem pouca flexibilidade. [3]
+Isso cria um desafio na escolha entre qual
+biblioteca escolher para um projeto de
+Inteligência Artificial por exemplo.
+Este trabalho está estruturado da
+seguinte forma: na Seção 2, é
+apresentada a fundamentação teórica. A
+
+Seção 3, apresentada a metodologia de
+Pesquisa utilizada. Na Seção 4 são
+apresentadas
+bibliotecas
+de
+aprendizagem profunda. A Seção 5
+sintetiza os resultados na comparação
+das bibliotecas estudadas. E por fim, a
+Seção 6 apresenta as conclusões deste
+trabalho.
+2. FUNDAMENTAÇÃO TEÓRICA
+Esta seção apresenta as referências nas
+quais se norteia este trabalho.
+Parte-se de uma breve explicação sobre
+o Aprendizagem Profunda como área da
+Aprendizagem de Máquinas, conclui-se
+com as características de 3 bibliotecas
+usadas em Aprendizagem Profunda.
+2.1. A APRENDIZAGEM PROFUNDA
+DENTRO DA APRENDIZAGEM DE
+MÁQUINAS
+Dentro da Inteligência Artificial temos a
+área de Aprendizagem de Máquina. [4]
+Esse é um campo da ciência da
+computação que evoluiu bastante a partir
+do estudo de reconhecimento de padrões
+(“pattern recognition”) e da teoria da
+aprendizagem
+computacional
+em
+inteligência artificial. A aprendizagem de
+máquina tem uma ligação “particular”
+com o Big Data pois é a base da análise
+preditiva do inglês (“predicitive analytics”
+or “predictive modelling”). Uma divisão
+mais especializada da Aprendizagem de
+máquina que norteia este trabalho é a
+Aprendizagem Profunda. [5]
+Conforme pode ser observado na Figura
+1,
+apresenta
+a
+relação
+entre
+Processamento de linguagem natural do
+inglês (Natural Language Processing NLP) e a relação com Aprendizagem de
+máquinas e Aprendizagem Profunda.
+Aprendizagem Profunda é uma das
+técnicas da área a Aprendizagem de
+máquinas. [16]
+
+Os seguintes exemplos: (entrada de
+conjuntos de dados em negrito e
+conjuntos de dados de saída em itálico):
+
+Figura 1. Relação entre NLP, ML e
+Deep Learning [16]
+Fonte: [Dr. Rutu Mulkar-Mehta, 2016]
+A ideia básica de que o software de
+Aprendizagem Profunda pode simular um
+grande arranjo de neurônios em uma
+"rede neural" artificial é bastante antiga e
+tem levado a tantas decepções como
+também a avanços.
+Mas por causa das melhorias nas
+fórmulas
+matemáticas
+e
+nos
+computadores
+cada
+vez
+mais
+importantes, os cientistas de computação
+agora podem aumentar o número de
+camadas de neurônios virtuais do que
+anteriormente. [6].
+2.1.1 TIPOS DE IMITAÇÃO
+APRENDIZAGEM PROFUNDA
+
+NA
+
+Os tipos de imitação na Aprendizagem
+Profunda são baseados no trabalho de
+[7]. As máquinas observam um padrão e
+tentam imitá-lo de alguma maneira.
+Podem ser definidas como imitação direta
+e indireta como um paralelo aos dois tipos
+principais de aprendizado de máquinas:
+aprendizado
+de
+máquinas
+supervisionado
+e
+aprendizado
+automático sem supervisão [20].
+O aprendizado automatizado da máquina
+é a imitação direta de um padrão entre
+dois conjuntos de dados. Isto é, sempre
+tentando capturar um conjunto de dados
+de entrada e transformá-lo em um
+conjunto de dados de saída. Essa pode
+ser uma capacidade incrivelmente
+poderosa e útil.
+
+• Os pixels de uma imagem para
+detectar a presença ou ausência de
+um gato, pixel é a menor unidade de
+uma imagem digital.
+• Os filmes que o usuário gostou
+para prever os filmes que o usuário
+gostaria de ver.
+• As palavras escritas de alguém para
+prever se eles estão felizes ou tristes.
+• Os dados de uma central climática
+prever a probabilidade de chuva.
+• Os sensores do motor do carro para
+prever as configurações de sintonia
+ótimas.
+• Os dados de notícias para prever o
+preço das ações de amanhã.
+• Um arquivo de áudio bruto para
+prever uma transcrição do áudio.
+Todas estas são tarefas supervisionadas
+de aprendizagem de máquinas. Em todos
+os casos, a aprendizagem da máquina
+algoritmo está tentando imitar o padrão
+entre os dois conjuntos de dados de tal
+forma que pode usar um conjunto de
+dados para prever o outro. [7]
+2.1.2. APRENDIZADO DE MÁQUINA
+SUPERVISIONADA
+A aprendizagem supervisionada é aquela
+que se destina a fornecer diretamente
+poder discriminativo para fins de
+classificação
+de
+padrões,
+frequentemente
+caracterizando
+as
+distribuições a posteriori de classes
+condicionadas aos dados visíveis. A
+aprendizagem supervisionada é um
+método para transformar um conjunto de
+dados em outro. [8]
+Por exemplo, se tivemos um conjunto de
+dados de "Preços de ações de segundafeira", que registrou o preço de cada ação
+em cada Segunda-feira nos últimos 10
+anos, e um segundo conjunto de dados de "preços de ações de terça-feira"
+registrado ao longo de no mesmo período
+de tempo, um algoritmo de aprendizagem
+supervisionado pode tentar usar um para
+prever o de outros [7].
+2.1.3. APRENDIZADO DE MÁQUINA
+NÃO SUPERVISIONADA
+Já a aprendizagem não supervisionada
+se destina a capturar a correlação de alta
+ordem dos dados observados ou visíveis
+para fins de análise ou síntese de
+padrões quando não há informações
+sobre os rótulos das classes disponíveis
+na
+base.
+Aprendizagem
+de
+representação não supervisionada na
+literatura refere-se a essa categoria de
+redes profundas. Quando usado no modo
+generativo, também pode-se buscar a
+caracterização
+de
+distribuições
+estatísticas conjuntas dos dados visíveis
+e suas classes associadas quando
+disponíveis, podendo ainda estas serem
+tratadas como parte dos dados visíveis.
+[8].
+2.2.
+REDES
+NEURAIS
+APRENDIZAGEM PROFUNDA
+
+DE
+
+As Redes Neurais Artificiais (RNA’s) [18]
+consistem em uma gama de ferramentas
+que possuem a capacidade de aprender
+e se adaptar para a realização de certas
+tarefas através de um processo de
+aprendizagem. As habilidades de
+aprendizagem e adaptação indicam que
+os modelos de redes neurais podem lidar
+com dados imprecisos e situações que
+não foram totalmente definidas no início
+do treinamento. Por isso, o uso da
+inteligência artificial se torna cada vez
+mais
+atrativa
+em
+técnicas
+de
+processamento
+de
+imagem,
+reconhecimento de padrão, problemas de
+classificação, controle de processos,
+entre outros.
+As RNA’s tiveram início na década de 40,
+pelo neurofisiologista MacCulloch, do
+Instituto
+de
+Tecnologia
+de
+Massachussetts (MIT), e pelo matemático
+
+Waltter Pitts, da Universidade de Illinois,
+em que o trabalho realizado consistia em
+um modelo de resistores variáveis e
+amplificadores representando conexões
+sinápticas de um neurônio biológico.
+Desde então, diversos modelos de redes
+neurais têm sido desenvolvidos para
+aperfeiçoar e aumentar a aplicabilidade
+desta técnica em diversas áreas do
+conhecimento. [18]. Na Figura 2 é
+demonstrada uma arquitetura de rede
+neural
+simples.
+
+Figura 2. Uma arquitetura de rede
+neural simples. As entradas são
+apresentadas à rede. Cada conexão
+carrega um sinal através das duas
+camadas ocultas na rede. Uma função
+final calcula o rótulo da classe de
+saída. [19]
+A classificação das técnicas de
+aprendizado profundo pode ser dividida
+em modelos discriminativos profundos ou
+em
+modelos
+generativos/nãosupervisionados
+[9].
+Dentre
+os
+discriminativos, são elencadas as Redes
+Neurais Profundas do inglês (Deep
+Neural Network - DNN), Redes Neurais
+Recorrentes do inglês (Recurrent Neural
+Network - RNN), Redes Neurais
+Convolucionais do inglês (Convolutional
+Neural Network - CNN), dentre outros.
+Quanto aos modelos generativos,
+destacam-se a Máquina Restrita de
+Boltzmann
+do
+inglês
+(Restricted
+Boltzmann Machine - RBMs), Máquinas
+Profundas de Boltzmann do inglês (Deep
+Boltzmann Machines - DBM), Redes deep-belief, as redes auto- codificadoras
+regularizadas, etc. Entretanto, esse estilo
+de classificação bidirecional deixa
+escapar um conhecimento oriundo da
+pesquisa de aprendizagem profunda
+sobre como modelos generativos ou não
+supervisionados
+podem
+aprimorar
+bastante o desenvolvimento de DNN’s e
+outros modelos de aprendizagem
+supervisionada através de melhor
+regularização ou otimização.
+Além disso, as redes profundas para a
+aprendizagem
+não
+supervisionada
+podem não necessariamente serem
+probabilísticas ou avaliar uma amostra
+significativa do modelo. [9]
+Segundo Szegedy et al (2015), as redes
+neurais convolucionais estão no centro
+da maioria das soluções de visão
+computacional
+para
+uma
+ampla
+variedade de tarefas. Desde 2014, as
+redes convolucionais muito profundas
+começaram a se tornar convencionais,
+produzindo ganhos substanciais em
+vários pontos de referência.
+Embora o aumento do modelo e o custo
+computacional tendam a se traduzir em
+ganhos de qualidade imediatos para a
+maioria das tarefas (desde que dados
+suficientes sejam fornecidos para o
+treinamento) a eficiência computacional e
+a baixa contagem de parâmetros ainda
+são fatores facilitadores para vários
+casos de uso, como a visão móvel e
+cenários de grandes dados. Procurou-se
+modos de escalonar as redes de maneira
+que visem a utilização da computação
+adicionada, tão eficiente quanto possível,
+por convoluções fatorizadas [10].
+2.2.1.
+REDES
+CONVOLUCIONAIS
+
+computacional, uma CNN (do inglês
+Convolutional Neural Networks) admite
+aplicar filtros em dados visuais, mantendo
+a relação de vizinhança entre os pixels da
+imagem ao longo do processamento da
+rede. A Figura 3 esboça uma matriz de
+pixel de uma imagem digital.
+
+Figura 3. A letra "I" colocada em um
+pedaço de papel quadrado. Os pixels
+são acessados por suas coordenadas
+(x; y), onde x é a coluna para a direita
+e y para linhas [19].
+A Figura 4 esboça uma CNN, este tipo de
+rede vem sendo vastamente utilizada,
+principalmente nas aplicações de
+categorização, detecção e importância
+em
+imagens
+e
+vídeos.
+
+NEURAIS
+
+A Rede Neural Convolucional é uma
+variante das Redes de Perceptrons de
+Múltiplas Camadas, tendo sido inspirada
+no método biológico de processamentos
+de dados visuais. De modo análogo aos
+processos
+clássicos
+de
+visão
+
+Figura 4. Exemplo de uma rede neural
+convolucional e suas diferentes
+camadas.
+Fonte: [Vargas et al. 2016]
+Uma rede neural convolucional incide em
+múltiplas partes com papéis diferentes.
+Inicialmente é comum aplicar sobre o dado de entrada camadas ditas de
+convolução.
+Uma camada de convolução é composta
+por múltiplos neurônios, cada um é
+responsável por aplicar um filtro em um
+pedaço característico da imagem.
+Podemos imaginar cada neurônio sendo
+conectado a um conjunto de pixels da
+camada anterior e que a cada uma dessa
+conexões se atribui um peso.
+A combinação das entradas de um
+neurônio,
+utilizando
+os
+pesos
+concernentes de cada uma de suas
+conexões, gera uma saída ocorrida para
+a camada seguinte. Os pesos atribuídos
+às conexões de um neurônio podem ser
+decodificados como uma matriz que
+representa o filtro de uma convolução de
+imagens no domínio espacial (conhecido
+ainda como kernel ou máscara).
+Enquanto na formulação de Perceptrons
+clássica um neurônio é integrado a todos
+os neurônios da camada anterior, dito
+totalmente
+conectada,
+nas
+CNNs
+somente um subconjunto de entradas é
+conectado a cada neurônio. Com a
+transformação de arquitetura, as redes
+neurais convolucionais passam a realizar
+o diagnóstico de campos receptivos
+locais (local receptive fields). Os
+neurônios da mesma camada são
+coligados em mapas. Um mapa é
+produzido pelo agrupamento das saídas
+de neurônios que unidos cobrem uma
+parte da imagem que tenha sido
+processado com um filtro em comum.
+Para que um conjunto de neurônios de
+um determinado mapa utilize o mesmo
+filtro em distintas posições da imagem, é
+feito um compartilhamento dos pesos
+durante a técnica de treinamento.
+Tal
+compartilhamento
+diminui
+expressivamente a quantidade de
+parâmetros a serem estudados e o tempo
+de treinamento da rede, por conseguinte.
+De modo a simplificar a esquematização
+dessas redes, um filtro a ser aplicado na
+
+imagem é constituído visualmente por
+somente um neurônio, causando a falsa
+sensação de que ele faria sozinho o
+procedimento de percorrimento da
+imagem. O tamanho do filtro determina a
+dimensão da vizinhança que cada
+neurônio da camada irá processar. Outra
+variável respeitável para a camada
+convolucional é o passo (ou stride). Este
+valor representa quantos pixels serão
+saltados entre cada janela, proferindo
+qual será a dimensão da camada
+subsequente na mesma unidade.
+Variavelmente do processo tradicional de
+Visão Computacional, no qual o padrão
+inicial parte da definição de filtros (ou
+features) a serem empregadas, nas
+camadas de convolução das CNNs é
+necessário determinar somente a
+arquitetura dos filtros: quantidade e
+tamanhos, passos, dos filtros por
+camada. O método de aprendizado da
+rede transforma os pesos ao longo do
+treinamento, até localizar os melhores
+valores dos filtros para o conjunto de
+dados empregado. Uma das maneiras de
+se avaliar o aprendizado é constatar as
+ativações dos filtros adquiridos ao fim do
+treinamento [11].
+3. METODOLOGIA DE PESQUISA
+Este trabalho quanto aos objetivos pode
+ser enquadrado como uma pesquisa
+exploratória. Quanto aos procedimentos
+técnicos, foi utilizado a pesquisa
+bibliográfica e pesquisa documental,
+sendo este a primeira etapa realizada. A
+primeira etapa, oportunizou conhecer os
+fundamentos
+de
+Aprendizagem
+Profunda. A segunda etapa oportunizou
+conhecer os fundamentos e pontos fortes
+e fracos das bibliotecas mais usadas em
+Aprendizagem Profunda.
+4. BIBLIOTECAS DE APRENDIZAGEM
+PROFUNDA.
+
+4.1. KERAS
+Keras [François Chollet, 2015] é uma
+biblioteca de alto nível escrita em Python
+para criação de redes neurais. É capaz
+de usar as bibliotecas Theano [University
+of Montréal, 2009] [12] ou Tensorflow
+[Google
+Brain,
+2015]
+[13].
+Foi
+desenvolvida com o objetivo de diminuir o
+tempo de criação de redes neurais.
+Suporta redes neurais convolucionais e
+redes
+recorrentes,
+conectividade
+arbitrária de diversos tipos de redes
+neurais e pode rodar em com placa de
+vídeo [14]. Os pontos fortes da biblioteca
+Keras são apresentados na Tabela 1 e o
+pontos fracos na Tabela 2.
+Tabela 1. Pontos fortes Keras
+1 Fácil compreensão.
+2 Tem como base duas outras
+bibliotecas que são o Theano e
+Tensorflow fazendo uso dos
+benefícios das duas.
+3 Seu principio é orientado a:
+modularidade,
+minimalismo,
+extensibilidade.
+4 Farta documentação da linguagem
+Python facilita seu uso.
+5 Intuitivo, interface de alto nível
+6 Keras tem apoio oficial do Google.
+Tabela 2. Pontos fracos Keras
+1 Baixa flexibilidade
+2 Não possuí RPM por exemplo.
+3 Menos projetos disponíveis online
+do que Theano e Tensorflow.
+4 Multi-GPU não funciona 100%
+4.2. TENSORFLOW
+TensorFlow [Google Brain, 2015] [13] é
+uma biblioteca de código aberto para
+computação numérica e aprendizado de
+máquina disponibilizado pelo Google
+Brain Team em novembro de 2015. Essa
+biblioteca fornece implementação em
+múltiplas CPUs ou GPUs e é utilizada por
+diversas
+empresas.
+Sua
+farta
+documentação
+tornou
+uma
+das
+bibliotecas mais utilizadas para Deep
+
+Learning. Os pontos fortes da biblioteca
+Tensorflow são apresentados na Tabela
+3. Os pontos fracos são apresentados na
+Tabela 4.
+Tabela 3. Pontos fortes Tensorflow
+1 Mantido/Apoiado pelo Google
+2 Comunidade é muito grande
+3 Interfaces de baixo nível e de alto
+nível para o treinamento em rede
+4 Maior compilação de modelo do
+que as opções baseadas em
+Theano.
+5 Suporte multi-GPU
+Tabela 4. Pontos fracos Tensorflow
+1 Em alguns teste se mostra mais
+lento do que as opções baseadas
+em Theano, embora o Tensorflow
+esteja se recuperando.
+2 O suporte a RNN ainda está abaixo
+do Theano.
+4.3. THEANO
+Theano [University of Montréal, 2009] é
+uma biblioteca de computação numérica
+que alimenta muitas das outras
+bibliotecas de aprendizagem profunda
+existente, assim como Keras e
+Tensorflow que o presente artigo
+apresenta. Sua API é de baixo nível e
+para utilizar o Theano é necessário estar
+bastante familiarizado com os algoritmos
+que estão escondidos atrás de outras
+bibliotecas. Os pontos fortes são
+apresentados na Tabela 6 e os fracos na
+Tabela 7.
+Tabela 6. Pontos fortes Theano
+1 Flexível
+2 Desempenho elevado, desde que
+bem usado
+Tabela 7. Pontos fracos Theano
+1 Curva de aprendizado substancial
+2 API de baixo nível
+3 A
+compilação
+de
+gráficos
+simbólicos complexos pode ser
+lenta.
+
+5. RESULTADOS
+A avaliação das bibliotecas demonstrou
+que existem cenários para cada uma, ou
+seja o uso de determinada biblioteca será
+melhor para determinada tarefa e nível de
+conhecimento, Theano é uma biblioteca
+de baixo nível e de grande flexibilidade,
+porém sendo de maior complexidade
+[12], Tensorflow é uma biblioteca de
+baixo e alto nível sendo seu uso de menor
+complexidade, porém se mostra mais
+lenta do que a Theano como vantagem
+tem como apoiador do projeto a Google o
+que faz sua evolução ser rápida [13], já a
+biblioteca Keras é de alto nível, ela
+abstrai das bibliotecas Theano e
+Tensorflow o poder e facilitar o
+desenvolvimento, porém de baixa
+flexibilidade por sua vez também apoiada
+pelo Google [15].
+6. CONCLUSÕES
+Redes profundas como as convolucionais
+e as recorrentes existem há vários anos,
+no
+entanto
+apenas
+recentemente
+modelos desenvolvidos com essas
+arquiteturas de redes começaram a
+apresentar resultado na comunidade
+cientifica, assim como o desenvolvimento
+de bibliotecas facilitadoras. Existe uma
+tendência no uso de bibliotecas
+especializadas que realizam, com
+eficiência e menor custo computacional,
+operações comuns em aprendizagem
+profunda que tirem proveito de hardware
+para treinamento.
+Neste sentido, este trabalho teve como
+objetivo de apresentar os fundamentos
+da
+aprendizagem
+profunda,
+mais
+conhecido como Deep Learning. Por sua
+vez, foram apresentadas 3 bibliotecas
+amplamente citadas na literatura, o
+Tensorflow, Theano e Keras, onde são
+discutidos os pontos fortes e fracos de
+cada biblioteca. Além disso, este trabalho
+também apresentou um comparativo
+
+entre as bibliotecas apresentadas.
+Apesar do comparativo ser superficial, ele
+pode ajudar iniciantes na tecnologia na
+escolha da biblioteca para iniciar o
+desenvolvimento.
+7. REFERÊNCIAS
+[1] UNICAMP, Deep Learning é
+tecnologia de aprendizado de máquina
+que mais cresce em todo o mundo.,
+Unicamp,
+2017.
+Disponível
+em:
+<https://www.unicamp.br/unicamp/noticia
+s/2017/10/02/deep-learning-e-tecnologiade-aprendizado-de-maquina-que-maiscresce-em-todo-o>, Acesso em: 29
+outubro.
+2017.
+[2] COPELAND, MICHAEL What’s the
+Difference Between Artificial Intelligence,
+Machine Learning, and Deep Learning?.
+Nvidia,
+2016.
+Disponível
+em:
+<https://blogs.nvidia.com/blog/2016/07/2
+9/whats-difference-artificial-intelligencemachine-learning-deep-learning-ai/>.
+Acesso
+em:
+28
+outubro.
+2017.
+[3] MATOS, DAVID, Deep Learning com
+Linguagem R – Parte 1 , Ciência e Dados,
+Disponível
+em:
+<http://www.cienciaedados.com/deeplearning-com-linguagem-r-parte-1/>,
+Acesso
+em:
+24
+outubro.
+2017.
+[4] Li Deng and Dong Yu. Deep learning:
+Methods and applications. Foundations
+and Trends® in Signal Processing, 2014.
+[5] Richard O. Duda, Peter E. Hart, and
+David G. Stork. Pattern Classification
+(2Nd Edition). Wiley-Interscience, 2000.
+[6] Itamar Arel, Derek C. Rose, and
+Thomas P. Karnowski. Research frontier:
+Deep machine learning–a new frontier in
+artificial intelligence research. Comp.
+Intell. Mag., 5(4):13–18, November 2010.
+[7] Trask Andrew W. Grokking Deep
+Learning, pgs.11 – 17. MEAP Edition,
+2017.
+[8] Goodfellow, I., Bengio, Y., and
+
+Courville, A. (2016). Deep Learning. MIT
+Press. http://www.deeplearningbook.org.
+
+Inception Architecture for Computer
+Vision. ARXIV. Dezembro, 2015.
+
+[9] Nanduri and Sherry 2016, Lipton et al.
+2015, Goodfellow et al. 2016.
+
+[18] BENGIO, Y., COURVILLE, A.,
+GOODFELLOW, I. Deep Learning. MIT
+Press, 1 a ed. 2016
+
+[10] Rethinking the Inception Architecture
+for Computer Vision <https://www.cvfoundation.org/openaccess/content_cvpr
+_2016/papers/Szegedy_Rethinking_the_
+Inception_CVPR_2016_paper.pdf>
+[11]M. D. Zeiler and R. Fergus, Computer
+Vision – ECCV 2014: 13th European
+Conference,
+Zurich,
+Switzerland,
+September 6-12, 2014, Proceedings, Part
+I. Springer International Publishing, 2014,
+ch. Visualizing and Understanding
+Convolutional Networks, pp. 818–833.
+[12] AL, J. B. E., “Theano: A CPU and
+GPU Math Compiler in Python”, http:
+//deeplearning.net/software/theano/,
+2010, Accessed: 2016-5-5.
+[13] AL., M. A. E., “TensorFlow: Largescale machine learning on heterogeneous
+systems”,
+https://www.tensorflow.org/,
+2010, Accessed: 2016-5-5.
+[14] NICKOLLS, J., BUCK, I., GARLAND,
+M., et al., “Scalable Parallel Programming
+with CUDA”, Queue, v. 6, n. 2, pp. 40–53,
+Mar. 2008.
+[15] Kovalev V., Kalinovsky A., and
+Kovalev S. Deep Learning with Theano,
+Torch,
+Caffe,
+TensorFlow,
+and
+deeplearning4j: which one is the best in
+speed and accuracy? In: XIII Int. Conf. on
+Pattern Recognition and Information
+Processing, 3-5 October, Minsk, Belarus
+State University, 2016, pp. 99-103.
+[16] MULKAR-MEHTA , RUTU, Natural
+Language Processing vs. Machine
+Learning vs. Deep Learning, Dr. Rutu
+Mulkar-Mehta,
+Disponível
+em:
+<http://rutumulkar.com/blog/2016/NLPML>, Acesso em: 03 novembro. 2017.
+[17] Szegedy, Christian; Vanhoucke,
+Vincent; Ioffe, Sergey; Shlens, Jonathon;
+Wojna,
+Zbigniew.
+Rethinking
+the
+
+View publication stats
+
+[19] ROSEBROCK, ADRIAN, “Deep
+Learning For Computer Vision With
+Python”, pp. 122-126, 2017
+[20] ROSEBROCK, ADRIAN, “Deep
+Learning For Computer Vision With
+Python”, pp. 45-47, 2017
+[21] HAYKIN, S. (1999) Redes Neurais:
+Princípios e Prática. Artmed Editora S.A.,
+2a ed.
+

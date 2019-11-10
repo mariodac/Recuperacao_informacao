@@ -1,0 +1,638 @@
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+RECONHECIMENTO FACIAL APLICADO À PERÍCIA CRIMINAL
+Paulo Quintiliano da Silva1, Antônio Nuno de Castro Santa Rosa2
+¹Departamento de Polícia Federal, Brasil, Email: quintiliano.pqs@dpf.gov.br
+2
+
+Universidade de Brasília, Brasil, Email: nunos@unb.br
+
+Abstract
+Neste artigo é apresentado um breve histórico do reconhecimento facial. São
+também abordados alguns aspectos psicológicos do assunto e modelos propostos para o
+entendimento da percepção facial. Um modelo de reconhecimento facial automatizado,
+baseado nas eigenfaces, é proposto e apresentado em detalhes. São apresentadas
+aplicações do algoritmo de reconhecimento facial para a perícia criminal, especialmente
+para o reconhecimento de pessoas em cenas de crimes. Com a finalidade de reconhecer
+pessoas com a face semi-oclusa, com o uso de máscaras ou outro artefato, normalmente
+em cenas de crimes, os conceitos das eigenfaces são estendidos para eigeneyes,
+eigenmouth e eigennose, com a finalidade de reconhecer as pessoas nessa situação
+adversa.
+1.
+
+INTRODUÇÃO
+
+O reconhecimento de faces conhecidas tem um papel fundamental nas relações sociais das
+pessoas, apresentando-se como uma função corriqueira para o cérebro humano, contudo extremamente
+importante para as atividades mais simples e cotidianas, visto que o relacionamento das pessoas com
+as outras está baseado no reconhecimento facial. Normalmente, as pessoas só estabelecem uma
+interação com as outras se estas forem identificadas como exatamente os indivíduos com quem se quer
+interagir; e esta identificação usualmente se dá por meio do reconhecimento facial. As pessoas
+normalmente conseguem reconhecer um grande número de faces, sendo que este processamento
+extremamente complexo se dá de forma bastante natural.
+Dada a natureza muito particular do reconhecimento facial, há pesquisadores que afirmam que o
+cérebro humano possui uma região específica para este tipo de reconhecimento. Os psicólogos e
+médicos que pesquisam áreas correlatas com a neurologia se interessam muito em entender o
+mecanismo utilizado pelo cérebro humano para o reconhecimento facial.
+2.
+
+HISTÓRICO
+
+A literatura constata o início de esforços em pesquisas tratando de reconhecimento de faces
+desde o século XIX. Em 1878, o cientista inglês Sir Francis Galton apresentou um artigo no Instituto
+de Antropologia Britânico, em que ele descreveu as suas pesquisas envolvendo a combinação de fotos
+de pessoas, por meio da sobreposição de imagens de faces, umas sobre as outras, sendo que ele
+concluiu que se poderia chegar à foto que apresentaria as suas características típicas, reduzindo ou
+eliminando as variações existentes. O método de Galton propôs o alinhamento das fotos de faces das
+pessoas, em função de suas características marcantes, como a região dos olhos, e sobrepondo-as umas
+sobre as outras. Galton imaginou uma série de aplicações úteis para a sua Composite Portraiture
+(Combinação de Fotos), como a obtenção de uma melhor idéia da aparência de figuras históricas, pela
+combinação de quadros de diversos artistas, em que os diversos estilos artísticos deveriam desaparecer
+e a verdadeira aparência da personagem se sobressair, e outros, conforme se pode observar na Figura
+01.
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+Em 25 de maio de 1888, no instituto de identificação de pessoas, do Instituto Royal Britânico,
+Galton relata a sua grande dificuldade de descrever verbalmente ou por escrito as semelhanças
+hereditárias ou não entre as pessoas, os tipos de faces e características de cada pessoa. Em decorrência
+destas dificuldades, ele cometeu grandes enganos em seu trabalho e, a partir daí, começou a fazer
+interessantes experimentos, procurando caracterizar e identificar as pessoas por meio de seus
+caracteres físicos. Assim, Galton desenvolveu o que ele próprio chamou de “mechanical selector”,
+baseado em biometria, que permitia a comparação de perfis de medidas da face [02, 05, 06 e 12]. Ele
+também usou outras quatro medidas primárias: tamanho da cabeça, profundidade da cabeça, tamanho
+dos pés e tamanho dos dedos médios da mão e do pé.
+
+A idéia de comparação de medidas
+introduzida por Galton é utilizada em pesquisas
+atuais na Ciência da Computação, em que são
+extraídas características biométricas da imagem
+da face para serem comparadas com as medidas
+de outras faces, procurando-se o reconhecimento
+facial.
+Alguns pesquisadores desenvolveram
+modelos baseados nas características geométricas
+da face humana, em que esses dados são
+calculados com base na geometria facial
+representada na imagem das faces. Foram
+utilizados até 100 pontos de controle ou vetores
+caracterizando as particularidades das faces.
+Usaram-se, como parâmetros de comparação, as
+medidas das partes da face, a distância entre cada
+um dos componentes da face com os demais.
+A verificação de reconhecimento de
+pessoas com base na aparência facial é uma área
+de grande interesse da Visão Computacional,
+tendo sido objeto de muita pesquisa e
+desenvolvimento.
+Figura 01 - Composição de Fotos de Galton.
+
+A biometria facial, usada desde os tempos de Galton, é uma técnica que vem se desenvolvendo
+muito nos últimos anos, apresentando-se como uma ferramenta bastante útil para o desenvolvimento
+das técnicas de reconhecimento facial.
+3.
+
+ASPECTOS PSICOLÓGICOS DO RECONHECIMENTO FACIAL
+
+De acordo com a abordagem psicológica, existem dois níveis do reconhecimento da face:
+reconhecimento em nível de entrada e o reconhecimento do em nível subordinado. No reconhecimento
+em nível de entrada, todas as faces são percebidas como uma única categoria de “face”; e no
+reconhecimento em nível subordinado, as faces individuais são distinguidas por distinções mais finas.
+Há muitos experimentos feitos por psicólogos procurando descobrir a extensão das habilidades
+humanas em reconhecer faces em condições desfavoráveis de iluminação, com fotos de cabeça para
+baixo ou em posição invertida em 90º, ou com expressões faciais variadas, como surpresa, sorriso,
+irritação e outras [01 e 13].
+Observações de neuropsicólogos e experimentos de psicólogos concluem que o cérebro humano
+processa o reconhecimento facial por meio de canais de processamento de informações específicos
+para esta finalidade. Devido à natureza extremamente particular da atividade, esses cientistas afirmam
+
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+que há fortes evidências de que as expressões faciais e o reconhecimento facial são processados por
+caminhos diferentes de processamento e também são diferentes os caminhos que processam o
+reconhecimento facial de pessoas familiares e de pessoa estranhas. Tudo isto foi constatado por meio
+de experimentos, em que vários pacientes foram estudados, apresentando a eles situações diversas de
+reconhecimento facial, como de pessoas estranhas, pessoas conhecidas, com ou sem expressões
+faciais, com fotos apresentadas em posições diferentes da vertical. Constatou-se que algumas pessoas
+têm mais facilidade de reconhecer pessoas estranhas, que só foram vistas uma ou poucas vezes. As
+observações neuropsicológicas foram baseadas em resultados de exames de neurologia. Algumas das
+células apontadas como responsáveis pelo Reconhecimento Facial apresentam especializações para
+expressões emocionais, outras apresentam especializações diferentes.
+Como há grande número de cientistas que afirmam que o cérebro possui uma área especializada
+para o Reconhecimento Facial, também há evidências relatadas por cientistas de que algumas pessoas
+já nascem com grande predisposição e facilidade para o reconhecimento de padrões como a face
+humana. A despeito de haver observações com comprovado valor científico demonstrando que as
+faces são objetos especiais no mundo visual das pessoas, demandando uma parte do cérebro
+exclusivamente para o seu reconhecimento, ainda não há comprovação de que o processo de
+Reconhecimento Facial difere fundamentalmente dos processos utilizados no reconhecimento de
+outros tipos de objetos.
+Os psicólogos e médicos que pesquisam áreas correlatas com a neurologia se interessam muito
+em entender o mecanismo utilizado pelo cérebro humano para o reconhecimento facial. Também para
+os pesquisadores da Visão Computacional e Processamento de Imagens é muito importante conhecer o
+mecanismo utilizado pelo cérebro humano para o reconhecimento facial, pois poder-se-ia tentar
+utilizar mecanismos semelhantes no reconhecimento facial feito por computador, já que trata-se esta
+matéria de um projeto muito complexo.
+4.
+
+MODELOS PSICOLÓGICOS DE RECONHECIMENTO FACIAL
+
+Os cientistas Hay e Young [04] desenvolveram pesquisas procurando explicar o reconhecimento
+de faces familiares baseado em uma unidade que eles descobriram e denominaram de unidades de
+reconhecimento facial - URF. Esses cientistas afirmam que a URF atinge um limiar máximo de
+excitação quando a pessoa vê uma face conhecida. O cérebro humano ao receber o estímulo
+proveniente do fato de ver uma face, codifica esta face usando uma representação bastante completa e
+passa esta informação para a URF, que, por sua vez, experimenta um certo grau de excitação. Esse
+grau de excitação varia proporcionalmente ao grau de certeza de reconhecimento da face em tela, por
+exemplo, de 0 a 1, sendo que se a excitação for próxima de 0 a face é desconhecida, e se for próxima
+de 1 a face foi reconhecida.
+Os cientistas Cantor e Mischel [03] desenvolveram pesquisas procurando sistematizar o
+processo utilizado pelo cérebro para o reconhecimento de objetos, encontrando um modelo com três
+situações possíveis para mostrar quando um determinado objeto foi identificado, denominado-as de
+clássica, exemplificativa e prototipagem. No modelo clássico, o observador utiliza uma lista de
+atributos necessários para a descrição do objeto visual, sendo que o reconhecimento ocorre quando o
+observador fica satisfeito com o estímulo visual recebido em função de todos os atributos necessários
+ao reconhecimento. No modelo exemplificativo, o observador utiliza um modelo de exemplos de
+coleções de ocorrências de objetos visuais, sendo que o estímulo visual é verificado com a base nas
+semelhanças de exemplos conhecidos. No modelo de prototipagem, o observador usa um modelo de
+protótipo que é uma imagem-resumo ou um conjunto de características de um objeto visual, sendo que
+o estímulo visual é confrontado com a base nas semelhanças do protótipo utilizado.
+Outros pesquisadores concluíram que o Reconhecimento Facial é desenvolvido naturalmente
+pelo cérebro humano em termos de um modelo de faces. Este protótipo é criado a partir de todas as
+faces vistas pela pessoa, e cada nova face observada é codificada e acrescentada ao modelo. Todas as
+características das faces são concebidas, estendendo-se em todas as direções do modelo,
+representando a origem do depósito de características faciais. Uma face bastante conhecida, com
+semelhanças fortes com relação ao modelo, pode ser localizada rapidamente perto da origem. Por
+outro lado, se a face considerada for muito comum ou de difícil reconhecimento, o espaço próximo da
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+origem estará muito cheio com informações de outras faces mais conhecidas, e as informações desta
+face pouco conhecida estarão no fim do modelo, cujo acesso é mais difícil. Constataram-se evidências
+nas pesquisas feitas por cientistas concluindo que o reconhecimento de faces conhecidas demanda uma
+quantidade menor de memória, comparando-se com o reconhecimento de faces desconhecidas.
+5.
+
+RECONHECIMENTO FACIAL AUTOMÁTICO
+
+O Reconhecimento Facial Automático consiste na verificação ou identificação de uma pessoa
+por meio da comparação de uma face com uma única face (uma para uma) ou com um banco de dados
+de faces (uma para muitas). O Reconhecimento Facial é executado em nível subordinado. Nesta fase,
+uma face nova é comparada com faces conhecidas armazenados em um banco de dados, sendo então
+classificada como sendo a face de um indivíduo conhecido ou como uma face desconhecida.
+Para que o Reconhecimento Facial Automático possa ser levado a efeito, é necessário que haja
+uma fase anterior - a Detecção Facial Automática - que tem por objetivo localizar uma face no cenário
+complexo proposto, recortar a imagem da face, eliminar o fundo remanescente e apresentar uma
+"janela" contendo a face para o modelo de Reconhecimento Facial Automático. O Reconhecimento
+Facial vem se tornando uma área de pesquisa que tem atraído muito interesse da comunidade
+científica, tendo numerosas pesquisas e aplicações nos últimos anos.
+Pode-se considerar que a atividade de reconhecimento de faces (automática ou natural) possui
+três etapas distintas: Representação Facial, Detecção Facial e Reconhecimento Facial. A
+Representação Facial se constitui na modelagem da face, na tradução da face em códigos que possam
+ser entendidos e usados pelos algoritmos de Detecção Facial e Reconhecimento Facial. Um registro
+armazenado num banco de dados qualquer pode ser representado facilmente por sua chave primária,
+mas a representação de uma imagem de face não é trivial, demandando algoritmos complexos para
+possibilitar uma boa representação. O modo de representar uma face determina os algoritmos
+sucessivos de detecção e identificação. Para o reconhecimento em nível de entrada, uma categoria de
+faces deveria ser caracterizada por propriedades genéricas de todas as faces; e para o reconhecimento
+em nível subordinado, características detalhadas de olhos, nariz e boca têm que ser consideradas em
+cada face individual. Existem pesquisas no desenvolvimento de várias técnicas de representação
+facial, que podem ser enquadradas em três categorias distintas: Template-based, Feature-based e
+Appearance-based.
+O método Template-based de Representação Facial possui duas versões, a primeira – e mais
+simples – se propõe a representar as faces por meio de uma matriz bidimensional com valores
+representando as bordas da elipse facial e de todos os órgãos da face. A segunda versão deste método
+– mais completa – apresenta múltiplos templates na representação das faces, sob diversos ângulos e
+pontos de vista. Outra abordagem importante é empregar um conjunto de modelos de características
+faciais menores, correspondente aos olhos, nariz e boca, para um único ponto de vista. A vantagem
+mais atraente deste modelo é a sua simplicidade, porém tem a desvantagem de necessitar grande
+quantidade de memória e de ser um algoritmo de comparação ineficiente.
+O método Feature-based considera as posições e tamanhos dos órgãos faciais, como olhos,
+nariz, boca, sobrancelhas, etc., na representação das faces. Este método consome bem menos recursos
+computacionais do que o template-based, possibilitando maior velocidade de processamento,
+podendo-se obter bons desempenhos com banco de dados de faces em escalas variadas. O método de
+comparação baseado nas características geométricas usa um banco de dados com um modelo para cada
+face (tamanho e posição de olhos, boca, esboço de cabeça, e relações entre estas características). Para
+cada imagem são calculadas todas as distâncias entre os órgãos da face. A meta é adquirir uma
+correspondência do tipo "um para um" entre as características da face questionada e as características
+das faces armazenadas em num banco de dados. As características extraídas por gradientes verticais
+são úteis para a detecção do topo da cabeça, olhos, base de nariz e boca. Os gradientes horizontais são
+úteis para detecção dos limites laterais da face e do nariz. Para cada face deve ser calculado um vetor
+de características e então o reconhecimento é executado com um classificador vizinho mais próximo.
+O método Appearance-based se propõe projetar as imagens de faces num subespaço linear de
+baixa dimensão, obtendo-se, a partir desta projeção, a representação das faces. O espaço das
+eigenfaces é uma aplicação deste método, sendo construído com base na PCA – Principal Component
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+Analysis, a partir da projeção das imagens do conjunto de treinamento no espaço de faces (de baixa
+dimensão). Nesta dissertação, o conceito de eigenfaces foi expandido para as eigenfeatures, como
+eigeneyes, eigenmouth e eigennose, com o objetivo melhorar a eficácia dos algoritmos quando
+trabalhando com imagens semi-oclusas.
+A detecção facial consiste em, dada uma imagem de um cenário complexo, localizar uma face,
+recortá-la para ser apresentada ao algoritmo de Reconhecimento Facial. Alguns métodos utilizam a
+busca de uma forma elíptica, outros procuram a textura da cor de pele e há os que procuram pelos
+órgãos da face, como olhos, boca, nariz, etc. A detecção facial é executada em nível de entrada.
+O Reconhecimento Facial Automático consiste na constatação da identidade de uma pessoa por
+meio da comparação de uma face com uma única face - Verificação Facial - (uma para uma) ou com
+um banco de dados de faces – Identificação Facial - (uma para muitas). O Reconhecimento Facial é
+executado em nível subordinado. As faces apresentadas para efeito de reconhecimento são comparadas
+com as faces conhecidas armazenados em um banco de dados, sendo então classificadas como sendo
+a face de um indivíduo conhecido ou como uma face desconhecida.
+Esta pesquisa foi desenvolvida com base no método de representação de faces appearancebased, usando-se como suporte os autovetores das imagens e seus respectivos autovalores. Este
+método utiliza a KLT (Karhunen-Loève Transform), decompondo as imagens de faces em um pequeno
+conjunto de características particulares das imagens, chamado eigenfaces. O reconhecimento é
+executado por meio da projeção das faces novas (faces questionadas) em um espaço linear de faces de
+baixa dimensão, criado a partir das eigenfaces e calculando-se a distância euclidiana existente entre
+cada face questionada e o espaço de faces das classes, construído com base nas faces conhecidas.
+Na implementação deste modelo, foram obtidos altos índices de reconhecimento, sendo que o
+modelo se mostrou bastante robusto ao trabalhar com imagens obtidas em condições favoráveis de
+iluminação, mesmo com expressões faciais diversas e utilização de óculos, sendo, entretanto, sensível
+para se trabalhar com imagens obtidas em condições extravagantes de iluminação e em diferentes
+escalas. Para estes casos, foram desenvolvidas técnicas para diminuir os efeitos da iluminação
+inadequada, que foram chamadas de simetrização. A aplicação destas técnicas melhorou
+significativamente o desempenho do modelo quando as imagens trabalhadas tiverem sido obtidas em
+condições inadequadas de iluminação, especialmente com iluminações laterais.
+A maior parte dos esforços em pesquisas relativas ao Reconhecimento Facial enfocou
+reconhecimento em nível subordinado, ficando o reconhecimento em nível de entrada em segundo
+plano. Ressalte-se que as pesquisas aqui apresentadas enfocaram com maior interesse o
+reconhecimento em nível subordinado. A detecção facial é classificada em nível de entrada, enquanto
+que o reconhecimento facial é classificado em nível subordinado.
+O desempenho do reconhecimento de faces pode ser comprometido por vários fatores, dentre
+eles são destacados os principais: iluminação inadequada, baixa resolução da imagem, escala, posição
+da face, disfarce e expressão facial.
+6.
+
+MODELO DE RECONHECIMENTO FACIAL AUTOMÁTICO PROPOSTO
+
+Neste tópico será descrito o modelo de reconhecimento automático desenvolvido. Na construção
+dos espaços de imagem e de faces, parte-se de um conjunto de M imagens de faces, as mesmas obtidas
+a partir do algoritmo de Detecção Facial, identificadas como Γi (i = 1,..., M ) e referenciadas como o
+conjunto de imagens de treinamento. Estas imagens são utilizadas para o treinamento do modelo e
+para a verificação de seu desempenho. Essas imagens são matrizes quadradas de NxN, portanto tendo
+cada imagem N 2 pixels, em que N=128.
+Preliminarmente, todas essas M imagens são convertidas em vetores coluna, passando a terem a
+dimensão N 2 x1 , com os mesmos N 2 pixels. Essa conversão se dá tomando cada uma das linhas e
+concatenando-as, uma em seguida à outra, de forma a se construir o vetor coluna, da seguinte forma:
+Γi ,1 = Γ j',k (i = 1,..., N 2 ; j , k = 1,..., N )
+(1)
+Calcula-se, então, a face média Ψ de todo o conjunto de imagens, somando-se todas as imagens
+e dividindo-se o resultado pela quantidade de imagens, da seguinte forma:
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+Ψ=
+
+1
+M
+
+M
+i =1
+
+Γi .
+
+(2)
+
+Uma vez calculada a face média Ψ (também com N 2 pixels e dimensão N 2 x1 ), é montado
+um novo conjunto de imagens Φ i , obtido a partir da diferença entre cada uma das imagens do
+conjunto de treinamento e a face média.
+Assim, cada uma das imagens Φ i se distancia (diferencia-se) da face média da distribuição, e
+esta distância é calculada subtraindo-se a face média de cada face, chegando-se a um novo espaço de
+imagens, calculado da seguinte forma:
+Φ i = Γi − Ψ (i = 1,..., M )
+(3)
+A partir do novo conjunto das M imagens Φ i (todas com dimensão N 2 x1 , com N 2 pixels,
+portanto), é montada a matriz A, de dimensão ( N 2 xM ) , tomando-se cada um dos M vetores Φ i e
+colocando-os em cada coluna da matriz A, da seguinte forma:
+Ai , j = Φ j ;i ,1
+(4)
+A partir da matriz A, a matriz de covariância C teria que ser montada, por meio de produto
+externo, com dimensão N 2 xN 2 , da seguinte forma:
+C = AAT
+(5)
+Foi escolhida a alternativa de montar a matriz de covariância L, por meio de produto interno,
+com dimensão MxM, prescindindo-se da montagem da matriz C, para efeito de melhoria de
+performance. O cálculo da matriz L se dá da seguinte forma:
+L = AT A
+(6)
+Será mostrada, então, a equivalência entre os autovetores de L e os de C. Sejam as matrizes
+A( N 2 xM ) e AT ( MxN 2 ) , sendo N 2 ≥ M . Então, temos:
+
+− λI N 2
+A
+
+T
+
+−A
+IM
+
+= ( −λ ) N
+
+2
+
+−M
+
+AT A − λ I M = AAT − λI N 2
+
+(7)
+
+T
+Então, os N 2 autovalores de AAT são iguais aos M autovalores de A A , acrescidos dos
+N 2 − M autovalores iguais a zero. Será apresentado a seguir um teorema da Álgebra Linear que
+T
+
+descreve bem o relacionamento entre os autovetores de AA e de A T A .
+Teorema: Para as matrizes A( N 2 xM ) e A T ( MxN 2 ) , os autovalores diferentes de zero de AAT e
+
+AT A são os mesmos e têm a mesma multiplicidade. Se x é um autovetor não trivial de AAT para um
+autovalor λ ≠ 0 , então y = A T x é um autovetor não trivial de A T A .
+Prova: A primeira parte obtém-se a partir de (21). Para a segunda parte, substituindo-se
+y = AT x na equação ( AT ( AAT x ) = λAT x) chega-se a ( AT Ay = λy ). O vetor x não é trivial se
+
+x ≠ 0 . Desde que ( Ay = AAT x = λx ≠ 0) , conclui-se também que y ≠ 0 .
+Então, os autovetores da matriz de covariância L são calculados. Esses cálculos são feitos da
+forma como se segue. Seja a matriz quadrada L, de dimensão (MxM), os autovalores λ de L são as
+raízes da equação:
+L−λ I =0
+(8)
+Os autovetores, por sua vez, são os vetores xi não nulos que satisfazem a seguinte equação:
+
+(L − λi I ) x i = 0
+(9)
+Como, pelo Teorema anteriormente apresentado, os autovetores de C são equivalentes aos
+autovetores de L, os autovetores de C são calculados a partir dos autovetores de L. Este cálculo pode
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+ser feito a partir do somatório da combinação linear das matrizes do espaço Φ k com os M elementos
+dos M autovetores de L, conforme apresentado na seguinte equação:
+
+ul =
+
+M
+k =1
+
+vlk Φ k , (l = 1,..., M )
+
+(10)
+
+Como, considerando-se as matrizes A( N 2 xM ) e V( MxM ) , em que A contém as M imagens do
+espaço Φ k e V contém os M autovetores de L, e os escalares vlk , que são os M valores dos M
+autovetores de L e Φ k , que são os M vetores da matriz C, sabe-se, a partir de (6) a (9), que:
+
+AV =
+
+M
+k =1
+
+vlk Φ k , (l = 1,..., M )
+
+(11)
+
+Como (11) é verdadeira, ao invés de se usar a expressão (10) para calcular os autovetores de C,
+eles podem ser calculados de forma mais simplificada, a partir de combinação linear do espaço das
+imagens originais (matriz A) com os autovetores de L (matriz V), multiplicando-se as matrizes A e V,
+da seguinte forma:
+U = AV
+(12)
+Onde a matriz V, de dimensão (MxM ) é constituída pelos M autovetores de L e a matriz U, de
+dimensão ( N 2 xM ) é constituída por todos os autovetores de C, e a matriz A naturalmente é o espaço
+de imagens, de dimensão ( N 2 xM ) .
+Todos os autovetores têm um autovalor associado a si próprios e os autovetores com os maiores
+autovalores provêem mais informação sobre a variação da face do que os com autovalores menores.
+Depois que as eigenfaces são extraídas da matriz de covariância de um conjunto de faces, a
+próxima etapa é o treinamento do modelo. Para isso foram usadas apenas 4 imagens de cada classe.
+Estas imagens, então, são utilizadas no treinamento do modelo. E para a verificação e testes do modelo
+são utilizadas todas as M imagens do conjunto de treinamento.
+Todas as imagens representantes das classes são projetadas no espaço de eigenface e
+representadas por uma combinação linear das eigenfaces, tendo um novo descritor que corresponde a
+um ponto dentro de um grande espaço dimensional. Sabe-se que apenas alguns poucos autovetores
+com os autovalores maiores são suficientes para o reconhecimento facial, por isso foram usados
+apenas (M´<M) autovetores. Esta projeção se dá da seguinte forma:
+Ω i = U T (Γi − Ψ ), i = 1,..., Nc.
+(13)
+Onde a matriz Ω i , de dimensão ( M ´ xNc ) , contém os Nc autovetores, de dimensão ( M ´x1) ,
+da matriz L, e é usada para comparação com as novas faces apresentadas para efeito de comparação e
+reconhecimento. O valor Nc é o número de classes existentes no conjunto de treinamento.
+Se todos as eigenfaces forem usados para representarem as faces, esses conjuntos de imagens
+iniciais podem ser completamente reconstruídos. As eigenfaces são usadas para representarem ou
+codificarem qualquer face a ser comparada ou reconhecida. Deve-se usar eigenfaces com autovalores
+mais altos para reconstruir as faces porque eles provêem muito mais informação sobre a variação de
+faces.
+Em função da projeção sobre o espaço de eigenfaces descrever a variação de distribuição de
+faces, é possível usar estes novos descritores de faces para classificá-las. O Reconhecimento Facial se
+dá extraindo-se os descritores da nova face submetida a reconhecimento e comparando-os com os
+descritores das classes previamente armazenadas no banco de dados, calculados da mesma maneira. A
+metodologia utilizada para fazer esta comparação foi a distância euclidiana. Assim, cada face
+submetida ao Reconhecimento Facial é projetada no espaço de faces, obtendo-se o vetor Ω , da
+seguinte forma:
+Ω = U T (Γ − Ψ )
+(14)
+
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+O vetor Ω , de dimensão (Mx1), é comparado com cada um dos vetores Ω i (i = 1,..., Nc ) . Se a
+distância encontrada entre Ω e qualquer Ω i (i = 1,..., Nc ) estiver dentro do threshold da classe e for
+a menor distância encontrada, então houve o reconhecimento facial de Ω pertencendo à classe i.
+A distância é calculada por meio do método dos mínimos quadrados, da seguinte forma:
+2
+
+ε i2 = Ω − Ω i , (i = 1,..., Nc )
+
+(15)
+
+Os thresholds θ i (i = 1,..., Nc ) definem a distância máxima permitida entre a face nova
+submetida ao reconhecimento e cada uma das classes. Se a distância encontrada entre a nova face e
+uma das classes estiver dentro do threshold da classe, então houve o reconhecimento facial. Os
+thresholds são ajustados por uma variável k, que define o grau de tolerância a erros, quanto menor for
+esta variável, maior é a tolerância a "falsos positivos" e menor é a tolerância a "falsos negativos".
+O cálculo dos Nc thresholds, em que Nc é a quantidade de classes trabalhadas, é feito da
+seguinte forma:
+
+1
+k
+
+θ ik = max{ Ω i − Ω j } (i, j = 1,..., Nc; k = 1,...,10)
+
+(16)
+
+Os autovetores das imagens de faces são definidos no espaço de imagem, eles podem ser vistos
+como faces e realmente são parecidos com faces, por isso eles são chamados de eigenfaces. A maior
+variação dos vetores de treinamento é descrito pela primeira eigenface. A segunda maior variação dos
+vetores de treinamento é descrito pela segunda eigenface, e assim por diante.
+Cada eigenface pode ser vista como uma característica, quando uma face particular é projetada
+sobre o espaço de face, seu vetor (composto por seus valores de peso com relação a cada eigenface) no
+espaço de face mostra a importância que cada uma dessas características descreve na face.
+Considerando-se que a imagem montada no espaço de faces é realmente uma face, o peso do
+primeiro eigenface é muito alto. O valor dos pesos diminui de acordo com o número dos aumentos de
+eigenface, o que está em conformidade com a definição de eigenfaces. O primeiro eigenface responde
+pela variação máxima, o segundo responde pela segunda variação máxima, e assim sucessivamente.
+Ao contrário da detecção facial, em que há apenas duas classes de objetos, faces e não-faces,
+aqui cada indivíduo está numa classe separada. Todas as faces têm as mesmas características faciais e
+são basicamente bem parecidas na configuração global. Isto faz do reconhecimento facial um
+problema muito difícil e interessante. Outra coisa que o torna mais complicado é que a face de cada
+indivíduo pode ter muitas variações por causa da mudança de orientação, expressão facial, iluminação
+na imagem, escala e disfarces.
+Uma imagem de face é um array bidimensional de valores de intensidade. Neste modelo
+apresentado o tamanho padrão proposto é de 128x128 pixels. Também pode ser tratado como um vetor
+ou um ponto em um espaço de dimensão 16384. Mas as imagens de faces não são distribuídas
+fortuitamente neste espaço dimensional alto. O fato de todas as faces serem basicamente bem
+parecidas umas com as outras e terem as mesmas características faciais, como olhos, nariz e boca, faz
+de todas as faces um subconjunto do espaço de imagem completo, em outras palavras, a dimensão do
+espaço de faces é menor do que o espaço da imagem.
+
+7.
+
+RECONHECIMENTO FACIAL COM SEMI-OCLUSÃO DE FACES
+
+Em aplicações forense, em que muitas vezes o criminoso é filmado na cena de crime com a face
+semi-oclusa, com máscaras ou outro artefato cobrindo parte do rosto, é necessário que o software
+possibilite o reconhecimento facial a partir apenas a região descoberta da face. Normalmente a parte
+descoberta é a região dos olhos, ou da boca ou do nariz [07, 08, 09, 10 e 11].
+Assim, com o objetivo de viabilizar o reconhecimento facial automático com imagens semioclusas, os conceitos de eigenfaces estão sendo expandidos para eigeneyes, eigenmouth e eigennose,
+visto que o algoritmo desenvolvido unicamente baseado em eigenfaces responde muito mal quando as
+imagens estão semi-oclusas ou com problemas de iluminação. Esta técnica aqui apresentada pode ser
+bastante útil nas aplicações policiais, em que há a necessidade de reconhecimento de pessoas com
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+disfarces diversos, cobrindo parte do rosto, o que normalmente ocorre nas cenas de crimes, em que o
+criminoso se disfarça com máscaras cobrindo parte da face. Assim, com a utilização das técnicas
+desenvolvidas e aqui apresentadas, o reconhecimento facial automático se torna possível com a
+utilização de apenas partes pequenas da face. Utilizando-se as eigenmouth e eigennose, é possível o
+reconhecimento facial automático de pessoas com a parte superior da face coberta, com óculos escuros
+ou máscaras. Com a utilização da técnica de eigeneyes é possível é possível o reconhecimento de
+pessoas com a parte inferior da face coberta com uso de máscara, desde que com a região dos olhos
+exposta.
+Os algoritmos desenvolvidos para esta técnica de eigenmouth e eigennose são muito
+semelhantes aos algoritmos de eigenface, tendo, no entanto, uma "inteligência" adicional para verificar
+automaticamente a parte da face que deve ser submetida a reconhecimento. Também terá que manter
+um banco de dados bem mais completo, com informações específicas de eigenfaces, eigenmouth,
+eigennose e eigeneyes, referentes a todas as classes trabalhadas, utilizando-se sempre os mesmos
+critérios estabelecidos na extração e confrontos de todas estas eigenfeatures.
+Pode-se observar tanto visualmente, a partir da Figura 02, como com base nas planilhas com os
+resultados obtidos, a partir do processamento dos algoritmos de eigenfeatures, que estes algoritmos
+têm comportamento diferenciado em relação aos das eigenfaces.
+
+Figura 02. "Boca Média" original e várias reconstruções com os autovetores com os maiores autovalores.
+
+O desempenho das eigenfaces é mais comportado, melhorando linearmente à medida que se
+aumenta o número de autovetores utilizados no reconhecimento, enquanto que o desempenho das
+eigenfeatures é um pouco inesperado, oscilando ligeiramente para cima e para baixo ao ser submetido
+a uma variação sempre crescente de quantidade de autovetores utilizados, conforme pode ser
+observado nas Tabelas 01, 02, 03 e 04.
+Ainda com o objetivo de viabilizar o reconhecimento facial automático com imagens semioclusas, também é feita a expansão dos conceitos de eigenfaces para eigeneyes. Desta forma,
+dispondo-se de apenas uma região com aproximadamente 20% da face, pode-se fazer o
+reconhecimento facial. Foram desenvolvidas duas técnicas baseadas em eigeneyes: com o uso de
+apenas um dos olhos ou centrando os dois olhos. A primeira técnica apresentou melhores resultados,
+com melhores eficácias.
+A Figura 03 ilustra a utilização da segunda técnica, em que os dois olhos são utilizados, e a
+Figura 04 foi produzida a partir da utilização da primeira técnica, em que se faz uso de apenas um dos
+olhos, e mostra algumas imagens dos olhos direitos das pessoas (esquerdo da imagem) utilizadas
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+nestes experimentos, em que é mostrado que o reconhecimento facial automático pode ser levado a
+efeito com apenas uma pequena parte da imagem da face. Na Figura 04, A é o "Olho Médio" de todo o
+conjunto de treinamento. B-D são os "Olhos Médios" de suas respectivas classes. E-H são alguns
+exemplos de imagens do conjunto de treinamento.
+
+Figura 03. Técnica de eigeneyes com a utilização dos dois olhos.
+
+Figura 04. Técnica de eigeneyes com a utilização de apenas um olho.
+
+8.
+
+RESULTADOS
+
+A seguir serão mostrados os desempenhos apresentados pelo modelo em todas as situações em
+foi utilizado. A Tabela 01 apresenta os resultados com a utilização do algoritmo eigenfaces, com a
+utilização as faces completas das pessoas. Esses resultados são os melhores obtidos, com até 98,33%
+de acertos, com a utilização de 50 autovalores.
+A Tabela 02 mostra os resultados obtidos com o algoritmo eigeneyes, com a utilização de um
+único olho conforme mostrado na Figura 04. Apesar da utilização de apenas cerca de 20% da face, os
+resultados obtidos por este algoritmo ficaram apenas 10,83% inferiores ao desempenho do algoritmo
+eigenface.
+A Tabela 03 mostra os resultados obtidos com o algoritmo eigenmouth, conforme imagens
+mostradas na Figura 02, e a Tabela 04 apresenta os resultados do algoritmo eigeneyes, com a
+utilização da região em torno dos dois olhos, conforme imagens mostradas na Figura 03. Os resultados
+desses dois algoritmos ficaram ligeiramente inferiores aos resultados do algoritmo eigeneyes com um
+único olho.
+
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+Tabela 01. Resultados do algoritmo Eigenfaces.
+
+Tabela 03. Resultados do algoritmo Eigenmouth.
+
+9.
+
+Tabela 02. Resultados do algoritmo Eigeneyes.
+
+Tabela 04. Eigeneyes do algoritmo com a região dos olhos.
+
+APLICAÇÕES DO ALGORITMO EIGENFACE EM CASO REAL
+
+O reconhecimento facial pode ser utilizado em muitas aplicações forenses, inclusive em perícia
+criminal, para efeito de reconhecimento de criminosos filmados ou fotografados em cenas de crime,
+como um caso real em que fizemos exame pericial com a utilização desse algoritmo eigenface, para o
+reconhecimento de dois assaltantes de bancos filmados na cena do crime.
+Nesse caso, foram apresentados para exames periciais alguns filmes em arquivos com extensão
+avi, contendo filmagem de cena de crime, em que dois indivíduos praticavam assalto a uma agência
+bancária. Também foram apresentadas fotos de dois suspeitos que haviam sido presos. Foi solicitada a
+elaboração de exames periciais com o objetivo de responder se os dois suspeitos presos são os mesmos
+indivíduos filmados praticando o assalto à agência bancária.
+Alguns problemas encontrados dificultaram os exames periciais. A resolução das imagens
+extraídas dos filmes da cena do crime era muito baixa, em que as faces recortadas das imagens têm
+menos do que 30x30 pixels. Além disso, como as câmaras foram colocadas em locais inadequados, os
+atores não aparecem de forma frontal e ereta, mas sim de perfil e de cabeça baixa. Na única foto em
+que um dos atores apareceu de forma frontal e ereta, o lado esquerdo do indivíduo veio cortado, em
+decorrência do posicionamento da câmara. Outro problema observado foi com relação às fotos
+questionadas, pois as mesmas não eram contemporâneas, sendo que uma delas foi tirada
+possivelmente há mais de dez anos antes do crime.
+Com relação ao material questionado, as fotos apresentadas inicialmente foram desconsideradas,
+tendo sido tiradas novas fotos dos suspeitos presos, para efeito de utilização das mesmas como padrão.
+Procurou-se tirar fotos nas mesmas posições em que se apresentaram os atores nas cenas do crime,
+para facilitar as comparações. Quanto às imagens obtidas dos filmes de baixa resolução, foram
+selecionadas as melhores fotos nas melhores posições. A foto em que um dos atores teve o lado
+esquerdo cortado foi reconstruída, por meio de técnicas de processamento de imagens, partindo-se da
+premissa de que os dois da face das pessoas são simétricos, obtendo-se, a partir desta foto, os melhores
+resultados.
+10. CONCLUSÕES
+O modelo proposto é bastante robusto no tratamento de imagens de faces obtidas em condições
+controladas de iluminação, inclusive com expressões faciais variadas e uso de óculos transparentes.
+ICCyber’2004 – I Conferência Internacional de Perícias em Crimes Cibernéticos
+
+Ele é bastante eficiente e simples tanto na etapa de treinamento como na de reconhecimento,
+dispensando a necessidade de processamentos de baixo nível para verificações da geometria da face ou
+das distâncias entre os órgãos faciais e/ou de suas dimensões.
+Para efeito de dar um tratamento mais eficaz nas imagens com faces semi-oclusas ou
+incompletas, com disfarces, com máscaras ou óculos escuros, os conceitos de eigenfaces foram
+expandidos para eigeneyes, eigennose e eigenmouth, procurando-se o reconhecimento facial a partir de
+fragmentos da imagem de aproximadamente 20% da face, viabilizando-se o reconhecimento facial a
+partir de imagens semi-oclusas, incompletas, com disfarces, mal-iluminadas ou apresentadas em perfil.
+O software pode ser utilizado em casos reais para o reconhecimento de pessoas em cenas ce
+crime, por meio da comparação das imagens encontradas nessas cenas com imagens das faces de
+suspeitos, em atendimento a solicitações específicas ou em comparações com bancos de dados de
+listas negras, compostas de criminosos e suspeitos em geral.
+11. REFERÊNCIAS BIBLIOGRÁFICAS
+[01] Bruce, V. e Young A., “In the Eye of the Beholder”, Oxdford University Press, 280 pp., 1998
+[02] Brunelli, R. e Poggio, T, "Face Recognition: Features versus Templates", IEEE Transactions on Pattern Analysis and
+Machine Intelligence 15(10), páginas 1042 a 1052, 1993.
+[03] Cantor, N. and Mischel, W., “Prototypes in person perception.”, In L. Berkowitz, editor, Advances in Experimental
+Social Psychology, volume 12, páginas 3 a 52, Academic Press, 1979.
+[04] Hay, D.C. and Young, A.W., “The Human Face”, In A.W. Ellis, editor, Normality and pathology in cognitive functions,
+páginas 173 a 202. Academic Press, 1982.
+[05] Manjunath, B. S.; Chellappa, R. e von der Malsburg, C., "A Feature Based Approach to Face Recognition", Proceedings
+of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition, Champaign, Illinois, USA, 1992.
+[06] Proesmans, Marc e Gool, Luc Van, "Getting Facial Features and Gestures in 3D", Katholieke Universiteit Leuven, Face
+Recognition From Theory to Applications, NATO ASI Series, Series F: Computer and Systems Sciences, Vol. 163, SpringerVerlag Berlin Heidelbert, 1998.
+[07] Quintiliano, Paulo e Santa-Rosa A., “Face Recognition Based on Eigenfeature”. In: Proceedings of SPIE Second
+International Symposium on Multispectral Image Processing and Pattern Recognition, Wuhan/China, pp. 140-145, 2001.
+[08] Quintiliano, Paulo; Guadagnin R. e Santa-Rosa, Antônio, “Practical Procedures to Improve Face Recognition Based on
+Eigenfaces and Principal Component Analysis". Pattern Recognition and Image Analysis, Vol. 11, No. 2, pp. 372-376, The
+Russian Federation, 2001.
+[09] Quintiliano, Paulo e Santa-Rosa, Antônio, “Face Recognition Based on Symmetryzation”. In: Proceedings of the
+International Conference on Computer Science, Software Engineering, Information Technology, e-Business, and
+Applications (CSIT e A’02), CSITeA02, V. 1, pp. 109-114, 2002.
+[10] Quintiliano, Paulo e Santa-Rosa, Antônio, 2003. “Face Recognition Based on Eigeneyes”., Pattern Recognition and
+Image Analysis, Vol. 13, No. 2, pp. 339-342, The Russian Federation, 2003.
+[11] Quintiliano, Paulo e Santa-Rosa, Antônio, 2003, “Face Recognition Based on Eigeneyes and Eigenfaces”. In:
+Proceedings do XIII Congresso Mundial de Criminologia, Rio de Janeiro, 2003.
+[12] Sobottka, Karin e Pitas, Ioannis, “Localization of Facial Regions and Features”. The 4-th Open Russian-Geerman
+Workshop Pattern Recognition and Image Analysis”, Novgorod State University, The Russian Federation, March 3-9, 1996.
+[13] Young, A. W., “Face and Mind”, Oxford University Press, 405pp., 1998.
+
+187

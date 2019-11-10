@@ -1,0 +1,2456 @@
+DOI: 10.1590/S1413-41522019178815
+
+Artigo Técnico
+
+Mapeamento dos aspectos hidrogeoquímicos
+de águas subterrâneas a partir de estatística
+multivariada e redes neurais artificiais
+Mapping of groundwater hydrogeochemistry aspects
+through multivariate statistics and artificial neural networks
+Jonatas Batista Mattos¹* , Manoel Jerônimo Moreira Cruz¹ ,
+Francisco Carlos Fernandes De Paula² , Elinaldo Fonseca Sales¹
+
+RESUMO
+
+ABSTRACT
+
+O objetivo central deste trabalho foi realizar o mapeamento dos aspectos
+
+The main objective this paper was to map the hydrogeochemistry
+
+hidrogeoquímicos de águas subterrâneas usando a estatística multivariada
+
+aspects of groundwater using multivariate statistics and artificial neural
+
+e redes neurais artificiais como subsídio para identificação de padrões
+
+networks as a subsidy to identify spatial patterns. For this, a case study
+
+espaciais. Para tal, foi executado um estudo de caso em aquíferos no
+
+was carried out in aquifers in the municipality of Lençóis (BA), in the
+
+município de Lençóis, Bahia, na região da Chapada Diamantina, nordeste do
+
+region of Chapada Diamantina, Northeastern Brazil. Field campaigns
+
+Brasil. Foram realizadas campanhas de campo para coleta de coordenadas
+
+were carried out to collect geodetic coordinates and groundwater
+
+geodésicas e amostras de águas subterrâneas. Após análise laboratorial e
+
+samples. After laboratorial analysis and determination of analytical
+
+determinação de dados analíticos, foi feita a interpretação dos processos
+
+data, the environmental processes were interpreted by cluster analysis
+
+ambientais com o uso da análise de agrupamentos e mapas auto-
+
+and self-organizing maps, as well as the waters classification through
+
+organizáveis, além de classificação das águas pela Resolução do Conselho
+
+CONAMA Resolution no. 396/2008. For the purpose of mapping the
+
+Nacional do Meio Ambiente nº 396/2008. Para fins de mapeamento dos
+
+analyzed data, geoprocessing techniques were used in GIS. The main
+
+dados analisados, foram usadas técnicas de geoprocessamento no Sistema
+
+physical and chemical constituents analyzed in two climatic periods
+
+de Informação Geográfica. Os principais constituintes físicos e químicos
+
+were mapped and divided into seven clusters. Four zones that present
+
+analisados em dois períodos climáticos foram mapeados e divididos
+
+different hydrogeochemical contexts were identified in the municipality.
+
+em sete agrupamentos. Foram identificadas quatro zonas no município,
+
+The zones of the east/southeastern, south (urban area) and south end
+
+que apresentam diferentes contextos hidrogeoquímicos. As zonas dos
+
+sectors present the most significant changes in hydrogeochemistry
+
+setores leste/sudeste, sul (área urbana) e extremo sul apresentam as
+
+and water quality. The mapping, supported by multivariate statistics
+
+mais significativas alterações na hidrogeoquímica e qualidade das águas.
+
+and artificial neural networks, was potentially useful in contributing to
+
+O mapeamento, subsidiado pela estatística multivariada e redes neurais
+
+the management actions of groundwater resources as delimitation of
+
+artificiais, se apresentou potencialmente útil em contribuir com as ações
+
+priority areas, monitoring of contamination risk zones and engineering
+
+de gestão dos recursos hídricos subterrâneos, como delimitação de áreas
+
+interventions that eventually seek environmental groundwater sanitation.
+
+prioritárias, monitoramento de zonas de riscos de contaminação, além de
+intervenções de engenharia que eventualmente busquem o saneamento
+ambiental das águas subterrâneas.
+Palavras-chave:
+
+mapas
+
+auto-organizáveis;
+
+qualidade
+
+da
+
+Keywords: self-organizing maps; water quality; hydrogeology; Chapada
+Diamantina.
+
+água;
+
+hidrogeologia; Chapada Diamantina.
+
+¹Universidade Federal da Bahia – Salvador (BA), Brasil.
+²Universidade Estadual de Santa Cruz – Ilhéus (BA), Brasil.
+*Autor correspondente: jon.geociencia@gmail.com
+Recebido: 20/04/2017 – Aceito: 26/04/2018 – Reg. ABES: 178815
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+501
+
+Mattos, J.B. et al.
+
+INTRODUÇÃO
+
+aplicação combinada de tais métodos pode se consolidar como uma
+
+A qualidade das águas é corriqueiramente pontuada como um fator
+
+maneira bastante eficaz de se conhecer detalhadamente as áreas
+
+determinante na proposição de determinadas atividades antrópicas em
+
+prioritárias para gestão, dentro de uma proposta que inter-relaciona
+
+uma região. Conhecer quimicamente as águas, bem como as formas
+
+questões de abastecimento e qualidade da água subterrânea com
+
+e condições que ocorrem no ambiente, é de suma importância para a
+
+aspectos socioambientais e demográficos.
+
+definição de aptidões de uso dos recursos hídricos, como direcionam
+
+O objetivo principal deste trabalho foi usar a análise de agrupamentos
+
+estudos executados em várias partes do mundo, a exemplo de Freeze
+
+e os mapas auto-organizáveis (redes neurais artificiais) para identificar
+
+e Cherry (1979), Menezes et al. (2016) e Silva et al. (2017).
+
+padrões espaciais dos aspectos hidrogeoquímicos de águas subterrâneas a
+
+De acordo com Tundisi, Matsumura-Tundisi e Matsumura Tundisi
+
+partir de dados analíticos (parâmetros físicos e químicos). Como objetivo
+
+(2008), as mudanças climáticas, a deterioração das águas superficiais
+
+específico, foi realizada a interpretação de dados analíticos, a fim de
+
+e o aumento da demanda por água têm elevado exponencialmente a
+
+refinar o mapeamento pela identificação do padrão hidrogeoquímico
+
+exploração das águas subterrâneas. Dessa forma, é fundamental conhe-
+
+e qualidade ambiental das águas subterrâneas de zonas estabelecidas
+
+cer as dinâmicas do ambiente hidrogeológico e os processos de super-
+
+no território de um município (Lençóis, Bahia) no nordeste do Brasil.
+
+fície para uma gestão eficiente dos recursos hídricos, conforme apontam estudos desenvolvidos por Cao et al. (2016) e Costa et al. (2015).
+Para tal, medidas de engenharia podem ser adotadas, com o intuito
+
+ÁREA DE ESTUDO
+
+de subsidiar a tomada de decisões.
+
+O município de Lençóis localiza-se na região da Chapada Diamantina,
+
+Nesse cenário, a busca por ferramentas que possam otimizar os custos
+
+mesorregião centro-norte do estado da Bahia, nordeste do Brasil, entre
+
+e o tempo na resolução de problemas hídricos é cada vez maior. A estatís-
+
+as coordenadas geodésicas 12º09’; 12º38’S e 41º08’; 41º30’W (Figura 1).
+
+tica multivariada fornece o aparato necessário para essa otimização, sendo
+
+Lençóis é um município de pouco mais de 11.500 habitantes, de acordo
+
+capaz de estudar fenômenos complexos, manipular grandes populações
+
+com a estimativa do Instituto Brasileiro de Geografia e Estatística (IBGE,
+
+amostrais com mínima perda de informações e revelar padrões específi-
+
+2016), e tem como principal atividade econômica o turismo, recebendo
+
+cos de cada ambiente (CORTES et al., 2016; SAKO; BAMBA; GORDIO,
+
+a maior parte dos visitantes da região da Chapada Diamantina.
+
+2016). Tem sido largamente aplicada nos estudos de recursos hídricos
+
+Pela classificação internacional de Koppen (1948), a tipologia
+
+superficiais e subterrâneos pela capacidade de representar adequadamente
+
+climática no município de Lençóis é do tipo Cwb (tropical de altitude).
+
+as variações hídricas no espaço e tempo, gerando hipóteses que preservam
+
+Apresenta duas estações bem definidas, com precipitação média anual de
+
+os níveis de significância, indicando as possíveis fontes de dispersão das
+
+1.107 mm, de acordo com dados de série histórica do Instituto Nacional
+
+observações, além de agrupar a população amostral a partir das simila-
+
+de Meteorologia (INMET) (1943–2015) (INMET, 2016), que apresenta
+
+ridades (NEWMAN; HAVENOR; LONGMIRE, 2016; LIU et al., 2017).
+
+registros de valores anuais mínimo de 800 mm e máximo de 1.350 mm.
+
+Para estudos de química da água, a análise de agrupamentos é
+
+Os campos rupestres dominam a paisagem local (MATTOS; DE PAULA,
+
+comprovadamente útil, porém visualmente limitada para representar
+
+2017), que se destaca como uma área de transição entre os biomas Mata
+
+as fácies hidrogeoquímicas, seja a partir de uma modelagem linear ou
+
+Atlântica, Caatinga e Cerrado, apresentando peculiaridades diversas
+
+espacial (GÜLER et al., 2002). Os mapas auto-organizáveis (rede neu-
+
+de diferentes meios morfoclimáticos (AB’SABER, 2003).
+
+ral artificial) podem complementar a análise de agrupamentos, ou até
+
+No mapa-síntese da Figura 2, nota-se uma variedade de unidades
+
+mesmo servir como uma alternativa metodológica (ISERI et al., 2009;
+
+geológicas e litologias, predominando rochas metassedimentares e algu-
+
+NGUYEN et al., 2015b). Caracteriza-se como uma ferramenta pode-
+
+mas janelas de rochas sedimentares. A unidade geológica predominante é
+
+rosa, capaz de ordenar dados multivariados através de similaridades,
+
+o Grupo Chapada Diamantina (formações Caboclo, Tombador e Morro
+
+preservando a estrutura topológica e baseada em um algoritmo de
+
+do Chapéu). Há também o Grupo Paraguaçú (Formação Açuruá), Grupo
+
+aprendizagem não supervisionada (KOHONEN, 2001). O produto
+
+Una (formações Bebedouro e Salitre) e coberturas detrito-lateríticas ceno-
+
+final dessa técnica é uma malha bidimensional (matriz — linhas e colu-
+
+zoicas. Entretanto, os poços elencados para amostragem estão alocados
+
+nas) com posições estabelecidas para flutuação dos dados, facilitando
+
+nas formações Caboclo (quartzitos, pelitos, laminitos, siltitos), Tombador
+
+o entendimento das similaridades, diferenças e variações.
+
+(conglomerados, arenitos conglomeráticos, arenitos, quartzitos), Salitre
+
+Com o auxílio do Sistema de Informação Geográfica (SIG), essas
+técnicas podem ser exploradas para mapeamento e execução de
+
+502
+
+(calcarenitos, calcilutitos, carbonatos) e nas coberturas detrito-lateríticas
+(areias, argilas, cascalhos e crostas lateríticas).
+
+análises espaciais, podendo fornecer um importante auxílio à gestão
+
+Os domínios hidrogeológicos predominantes no município de Lençóis
+
+dos recursos hídricos subterrâneos (MENEZES et al., 2014; REISSLER
+
+são dos metassedimentos, de acordo com o Serviço Geológico do Brasil
+
+& MANZIONE, 2016; WANG; HE; CHEN, 2012). Dessa forma, a
+
+(CPRM, 2005), ocupando 85% do território municipal. Os aquíferos
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+Mapeamento por estatística multivariada e redes neurais artificiais
+
+desse domínio são mistos (predominantemente fissural com janelas
+
+hidrológico está assegurado pelos dados históricos de precipitação do
+
+granulares), semiconfinados e com porosidade secundária (fraturas,
+
+município entre os anos de 1943 e 1972; 1961 e 1990; e 1992 e 2017.
+
+fendas, falhas). Na porção leste do município, em uma estreita zona
+
+Os dados pluviométricos foram coletados pelo INMET por meio de
+
+limítrofe, ocorrem aquíferos do tipo cárstico, que são constituídos por
+
+estações automáticas.
+
+rochas químicas (calcários — carbonatos, metacarbonatos), semicon-
+
+Amostras de águas subterrâneas foram coletadas de 21 poços
+
+finados, com porosidade tripla (sedimentos, zonas de fraqueza e cars-
+
+profundos (vide Figura 2), por intermédio de bombas de baixa vazão.
+
+tificação). Ao sul, ocorrem aquíferos granulares de elevada porosidade
+
+Antes de cada coleta, realizou-se a purga dos poços, para descartar
+
+primária, comportamento livre, formados por depósitos superficiais
+
+a água estagnada na coluna do poço. A profundidade média dos
+
+aluvionares e coberturas detrito-lateríticas (areias, argilas, cascalhos).
+
+poços é de 84 metros. A distribuição espacial das estações amostrais
+foi condicionada pela disponibilidade dos poços. A coleta foi feita
+de acordo com os métodos internacionalmente padronizados pelo
+
+METODOLOGIA
+
+Standard Methods for the Examination of Water and Wastewater
+(APHA, 2012). Antes do campo, houve a descontaminação dos
+
+Amostragem e análises
+hidroquímicas (campo e laboratório)
+
+frascos de polietileno selecionados para amostragem. Os frascos
+
+Foram realizadas duas campanhas, de acordo com a variação sazonal:
+
+horas. Após essa etapa, os frascos foram colocados no HNO3 a 2,5%
+
+uma em período chuvoso (dezembro de 2014) e outra na época de
+
+e, por fim, enxaguados com água deionizada. Os parâmetros físi-
+
+acentuada estiagem na região (setembro e outubro de 2015). Esse regime
+
+cos e químicos medidos em campo foram: condutividade elétrica,
+
+41°30’0”W
+
+41°25’0”W
+
+41°20’0”W
+
+41°15’0”W
+
+41°10’0”W
+
+41°5’0”W
+
+Projeção: UTM
+Datum: WGS84
+Zona: 24S
+
+12°15’0”S
+12°20’0”S
+
+Bahia
+
+12°30’0”S
+Hidrografia
+Rodovias e estradas
+0
+
+41°35’0”W
+
+5
+
+10
+Km
+
+41°30’0”W
+
+Sede municipal de Lençóis
+41°25’0”W
+
+41°20’0”W
+
+41°15’0”W
+
+41°10’0”W
+
+12°35’0”S
+
+Município de Lençóis
+
+Chapada
+Diamantina
+
+12°40’0”S
+
+12°30’0”S
+
+Lençóis
+
+12°35’0”S
+12°40’0”S
+
+Brasil
+
+12°25’0”S
+
+12°25’0”S
+
+12°15’0”S
+
+12°10’0”S
+
+N
+
+12°20’0”S
+
+12°10’0”S
+
+41°35’0”W
+
+foram banhados com detergente Extran não fosfatado a 5% por 24
+
+41°5’0”W
+
+Figura 1 – Mapa de localização do município de Lençóis, Chapada Diamantina, Bahia.
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+503
+
+Mattos, J.B. et al.
+
+sólidos totais dissolvidos e pH, todos obtidos através de aparelho
+
+do espectro eletromagnético por espectrofotometria óptica utilizando
+
+medidor multiparâmetros Horiba U50, devidamente calibrado.
+
+espectrofotômetro (HITACHI, modelo U-5100). A alcalinidade foi
+
+As amostras coletadas foram conservadas a baixas temperaturas
+
+quantificada pelo método de titulação com ácido sulfúrico (H2SO4)
+
+em frascos de polietileno de 1 L. Foram acondicionadas em caixas
+
+0,02 N; e o cloreto, através do método volumétrico de Mohr, no qual
+
+de isopor com gelo e transportadas até o Laboratório de Plasma do
+
+os íons cloreto são titulados com solução padronizada de nitrato de
+
+Instituto de Geociências da Universidade Federal da Bahia (UFBA),
+
+prata (AgNO3) 0,01 N, na presença de cromato de potássio (K2CrO4)
+
+e foram mantidas em refrigeração a 4ºC até a realização das análises.
+
+como indicador (APHA, 2012).
+
+Para determinar o sulfato, nitrato, fosfato, alcalinidade e cloreto,
+
+Os cátions Na+, K+, Mg2+, Ca2+, Ba2+ e Fe3+, dissolvidos nas águas,
+
+as amostras, com volume de 1 L, foram filtradas no próprio ponto de
+
+foram determinados por espectrometria de emissão atômica com plasma
+
+amostragem com uso de bomba manual de vácuo e membrana Milipore
+
+indutivamente acoplado (ICP-OES 700 Series, da Agilent Technologies®).
+
+0,45 μm. Para os metais, usou-se a mesma frascaria para um volume de
+
+A leitura das amostras foi feita no Laboratório de Estudos do Petróleo
+
+1 L de água e o mesmo tipo de membrana para filtração, preservando-
+
+(LEPETRO), Núcleo de Estudos Ambientais (NEA), Instituto de
+
+-as em HNO3 concentrado. As análises realizadas em laboratório segui-
+
+Geociências da UFBA. As linhas espectrais usadas foram: 568,821 nm
+
+ram as orientações técnicas do Standard Methods for the Examination
+
+para Na+; 766,491 nm para K+; 279,8 nm para Mg2+; 315,887 nm para
+
+of Water and Wastewater (APHA, 2012).
+
+Ca2+; 493,408 nm para Ba2+; e 407,771 nm para Fe3+.
+
+Os ânions nitrato, sulfato e fosfato foram obtidos pelo método de
+
+O coeficiente (R²) das curvas de determinação foram: 0,998 para
+
+absorção molecular de radiação monocromática em uma das regiões
+
+Na ; e 0,999 para K+; Ca2+, Mg2+, Ba2+ e Fe3+. O limite de determinação
+
+41°20’0”W
+
+41°10’0”W
+Convenção
+
+Projeção: UTM
+Datum: WGS84
+Zona: 24S
+
+N
+
+12°10’0”S
+
+12°10’0”S
+
+41°30’0”W
+
+2
+1
+3
+4
+
+12°20’0”S
+
+12°20’0”S
+
+5
+
+6
+7
+
+16
+
+11
+
+19
+20
+17
+18
+13 15
+
+12°30’0”S
+
+9
+10
+
+Unidades geológicas
+
+18
+13 20 15
+17
+
+21
+
+14
+
+12
+
+12°40’0”S
+
+Município de Lençóis
+Área urbana (sede municipal)
+Pontos de amostragem (poços)
+Hidrogeologia
+Domínio dos metassedimentos (aquífero misto - granular e fissural)
+Domínio das coberturas detríticas (aquífero granular)
+Domínio dos calcários (aquífero cárstico)
+Geologia (Litologia)
+Areia, argila e cascalhos
+Sedimento detrito-laterítico
+Calcarenito, calcilutito, carbonato oolítico
+Diamictito, grauvaca, quartzito
+Arenitos e metarenitos
+Arenito, conglomerado suportado por clastos e matriz, quartzitos
+Argilito, calcarenito, quartzito, ritmito, siltito
+Arenito, conglomerado, conglomerado suportado por matriz, quartzito
+Arenito, conglomerado, folhelho, siltito
+Linhas de falhas regionais
+
+0
+41°20’0”W
+
+5
+
+10
+km
+
+12°40’0”S
+
+12°30’0”S
+
+8
+
+41°30’0”W
+
++
+
+Depósitos aluvionares e terraços fluviais (Era Cenozoica)
+Depósitos detrito-lateríticos (Era Cenozoica)
+Formação Salitre (Era Neoproterozoica)
+Formação Bebedouro (Era Neoproterozoica)
+Formação Morro do Chapéu, fácies 1 (Neoproterozoica - Mesoproterozoica)
+Formação Morro do Chapéu, fácies 2 (Neoproterozoica - Mesoproterozoica)
+Formação Caboclo, fácies 4 (Era Mesoproterozoica)
+Formação Tombador Indivisa (Era Mesoproterozoica)
+Formação Açuruá (Era Paleoproterozoica)
+
+41°10’0”W
+
+Fonte: adaptado de Mattos et al. (2018).
+
+Figura 2 – Mapa de síntese litológica-hidrogeológica com estações amostrais.
+
+504
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+Mapeamento por estatística multivariada e redes neurais artificiais
+
+foi de 0,03 para todos os cátions analisados. Para preparação das curvas
+
+estabelecendo uma competição entre eles, sendo o neurônio vencedor
+
+de calibração, foram utilizadas soluções padrões (Merck S.A) para cada
+
+aquele que possuir maior ativação. O processo de estruturação do mapa
+
+elemento, com concentração de 100 mg.L-1.
+
+auto-organizável é de suma importância, conforme expõem Nguyen
+et al. (2015a), ao orientar sobre os processos de cálculo do número
+
+Interpretação hidrogeoquímica e análise dos dados
+
+total de nós, dos comprimentos laterais e da seleção de um método de
+
+Para interpretação dos dados analíticos, foram usadas técnicas de
+
+inicialização apropriado.
+
+estatística multivariada (análise de agrupamentos) e redes neurais
+
+O método de inicialização usado neste trabalho foi o linear, já
+
+artificiais (mapas auto-organizáveis). Foram usadas também as
+
+que é o mais adequado para classificação de padrões. Os vetores de
+
+resoluções do Conselho Nacional do Meio Ambiente (CONAMA)
+
+referência foram atualizados no processo de treinamento, a partir
+
+nº 357 (BRASIL, 2005) e nº 396 (BRASIL, 2008), além da Portaria
+
+do peso dos lotes (bacth weight mode). A análise de agrupamentos
+
+do Ministério da Saúde nº 2.914 (BRASIL, 2011), para determinar
+
+foi útil para ajustar os vetores de referência ao fim do processo de
+
+salinidade, classes de qualidade e padrões de potabilidade,
+
+treinamento. Além do agrupamento hierárquico, foi usada uma
+
+respectivamente. Vale ressaltar que a Resolução nº 357/2005
+
+análise particional (K-means) de agrupamentos para auxiliar no
+
+(específica para águas superficiais) foi usada como alternativa para
+
+processo de definição do número ideal de grupos, bem como no
+
+classificação das águas em doces, salobras ou salgadas, já que os
+
+refinamento dos vetores de referência da rede neural (SOM). Todo o
+
+demais elementos de padronização (para águas subterrâneas) citados
+
+procedimento de treinamento da rede neural e a geração dos mapas
+
+anteriormente não dispõem de tal abordagem. Para espacialização
+
+auto-organizáveis foram feitos através do software MatLab®, versão
+
+dos agrupamentos e setores, foi usado o SIG, pelo software ArcGis
+
+R2017a (THE MATHWORKS INC., 2017).
+
+®
+
+versão 10 (ESRI, 2010).
+
+RESULTADOS E DISCUSSÃO
+
+Análise de agrupamentos
+Com a intenção de reduzir a dimensão dos dados e melhor elucidar as
+variáveis hidrogeoquímicas, foi aplicada a análise de agrupamentos,
+
+Agrupamentos das águas subterrâneas
+
+uma técnica que agrupa os conjuntos de dados de acordo com as
+
+A análise de agrupamentos foi executada para 13 parâmetros físico-
+
+semelhanças existentes entre as estações e períodos amostrais. Para a
+
+químicos de 42 amostras, referentes aos 21 poços tubulares de 3 aquíferos
+
+construção dos agrupamentos, foram utilizados todos os parâmetros
+
+diferentes durante as estações seca e chuvosa. Para identificar o número
+
+analisados, com exceção dos sólidos totais dissolvidos (STD). O método
+
+ideal de agrupamentos para cada uma das estações, foram realizados
+
+usado para esse procedimento analítico foi o de Ward Jr. (1963),
+
+testes baseados no algoritmo de agrupamento k-means, no qual os
+
+sendo ele hierárquico e tendo a distância euclidiana como medida de
+
+nós foram calculados para um número mínimo de 2 e máximo de 42
+
+similaridade na análise de agrupamentos dos tipos de água, conforme
+
+possíveis agrupamentos.
+
+orienta Nguyen et al. (2015a). Para a execução de tal análise, foi usado
+
+A quantidade de agrupamentos identificada como mais apropriada
+
+o software Microsoft Excel® (2016) com a extensão Action Stat®
+
+para a população amostral total foi sete. Aplicou-se um algoritmo
+
+(ESTATCAMP; DIGUP, 2016).
+
+hierárquico usando o método de Ward Jr. (1963), a fim de gerar um
+dendograma que melhor ilustrasse os agrupamentos e suas respectivas
+
+Mapas auto-organizáveis (redes neurais artificiais)
+
+distâncias e semelhanças. A Figura 3 mostra o dendograma com os sete
+
+A estrutura dos mapas auto-organizáveis (self-organizing maps – SOM)
+
+diferentes agrupamentos, e é possível perceber um padrão estabelecido
+
+foi desenvolvida pelo professor Teuvo Kohonen (2001) e representa um
+
+para pelo menos quatro diferentes contextos hidrogeoquímicos: grupos
+
+tipo de rede neural artificial que se caracteriza por uma organização
+
+1, 2; grupo 7; grupo 6; grupos 3, 4 e 5. Além disso, o dendograma mostra
+
+em arquitetura específica e por um treinamento não supervisionado.
+
+variações sazonais estabelecidas entre os grupos.
+
+De acordo com Jin et al. (2011), essa rede neural pode projetar dados
+
+A Tabela 1 apresenta as medianas das concentrações, em mg.L-1, dos
+
+complexos e de grande dimensão em um mapa bidimensional,
+
+13 parâmetros físicos e químicos dos respectivos agrupamentos. Pela regra
+
+regularmente organizado, em proporção ao grau de similaridade.
+
+da análise de agrupamentos, os “grupos” 5 e 7 são denominados não
+
+Na prática, os dados de entrada da rede neural são organizados de
+
+grupos, por serem constituídos de apenas um elemento. Os respectivos
+
+acordo com suas similaridades em agrupamentos, sob um plano
+
+valores desses grupos representados na tabela correspondem ao valor
+
+bidimensional de visualização facilmente compreendida.
+
+base dos poços P11C e P12C, logo, não há um valor de mediana.
+
+O algoritmo de Kohonen usa o método de aprendizagem por
+competição, o qual avalia os neurônios (nós) de saída da rede,
+
+O mesmo se aplica ao grupo 6, contudo, esse é estabelecido com dois
+elementos, mas é inviável para gerar um valor de mediana.
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+505
+
+Mattos, J.B. et al.
+
+Distância
+
+Agrupamento: método hierárquico
+
+5
+
+6
+3
+
+4
+
+2
+1
+
+P14S
+P21S
+P20C
+P2S
+P12S
+P20S
+P16C
+P16S
+P3S
+P15S
+P12C
+P3C
+P1C
+P15C
+P4C
+P13C
+P5C
+P18C
+P4S
+P1S
+P5S
+P6C
+P17S
+P19S
+P6S
+P13S
+P18S
+P19C
+P2C
+P17C
+P11C
+P14C
+P21C
+P11S
+P7S
+P10S
+P8S
+P9S
+P7C
+P10C
+P8C
+P9C
+
+7
+
+Número de grupos
+
+Figura 3 – Dendograma com agrupamentos estabelecidos para os 21 pontos (42 amostras — seca/chuva).
+
+Tabela 1 – Concentrações analíticas dos 13 parâmetros analisados para os sete grupos.
+Grupos
+
+Grupo 1
+
+CE
+(µS.cm-1)
+
+pH
+
+37
+
+5
+
+Grupo 2
+
+83
+
+Grupo 3
+
+440
+
+Grupo 4
+
+HCO3-
+
+SO42
+
+Cl-
+
+NO3-
+
+PO43
+
+Na2+
+
+Ca2+
+
+Mg2+
+
+Ba2+
+
+Fe3+
+
+1,4
+
+0,3
+
+0,3
+
+< 0,03
+
+< 0,03
+
+(mg.L-1)
+
+<1
+
+< 0,1
+
+5
+
+<1
+
+1,4
+
+7
+
+190
+
+2
+
+435
+
+7,6
+
+15,3
+
+119
+
+Grupo 5
+
+476
+
+7,8
+
+17,7
+
+Grupo 6
+
+206
+
+5,3
+
+Grupo 7
+
+92
+
+5,8
+
+3
+
+< 0,1
+
+0,1
+
+4,1
+
+11
+
+5
+
+< 0,1
+
+6,6
+
+1
+
+0,5
+
+0,5
+
+< 0,03
+
+< 0,03
+
+31
+
+1,1
+
+0,2
+
+13
+
+4,4
+
+24
+
+12
+
+0,2
+
+< 0,03
+
+6,4
+
+< 0,1
+
+15,5
+
+15
+
+6,7
+
+43
+
+15
+
+0,3
+
+< 0,03
+
+400
+
+3,8
+
+< 0,1
+
+45,7
+
+14
+
+4,2
+
+71
+
+5,1
+
+0,05
+
+3,2
+
+<1
+
+540
+
+8,5
+
+5,9
+
+8,3
+
+33
+
+10
+
+7
+
+1,9
+
+0,08
+
+0,09
+
+<1
+
+91
+
+2,7
+
+< 0,1
+
+39
+
+13
+
+1
+
+3,7
+
+0,7
+
+< 0,03
+
+0,07
+
+CE: conditividade elétrica.
+
+506
+
+K+
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+Mapeamento por estatística multivariada e redes neurais artificiais
+
+Observando simultaneamente a Figura 3 e a Tabela 1, é possível
+
+ambiente. Os grupos 3, 4 e 5 ocorrem na faixa leste/sudeste do
+
+entender os tipos de dados que deram origem aos nós dos agrupamentos.
+
+município, áreas de abrangência do domínio dos calcários. O grupo
+
+Por exemplo, os agrupamentos 3, 4, 5 e 6 foram formados por seus
+
+7 ocorre no extremo sul do município, em uma área de hidrogeologia
+
+pontos estarem fortemente associados a águas com maior teor de
+
+tipicamente granular (areias, cascalhos, argilas).
+
+sais dissolvidos, como é possível ver na Tabela 1, que mostra valores
+Por outro lado, as amostras de água subterrânea dos grupos 1 e 2 se
+
+Interpretação dos aspectos
+hidrogeoquímicos dos agrupamentos
+
+posicionam em nós distantes dos demais nos dendogramas por conta
+
+Para melhor interpretar os aspectos hidrogeoquímicos das águas
+
+de suas baixas concentrações de íons maiores dissolvidos.
+
+subterrâneas no município de Lençóis, foram formulados mapas auto-
+
+mais elevados de condutividade elétrica e de alguns dos íons maiores.
+
+O mapa da Figura 4 espacializa os pontos analisados, seus
+
+organizáveis para ilustrar os padrões, as variações e as correlações entre
+
+respectivos agrupamentos e as variações sazonais. Os grupos 4, 5,
+
+os pontos, agrupamentos e os 13 parâmetros analisados. Nos estudos de
+
+6 e 7 são constituídos de pontos de amostras do período chuvoso,
+
+Hentati et al. (2010), Farsadnia et al. (2014) e Nguyen et al. (2015a), os
+
+evidenciando alterações hidrogeoquímicas controladas pelo fator
+
+mapas auto-organizáveis apresentaram alto desempenho em fornecer
+
+climático. Como é possível visualizar no mapa, os pontos dos grupos
+
+uma visualização e abstração de atributos através da distribuição
+
+1, 2 e 6 estão inseridos dentro do mesmo contexto hidrogeológico
+
+espacial de cada componente analisada. A Figura 5 mostra os mapas
+
+(metassedimentos), abrangendo áreas ao norte, ao centro e ao sul
+
+auto-organizáveis dos 13 componentes, obtidos após o processo de
+
+do município. O grupo 6 localiza-se especificamente na área urbana,
+
+treinamento. Cada mapa representa o valor dos vetores de referência
+
+sugerindo que sua característica hidrogeoquímica é comum a esse
+
+dos componentes para 49 possíveis nós, nos quais os vetores foram
+
+41°20’0”W
+
+41°10’0”W
+
+Projeção: UTM
+Datum: WGS84
+Zona: 24S
+
+N
+
+12°10’0”S
+
+12°10’0”S
+
+41°30’0”W
+
+2
+1
+3
+4
+
+12°20’0”S
+
+12°20’0”S
+
+5
+
+6
+7
+
+16
+
+11
+
+19
+20
+17
+18
+13 15
+
+12°30’0”S
+
+9
+10
+
+Agrupamentos
+
+4
+
+21
+
+14
+0
+
+41°20’0”W
+
+Pontos na estação seca
+Agrupamentos
+
+5
+
+12
+
+12°40’0”S
+
+Pontos na estação chuvosa
+
+2
+
+13 20 15
+17
+
+41°30’0”W
+
+Município de Lençóis
+Área urbana (sede municipal)
+Hidrogeologia
+Domínio dos metassedimentos (aquífero misto - granular e fissural)
+Domínio das coberturas detríticas (aquífero granular)
+Domínio dos calcários (aquífero cárstico)
+Geologia (Litologia)
+Areia, argila e cascalhos
+Sedimento detrito-laterítico
+Calcarenito, calcilutito, carbonato oolítico
+Diamictito, grauvaca, quartzito
+Arenitos e metarenitos
+Arenito, conglomerado suportado por clastos e matriz, quartzitos
+Argilito, calcarenito, quartzito, ritmito, siltito
+Arenito, conglomerado, conglomerado suportado por matriz, quartzito
+Arenito, conglomerado, folhelho, siltito
+Linhas de falhas regionais
+
+1
+18
+
+5
+
+10
+km
+
+12°40’0”S
+
+12°30’0”S
+
+8
+
+Convenção
+
+6
+
+1
+2
+3
+
+7
+
+41°10’0”W
+
+Figura 4 – Mapa de distribuição espacial dos agrupamentos.
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+507
+
+Mattos, J.B. et al.
+
+padronizados para variar de 0 a 1, usando tons de cores quentes.
+
+apresenta um padrão de delimitação bem nítido, indicando que sua zona
+
+Os nós que apresentam os maiores valores estão em amarelo e os
+
+de ocorrência em maiores concentrações é diferente dos demais ânions.
+
+menores, em preto.
+
+Para o nitrato não há um padrão nitidamente estabelecido, suge-
+
+Observando os mapas da Figura 5, é possível notar algumas semelhanças
+
+rindo que sua ocorrência pode se dar por fontes antropogênicas em
+
+entre algumas posições e parâmetros, com destaque para a condutividade
+
+zonas aleatórias. Silva et al. (2014), Oliveira et al. (2015) e Trindade
+
+elétrica, pH, sulfato, cálcio e magnésio. No mapa da condutividade elétrica
+
+et al. (2017) observaram altas concentrações de nitrato em corpos
+
+é possível notar duas zonas distintas, indicando possíveis diferenças
+
+hídricos superficiais e subterrâneos, e associaram a origem desse ânion
+
+hidrogeoquímicas a partir de diferentes litologias. Os nós da esquerda
+
+à disposição inadequada de resíduos sólidos e à gestão ineficiente de
+
+inferior e superior mostram sinais de valores maiores para a maioria
+
+águas residuárias. O padrão estabelecido para o fosfato é similar ao
+
+dos parâmetros analisados, indicando as posições dos pontos com águas
+
+do sulfato, indicando que em algumas zonas as ocorrências de ambos
+
+de maior teor de sais dissolvidos e maior alcalinidade. Por outro lado,
+
+os íons podem estar correlacionadas à mesma fonte.
+
+os nós da direita inferior e superior ilustram um padrão de águas mais
+
+O comportamento geoquímico de associação que ocorre entre os
+
+acidificadas e de baixo teor de sais dissolvidos. Conceição et al. (2014),
+
+cátions sódio e potássio reflete no padrão dos respectivos mapas da
+
+em uma análise das águas subterrâneas na área urbana de Marília, São
+
+Figura 5, onde ambos se apresentam associados na maior parte das
+
+Paulo, encontraram um padrão entre o pH e a condutividade elétrica
+
+zonas. Cálcio, magnésio e bário também apresentam similaridades
+
+semelhante ao observado nas águas de Lençóis, padrão esse que apresenta
+
+nas zonas em que ocorrem, indicando que os processos hidrogeoquí-
+
+um controle pelos mesmos processos hidrogeoquímicos.
+
+micos nas respectivas zonas podem partilhar das mesmas condicio-
+
+No mapa referente ao bicarbonato, nota-se a ocorrência restrita a
+
+nantes geológicas. O padrão para o ferro ilustra uma ocorrência local,
+
+uma zona específica, indicando processos hidrogeoquímicos diferentes
+
+indicando um processo bastante específico para disponibilização de
+
+das demais zonas. O sulfato também apresenta uma diferença acentuada
+
+ferro dissolvido nas águas subterrâneas de uma das zonas estudadas.
+
+entre as zonas, sugerindo que a sua ocorrência nas águas subterrâneas
+
+O agrupamento hierárquico ilustrado pelo dendograma da Figura 3
+
+é controlada por um condicionante natural bem específico. O cloreto
+
+serviu como referência para o estabelecimento de agrupamentos no
+
+Condutividade elétrica
+
+pH
+1
+
+6
+4
+
+1
+
+6
+4
+
+0,5
+
+2
+0
+0 2
+6
+
+4
+Cl–
+
+6
+
+0
+1
+
+4
+0
+0 2
+
+4
+K+
+
+6
+
+0
+1
+
+6
+4
+
+0
+0 2
+6
+
+4 6
+NO3–
+
+0
+1
+
+0
+0 2
+
+4
+Ca2+
+
+6
+
+0
+1
+
+6
+
+0,5
+
+0
+0 2
+
+4 6
+Fe3+
+
+6
+
+0
+
+0
+0 2
+6
+
+4
+PO4–3
+
+6
+
+1
+
+0,5
+
+0
+0 2
+
+4
+
+6
+
+0
+
+0
+0 2 4
+Mg2+
+
+6
+
+0 2
+
+4
+
+6
+
+1
+0,5
+
+2
+0
+0 2
+
+4
+
+6
+
+Na2+
+
+6
+
+0
+1
+0,5
+
+2
+0
+0 2
+
+4
+Ba2+
+
+6
+
+0
+1
+
+6
+4
+
+0,5
+
+2
+0
+0 2
+
+4
+
+6
+
+1
+
+0
+
+Figura 5 – Mapas auto-organizáveis com os 13 parâmetros analisados.
+
+508
+
+0
+1
+
+6
+
+0,5
+
+0
+
+6
+
+4
+0,5
+
+2
+
+4
+2
+
+0
+
+4
+
+2
+
+SO4–
+
+4
+0,5
+
+2
+
+4
+0,5
+
+2
+
+4
+
+2
+
+1
+
+4
+0,5
+
+2
+
+4
+0,5
+
+2
+
+6
+
+2
+
+HCO3–
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+0
+
+0,5
+
+2
+0
+0 2
+
+4
+
+6
+
+0
+
+Mapeamento por estatística multivariada e redes neurais artificiais
+
+mapa auto-organizável da Figura 6. Assim como observado no den-
+
+Na Figura 6 estão plotados todos os poços analisados, as letras
+
+dograma, no mapa auto-organizável nota-se que os grupos 1 e 2 apre-
+
+S e C representam as estações seca e chuvosa, respectivamente.
+
+sentam maior representatividade espacial, além de menor distância
+
+Analisando simultaneamente a Figura 5 e a Figura 6, é descortinado o
+
+ou maior semelhança entre os grupos. Do mesmo modo, os grupos
+
+padrão hidrogeoquímico de cada um dos agrupamentos. Por exemplo,
+
+3 e 4 têm características semelhantes, sugerindo um mesmo contexto
+
+as águas do grupo 1 (domínio dos metassedimentos) são ácidas e apre-
+
+hidrogeoquímico para esses grupos.
+
+sentam a menor concentração para todos os íons analisados. O grupo 2
+
+Resguardadas as diferenças, o grupo 7 é mais similar aos grupos
+
+(domínio dos metassedimentos) apresenta águas também acidificadas,
+
+1 e 2, e o grupo 5 e 6, mais alinhados aos grupos 3 e 4. Vale salientar
+
+com reduzida concentração de quase todos os íons, com exceção dos
+
+que os pontos do grupo 6 estão inseridos no mesmo contexto
+
+ânions nitrato e cloreto. Isso se deve ao fato de alguns pontos desse grupo
+
+hidrogeológico e litológico dos grupos 1 e 2 (Figura 4), estando
+
+serem da área urbana (vide Figura 4), susceptível a contaminações de
+
+distantes espacialmente dos grupos 3 e 4. Contudo, as similaridades
+
+fontes difusas, como apontam Mattos et al. (2017). As águas dos gru-
+
+contidas entre alguns aspectos hidrogeoquímicos entre o grupo
+
+pos 3 e 4 (domínio dos calcários) são alcalinas e apresentam as maiores
+
+6 e os grupos 3 e 4 são causadas pelo fato dos pontos do grupo 6
+
+concentrações de íons entre os grupos. O grupo 3 é constituído de águas
+
+estarem provavelmente controlados por fatores antrópicos, os quais,
+
+do período seco, sem recarga efetiva dos aquíferos, e tem os ânions
+
+conforme mostram Silva et al. (2014), Hassane et al. (2016) e Mattos
+
+bicarbonato e cloreto e os cátions cálcio e magnésio como os de maior
+
+et al. (2017), apresentam a capacidade de aumentar a carga iônica
+
+atividade iônica. O grupo 4, por sua vez, apresenta águas do período
+
+nas águas subterrâneas.
+
+chuvoso e tem o ânion sulfato e os cátions cálcio e magnésio como os
+
+Grupo 7
+
+Grupo 6
+
+P14-C
+P21-C
+
+P12-C
+
+P4-C
+Grupo 1
+
+P20-C
+
+P1-C
+
+P16-S
+
+P16-C
+
+P7-C
+P10-C
+
+Grupo 5
+
+P9-C
+
+P8-C
+
+Grupo 4
+
+P16-C
+
+P19-C
+
+P14-S
+P21-S
+
+P11-C
+
+P2-S
+
+P7-S
+
+P8-S
+P11-S
+
+P9-S
+
+Grupo 3
+
+P10-S
+
+P2-C
+
+P15-S
+
+P17-C
+P3-C
+P4-S
+P15-C
+P18-C
+
+P3-S
+P12-S
+
+P20-S
+
+P18-S
+
+P1-S
+P5-S
+P6-S
+P13-S
+P13-C
+
+P5-C
+
+P17-S
+P19-S
+
+Grupo 2
+
+Figura 6 – Mapa auto-organizável com delimitação dos sete grupos calculados. Os números nos neurônios (nós) representam as estações amostrais
+ilustradas na Figura 2. As letras S e C correspondem aos períodos seco e chuvoso, respectivamente.
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+509
+
+Mattos, J.B. et al.
+
+de maior atividade iônica. Esses resultados indicam variação sazonal
+
+período chuvoso, tem águas ácidas e apresenta como principal carac-
+
+caracterizada pela mobilização do ânion sulfato para a zona saturada
+
+terística a concentração do ânion fosfato, de provável origem ligada a
+
+dos aquíferos e a diluição do bicarbonato e do cloreto na zona satu-
+
+fertilizantes agrícolas usados nessa zona.
+
+rada dos aquíferos, ambos os processos ocorrendo no período chuvoso.
+O grupo 5 (domínio dos calcários), constituído por águas do período
+
+Mapeamento dos aspectos hidrogeoquímicos
+
+chuvoso, também é alcalino, com maior concentração dos ânions sul-
+
+Com a interpretação dos aspectos hidrogeoquímicos, padrões
+
+fato e fosfato e dos cátions cálcio e ferro. A provável origem do fosfato
+
+espaciais estabeleceram-se, e assim foi possível dividir o território
+
+nesse grupo-ponto está ligada a fontes antropogênicas (fertilizantes
+
+municipal em setores, a partir das características hidroquímicas
+
+agrícolas). Já o sulfato pode estar associado ao ferro em uma mesma
+
+e geológicas dos aquíferos. Cada setor foi definido a partir das
+
+fonte geogênica, a qual tem os íons mobilizados para a zona saturada
+
+similaridades, diferenças e variações da química das águas subterrâneas
+
+dos aquíferos. O processo que possibilita essa associação pode ocorrer
+
+dos grupos de poços. No SIG, através de uma simples vetorização
+
+em função de águas meteóricas, que ativam a mobilização e a hidrogeo-
+
+manual, foram estabelecidos os limites das zonas (Figura 7).
+
+química, conforme expõem Miotlinski, Postma e Kowalczyk (2012).
+
+Vale ressaltar que, dependendo dos tipos de dados processados
+
+As águas do grupo 6 (domínio dos metassedimentos), que cons-
+
+pela estatística multivariada, alguns processamentos de análises
+
+tituem águas do período chuvoso, são ácidas e apresentam maior
+
+espaciais (geoestatística) podem ser de grande utilidade cartográfica,
+
+concentração do ânion sulfato e do cátion sódio. Ocorre também em
+
+auxiliando o processo de delimitação das zonas.
+
+concentrações significativas o ânion nitrato, com provável origem
+
+Analisando a Figura 7, observam-se quatro setores que apresentaram
+
+antrópica. O grupo 7 (coberturas detríticas), constituído de águas do
+
+águas com diferentes comportamentos hidrogeoquímicos. Pela Resolução
+
+41°20’0”W
+
+41°10’0”W
+
+Projeção: UTM
+Datum: WGS84
+Zona: 24S
+
+2
+
+12°10’0”S
+
+N
+
+6
+
+12°20’0”S
+
+12°10’0”S
+
+41°30’0”W
+
+1
+3
+4
+
+12°20’0”S
+
+5
+
+7
+8
+
+Convenção
+Município de Lençóis
+Área urbana (sede municipal)
+Hidrografia
+Rodovias e estradas
+Hidrogeologia
+Domínio dos metassedimentos (aquífero misto - granular e fissural)
+Domínio das coberturas detríticas (aquífero granular)
+Domínio dos calcários (aquífero cárstico)
+Zonas
+Setor 1
+Setor 2
+Setor 3
+Setor 4
+Pontos na estação chuvosa
+
+11
+
+19
+20
+17
+18
+13 15
+
+12°30’0”S
+
+16
+
+10
+
+18
+13 20 15
+17
+
+12°40’0”S
+
+12
+0
+41°30’0”W
+
+41°20’0”W
+
+4
+
+Pontos na estação seca
+Agrupamentos
+1
+
+5
+
+2
+
+6
+
+3
+
+7
+
+21
+
+14
+
+1
+2
+
+5
+
+10
+km
+
+12°40’0”S
+
+12°30’0”S
+
+Agrupamentos
+9
+
+41°10’0”W
+
+Figura 7 – Mapa com agrupamentos e zonas dos aspectos hidrogeoquímicos das águas subterrâneas no município de Lençóis-BA.
+
+510
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+Mapeamento por estatística multivariada e redes neurais artificiais
+
+CONAMA nº 357/2005, as águas de todos os setores e agrupamentos
+
+VMP da Portaria nº 2.914/2011 do Ministério da Saúde para dureza,
+
+são classificadas como doces. As águas do setor 1, situado entre as
+
+que é de 500 mg.L-1.
+
+zonas central e norte do município, são ácidas, moles e com baixa
+salinidade. De acordo com a Resolução CONAMA nº 396/2008, essas
+águas são de classe especial e apresentam elevada qualidade ambiental.
+
+CONCLUSÕES
+
+Fatores naturais são os possíveis e principais controladores dos processos
+
+Os padrões espaciais identificados a partir da análise de agrupamentos
+
+hidrogeoquímicos no setor 1; e de acordo com a Portaria nº 2.914/2011
+
+e dos mapas auto-organizáveis nos dados analíticos (hidroquímicos)
+
+do Ministério da Saúde, nenhum dos íons analisados extrapolou o valor
+
+permitiram mapear no SIG, setores com diferentes aspectos
+
+máximo permitido (VMP), em mg.L .
+
+hidrogeoquímicos das águas subterrâneas no município de Lençóis.
+
+-1
+
+O setor 2, situado na zona sul do município, abrangendo a área
+
+Com as similaridades, diferenças e variações identificadas, foi
+
+urbana e adjacências, apresenta águas também ácidas, moles e com baixa
+
+possível dividir as águas nos períodos chuvoso e seco, em sete
+
+salinidade. Nesse setor ocorrem águas com traços de contaminação por
+
+agrupamentos, distribuídos em quatro zonas. Águas de baixa
+
+nitrato e forte correlação com o cloreto (fontes antrópicas), conforme
+
+salinidade, ácidas, doces e moles ocorrem nas zonas central e
+
+revela o estudo de Mattos et al. (2017), ao indicar que essa contaminação
+
+norte (setor 1), zona sul (setor 2) e zona extremo sul (setor 3).
+
+ocorre por conta da mobilização de águas residuárias (recarga artificial
+
+Águas de média salinidade, alcalinas, doces e duras ocorrem na
+
+indireta). Resultados encontrados por Moura et al. (2015) e Oliveira
+
+zona leste/sudeste (setor 4). Em síntese, duas zonas (setores 2 e
+
+et al. (2015) corroboram essa hipótese, ao detectarem comportamentos
+
+3) apresentam influência antrópica na hidroquímica das águas
+
+similares nas águas subterrâneas do município de São José do Rio Preto,
+
+subterrâneas, sendo que nas demais zonas (setores 1 e 4), o
+
+em São Paulo, e Vilhena, em Rondônia. Pela Resolução CONAMA
+
+clima e a geologia são os principais controladores dos aspectos
+
+nº 396/2008, as águas do setor 2 são de classe especial (grupo 1), I
+
+hidrogeoquímicos dessas águas.
+
+(grupo 2), III e IV (grupo 6). De acordo com a Portaria nº 2.914/2011
+
+As águas subterrâneas do setor 1 apresentam elevada qualidade
+
+do Ministério da Saúde, as águas do grupo 6 extrapolaram o VMP para
+
+ambiental, não necessitando de ajustes em relação às variáveis
+
+o sulfato, que é de 250 mg.L-1.
+
+hidroquímicas analisadas, apesar de não se considerar, por exemplo,
+
+O setor 3, localizado no extremo sul do município, apresenta
+
+as variáveis microbiológicas. Algumas águas compreendidas no
+
+águas acidificadas, doces, moles e com traços de contaminação por
+
+setor 2, na faixa de área urbana, são de boa qualidade (grupos 1
+
+fosfato, presente em fertilizantes agrícolas. A resolução do CONAMA
+
+e 2), outras (grupo 6), apresentam traços de contaminação por
+
+coloca as águas desse setor como de classe II. Esse setor compreende
+
+nitrato e sulfato advindos de fontes antrópicas (águas residuárias).
+
+aquíferos rasos e porosos, os quais tendem a apresentar maiores riscos
+
+As águas do grupo 6 necessitam de ajustes para adequação ao
+
+de contaminação, como mostram estudos recentes de Hassane et al.
+
+padrão de potabilidade estabelecido pela legislação brasileira em
+
+(2016) e Schaider, Ackerman e Rudel (2016), em ensaios hidroquímicos
+
+vigor. No setor 3, as águas são de boa qualidade, contudo, estão mais
+
+de águas subterrâneas em aquíferos livres. Pela Portaria nº 2.914/2011
+
+vulneráveis à contaminação antrópica, já que o aquífero local é raso,
+
+do Ministério da Saúde, nenhum dos íons analisados nesse setor
+
+poroso e livre, estando susceptível a dinâmicas de mobilização de
+
+extrapolou o VMP.
+
+contaminantes sob superfície. As águas do setor 4 (grupos 3, 4 e 5)
+
+As águas do setor 4, situado na zona leste/sudeste do município, são
+
+estão predominantemente controladas por processos geogênicos que
+
+alcalinas, duras e com média salinidade. De acordo com a Resolução
+
+definem as características hidrogeoquímicas naturais, e precisam de
+
+CONAMA nº 396/2008, as águas desse setor são enquadradas na
+
+alguns ajustes para torná-las aptas para o consumo.
+
+classe II. Pela Portaria nº 2.914/2011 do Ministério da Saúde, as águas
+
+A metodologia usada para este ensaio científico mostrou-se efi-
+
+do grupo 5 extrapolaram o VMP para o sulfato, que é de 250 mg.L ,
+
+caz para a realização de mapeamentos de hidroquímica e qualidade
+
+e para o ferro, que é de 0,3 mg.L . No setor 4, fatores naturais (geo-
+
+da água, com procedimentos cartográficos relativamente simples e
+
+químicos) são os processos predominantes que determinam o tipo da
+
+objetivos. Vale ressaltar que existem múltiplas possibilidades de abor-
+
+água. De acordo com Custódio e Llamas (1983) e Sawyer, McCarty e
+
+dagem, por meio de análises espaciais avançadas e um robusto banco
+
+Parkin (2000), a maior parte das águas subterrâneas no município de
+
+de dados, possibilitando, para estudos futuros, produtos de grande
+
+Lençóis, que ocorrem sob o domínio hidrogeológico dos metassedi-
+
+valor para a gestão integrada de recursos hídricos. Por fim, este tipo
+
+mentos, é mole ou branda, estando associada aos setores 1, 2 e 3. Já as
+
+de mapeamento poderá contribuir com as ações de gestão dos recur-
+
+águas do setor 4, contidas no domínio hidrogeológico dos calcários,
+
+sos hídricos subterrâneos, mediante a delimitação de áreas prioritá-
+
+são duras ou moderadamente duras. Nenhum dos pontos extrapola o
+
+rias, o monitoramento de zonas de riscos de contaminação, além de
+
+-1
+
+-1
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+511
+
+Mattos, J.B. et al.
+
+intervenções de engenharia que eventualmente busquem o saneamento
+
+da Universidade Estadual de Santa Cruz (UESC), o suporte técnico
+
+ambiental das águas subterrâneas.
+
+e científico. À Associação de Condutores de Visitantes de Lençóis
+(ACVL), o apoio logístico. Aos revisores, a importante contribuição, por meio de dicas e sugestões para o aperfeiçoamento cientí-
+
+AGRADECIMENTOS
+
+fico deste artigo.
+
+Os autores agradecem à Coordenação de Aperfeiçoamento de Pessoal
+de Nível Superior (CAPES), o financiamento do projeto de pesquisa
+(código 001). Ao Programa de Pós-Graduação em Geologia da
+
+FONTE DE FINANCIAMENTO
+
+Universidade Federal da Bahia e ao Núcleo de Bacia Hidrográfica
+
+CAPES.
+
+REFERÊNCIAS
+AB’SABER, A. (2003) Os domínios de natureza no Brasil. São Paulo:
+Ateliê Editorial.
+AMERICAN PUBLIC HEALTH ASSOCIATION (APHA). (2012)
+Standard methods for the examination of water and wastewater.
+22. ed. Washington, D.C.
+
+CORTES, J.E.; MUÑOZ, L.F.; GONZALEZ, C.A.; NIÑO, J.E.; POLO, A.;
+SUSPES, A.; SIACHOQUE, S.C.; HERNÁNDEZ, A.; TRUJILLO, H. (2016)
+Hydrogeochemistry of the formation waters in the San Francisco
+field, UMV basin, Colombia – A multivariate statistical approach.
+Journal of Hydrology, v. 539, p. 113-124. https://doi.org/10.1016/j.
+jhydrol.2016.05.010
+
+BRASIL. (2005) Conselho Nacional do Meio Ambiente (CONAMA).
+Resolução nº 357, de 17 de março de 2005. Dispõe sobre a
+classificação dos corpos de água e diretrizes ambientais para
+o seu enquadramento, bem como estabelece as condições e
+padrões de lançamento de efluentes, e dá outras providências.
+Brasília: Conselho Nacional do Meio Ambiente.
+
+COSTA, C.W.; MORAES, M.C.P.; CANÇADO, C.J.; GUERRERO, J.V.R.;
+MARANGON, F.; LORANDI, R.; LOLLO, J.A.; MOSCHINI, L.E. (2015)
+Potencial de Contaminação de Aquíferos por Atividades Antrópicas
+da Bacia do Ribeirão do Meio – Município de Leme – SP. Revista
+Brasileira de Recursos Hídricos, v. 20, n. 1, p. 218-225. http://dx.doi.
+org/10.21168/rbrh.v20n1.p218-225
+
+______. (2008) Conselho Nacional do Meio Ambiente – CONAMA.
+Resolução nº 396, de 3 de abril de 2008. Dispõe sobre a
+classificação e diretrizes ambientais para o enquadramento das
+águas subterrâneas, e dá outras providências. Brasília: Conselho
+Nacional do Meio Ambiente.
+
+CUSTÓDIO, E.; LLAMAS, M.R. (1983) Hidrologia subterrânea. 2. ed.
+Barcelona: Omega. 2v.
+
+______. (2011) Ministério da Saúde. Portaria nº 2.914/MS, de 12 de
+dezembro de 2011. Dispõe sobre os procedimentos de controle
+e de vigilância da qualidade da água para consumo humano e
+seu padrão de potabilidade, e dá outras providências. Brasília:
+Ministério da Saúde.
+
+FARSADNIA, E.; ROSTAMI KAMROOD, M.; MOGHADDAM NIA,
+A.; MODARRES, R.; BRAY, M.T.; HAN, D.; SADATINEJAD, J. (2014)
+Identification of homogeneous regions for regionalization
+of watersheds by two-level self-organizing feature maps.
+Journal of Hydrology, v. 509, p. 387-397. http://doi.org/10.1016/j.
+jhydrol.2013.11.050
+
+CAO, Y.; TANG, C.; SONG, X.; LIU, C.; ZHANG, Y. (2016) Identifying
+the hydrochemical characteristics of rivers and groundwater by
+multivariate statistical analysis in the Sanjiang Plain, China. Applied
+Water Science, v. 6, n. 2, p. 169-178. https://doi.org/10.1007/s13201014-0215-5
+CONCEIÇÃO, F.T.; MAZZINI, F.; MORUZZI, R.B.; NAVARRO, G.R.B.
+(2014) Influências Naturais e Antrópicas na Qualidade da Água
+Subterrânea de Poços de Abastecimento Público na Área Urbana
+de Marília (SP). Revista Brasileira de Recursos Hídricos, v. 19, n. 3,
+p. 227-238. http://dx.doi.org/10.21168/rbrh.v19n3.p227-238
+CONSULTORIA ESTATÍSTICA E QUALIDADE (ESTATCAMP);
+DESENVOLVIMENTO DE SISTEMAS E CONSULTORIA ESTATÍSTICA
+(DIGUP). (2016) Action Stat. São Carlos.
+
+512
+
+ESRI. (2010) ArcGIS (Version 10). Los Angeles: Environmental
+Systems Research Institute, Inc.
+
+FREEZE, R.A.; CHERRY, J.A. (1979) Groundwater. Englewood Cliffs:
+Prentice-Hall Inc.
+GÜLER, C.; THYNE, J.D.; MCCRAY, J.E.; TURNER, K.A. (2002)
+Evaluation of graphical and multivariate statistical methods
+for classification of water chemistry data. Hydrogeology
+Journal, v. 10, n. 4, p. 455-474. https://doi.org/10.1007/s10040002-0196-6
+HASSANE, A.B.; LEDUC, C.; FAVREAU, G.; BEKINS, B.A.;
+MARGUERON, T. (2016) Impacts of a large Sahelian city on
+groundwater hydrodynamics and quality: example of Niamey
+(Niger). Hydrogeology Journal, v. 24, n. 2, p. 407-423. http://dx.doi.
+org/10.1007/s10040-015-1345-z
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+Mapeamento por estatística multivariada e redes neurais artificiais
+
+HENTATI, A.; KAWAMURA, A.; AMAGUCHI, H.; ISERI, Y. (2010)
+Evaluation of sedimentation vulnerability at small hillside reservoirs
+in the semi-arid region of Tunisia using the Self-Organizing Map.
+Geomorphology, v. 122, n. 1-2, p. 56-64. http://dx.doi.org/10.1016/j.
+geomorph.2010.05.013
+
+MENEZES, J.P.C.; BITTENCOURT, R.P.; FARIAS, M.S.; BELLO, I.P.; FIA, R.;
+OLIVEIRA, L.F.C. (2016) Relação entre padrões de uso e ocupação
+do solo e qualidade da água em uma bacia hidrográfica urbana.
+Engenharia Sanitária e Ambiental, v. 21, n. 3, p. 519-534. http://dx.doi.
+org/10.1590/S1413-41522016145405
+
+INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE).
+(2016) Cidades - Estimativas de população. Rio de Janeiro: Instituto
+Brasileiro de Geografia e Estatística. Disponível em: <http://
+www.ibge.gov.br/home/estatistica/populacao/estimativa2016/
+estimativa_tcu.shtm>. Acesso em: 17 mar. 2017.
+
+MIOTLINSKI, K.; POSTMA, D.; KOWALCZYK, A. (2012) Variable
+infiltration and river flooding resulting in changing groundwater
+quality – A case study from Central Europe. Journal of Hydrology,
+v. 414-415, p. 211-219. http://dx.doi.org/10.1016/j.jhydrol.2011.10.034
+
+INSTITUTO NACIONAL DE METEOROLOGIA (INMET). (2016). Banco
+de Dados Meteorológicos para Ensino e Pesquisa - BDMEP. Brasília,
+DF, Brasil. Disponível em: <http://www.inmet.gov.br/portal/index.
+php?r=bdmep/bdmep>. Acesso em: 18 nov. 2016.
+ISERI, Y.; MATSUURA, T.; IIZUKA, S.; NISHIYAMA, K.; JINNO, K.
+(2009) Comparison of pattern extraction capability between
+self-organizing maps and principal component analysis.
+Memoirs of the Faculty of Engineering, Kyushu University, v. 69,
+n. 2, p. 37-47.
+JIN, Y.H.; KAWAMURA, A.; PARK, S.C.; NAKAGAWA, N.; AMAGUCHI,
+H.; OLSSON, J. (2011) Spatiotemporal classification of environmental
+monitoring data in the Yeongsan River basin, Korea, using selforganizing maps. Journal Environment Monitoring, v. 13, n. 10, p.
+2886-2894. https://doi.org/10.1039/c1em10132c
+KOHONEN, T. (2001) Self-Organizing Maps. 3. ed. Nova York:
+Springer.
+KOPPEN, W. (1948) Climatologia con un estudio de los climas de la
+tierra. México: Fondo de Cultura e Economica.
+LIU, P.; HOTH, N.; DREBENSTEDT, C.; SUN, Y.; XU, Z. (2017) Hydrogeochemical paths of multi-layer groundwater system in coal
+mining regions — Using multivariate statistics and geochemical
+modeling approaches. Science of the Total Environment, v. 601602, p. 1-14. https://doi.org/10.1016/j.scitotenv.2017.05.146
+MATTOS, J.B.; CRUZ, M.J.M.; DE PAULA, F.C.F.; SALES, E.F. (2017)
+Tipologia hidrogeoquímica e qualidade das águas subterrâneas
+na área urbana do município de Lençóis, Bahia, Nordeste do Brasil.
+Águas Subterrâneas, v. 31, n. 3, p. 281-295. https://doi.org/10.14295/
+ras.v31i3.28852
+______. (2018). Spatio-seasonal changes in the hydrogeochemistry
+of groundwaters in a highland tropical zone. Journal of South
+American Earth Sciences, v. 88, p. 275-86. https://doi.org/10.1016/j.
+jsames.2018.08.023
+MATTOS, J.B.; DE PAULA, F.C.F. (2017). Análise geoambiental de
+uma microbacia hidrográfica no município de Lençóis, Chapada
+Diamantina (Bahia), Brasil. Sociedade & Natureza, v. 29, n. 1, p. 91-107.
+https://doi.org/10.14393/SN-v29n1-2017-6
+MENEZES, J.P.C.; BERTOSSI, A.P.A.; SANTOS, A.R.; NEVES, M.A. (2014)
+Correlação entre uso da terra e qualidade da água subterrânea.
+Engenharia Sanitária e Ambiental, v. 19, n. 2, p. 173-186. http://dx.doi.
+org/10.1590/S1413-41522014000200008
+
+MOURA, C.C.; GASTMANS, D.; KIANG, C.H.; MODESTO, R.P.;
+RODRIGUES, P.F.; RUBY, E.C.; BORGES, E.V. (2015) Concentrações
+de nitrato nas águas subterrâneas em áreas rurais do município
+de São José do Rio Preto (SP). Águas Subterrâneas, v. 29, n. 3,
+p. 268-284. https://doi.org/10.14295/ras.v29i2.27980
+NEWMAN, B.D.; HAVENOR, K.C.; LONGMIRE, P. (2016) Identification
+of hydrochemical facies in the Roswell Artesian Basin, New Mexico
+(USA), using graphical and statistical methods. Hydrogeology Journal,
+v. 24, n. 4, p. 819-839. http://dx.doi.org/10.1007/s10040-016-1401-3
+NGUYEN, T.T.; KAWAMURA, A.; TONG, T.N.; AMAGUCHI, H.;
+NAKAGAWA, N.; GILBUENA JR., R.; BUI, D.D. (2015a) Identification
+of spatio-seasonal hydrogeochemical characteristics of the
+unconfined groundwater in the Red River Delta, Vietnam.
+Applied Geochemistry, v. 63, p. 10-21. http://dx.doi.org/10.1016/j.
+apgeochem.2015.07.009
+NGUYEN, T.T.; KAWAMURA, A.; TONG, T.N.; NAKAGAWA, N.;
+AMAGUCHI, H.; GILBUENA JR., R. (2015b) Clustering spatio–
+seasonal hydrogeochemical data using self-organizing maps for
+groundwater quality assessment in the Red River Delta, Vietnam.
+Journal of Hydrology, v. 522, p. 661-673. https://doi.org/10.1016/j.
+jhydrol.2015.01.023
+OLIVEIRA, G.A.; NASCIMENTO, E.L.; ROSA, A.L.D.; LAUTHARTTE, L.C.;
+BASTOS, W.R.; BARROS, C.G.D.; CREMONESE, E.R.; BENTO, A.Q.; MALM,
+O.; GEORGIM, J.; CORTI, A.M. (2015) Avaliação da qualidade da água
+subterrânea: Estudo de caso de Vilhena – RO. Águas Subterrâneas,
+v. 29, n. 2, p. 213-223. https://doi.org/10.14295/ras.v29i2.28399
+REISSLER, J.; MANZIONE, R.L. (2016) Classificação do uso da terra em
+área de afloramento do sistema aquífero guarani entre 2002 e 2011:
+o caso da bacia do ribeirão do Jacú, Tejupá/SP. Águas Subterrâneas,
+v. 30, n. 2, p. 172-189. https://doi.org/10.14295/ras.v30i2.28512
+SAKO, A.; BAMBA, O.; GORDIO, A. (2016) Hydrogeochemical
+processes controlling groundwater quality around Bomboré
+gold mineralized zone, Central Burkina Faso. Journal of
+Geochemical of Exploration, v. 170, p. 58-71. https://doi.org/10.1016/j.
+gexplo.2016.08.009
+SAWYER, C.N.; McCARTY, P.L.; PARKIN, G.F. (2000) Chemistry for
+sanitary engineers. 4. ed. Nova York: McGraw-Hill.
+SCHAIDER, L.A.; ACKERMAN, J.M.; RUDEL, R.A. (2016) Septic
+systems as sources of organic wastewater compounds in domestic
+drinking water wells in a shallow sand and gravel aquifer. Science
+of the Total Environment, v. 547, p. 470-481. https://doi.org/10.1016/j.
+scitotenv.2015.12.081
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+513
+
+Mattos, J.B. et al.
+
+SERVIÇO GEOLÓGICO DO BRASIL (CPRM). (2005) Projeto
+Cadastro de Fontes de Abastecimento por Água Subterrânea.
+Diagnóstico do Município de Lençóis, Estado da Bahia. Salvador:
+CPRM. 22 p.
+
+TRINDADE, A.L.C.; ALMEIDA, K.C.B.; BARBOSA, P.E.; OLIVEIRA, S.M.A.C.
+(2017) Tendências temporais e espaciais da qualidade das águas
+superficiais da sub-bacia do Rio das Velhas, estado de Minas Gerais.
+Engenharia Sanitária e Ambiental, v. 22, n. 1, p. 13-24. http://dx.doi.
+org/10.1590/s1413-41522016131457
+
+SILVA, A.B.; BRITO, J.M.; SILVA, R.A.; BRAZ, A.S.; SILVA FILHO,
+E.D. (2017) Parâmetros físico-químicos da água utilizada para
+consumo em poços artesianos na cidade de Remigio-PB. Águas
+Subterrâneas, v. 31, n. 2, p. 109-118. https://doi.org/10.14295/ras.
+v31i2.28807
+
+TUNDISI, J.G.; MATSUMURA-TUNDISI, T.; MATSUMURA TUNDISI,
+J.E. (2008) Conservação e uso sustentável de recursos hídricos.
+In: BARBOSA, F.A. Ângulos da água: desafios da integração. Belo
+Horizonte: Editora UFMG. p. 83-157.
+
+SILVA, D.D.; MIGLIORINI, R.B.; SILVA, E.C.; LIMA, Z.M.; MOURA, I.B.
+(2014) Falta de saneamento básico e as águas subterrâneas em
+aquífero freático: região do Bairro Pedra Noventa, Cuiabá (MT).
+Engenharia Sanitária e Ambiental, v. 19, n. 1, p. 43-52. http://dx.doi.
+org/10.1590/S1413-41522014000100005
+THE MATHWORKS INC. (2017) MatLab R2017a. Natick: The
+Mathworks Inc.
+
+WANG, J.; HE, J.; CHEN, H. (2012) Assessment of groundwater
+contamination risk using hazard quantification, a modified
+DRASTIC model and groundwater value, Beijing Plain, China.
+Science of the Total Environment, v. 432, p. 216-226. https://doi.
+org/10.1016/j.scitotenv.2012.06.005
+WARD JR., J.H. (1963) Hierarchical grouping to optimize an
+objective function. Journal of the American Statistical Association,
+v. 58, n. 301, p. 236-244.
+
+© 2019 Associação Brasileira de Engenharia Sanitária e Ambiental
+Este é um artigo de acesso aberto distribuído nos termos de licença Creative Commons.
+
+514
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 501-514
+
+

@@ -1,0 +1,457 @@
+CINTED-UFRGS
+
+Novas Tecnologias na Educação
+
+ELEKTRA: Um Chatterbot para Uso em Ambiente Educacional
+Michelle Denise Leonhardt*
+Daiane Dorneles de Castro**
+Renato Luís de Souza Dutra ***
+Liane Margarida Rockenbach Tarouco****
+
+Resumo. A Educação à Distância vem despertando muito interesse de pesquisadores de
+diversas áreas. Por isso, também vem sendo muito abordada em congressos, workshops e
+seminários. Muito se discute sobre a união entre tecnologia e educação visando
+complementar a formação de estudantes. Com a pesquisa em Inteligência Artificial, surgiram
+os chatterbots. Chatterbots são programas destinados a demonstrar a capacidade racional de
+um computador, ou seja, buscam imitar o comportamento da inteligência humana. Este artigo
+apresenta uma implementação de um chatterbot educacional para o ensino de física e redes
+de computadores, a Profª Elektra, baseado no ALICE, um chatterbot bastante utilizado no
+mundo
+Palavras-chave: Chatterbots, AIML, Educação à Distância, Redes de Computadores
+
+Abstract. Distance learning has been raising the interest of researchers of several different
+fields. Due to this fact, it has been the discussion topic of many congresses, workshops and
+seminars. Much is discussed about the use of both technology and education to complement
+the capabilities of students. With the research of Artificial Intelligence, chatterbots appeared.
+Chatterbots are computer programs, which are used to demonstrate the rational capacity of a
+computer. They intend to imitate the behavior of human intelligence. This article presents a
+implementation of a educational Chatterbo for Physics and Computer Networks teaching,
+Professor Elektra, which is based in ALICE, a chatterbot used around the world.
+Key words: Chatterbots, AIML, Distance Education, Computer Networks
+
+*
+
+Mestranda em Ciência da Computação pela UFRGS, mdleonhardt@inf.ufrgs.br
+Graduanda em Sistemas de Informações pela PUCRS, bolsista do projeto METROPOA, daiane@cinted.ufrgs.br
+***
+Doutorando em Informática na Educação pelo PGIE-UFRGS, Mestre em Ciência da Computaçào pela PPGC-UFRGS,
+rdutra@pgie.ufrgs.br
+****
+Doutora em Engenharia Elétrica/Sistemas Digitais pela USP, Coordenadora do CINTED-UFRGS, Professora do PGIE-UFRGS,
+liane@penta.ufrgs.br
+**
+
+V.1Nº 2, Setembro, 2003
+
+1
+
+Novas Tecnologias na Educação
+
+CINTED-UFRGS
+
+1. Introdução
+"Podem as máquinas pensar?" Esta pergunta, proposta no texto do matemático Alan
+Turing: Computing, Machinery and Intelligence, publicado originalmente em 1950
+originou um teste que chamou de Jogo da Imitação, mas que veio a ser conhecido como
+o Teste de Turing. Na sistemática do jogo, um interrogador, comunicando-se via
+terminal com um software e, simultaneamente, com uma outra pessoa, deveria descobrir
+quem era quem. O matemático Alan Turing morreu em 1954, uma década antes de
+programas que simulam o diálogo humano começarem a proliferar.
+Há muito tempo o ser humano procura desenvolver a comunicação natural entre
+interlocutores. Com o avanço da tecnologia e, conseqüentemente, a popularização de
+acesso aos computadores pessoais e à internet, essa preocupação também foi sendo
+transferida para as máquinas, onde a possibilidade de se dar a uma máquina habilidade
+para interagir com o ser humano, através de uma compreensão e simulação do seu
+comportamento, tem sido, alvo de pesquisas na área de Inteligência Artificial. A
+inteligência artificial desenvolveu ao longo dos anos diversas maneiras de simular a
+comunicação humana, acarretando, entre outras tecnologias, o surgimento dos
+chamados chatterbots, que são programas de computador que simulam uma conversa
+com uma pessoa.
+Nesse contexto, foram surgindo diversas categorias de chatterbots utilizadas na
+internet. Os chatterbots para fins educacionais demonstram-se interessantes, pois
+permitem que alunos se relacionem de forma mais humana com o computador. Robôs
+de conversação oferecem muitas vantagens em um ambiente de aprendizado já que há a
+possibilidade de permanecer 24 horas por dia a disposição dos alunos.
+Este artigo descreve o trabalho que vem sendo desenvolvido com a Profª.
+Elektra, um robô de bate-papo (chatterbot) baseado no chatterbot ALICE, que vem
+sendo utilizado como um instrumento de complementação no aprendizado de estudantes
+de cursos à distância.
+O artigo está organizado da seguinte forma: a Seção 2 apresenta os conceitos de
+chatterbot e trabalhos relacionados, a Seção 3 apresenta uma rápida abordagem sobre o
+conceito de Educação à Distância, a seção 4 descreve o chatterbot ALICE e a
+linguagem AIML, a seção 5 mostra a implementação do chatterbot ALICE no ensino de
+Redes de Computadores, a Profª Elektra e a Seção 6 finaliza este artigo com as
+conclusões e trabalhos futuros.
+2. Chatterbot
+Um chatterbot é um programa que procura simular uma conversação, com o objetivo de
+levar o interlocutor a pensar que está falando com outro ser humano [Laven]. Essa
+possibilidade de se dar a uma máquina habilidade para interagir com o ser humano,
+através de uma compreensão e simulação do seu comportamento, tem sido, há muito
+tempo, alvo de pesquisas na área de Inteligência Artificial. Nesse contexto, foram
+surgindo, ao longo dos anos, diversas categorias de chatterbots são utilizados na
+internet: comerciais, de entretenimento, FAQs1, de busca, educacionais, entre outros.
+Riesbeck e Schank (1989) desenvolveram a teoria de Scripts em seu estudo sobre o
+processamento da linguagem natural
+
+1
+
+Frequently Asqued Questions. Em português: perguntas mais freqüentes.
+
+2 ________________________________________________________________________ V. 1 Nº 2, Setembro, 2003
+
+CINTED-UFRGS
+
+Novas Tecnologias na Educação
+
+Dentre os chatterbots já existentes, um dos mais antigos pode ser considerado o
+Eliza [Eliza 1966]. Desenvolvido em 1966 pelo professor Joseph Weizenbaum no
+Massachussets Institute of Technology, seu objetivo é o de simular um psicanalista em
+uma conversa com seu paciente. Eliza espera que o usuário conte seus problemas e
+interage através de perguntas, estimulando o paciente a contar cada vez mais sobre seu
+problema, através de uma personalidade bem notável, tentando sempre agir de forma
+simpática e amável.
+O Eliza, porém, tem algumas limitações. Não há uma memória no robô, ou seja,
+ela não consegue lembrar o que foi falado anteriormente. A construção de algumas
+respostas também pode desanimar o usuário, já que Eliza muitas vezes na tentativa de
+dar ao dialogo uma certa naturalidade, responde ao interlocutor usando partes da própria
+entrada, gerando às vezes diálogos um tanto confusos. Um exemplo dessa situação pode
+ser ilustrado da seguinte forma: se a entrada for, por exemplo, a frase: “I am fine now
+thank you”, a resposta pode ser algo como: “How long have you been fine now thank
+i?”. Quando a entrada apresenta complementos além de sua estrutura normal, o robô
+tende a dizer frases sem sentido.
+Outro robô capaz de interagir em português, é Cybelle[Cybelle 2000], criada em
+2000. Apresentando uma imagem virtual, Cybelle é construída para ser uma espécie de
+referência no mundo dos agentes. Além de conversar com ela, pode-se visualizar, ao
+mesmo tempo, informações sobre agentes virtuais. Cybelle também está integrada a um
+portal sobre agentes. A navegação no portal pode ser direcionada durante a própria
+conversa com o robô por ela mesma ou pelo usuário independentemente. Assim, se a
+entrada for: “O que exatamente você é?”, Cybelle além de fornecer a resposta ainda
+disponibiliza uma página com informações sobre de sua personalidade. Se a entrada é
+uma pergunta sobre ALICE, por exemplo, Cybelle mostra informações a respeito e
+ainda solicita a opinião do usuário sobre o Chatterbot. (figura. 1)
+
+V.1Nº 2, Setembro, 2003
+
+3
+
+Novas Tecnologias na Educação
+
+CINTED-UFRGS
+
+Figura 1 - Cybelle mostrando informações sobre outro Chatterbot, o ALICE,
+durante o diálogo
+
+No campo dos chatterbots educacionais, existem algumas implementações,
+porém nenhuma delas com conteúdo temático. Junior é um robô adolescente, em
+português, programado para um papel educativo. Sua base de conhecimento apresenta
+um bom número de informações sobre conteúdos escolares[Primo 1999]. Apesar disso,
+Júnior não é um robô temático. Seu conteúdo abrange alguns conteúdos escolares,
+porém não é uma fonte de conhecimento de uma área específica.
+3. O uso de chatterbots na Educação à Distância
+A Educação à Distância (EAD) pode ser definida como uma experiência planejada de
+ensino e aprendizagem que faz uso de tecnologias para integrar estudantes que se
+encontram geograficamente distantes.
+A característica básica da EAD é o estabelecimento de uma comunicação de
+dupla via, na medida em que professor e aluno não se encontram juntos na mesma sala
+requisitando, assim, meios que possibilitem a comunicação entre ambos como
+correspondência postal, correspondência eletrônica, telefone ou qualquer ferramenta
+proveniente da Internet. [Perry 1997].
+A possibilidade de prover continuamente capacidade de atendimento a dúvidas
+dos alunos remotos que surge com o uso de chatterbots que tentam replicar o papel de
+um tutor virtual oferece novas possibilidades de suporte ao aluno distante. Uma das
+principais dificuldades deste tipo de aluno é a sensação de isolamento que experimenta
+pela distância no espaço e às vezes também do tempo quando seus horários de acesso ao
+sistema não coincidem com os do restante da turma. Um chatterbot provê a
+4 ________________________________________________________________________ V. 1 Nº 2, Setembro, 2003
+
+CINTED-UFRGS
+
+Novas Tecnologias na Educação
+
+possibilidade de solicitar e receber explicações a qualquer momento. O processo de
+construir a base de conhecimento do chatterbot pode ser realizado pelo próprio aluno,
+pois existem ferramentas de autoria que facilitam a criação das definições a serem
+usadas no processamento da conversação permitindo que o aluno tenha participação
+ativa no processo. [Castanho 2002].
+4. ALICE
+O A.L.I.C.E (Artificial Linguistic Internet Computer Entity) [Alice 2003] é um
+chatterbot criado na Lehigh University por Richard S. Wallace, ativada em 1995, sendo
+um dos robôs mais populares da atualidade.
+Sua inovação está na forma como é apresentado: além de
+muita documentação, apresenta uma saudação sonora ao visitante, tem um grande poder
+de comunicação, além de uma interface gráfica que estimula o diálogo [ALICE 1995].
+Atualmente existe uma Fundação que promove a disseminação do software gratuito
+ALICE e da AIML (artificial intelligence markup language) usada na construção do
+ALICE bot. O chatterbot original, ALICE tem uma base de conhecimento constituída
+por centenas de fatos, citações e idéias de seu criador. Apresenta um vocabulário de
+mais de 5000 palavras. É programada para dar muitas informações a seu respeito e pode
+sugerir até que o usuário a veja cantar. Muitos outros chatterbots foram construídos
+usando o software do chatterbot ALICE. Para isto basta construir uma nova base de
+conhecimento expressa em AIML. Um exemplo de chatterbot construído em Português
+foi o Pixelbot desenvolvidopor André Neves na UFPE [Pixelbot 2003]. Usando as
+classes desenvolvidas para o Pixelbot tratar expressões em Português.
+4.1 Artificial Intelligence Markup Language (AIML)
+O AIML foi desenvolvido pela comunidade Alicebot durante o período de 1995-2000
+com uma gramática proprietária também chamada AIML que formava a base para o
+primeiro Alicebot. Após diversas atualizações visando à padronização da gramática foi
+adotado o XML (Extensible Markup Language).
+O AIML é uma linguagem de fácil aprendizagem e utilização [Wallace]. Ela
+apresenta um conjunto de tags2 e comandos simples para implementação da base de
+conhecimento de um chatterbot e serve para analisar as mensagens enviadas pelo
+usuário e decidir a forma como estas mensagens devem ser respondidas.
+O AIML é baseado em padrões de entrada do usuário, conhecidos como
+categorias. Uma frase escrita por um usuário é comparada aos padrões descritos na
+linguagem e com base neste processo são selecionadas ou construídas as respostas.
+As principais tags do AIML são:
+<aiml> incia e termina um bloco programado em AIML
+<category> identifica uma “unidade de conhecimento” na base de
+conhecimento
+<pattern> identifica um padrão de mensagem simples freqüentemente utilizado
+por usuários
+<template> contém a resposta para uma mensagem do usuário
+
+2
+
+Tags significam marcações.
+
+V.1Nº 2, Setembro, 2003
+
+5
+
+Novas Tecnologias na Educação
+
+CINTED-UFRGS
+
+Uma categoria em AIML é definida da seguinte forma:
+<category>
+<pattern> entrada </pattern>
+<template> resposta </template>
+</category>
+Por exemplo:
+<category>
+<pattern> OI * </pattern>
+<template> OI. TUDO BOM? </template>
+</category>
+Neste exemplo, o padrão de entrada “Oi” seguido de qualquer informação, terá
+como resposta ou possível resposta à sentença “Oi. Tudo bom?”. O caractere *
+representa um conjunto de caracteres.
+Com a utilização de AIML, pode-se definir mais de uma resposta para um único
+padrão e ainda se pode especificar critérios de escolha de cada uma das respostas.
+Existem, ainda, mais de 20 outras tags que compõem a linguagem AIML responsáveis
+por fornecer a necessária desenvoltura para o Chatterbot propor uma solução à
+mensagem enviada.
+5. Elektra uma implementação da ALICE para no ensino de física e redes de
+computadores
+Com base no ALICE foi criado na UFRGS o chatterbot Profª Elektra. A Profª. Elektra
+visou inicialmente responder perguntas sobre Física para alunos do ensino secundário
+que estivessem se preparando para o vestibular, sendo colocada à disposição dos
+internautas em meados de 2002.
+Em julho de 2003 estendeu-se sua utilização para os alunos do Curso de
+Especialização a Distância em Informática na Educação para a disciplina Internet para
+Educadores, acrescentando em sua base de conhecimento dados e conceitos sobre Redes
+de Computadores e Internet. Para este trabalho coordenou-se um esforço entre os
+professores e tutores para a modelagem inicial do conhecimento buscando informar o
+que o robô deveria dominar, quais perguntas eram mais freqüentes e quais os assuntos
+que geravam maiores dúvidas entre os alunos.
+Para tornar a interação mais
+amigável foram exploradas diversas funcionalidades do AIML.
+A primeira funcionalidade explorada foi à possibilidade do chatterbot escolher
+uma entre diversas respostas a serem apresentadas para uma mesma pergunta. Isto é
+feito adicionando mais de uma resposta para uma categoria de conhecimento, que é
+escolhida aleatoriamente no memento em que o robô é solicitado, oferecendo assim, a
+oportunidade de que ao ser questionado mais de uma vez sobre o mesmo assunto, o
+chatterbot possa apresentar uma resposta diferente da primeira. Este recurso parte do
+pressuposto que se o usuário do ambiente tornou o questionar o robô sobre um mesmo
+tópico é porque provavelmente a resposta apresentada não satisfez sua necessidade. É
+importante ressaltar que o robô não necessariamente apresenta uma resposta
+diferenciada se o assunto for persistido, visto que as respostas são escolhidas de forma
+6 ________________________________________________________________________ V. 1 Nº 2, Setembro, 2003
+
+CINTED-UFRGS
+
+Novas Tecnologias na Educação
+
+aleatória, podendo assim a mesma resposta ser apresentada novamente. A estrutura
+AIML que permite respostas aleatórias é estruturada de seguinte forma no arquivo de
+extensão AIML do chatterbot:
+<aiml>
+
+.
+<category>
+<pattern>Palavra chave</pattern>
+<template>
+<random>
+<li>Resposta 1</li>
+<li>Resposta 2</li>
+</random>
+</template>
+</category>
+.
+</aiml>
+Onde dentro da tag random (<ramdom>*</random>) são definidas as respostas
+a serem apresentadas, e cada resposta diferente deve estar dentro de uma tag li
+(<li>*</li>).
+Outra funcionalidade explorada foi à adição e visualização de hiperlinks3 e
+imagens nas respostas. Os hiperlinks podem ser colocados em qualquer local dentro do
+espaço de resposta, fazendo o uso da tag a href da linguagem HTML, e as imagens
+podem ser exibidas usando outra tag da linguagem HTML chamada img src.
+
+3
+
+Hiperlinks são ligações para outros documentos.
+
+V.1Nº 2, Setembro, 2003
+
+7
+
+Novas Tecnologias na Educação
+
+CINTED-UFRGS
+
+Figura 2 - Exemplo de Resposta com Imagem
+O AIML também possibilita usar uma tag chamada <srai> que serve para
+direcionar uma entrada (pergunta), para outra estrutura que já tenha uma resposta
+formulada que se quer apresentar, ela direciona uma entrada (pergunta) de um pattern
+para um outro pattern já existente, então a procura encontra o pattern que trata a entrada
+que o <srai> indica.
+<category>
+<pattern>entrada1</pattern>
+<template><srai>entrada2</srai></template> // aqui a tag srai direciona
+a pesquisa para uma outra categoria onde o teste padrão é “entrada2” que tem a
+resposta que se quer apresentar.
+<category>
+<category>
+<pattern>entrada2</pattern> // ele procura por esta estrutura onde o
+paterrn foi indicado pelo <srai>
+<template>resposta</template> // e apresenta esta resposta
+</category>
+8 ________________________________________________________________________ V. 1 Nº 2, Setembro, 2003
+
+CINTED-UFRGS
+
+Novas Tecnologias na Educação
+
+Outra funcionalidade interessante do AIML é a utilização da tag <that>. A
+palavra “ that” AIML se refere a decraração anterior do chatterbot. Especificamente se
+este responde com um parágrafo de múltiplas sentenças, o valor do “ that” e setado para
+a última sentença na seqüência. A seguir um exemplo de como isto pode ocorrer.
+<category>
+<pattern>REDE</pattern>
+<template>
+Achei que eu tinha problemas com lingüística, mas você...<br>
+Sabes que a palavra rede pode dizer respeito a muitas coisas
+diferentes!<br>
+Mas sobre que tipo de redes você gostaria de saber?
+</template>
+</category>
+<category>
+<pattern>DE COMPUTADOR</pattern>
+<that> Mas sobre que tipo de redes você gostaria de saber</that>
+<template><srai>REDE DE COMPUTADOR</srai></template>
+</category>
+Neste caso a categoria “DE COMPUTADOR” é ati vada somente quando o
+aluno digita esta frase respondendo a pergunta do chatterbot: “Mas sobre que tipo de
+redes você gostaria de saber”. Este recurso enriquece a conversação, simulando uma
+memória da conversa apesar de ainda limitada à última sentença.
+O uso de respostas modeladas com as funcionalidades descritas pareceram em
+primeiro momento serem o suficientes, pois previa diversidade de respostas, trazia
+ilustrações e direcionava o usuário a tutorias e Websites dedicados ao assunto
+trabalhado, entretanto para avaliar a qualidade das interações, em um segundo
+momento, resolveu-se analisar as respostas dos alunos verificando os arquivos de log
+(registros) gerados pelo servidor da Profª. Elektra nas interações dos alunos do curso de
+Especialização em Informática na Educação. O Program D que é o software servidor da
+Elektra (ALICE) gera arquivos de log com todas as conversas no padrão XML e através
+da análise destes logs notou-se que apesar de suas respostas serem ricas em conteúdo, a
+comunicação não estava adequada.
+Analisando estes arquivos um dos problemas observados foi que as respostas do
+chatterbot apresentavam-se muito diretas e objetivas, de forma que o chatterbot não
+estimulava a continuação do diálogo. O segundo problema foram as diferentes formas
+de comunicação expressas pelos alunos nas suas interações com o chatterbot, visto que
+estes eram de regiões diferentes do Brasil. As perguntas sobre um mesmo tópico eram
+realizadas das mais diversas formas, fugindo assim da modelagem prevista e aplicada às
+perguntas da Profª. Elektra, então o robô, muitas vezes era portador do conhecimento
+questionado pelo aluno, mas não apresentava a resposta correspondente uma vez que
+não reconhecia a pergunta.
+Tendo em mãos este material, iniciou-se a tarefa de correções e
+aperfeiçoamentos no chatterbot. A primeira etapa foi melhorar as respostas, deixando a
+Profª. Elektra aparentemente mais amigável, e interessada no assunto ao qual estivesse
+tratando com o aluno, de forma a estimular a continuidade do dialogo. Nesta etapa,
+foram revisadas as respostas que o chatterbot fornecia, acrescentando assim no final de
+algumas das respostas perguntas e outras informações ao usuário, ou pedidos para que
+V.1Nº 2, Setembro, 2003
+
+9
+
+Novas Tecnologias na Educação
+
+CINTED-UFRGS
+
+questionassem mais o chatterbot. Os resultados deste ajuste, logo foram notados. Os
+diálogos com o robô passaram a ter um tempo de duração maior, e a impressão de que o
+robô os compreendia e interessava-se pelo assunto sugerido deixou-o mais acessível.
+A segunda etapa demandou maior atenção. Pois dizia respeito as diferentes
+formas de se perguntar a mesma coisa ao robô.
+Aqui através de uma análise
+minuciosa do log extraiu-se cada pergunta (categoria) que não estava registrada na base
+de conhecimento do bot. Como na maioria das vezes o robô já tinha uma resposta
+pronta, adicionou-se então estas perguntas a base de conhecimento do chatterbot de
+maneira que ele apresentasse as respostas já existentes sobre aquele assunto.
+Outros aperfeiçoamentos na base de conhecimento do chatterbot poderão ser
+implementados com utilização de recursos mais avançados do AIML e a criação de
+novas categorias oriundas de novas interações dos alunos com a Profª. Elektra.
+6. Conclusões e Trabalhos Futuros
+Com o avanço dos estudos de processamento de linguagem natural e de inteligência
+artificial, os robôs de conversação cada dia desenvolvem novas habilidades e são
+utilizados para os mais diversos fins.
+O uso de robôs de conversação na educação pode ser muito vantajoso,
+dependendo do contexto em que o mesmo for inserido. Por imitar a realidade humana e
+ser de fácil manuseio, um robô permite que um visitante não se sinta constrangido ao
+manusear e interagir com ele. Há também a possibilidade de direcionar o interlocutor,
+ou seja, se o cérebro do robô conhece bons endereços com informações relevantes sobre
+um determinado assunto, ele pode direcionar o usuário convidando-o a visitar estes
+endereços que foram previamente verificados e validados pelo programador da base de
+conhecimento.
+O chatterbot descrito apresenta um forte apelo no sentido de atiçar a curiosidade
+e a motivação dos alunos. Por ser uma forma diferente de assimilação de conteúdos, a
+Profª Elektra pode incentivar o trabalho dos usuários já que exige deles uma
+participação muito mais ativa, onde quem comanda e direciona o diálogo é o próprio
+interlocutor. Porém observou-se que somente com uma extensa utilização da Profª
+Elektra pelos alunos e conseqüente análise dos registros desta utilização será possível
+criar novas categorias tornando a conversação mais natural e abrangente.
+7. Referências Bibliográficas
+ALICE (1995) The A. L.I.C.E Foundation http://alicebot.org, Acesso em abril de 2003
+Brusil, P. J. and Collins, Will (1991) “OSI Systems and manaement standards”. Global
+Communications Conference.
+Castanho, Carla, Wazlawick, Raul. A Avaliação do Uso de Chatterbots no Ensino
+Através de uma Ferramenta de Autoria. SBIE 2002. São Leopoldo, 2002.
+Cybelle (2000) http://www.agentland.com/, April
+ELIZA (1966) – Weizenbaum, J. http://www-ai.ijs.si/eliza/eliza.html, Abril
+Laurel, B. (1997). Interface agents: Metaphors with Character. In J. M. Bradshaw (Ed.)
+Software Agents p. 67- 77. Menlo Park, CA: AAAI Press/The MIT Press.
+Laven, S.J. “ The Simon Laven Page” http://www.simonlaven.com/, Abril 2003.
+10 ________________________________________________________________________ V. 1 Nº 2, Setembro,
+2003
+
+CINTED-UFRGS
+
+Novas Tecnologias na Educação
+
+Perry, W.; Rumble, G. (1987). “A short guide to distance education ”. Cambridge:
+International Extension College.
+Pixelbot. Projeto Virtus da UFPE http://www.virtus.ufpe.br. Acesso em Junho 2003.
+Primo, A.F.T; Coelho, L R and Tamusiunas, F.R. (1999) “O uso de chatterbots no
+ensino a distancia” X Simpósio Brasileiro de Informática na Educação.
+Taylor, A. The AIML mini reference and primer.
+[http://hippie.alicebot.com/~ataylor/index.html], Abril
+Turing, A.M. (1950). “Computing machinery and intelligence”. Mind, 59, 433-560.
+Wallace R.S. “AIML Overview”
+http://www.pandorabots.com/pandora/pics/wallaceaimltutorial.html, Abril 2003
+Weizenbaum, J. (1966) “ELIZA: A Computer Program For the Study of Natural
+Communication Between Man and Machine”. Communications of the ACM. Vol. 9,
+No. 1, pp.36-45.
+
+V.1Nº 2, Setembro, 2003
+
+11
+
+

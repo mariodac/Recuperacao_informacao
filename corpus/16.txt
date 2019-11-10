@@ -1,0 +1,672 @@
+DESENVOLVIMENTO DE UMA BIBLIOTECA FUZZY PARA O CONTROLE
+AUTÔNOMO DE UM ROBÔ MÓVEL EM AMBIENTE DESCONHECIDO
+Douglas Santiago Kridi, Antônio José de Oliveira Alves, Marcus Vinícius de Sousa Lemos, Ricardo de
+Andrade Lira Rabêlo
+Universidade Estadual do Piauí – Uespi / Laboratório de Informática Aplicada - LAIC
+Caixa Postal 381
+CEP 64002-150 - Teresina PI
+
+Resumo Este trabalho introduz a eFLL (Embedded Fuzzy
+Logic Library), uma biblioteca escrita em C++ que auxilia na
+implementação de controladores fuzzy em plataformas
+embarcadas. Além de demonstrar o funcionamento da
+biblioteca, este artigo analisa o desempenho da mesma por
+meio de um controlador fuzzy, embarcado em um
+microcontrolador ATmega, para o controle de um robô móvel
+autônomo.
+Palavras Chaves: Arduino, Robótica Móvel, Inteligência
+Artificial, Controlador Fuzzy.
+Abstract:
+This
+paper introduces
+the eFLL (Embedded Fuzzy Logic Library), a library written
+in C ++ that helps in the implementation of fuzzy controllers in
+embedded platforms. In addition to demonstrating the
+operation of
+the
+library,
+this
+article
+analyzes its
+performance using a fuzzy
+controller, embedded in an
+ATmega microcontroller to control an autonomous
+mobile
+robot.
+Keywords: Arduino, Mobile Robotics, Artificial Intelligence,
+Fuzzy Controller.
+
+1
+
+INTRODUÇÃO
+
+A robótica móvel tem sido objeto de discussão constante em
+artigos e trabalhos com os mais diversos propósitos e, segundo
+Wolf et al. (2009), nas ultimas duas décadas esta área de
+estudos e pesquisas se multiplicou com o surgimento de novas
+tecnologias cada vez mais acessíveis e embarcadas. Uma das
+ferramentas que alavancaram a robótica móvel autônoma foi a
+utilização de técnicas de inteligência artificial [Silva 2008] que
+deram aos robôs a característica adaptativa de lidar com
+ambientes desconhecidos ou que sofrem modificações
+aleatórias.
+Robôs desenvolvidos para explorar lugares
+inóspitos ou que ofereçam extremo perigo, são exemplos de
+aplicações que envolvem a mobilidade autônoma e seus
+percalços.
+Para que um robô possa tomar atitudes como se desviar de um
+obstáculo, ou traçar uma trajetória eficiente, ele precisa obter
+dados a respeito do ambiente. Estas informações são obtidas
+por meio de sensores que equipam o robô e permitem a
+percepção do que está ao seu redor, dando a maquina sinais de
+entrada que serão usados no processo decisório responsável
+pelas interações do robô com o ambiente, sem a intervenção
+humana [Jácobo 2001].
+
+Como o cenário em que o robô irá se locomover é um ambiente
+desconhecido, assim como a localização dos possíveis
+obstáculos, o método de controle que originará as regras e
+parâmetros de navegação precisa ser capaz de modelar o
+conhecimento incerto ou impreciso. Neste ponto, podemos
+recorrer a uma técnica de inteligência artificial conhecida por
+sistemas fuzzy ou sistemas nebulosos, que se baseia nos
+conceitos de lógica fuzzy [Zadeh 1965] e na teoria dos
+conjuntos fuzzy [Zadeh 1965]. Na literatura, podemos encontrar
+vários trabalhos que utilizam uma abordagem baseada em
+sistemas fuzzy para o controle de robôs móveis [Moratori et al
+2006], [Fracasso e Costa 2005], [Ottoni e Lages 2000].
+Diversos trabalhos em robótica utilizam hardware com
+recursos limitados, no entanto, ainda não há uma biblioteca que
+auxilie na implementação de sistemas fuzzy neste tipo de
+tecnologia embarcada.
+Este artigo introduz a eFLL (Embedded Fuzzy Logic Library),
+uma biblioteca capaz de auxiliar o desenvolvimento de
+sistemas fuzzy em plataformas de hardware embarcados, de
+forma a tornar a criação de controladores fuzzy para robôs
+móveis e outras aplicações diversas mais intuitiva e rápida. A
+biblioteca é suficientemente leve para ser executada em
+microcontroladores com recursos limitados, além de possuir
+uma implementação simples e direta.
+O restante do artigo é descrito a seguir. Na seção 2,
+apresentamos uma visão geral sobre sistemas, conjuntos e
+lógica fuzzy. Na seção 3, descrevemos brevemente os principais
+componentes da biblioteca desenvolvida, enquanto na seção 4,
+serão descritos os testes feitos em ambiente real usando a
+biblioteca. Por fim, na seção 5 apresentamos as conclusões e
+trabalhos futuros.
+
+2
+
+CONJUNTOS FUZZY, LÓGICA FUZZY
+E SISTEMAS DE INFERÊNCIA
+
+Na teoria clássica de conjuntos, um valor só pode assumir dois
+estados (verdadeiro ou falso) o que nos leva ao raciocínio
+exato. Lofti A. Zadeh, em 1965, apresenta a teoria dos
+conjuntos fuzzy, a qual visa determinar um grau de pertinência
+que indica o quanto um determinado elemento pertence a um
+determinado conjunto. Esse grau de pertinência é definido por
+meio de uma função característica real (função de pertinência)
+mapeada por µF: U → [0,1], que associa a cada  ∈ 
+(universo de discurso) um número real µF (x) no intervalo [0,1],
+ao invés dos valores binários usuais: pertence (1) e não
+
+SBA Controle & Automação Vol. 00 no. 00 / Jan., Fev., Mar, Abril de 0000
+
+1
+
+pertence (0). Vários conjuntos fuzzy podem estar associados a
+um nome, chamado de variável linguística[Engelbrecht 07].
+Por exemplo, a distância de um determinado robô com relação
+a um obstáculo pode ser uma variável linguística assumindo os
+valores perto, médio e longe. Estes valores são descritos por
+intermédio de conjuntos fuzzy, representados por funções de
+pertinência, conforme mostrado na figura Figura 2. Na
+imagem, os conjuntos Perto e Longe são representados por um
+trapézio, enquanto o conjunto Médio é representação por um
+triangulo.
+Pode-se definir lógica fuzzy (difusa) como sendo uma
+ferramenta capaz de capturar informações vagas, em geral
+descritas por meio de uma preposição fuzzy (afirmação do tipo
+P é A, onde P é nome de uma variável e A é um conjunto
+fuzzy), e atribuir um grau de verdade a esta preposição, no
+intervalo [0,1]. De modo figurativo enquanto a lógica clássica
+enxerga somente o preto e branco, a logica fuzzy é capaz de,
+além do preto e branco, enxergar vários tons de cinza entre as
+duas cores.
+Sistemas de inferência fuzzy são capazes de tratar processos
+bastante complexos, onde existem informações incertas ou
+imprecisas. Para tanto os sistemas de inferência fuzzy utilizam
+regras linguísticas do tipo “se...então” que tem na teoria dos
+conjuntos fuzzy [Zadeh 1965] e na lógica fuzzy [Zadeh 1965] a
+base matemática condizente [Leal 2011].
+A Figura 1 mostra a visão geral de um sistema fuzzy.
+
+A Figura 2 mostra como o valor da entrada Distância pertence
+a dois conjuntos, com graus de pertinência diferentes.
+
+Figura 2. Mostra a fuzzificação da entrada Distancia.
+No exemplo da Figura 2, o valor de entrada 3,50 pertence ao
+conjunto Perto, com grau de pertinência 0,45 e também
+pertence ao conjunto Médio com grau de pertinência 0,65.
+
+2.2
+
+O valor preciso da entrada Distância resultante de leituras
+externas feitas por sensores passou por um estágio de
+fuzzificação, isto é, atribui-se o grau de pertinência do valor
+desta entrada em relação a um dado conjunto fuzzy. Após a
+fuzzificação, é iniciado o processo de inferência.
+Neste momento associamos as combinações possíveis entre as
+pertinências e conjuntos ativados pela variável de entrada, e
+seus reflexos nos conjuntos da variável de saída.
+O módulo de inferência do sistema fuzzy irá associar os
+conjuntos atingidos na fuzzificação da entrada aos conjuntos
+correspondentes na saída, sempre se baseando nas regras que
+foram modeladas previamente.
+
+2.3
+Figura 1. Visão geral de um sistema fuzzy.
+Nos sistemas fuzzy, em geral, o comportamento dinâmico do
+sistema é modelado por meio de regras fuzzy. Estas regras são
+baseadas no conhecimento e na experiência de um especialista
+da área [Engelbrecht 2007]. Regras fuzzy são definidas na
+seguinte forma:
+Se <antecedente(s)> então <consequente(s)>
+O antecedente e consequente de uma regra fuzzy são
+proposições contendo variáveis linguísticas:
+Se A é a e B é b então C é c
+A base de regras e a base de dados formam a base de
+conhecimentos de um sistema fuzzy [Leal 2011]. Além desta
+base de conhecimento, um sistema de raciocínio fuzzy é
+composto por outros componentes, cada qual realizando uma
+tarefa específica. Estes componentes são descritos a seguir.
+
+2.1
+
+Fuzzificação
+
+Para demonstrar alguns conceitos, vamos usar um exemplo
+prático em que teremos duas variáveis linguísticas, uma de
+entrada, chamada Distância, e outra de saída, chamada
+Velocidade. Estas variáveis poderão assumir um conjunto de
+valores, que no caso, serão Perto, Médio e Longe, para a
+variável Distância, e Lento, Normal e Rápido, para a variável
+Velocidade.
+2 SBA Controle & Automação Vol. 00 no. 00 / Jan., Fev., Mar, Abril de 0000
+
+Inferência
+
+Defuzzificação
+
+Após a inferência descobrir com qual grau de pertinência os
+conjuntos da variável de saída foram acionados, é iniciado o
+processo de defuzzificação. O objetivo desta etapa é descobrir
+o valor preciso associado ao grau de pertinência de um dado
+conjunto, como ilustra a Figura 3. Este procedimento é
+necessário, pois, em aplicações práticas, geralmente são
+requeridas saídas precisas. No caso de um sistema de controle
+da navegação de um robô, por exemplo, em que o controle é
+efetuado por um sistema de inferência fuzzy (ou controlador
+fuzzy), este deve fornecer ao robô dados ou sinais precisos, já
+que a "apresentação" de um conjunto fuzzy à entrada do robô
+não teria significado algum. Existem vários métodos de
+defuzzificação na literatura; dois dos mais empregados são o
+centro de gravidade e a média dos máximos. Neste, a saída
+precisa é obtida tomando-se a média entre os dois elementos
+extremos no universo que correspondem aos maiores valores
+da função de pertinência do consequente. Com o centro de
+gravidade, a saída é o valor no universo que divide a área sob a
+curva da função de pertinência em duas partes iguais. Neste
+trabalho, consideramos apenas a média dos máximos.
+
+3
+
+A BIBLIOTECA
+
+A biblioteca desenvolvida neste trabalho implementa
+computacionalmente os conceitos e técnicas fuzzy abordados na
+seção anterior, para serem usados principalmente em
+aplicações embarcadas que possuem recursos limitados no seu
+processamento.
+Deste modo, desenvolvemos um algoritmo orientado a objetos,
+usando a linguagem de programação C++ [Stroustrup 2000]
+
+por esta ser uma linguagem de propósitos gerais, além de ser a
+linguagem de programação padrão do microcontrolador
+ATmega (plataforma utilizada neste projeto). Outra vantagem
+da biblioteca ser escrita em C++ é a fácil portabilidade para
+outras plataformas de micro controladores. A biblioteca possui
+uma interface de fácil configuração, permitindo que o sistema
+fuzzy seja rapidamente projetado. A seguir, descrevemos a
+biblioteca e seus principais elementos.
+
+Figura 3. Defuzzificação da saída Velocidade.
+
+3.1
+
+Classes e Principais Métodos
+
+A biblioteca é composta por 4 classes, chamadas Fuzzy,
+FuzzySet, FuzzyRule e FuzzyComposition, que se relacionam
+como na Figura 4.
+
+encontrar o ponto em que a fuzzificação atinge os conjuntos das
+variáveis, usando truncate().
+Para determinar quais conjuntos estarão associados a uma
+entrada, e seus respectivos valores, usamos a classe
+FuzzySet.cpp e seus métodos. Fornecemos 4 valores para cada
+conjunto, o limite inferior, o ponto de máximo 1, o ponto de
+máximo 2, e o limite superior, assim, podemos ter um conjunto
+que graficamente seja representado por um triangulo ou por um
+trapézio, dependendo dos valores dos seus pontos. A Figura 5
+ilustra a posição dos pontos.
+
+Figura 5. Disposição dos pontos de um conjunto fuzzy.
+De acordo com a Figura 5, que os valores dos pontos de
+máximo 1 e 2, orientados pela horizontal, determinam se o
+gráfico da função será um trapézio ou um triangulo. No
+exemplo da Figura 5, quando temos o ponto de máximo 1
+valendo 2 e o ponto de máximo 2 valendo 4, obtemos uma reta
+que forma a base menor de um trapézio. Mas quando temos os
+pontos de máximo 1e 2 valendo 4, obtemos um ponto que
+forma um dos vértices do triangulo. Assim, quando
+determinarmos pontos de máximo diferentes, teremos um
+trapézio, e quando determinarmos pontos de máximo iguais,
+teremos um triangulo.
+Já em FuzzyRule.cpp, construímos todas as regras que guiarão
+as decisões de nosso sistema fuzzy, sendo que estas serão
+chamadas e organizadas respectivamente, pelos métodos
+addRule() e reOrderBaseRules(), ambos da classe Fuzzy.
+Na classe FuzzyComposition, será feita a defuzzificação do
+valor obtido pelo sistema fuzzy, neste trabalho, consideramos
+apenas o método “média dos máximos” onde obtemos a média
+entre os pontos das extremidades do conjunto acionado na
+saída. A defuzzificação é chamada pelo método defuzzify() na
+classe principal, Fuzzy. Podemos ver este método de
+defuzzificação na Figura 6.
+Na Tabela 1, podemos verificar um exemplo de código em que
+chamamos a biblioteca fuzzy criada em nosso trabalho.
+
+Figura 4. Relacionamento entre as classes.
+Fuzzy.cpp é a classe principal, na qual determinamos quantas
+entradas o nosso sistema poderá ter, e obtemos a fuzzificação
+dos valores das entradas por meio do método fuzzify(), além de
+
+O código expresso na Tabela 1, é um exemplo da
+implementação de um sistema fuzzy por meio da biblioteca
+criada neste trabalho. No exemplo, usamos o mesmo caso
+trabalhado na Seção 2 deste artigo. Trata-se de um sistema que
+avalia a distancia de um robô a um obstáculo, e gera como
+saída uma variação de velocidade para este robô.
+O algoritmo foi escrito em “Arduino Programing Language”,
+uma de linguagem de programação utilizada nas placas
+baseadas na plataforma Arduino. Vale destacar que a
+linguagem permite a importação de bibliotecas escritas em
+C++. Dessa forma, foi possível a utilização da nossa biblioteca
+com a referida linguagem.
+
+SBA Controle & Automação Vol. 00 no. 00 / Jan., Fev., Mar, Abril de 0000
+
+3
+
+Figura 6. Defuzzificação por média entre os máximos.
+
+Tabela 1 – Exemplo de Código
+
+39. //Fuzzificando a entrada//
+40. fuzzy.fuzzify(0);
+41.
+42. //Avaliando as pertinências//
+43. fuzzy.evaluate();
+44.
+45. //Defuzzificação//
+46. float velAjuste= fuzzy.desfuzzify();
+Na linha 4, definimos quantas variáveis de entrada haverão no
+sistema, o índice da variável de entrada começa em zero, ou
+seja, índice 0 é a primeira entrada e índice 1 é a segunda
+entrada. No exemplo inserimos 0 como parametro, portanto,
+temos uma entrada (velocidade), e consequentemente teremos a
+saída como n+1, neste caso é a saída que terá índice 1.
+Atualmente, nossa biblioteca aceita no máximo duas variáveis
+de entrada e mais uma de saída, ao todo, três variáveis.
+Já da linha 7 até a 14, inserimos os nomes e pontos dos
+conjuntos da entrada e da saída, respectivamente.
+Criamos as regras nas linhas 17, 18 e 19, totalizando três
+regras.
+Da linha 22 a 29, associamos os conjuntos criados as variáveis,
+sempre observando o índice das mesmas, 0 para a entrada e 1
+para a saída.
+Nas linhas 32, 33 e 34 adicionamos as três regras que criamos
+anteriormente. Em seguida chamamos a fuzzificação e
+defuzzificação, obtendo o valor final determinado pelo sistema,
+que indicará a variação de velocidade.
+
+sitemaFuzzy.pde
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
+38.
+
+#include <Fuzzy.h>
+//Definindo o número de entradas//
+Fuzzy fuzzy(0);
+//Nomes e pontos para a entrada//
+FuzzySet perto(0, 0, 2, 5);
+FuzzySet medio(2, 5, 5, 8);
+FuzzySet longe(5, 8, 10, 10);
+//Nomes e pontos para a saída//
+FuzzySet lento(0, 0, 5, 10);
+FuzzySet normal(5, 10, 10, 15);
+FuzzySet rapido(10, 15, 20, 20);
+//Criando as regras do sistema//
+//Se Distancia=&perto Então Velocidade=&lento//
+FuzzyRule rule1(&perto,&lento);
+FuzzyRule rule2(&medio,&normal);
+FuzzyRule rule3(&longe,&longe);
+//Entrada 0 – Distancia//
+fuzzy.addFuzzySet(0,0, &perto);
+fuzzy.addFuzzySet(0,1, &medio);
+fuzzy.addFuzzySet(0,2, &longe);
+//Saida – Velocidade//
+fuzzy.addFuzzySet(1,0, &lento);
+fuzzy.addFuzzySet(1,1, &normal);
+fuzzy.addFuzzySet(1,2, &rapido);
+//Adicionando as regras que criamos//
+fuzzy.addRule(rule1);
+fuzzy.addRule(rule2);
+fuzzy.addRule(rule3);
+//setando a(s) entrada(s)//
+fuzzy.setInputs(0,dist);
+
+4 SBA Controle & Automação Vol. 00 no. 00 / Jan., Fev., Mar, Abril de 0000
+
+4
+
+AVALIAÇÃO EM AMBIENTE REAL
+
+Para testar a aplicabilidade da biblioteca desenvolvida, em
+ambiente real, utilizamos um robô móvel controlado por um
+chip ATmega 328P por meio de uma placa Arduino
+Duemilanove [Arduino 11].
+Nos nossos testes, o robô deve cumprir um pequeno trajeto
+com curvas e retas, sem que o mesmo bata ou fique preso pelo
+caminho. Para conseguir seu objetivo e chegar ao fim do
+precursso sem erros o robô será guiado por um controlador
+fuzzy que irá determinar os movimentos corretos para fazer as
+curvas e para qual lado guia-las.
+A compilação do código de teste, somado ao da biblioteca,
+geram 13144 bytes, um tamanho perfeitamente aceitável para a
+plataforma utilizada (ATmega 328P) que suporta 30720 bytes.
+
+4.1
+
+O Robô
+
+O nosso robô está equipado com dois sensores de
+infravermelhor e um sonar, por meio dos quais deverá ser
+capaz de perceber o ambiente ao seu redor. Além disso, possui
+três servo-motores, dos quais dois se responsabilizam por cada
+roda, e o terceiro se encarrega pela movimentação do sonar,
+como podemos ver na Figura 7. Nestes testes não levamos em
+consideração as leituras do sonar.
+
+4.2
+
+Descrição do Controlador Fuzzy
+
+O sistema fuzzy que modelamos por meio de nossa biblioteca,
+conta com duas variaveis de entrada, sendo que uma armazena
+a leitura de distância do infravermelho esquerdo, e a outra
+armazena a leitura de distância do infraverelho direito. Além da
+variavelde saída que indica quantos graus virar a esquerda ou a
+direita. A Figura 8, ilustra as funções de pertinência para os
+conjuntos das variáveis do sistema.
+
+cenário sem colidir com as paredes. A Figura 9 apresenta
+algumas imagens que demonstram os testes feitos em ambiente
+real.
+Nos itens a), b) e f), o robô anda em linha reta, pois a distância
+observada pelos sensores de infravermelho é igual ou muito
+próxima, ou seja, a diferença entres as distancias laterais entre
+o robô e a parede são parecidas de tal modo, que ele se mantém
+retilineo. Já nos itens c) e d), existe uma diferença consideravel
+entre as distâncias laterais, mais precisamente, o lado esquerdo
+possui uma distância maior que o direito, portanto, o conjunto
+de regras fuzzy acionadas, faz com que o robô faça uma curva a
+esquerda. Em e), as diferenças das distâncias laterais vão
+diminuindo e se igualando, até que o robô volte a andar em
+reta.
+Figura 7. Robô utilizado nos testes da biblioteca.
+
+Figura 9. Robô navegando em ambiente fechado.
+Figura 8. Funções de pertinência das variáveis usadas
+Por meio da biblioteca, pudemos implementar rapidamente o
+sistema fuzzy e calibrar os valores e regras até obter um arranjo
+ideal. Neste sentido, a biblioteca acelerou bastante a realização
+dos testes, por agilizar as modificações que eram feitas no
+controlador fuzzy. A Tabela 2, mostra a base de regras final
+usada no teste.
+
+Na Figura 10, ilustramos como o robô “entende” que deve
+fazer uma curva a partir das diferenças de distâncias laterais e
+como estes parâmetros acionam as regras fuzzy que implicam
+na ação do robô.
+
+Tabela 2. Base de regras final usada nos testes.
+Esq
+Dir
+
+P
+
+M
+
+L
+
+P
+
+C
+
+PD
+
+D
+
+M
+
+PE
+
+C
+
+D
+
+L
+
+E
+
+E
+
+C
+Figura 10. Orientação do robô de acordo com suas leituras.
+
+4.3
+
+Desempenho nos Testes
+
+Nos testes iniciais o robô invariavelmente colidia com as
+paredes do cenário, então, modificamos a variável de saída,
+adicionando a ela mais dois conjuntos (PE – PoucoEsquerda e
+PD – PoucoDireita) e diminuindo o espaço de busca das
+entradas (para tornar as leituras dos sensores infravermelho
+mais consistentes). Assim observamos uma melhora
+significativa no desempenho do controlador ao guiar o robô,
+pois a partir de então ele foi capaz de cumprir seu trajetopelo
+
+Podemos observar, na Figura 10, que os valores das entradas
+Esquerda e Direita ativam os conjuntos que, combinados, vão
+acionar as regras correspondentes para andar reto, como em a)
+e para fazer uma curva a esquerda, como em b). Podemos
+atestar estas conclusões, observando as funções de pertinência
+na Figura 8, e a base de regras na Tabela 2.
+É bom reforçar, que a dinâmica envolvida em modificar os
+parâmetros do sistema fuzzy e testar as suas implicações nos
+
+SBA Controle & Automação Vol. 00 no. 00 / Jan., Fev., Mar, Abril de 0000
+
+5
+
+resultados, foram realizadas muito facilmente devido a
+praticidade da biblioteca.
+
+5
+
+TRABALHOS FUTUROS
+
+É sabido que sistemas fuzzy utilizados conjuntamente com
+outras técnicas de inteligência artificial, podem trazer
+resultados mais eficientes [Tahboub e Al-Din 2009]. Assim,
+vislumbramos uma possível continuidade deste trabalho,
+analisando o desempenho desta biblioteca juntamente com
+outras técnicas de inteligência artificial, no sentido de
+aprimorar os resultados do controlador.
+Além disso, pretendemos implementar na biblioteca outros
+métodos de defuzzificação, como o método do centróide
+(centro de área) [Passino e Yurkovich 1998], bem como
+permitir outras formas de representação de funções de
+pertinência, como a gaussiana [Barbosa 2005]. Outra melhoria
+a ser implementada deve aumentar a quantidade de variaveis de
+entrada suportadas pela biblioteca.
+Uma das dificuldades que também percebemos nos testes, foi
+a inconsistência dos sensores de infravermelho. Embora
+tenhamos amenizado as disparidades a partir de ajustes no
+espaço de busca das variaveis de entrada, temos como sugestão
+para futuros trabalhos a adoção de sonares tanto para leituras
+laterais como para leituras frontais, esta última, para controle
+da variação de velocidade global do robô.
+
+6
+
+CONCLUSÕES
+
+De um modo geral, as leituras adquiridas pelo robô móvel, são
+presumivelmente, suficientes para determinar as ações de
+controle apropriadas ao robô no cumprimento de seu objetivo,
+navegar com segurança em ambientes desconhecidos. Para este
+fim, usamos para o controlador, unicamente sistemas fuzzy,
+pois esse, torna possível modelar o conhecimento incerto e
+impreciso presente nestes ambientes.
+Um dos problemas associados aos sistemas fuzzy, quando
+usados como única forma de controle, é que as suas regras e
+parametros não podem ser ajustados em tempo real, e seu
+ajuste off-line acaba sendo um processo trabalhoso [Tahboub e
+Al-Din 2009]. Neste contexto, a biblioteca que nós
+apresentamos , supera esta desvantagem, deixando a
+modelagem, bem como, os futuros ajustes do sistema fuzzy,
+como uma tarefa menos trabalhosa e demorada, permitindo que
+o pesquisador utilize esta ferramenta em aplicações diversas.
+Ao analisar em ambiente real esta biblioteca, pudemos atestar
+sua viabilidade no que foi proposto por este artigo, observando
+a facilidade de ajuste do controlador, quando estes ajustes se
+mostraram necessários, assim como pudemos perceber a
+liberdade que tivemos em criar um sistema fuzzy para qualquer
+propósito. Outro ponto que destacamos na utilidade da
+biblioteca, se concentra na ausência de uma solução parecida
+para o desenvolvimento de aplicações embarcadas, onde o
+poder de procesamento é limitado.
+
+7
+
+REFERÊNCIA BIBLIOGRÁFICA
+
+Moratori, P. B., Cruz, A. J. O., Ferreira, E. B., Pedro, M. V.,
+Manhães, L.M.B., Andrade, L.C.V., Lima, C., Moratori,
+R. B. (2006) Análise de Estabilidade e Robustez de um
+Sistema de Controle Fuzzy Otimizado Desenvolvido
+para Guiar um Robô Simulado. XXV Congresso da
+Sociedade Brasileira de Computação (Brasil). P.17041714.
+6 SBA Controle & Automação Vol. 00 no. 00 / Jan., Fev., Mar, Abril de 0000
+
+Wolf, D F., Osório, F. S., Simões, E., Trindade J. O. (2009)
+Intelligent Robotics: From Simulation to Real World
+Applications, SBC - JAI 2009 - Congresso da SBC –
+Sociedade Brasileira de Computação (Brasil). SBC
+Jornada de Atualização em Informática. p. 279-330.
+Ottoni, G. L., Lages, W. F. (2000). Planejamento de Trajetórias
+para Robôs Móveis em Ambientes Desconhecidos,
+Projeto de Graduação em Engenharia de Computação,
+Universidade Federal do Rio Grande.
+Jácobo, J.E.A. (2001). Desenvolvimento de um Robô
+Autônomo Móvel Versátil utilizando Arquitetura
+Subsumption, Faculdade de Engenharia Mecânica,
+Universidade Estadual de Campinas.
+Silva, A.L.V. (2008). Arquitetura Compacta Para Projeto de
+Robôs Móveis Visando Aplicações Multipropósitos,
+Mestrado em Engenharia Elétrica, Universidade de São
+Paulo.
+Fracasso, P. T., Costa, A. H. R. (2005). Navegação Reativa de
+Robôs Móveis Autônomos Utilizando Lógica Nebulosa
+com Regras Ponderadas, Laboratório de Técnicas
+Inteligentes – LTI. Escola Politécnica da Universidade
+de São Paulo.
+Tahboub, K. K., Al-Din, M. S. N. (2009). A Neuro-Fuzzy
+Reasoning System for Mobile Robot Navigation, Jordan
+Journal of Mechanical and Industrial Engineering,
+Volume 3, Número 1, Março. 2009. ISSN 1995-6665. p
+77 – 88.
+Barbosa, D. A., (2005). Ferramenta de Desenvolvimento e de
+Aplicação de Lógica Fuzzy, Universidade Federal de
+Itajubá, dissertação de Mestrado em Engenharia
+Elétrica. Instituto de Engenharia Elétrica.
+Passino. K. M., Yurkovich. S., (1998) Fuzzy Control. Ed.
+Addison-Wesley Longman, Inc. ISBN 0-201-18074-X
+Bittencourt, G. (2006). Inteligência Artificial: Ferramentas e
+Teoria. 3. Ed. rev. Editora da UFSC. P.290. ISBN: 85328-0138-2
+Zadeh, L. (1965). Fuzzy Sets. Information and Control. v.8,
+n.3, 1965. p.338-353.
+Engelbrecht, Andries P. Computational Intelligence: An
+Introduction. Jonh Wiley & Sons, Ltd. Second Edition,
+2007
+Leal, L. B., (2011). Uma Abordagem para Estimação da
+Qualidade de Rotas em Redes de Sensores Sem Fio
+Multi-Sink Baseada em Sistemas Fuzzy Genéticos.
+Dissertação de Mestrado em Informática Aplicada.
+Universidade de Fortaleza
+Stroustrup, B. (2000). A Linguagem de Programação C++. Ed.
+Addison-Wesley. ISBN 0201700735
+Arduino (2011). Site oficial: www.arduino.cc, acessado em
+17/08/2011.
+
+

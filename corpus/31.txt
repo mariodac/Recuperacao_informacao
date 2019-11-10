@@ -1,0 +1,1412 @@
+Inteligência competitiva e suas conexões
+epistemológicas com gestão da informação e do
+conhecimento
+Ethel Airton Capuano
+Doutorando em ciência da informação pela Universidade de Brasília (UnB); mestre em gestão do conhecimento e da tecnologia da informação
+pela Universidade Católica de Brasília (UCB); especialista em redes de computadores pela Universidade Católica de Brasília (UCB)
+E-mail: eacapuano@terra.com.br
+
+Julio Casaes
+Mestrando em ciência da Informação pela Universidade de Brasília
+(UnB)
+E-mail: jcasaes@uol.com.br
+
+Julio Reis da Costa
+Mestrando em ciência da informação pela Universidade de Brasília
+(UnB)
+E-mail: jreisc@uol.com.br
+
+Resumo
+O artigo apresenta uma revisão de literatura mostrando o
+estado-da-arte conceitual na disciplina corporativa denominada
+inteligência competitiva (IC), sob um ponto de vista da ciência da
+informação (CI), explorando desenvolvimentos e experiências
+recentes. Embora já presente nas sociedades da Antiguidade,
+objeto de estudo de soberanos, pensadores e guerreiros,
+a inteligência competitiva (IC), inspirada nas atividades de
+inteligência militar, constitui tema bastante atual no mundo
+corporativo contemporâneo de competição global, com renovado
+interesse no mercado e na academia. Como o tema apresenta
+evidentes conexões epistemológicas com gestão da informação
+(GI) e gestão do conhecimento (GC), o texto busca mostrar
+como isso ocorre e as relações de causa e efeito entre as várias
+camadas de atividades vinculadas ao desenvolvimento de
+inteligência para tomada de decisão nas organizações inspirado
+no framework de Liebowitz (2006) baseado numa estrutura de
+cebola. Conceitos correlatos são também explorados, como o
+próprio conceito de GC, numa praxis composta de disciplinas
+corporativas conhecidas como aprendizado organizacional,
+gestão do capital intelectual ou capital humano e inteligência
+organizacional. Conceitos novos correlatos à inteligência
+competitiva são acrescentados ao conjunto intelligentsia galore
+de Liebowitz (2006), como capital estrutural, capital de clientela,
+capital competitivo e inteligência estratégica (IE).
+Palavras-chave
+Inteligência competitiva. Inteligência estratégica. Gestão da
+informação. Gestão do conhecimento. Inteligência artificial.
+Business intelligence. Aprendizado organizacional. Gestão
+do capital intelectual. Gestão do capital humano. Inteligência
+organizacional. Capital estrutural. Capital de clientela. Capital
+competitivo. Intelligentsia galore.
+
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+Magda Sifuentes de Jesus
+Doutoranda em ciência da informação pela Universidade de Brasília
+(UnB)
+E-mail: magdasj@terra.com.br
+
+Marco Antonio Machado
+Mestrando em ciência da informação pela Universidade de Brasília
+(UnB)
+E-mail: marcomachado03@yahoo.com.br
+
+Competitive intelligence and its
+epistemologic conections with information
+and knowledge management
+Abstract
+The article presents a literature’s review showing the conceptual
+state-of-the-art of the corporate discipline called Competitive
+Intelligence (CI), from a point of view of Information Science (IS),
+exploring developments and experiences in the organizations.
+Although present in the ancient societies, subject of study of
+emperors, thinkers and warriors, Competitive Intelligence (CI),
+inspired in military intelligence activities, is a contemporary
+theme in the corporate world of global competition with renewed
+concern in market and academy. As the theme presents evident
+epistemological connections with Information Management
+(IM) and Knowledge Management (KM), the text aims to show
+how this happens and the relationship of cause and effect
+among several ranks of activity linked to the development of
+intelligence and decision making in the organizations, inspired in
+the Liebowitz’s (2006) framework based on an onion structure.
+Correlated concepts are also explored, as the concept of KM
+itself, in a praxis integrated by corporate disciplines, is called
+organizational learning, intellectual capital or human capital
+management, and organizational intelligence. Other new
+concepts connected to CI are included in the Liebowitz’s (2006)
+intelligentsia galore set, as structural capital, customer capital,
+competitive capital, and Strategic Intelligence (SI).
+Keywords
+Competitive intelligence. Strategic intelligence. Information
+intelligence. Knowledge management. Artificial intelligence.
+Business intelligence. Organizational learning. Intellectual capital
+management. Human capital management. Organizational
+intelligence. Structural capital. Customer capital. Competitive
+capital. Intelligentsia galore.
+
+19
+
+Ethel Airton Capuano / Julio Casaes / Julio Reis da Costa / Magda Sifuentes de Jesus / Marco Antonio Machado
+
+INTRODUÇÃO
+Este artigo pretende contribuir para a elicitação
+de conexões epistemológicas interdisciplinares da
+inteligência competitiva (IC) em linhas de pesquisas
+de Gestão da informação e do conhecimento (Gico)1 tais
+como as do Programa de Pós-graduação em ciência
+da informação do Departamento de Ciência da
+Informação e Documentação da Universidade de
+Brasília (PPGCInf/CID/UnB). Embora o tema
+não constitua novidade nos países desenvolvidos,
+questões envolvendo a ciência da informação
+(CI) geralmente não são abordadas nas obras
+publicadas, constituindo um campo de pesquisas
+a ser desenvolvido. O texto também apresenta
+conteúdos práticos, como referências a estudos
+de casos, que mostram a viabilidade dessa linha de
+pesquisas no sentido da produção de significados
+(conhecimento) nas organizações a partir da
+integração e expansão dos conceitos de gestão da
+informação (GI), gestão do conhecimento (GC)
+e inteligência competitiva (IC), prevendo uma
+composição sinérgica e promissora.
+O problema abordado na ciência da informação (CI),
+que se refere ao uso da informação na construção
+de significados (CHOO, 2003) ou de inteligência nas
+organizações, para sua sobrevivência em mercados
+competitivos tem sido apresentado em publicações
+mais recentes no Brasil, algumas traduzidas de
+publicações no exterior. O artigo de Santos (2000),
+por exemplo, relata que estudos recentes apontam
+que a maioria dos executivos nas organizações,
+apesar da inundação de informações, muitas delas
+relevantes, teme errar no processo de tomada de
+decisão. Este autor apresenta, ainda, outro dado
+interessante que representa a ponta do iceberg do
+problema da inteligência nas organizações: estudos
+Conhecimento é um conceito filosófico abordado desde a Antiguidade
+clássica por Platão e Aristóteles, por exemplo, mas nem sempre bem
+compreendido no ambiente das organizações. A obra de Hessen
+(1976) apresenta uma introdução conceitual que ilustra a problemática
+do conhecimento do ponto de vista fenomenológico, bastante útil
+para definições epistemológicas mais rigorosas do termo no ambiente
+acadêmico.
+
+sobre causas de falências de empresas apontam
+que 70% dos casos se devem a um conhecimento
+incompleto de seu ambiente – clientes, concorrentes,
+fornecedores, regulamentação governamental, etc.
+Esse cenário desanimador dos processos decisórios,
+mesmo com o desenvolvimento acelerado e uso cada
+vez mais pervasivo de tecnologias da informação e
+comunicação (TICs), não parece ter melhorado nos
+últimos anos, pois as próprias bases epistemológicas
+dos sistemas de informação (SI) baseados em
+computação eletrônica têm sido contestadas à
+medida que os casos de fracassos de projetos se
+tornam predominantes nas organizações (SANTOS,
+2000 e NEVO; WADE, 2007).
+É nesse contexto de apresentação da inteligência
+competitiva como objeto de estudo que o artigo se
+subdivide em quatro partes essenciais a partir deste
+ponto: conceituação de inteligência competitiva
+com base na literatura, identificação de conexões
+epistemológicas entre gestão da informação e
+conhecimento e inteligência competitiva, referências
+a casos de inteligência competitiva na prática e
+conclusões no escopo da ciência da informação
+(CI). Os textos utilizados na revisão de literatura
+são variados, alguns da administração, outros mais
+específicos da CI, mas concentrados no tema,
+de várias épocas e contextos históricos. O texto
+não pretende apontar modelos de inteligência
+competitiva para as organizações, assunto muito
+complexo que demandará, certamente, expressivos
+esforços nesse sentido, mas apenas realçar os tópicos
+epistemológicos considerados mais relevantes para
+mostrar como essa nova disciplina corporativa poderá
+se inserir, conceitualmente, em linhas de pesquisas
+de gestão da informação e do conhecimento
+em programas de pós-graduação em ciência da
+informação (CI).
+
+1
+
+20
+
+CONCEITOS
+O conceito de inteligência, neste artigo, situa-se no
+ambiente das organizações e é o mesmo de Fuld
+(1994, p. 24), citado por Santos (2000): proposições
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+Inteligência competitiva e suas conexões epistemológicas com gestão da informação e do conhecimento
+
+que permitem tomar decisões. O argumento central para
+a defesa desse conceito se baseia no argumento
+que é a inteligência, e não a informação, que auxilia
+o administrador a tomar decisões corretas no
+ambiente corporativo.
+
+É informação sobre produtos específicos e
+tecnologia. Também é monitoramento de
+informação externa que afeta o mercado da
+organização, como, por exemplo, a informação
+econômica, regulatória, política e demográfica.
+
+A expressão inteligência competitiva pode ser definida,
+segundo Queyras e Quoniam (2006), como
+um processo de aprendizagem motivado pela
+competição, fundada sobre a informação que
+permite a otimização da estratégia da organização
+a curto e longo prazo. Conforme Kahaner (1997), a
+inteligência competitiva (IC) tem se tornado a última
+arma na guerra mundial da economia, que coloca
+nação contra nação, deslocando o eixo de poder
+das armas de destruição tradicionais em direção a
+armas econômicas baseadas no uso da inteligência nas
+organizações. Esse autor observa que a inteligência
+competitiva há muito integra a política industrial
+japonesa e está se tornando um componente oficial
+das políticas industriais de vários países europeus
+e dos EUA, ressaltando que apesar de o número
+de empresas americanas praticando inteligência
+competitiva ainda ser relativamente pequeno, ela é
+a disciplina corporativa de crescimento mais rápido
+atualmente.
+
+De modo geral, as definições e conceitos de
+inteligência competitiva convergem bastante na
+literatura. Kahaner (1997, p. 16), por exemplo,
+conceitua inteligência competitiva como:
+
+De um ponto de vista mais conceitual de interesse
+da ciência da informação (CI), Tarapanoff (2001)
+esclarece que a inteligência competitiva representa
+uma nova síntese teórica no tratamento da informação
+para a tomada de decisão nas organizações, uma
+metodologia que permite o monitoramento
+informacional da ambiência e, quando sistematizada
+e analisada, a tomada de decisão. A inteligência
+competitiva, para a autora, é composta de diversos
+tipos de informação – tecnológica, ambiental
+e sobre o usuário, competidores, mercados e
+produtos, conceito complementado com a visão
+de um processo sistemático que transforma pedaços esparsos
+de dados em conhecimento estratégico. Entretanto, uma
+versão simplificada do conceito de inteligência
+competitiva mais próximo do senso comum seria,
+ainda, apresentada por Tarapanoff (2001, p. 45):
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+(...) um programa sistemático para coletar e
+analisar informação sobre as atividades de seus
+competidores e tendências de negócios para
+atingir os objetivos da empresa.
+Tarapanoff (2001, p. 46) ainda cita Tyson (1998),
+argumentando que em sentido mais amplo a
+inteligência competitiva orienta as organizações a
+manter um foco no ambiente externo continuamente,
+de modo a estudar os competidores e qualquer
+outra coisa que possa tornar a organização mais
+competitiva e posicioná-la melhor no mercado.
+Outro aspecto interessante da inteligência
+competitiva se reporta ao seu posicionamento nas
+estruturas organizacionais: enquanto alguns autores
+defendem que ela constitui um processo, como
+Kahaner (1997), outros argumentam que ela deve
+ser tratada como uma função com estrutura formal
+nas organizações, como Prescott e Miller (2001).
+McGee e Prusak (1994) e Porter (1986) tendem a
+encaixar a inteligência competitiva numa visão de
+planejamento estratégico, como a da necessidade
+de se desenvolver um sistema de inteligência
+sobre os concorrentes, e Davenport (2000) prevê
+a inteligência competitiva como uma visão em sua
+concepção holística de ambiente informacional
+(ecologia da informação). Outra visão interessante
+é a de Santos (2000), que define o problema de
+modo bastante simples e didático: em geral, as
+organizações têm dificuldade não para coletar e
+armazenar informações para tomada de decisão,
+mas sim para processá-las de modo a se tornarem
+21
+
+Ethel Airton Capuano / Julio Casaes / Julio Reis da Costa / Magda Sifuentes de Jesus / Marco Antonio Machado
+
+úteis no processo. Ou seja, o problema se deve à
+falta de entendimento sobre o fim a que se destina
+a informação: o consumo e não o estoque.
+Kahaner (1997, p. 23-30) argumenta que a
+inteligência competitiva deve constituir um programa
+formalizado e ter como objetivos, entre outros:
+a) antecipar mudanças no mercado e nas ações dos
+competidores;
+b) descobrir novos ou potenciais competidores;
+c) aumentar as opções e a qualidade das empresas
+alvo de aquisições;
+d) aprender sobre novas tecnologias, produtos e
+processos que afetam os negócios da organização;
+e) aprender sobre mudanças políticas, legislativas ou
+regulatórias que podem afetar os negócios;
+f) entrar num novo negócio;
+g) olhar as próprias práticas de negócio com mente
+aberta; e
+h) auxiliar na implementação das mais atuais
+ferramentas de gestão.
+Como se pode ver nessa percepção, os problemas
+epistemológicos derivados dos objetivos corporativos
+atribuídos à prática da inteligência competitiva são
+bastante amplos, exigindo o desenvolvimento
+de métodos e técnicas para coleta, análise e
+disseminação de informação e insights úteis em escala
+nunca antes experimentada na sociedade.
+CONEXÕES EPISTEMOLÓGICAS
+Informação e decisão nas organizações
+Menezes (2005) apresenta extensa revisão histórica
+da literatura sobre a inserção do tema inteligência
+competitiva em publicações de periódicos da ciência
+da informação (CI) no Brasil e no mundo. Embora
+cada autor desenvolva seus argumentos ressaltando
+aspectos diversos no tema, dois pontos convergem
+22
+
+de modo claro para que se possa estabelecer
+conexões epistemológicas entre inteligência
+competitiva (IC) e a ciência da informação (CI): (1)
+o processo de tomada de decisão nas organizações
+e (2) a interação informacional da organização com
+o ambiente externo. O primeiro ponto, apesar de
+endereçado há muito pela administração, como nas
+obras seminais de Simon (1976) e Argyris (1978 e
+1991), tem despertado atenções e motivado linhas de
+pesquisa na CI inspiradas em trabalhos mais recentes
+de autores mundialmente reconhecidos, tais como
+Choo (2003, 1998 e 1991), Nonaka e Takeuchi (1997)
+e Daft e Weick (1984). Quanto ao segundo ponto,
+o problema tem sido tratado principalmente nas
+publicações de Davenport (2000), McGee e Prusak
+(1994), Porter (1986) e outros. Choo (2003), na obra
+que está se tornando um clássico na CI, apresenta
+uma síntese epistemológica contemporânea útil para
+a teorização acerca dos processos de tomada de
+decisão nas organizações, argumentando que:
+O conhecimento organizacional é uma
+propriedade coletiva da rede de processos de
+uso da informação, por meio dos quais os
+membros da organização criam significados
+comuns, descobrem novos conhecimentos e se
+comprometem com certos cursos de ação. O
+conhecimento organizacional emerge quando os
+três processos de uso da informação – criação
+de significado, construção do conhecimento e
+tomada de decisões – se integram num ciclo
+contínuo de interpretação, aprendizado e ação.
+(CHOO, 2003, p. 420).
+Outros autores, como McGee e Prusak (1994), Maury
+(1993), Porter (1986) e Jacobiak (1996), evidenciam
+a necessidade de uso da informação como arma dos
+negócios, num mundo globalizado e competitivo,
+em disciplinas da administração conhecidas como
+gestão estratégica, desenvolvimento organizacional
+e inteligência organizacional. Outros, na tradição
+francesa, como Queyras e Quoniam (2006),
+mas também Jacobiak (1996), concentram-se no
+monitoramento ambiental, ou monitoramento
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+Inteligência competitiva e suas conexões epistemológicas com gestão da informação e do conhecimento
+
+tecnológico (veille technologique), entendido como a
+aquisição e o uso de informações sobre eventos,
+tendências e relações da organização com seu
+ambiente externo, além do conhecimento que
+auxiliará os gerentes a planejar futuras ações
+(MORESI, 2001).
+O trabalho de Marcial (2007) também merece
+atenção pela elicitação de variáveis principais
+(elementos-chave) no desenvolvimento de sistemas
+de inteligência competitiva nas organizações.
+A autora reconhece a multidisciplinaridade da
+inteligência competitiva e argumenta que as áreas
+do conhecimento científico que suportam os
+processos e atividades de inteligência competitiva
+são administração, ciência da informação, ciência
+da computação, comunicação, psicologia, filosofia,
+matemática, lógica e estatística.
+Day, Reibstein e Gunther (1999) fundem os conceitos
+de inteligência utilizados na administração com a
+disciplina de inteligência competitiva apresentando,
+detalhadamente, estratégias competitivas em
+ambientes de negócio dinâmicos. Os autores
+abordam, entre outros recursos analíticos, a Teoria
+dos Jogos com objetivo de simulação de estratégias
+competitivas, elegendo a própria simulação como
+um método de análise de cursos de ação estratégica.
+Aoki e Dore (1996), na tradição japonesa, não
+abordam diretamente a inteligência competitiva,
+mas apresentam obra bastante esclarecedora
+sobre as estratégias competitivas das empresas
+transnacionais do Japão, que sugerem uma inteligência
+organizacional – ou seja, uma inteligência espelhada
+no próprio modelo de organização da produção.
+Conforme Moresi (2001), um dos primeiros
+pesquisadores a estudar o ambiente como fonte
+de informação foi William Dill (DILL, 1958),
+sugerindo que a melhor maneira de analisar o
+ambiente não é tentando entendê-lo como um
+conjunto de outros sistemas ou organizações, mas
+vê-lo como informação que se torna disponível
+para a organização ou a que a organização possa
+ter acesso. Embora tal visão se configure um
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+reducionismo epistemológico, com as implicações
+inerentes, sua vantagem está na simplicidade e
+pragmatismo, recurso que em geral se apresenta útil
+para compreensão do meio empresarial externo e
+uso na disciplina inteligência competitiva.
+Esse acervo, em termos filosóficos, adota abordagens
+fenomenológicas do conhecimento na investigação
+dos processos de aquisição e tratamento da
+informação nos ambientes organizacionais para
+tomada de decisão.
+Monitoramento externo
+Choo (1998) observa que, sob a perspectiva da
+informação, qualquer mudança ou desenvolvimento
+no ambiente externo das organizações cria sinais e
+mensagens para os quais devem dedicar atenção.
+Esses sinais podem ser fracos (quando difíceis
+de serem detectados), confusos (difíceis de serem
+analisados) ou espúrios (quando não indicam
+mudanças verdadeiras). O segredo para executar
+a árdua tarefa de colecionar informações externas
+úteis para uma organização que pretende praticar
+inteligência competitiva, portanto, encontra-se na
+seletividade das informações do ambiente a serem
+trabalhadas.
+Santos (2000) apresenta como evidência concreta
+da importância do desenvolvimento de processos,
+procedimentos, metodologias e ferramentas de
+monitoramento informacional ambiental nas
+organizações a iniciativa pioneira da França com a
+norma denominada “XP X 50-053 – Prestations de
+Veille et Prestations de Mise en Place d’un Système de Veille2,
+editada pela Association Française de Normalisation
+(AFNOR). Essa norma, conforme Santos (2000),
+aplica-se essencialmente à prestação de serviços de
+implantação e de operação de célula de inteligência
+competitiva para vigilância ativa do ambiente
+tecnológico, comercial (concorrencial), econômico,
+sociológico, geopolítico, jurídico, normativo, entre
+outros, de uma organização, tendo duplo objetivo:
+Tradução aproximada: Prestação de Serviços de Monitoramento
+e Prestação de Ser viços de Implantação de Sistema de
+
+2
+
+23
+
+Ethel Airton Capuano / Julio Casaes / Julio Reis da Costa / Magda Sifuentes de Jesus / Marco Antonio Machado
+
+I. facilitar a relação entre profissionais de inteligência
+competitiva com seus clientes por meio de uma
+terminologia comum, especificação de oferta
+de informação, classificação de papéis e de
+comprometimentos recíprocos;
+II. contribuir para elevar a qualidade da prestação
+de serviços de inteligência competitiva.
+
+interpretativas (subjetivas). Os autores da
+administração mencionados anteriormente, de
+base filosófica fenomenológica, adotam abordagens
+predominantemente interpretativas.
+O algoritmo básico das atividades de monitoramento
+ambiental, para Moresi (2001, p. 95), é composto por
+cinco fases:
+
+O monitoramento externo não é uma atividade
+monolítica e a pesquisa em teoria da organização
+sugere, conforme Choo (1998), quatro modos
+de monitoramento: observação (ou visualização)
+indireta, observação condicionada, procura informal
+e procura formal (ver na tabela 1 resumo da
+elaboração de Daft e Weick (1984)).
+
+a) procura por recursos de informação;
+
+Moresi (2001) argumenta, ainda, que a informação
+obtida no ambiente externo deve estar alinhada
+ao seu processamento em uma organização,
+a qual se baseia em duas grandes linhas de
+pesquisa: de abordagens racionais e de abordagens
+
+e) determinação das ações especiais a serem tomadas
+em face dos resultados do monitoramento.
+
+b) seleção dos recursos de informação para
+monitorar;
+c) identificação dos critérios de monitoramento;
+d) execução do monitoramento;
+
+Kahaner (1997, p. 44) apresenta, de modo
+esquemático, o ciclo de inteligência, conforme
+
+TABELA 1
+Modelo de coleta, interpretação e uso da informação nas organizações
+Observação Direta
+
+Procura Informal
+
+1. Característica: fontes externas e impessoais.
+2. Processo de interpretação: redução de
+equivocidade, algumas regras, muitos ciclos.
+3. Estratégia e tomada de decisão: reação e
+processo de coalisão.
+
+1. Características: fontes externas e pessoais,
+informação seletiva.
+2. Processo de interpretação: redução de
+equivocidade, regras e ciclos moderados.
+3. Estratégia e tomada de decisão: prospecção,
+tentativa e erro incremental.
+
+Observação Condicionada1
+
+Procura Formal
+
+1. Características: fontes internas e impessoais,
+registros regulares e sistemas de informação,
+rotina.
+2. Processo de interpretação: redução de
+equivocidade, muitas regras, alguns ciclos.
+3. Estratégia e tomada de decisão: defensiva,
+processo programado, procura orientada ao
+problema.
+
+1. Características: fontes internas e impessoais,
+estudos especiais, informação vasta.
+2. Processo de interpretação: redução de
+e q u ivo c i d a d e, mu i t a s r e g r a s e c i c l o s
+moderados.
+3. Estratégia e tomada de decisão: análise,
+análise de sistemas, computação.
+
+24
+
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+Inteligência competitiva e suas conexões epistemológicas com gestão da informação e do conhecimento
+
+a figura 1, composto de quatro fases básicas:
+planejamento e direção, coleta, análise e disseminação.
+Esse ciclo de atividades para transformação de
+informação em inteligência competitiva partiria,
+portanto, de atividades de planejamento e direção
+estratégicas, passando a seguir para a coleta de
+informações propriamente dita, depois para a
+fase de análise e, finalmente, para a disseminação
+sistemática dessa inteligência nas áreas usuárias
+na organização. A fase de análise de informações
+coletadas, sistematicamente, sobre o ambiente
+externo exigirá, em versão contemporânea da
+inteligência competitiva, conexões consistentes com
+atividades de gestão da informação (GI) e gestão do
+conhecimento (GC), pois informações externas ao
+serem internalizadas necessitam percorrer fluxos
+internos para construção de significados (Choo,
+2003). A trama e as implicações das conexões
+epistemológicas entre inteligência competitiva,
+gestão da informação e gestão do conhecimento
+serão discutidas mais adiante neste artigo.
+Kahaner (1997) propõe, também, a classificação das
+fontes de informação sobre o ambiente externo em
+primárias e secundárias:
+Fontes primárias
+• relatórios anuais
+• documentos governamentais
+• conversas (ou discursos)
+• entrevistas na TV ou no rádio (ao vivo)
+• relatórios financeiros de empresas
+Fontes secundárias
+• jornais
+• revistas
+• livros
+• programas gravados de TV e rádio
+• relatórios de analistas
+Como técnicas de análise ambiental, Kahaner (1997)
+propõe SWOT (Strengths, Weaknesses, Oportunities
+and Threads), Benchmark, Data Mining e Text Mining
+para monitoramento externo. E sugere o uso de
+Balanced Scorecard (BSC), gestão da informação e do
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+FIGURA 1
+Ciclo de inteligência organizacional
+
+conhecimento (Gico) e Business Intelligence (BI) para
+a análise do ambiente de informações interno das
+organizações.
+Na visão de Fleisher e Bensoussan (2007), para
+conhecer e entender o dinâmico e complexo
+contexto das organizações, é preciso adquirir o
+domínio de amplo conjunto de métodos e técnicas,
+tais como a análise estratégica, da competitividade,
+dos consumidores, de modelos evolucionários
+e financeiros que possibilitam transformar a
+abundante quantidade de dados e informações em
+uma forma útil para a tomada de decisão e ação.
+Inteligência competitiva e gestão do
+conhecimento
+Queyras e Quoniam (2006) argumentam que a
+informação é a chave do desenvolvimento da
+inteligência competitiva porque permite, com
+métodos de estruturação e análise, a criação
+de conhecimento para os usuários. Com isso,
+evidenciam uma conexão natural existente entre a
+gestão da informação, a gestão do conhecimento e
+a inteligência competitiva que parece ainda pouco
+desenvolvida na ciência da informação, embora
+se perceba a tendência de integração desses
+conceitos em outras áreas de pesquisas, como na
+administração. Essa tendência, consequentemente,
+implica não somente a integração de conceitos, mas
+25
+
+Ethel Airton Capuano / Julio Casaes / Julio Reis da Costa / Magda Sifuentes de Jesus / Marco Antonio Machado
+
+de políticas e práticas de inteligência competitiva
+e gestão do conhecimento nas organizações, num
+movimento corporativo sinérgico no sentido “do
+conhecimento de si mesmo e conhecimento do
+inimigo” (SUN TZU, 2008, p. 41).
+Prescott e Miller (2001, p. xi), por exemplo, recordam
+palavras de um guru da estratégia, Liam Fahey, para
+argumentar que se deve olhar para os competidores
+como um meio de analisar a si mesmo e perguntar
+Como é o meu desempenho? Outra abordagem
+prática pró inteligência competitiva seria, conforme
+os autores, aquela explícita num aviso de Gary
+Costly, antigo presidente da Kellogg nos EUA:
+O grande retorno da inteligência competitiva é
+que ela apontará os pontos fracos que você tem
+internamente por causa dos pontos fortes de
+seus competidores. Empresas que não fazem
+isto fracassarão (PRESCOTT; MILLER, 2001,
+p. xi).
+Esses autores estabelecem uma conexão direta
+entre gestão do conhecimento e inteligência
+competitiva ao obser var que a inteligência
+competitiva tem se beneficiado dos avanços da
+infraestrutura tecnológica e da elevação da gestão
+do conhecimento a uma função dominante nas
+empresas. E argumentam que a integração da gestão
+do conhecimento pelas estruturas organizacionais
+está auxiliando a inteligência competitiva ter seu
+valor reconhecido. Outro ponto de conexão
+epistemológica entre gestão do conhecimento e
+inteligência competitiva estabelecido pelos autores
+se concentra em argumento bastante convincente: o
+conhecimento deve ser produzido e analisado antes
+de ser comunicado (disseminado) e “gerenciado”
+(PRESCOTT; MILLER, 2001, p. xiii), restrição
+que se aplica tanto a dados gerados internamente
+quanto para a inteligência obtida fora dos limites
+da empresa.
+Breeding (2001) apresenta um caso concreto
+de integração de gestão do conhecimento com
+inteligência competitiva na Shell, registrando que a
+26
+
+iniciativa de inteligência competitiva na empresa tem
+sido impactada positivamente pelo uso extensivo
+de gestão do conhecimento. O autor revela que na
+Shell criou-se algo denominado Competitive Intelligence
+Knowledgehouse (Armazém de Conhecimento para
+Inteligência Competitiva), baseado na intranet, que
+é um sistema de gestão do conhecimento com visão
+aprofundada dos competidores e mercados da Shell.
+O sistema possui três componentes básicos e 16
+módulos, sendo o primeiro componente destinado
+aos usuários com necessidade de conhecimento
+prático de inteligência competitiva produzido
+na própria empresa, o segundo aos usuários
+que necessitam de informações de pesquisas
+de outras fontes (mais de 100), e o terceiro ao
+compartilhamento do conhecimento, em que o
+usuário se integra em comunidades de prática e tem
+acesso a outros recursos de colaboração.
+Considerando-se a quantidade de obras consolidadas
+disponíveis no mercado, tais como a de Liebowitz
+(2006), não se pode duvidar que a integração de
+vários conceitos de inteligência corporativa não
+deverá tardar, na prática, nos projetos de novos
+modelos de gestão. A obra de Liebowitz (2006)
+não é a única nessa linha de raciocínio, mas é
+interessante porque lança, de modo explícito, a
+ideia de consolidação dos conceitos de Business
+Intelligence (BI), inteligência competitiva e gestão
+do conhecimento3 no mesmo framework de gestão
+da informação e do conhecimento que o autor
+denomina Inteligência Estratégica (IE).
+Liebowitz (2006) justifica esse novo construto
+teórico integrador com o argumento que ele se
+aplica ao aperfeiçoamento do processo de tomada de
+decisão estratégica em uma organização, visão que
+
+Ciente da polêmica epistemológica sobre a possibilidade de gestão
+do conhecimento, Liebowitz (2006, p. 4) afirma acreditar nessa
+linha doutrinária, mas ao longo de sua obra percebe-se que sua
+abordagem é um tanto conservadora, apoiando sua visão de gestão
+do conhecimento em correntes mais centradas na gestão do capital
+humano e no uso de sistemas e tecnologias da informação para criar
+ambientes favoráveis ao aprendizado organizacional e individual.
+
+3
+
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+Inteligência competitiva e suas conexões epistemológicas com gestão da informação e do conhecimento
+
+surgiu de sua experiência profissional com gestão do
+conhecimento, inteligência de negócios e inteligência
+competitiva, observando que as comunidades
+de profissionais de cada uma dessas áreas atuam
+isoladamente. A obra destaca também conexões
+com áreas de estudo conhecidas como aprendizado
+organizacional, gestão do capital intelectual ou
+capital humano, inteligência organizacional, e
+apresenta conceitos novos como capital estrutural,
+capital de clientela e capital competitivo.
+O capital humano seria o poder cognitivo (brainpower,
+no original) dos empregados da organização; o
+capital estrutural se refere aos ativos intangíveis
+(como patentes e direitos de propriedade intelectual);
+o capital de clientela seria a carteira de clientes,
+parceiros e colaboradores da organização (social or
+relationship capital); o capital competitivo referente
+ao conhecimento que a organização tem acerca de
+seus competidores no mercado. Esse conjunto de
+construtos de gestão organizacional contemporânea
+é condensado pelo autor no termo intelligentsia galore4,
+ilustrado na figura 2 como uma cebola de camadas
+operativas de inteligência (LIEBOWITZ, 2006, p.
+14).
+Observe-se, na figura 2, o papel da inteligência artificial
+(IA) como núcleo operacional (computacional) do
+framework modelado por Liebowitz, demonstrativo
+do renovado entusiasmo acerca dessa cinquentenária
+disciplina como ferramenta metodológica e
+tecnológica do processamento de informações
+para tomada de decisão nas organizações em
+contextos de gestão do conhecimento e inteligência
+competitiva.
+O autor destaca esse aspecto do framework
+argumentando que como a inteligência artificial trata
+de temas ligados aos processos de raciocínio humano,
+parece natural que a gestão do conhecimento adote
+alguns desses conceitos para auxiliar as pessoas a
+capturar, organizar e compartilhar o conhecimento
+internamente na organização e externamente com
+4
+
+FIGURA 2
+Framework de Inteligência Organizacional
+
+seus patrocinadores (LIEBOWITZ, 2006, p. 14).
+O modelo pictórico da cebola na figura 2 significa
+que a gestão do conhecimento (GC) nos ambientes
+organizacionais suporta, do ponto de vista
+epistemológico, a inteligência de negócios (BI),
+que por sua vez suporta a inteligência competitiva
+(IC), que, finalmente, suporta iniciativas de
+desenvolvimento de inteligência organizacional
+condensadas sob o título de inteligência estratégica.
+O modelo da cebola também mostra onde ocorre
+cada tipo de atividade de inteligência numa
+organização, partindo da computação eletrônica
+inerente à inteligência artificial dentro da organização
+até a prática da inteligência competitiva e inteligência
+estratégica num nível fronteiriço entre o ambiente
+interno e externo da organização.
+É interessante também o pensamento de Liebowitz
+(2006) acerca do próprio conceito de gestão do
+conhecimento:
+KM consiste na identificação e captura do
+conhecimento, compartilhamento do conhecimento, aplicação do conhecimento e criação do
+conhecimento (LIEBOWITZ, 2006, p. 15).
+
+Inteligência suficiente.
+
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+27
+
+Ethel Airton Capuano / Julio Casaes / Julio Reis da Costa / Magda Sifuentes de Jesus / Marco Antonio Machado
+
+Informação mais insights e experiência se
+transformam em conhecimento (LIEBOWITZ,
+2006, p. 7).
+Outro autor que destaca essa sinergia natural e
+necessária nos temas de estudo ligados à inteligência
+organizacional é Terra (2008a), argumentando
+que processos de gestão do conhecimento e
+inteligência competitiva devem compartilhar dos
+mesmos direcionamentos estratégicos, taxonomia
+e infraestrutura de tecnologia da informação.
+Ele argumenta que gestão do conhecimento e
+inteligência competitiva podem ser implementados
+em uma organização de diversas maneiras, mas serão
+necessários, para garantia de sucesso, os seguintes
+fatores:
+• aderência aos objetivos estratégicos da empresa;
+• forte mudança cultural;
+• implementação de novos processos informais e
+formais;
+• uso de tecnologias de infor mação e
+comunicação;
+• governança bem articulada e estruturada;
+• envolvimento de profissionais altamente
+qualificados; e,
+• avaliação de resultados.
+Os vários estudos de caso detalhados na obra de
+Liebowitz (2006), por exemplo, reforçam uma visão
+otimista na qual práticas de gestão do conhecimento
+e inteligência competitiva podem ser implemen-tadas
+em qualquer tipo de organização, seja ela pública
+ou privada, com fins lucrativos ou não, ou seja,
+independemente do seu porte, ramo de ativi-dade
+ou finalidade a que se destina. Entretanto, conforme
+dados empíricos mencionados por Liebowitz (2006),
+não se deve alimentar ilusões quanto ao tempo
+mínimo de maturação de iniciativas de mudanças
+culturais dessa magnitude nas organizações, que
+pode consumir mais de uma década.
+INTELIGÊNCIA COMPETITIVA NAS
+ORGANIZAÇÕES
+Pioneiros
+A busca por registros que permitam traçar as origens
+da inteligência competitiva revela que o uso da
+28
+
+inteligência militar, econômica, comercial, religiosa
+ou política tem existido na China por mais de cinco
+mil anos (JUHARI; STEPHENS, 2006). Textos
+religiosos de 3.000 anos descrevem situações em que
+a inteligência é utilizada em processos de tomada de
+decisão (WALLE, 2001). Também no âmbito militar,
+estrategistas como Circa e Sun Tzu, há mais de 2.500
+anos já enfatizavam a importância da inteligência e
+o valor da informação.
+Na obra milenar A arte da guerra, contemporaneamente
+adaptada para os mais diversos contextos sociais e
+econômicos (PRESCOTT; MILLER, 2001, p. 2),
+Sun Tsu prescreveu que:
+Se você conhece o inimigo e conhece a si mesmo,
+você não precisa temer o resultado de cem
+batalhas. Se você conhece a si mesmo, mas não
+conhece o inimigo, para cada vitória ganha você
+também vai sofrer uma derrota. Se você não
+conhece nem o inimigo nem a si mesmo, você
+sucumbirá em cada batalha.
+Analisando-se o modelo de sabedoria milenar de
+Sun Tzu, ao qual é atribuída a paternidade da função
+inteligência nas organizações, pode-se raciocinar que o
+conhecimento do inimigo seria missão da inteligência
+competitiva e o conhecimento de si mesmo missão
+da GC, com base na GI. Essa abordagem analítica
+se reporta à Teoria dos Jogos (PRESCOTT; MILLER,
+2001, p. xii), objeto de desenvolvimento também
+no ambiente corporativo buscando-se a seleção de
+cursos de ação em situações complexas nos ambientes
+de negócios. As implicações epistemológicas de A
+arte da guerra, portanto, estão no cerne da inteligência
+competitiva, constituindo potencial disciplina
+corporativa com linhas de pesquisas promissoras
+devido à complexidade da dinâmica dos negócios
+no mundo globalizado.
+Em termos históricos, Kahaner (1997, p. 16)
+argumenta que a inteligência competitiva, na
+modernidade, tem suas origens bem definidas e
+enorme potencial instrumental:
+
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+Inteligência competitiva e suas conexões epistemológicas com gestão da informação e do conhecimento
+
+Adaptada a partir de técnicas utilizadas pelas
+agências de inteligência política e militar da
+época da Guerra Fria, inteligência competitiva
+é um simples processo de quatro passos que
+pode, em última análise, viabilizar ou quebrar
+empresas de qualquer tamanho, em qualquer
+ramo de negócio.
+E cita, ainda, como metáfora motivadora da prática
+de inteligência competitiva nas organizações,
+célebre lema de Frederico (Barba Ruiva), o Grande
+(imperador germânico da Idade Média): “É perdoável ser derrotado, mas nunca ser surpreendido”.
+Prescott e Miller (2001) reforçam a tese sobre as
+origens da inteligência competitiva nas organizações,
+argumentando que ela herdou as práticas e o
+conhecimento das agências governamentais de
+inteligência e dos grupos de inteligência militar.
+Inteligência competitiva como disciplina
+corporativa
+Como ilustração da necessidade da inteligência
+competitiva nas organizações contemporâneas,
+Kahaner (1997) transcreve um diálogo que
+teve com Bill McGowan, então chief executive
+officer - CEO, ou executivo-chefe) da empresa
+transnacional norte-americana MCI, do ramo de
+telecomunicações. O autor esclarece que um dia
+perguntou a McGowan:
+– Qual é a essência do seu trabalho?
+Sem hesitação, o executivo respondeu:
+– Tomar decisões. Se eu tomo a decisão correta,
+eu sou um herói. Se eu tomo a decisão errada,
+eu sou um pária5.
+Prosseguindo na entrevista, Larry Kahaner
+indaga:
+– Como você toma decisões?
+Resposta de Bill McGowan:
+5
+
+Tradução aproximada para o termo bum, do idioma inglês.
+
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+– Eu coleto tanta informação quanto eu puder,
+de tantas fontes quanto eu tiver acesso, raciocino
+sobre tudo, então eu decido o que fazer.
+Kahaner (1997) concluiu, então, que era por esse
+motivo que o executivo lia tanto sobre tudo –
+era o seu modo de transformar informação em
+inteligência útil. E essa é, geralmente, a missão dos
+executivos das organizações: tomar decisões do
+modo mais seguro e abalizado possível, com base
+nas informações e no conhecimento disponível no
+momento da decisão. Esse autor apresenta breve
+retrospectiva do interesse recente pela inteligência
+competitiva no mundo corporativo, observando
+que se trata de área relativamente nova e ainda não
+desenvolvida nos EUA, onde menos de 7% das
+grandes empresas teriam, há uma década, as próprias
+divisões de inteligência competitiva e a maior parte
+seria relativamente recente – 80% delas teriam
+menos de cinco anos de idade.
+Outra fonte, referenciada em Prescott; Miller (2001),
+traz dados estatísticos mais recentes, baseados em
+pesquisa de 1998 do The Futures Group, segundo a
+qual 82% das maiores empresas multinacionais nos
+EUA com faturamento maior que US$ 10 bilhões
+anuais teriam unidade organizada de inteligência
+competitiva.
+Outro ponto relevante nessa análise se reporta ao
+ambiente corporativo japonês que, em contraste,
+possui tradição mais antiga de inteligência competitiva
+(KAHANER, 1997, p. 16-17):
+As empresas japonesas (...) têm tido sistemas
+de inteligência competitiva bem estabelecidos
+desde a 2ª Guerra Mundial, apesar de sua história
+de coleta de inteligência econômica remontar a
+muitos séculos. Sua atual infra-estrutura inclui
+empresas de comércio (sogo shosha) e agências
+governamentais que operam ao redor do mundo
+para coletar informação e colocá-la em grandes
+repositórios no Japão, para uso dos tomadores
+de decisão nas empresas.
+A Mitsubishi, por exemplo, tem aproximadamente
+13 mil empregados em mais de duzentos
+29
+
+Ethel Airton Capuano / Julio Casaes / Julio Reis da Costa / Magda Sifuentes de Jesus / Marco Antonio Machado
+
+escritórios no mundo. Eles coletam mais de
+30 mil peças de informação competitiva de
+negócios diariamente. Esses dados são filtrados,
+analisados e disseminados para empresas do
+grupo Mitsubishi para serem utilizados como
+munição na atual guerra global contra seus
+competidores.
+Na Europa, a situação é algo similar na medida
+em que as agências governamentais também
+têm assumido ativo interesse na inteligência
+competitiva. Na Alemanha, os bancos estatais
+desempenham um grande papel no controle
+dos negócios no país e por isso têm interesse
+em proteger seus investimentos. Os bancos têm
+tradicionalmente utilizado seu poder e influência
+para coletar informações confidenciais sobre
+empresas estrangeiras e discretamente disseminálas para as empresas alemãs.
+Na França, o governo trabalha com empresas
+de modo mais encoberto – frequentemente
+ilegalmente, pelos padrões norte-americanos
+– para coletar informação sobre competidores
+estrangeiros. Entre 1987 e 1989, um grupo
+de vinte pessoas do Direction Générale de
+la Sécurité Extérieure (DGSE), uma agência
+governamental equivalente à CIA, espionou
+empresas como a IBM e a Texas Instruments
+e passou informações para seus competidores
+franceses. O então executivo-chefe Pierre Marion
+disse: ‘Não seria normal que nós espionássemos
+os Estados Unidos em assuntos políticos ou
+militares. Nós somos aliados, mas em termos
+de competição econômica, de competição
+tecnológica, nós somos competidores. Nós não
+somos aliados.’
+(...) Muitos países de economias emergentes
+como China, Vietnã, Coréia e Tailândia vêem a
+inteligência competitiva como um meio de vencer
+as guerras econômicas contra países maiores e
+mais industrializados.
+Existe, nos EUA, uma organização denominada
+Society of Competitive Intelligence Professionals
+30
+
+(SCIP), que segundo Kahaner (1997) foi criada
+em 1986, contando hoje com mais de cinco mil
+membros ao redor do mundo. O endereço eletrônico
+de seu sítio na Web é <http://www.scip.org/> e ela
+se propõe, conforme declarado na primeira página, a
+prover educação e oportunidades de relacionamento
+(networking) com profissionais de negócio trabalhando
+no campo de rápido crescimento que é a inteligência
+competitiva, que consiste na “atividade legal e
+ética de coleção e análise de informação sobre a
+capacidade, as vulnerabilidades e as intenções dos
+competidores nos negócios” (SCIP, 2008).
+No Brasil, a atividade acadêmica de inteligência
+competitiva surgiu na década de 1990, com a
+criação do Curso de Especialização em Inteligência
+Competitiva (CEIC) pela Universidade Federal
+do Rio de Janeiro (UFRJ), em parceria com a
+Université d’Aix-Marseille III. Segundo Gomes &
+Braga (2004), são poucas as universidades brasileiras
+que oferecem a disciplina em seus cursos de pósgraduação: Universidade Católica de Brasília,
+Universidade Estácio de Sá, Universidade Federal
+do Rio de Janeiro e Fundação Getúlio Vargas (no
+Rio de Janeiro).
+A atividade de inteligência competitiva no Brasil
+vem crescendo nos últimos anos, principalmente
+após a criação da Associação Brasileira dos Analistas
+de Inteligência Competitiva (Abraic), no ano 2000.
+Dentre os principais objetivos da Abraic destacam-se
+o desenvolvimento de estudos sobre o tema, apoio
+à organização de eventos e projetos relacionados à
+inteligência competitiva, promoção de assessoria à
+implantação da atividade de inteligência competitiva
+em organizações, difusão da mentalidade de
+inteligência competitiva no país e estímulo à pesquisa
+e reconhecimento às boas práticas empresariais, por
+meio da realização dos prêmios de Inovação e de
+Excelência Empresarial.
+Com base em Santos (2000), pode-se identificar, na
+implantação de projetos ou células organizacionais
+de inteligência competitiva, quatro perfis básicos
+de profissionais dessa área: (i) “profissionais de
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+Inteligência competitiva e suas conexões epistemológicas com gestão da informação e do conhecimento
+
+interface”, que se parecem com os antigos analistas
+de sistemas à medida que devem exercer o papel de
+“agentes sociais” que definem demandas e ofertas
+de informações úteis; (ii) analistas de dados com
+habilidades técnicas, (iii) especialistas nas fontes
+de informação de interesse; e (iv) especialistas no
+assunto de interesse, que se parecem com analistas
+de negócio. Os últimos precisariam ter visão
+sistêmica, pois seriam os responsáveis pela validação
+da inteligência gerada no processo e apresentação
+dos insights aos executivos.
+Estudos de caso
+A literatura começa a apresentar algumas lições
+das trincheiras da inteligência competitiva nas
+organizações, ou seja, da sua prática como disciplina
+corporativa. Prescott e Miller (2001) arriscam
+algumas delas na obra referenciada, observando
+que:
+I. os programas de IC requerem clara definição
+de papéis que emergem ao longo de um processo
+de reaprendizado das necessidades de recursos de
+inteligência dos membros da organização;
+II. o conjunto de produtos de um programa de
+inteligência competitiva deve ser disseminado
+tempestivamente, prover implicações de ações e
+ser percebido como algo que tenha credibilidade
+e valor;
+III. a cultura de inteligência de uma organização
+deve ser construída com uma pessoa de cada
+vez, com o aumento da habilidade de operar com
+recursos de inteligência e o desenvolvimento de
+redes de pessoas e de mecanismos que facilitem o
+fluxo de informação;
+IV. a evolução dos programas de inteligência
+competitiva é um fenômeno natural direcionado
+pelas necessidades da organização, retroalimen-tação
+(feedback) e técnicas de melhoria da qualidade.
+Esses autores apresentam, na obra citada, uma série
+de estudos de caso de inteligência competitiva em
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+organizações de grande porte, como Procter &
+Gamble, IBM, Shell, Xerox, Motorola, DaimlerBenz Aeroespacial, Chevron e na antiga DEC
+(depois adquirida pela HP). Como essas empresas
+operam em mercados de alta tecnologia (tecnologia
+da informação e comunicação, transporte aéreo,
+prospecção de petróleo e fármacos), um novo termo
+é utilizado, adicionalmente, para caracterizar as ações
+de IC: monitoramento tecnológico, numa visão de
+veille technologique6. Os estudos mais paradigmáticos
+talvez sejam os da Shell, em que se buscou uma
+convergência entre inteligência competitiva e
+gestão de conhecimento; o da DEC, no qual a IC
+desencadeou um programa de reengenharia de
+processos; o da Daimler-Benz, no qual se executou
+análise de cenários; e o da Chevron, em que foram
+utilizadas técnicas de benchmark para avaliação de
+tecnologias concorrentes.
+São inúmeros os benefícios organizacionais
+decorridos da prática de inteligência competitiva,
+principalmente como suporte às decisões estratégicas.
+Terra (2008a) menciona alguns em seu artigo:
+antecipação a movimentos da concorrência;
+detecção antecipada de tecnologias emergentes e
+de alto impacto estrutural; redução de custos com
+o aprimoramento do desempenho operacional;
+subsídios para estratégias de fusão e aquisição;
+melhoria da eficiência das ações de marketing;
+reavaliação constante das estratégias com a criação
+de cenários; desenvolvimento de fornecedores mais
+estratégicos e competitivos em custo; penetração em
+novos mercados.
+Os benefícios advindos da prática de inteligência
+competitiva nas organizações são resultados de
+um trabalho árduo, tanto para sua implementação
+quanto para sua manutenção. Terra (2008b) também
+o compara a um trabalho de formiguinha, pois envolve
+a utilização constante de informações, bem como
+a colaboração e mobilização de grande número de
+pessoas da organização. A prática de inteligência
+Veille technologique: vigília tecnológica, uma abordagem francesa da
+inteligência competitiva.
+
+6
+
+31
+
+Ethel Airton Capuano / Julio Casaes / Julio Reis da Costa / Magda Sifuentes de Jesus / Marco Antonio Machado
+
+competitiva nas organizações deve considerar,
+ainda, aspectos como governança, infraestrutura
+de tecnologia da informação e comunicação (TIC),
+taxonomia, cultura, postura ética, estratégia e
+dificuldade de obter informações.
+CONCLUSÕES E QUESTÕES EM
+ABERTO
+Os executivos convivem atualmente, nas
+organizações, com um paradoxo bastante estimulante
+para pesquisas no campo da ciência da informação:
+a abundância (ou inundação) de informações e
+a necessidade de informação útil para embasar
+processos de tomada de decisão. Com a globalização
+dos mercados e o advento da Internet e da Web o
+problema tem se agravado, aumentando a demanda
+por informação como arma na competição global das
+empresas, ao mesmo tempo em que mais e mais
+informações são publicadas na rede. Evidente,
+nesse cenário, surge a necessidade de seleção de
+informações úteis na inundação informacional, de modo
+a viabilizar processos de tomada de decisão nas
+“guerras econômicas”.
+A inteligência competitiva (IC), herdada de práticas
+milenares de governantes e militares na arte da guerra,
+apresenta-se como uma disciplina corporativa,
+exigindo tratamento epistemológico adequado para
+que apresente resultados positivos, ou rentabilização
+de fluxos de informação (SANTOS, 2000). A promoção
+da inteligência competitiva para o status de disciplina
+corporativa também implica a necessidade de
+encaixe (ou integração) de conceitos, algo baseado
+na visão de Bates (2005) na ciência da informação,
+pois existem iniciativas acadêmicas em linhas de
+pesquisas correlatas, como gestão da informação
+(GI), gestão do conhecimento (GC) e business
+intelligence (BI), nas quais a inteligência competitiva
+poderá ser aninhada sinergicamente, com potencial
+promissor de sínteses epistemológicas.
+A necessidade de integração de conceitos se torna
+axiomática à medida que se assume como útil o
+modelo filosófico de inteligência competitiva de
+32
+
+Sun Tzu, que recomenda, para o êxito na guerra,
+“conhecer a si mesmo e conhecer seu inimigo”. Com
+esta premissa importada da inteligência militar milenar,
+a consequência lógica é que gestão da informação
+e gestão do conhecimento devem ser encaradas
+como ferramentas de inteligência competitiva,
+emprestando métodos e técnicas para rentabilização
+dos fluxos de informação na organização, tratandose tanto de informações externas (resultado do
+monitoramento) como de informações internas.
+Os desafios de pesquisa de inteligência
+competitiva na linha de gestão da informação e do
+conhecimento (Gico) são formidáveis, exigindo
+abordagens multidisciplinares que integram a
+estrutura epistemológica da ciência da informação.
+Contrariando visões superficiais sobre os ambientes
+de inteligência competitiva nas organizações, em
+que transparecem apenas abordagens das ciências
+sociais, como a administração e a psicologia, eis
+que surgem no núcleo dos modelos de composição
+metodológica, como ferramentas de suporte
+às atividades multidisciplinares da inteligência
+competitiva, as ciências duras (hard sciences) que
+suportam a inteligência artificial, como a lógica, a
+matemática e a ciência da computação.
+Obras correlatas relativamente recentes, como
+as de Choo (2003), Davenport (2000), McGee e
+Prusak (1994), Porter (1986) e outros, oferecem
+insights poderosos para a elicitação dos problemas e
+construção de possíveis soluções para a inteligência
+competitiva. Questões interessantes se apresentam
+nesse novo cenário, tais como: qual será o perfil
+do gerente do futuro nas organizações com a
+consolidação de unidades de inteligência competitiva
+em suas estruturas e processos? Existirá um
+verdadeiro mercado de informações corporativas
+no futuro do mesmo modo como existe hoje um
+mercado de informações científicas e um mercado
+de notícias?
+Outra questão interessante é bastante óbvia:
+como deverão ser estruturados os departamentos
+acadêmicos para tratar de temas multidisciplinares
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+Inteligência competitiva e suas conexões epistemológicas com gestão da informação e do conhecimento
+
+como inteligência competitiva? Ou, de modo ainda
+mais detalhado: qual deverá ser o perfil dos acadêmicos
+para atuar em pesquisas de inteligência competitiva
+nas universidades? Os atuais departamentos de
+CI nas universidades estão preparados para tratar
+de universos epistemológicos multivariados e
+complexos como inteligência artificial, teoria dos
+jogos e simulações computacionais, que constituem
+ferramentas metodológicas e tecnológicas da
+inteligência competitiva?
+
+FULD, Leonard. The new competitor intelligence. [S.l.]: John Wiley &
+Sons, 1994.
+
+Artigo submetido em 11/11/2008 e aceito em 06/09/2009.
+
+GOMES, Elisabeth; BRAGA, Fabiane. Inteligência competitiva: como
+transformar informação em um negócio lucrativo. 2. ed. Rio de
+Janeiro: Elsevier, 2004.
+
+REFERÊNCIAS
+
+HESSEN, Johannes. Teoria do conhecimento. Tradução de Antônio
+Correia. 7. ed. Coimbra: Arménio Amado; Brasil: Martins Fontes,
+1976.
+
+AOKI, Masahiko; DORE, Ronald (Ed.). The Japanese firm: sources of
+competitive strength. Oxford University Press, 1996.
+
+JACOBIAK, François. Pratique de la veille technologique. Paris: Éditions
+d’Organisation, 1996.
+
+ARGYRIS, C.; SCHON, D. Organizational learning: a theory of action
+perspective. Reading, MA: Addison-Wesley, 1978.
+
+JUHARI, Ariff S.; STEPHENS, Derek. Tracing the origins of
+competitive intelligence throughout history. Journal of competitive
+intelligence and management, v. 3, n. 4, 2006.
+
+ARGYRIS, Chris. Teaching smart people how to learn. Harvard
+Business Review, maio/jun. 1991. Disponível em: <http://www.
+velinperformance.com/downloads/chris_argyris_learning.pdf>.
+Acesso em: 6 jun. 2008.
+BATES, Marcia J. Information and knowledge: an evolutionary
+framework for information science. Information Research, v. 10, n. 4, jul.
+2005. Disponível em: <http://informationr.net/ir/10-4/paper239.
+html>. Acesso em: 20 maio 2008.
+BREEDING, Bret. CI and KM convergence: a case study at Shell
+Services International. In: PRESCOTT, John E.; MILLER, Stephen
+H. (Ed.). Proven strategies in competitive inteligence: lessons from the
+trenches. [S.l.]: John Wiley & Sons, 2001.
+CHOO, Chun Wei. A organização do conhecimento: como as organizações
+usam a informação para criar significado, construir conhecimento
+e tomar decisões. Tradução de Eliana Rocha. São Paulo: SENAC,
+2003.
+______. Information management for the intelligent organization: the art of
+scanning the environment. 2. ed. [S.l.: s.n.], 1998. (ASIS Monograph
+Series).
+
+DAY, George S.; REIBSTEIN, David J.; GUNTHER, Robert. A
+dinâmica da estratégia competitiva. Tradução de Ana Beatriz Rodrigues e
+Priscilla Martins Celeste. Rio de Janeiro: Campus, 1999.
+DILL, William R. Environment as an influence on managerial
+autonomy. Administrative Science Quarterly, v. 11, n. 1, p. 409-443,
+1958.
+FLEISHER, Craig S.; BENSOUSSAN, Babette E. Business and
+competitive analysis: effective application of new and classic methods.
+New Jersey: FT Press, 2007.
+
+KAHANER, Larry. Competitive intelligence: how to gather, analyze,
+and use information to move your business to the top. New York:
+Touchstone, 1997.
+LIEBOWITZ, Jay. Strategic intelligence: business intelligence, competitive
+intelligence, and knowledge management. [S.l.]: Auerbach, 2006.
+MARCIAL, Elaine Coutinho. Utilização de modelo multivariado
+para identificação dos elementos-chave que compõem sistemas de inteligência
+competitiva. 2007. Dissertação (Mestrado em Ciência da Informação)–
+Universidade de Brasília, Brasília, 2007.
+MAURY, Patrick. Inteligência competitiva e decisão empresarial.
+Ciência da Informação, Brasília, v. 22, n. 2, p. 138-141, maio/ago.
+1993.
+McGEE, James; PRUSAK, Laurence. Gerenciamento estratégico da
+informação: aumente a competitividade e a eficiência de sua empresa
+utilizando a informação como uma ferramenta estratégica. Tradução
+de Astrid Beatriz de Figueiredo. 11. ed. Rio de Janeiro: Campus,
+1994.
+
+______. Towards an organization model of organizations. The
+Canadian Journal of Information Science, v. 16, n. 3, p. 32-62, 1991.
+
+MENEZES, Estera Muszkat. Inteligência competitiva: uma revisão
+de literatura. Revista Digital de Biblioteconomia e Ciência da Informação,
+Campinas, v. 3, n. 1, p. 103-130, jul./dez. 2005.
+
+DAFT, Richard L.; WEICK, Karl E. Toward a model of organizations
+as interpretations systems. Academy of Management Review, v. 9, n. 2,
+p. 284-295, 1984.
+
+MORESI, Eduardo Amadeu Dutra. Monitoramento ambiental. In:
+TARAPANOFF, Kira (Org.). Inteligência organizacional e competitiva.
+Brasília: Editora Universidade de Brasília, 2001. p. 93-109.
+
+DAVENPORT, Thomas H. Ecologia da informação: por que só a
+tecnologia não basta para o sucesso na era da informação. Tradução
+de Bernadette Siqueira Abrão. 3. ed. São Paulo: Futura, 2000.
+
+NEVO, Dorit; WADE, Michael R. How to avoid disappointment
+by design: avoid market failure by aligning system performance with
+stakeholder expectations. Communications of the ACM, v. 50, n. 4, p.
+43-48, abr. 2007.
+
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+33
+
+Ethel Airton Capuano / Julio Casaes / Julio Reis da Costa / Magda Sifuentes de Jesus / Marco Antonio Machado
+NONAKA, Ikujiro; TAKEUCHI, Hirotaka. Criação de conhecimento na
+empresa: como as empresas japonesas geram a dinâmica da inovação.
+Tradução de Ana Beatriz Rodrigues e Priscilla Martins Celeste. 16.
+ed. Rio de Janeiro: Campus, 1997.
+
+TARAPANOFF, Kira. Informação, conhecimento e inteligência
+em corporações: relações e complementaridade. In: ______ (Org.).
+Inteligência, informação e conhecimento. Brasília: IBICT; UNESCO, 2006.
+p. 19-35.
+
+PORTER, Michael E. Estratégia competitiva: técnicas para análise de
+indústrias e da concorrência. Tradução de Elizabeth Marinho de
+Pinho Braga. 7. ed. Rio de Janeiro: Campus, 1986.
+
+______ (Org.). Inteligência, informação e conhecimento. Brasília: IBICT;
+UNESCO, 2006.
+
+PRESCOTT, John E.; MILLER, Stephen H. (Ed.). Proven strategies
+in competitive intelligence: lessons from the trenches. [S.l.]: John Wiley
+& Sons, 2001.
+QUEYRAS, Joachim; QUONIAM, Luc. Inteligência competitiva.
+In: TARAPANOFF, Kira (Org.). Inteligência, informação e conhecimento.
+Brasília: IBICT; UNESCO, 2006. p. 73-97.
+SANTOS, Raimundo Nonato Macedo dos. Métodos e ferramentas
+para gestão de inteligência e do conhecimento. Perspectivas em Ciência
+da Informação, Belo Horizonte, v. 5, n. 2, p. 205-215, jul./dez. 2000.
+SIMON, H. A. Administrative behavior. 3. ed. New York: Free Press,
+1976.
+SCIP – SOCIETY OF COMPETITIVE INTELLIGENCE
+PROFESSIONALS. Sítio na World Wide Web. Disponível em: <http://
+www.scip.org/>. Acesso em: 6 jun. 2008.
+SUN TZU. A arte da guerra. Traduzido do idioma chinês para o francês
+pelo Padre Amiot em 1772 e traduzido do francês para o português
+por Sueli Barros Cassal. Porto Alegre: L & PM, 2008.
+
+34
+
+______ (Org.). Inteligência organizacional e competitiva. Brasília: Editora
+Universidade de Brasília, 2001.
+TERRA, José Cláudio Cyrineu. Gestão do conhecimento e inteligência
+competitiva. 2008. Disponível em: <http://www.terraforum.com.br/
+sites/terraforum/paginas/biblioteca/inteligencia_empresarial.aspx>.
+Acesso em: 2 jun. 2008.
+______. Inteligência competitiva: roteiro de filme ou trabalho de
+formiguinha? 2008. Disponível em: <http://www.terraforum.com.
+br/sites/terraforum/paginas/biblioteca/inteligencia_empresarial.
+Aspx>. Acesso em: 2 jun. 2008.
+TYSON, K. W. M. The complete guide to competitive intelligence.
+In: TARAPANOFF, Kira (Org.). Inteligência organizacional e competitiva.
+Brasília: Editora Universidade de Brasília, 2001.
+WALLE, A. H. Qualitative research in intelligence marketing: the new
+strategic convergence. Westport, Connecticut: Quorum books,
+2001.
+
+Ci. Inf., Brasília, v. 38, n. 2, p. 19-34, maio/ago. 2009
+
+

@@ -1,0 +1,385 @@
+REVISTA
+
+E LE T R Ô N IC A
+
+INTELIGÊNCIA ARTIFICAL: Conceitos, Aplicações e Linguagens
+
+André Felipe da Costa Alves
+Graduando em Engenharia da Computação,
+Faculdades Integradas de Três Lagoas – FITL/AEMS
+
+Luiz Eduardo de Oliveira Pina
+Graduando em Engenharia da Computação,
+Faculdades Integradas de Três Lagoas – FITL/AEMS
+
+Werick Gonçalves Gomes
+Graduando em Engenharia da Computação,
+Faculdades Integradas de Três Lagoas – FITL/AEMS
+
+Alan Pinheiro de Souza
+Mestre em Informática – UFRJ;
+Docente das Faculdades Integradas de Três Lagoas – FITL/AEMS
+
+Daiane Sampaio Santos
+Mestre em Ciência da Computação – UFMS;
+Docente das Faculdades Integradas de Três Lagoas – FITL/AEMS
+
+RESUMO
+Esse artigo científico possui como objetivo apresentar uma visão geral sobre inteligência artificial.
+Embora existam diversas contradições e divergências sobre o assunto, a pesquisa busca identificar a
+junção das diferentes teorias e práticas. A elaboração da pesquisa ocorreu por intermédio de
+levantamento teórico em livros e artigos científicos na área. Esses materiais foram de importância
+para um compreensível entendimento no assunto, sendo possível observar a abrangência do tema.
+Foi possível identificar que existem diversas visões, muitas delas complementares, porém outras com
+abordagens diferenciadas. Esses pontos servirão de base para realização de novos projetos e
+aprofundamento das pesquisas em oportunidades futuras.
+PALAVRAS-CHAVE: inteligência artificial; teste de Turing; linguagem prolog; linguagem C.
+
+INTRODUÇÃO
+
+O artigo tem como objetivo realizar breve levantamento bibliográfico sobre
+inteligência artificial, destacando conceitos, abordagens e suas aplicações em vários
+ramos da tecnologia. Também será abordado o Teste de Turing, considerado um
+fato importante que contribuiu para o avanço da inteligência artificial, além de duas
+linguagens de programação bastante aplicadas na área, Prolog (Programação em
+Lógica) e C, envolvendo aplicações e benefícios nas diversas áreas da computação.
+A inteligência artificial está presente em inúmeros projetos e tecnologias já
+existentes com o objetivo de tornar uma “máquina inteligente” com características de
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1733
+
+REVISTA
+
+E LE T R Ô N IC A
+
+raciocínio, percepção de objetos e posições, adaptação e capacidade de evolução
+de acordo com informações que essa recebe.
+Além da seção inicial de introdução e das seções de encerramento que
+apresentam as considerações finais da pesquisa e as referências bibliográficas
+adotadas no trabalho, esse levantamento bibliográfico está dividido em três seções.
+A primeira seção aborda os principais conceitos de inteligência artificial. A segunda
+seção apresenta o Teste de Turing, que contribuiu para o avanço da inteligência
+artificial. A terceira seção discute linguagens de programação usadas na inteligência
+artificial, assim como suas vantagens e aplicações.
+
+2 INTELIGÊNCIA ARTIFICAL
+Essa seção possui como um dos seus objetivos, por intermédio de revisão
+da literatura, apresentar uma definição satisfatória de inteligência artificial, áreas de
+aplicações e linhas de pesquisas. Segundo Ribeiro (2010, p.8), “a inteligência
+artificial é uma ciência multidisciplinar que busca desenvolver e aplicar técnicas
+computacionais que simulem o comportamento humano em atividades específicas”.
+De acordo com Lima, Pinheiro e Santos (2014), os primeiros estudos sobre
+inteligência artificial surgiram na década de 1940, marcada pela Segunda Guerra
+Mundial, onde houve a necessidade de desenvolver métodos tecnológicos voltados
+para análise balística, quebra de códigos e cálculos para projetos de arma
+nucleares. Dessa forma, surgiram as primeiras pesquisas para construção de
+computadores utilizados para realizar processamentos matemáticos.
+A inteligência computacional, denominada originalmente de inteligência
+artificial, é uma das ciências mais recentes, tendo surgido logo após a segunda
+guerra mundial e tendo seu nome original cunhado em 1956 (RIBEIRO, 2010). Para
+Bittencourt (2001), a inteligência artificial foi construída a partir de ideias filosóficas,
+cientificas e tecnológicas herdadas de outras ciências, algumas tão antigas quanto à
+lógica, desenvolvida há séculos.
+Na visão de Rabuske (1995), discutir sobre inteligência artificial pode ser
+considerada uma tarefa de extrema dificuldade a partir do instante em que se
+verifica que a própria inteligência humana, não artificial, encontra um vasto campo
+de conceitos e nem todos convergentes. Para Luger (2014), algumas das áreas de
+aplicação e contribuições da inteligência artificial são jogos, compreensão da
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1734
+
+REVISTA
+
+E LE T R Ô N IC A
+
+linguagem natural, modelagem semântica, modelagem do desempenho humano,
+planejamento e robótica, linguagens e ambientes para inteligência artificial, redes
+neurais e algoritmos genéticos.
+De acordo com Azevedo (2005), existem três principais linhas de pesquisa
+no ramo da inteligência artificial: a linha conexionista, a linha simbólica e a linha
+evolutiva. A linha conexionista propõe a modelagem da inteligência humana por
+meio de simulações dos neurônios e suas interligações; A linha simbólica utiliza
+formalismo do tipo lógico para simular o comportamento inteligente expresso através
+de linguagem; Já a linha evolutiva, também chamada de computação evolutiva, se
+baseia na observação de mecanismo evolutivos encontrados na natureza, tais como
+a auto-organização e comportamento adaptativo.
+Segundo Pontes (2011), as pesquisas no campo da inteligência artificial
+podem elaborar algoritmos inteligentes que permitem aos computadores armazenar
+grande quantidade de conhecimento sobre operações corporativas, onde esses
+sistemas são capazes de praticar as negociações reconhecendo padrões de difícil
+percepção para o ser humano, além de fornecer capacidade adicional de aprender
+com sucessos e fracassos obtidos em cada operação realizada.
+3 TESTE DE TURING
+Essa seção tem como finalidade abordar um fato importante que contribuiu
+para avanço da inteligência artificial, acontecimento que levou outros pesquisadores
+a ingressarem e aprofundarem-se no contexto. Em 1950, o matemático Alan Turing
+publicou um artigo intitulado “Computação e Inteligência” no qual formulou, pela
+primeira vez, explicitamente a questão “Pode uma máquina pensar?” (TEIXEIRA,
+1998). Esse mesmo cientista também desenvolveu um teste para chegar à
+conclusão se seria possível uma máquina pensar, chamado “Teste de Turing”.
+De acordo com Russel e Norvig (2004), esse teste proposto foi projetado
+para prover uma definição satisfatória de inteligência que determinava se um
+programa seria ou não inteligente. O teste era realizado em um computador no qual
+um humano considerado o "interrogador", depois de colocar algumas questões
+digitadas, deveria tentar identificar se as respostas estariam vindo de uma pessoa
+ou de um computador. A Figura 1 seguinte ilustra esse procedimento.
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1735
+
+REVISTA
+
+E LE T R Ô N IC A
+
+Figura 1. Inteligência artificial – Teste de Turing.
+
+Fonte: Elaborado pelos autores, baseado em Russel e Norvig (2004).
+
+De acordo com Russel e Norvig (2004), programar um computador para
+passar no Teste de Turing exige um grande esforço, pois essa máquina deve
+possuir algumas capacidades, por exemplo: (i) Representações de conhecimento:
+para armazenar informações que o sistema vai adquirindo no decorrer do teste; (ii)
+Raciocínio automatizado: para alcançar novas conclusões e respostas a partir das
+informações armazenadas; (iii) Aprendizado de máquina: para se adaptar ao ritmo
+do teste, detectar e não extrapolar; (iv) Visão computacional: para identificação e
+manipulação de objetos adequados ao tipo de teste a ser realizado.
+4 LINGUAGENS DE PROGRAMAÇÃO
+Uma linguagem de programação é uma ferramenta utilizada pelos
+profissionais de computação para escrever programas, ou seja, conjuntos de
+instruções representadas por uma combinação de símbolos a ser seguida pelo
+computador de modo a realizar determinada tarefa ou processo (VAREJÃO, 1995).
+Na visão de Sebesta (2011), as linguagens de programação vêm sendo aplicadas
+em vários ramos da tecnologia como aplicações científicas, empresariais,
+inteligência artificial, programação de sistemas e softwares para web.
+Algumas das linguagens indicadas para trabalhar com inteligência artificial
+são aquelas que usam paradigmas de programação lógico e funcional, pois as
+programações dessa área não costumam seguir uma estrutura com algoritmos bem
+definidos. Assim, existem linguagens especificas para a realização de projetos nesse
+contexto (TUCKER; NOONAN, 2010). Nas próximas seções serão discutidas
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1736
+
+REVISTA
+
+E LE T R Ô N IC A
+
+algumas características de duas linguagens de programação associadas com a
+inteligência artificial, Prolog e C.
+4.1 Linguagem Prolog
+Primeiramente, é importante destacar que a notação matemática em sua
+generalidade não é facilmente implementável. Ainda assim, muitos projetistas
+exploraram subconjuntos dessas notações em linguagens de programação na
+tentativa de construir uma linguagem lógica baseada em algum subconjunto da
+lógica matemática. Prolog foi uma das implementações que popularizou a linguagem
+lógica. Em sua forma pura é considerada fraca e ineficiente, sendo alterada
+sucessivas vezes para acomodar características não lógicas e tornar-se mais
+amigável como linguagem de programação (FILHO, 2007).
+Prolog é uma linguagem que permite aos programadores construir uma base
+de dados com fatos e regras e, então, obter do sistema respostas às questões por
+um processo de dedução lógica (COPPIN, 2004). Na visão de Clocksin e Mellish
+(2003), a linguagem Prolog foi escolhida por muitos programadores para aplicações
+de computação simbólica, incluindo relacionamento entre bancos de dados, lógica
+matemática, resolução de problemas abstratos, compreensão da linguagem natural,
+automação de design, resolução de equações simbólicas, estrutura de análise
+bioquímica e muitas áreas da inteligência artificial.
+De acordo com Tucker e Noonan (2010), Prolog tem sido a principal
+linguagem de programação lógica até os dias atuais, onde suas aplicações com
+programação em lógicas estão espalhadas pelas áreas de processamento de
+linguagem natural, raciocínio automático e prova de teoremas, pesquisa em base de
+dados e sistemas especializados.
+De acordo com Sebesta (2011), os programas em Prolog consistem em
+coleções de sentenças. Essa linguagem possui apenas alguns tipos de sentenças,
+porém algumas dessas podem ser complexas. Um uso comum de Prolog é como um
+tipo de base de dados inteligente que consiste em dois tipos de sentenças que são
+os fatos e as regras. Para construir programas em Prolog é essencialmente
+necessário realizar três atividades: declarar fatos, afirmar regras de dedução com
+base nesses fatos e fazer perguntas (SAINT-DIZIER, 1954).
+Um exemplo de utilização da linguagem Prolog seria identificação de
+parentesco. Suponha que é informado ao sistema que existe uma regra sobre “duas
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1737
+
+REVISTA
+
+E LE T R Ô N IC A
+
+irmãs”. Caso seja perguntado se Mary e Jane são irmãs, Prolog realizará uma busca
+sobre aquilo que foi afirmado anteriormente sobre Mary e Jane e retornará com
+resposta “sim” ou “não”. Dessa forma, pode-se afirmar que Prolog utiliza fatos e
+regras para responder perguntas. Portanto, para programar na linguagem é
+necessário fornecimento todos esses fatos e regras do contexto sendo analisado
+(CLOCKSIM; MELLISH, 2003).
+Algumas vantagens citadas por Palazzo (1997) em relação à linguagem
+Prolog são aprendizado fácil e natural perante linguagens procedimentais
+convencionais; implementação precisa de novos modelos surgidos nos últimos anos,
+inclusive, redes neurais, algoritmos genéticos, agentes inteligentes e sistemas
+concorrentes e paralelos; Implementação de extensões e definição minuciosa de
+sistemas reflexivos; Liberação dos programadores de problemas associados ao
+controle das rotinas, permitindo concentrarem-se apenas em seus aspectos lógicos.
+
+4.2 Linguagem C
+A linguagem C foi inventada na década de 70 por Dennis Ritchie que a
+implementou pela primeira vez em um minicomputador de 16 bits, PDP-11, rodando
+sistema operacional Linux. A linguagem C é derivada de outra linguagem, a
+linguagem B, criada por Ken Thompson (COCIAN, 2004, p.34).
+C é uma linguagem de programação de propósito geral associada, de modo
+universal, ao sistema operacional Unix. Entretanto, a popularidade, a
+eficácia e a potência de C resultam de ela não estar praticamente associada
+a nenhum sistema operacional, nem a nenhuma máquina em especial. Essa
+é a razão fundamental pela qual C é conhecida como a Linguagem de
+programação de sistema por excelência (AGUILAR, 2008, p.26).
+
+De acordo com Schildt (1996), a linguagem C é chamada de uma linguagem
+de médio nível, pois combina elementos das linguagens de alto nível com
+funcionalidades da linguagem Assembly. Em razão disso, ela permite a manipulação
+de bits, bytes e endereços que são os elementos básicos para funcionamento de
+computadores. Um código nessa linguagem é portável, ou seja, é possível adaptar
+um software escrito em um tipo computador para outro. A linguagem C é
+particularmente estável, evoluiu no sentido das linguagens orientadas a objeto,
+gerando, por exemplo, a linguagem C++, que contém todas as características da
+linguagem C e mais um conjunto de recursos próprios (DAMAS, 2007).
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1738
+
+REVISTA
+
+E LE T R Ô N IC A
+
+Para Aguilar (2008), a linguagem C tem uma grande quantidade de
+vantagens que contribuem para ser uma das mais populares em empresas de todo o
+mundo. Por exemplo, sua utilização na construção de sistemas operacionais,
+compiladores, sistemas de tempo real e aplicações de comunicação. A portabilidade
+e a facilidade para desenvolvimento de software para a maioria dos modernos
+sistemas de computadores são outros benefícios. É uma linguagem considerada
+poderosa e flexível com comandos, operações e funções de biblioteca que podem
+ser utilizadas para escrever a maioria dos programas de computadores. Na visão de
+Backes (2013, p.3), a linguagem C tem influenciado, diretamente ou indiretamente,
+muitas linguagens de programação desenvolvidas posteriormente, entre elas: C++,
+Java, C# e PHP. A Figura 2 mostra um esquema com evoluções e influências da
+linguagem C para o desenvolvimento de outras linguagens.
+Figura 2. Evoluções e influências da linguagem C.
+
+Fonte: Retirado de Backes (2013, p.3).
+
+5 CONSIDERAÇÕES FINAIS
+
+O artigo realizou um levantamento bibliográfico visando conceituar a
+inteligência artificial, destacando exemplos de aplicação e linguagens associadas.
+Observou-se que não há uma definição consensual, pois existem diversas visões
+sobre o assunto, muitas delas complementares, porém outras com abordagens
+diferenciadas. Acredita-se que essa diversidade de definições seja em razão do fato
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1739
+
+REVISTA
+
+E LE T R Ô N IC A
+
+da tecnologia se renovar a cada dia e a inteligência artificial ser um ramo de estudo
+em evolução.
+Uma das grandes dificuldades encontradas para a elaboração do artigo foi
+encontrar visões que fossem totalmente coerentes entre si para que houvesse
+melhor compreensão do assunto, pois o tema é bastante abrangente e existem
+diferentes opiniões. Ainda que a busca por linguagens foi realizada, tomando como
+base exemplos reais, esse aspecto também representou uma barreira ao longo do
+estudo. Futuramente, com uma pesquisa mais aprofundada e o levantamento de
+uma quantidade maior de exemplos, o artigo poderá fornecer maior contribuição ao
+acomodar visões mais abrangentes, definições genéricas e/ou específicas no tema,
+obtendo assim uma nova definição que acomode parte das várias visões analisadas.
+
+REFERÊNCIAS
+AGUILAR, L. Fundamentos de Programação, Algoritmos, Estruturas de Dados e
+Objetos. São Paulo: McGraw–Hill, 2008.
+AZEVEDO, E. Desenvolvimento de Jogos e Aplicações em Realidade Virtual. 3. ed.,
+Rio de Janeiro: Elsevier, 2005.
+BACKES, A. Linguagem C Completa e Descomplicada. Rio de Janeiro: Elsevier,
+2013.
+BITTENCOURT, G. Inteligência
+Florianópolis: UFSC, 2001.
+
+Artificial:
+
+Ferramentas
+
+e
+
+Teorias.
+
+2.
+
+ed.,
+
+CLOCKSIN, W.; MELLISH, C. Programming In Prolog: Using To ISO Standard. 5.
+ed., New York: Springer, 2003.
+COCIAN, L. Manual da Linguagem C. Canoas: Ulbra, 2004.
+COPPIN, B. Inteligência Artificial. Rio de Janeiro: LTC, 2004.
+DAMAS, L. Linguagem C. 10. ed., Rio de Janeiro: LTC, 2007.
+FILHO, C. História da Computação: O Caminho do Pensamento e da Tecnologia.
+Porto Alegre: PUCRS, 2007.
+LIMA, I.; SANTOS, F.; PINHEIRO, C. Inteligência Artificial. Rio de Janeiro: Elsevier,
+2014.
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1740
+
+REVISTA
+
+E LE T R Ô N IC A
+
+LUGER, G. Inteligência Artificial. 6. ed., São Paulo: Pearson, 2014.
+PALAZZO, L. Introdução a Prolog. Pelotas: UCPEL, 1997.
+PONTES, R. Inteligência Artificial nos Investimentos. Rio de Janeiro: Elsevier, 2011.
+RIBEIRO, R. Uma Introdução à Inteligência Computacional: Fundamentos,
+Ferramentas e Aplicações. Rio de Janeiro: IST-Rio, 2010.
+RABUSKE, R. Inteligência Artificial. Florianópolis: UFSC, 1995.
+RUSSEL, S; NORVIG, P. Inteligência Artificial. 3. ed., São Paulo: Campus-Elsevier,
+2004.
+SAINT-DIZIER, P. An Introduction To Programming In Prolog. New York: Eyerolles,
+1954.
+SCHILDT, H. C Completo e Total. 3. ed., São Paulo: Markron Books, 1996.
+SEBESTA, R. Conceitos de Linguagens de Programação. 9. ed., Porto Alegre:
+Bookman, 2011.
+TEIXEIRA, J. Mentes e Máquinas: Uma Introdução à Ciência Cognitiva. São Paulo:
+Artes Médicas, 1998.
+TUCKER, A.; NOONAN, R. Linguagens de Programação: Princípios e Paradigmas.
+2. ed., Porto alegre: McGrawHill, 2010.
+VAREJÃO, F. Linguagens de Programação: Conceitos e Técnicas. 2. ed., Rio de
+Janeiro: Campus, 1995.
+
+AEMS
+
+Rev. Conexão Eletrônica – Três Lagoas, MS - Volume 14 – Número 1 – Ano 2017.
+
+1741
+
+

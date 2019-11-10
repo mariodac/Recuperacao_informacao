@@ -1,0 +1,1039 @@
+Artigo Inédito
+
+Sistema Decodify®: cefalometria como
+mensuração de risco e ferramenta
+administrativa para clínica ortodôntica
+Marinho Del Santo Jr*, Luciano Del Santo**
+
+Resumo
+Introdução: a cefalometria pode ter uso clínico limitado em Ortodontia por demandar
+
+interpretação subjetiva. Um sistema de Inteligência Artificial (IA), o sistema Decodify®, foi
+desenvolvido para prover uma avaliação quantitativa individualizada de dados cefalométricos contextualizados. Nesse artigo, o sistema é testado como ferramenta administrativa em
+consultórios de Ortodontia. Métodos: o desenvolvimento de algoritmos incluiu a modelagem de normas e desvios-padrão de dados cefalométricos brasileiros, medidos em radiografias laterais. Para testar o sistema, cefalogramas iniciais de 60 pacientes ortodônticos de dois
+consultórios diferentes (30 casos cada) foram processados e reprocessados por três técnicos
+diferentes. A reprodutibilidade e a confidencialidade intraexaminador e interexaminadores
+foram testadas de modo pareado. O risco em cada caso ortodôntico, produto da análise eletrônica, foi comparado por matrizes de covariância e coeficientes de confiança. Resultados:
+os níveis de correlação pareada interexaminadores (contra padrão-ouro) para 23 pares de
+variáveis foram de 0,68 (distância S-Go) a 0,98 (distância Na-Me) em uma clínica ortodôntica (JU) e de 0,66 (ângulo L1.APg) a 0,98 (distância S-Go) em outra clínica ortodôntica
+(SP). Os níveis de correlação pareada intraexaminadores para 23 pares de variáveis foram
+de 0,52 (ângulo L1.APg) a 0,98 (distâncias S-Go e Na-Me) em uma clínica (JU) e de 0,55
+(ângulo U1.Na) a 0,92 (distância Wits) em outra (SP). Todas as correlações foram significativas em nível de p<0,001. A média dos coeficientes de confiança dos riscos mensurados
+foi 0,78 para uma clínica (JU) e 0,75 para outra (SP). Os coeficientes de confiança foram
+significativos em nível de p<0,0001. Conclusões: os resultados dessa pesquisa suportam que
+as análises providas pelo sistema Decodify® são reprodutíveis e confiáveis. Assim, o sistema
+pode ser aplicado para contextualizar medidas cefalométricas convencionais e gerar índices
+de risco individualizados. O sistema pode ser usado pelo ortodontista como uma ferramenta
+administrativa em suas avaliações profissionais diárias.
+Palavras-chave: Ortodontia. Diagnóstico. Inteligência artificial.
+
+Como citar este artigo: Del Santo Jr M, Del Santo L. Sistema Decodify®: cefalometria como mensuração de risco e ferramenta administrativa para clínica
+ortodôntica. Dental Press J Orthod. 2011 July-Aug;16(4):32.e1-9.
+
+» Ambos os autores declaram ser Desenvolvedores do Sistema Decodify®.
+
+* Mestre em Ortodontia pela Baylor College of Dentistry, Dallas, Texas.
+** Mestre em Cirurgia Bucomaxilofacial pelo Hospital Heliópolis, São Paulo/SP.
+
+Dental Press J Orthod
+
+32.e1
+
+2011 July-Aug;16(4):32.e1-9
+
+Sistema Decodify®: cefalometria como mensuração de risco e ferramenta administrativa para clínica ortodôntica
+
+INTRODUÇÃO
+Embora a cefalometria apresente conhecidas limitações, é uma importante ferramenta de diagnóstico para o ortodontista1-4. Uma de suas limitações é
+a influência da opinião pessoal do profissional, já que
+cada especialista “interpreta” dados cefalométricos
+de acordo com os vieses construídos por sua formação acadêmica, sua experiência clínica e o modelo
+de atendimento com o qual trabalha. Tecnicamente, a cefalometria apresenta uma validade interna
+limitada devido à identificação dos pontos cefalométricos5,6,7 e outros problemas metodológicos8-11
+ou geométricos12. Naturalmente, novas soluções de
+diagnóstico ortodôntico têm sido propostas13-18.
+Um significativo aperfeiçoamento em cefalometria seria a customização dos valores cefalométricos medidos em cada caso, customização, esta,
+que cada ortodontista já realiza subjetivamente
+em suas avaliações diárias. Uma melhoria dessa
+natureza não eliminaria a necessidade de outras
+fontes de informação, como modelos de gesso e
+fotografias. Entretanto, no que se refere à cefalometria, estaria próximo do ideal.
+Até hoje, valores cefalométricos não foram
+considerados de forma contextualizada; isto é,
+dentro do cenário particular de cada paciente.
+Porém, essa restrição é mais matemática do que
+biológica. Tal contextualização seria possível se
+um sistema de algoritmos de IA (Inteligência Artificial) provesse decisões, imitando o que o pensamento humano já faz. Tal software precisaria levar
+em consideração a incerteza e a inconsistência associadas a cada valor cefalométrico, aumentando
+ou diminuindo a importância de sua contribuição
+para o “grau final” do envolvimento esquelético e
+dentário que cada caso de má oclusão apresenta.
+Matemáticos e engenheiros da computação têm
+trabalhado em modelos de algoritmos “inteligentes”,
+baseando-se em diversos tipos de lógica e aplicado-os em diversos campos da Ciência como Logística,
+Robótica, Defesa, Economia e Medicina19,20,
+Quando sistemas de IA tomam decisões no campo médico, são chamados sistemas especialistas, programados para auxiliar médicos e outros profissionais da área de saúde, que são quem, contudo, provê
+o diagnóstico final ou as hipóteses de diagnóstico. O
+modelo de lógica aplicado nesse projeto21-24 permitiu
+que variáveis cefalométricas fossem contextualizadas em seu específico cenário craniofacial.
+A lógica fuzzy (ou difusa) tem sido aplicada
+em Medicina25,26,27 e Ortodontia28,29 para evitar
+inadequadas alocações rígidas em categorias predefinidas. Entretanto, a lógica fuzzy considera apenas certezas e não é uma ferramenta matemática
+suficiente para processos de tomada de decisão.
+Por outro lado, a lógica paraconsistente22,24 lida
+também com a incerteza, a inconsistência e a insuficiência de dados, características comuns em bases de dados cefalométricas e, por isso, foi utilizada
+nas situações de tomada de decisão aqui descritas.
+Em um trabalho anterior30, o sistema Decodify® foi testado contra as opiniões subjetivas de 3
+especialistas em Ortodontia e, exibindo uma esperada variância, o sistema eletrônico se comportou
+como um sistema especialista.
+No presente trabalho, os resultados do sistema
+Decodify® foram obtidos por duas técnicas treinadas e, de forma pareada, foram comparados com os
+resultados de um técnico com grande experiência
+com o sistema, tomado como padrão-ouro. Assim,
+o artigo tem dois objetivos principais: 1) testar a
+reprodutibilidade e a confiabilidade dos resultados
+obtidos pelo sistema Decodify®; e 2) uma vez reprodutível e confiável, introduzir à comunidade
+ortodôntica o sistema Decodify® como ferramenta
+administrativa usada pelo ortodontista para medir
+o risco envolvido em cada tratamento proposto.
+Implementação
+O sistema Decodify® foi escrito em linguagem
+Delphi 11.0 e é processado em plataforma Oracle
+10g, implementado entre os anos de 2000 a 2004.
+Os algoritmos desenvolvidos permitem que as variáveis cefalométricas independentes sejam integradas, considerando-se a incerteza, a inconsistência e a
+insuficiência carregadas por cada uma das variáveis.
+
+32.e2
+
+2011 July-Aug;16(4):32.e1-9
+
+Del Santo Jr. M, Del Santo L
+
+As inferências do sistema são baseadas em graus de
+evidência de anormalidade (GEA) separados em
+unidades específicas: esqueletal (anteroposterior e
+vertical) e dentária (dentes superiores e inferiores).
+Os softwares Decodify® e DecodeCAD®, componentes do sistema Decodify®, estão registrados
+no Brasil no INPI (Instituto Nacional da Propriedade Industrial) sob as licenças 00070981 e
+00075342. Nos EUA, os softwares estão registrados no Copyright Office – Library of Congress/
+USA sob as licenças TXu1-326-513 (7/31/06) e
+TXu1-326-514 (7/31/06).
+
+3
+2
+
+4
+
+16
+
+1
+
+6
+12
+17
+
+7
+9
+
+8 15
+18
+
+13
+
+14
+10 11
+
+Material e Métodos
+Amostras
+As amostras, retrospectivamente coletadas, incluem 60 cefalogramas iniciais, de pacientes de
+ambos os sexos, que procuraram por tratamento
+ortodôntico em duas clínicas, em Jundiaí (JU) e
+São Paulo (SP). Em Jundiaí, 13 indivíduos do sexo
+masculino e 17 indivíduos do sexo feminino, de 12
+a 29 anos de idade, foram incluídos na amostra. Em
+São Paulo, 10 indivíduos do sexo masculino e 20
+indivíduos do sexo feminino, de 19 a 55 anos de
+idade, foram incluídos na amostra. Pacientes que
+apresentavam radiografias laterais sem boa qualidade ou que apresentavam deformidades craniofaciais não foram incluídos na amostra. Não houve fator discriminante quanto à má oclusão inicialmente
+apresentada pelos pacientes, seja quanto ao tipo ou
+quanto ao seu grau de severidade.
+
+Figura 1 - Pontos cefalométricos utilizados.
+
+Pontos e medidas cefalométricas
+Os seguintes pontos cefalométricos foram
+identificados e digitalizados (Fig. 1):
+1. Básio (Ba): o ponto mais inferior e posterior do limite posterior do forame magno.
+2. Sela (S): o centro da fossa ptuitária do
+osso esfenoide.
+2. Násio (N): a junção dos ossos frontal e
+nasal, na sutura frontonasal.
+4. Fissura pterigomaxilar (Ptg): o ponto
+mais inferior da fissura pterigomaxilar.
+5. Espinha nasal posterior (ENP): o ponto
+mais posterior do palato duro.
+6. Espinha nasal anterior (ENA): a ponta do
+processo anterior mediano da maxila.
+7. Ponta da cúspide mesial do molar superior: referência posterior do plano oclusal.
+8. Referência anterior do plano oclusal: estabelecida como o ponto médio entre as bordas
+incisais dos incisivos superiores e inferiores.
+9. Gônio (Go): o ponto médio do ângulo da
+mandíbula.
+10. Mento (Me): o ponto mais inferior na
+sínfise mandibular.
+
+Coleta de dados
+Dezoito pontos cefalométricos (Fig. 1) foram
+identificados, traçados, reidentificados e retraçados
+em papel acetato com lapiseira 0,3mm, por três
+técnicos treinados (padrão-ouro, clínica Jundiaí e
+clínica São Paulo). Todos os traçados foram digitalizados em mesa digitalizadora Trust TB 7.300
+Wide Screen Design Table (PO Box 8043, 3301
+CA Dordrecht, Holanda) e os dados analisados
+no programa Excel (Microsoft Office, Windows 7,
+Redmond, Washington, EUA).
+
+Dental Press J Orthod
+
+5
+
+32.e3
+
+2011 July-Aug;16(4):32.e1-9
+
+Sistema Decodify®: cefalometria como mensuração de risco e ferramenta administrativa para clínica ortodôntica
+
+11. Gnátio (Gn): o ponto mais anterior e inferior do contorno da sínfise mandibular. Determinado pela bissetriz do ângulo formado pelo plano
+mandibular (Go-Me) e a linha Násio-Pogônio.
+12. Ponto A: o ponto mais posterior da curvatura anterior da maxila.
+13. Ponto B: o ponto mais posterior da curvatura anterior da mandíbula.
+14. Pogônio (Pg): o ponto mais anterior do
+contorno do mento duro.
+15. Incisal do incisivo superior: a ponta mais
+incisal do incisivo superior.
+16. Ápice do incisivo superior: a ponta mais
+apical do incisivo superior.
+17. Incisal do incisivo inferior: a ponta mais
+incisal do incisivo inferior.
+18. Ápice do incisivo inferior: a ponta mais
+apical do incisivo inferior.
+
+1
+
+5
+
+11
+
+6
+
+12
+2
+
+10
+
+7
+
+3
+9
+
+4
+
+14
+
+15
+
+Figura 2 - Medidas cefalométricas utilizadas.
+
+10. N-Me: distância entre o Násio e o Mento,
+representando a altura facial anterior.
+11. SNA: ângulo entre a base craniana anterior (S-N) e o Ponto A, representando a posição anteroposterior da maxila.
+12. SNB: ângulo entre a base craniana anterior (S-N) e o Ponto B, representando a posição anteroposterior da mandíbula.
+13. Longo eixo do incisivo superior.
+14. Longo eixo do incisivo inferior.
+15. Ponto A-Pg: plano representando o perfil
+ósseo maxilomandibular.
+Wits: distância entre as projeções perpendiculares dos Pontos A e B no plano oclusal, representando a relação anteroposterior maxilomandibular.
+
+As seguintes medidas cefalométricas foram
+consideradas (Fig. 2):
+1. S-N: plano que representa a base craniana anterior.
+2. Plano palatino: ângulo entre a base craniana anterior (S-N) e o plano palatino, considerando-se os pontos ENA e ENP.
+3. Plano oclusal: ângulo entre a base craniana anterior (S-N) e o plano oclusal, considerando-se os pontos molar e incisivo.
+4. Plano mandibular: ângulo entre a base
+craniana anterior (S-N) e o plano mandibular
+(Go-Me).
+5. Ba-Na: plano que representa a base craniana.
+6. Eixo Y: menor ângulo entre a base craniana (Ba-N) e o eixo facial (Ptg-Gn).
+7. S-Go: distância entre a Sela e o Gônio,
+representando a altura facial posterior.
+8. N-ENA: distância entre o Násio e a ENA,
+representando a parte superior da altura facial anterior.
+9. ENA-Me: distância entre a ENA e o
+Mento, representando a parte inferior da altura facial anterior.
+
+Dental Press J Orthod
+
+8
+
+13
+
+Desenho da pesquisa e método estatístico
+O sistema foi desenvolvido em três unidades:
+1) anteroposterior, 2) vertical e 3) dentária. As
+medidas de tendência central (média e desvio-padrão) para cada idade (6 a 18 anos) e cada
+sexo foram obtidas do Atlas de Crescimento
+Craniofacial de Bauru31. O padrão-ouro escolhido foi a digitalização e processamento do sistema
+Decodify®, operado por um técnico da empresa
+BioLogique S/S Ltda. (São Paulo/SP) e hospedado
+
+32.e4
+
+2011 July-Aug;16(4):32.e1-9
+
+Del Santo Jr. M, Del Santo L
+
+Resultados
+Os resultados de reprodutibilidade e confiabilidade das variáveis cefalométricas selecionadas são descritos nas Tabelas 1 e 2.
+A Tabela 3 define o ranking de risco avaliado
+e a Tabela 4 exibe os coeficientes de confiança
+entre os riscos processados nas avaliações dos
+dois examinadores contra o padrão-ouro.
+
+em servidor central da HostLocation (São Paulo/
+SP). Cada um dos dois consultórios forneceu 30 radiografias laterais e a colaboração de uma auxiliar
+técnica para digitalizar e processar os casos.
+Estabelecido o padrão-ouro, testou-se a reprodutibilidade intraexaminador de cada examinador e testou-se, independentemente, cada
+examinador contra o padrão-ouro (avaliação
+chamada interexaminadores). Os resultados de
+cada partilha de 30 casos foram também comparados intraexaminador (redigitalizados 4 semanas após a primeira partilha). A correlação
+intraexaminador visou mensurar o erro sistemático e a correlação interexaminadores visou
+mensurar o erro de método. Epistemologicamente, testaram-se as hipóteses nulas de não-diferença intraexaminador e de não-diferença
+interexaminadores (examinador 1 e 2 contra o
+padrão-ouro).
+Coeficientes de correlação visaram comparar as variáveis cefalométricas similares de
+forma pareada, isolando-se como variável dependente o examinador. O risco envolvido em
+cada caso, resultado do processamento eletrônico pelo sistema Decodify® e apresentado
+como um ranking qualitativo, foi medido de
+modo ordinal. Os riscos foram pareados por
+matrizes de covariância e tais comparações foram expressas através de coeficientes de confiança, novamente testando-se as hipóteses
+nulas de não-diferença intraexaminador e de
+não-diferença interexaminadores (examinador
+contra o padrão-ouro).
+
+tabela 1 - Correlação pareada, padrão-ouro intraexaminadores (IE) e
+interexaminadores (EE). Grau de significância [p<0,001].
+
+Lógica do sistema de inteligência artificial
+Decodify® é um sistema de inteligência artificial capaz de calcular os graus de envolvimento cefalométrico, esqueletal e/ou dentário,
+após a contextualização matemática das variáveis eleitas. A rede neural é baseada em lógica
+paraconsistente22,24, capaz de aplicar decisões
+não-triviais, por ser sensível à incerteza, inconsistência e insuficiência embutidas nos dados.
+
+Dental Press J Orthod
+
+Variável
+
+Padrão-Ouro IE
+
+EE-JU
+
+EE-SP
+
+SNA
+
+0,91
+
+0,74
+
+0,96
+
+SNB
+
+0,94
+
+0,91
+
+0,95
+
+ANB
+
+0,93
+
+0,81
+
+0,97
+
+Wits
+
+0,87
+
+0,86
+
+0,88
+
+M-U1
+
+0,89
+
+0,85
+
+0,77
+
+M-L1
+
+0,84
+
+0,79
+
+0,70
+
+S-Go
+
+0,97
+
+0,68
+
+0,98
+
+Na-Me
+
+0,98
+
+0,98
+
+0,96
+
+Na-ENA
+
+0,90
+
+0,82
+
+0,90
+
+ENA-Me
+
+0,94
+
+0,93
+
+0,97
+
+SN/PP
+
+0,79
+
+0,82
+
+0,82
+
+SN/PO
+
+0,90
+
+0,89
+
+0,89
+
+SN/PM
+
+0,95
+
+0,90
+
+0,97
+
+Eixo Y
+
+0,97
+
+0,86
+
+0,97
+
+U1.SN
+
+0,94
+
+0,92
+
+0,95
+
+U1.PP
+
+0,92
+
+0,89
+
+0,95
+
+U1.Na
+
+0,93
+
+0,88
+
+0,96
+
+L1.GoMe
+
+0,90
+
+0,94
+
+0,83
+
+L1.NB
+
+0,79
+
+0,93
+
+0,74
+
+L1-NB
+
+0,93
+
+0,93
+
+0,93
+
+L1.APg
+
+0,84
+
+0,88
+
+0,66
+
+L1-APg
+
+0,81
+
+0,77
+
+0,84
+
+U1.L1
+
+0,90
+
+0,91
+
+0,90
+
+IE: avaliação intraexaminador.
+EE: avaliação interexaminadores.
+
+32.e5
+
+2011 July-Aug;16(4):32.e1-9
+
+Sistema Decodify®: cefalometria como mensuração de risco e ferramenta administrativa para clínica ortodôntica
+
+tabela 2 - Correlação pareada, intraexaminador. Grau de significância
+[p<0,001].
+
+tabela 4 - Coeficientes de confiança medidos por matrizes de covariância, comparando-se os riscos medidos pelos examinadores contra
+o padrão-ouro. Grau de significância [p<0,0001].
+
+Variável
+
+IE-JU
+
+IE-SP
+
+SNA
+
+0,86
+
+0,73
+
+Risco-Resultado
+
+EE-JU
+
+EE-SP
+
+SNB
+
+0,94
+
+0,64
+
+Correlação menor
+
+0,54
+
+0,47
+
+ANB
+
+0,69
+
+0,85
+
+Correlação maior
+
+0,90
+
+0,88
+
+Wits
+
+0,81
+
+0,92
+
+Correlação média
+
+0,78
+
+0,75
+
+M-U1
+
+0,88
+
+0,60
+
+M-L1
+
+0,83
+
+0,56
+
+Coeficiente de
+confiança
+
+0,78
+
+0,75
+
+S-Go
+
+0,98
+
+0,83
+
+Na-Me
+
+0,98
+
+0,62
+
+Na-ENA
+
+0,86
+
+0,77
+
+ENA-Me
+
+0,96
+
+0,69
+
+SN/PP
+
+0,83
+
+0,73
+
+SN/PO
+
+0,90
+
+0,67
+
+SN/PM
+
+0,97
+
+0,75
+
+Eixo Y
+
+0,94
+
+0,61
+
+U1.SN
+
+0,86
+
+0,62
+
+U1.PP
+
+0,85
+
+0,61
+
+U1.Na
+
+0,81
+
+0,55
+
+L1.GoMe
+
+0,91
+
+0,81
+
+L1.NB
+
+0,78
+
+0,73
+
+L1-NB
+
+0,91
+
+0,77
+
+L1.APg
+
+0,52
+
+0,62
+
+L1-APg
+
+0,67
+
+0,83
+
+U1.L1
+
+0,75
+
+0,69
+
+Discussão
+A cefalometria é uma ferramenta de diagnóstico ortodôntico aceita mundialmente e
+considerada como informação essencial para se
+oferecer um plano de tratamento confiável ao
+paciente. É baseada em medidas tomadas em
+radiografias laterais de cabeça e descreve discrepâncias esqueléticas e dentárias com considerável precisão. Um ortodontista clínico com
+experiência pode bem interpretar, embora subjetivamente, valores cefalométricos e aplicar
+essas informações na sua prática diária. Como
+somente números não podem ser diretamente aplicados na clínica, essa subjetividade tem
+sido alvo de contestações sobre o potencial valor da cefalometria para uso rotineiro.
+O assunto em questão não é se a cefalometria deve ou não ser usada, mas sim como dados
+cefalométricos devem ser interpretados antes de
+sua aplicação, pois essa interpretação embute significativa variância. Isso ocorre por dois motivos
+principais: primeiro, porque o grau de anormalidade clínica não é quantitativamente medido;
+e segundo, porque não há como se estabelecer
+o padrão-ouro. Padrão-ouro é a referência padrão que se estabelece para que outras referências possam a ela ser comparadas e, a partir dessa
+comparação, tornem-se aceitáveis ou não.
+Em nosso projeto, estabelecemos um padrão-ouro (Tab. 1), contextualizando-se medidas cefalométricas de ampla utilização por ortodontistas.
+
+IE: avaliação intraexaminador.
+EE: avaliação interexaminadores.
+
+tabela 3 - Definição do ranking de risco. Classificação ordinal dos resultados qualitativos.
+RiscoResultado
+Decodify®
+
+Significado Clínico
+
+Tempo de
+Tratamento*
+
+Custo do
+Tratamento*
+
+Risco I
+
+Comprometimento
+dentário apenas
+
+12 meses
+
+$
+
+Risco II
+
+Comprometimento
+esqueletal leve
+
+18 meses
+
+$$
+
+Risco III
+
+Comprometimento
+esqueletal moderado
+
+24 meses
+
+$$$
+
+Risco IV
+
+Comprometimento
+esqueletal severo
+
+30 meses
+
+$$$$
+
+*A título referencial, a critério do profissional.
+
+Dental Press J Orthod
+
+32.e6
+
+2011 July-Aug;16(4):32.e1-9
+
+Del Santo Jr. M, Del Santo L
+
+A contribuição do nosso trabalho torna-se evidente com os coeficientes de confiança apresentados. Uma vez que tenhamos um sistema que
+estabeleça graus de severidade, através da programação de algoritmos que contextualizam variáveis
+cefalométricas individuais, temos um grau de risco
+para cada caso avaliado. Os coeficientes de confiança mostram que esse grau de risco é reprodutível e
+confiável e, assim, avaliações embutem um mínimo
+de viés pessoal. Troca-se o “achismo” cefalométrico
+pela “evidência” do risco cefalométrico. Em poucas
+palavras, o sistema Decodify® funciona como uma
+“régua” para medir o grau de dificuldade de se tratar
+um determinado caso ortodôntico.
+Com esse instrumento, portanto, o profissional pode mensurar, com alto grau de precisão,
+quanta “energia” ortodôntica deve ser dedicada
+àquele caso em particular. E as consequências
+práticas dessa mensuração são muitas: o profissional pode estimar a extensão do tratamento, o
+número aproximado de consultas, a necessidade
+de sua atenção como clínico (e, consequentemente, a possibilidade de delegar funções menos importantes às suas assistentes), os problemas em potencial, o preço do tratamento, etc.
+Metaforicamente, o tratamento ortodôntico
+em um futuro muito próximo, se não já no presente, será oferecido aos pacientes como um “plano de voo muito bem definido”, com tempo estimado de decolagem, tempo estimado de duração
+e tempo estimado de pouso, destino bem definido e condições de voo previsíveis. Quem não tem
+premissas científicas para se basear, continuará
+“decolando seu avião ortodôntico” sem informar
+a qual aeroporto se dirige, qual o tempo estimado
+de viagem e quais as condições de voo esperadas. Esses profissionais passam, naturalmente, a
+ser preteridos por seus potenciais pacientes, que
+buscarão melhores serviços. E é impossível que
+seja diferente: hoje, todos os pacientes esperam
+receber serviços de qualidade, entregues com
+conforto e segurança, dentro de um prazo pré-estipulado e que custem preço de mercado.
+
+O resultado dessa contextualização chamou-se
+risco. É importante ressaltar que esse risco foi
+baseado em normas esperadas para cada uma
+das medidas eleitas, individualizadas por sexo e
+idade, medidas na mesma população dos casos
+avaliados (brasileiros, caucasianos com grau de
+miscigenação étnica médio). A contextualização (ou risco) pode ser assim definida: “o que
+devemos esperar como má oclusão e qual sua
+severidade, seja esqueletal ou dentária, daquele
+paciente em particular”.
+Pelos resultados obtidos, observa-se que
+a comparação interexaminadores (contra o
+padrão-ouro) apresenta variação conforme a
+medida cefalométrica. Isso é o que se espera
+da avaliação humana de pontos cefalométricos
+com variável grau de identificação e reprodução. Frisamos que esse grau de variação envolve
+o grau de acurácia, tanto do examinador como
+do próprio padrão-ouro. Citamos como exemplos de variáveis cefalométricas vulneráveis ao
+erro de identificação e reprodução: o ponto A
+(devido à espessura do osso maxilar na região),
+a inclinação do incisivo inferior (devido à sobreposição das imagens dos incisivos inferiores) e a localização geométrica do ponto Gônio
+(bissetriz construída).
+Essas variações contabilizam também a variação intraexaminador, isolada na Tabela 2. A
+variação da reprodutibilidade dos examinadores implica em se afirmar que há examinadores
+que têm mais conhecimento e/ou mais prática
+para fazer um traçado cefalométrico, o que é
+coerente se esperar.
+Os resultados quantitativos, modelados pelo
+sistema Decodify® como risco, são apresentados de forma ordinal na Tabela 3. Desse modo,
+sugerimos parâmetros que consideramos úteis
+para a clínica ortodôntica diária. Por exemplo,
+quanto maior o envolvimento esqueletal que
+um caso apresenta, maior o seu risco e, consequentemente, maior o tempo de tratamento
+requerido e o custo envolvido.
+
+Dental Press J Orthod
+
+32.e7
+
+2011 July-Aug;16(4):32.e1-9
+
+Sistema Decodify®: cefalometria como mensuração de risco e ferramenta administrativa para clínica ortodôntica
+
+Conclusão
+Nossos resultados suportam que o risco
+mensurado pelo sistema apresentado é reprodutível e confiável. Aceitamos, portanto, as hipóteses nulas de não-diferença intraexaminador
+e interexaminadores, em todas as comparações
+pareadas realizadas.
+Como consequência direta da aceitação dessas
+hipóteses nulas, sugerimos ser o sistema Decodify®
+uma importante ferramenta cefalométrica para
+que o ortodontista possa estabelecer claros parâmetros quanto ao serviço que será por ele prestado. Assim, o paciente pode ter uma estimativa
+confiável do grau de severidade de sua má oclusão,
+
+a dificuldade que o ortodontista terá para tratá-la,
+bem como o tempo estimado de tratamento. Consequentemente, o paciente pagará o preço justo
+pelo serviço a ser contratado, de acordo com o
+mercado no qual esse serviço se insere.
+Agradecimentos
+Os autores agradecem aos colaboradores Alison Rocha (padrão-ouro, Empresa BioLogique
+S/S Ltda.), Simone Pittori (e ao Dr. Jurandir Barbosa, Jundiaí-SP) e Alaíde Yamaguchi (e à Dra.
+Liliana Maltagliati, São Paulo-SP) pelo processamento dos dados (traçado, digitalização e tabulação) para o desenvolvimento deste artigo.
+
+Decodify® system: cephalometrics as risk manager
+and administrative tool for the orthodontic clinic
+Abstract
+Introduction: Cephalometrics may have limited clinical application in Orthodontics because it demands subjective
+interpretation. An artificial intelligence (A.I.) system, Decodify®, was developed to provide an individual quantitative
+interpretation of contextualized cephalometric data. In this paper the system is tested as a valid management tool in
+orthodontic offices. Methods: The development of algorithms included modeling of norms and standard deviations
+of Brazilian cephalometric data measured on lateral radiographs. In order to test the system, initial cephalograms
+of 60 orthodontic patients from two orthodontic offices (30 cases each) were processed and re-processed by three
+different technicians. Reproducibility and reliability intra-observer and inter-observers were paired checked. The risk
+in each case, product of the electronic analysis, was compared by covariance matrices and reliability coefficients.
+Results: Levels of inter-observers paired correlation (against golden pattern) for 23 pairs of variables, ranged from
+0,68 (S-Go distance) to 0,98 (Na-Me distance) in an orthodontic clinic (JU) and from 0,66 (L1.APg angle) to 0,98 (S-Go
+distance) in other orthodontic clinic (SP). Levels of intra-observer correlation for 23 pairs of variables ranged from 0,52
+(L1.APg angle) to 0,98 (S-Go and Na-Me distances) in an orthodontic clinic (JU) and from 0,55 (U1.Na angle) to 0,92
+(Wits distance) in other (SP). All the correlations were significant at the p<0,001 level. The reliability coefficients of
+the assessed risks were 0,78 for a clinic (JU) and 0,75 for other clinic (SP). The reliability coefficients were significant
+at the p<0,0001 level. Conclusions: The results of this research support that the outcomes of the Decodify® system
+are reproducible and reliable. Therefore, the system can be applied to contextualize conventional cephalometric data
+and to generate case-specific risk. It can be used by the orthodontist as an important administrative tool for daily
+professional evaluations.
+Keywords: Orthodontics. Diagnosis. Artificial Intelligence.
+
+Dental Press J Orthod
+
+32.e8
+
+2011 July-Aug;16(4):32.e1-9
+
+Del Santo Jr. M, Del Santo L
+
+Referências
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10,
+11.
+12.
+13.
+14.
+15.
+16.
+
+17. Forsyth DB, Shaw WC, Richmond S. Digital imaging of
+cephalometric radiography, part 1: advantages and limitations of
+digital imaging. Angle Orthod. 1996;66(1):37-42.
+18. Forsyth DB, Shaw WC, Richmond S, Roberts CT. Digital imaging
+of cephalometric radiography, part 2: image quality. Angle
+Orthod. 1996;66(1):43-50,
+19. Aminzadeh F, Jamshidi M. Soft computing: Fuzzy logic, neural
+networks and distributed artificial intelligence. Upper Saddle
+River: Prentice Hall; 1994.
+20, Russell S, Norvig P. Artificial Intelligence. 2nd ed. Upper Saddle
+River: Prentice Hall; 2002.
+21. Da Costa NCA. On the theory of inconsistent formal systems.
+Notre Dame J Formal Logic. 1974;15(4):497-510,
+22. Da Costa NCA, Subrahmanian VC, Vago C. The paraconsistent
+logic. Zeitschrift für Math Logik und Grundlagen der Math.
+1991;37:137-48.
+23. Kifer M, Subrahmanian VS. Theory of generalized annotated
+logic programming and its applications. J Logic Program.
+1992;12(4):335-67.
+24. Abe JM. Paraconsistent artificial networks: an introduction. Lect
+Notes Artific Intellig. 2004; 3214:942-8.
+25. Roy MK, Biswas R. I-V Fuzzy relations and Sanchez’s approach for
+medical diagnosis. Fuzzy Sets Syst. 1992;47(1):35-8.
+26. Sanchez E. Truth-qualification and fuzzy relations in natural
+languages, application to medical diagnosis. Fuzzy Sets Syst.
+1996;84(2):75-86.
+27. Kuncheva LI, Steimann F. Fuzzy diagnosis. Artificial intelligence in
+medicine. 1999;16:121-8.
+28. Takada K, Sorihashi Y, Stephens CD, Itoh S. An inference modeling
+of human visual judgment of sagittal jaw-base relationships
+based on cephalometry: Part I. Am J Orthod Dentofacial Orthop.
+2000;117(2):140-7.
+29. Sorihashi Y, Stephens CD, Takada K. An inference modeling of
+human visual judgment of sagittal jaw-base relationships based
+on cephalometry. Part II. Am J Orthod Dentofacial Orthop.
+2000;117(3):303-11.
+30, Del Santo M Jr, Del Santo LM. Diagnóstico cefalométrico
+eletrônico: contextualização de variáveis cefalométricas. Dental
+Press J Orthod. 2011;16(2):75-84.
+31. Martins DR, Janson GRP, Almeida RR, Pinzan A, Henriques JFC,
+Freitas MR. Atlas de crescimento craniofacial. São Paulo: Ed.
+Santos; 1998.
+
+Wylie WL. Present beliefs in the practicability of cephalometric
+studies in individual case analysis, prognosis and treatment. Am J
+Orthod. 1946;32:836-42.
+Moorrees CFA. Normal variation and its bearing on the use
+of cephalometric radiographs in orthodontic diagnosis. Am J
+Orthod. 1953; 39:942-50,
+Sved A. A critical review of cephalometrics. Am J Orthod. 1954;
+40:567-90,
+Dreyer CJ, Joffe BM. A concept of cephalometric interpretation.
+Angle Orthod. 1963;33:123-6.
+Baumrind S, Frantz RC. The reliability of head film measurements.
+1. Landmark identification. Am J Orthod. 1971;60:111-27.
+Major PW, Johnson DE, Hesse KL, Glover KE. Landmark
+identification error in posterior anterior cephalometrics. Angle
+Orthod. 1994;64(6):447-54.
+Trpkova B, Major P, Prasad N, Nebbe B. Cephalometric landmarks
+identification and reproducibility: a meta-analysis. Am J Orthod
+Dentofacial Orthop. 1997;112(2):165-70,
+Björk A, Solow B. Measurements on radiographs. J Dent Res.
+1962;41:672-83.
+Savara BS, Tracey WE, Miller PA. Analysis of errors in
+cephalometric measurements of three dimensional distances on
+the human mandible. Arch Oral Biol. 1966;11(2):209-17.
+Buschang PH, LaPalme L, Tanguay R, Demirjian A. The technical
+reliability of superimposition on cranial base and mandibular
+structures. Eur J Orthod. 1986;8:152-6.
+Buschang PH, Tanguay R, Demirjian A. Cephalometric reliability.
+A full ANOVA model for the estimation of true and error variance.
+Angle Orthod. 1987;57(2):168-75.
+Del Santo M Jr. Influence of the occlusal plane inclination on ANB
+and Wits assessments of anteroposterior relationship of the jaws.
+Am J Orthod Dentofacial Orthop. 2006;129(5):641-8.
+Baumrind S, Muller DM. Computer-aided head film analysis: the
+University of California San Francisco method. Am J Orthod.
+1980;78(1):41-65.
+Eriksen E, Solow B. Linearity of cephalometric digitizers. Eur J
+Orthod. 1991;13(5):337-42.
+Fine MB, Lavelle CLB. Diagnosis of skeletal form on the lateral
+cephalogram with a finite element-based expert system. Am J
+Orthod Dentofacial Orthop. 1992;101(4):318-29.
+Ferraro VF, Sforza C, Dallorca LL, De Franco DJ. Assessment of
+facial form modifications in Orthodontics: proposal of a modified
+computerized mesh diagram analysis. Am J Orthod Dentofacial
+Orthop. 1996;109(3):263-70,
+
+Enviado em: 19/3/2009
+Revisado e aceito: 6/8/2009
+
+Endereço para correspondência
+Marinho Del Santo Jr.
+Rua Mal. Hastimphilo de Moura 277, Casa 1
+CEP: 05.641-000 - Morumbi - São Paulo / SP
+E-mail: marinho@delsanto.com.br
+
+Dental Press J Orthod
+
+32.e9
+
+2011 July-Aug;16(4):32.e1-9
+

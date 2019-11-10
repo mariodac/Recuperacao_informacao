@@ -1,0 +1,518 @@
+Revista Brasileira de Zootecnia
+© 2009 Sociedade Brasileira de Zootecnia
+ISSN 1516-3598 (impresso)
+ISSN 1806-9290 (on-line)
+www.sbz.org.br
+
+R. Bras. Zootec., v.38, p.390-396, 2009 (supl. especial)
+
+Inteligência artificial aplicada à Zootecnia
+Ernane José Xavier Costa 1
+1Universidade
+
+de São Paulo - Faculdade de Zootecnica e Engenharia de Alimentos. +55 19 35654177
+
+RESUMO - Os sistemas biológicos são surpreendentemente flexíveis pra processar informação proveniente do mundo
+real. Alguns organismos biológicos possuem uma unidade central de processamento denominada de cérebro. O cérebro humano
+consiste de 101 1 neurônios e realiza processamento inteligente de forma exata e subjetiva. A Inteligência Artificial (IA) tenta
+trazer para o mundo da computação digital a heurística dos sistemas biológicos de várias maneiras, mas, ainda resta muito para
+que isso seja concretizado. No entanto, algumas técnicas como Redes neurais artificiais e lógica fuzzy tem mostrado efetivas
+para resolver problemas complexos usando a heurística dos sistemas biológicos. Recentemente o numero de aplicação dos
+métodos da IA em sistemas zootécnicos tem aumentado significativamente. O objetivo deste artigo é explicar os princípios
+básicos da resolução de problemas usando heurística e demonstrar como a IA pode ser aplicada para construir um sistema
+especialista para resolver problemas na área de zootecnia.
+Palavras-chave: algoritmos genéticos, redes neurais artificiais, sistemas especialista
+
+Artificial intelligence in Animal Science
+ABSTRACT - Biological systems are surprising flexible in processing information in the real world. Some biological
+organisms have a central unit processing named brain. The human’s brain, consisting of 1011 neurons, realizes intelligent
+information processing based on exact and commonsense reasoning. Artificial intelligence (AI) has been trying to implement
+biological intelligence in computers in various ways, but is still far from real one. Therefore, there are approaches like Symbolic
+AI, Artificial Neural Network and Fuzzy system that partially successful in implementing heuristic from biological intelligence.
+Many recent applications of these approaches show an increased interest in animal science research. The main goal of this
+article is to explain the principles of heuristic problem-solving approach and to demonstrate how they can be applied to building
+knowledge-based systems for animal science problem solving.
+Key Words: artificial neural network, genetic algorithm, knowledge-based system
+
+Introdução
+Introdução aos paradigmas da IA
+A inteligência artificial (IA) compreende os métodos,
+ferramentas e sistemas para solucionar problemas que
+normalmente requer o uso da inteligência humana. Não
+somente os humanos podem resolver problemas complexos,
+mas todos os seres orgânicos também apresentam métodos
+avançados de solução de problemas complexos e uma
+capacidade de reação adaptativa. Sendo assim pode-se
+expandir o termo “inteligência artificial” à tentativa de
+sistematizar a resolução de problemas a partir da observação
+dos sistemas complexos existentes na natureza viva. Quando
+tais sistemas vivos identificam um problema eles reagem de
+forma adaptativa realizando tarefas complexas como:
+· Reconhecimento de padrões em imagens e sons
+· Processamento da linguagem
+Correspondências devem ser enviadas para: ernane@usp.br
+
+· Planejamento e predição de ações.
+A partir do conhecimento destes sistemas complexos,
+a IA tem como objetivo principal desenvolver métodos e
+modelos que simulam em um sistema computacional a
+forma como os organismos vivos resolvem problemas.
+Para atingir estes objetivos a IA adota dois paradigmas: A
+IA simbólica baseada na teoria dos sistemas físicos
+simbólicos (Newel & Simon 1972) e a Neurocomputação
+(ou paradigma sub-simbólico) que está baseada na
+concepção conexionista dos neurônios para processar a
+informação (Smolenski, 1990).
+O siste ma simbólico consiste de um conjunto de
+símbolos que formam estruturas e um conjunto de regras e
+processos. Quando o conjunto de regras e processos é
+aplicado no conjunto de símbolos o sistema produz novas
+estruturas. Os símbolos têm significados semânticos e
+podem representar conceitos ou objetos. Para lidar com
+
+Costa
+
+estes conceitos usa-se a lógica proposicional e a lógica de
+predicados o que permite a solução de problema usando um
+sistema baseado em regras. Assim um sistema simbólico é
+capaz de resolver problemas que envolvem dados e as
+regras sobre estes dados.
+O paradigma conexionista tem como premissa a
+suposição de que o comportamento inteligente esta
+relacionado com a dinâmica das conexões entre pequenos
+nós denominados neurônios onde tal dinâmica é capaz de
+representar o conhecimento. Diferentemente do paradigma
+simbólico, no modelo conexionista o estado dos neurônios
+representam um conceito ou um objeto e a dinâmica que leva
+à representação do conceito ou objeto é que estabelece as
+regras sobre tais objetos e conceitos. Na pratica, os
+dois paradigmas podem se juntar para formar um terceiro
+paradigma, uma mistura do sistema simbólico com um sistema
+conexionista.
+Resolução de problemas usando Heurística
+Heurística é uma palavra de origem grega que significa
+descoberta. O ato humano de resolver um problema implica
+uma ação heurística na sistemática da resolução do problema.
+Esta sistemática baseia-se na experiência, idéias racionais,
+e regras. De fato, naturalmente a heurística esta baseada
+mais no senso comum que em um formalismo matemático, o
+que a principio, não implica que a heurística garantirá a
+melhor solução para um dado problema, mas com certeza a
+solução será ótima em termos de custo e tempo. O exemplo
+disso é a forma como os humanos resolvem problemas que
+não tem uma fórmula ou algoritmos que permita encontrar
+a solução exata e direta como, por exemplo, diagnosticar um
+
+391
+
+defeito em um automóvel ou criar um plano para aumentar
+a produção de leite de uma dada fazenda. O desafio da IA
+é estabelecer métodos que possam sistematizar a maneira
+heurística de resolução de problemas e transcrevê-las
+para um formalismo matemático e algorítmico
+possibilitando assim seu uso em máquinas automáticas
+como o computador.
+Na ciência zootécnica, como em outras, quando um
+problema é definido, assume-se que existe um conjunto de
+n variáveis independentes de entrada ou atributos do
+problema (x1 ,x2 ,...xn ), e um conjunto de m variáveis que
+representam, a partir de regras ou observações, as possíveis
+soluções do problema (y 1 , y2 , ...,yn ). Cada possível
+combinação dos valores das variáveis de entrada podem ser
+representada por um vetor d = (a1 , a2 , ...,an ), em que d é
+um elemento do espaço de domínio D ou espaço dos
+problemas. Por outro lado, cada possível solução y pode ser
+representada como um vetor s = (s 1 , s2 , ...,sn ), em que s
+é um elemento do espaço de soluçõesS. No caso ideal existe
+uma formula ou procedimento que permite estabelecer
+diretamente para cada problema em D uma solução em S,
+Mas na realidade da zootecnia isto nem sempre acontece e
+é nestes casos que a heurística é usada. A heurística é um
+mecanismo segundo o qual problemas no espaço D podem
+ser mapeados no espaço das soluções. Este procedimento
+está ilustrado na Figura 1.
+A inteligência artificial estabelece os mecanismos que
+permitem sistematizar os métodos heurísticos. Logo, o
+termo inteligência aqui não é estritamente a inteligência
+humana, mesmo porque a definição de inteligência é
+complexa. Mas o termo pode ser considerado como o uso
+
+Figura 1 – Heurística como um meio de obter soluções no espaço S a partir das variáveis existentes no espaço de domínio D.
+© 2009 Sociedade Brasileira de Zootecnia
+
+392
+
+da heurística na resolução de problemas. Os dois exemplos
+mais elucidativos da heurística são: Algoritmos genéticos
+e Redes neurais Artificiais.
+Algoritmos genéticos
+Os algoritmos genéticos (AG) são capazes de resolver
+problemas complexos de problemas combinatórios e
+organizacionais. Os algoritmos genéticos se inspiram nas
+leis naturais da genética evolutiva e foi introduzida e
+sistematizada no meio acadêmico por Jonh Holland (1975).
+Pode-se de classificar os algoritmos genéticos dentro da IA
+como um paradigma simbólico.
+Pela observação da diversidade das variedades de
+seres vivos, surge a questão: Como a natureza resolve o
+problema de otimização observado na evolução das espécies
+e sua conseqüente adaptação ao meio? Uma das respostas
+foi dada por Darwin na teoria da evolução. Partindo-se
+desta inspiração um algoritmo genético é um algoritmo que
+se baseia nos seguintes processos e objetos:
+Gene – um objeto básico que controla a propriedade de
+um individuo
+Cromossomo – um vetor de genes, representa um
+individuo ou uma solução possível de um dado problema no
+espaço de soluções S.
+População – uma conjunto de indivíduos
+Operação de Crossover – ação que a partir de um
+subconjunto de genes de indivíduos produz novos
+indivíduos.
+Mutação – uma mudança aleatória nos genes de um
+cromossomo
+Figura de mérito – um critério de avaliação de cada
+individuo
+Seleção – um procedimento de escolha de uma parte da
+população de indivíduos que irão permanecer no processo
+de busca da solução ótima do problema. A seleção é baseada
+na figura de mérito pré-estabelecida.
+Um algoritmo genético simples consiste das seguintes
+etapas:
+1- Inicializar as populações de possíveis soluções do
+problema
+2- Enquanto a melhor solução baseada em algum critério
+não for encontrada faça:
+a. Use a operação de crossover entre um individuo
+“pai” e um individuo “mãe”da população e gere novos
+indivíduos
+b. Selecione os melhores “filhos” gerados usando uma
+função de mérito
+c. Aplique mutações de forma aleatória e rara.
+Para exemplificar o uso de um AG na solução de um
+
+Inteligência artificial aplicada à Zootecnia
+
+problema, considere o seguinte exemplo: Alguém pensa um
+número compostos de zeros e uns, por exemplo: 101011
+O problema consiste em descobrir a partir de um chute
+inicial qual foi o numero pensado. Os zeros e 1’s representam
+genes e o numero inteiro representa um individuo. A figura
+de mérito é dada pelo numero de genes na posição correta.
+Usando o algoritmo genético a solução será encontrada.
+Por exemplo:
+Considere que o chute inicial é :
+a) 010101 ACERTOS 1
+b) 111100 ACERTOS 2
+c) 011011 ACERTOS 4
+d) 101100 ACERTOS 3
+Usando a figura de mérito os indivíduos c) e d) são os
+mais adaptados pois tiveram o maior número de acertos.
+Tomando c) como mãe e d) como pai e realizando um
+compartilhamento simples de genes entre eles tem-se:
+c) 01 :1011
+e) 01 :1100 ACERTOS 1
+d)10:1100
+f)10 :1011 ACERTOS 6 - SOLUÇÃO
+ENCONTRADA
+Nota-se neste exemplo que bastou uma iteração no
+algoritmo para encontrar a solução ótima. Este algoritmo
+pode ser adaptado para trabalhar com n variáveis onde
+cada variável é um gene e cada conjunto de variáveis uma
+solução possível do problema. Em um problema zootécnico
+hipotético de encontrar a melhor combinação de
+ingrediente de uma ração que ao mesmo tempo otimiza o
+custo da ração e o ganho de peso do animal, o algoritmo
+genético poderia ser usado onde as variáveis que
+representam ingredientes seriam genes e os indivíduos
+seria conjunto destas variáveis a figura de mérito poderia
+ser o ganho de peso do animal e o custo da formulação
+ponderados em uma equação ou em observações
+experimentais. O AG é um exemplo simples de um método
+heurístico sistematizado dentro dos conceitos da IA.
+Redes neurais artificiais
+Os cérebros, sob uma visão simplista, são formados
+por unidades básicas denominadas de neurônios. Os
+neurônios estão conectados em uma rede complexa e
+dinâmica. Nos seres vivos esta estrutura é capaz de resolver
+problemas complexos. Desta observação surge dentro da
+IA o modelo conexionista que é um método heurístico
+inspirado no funcionamento das redes neurais. As redes
+neurais artificiais são, portanto, um algoritmo
+computacional de uma rede de neurônios artificiais. Um
+neurônio artificial é por outro lado um modelo matemático
+inspirado em um neurônio real (HAYKIN, 1991). A palavra
+inspirado é usado aqui para deixar claro que o modelo
+
+© 2009 Sociedade Brasileira de Zootecnia
+
+Costa
+
+matemático é muito simples quando comparado com a
+complexidade de um neurônio real.
+O modelo matemático de um neurônio artificial é
+mostrado na Figura 2.
+Neste Modelo:
+• Sinais são apresentados à entrada.
+• Cada sinal é multiplicado por um número (peso).
+• É feita a soma ponderada que produz um nível de
+atividade.
+• Se este nível de atividade exceder um limite, a unidade
+produz uma determinada resposta de saída.
+McCulloch and Pitts (1943) criaram um modelo
+matemático de um neurônio e denominaram-no de perceptron
+mostrando que uma associação de perceptrons (ou rede de
+perceptrons) é capaz de implementar qualquer função lógica
+finita.
+A associação de neurônios artificiais altamente
+
+393
+
+conectados formam diferentes arquiteturas de redes neurais,
+e a forma como a dinâmica da rede é desenvolvida define a
+forma como a rede associa um entrada com uma saída ou a
+forma como ela encontra a solução a partir de um conjunto
+de variáveis que definem o problema.
+Baseado neste sistema de funcionamento, uma RNA é
+uma máquina projetada para modelar a maneira como o
+cérebro realiza suas tarefas, ou adequar uma função para tal.
+De acordo com Haykin (2001), as redes neurais artificiais se
+assemelham ao cérebro em dois aspectos:
+1- O conhecimento é adquirido pela rede a partir do seu
+ambiente através de um processo de aprendizagem.
+2- 2- Existem forças de conexão entre os neurônios,
+conhecidas como pesos sinápticos (representadas na figura
+3 por W), e são utilizadas para armazenar o conhecimento
+adquirido.
+A estrutura de uma RNAs está ilustrada na Figura 3.
+
+Figura 2 - Modelo matemático de um neurônio, proposto por McCulloch and Pitts e denominado Perceptron.
+
+W
+
+Figura 3 - Estrutura de uma rede neural capaz de relacionar os parâmetros de entrada representadas por F e P com as características da
+saída representadas por R através da matriz sináptica W.
+© 2009 Sociedade Brasileira de Zootecnia
+
+394
+
+Inteligência artificial aplicada à Zootecnia
+
+As RNAs possuem a capacidade de aprendizado, e
+podem ser supervisionadas ou não. É demonstrado que a
+rede neural supervisionada pode “aprender” ou encontrar
+qualquer função contínua. É esta capacidade de lidar com
+funções altamente complexas que tornam as RNAs úteis no
+estudo de problemas tecnológicos, tais como a previsão de
+determinadas parâmetros zootécnicos. Existem muitas
+pesquisas que mostram a viabilidade do uso de RNAs para
+modelar, predizer e classificar dados zootécnicos.
+3- Reconhecimento de padrões em dados zootécnicos
+usando o modelo conexionista:
+Um dos principais atributos do modelo conexionista é
+a capacidade de generalizar a partir de exemplos. O modelo
+é baseado na codificação da informação em matrizes
+sinápticas que representam as conexões entre os neurônios
+da rede. O uso da RNAs no reconhecimento de padrão pode
+ser esquematizado conforme ilustra a Figura 4.
+Os dados obtidos de um sistema zootécnico são
+armazenados em uma base de dados. A base de dados pode
+estar relacionada com regras e rótulos que caracterizam os
+dados transformando a base de dados em uma base de
+conhecimento. Os dados da base de conhecimento possuem
+certas características que podem ser únicas e, portanto
+servir de identificação. Este processo é denominado extração
+de características. Normalmente os dados não são
+diretamente introduzidos no sistema de classificação, antes
+eles podem sofrer transformações que resultam em
+características que reduzem ou aumentam a
+dimensionalidade dos dados. Após a extração das
+características, estas podem ser usadas no treinamento e no
+teste do classificador. Os dados usados para treinar o
+classificador não podem ser usados no teste. Para testar a
+
+Medições
+Campo
+experimental
+
+rede um conjunto novo de dados deve ser apresentado ao
+classificador. Os acertos e os erros do classificado r permitem
+que uma abordagem estatística seja usada para avaliar seu
+desempenho.
+O sistema descrito na figura 4 pode ser realizado por
+uma rede neural que pode “aprender” o padrão existente em
+certo conjunto de dados. No contexto conexionista
+“aprender” é um processo pelo qual os parâmetros livres de
+uma RNA, são dinamicamente alterados através da
+interferência do ambiente externo ou dados provenientes
+de medidas do mundo real.
+A forma como os parâmetros são modificados definem
+a forma como a rede representará o conhecimento. Em
+artigos recentes na área de zootecnia a aprendizagem por
+correção de erro é a forma mais usada. Para ilustrar esta
+aprendizagem, considere um vetor de funções que
+representam algumas características de um sistema
+zootécnico qualquer e dado por:
+x (n) =[x1 (n), x2 (n), ..., xi(n),...], em que cada uma das
+coordenadas i entra em um neurônio k através de um peso
+s i n á p t i c o d a d o p o r W ik . P o d e - s e r e p r e s e n t a r
+esquematicamente este modelo com a Figura 2. Pode-se
+afirmar que a Figura 2 constitui um nó computacional
+simples. Por simplicidade o aprendizado por correção de
+erro pode ser compreendido usando este simples nó
+computacional. Neste nó podemos visualizar uma saída
+gerada através da função de ativação h do neurônio aplicada
+na entrada x(n) , no entanto, esta saída pode gerar um erro
+caso não seja igual a solução y(n) desejada. Este processo
+pode ser visualizado na Figura 5.
+Existem na literatura cientifica vários exemplos de
+aplicação do paradigma conexionista usando o método de
+
+Dados
+zootécnicos
+zoot écnicos
+
+Extrator de
+características
+
+Base de
+conhecimentos ou
+base de dados
+
+Treinamento do
+classificador
+
+Classificador
+
+Saída do
+sistema
+
+Teste do
+classificador
+
+Figura 4 - Diagrama funcional de sistema de reconhecimento de padrões.
+© 2009 Sociedade Brasileira de Zootecnia
+
+Costa
+
+395
+
+Ajustes dos pesos sinápticos
+Neurô nio k
+
+Yk(n) saída da rede
+
+sinal de erro gerado ek(n)
+
+dk(n) saída desejada
+
+Figura 5 - Diagrama esquemático do processo de aprendizagem por correção do erro.
+
+correção de erro de aprendizagem para resolver problemas
+zootécnicos. Brenneke 2007, usou um rede neural para a
+predição de proteína bruta e suas frações usando uma base
+de dados que incluiu as variáveis como tamanho , cor das
+folhas , média da altura pré-pastejo latitude e longitude,
+perfilho novos , perfilho remanescentes e etc. Neste trabalho
+a partir de dados externos da planta a autora mostrou que
+a RNA conseguiu estabelecer uma relação entre estas
+variáveis externas e seu conteúdo de proteína bruta. As
+redes neurais também foram usadas com sucesso em estudos
+aplicados em avicultura como previsão de qualidade de
+carcaça e avaliação da dieta de frangos de corte para
+estabelecer padrões que possam relacionar a qualidade do
+produto com o ambiente de criação e o alimento recebido
+(Hamadi et al., 2007; Chen et al., 1998). Em estudos visando
+à previsão de mastite bovina as redes neurais artificiais
+foram usadas como um sistema de diagnostico precoce
+baseado em dados de monitoramento diário coletados
+durante as ordenhas e armazenados em uma base de
+conhecimento para assim detectar com antecedência o
+surgimento da mastite bovina nos animais em estudo (Cavero
+et al., 2008; Heald et al., 2000).
+Na suinocultura também existem trabalhos recentes
+destacando-se o trabalho de Kevin et al. (2004) que
+modelaram o odor em função de diversas variáveis do
+ambiente e assim conseguir atuar na granja no momento
+certo para controlar o odor exalado. Na bovino cultura as
+RNA tem sido usadas em diversos problemas e estudos
+como modelagem do rumem (Craninx et al., 2008) e em
+
+estimativa de ganho de peso (Arias et al., 2004). Em todas
+estas aplicações a IA usou o modelo conexionista através
+de uma rede de neurônios artificiais supervisionada usando
+aprendizagem por correção de erro.
+
+Considerações Finais
+A Inteligência artificial, principalmente no que diz
+respeito ao modelo conexionista, pode ser considerada
+sistemas de processamento de informações e, como tal, são
+dispositivos que aceitam entradas e produzem em geral,
+saídas que são mais adequadas para esta ou aquela aplicação
+de interesse do usuário. No atual estágio de desenvolvimento
+das RNAs, existe um grande número de aplicações, mas em
+todas estas aplicações existe um fator preponderante e que
+em momento algum pode ficar de fora do sistema inteligente.
+Este fator é o especialista. E no caso da zootécnica o
+especialista é o zootecnista, o único capaz de fazer com que
+o poder da IA seja usado para melhorar a nossa produção
+de alimentos de origem animal e, é ele que deve buscar a
+interdisciplinaridade atuando juntamente em áreas como a
+instrumentação eletrônica e a computação para cada vez
+mais melhorar a forma como resolvemos problemas complexos
+na área de zootecnia.
+
+Literatura Citada
+AHMADI, H.; MOTTAGHITALAB, M.; NARIMAN-ZADEH, N.
+Group method of data handling-type neural network prediction
+of broiler performance based on dietary metabolizable energy,
+© 2009 Sociedade Brasileira de Zootecnia
+
+396
+
+methionine, and lysine. Journal of Applied Poultry
+Research, v.16, p.494-501, 2007.
+ARIAS, N.A.; MOLINA, M.L.; GUALDRON, O. Estimate of the
+weight in bovine livestock using digital image processing and
+neural network. Proc. SPIE, v.562, p.224, 2004.
+BRENNECKE, K. Fracionamento de carboidratos e proteínas
+e a predição da proteína bruta e suas frações e das fibras
+em detergentes neutro e ácido de Brachiaria brizantha
+cv. Mandaru por um arede neural artificial. 2007. 138f.
+Tese (Mestrado em Zootecnia) – Faculdade de Zootecnia e
+Engenharia de Alimentos/Universidade de São Paulo,
+Pirassununga, 2007.
+CAVERO, D.; TOLLE, K.H.; HENZE, C. et al. Mastitis detection
+in dairy cows by application of neural networks. Journal of
+Food Process Engineering, v.114, p.280-286, 2008.
+CHEN, Y.R.; NGUYEN, M.; PARK, B. Neural network with
+principal component analysis for poultry carcass classification.
+Journal of Food Process Engineering, v.21, p.351-367,
+1998.
+CRANINX, M.; FIEVEZ, V.; VLAEMINCK, B. et al. Artificial neural
+
+Inteligência artificial aplicada à Zootecnia
+
+network models of the rumen fermentation pattern in dairy
+cattle. Computers and Electronics in Agriculture, v.60,
+n.2, p.226-238, 2008.
+HAYKIN, S. Redes neurais artificiais princípios e práticas.
+2.ed. Bookman, 2002. 900p.
+HEALD, C.W.; KIM, T.; SISCHO, W.M. et al. A computerized
+mastitis decision aid using farm – based records: an artificial
+neural network approach. Journal of Dairy Science, v.83,
+p.711-720, 2000.
+HOLAND, J. Adaptation in natural and artificial systems.
+1.ed. Mit Press, 1992. 345p.
+JANES, K.R.; YANG, S.X.; HACKER, R.R. Pork farm odour
+modelling using multiple- component multiple-factor analysis
+and neural networks. Applied Soft Computing, v.6, p.53-61,
+2005.
+NEWELL, A.; SIMON, H.A. Human problem solving. 1.ed.
+Prentice Hall, 1972. 321p.
+SMOLENSKI, P. Tensor product variable binding and the
+representation os symbolic structures in connectionist systems.
+Artifical Intelligence, v.46, p.159-215. 1990.
+
+© 2009 Sociedade Brasileira de Zootecnia
+

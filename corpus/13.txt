@@ -1,0 +1,927 @@
+1
+
+Paakat: Revista de Tecnología y Sociedad
+e-ISSN: 2007-3607
+Universidad de Guadalajara
+Sistema de Universidad Virtual
+México
+suv.paakat@redudg.udg.mx
+
+Año 9, número 16, marzo - agosto 2019
+
+Inteligências artificiais e o problema da consciência
+
+Artificial intelligences and the problem of consciousness
+
+Alexandre Quaresma*1
+
+http://lattes.cnpq.br/6089915050124806
+Pontificia Universidad Católica de São Paulo, Brasil
+
+[Recibido 11/06/2018. Aceptado para su publicación 22/12/2018]
+http://dx.doi.org/10.32870/Pk.a9n16.349
+
+Resumo
+Uma das maiores dificuldades dos engenheiros e projetistas de sistemas dotados com
+Inteligências Artificiais (IA) é replicar a faculdade-propriedade da consciência, pois a mente
+consciente só parece possível em seres biológicos. Nesse artigo, investigaremos como acontece
+a consciência no mundo biológico, quais as condições necessárias para sua manifestação,
+correlacionando-a (consciência), enquanto fenômeno genuinamente biológico, com a dificuldade
+de instanciar inteligências conscientes e intencionais em sistemas cibernético-informacionais
+complexos e artificiais, o que vale dizer, inorgânicos e não-biológicos. Mais especificamente,
+referimo-nos a tentar fazê-lo – como defende o cognitivismo ortodoxo e a própria IA forte – em
+computadores, androides e robôs, por meio de arranjos de IA. Vale destacar que esse problema
+da consciência se vê intimamente relacionado com problemas que já discutimos em trabalhos
+anteriores (Inteligências artificiais e o problema da intencionalidade; Inteligências artificiais e os
+limites da computação), no sentido de que, apenas um sistema ou ser biológico vivo pode ser
+capaz de possuir essa característica chamada consciência.
+Palavras-Chave
+Consciência; inteligência; inteligências artificiais; dinâmica cerebral; mente; crítica da tecnologia.
+
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+2
+Abstract
+A major difficulty for the engineers and designers of artificial intelligence (AI) systems has been
+to replicate consciousness. After all, it has always been assumed that only living beings may be
+conscious or not. The paper examines the nature of consciousness in the biological world and the
+conditions that must be fulfilled before consciousness can be attributed to some organism. States
+of consciousness in organic systems are compared to states of artificial cybernetic information
+processing systems, such as computers, androids and robots, to which consciousness might be
+or has been attributed. The claims of orthodox cognitive scientists and the advocates of a “strong
+AI” with respect to consciousness are examined in detail. The paper gives continuity to the
+author’s previous studies on the limits of computation, in particular, on intentionality in the
+context of artificial intelligences. Its main argument is that consciousness presupposes life. It is
+a state that can only attributed to living systems.
+Keywords
+Consciousness; intelligence artificial intelligences (AI); cerebral dynamics; mind; critique of
+technology.
+
+Introdução
+Desde o fim da Segunda Guerra Mundial (1945) teóricos e pesquisadores das
+inteligências artificiais (IA2) acreditam que a consciência exibida por sistemas biológicos
+poderia ser replicável em instâncias não-biológicas e/ou artificiais. De fato, como lemos
+em epígrafe, trata-se de uma questão polêmica e controversa que já se colocava aos
+pensadores interessados desde o século XVII, como é o caso de René Descartes, por
+exemplo.
+Poder-se-ia facilmente conceber uma máquina [escreveu René Descartes
+(1979, pp. 37-38)] que é feita de tal forma que profere palavras, e profere
+até mesmo algumas palavras em resposta às ações físicas que causam
+uma mudança em seus órgãos: por exemplo, se alguém tocou em um
+lugar particular, perguntaria o que se queria dizer ou se fosse tocado em
+algum outro lugar, ele gritaria que estava sendo ferido e assim por diante.
+Mas não poderia colocar palavras de maneiras diferentes para responder
+ao significado de tudo o que é dito em sua presença, como até mesmo os
+seres humanos mais pouco inteligentes podem fazer. A segunda significa
+que, mesmo que eles fizessem muitas coisas tão bem ou possivelmente
+melhor do que qualquer um de nós, eles certamente falhariam em outras
+coisas, assim eles não agiam baseados no conhecimento, mas meramente
+como resultado da disposição de seus órgãos. [Programas?]. Pois
+enquanto a razão é um instrumento universal que pode ser usado em
+todos os tipos de situações, os órgãos precisam de uma disposição
+específica para cada ação em particular; portanto, deve ser moralmente
+impossível que uma máquina possa abrigar uma diversidade de órgãos o
+suficiente para permitir que ela atue em todas as ocorrências da vida, na
+maneira pela qual nossa razão nos capacita a agir.
+Mas, como escreve Paul Churchland (2004, p. 39), nos séculos que nos separam
+dos escritos de Descartes, os filósofos, lógicos, matemáticos e pesquisadores da ciência
+da computação conseguiram isolar os princípios gerais do raciocínio matemático, e os
+engenheiros eletrônicos criaram máquinas que calculam de acordo com esses princípios.
+O resultado é esse objeto portátil que teria assombrado Descartes. Mas, no que diz
+respeito a tempos mais recentes, que são justamente os que nos interessam, muitos
+são os nomes emblemáticos nesse surpreendente campo das ciências de fronteira:
+Turing, Von Newman, Simon, Minsky, Moravec, Rasmussen, Dennett, Hilts, Campbell,
+
+Alexandre Quaresma
+
+3
+
+Pappert, Drexler, Hodges, McCulloch, Feigenbaum, Shannon, McCarthy, Weizenbaum,
+isso, para citar apenas alguns.
+Uma primeira dificuldade que surge quando tentamos conceber constructos de
+IA pretensamente inteligentes e conscientes reside no fato de que nós mesmos, os seus
+criadores e projetistas, não sabemos definir a faculdade-propriedade consciência com a
+precisão almejada pelas ciências ditas duras, o materialismo e o próprio mecanicismo.
+E, principalmente, conseguir fazê-lo –definir consciência– sem gerar dúvidas, explicando
+e definindo cada fenômeno, sentimento, objeto, pensamento, experiência, sensação, de
+maneira a não gerar ambiguidades, e encontrando repouso numa esfera além de
+quaisquer controvérsias e dúvidas. Mesmo porque, não percebemos um mundo pronto
+e acabado, já que a consciência é uma relação entre a mente e o mundo.
+E essa relação é estruturada por meio de significados e sentidos. E se definir
+significados e sentidos não é fácil, o que dizer de representa-los algoritmicamente? Por
+exemplo: o que faz o sentido ‘fazer sentido’ para nós humanos? O que significa estar
+vivo? O que é possuir um propósito existencial? Um corpo? O que faz a realidade, o
+mundo, e nós mesmos, ter valor e significação? E a mais difícil de todas as indagações:
+como definir sentimentos, estados e sensações complexos e ambíguos como dor,
+crença, amor, honra, piedade, desejo, medo, ódio, saudade e até mesmo a consciência
+e a inteligência?
+A resposta –pasmemos– pode ser desconcertante: cada pessoa, cada ser
+humano, cada indivíduo singular, pode perceber, experimentar, conceituar, definir e
+representar tais experiências de maneiras diversas entre si, desde pontos de vista
+díspares, subjetivos e particulares, por vezes até antagônicos e contraditórios, pois
+somos diversos, somos multiplicidade. Num só termo, somos semelhantemente
+diferentes e diferentemente semelhantes. E, principalmente, não seguimos um esquema
+pré-estabelecido, não estamos limitados a um programa computacional de execução
+rígida qualquer, e também não somos traduzíveis numa fórmula bem formulada, como
+diriam os lógicos simbólicos, e muito menos ainda reduzíveis a uma equação ou
+algoritmo, ou mesmo a um punhado deles, para o profundo desgosto dos matemáticos
+contemporâneos.
+Num só termo: a consciência não é a execução de um código. Por isso mesmo,
+“o problema considerado universalmente o mais difícil de todos [para compreendermos
+plenamente o funcionamento da mente humana, explica-nos Edward Wilson (1999, p.
+110)] é a natureza da experiência subjetiva”. Tendo em vista que, inexoravelmente,
+sem subjetividade, não pode haver construção de sentido, e nem, muito menos ainda,
+de realidade. E, sem construção de realidade, não há consciência.
+Ademais, Sérgio Basbaum (2017, p. 03) define o termo sentido da seguinte
+maneira: “fazer sentido é encenar um mundo numa tensão temporal que um ser,
+situado em sua circunstância, constitui não como cenário consumado, mas como tomada
+de posição em relação ao passado e como um performar no devir”. Como já mencionado
+resumidamente acima, no que toca o pretenso engendramento do fenômeno da
+consciência em meio artificial, os obstáculos –de fato– são tremendos. Isso é inegável.
+Nesse sentido, como seria possível emular em sistemas artificiais um sentimento de
+coletividade social, por exemplo?
+A máquina ou programa não seria capaz de compreender o sentido dos termos
+por nós empregados em tal expressão. E ainda que funcionassem perfeitamente bem,
+dificilmente saberiam o que significam de fato tais palavras. Na realidade, se formos
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+4
+pensar e enunciar coerentemente as ideias e argumentos aqui apresentados, elas nem
+sequer se indagariam, já que não existe um agente pensante para formular a pergunta
+por trás do sistema técnico, subjacente à máquina ou ao robô, e, sendo assim, nada as
+moveria a transformar os dados e informações inertes disponíveis em seus sistemas de
+armazenamento em conhecimentos e saberes vivos, muito menos ainda em sabedoria
+e ação intencional inteligente, que dirá então consciente.
+Todavia, com relação a nossa crítica, o cérebro não é um computador, da mesma
+forma que o corpo não é e nem poderia ser uma máquina. Pode parecer ou soar trivial,
+mas é justamente esse um dos aspectos que gostaríamos de aclarar e reestabelecer
+como premissa irrevogável da construção teórica de nossa crítica. Aliás, como nos
+informa Steven Mithen (2002, p. 23), “um dos argumentos da nova psicologia evolutiva
+é que a noção da mente como mecanismo de aprendizado geral, como se fosse um tipo
+de computador poderoso, é incorreta”.
+Mesmo porque, como escreve Geoff Simmons apud Frederick Brooks, “o estudo
+do cérebro biológico e das possíveis configurações de computador podem ser
+mutuamente úteis, mas as conclusões e as metáforas de um tipo de sistema não
+deverão ser correntemente impostas no outro” (1986, p. 72). Como nos informa António
+Damásio, “o cérebro é um sistema de sistemas. Cada sistema compõe-se de uma
+elaborada interligação de regiões corticais pequenas porém macroscópicas e de núcleos
+subcorticais, os quais são compostos por circuitos locais microscópicos, compostos, por
+sua vez, de neurônios, todos ligados por sinapses (2015, p. 266).
+Sem mencionar que, é notório e sabido, a biologia, em toda a sua complexidade
+multimodal, sempre foi um mistério para os espíritos livres que tentaram compreendêla, mas principalmente um enorme desafio para aqueles que buscaram através da
+história entender e explicar a vida, e, mais especificamente, a biologia –incluso a mente
+e a consciência–, através de moldes convencionais impostos, triviais e arbitrários, sem
+lograr êxito.
+E a razão fundamental dessa impossibilidade é muito simples: tais métodos,
+quando aplicados à vida e ao vivo, simplesmente não encontram bases sólidas e
+confiáveis, a partir das quais possam construir modelos e representações
+cientificamente aceitos como de fato verdadeiros, fidedignos, replicáveis e
+universalmente válidos, e que não sejam, é claro, ‘meras’ aproximações, previsões,
+predições, abstrações, enfim, formalizações da realidade e não a realidade mesma
+propriamente dita. E o motivo disso é relativamente simples, como lemos em Edward
+Wilson (1999, p. 83), já que “os organismos e suas montagens são os sistemas mais
+complexos conhecidos”, e relativamente pouco compreendidos, o que dificulta ainda
+mais o êxito pleno de tal projeto.
+Jean-Philippe Ravoux escreve que “pensar nos leva a construir objetos mentais
+onde só retemos os elementos invariantes dos objetos observados e das relações que
+os estruturam” (2000, p. 83). O mesmo autor também sustenta que “as matemáticas
+constituem uma investigação de invariantes, isto é, números, figuras, estruturas e
+relações que só variam quando nelas realizamos transformações” (2000, p. 83).
+Os objetos da matemática, símbolos de relações sem referência explícita à
+existência concreta, efetivos no campo próprio da técnica matemática [escreve com um
+cinismo espirituoso e pertinente John Dewey (1974, p. 184)], têm sido empregados em
+filosofia para afirmar a prioridade das essências em relação à existência, e para criar o
+
+Alexandre Quaresma
+
+5
+
+problema insolúvel de se saber por que a pura essência haveria de descer até os
+emaranhados e tortuosidades da existência.
+Alfred North Whitehead engrossa o nosso coro teórico e afirma que com todas
+as letras que “a originalidade da matemática consiste no fato de que na ciência
+matemática são apresentadas conexões entre as coisas que, separadas da intervenção
+da razão humana, são extremamente sem evidência” (2006, p. 35). “O essencial da
+matemática que nela temos sempre de nos desfazer do caso particular e igualmente de
+todos os tipos específicos de identidade [...] Permita-nos admitir que a atividade da
+matemática é uma divina loucura do espírito humano, um refúgio da urgência pungente
+dos acontecimentos contingentes” (Whitehead, 2006, p. 37).
+Maurice Merleau-Ponty também reforça a ideia de que “tudo o que se revelar dos
+números será imediatamente verdadeiro para as coisas enumeradas, o que é realmente
+certo mas não implica nenhuma preexistência do verdadeiro” (2002, p. 158). Brian
+Henning, em seu artigo intitulado “Of termites and men: On the ontology of collective
+individuals” (De cupins e homens: Sobre a ontologia de indivíduos coletivos)”, escreve
+que,
+apesar do que considero ser sua limitada força explicativa, a versão do
+fisicalismo mecanicista é tão amplamente aceita entre um certo segmento
+de filósofos que dificilmente requer defesa. Entretanto, como os filósofos
+Alfred North Whitehead, Charles Sanders Peirce, William James, Jonh
+Dewey, Henri Bergson, Pierre Teilhard de Chardin, entre outros,
+argumentaram vigorosamente em resposta a uma geração de físicos, que
+a metáfora mecanicista não pode fazer justiça adequadamente a realidade
+do viver, envolvendo esforço, emoção, e seres conectados em relações
+sociais interdependentes (2013, p. 237).
+Nós, nesse artigo, também seguiremos os rastros reflexivos de alguns desses
+autores citados por Brian Henning, juntamente com suas interessantíssimas
+abordagens, como forma de enrobustecer ainda mais a fundamentação teórica de nossa
+crítica ao mecanicismo dicotômico, fisicalista, reducionista e materialista.
+[Alfred North] Whitehead sustentou [escreve Adam Scarfe (2013, p.
+265)] que a experiência organísmica é constituída por operações de
+valorização e apropriação seletiva (que ele chama de "preensões")
+através de um contínuo de níveis de experiência da criatura: dos
+sentimentos físicos, aos sentimentos mentais, à consciência. Como
+Darwin, que postulou que a mentalidade humana só difere da mentalidade
+não-humana em termos de grau, Whitehead enfatizou que os organismos
+não-humanos têm um grau de mentalidade. Essa concepção é contrária
+à crença newtoniana-hobbesiana-cartesiana do século XVI ao século XVII
+de que os organismos são objetos passivos, desprovidos de sentimentos,
+cujo funcionamento é totalmente determinado por um conjunto de leis
+causais mecanicistas que atuam sobre eles.
+Destarte, nós humanos somos seres primordialmente biológicos. E também
+simbólicos, dialógicos, semióticos, comunicacionais, sociais, culturais, e por isso mesmo
+precisamos de representações, simbolizações e significações que possam ser
+transmitidas, comunicadas, traduzidas, sejam elas míticas, metafísicas, matemáticas e
+até mesmo algorítmicas. Sim, porque a tecnoideologia científica tem como premissa
+seminal justamente decifrar, compreender, traduzir, controlar, reproduzir e –por que
+não dizer– também explorar a manifestação dos seres vivos e da própria natureza para
+alcançar os mais variados fins, sejam eles éticos ou não.
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+6
+Todavia, mesmo com todos os inegáveis desenvolvimentos tecnológicos, esses
+objetivos de formalização não têm sido alcançados, e, mais adiante, trataremos com
+mais detalhe das razões desse parcial fracasso. Por ora, é importante explicitar que essa
+tradição que se estabelece através dos tempos de tentar pensar e compreender os
+organismos e o próprio universo como meros artefatos técnicos, o que vale dizer, como
+máquinas, está ligada também –como nos informa Ignácio Quintanilla (2012, p. 167)–
+às influências do pensamento cristão na própria civilização contemporânea, já que “a
+‘natureza’ cristã não é a ‘physis’ dos gregos, nem a deusa ‘Natura’ dos romanos senão
+a ‘criação’; e a criação é, de pronto, um enorme ‘artefato’”. Artefato de um deus
+demiurgo e prepotente.
+Mas, de toda maneira, seria uma ingenuidade pueril querer imaginar que a
+complexidade cósmica que originou a vida e a natureza, o ambiente, os seres vivos e
+também os seres humanos e suas teorizações –enfim, a própria bioevolução que tudo
+abarca e contem–, fosse explicável e traduzível por uma lógica-linguagem relativamente
+simples –como a matemática, por exemplo, é–, disciplina criada (ou, segundo alguns,
+descoberta) por nós humanos, que somos oriundos destas mesmas extraordinárias
+complexificações sistêmicas emergentes que em tudo nos transcendem e antecedem.
+Como nós humanos e nossas teorizações, que somos as consequências
+sistêmicas de tudo que aí está em termos bioevolutivos, poderíamos formular ou
+descobrir a linguagem-código original deste mesmo universo complexo que é a nossa
+própria causa? Seria até contraditório querer imaginar que a complexidade do universo,
+que criou a vida e a natureza, o ambiente, os seres vivos e também os seres humanos,
+fosse explicável e traduzível por teorizações, representações e formalizações por nós
+elaboradas.
+Num só termo: tratar-se-ia de um total contra-senso lógico-temporal. Se somos
+a consequência do processo, como poderíamos ter criado sua fórmula originária? Nossos
+enunciados encontram eco também nos escritos de Maurice Merleau-Ponty (2002, p.
+159). “É do meu movimento de conhecimento [escreve ele] que resulta a síntese, ao
+contrário de ser ela que o torna possível”. Henri Bergson, por seu turno, e, ao mesmo
+tempo, afirma e também indaga: “Representar o conjunto da vida não pode consistir
+em combinar entre si as ideias simples, depositadas em nós pela própria vida no curso
+de sua evolução: como poderia a parte equivaler ao todo, o conteúdo ao continente, um
+resíduo da operação vital à própria operação?” (1979, p. 52).
+
+Definições de consciência
+A consciência não se resume a imagens na mente.
+Ela é, no mínimo, uma organização de conteúdos
+mentais, centrada no organismo que produz
+e motiva esses conteúdos
+[grifos do autor].
+António Damásio (2011, p. 23)
+
+“O que poderia ser mais difícil de conhecer do que conhecer o modo como conhecemos”,
+indaga-nos pertinentemente António Damásio (2009, p. 16). Para nós humanos a
+consciência e uma solução bioevolutiva eficiente, complexa e extremamente elegante,
+do ponto de vista dos processos que têm lugar no cérebro e na mente. São capacidades
+de fato extraordinárias que possibilitam que os seres vivos abduzam3 –para usar a
+Alexandre Quaresma
+
+7
+
+terminologia peirceana– as melhores decisões e ações a serem tomadas nas situações
+cotidianas. A mente é uma das últimas fronteiras inexploradas dos organismos
+biológicos. Sobre isso, especificamente, António Damásio sustenta que,
+nenhum aspecto da mente humana é fácil de investigar, e, para quem
+deseja compreender os alicerces biológicos da mente, a consciência é
+unanimemente considerada o problema supremo, ainda que a definição
+desse problema possa variar notavelmente entre estudiosos. Se elucidar
+a mente é a última fronteira das ciências da vida, a consciência muitas
+vezes se afigura como o mistério final da evolução da mente. Há quem
+considere insolúvel (2015, p. 15).
+Mesmo porque, a mente não é (apenas) o cérebro; a mente não é (apenas) uma
+série de sinapses que conectam e se desconectam diversas áreas desse cérebro; nem
+muito menos ainda poderia ser (apenas) uma improvável descrição materialista,
+matemática ou mesmo mecanicista desses processos que acontecem dentro dessa
+extraordinária matéria viva chamada cérebro. O cérebro pode ser, quem sabe, tudo isso
+–desde que se descubra e se prove tais teorias e hipóteses num alto grau de
+razoabilidade–, mas é, necessária e inescapavelmente, a emanação dinâmica que
+emerge sistemicamente a partir dessas estruturas físicas de extremada complexidade
+que levamos dentro de nossas cabeças. A consciência –nesse sentido– é uma
+propriedade emergente do cérebro.
+Damásio também acrescenta que “talvez a consciência seja a função biológica
+crítica que nos permite saber que estamos sentindo tristeza ou alegria, sofrimento ou
+prazer, vergonha ou orgulho, pesar por um amor que se foi ou por uma vida que se
+perdeu” (2015, p. 16). E, para que tudo isso ocorra no nível da consciência, faz-se
+necessária a ação de toda uma pletora de agentes mentais como afirma Marvin Minsky,
+ou, para usar a terminologia de György Buzsáki, a manifestação deliberativa de
+assembleias de neurônios que irão, em nível fisiológico e biomolecular, propiciar o
+fenômeno da mente consciente.
+Ligado a isso, há a bioquímica da experiência consciente, ou seja, a infinidade
+de substâncias químicas que o próprio organismo produz para gerar seus processos,
+propriedades e faculdades. Estados mentais e físicos, nesse sentido, produzem
+substâncias que alteram estados mentais e físicos, de maneira recursiva e anelar.
+António Damásio, referindo-se ao papel importantíssimo desempenhado pelas emoções,
+seus reflexos na mente, e a infinidade de substâncias que são produzidas de acordo
+com essa dinâmica que se auto-realimenta recursivamente, informa-nos que,
+durante as emoções, neurônios localizados no hipotálamo, no
+prosencéfalo basal e no tronco cerebral liberam essas substâncias
+químicas em várias porções mais rostrais do cérebro e, assim,
+transformam temporariamente o modo de funcionamento de muitos
+circuitos neurais. Entre as consequências típicas do aumento ou da
+diminuição na liberação desses transmissores inclui-se a sensação de que
+nossos processos mentais sofreram aceleração ou desaceleração, sem
+falar na sensação de prazer ou desconforto que permeia a experiência
+mental (2015, pp. 57-58)
+O que explicita, mais uma vez, o fato do organismo humano ser um sistema
+biológico de altíssima complexidade, que possui propriedades e faculdades fisioquímicas
+extraordinárias, que permitem a ele a recursividade e a retroalimentação, a
+homeostase, e também tem como objetivo permitir que ele refine a melhor emoção,
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+8
+que, por sua vez, propiciará uma ação coordenada no mundo em que está inserido e
+deve performar.
+Ademais, amparado por um sistema nervoso robusto, o cérebro consciente é
+informado através dos sentidos acerca do mundo e da realidade que o circunscreve, dos
+padrões de frequência de acontecimentos cíclicos externos, bem como ajustando esses
+mesmos ciclos aos seus próprios ciclos de ordem intrínseca e estrutural fisiológica, de
+modo a calibrar sua própria dinâmica homeostática.
+A consciência humana viva, para poder se manifestar, precisa estar
+necessariamente “utilizando uma organização perceptual global [informa-nos Hubert
+Dreyfus (1975, p. 270)], fazendo distinções pragmáticas entre operações essenciais e
+dispensáveis, lançando mão de casos de paradigmas, e utilizando um senso comum da
+situação de modo a transcenderem os seus significados”. O que vale dizer que, não
+apenas os significados são importantes, mas também parâmetros ambíguos, como
+“senso comum”, por exemplo. Em um âmbito mais pragmático, “a consciência [escreve
+Damásio (2015, p. 22)] é um fenômeno inteiramente privado, de primeira pessoa, que
+ocorre como parte do processo privado, de primeira pessoa, que denominamos mente”.
+Consciência também significa poder prever o porvir, antecipar a realidade,
+depreender possíveis padrões dela, extrair deles novas estratégias para enfrentar o
+meio ambiente e a própria realidade que se apresenta diante dela (consciência).
+“Conhecer a causa significa prever o efeito, preparar-se para o seu advento, subtrairse ao acontecimento imprevisto, reduzir o medo, aplacar a angústia num saber que tem
+consciência de si e do curso imutável das coisas [informa-nos Umberto Galimberti
+(2006, p. 66)]. Se a imutabilidade do querer do destino atemoriza o homem, o acalma
+a imutabilidade do curso das coisas –que não são derrogadas pela lei causal preposta à
+compreensão do seu acontecimento”. Umberto Galimberti escreve que
+a metafísica de Schopenhauer coloca, pois, a consciência, a inteligência,
+a razão e o pensamento entre as condições biológicas da vida, entendendo
+por ‘condições biológicas’ aquilo sem o qual o homem não poderia viver.
+Os dualismos alma/corpo, natureza/cultura, espírito/matéria são assim
+superados, não porque ultrapassados, mas simplesmente porque nem se
+colocam quando se considera que, no caso do homem [seres humanos],
+não existe alma, a não ser como memória da ação corpórea, assim como
+não existe natureza, a não ser já adaptada à cultura (2006, p. 105).
+“A mente humana é intangível uma abstração. Apesar de estudada durante mais
+de duzentos anos por psicólogos e filósofos, ela foge a definições e descrições
+adequadas”, escreve Steven Mithen (2002, p. 17). De qualquer maneira, escreve Paul
+Churchland, “o que é importante para a existência de uma mente não é a matéria da
+qual a criatura é feita, mas a estrutura das atividades internas mantidas por essa
+matéria” (2004, p. 69). Churchland também acrescenta que “se criássemos um sistema
+eletrônico –algum tipo de computador– cuja economia interna fosse funcionalmente
+isomórfica com relação à nossa própria economia interna, em todos os aspectos
+relevantes, então também ele teria estados mentais” (2004, p. 69). E, de fato, é
+exatamente isso que as IA –em muitos sentidos– buscam alcançar.
+A propósito, para as inteligências artificiais a consciência biológica é um
+tremendo problema a ser enfrentado, o que vale dizer que é dificílimo –senão
+impossível– replicá-la a contento numa plataforma cibernético-informacional qualquer.
+Friedrich Nietzsche escreve:
+
+Alexandre Quaresma
+
+9
+
+Consciência é propriamente apenas uma rede de ligação entre o homem
+e homem –apenas como tal ela teve de se desenvolver: o homem ermitão
+e animal de rapina não teriam precisado dela. Que nossas ações,
+pensamentos, sentimentos, e mesmo movimentos, nos cheguem à
+consciência –pelo menos uma parte deles–, é a consequência de um
+terrível, de um longo ‘é preciso’, reinando sobre o homem: ele precisava,
+como o animal mais ameaçado, de auxílio, de proteção, ele precisava de
+seu semelhante, ele tinha de exprimir sua indigência, de saber tornar-se
+inteligível –e, para tudo isso, ele necessitava, em primeiro lugar, de
+‘consciência’, portanto, de ‘saber’ ele mesmo o que lhe falta, de ‘saber’
+como se sente, de ‘saber’ o que pensa (1974, pp. 224-225).
+No que tange a uma conversação cognoscente, cognoscível, logo, também
+consciente, esbarramos novamente no problema da ausência de consciência nos
+sistemas de IA. ‘Entabular’ uma conversa é algo trivial para nós humanos que
+vivemos na cultura, no verbo, na mente, no próprio pensamento, mas um objetivo
+praticamente irrealizável para sistemas inorgânicos, já que tal atividade envolve
+variáveis determinantes que dizem respeito ao sujeito, à atividade cerebral, ao
+sistema nervoso, ao corpo, à entidade instanciada nesse corpo, ou, pra ser mais
+preciso, que emerge dele, e assim por diante. Além disso, há também a própria rede
+de significados e significâncias na qual esse sujeito está inserido, e tudo isso exige
+um sujeito, um ente, uma intencionalidade, uma mente que conceba e conceda
+sentido ao diálogo que se estabelece. Quanto a isso, Roger Schank e Lawrence
+Birnbaum (1995, p. 99) afirmam que
+as pessoas raramente dizem algo que seja realmente novo ou que elas
+jamais tenham dito antes. Vista dessa forma, a conversação depende da
+arte de classificar, de descobrir a coisa certa para dizer no momento certo.
+[...] A fim de tornar as máquinas inteligentes é preciso torna-las capazes
+de acessar e modificar uma base de conhecimento tremendamente ampla.
+Não existe inteligência sem conhecimento.
+E, de igual maneira, acrescentamos nós, não existe conhecimento sem
+consciência. Mesmo porque conhecer pressupõe uma mente consciente que é sujeito
+desse conhecer, gerando –ipso facto– o referido objeto do conhecimento. E
+conhecimento, nesse sentido, também significa correlacionar conhecimentos a outros
+conhecimentos. Roger Schank e Lawrence Birnbaum escrevem: “Não podemos
+compreender, lembrar ou utilizar fatos isolados que não possamos relacionar de maneira
+sistemática a um corpo de conhecimento mais abrangente. São portanto esses corpos
+mais amplos do conhecimento que precisam formar o núcleo de nosso estudo da
+inteligência” (1995, p. 105).
+Para correlacionar conhecimentos, porém, faz-se necessária a faculdade da
+intencionalidade. Podemos exemplificar tal competência com as seguintes atitudes
+proposicionais: penso que...; acredito que...; sinto que...; espero que...; desejo que...;
+e assim por diante. Todas elas e todas mais que se queira conceber, pressupõem uma
+indissociável intencionalidade. Paul Churchland escreve:
+A intencionalidade dessas atitudes proposicionais tem sido às vezes citada
+como a característica crucial que distingue o mental do meramente físico,
+como algo que nenhum estado puramente físico pode ter. Parte dessa
+afirmação pode estar absolutamente correta, na medida em que a
+manipulação racional das atitudes proposicionais pode sem dúvida ser a
+característica distintiva da inteligência consciente. [...] Ter conteúdo ou
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+10
+significado, ao que parece, é apenas uma questão de desempenhar um
+papel específico numa complexa economia inferencial/computacional. E
+não há razão alguma por que os estados internos no cérebro, ou mesmo
+de um computador, não possam desempenhar esse papel (2004, p. 108).
+Eis aqui a explicitação da tese da IA forte. “Os adeptos da IA forte mantém
+[continua Daniel Crevier] que podemos imbuir nas máquinas autoconsciência,
+consciência e autênticos sentimentos” (1996, p. 291).
+Autoconsciência pode significar várias coisas. Se tomarmos a noção mais
+direta e simples de autoconsciência, suponho que se trataria do tipo de
+autoconsciência que tem um caranguejo: quando tem fome, come algo,
+porém nunca come a si mesmo. Tem alguma forma de distinguir entre ele
+mesmo e o resto do mundo, e se estima a si mesmo de uma forma
+bastante especial (Crevier, 1996, p. 295).
+Além disso, “a consciência na mecânica quântica tem sido uma espécie de termo
+teórico que serve para explicar como ocorre a passagem do mental para o físico na
+qualidade de um fenômeno natural” (Teixeira de Fernandes, 2010, p. 47). E a
+consciência humana, nesse contexto, passa –necessariamente– pela consciência da
+própria consciência, ou, mais simplesmente, pela autoconsciência de si mesmo. Paul
+Churchland escreve:
+A autoconsciência envolve o conhecimento não apenas dos próprios
+estados físicos [mas, especialmente, o conhecimento específico dos
+próprios estados mentais. Além disso, a autoconsciência envolve o mesmo
+tipo de conhecimento continuamente atualizado de que desfrutamos em
+nossa percepção contínua do mundo exterior. A autoconsciência, ao que
+parece, é uma espécie de apreensão contínua de uma realidade interior,
+a realidade dos próprios estados e atividades mentais (2004, p. 124).
+Afinal, como sintetiza muitíssimo bem Paul Feyerabend segundo György Buzsáki,
+o conhecimento [seja de si, seja do mundo] não é uma série de teorias
+consistentes que convergem para uma visão ideal; é um oceano cada vez
+maior de alternativas mutuamente incompatíveis (e talvez mesmo
+incomensuráveis), cada teoria, cada conto de fadas, cada mito que faz
+parte da coleção forçando os demais a uma maior articulação e todos
+contribuindo, através desse processo de competição, para o
+desenvolvimento da nossa consciência (2006, p. 357).
+György Buzsáki (2006) ambicionando o mesmo que nós buscamos
+sistematicamente nesse artigo –ou seja, uma aproximação do que seria uma possível
+definição de consciência–, informa-nos que
+E. Roy John define a consciência como um processo no qual
+informações sobre múltiplas modalidades individuais de percepção e
+percepção são combinadas em uma representação multidimensional
+unificada do estado do sistema e seu ambiente, e integrado com
+informações sobre memórias e necessidades do organismo, gerando
+reações emocionais e programas de comportamento para ajustar o
+organismo ao seu ambiente. Essa definição contextual tem a vantagem
+de não ser exclusiva, e pode incorporar questões como se alguns
+animais têm uma experiência consciente semelhante à dos seres
+humanos (Buzsáki, 2006, pp. 361-362).
+
+Alexandre Quaresma
+
+1
+1
+
+Num âmbito mais primitivo e ancestral de nossa trajetória bioevolutiva
+terrestre, como lemos em Steven Mithen (2002), a faculdade da consciência teria
+evoluído “como um artifício cognitivo, permitindo que um indivíduo antecipasse o
+comportamento social de outros membros do seu grupo. Humphrey sugeriu que sua
+evolução ocorreu para que pudéssemos usar nossas próprias mentes como modelo das
+mentes dos outros. [...] A consciência evoluiu como parte da inteligência social” (Mithen,
+2002, p. 241).
+Enfim, segundo essa tese, e no contexto dos nossos ancestrais caçadores
+coletores arcaicos como os Neandertais, por exemplo, teria sido a necessidade de
+comunicação dentro do próprio grupo, e principalmente a capacidade de imaginar e
+compreender o que o outro estava pensando, fator determinante que teria estimulado
+e propiciado a emergência da consciência, dita de nível superior. Em suma, o surgimento
+da consciência teria sido uma adaptação importante diante do desafio do convívio nos
+grupos, ou seja, a mente consciente como uma resposta a uma necessidade social.
+Steven Mithen (2002) informa-nos: “Estou adotando o argumento de Nicholas
+Humphrey de que ela [a consciência] evoluiu como um artifício cognitivo, permitindo
+que um indivíduo antecipasse o comportamento social de outros membros do seu grupo”
+(2002, p. 241). Ou ainda, nas palavras de Paul Churchland: “a humanidade lutou rumo
+à autoconsciência em duas dimensões: na da evolução neurofisiológica de nossa
+capacidade de fazer discriminações introspectivas úteis, e na da evolução social de um
+arcabouço conceitual que explorasse essa capacidade discriminatória de produzir
+julgamentos úteis em termos de explicação e de previsão” (2004, pp. 126-127).
+Em suma, a consciência é uma faculdade-propriedade essencialmente biológica,
+ligada a organismos vivos e seus acoplamentos estruturais com o meio ambiente, ligada
+também ao próprio processo bioevolutivo como um todo, à história dos seres vivos no
+planeta, que por sua vez se liga à história geológica da Terra, que levou milhões, bilhões
+de anos para se desenrolar e para que pudéssemos chegar até aqui. Não seria crível,
+portanto, que a simples execução de um código ou protocolo computacional qualquer
+pudesse replicar tal faculdade-propriedade tão extraordinária.
+Se assim fosse, teríamos trivialmente máquinas, computadores, androides e
+robôs conscientes andando por aí. E esse, como sabemos, definitivamente não é o caso.
+Sem mencionar que o cérebro biológico vivo –o humano, por exemplo– é o objeto mais
+complexo que conhecemos no próprio universo ao nosso redor, com a agravante que
+conhecemos pouquíssimo acerca de seu funcionamento objetivo. Eis onde se origina o
+problema da consciência em relação a sistemas de Inteligências Artificiais (IA).
+
+A imensurabilidade do humano
+Mensurar o que é ser um humano –conceitual, mas também objetiva e praticamente–
+não é tarefa fácil. Nesse ponto concordam a filosofia, a sociologia e a própria
+antropologia. Pois, como sabemos, não se pode definir o humano sem reduzi-lo ou
+mutilá-lo por uma unilateralidade disciplinar que não condiz com a realidade factual.
+Pois o ser humano, ou, mais especificamente, ser um humano, não é absolutamente
+uma formula exata, um algoritmo, uma abstração teórica, ou mesmo um esquema
+redutível a quaisquer representações formais conhecidas e historicamente
+estabelecidas.
+
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+12
+O que vale dizer que, quando se busca mensurar o humano, não se está a tratar
+de algo que possa ser representado esquematicamente, abstratamente, ou mesmo
+computacional e conceitualmente, assim como fazemos com os elementos da tabela
+periódica, por exemplo, ainda que tenhamos vários desses elementos em nossa
+composição física constitutiva.
+De maneira que, se pegarmos todos os elementos que compõem o âmbito físico
+dos organismos humanos, focando apenas em sua materialidade, fazendo-o,
+ignoraremos aspectos importantíssimos que sem sombra de dúvida também compõem
+a complexidade da manifestação humana. Para confirmar essa asserção, basta nos
+atermos, por exemplo, à mente, que emerge do cérebro, mas não pode ser reduzida a
+ele. E o mesmo vale para a consciência e a inteligência.
+Em outros termos, o cérebro propicia a emergência da mente inteligente e
+consciente, de si mesma e do mundo, mas essa mesma mente emergente não é apenas
+a soma total de seus elementos constitutivos físicos e materiais. Ainda que John Searle,
+por exemplo, procure “tratar ‘a mente’ [informa-nos Graham Button, Jeff Coulter, John
+Lee e Wes Sharrock (1998, pp. 18-19)] como uma propriedade emergente do ‘cérebro’
+e, assim, como um fenômeno não menos natural do que a liquidez da água, que é uma
+propriedade emergente dos gases hidrogênio e oxigênio”, o que não significa
+necessariamente que ela (mente) seja definível e decifrável em toda a sua
+complexidade.
+Todavia, o pensamento materialista e seus arautos, por outro lado, ainda hoje
+(século XXI), insistem em tentar traduzir o humano biológico complexo por meio de
+uma linguagem reducionista calculável e compreensível qualquer, intencionando
+adquirir sobre ele algum tipo de poder de controle e previsão, de manipulação e
+exploração, da mesma forma que o faz com todo o resto do mundo natural. Mas, a
+despeito de todo esforço empreendido, a biologia insiste em se mover continuamente,
+ininterruptamente, esquivando-se em sua própria fluidez altamente dinâmica, e, por
+conseguinte, vai impedindo a sua plena mensuração teórico-representativa. Por isso –e
+também por outros motivos que atacaremos em mais profundidade no decorrer do
+artigo–, torna-se sempre muito complicado poder representar formalmente, e de
+maneira acabada e definitiva, o que seja ser um humano.
+Analogamente, é dificílimo –senão impossível– mensurar o complexo ser humano
+em uma linguagem formal qualquer (matemática, por exemplo), pois simplesmente não
+há parâmetros apropriados e nem mesmo um dado preciso inicial do qual se possa
+originar um cálculo de razoabilidade objetiva, no sentido de poder prever a sua evolução
+futura no tempo-espaço. O que vale dizer que é impossível prever a posição de um
+corpo no espaço-tempo futuro se não possuirmos as suas coordenadas exatas do
+instante em que ele se encontra agora, nesse momento que precede essa potencialidade
+futura que o mecanicismo materialista gostaria de antever. Num só termo, não há
+exatidão alguma na estruturação da biologia, incluso aí –é lógico– o próprio ser humano.
+E a dificuldade não reside apenas no movimento constante, ininterrupto da
+matéria viva, mas também nas complexidades das populações de células, bactérias,
+enzimas e outros elementos bioquímicos que flutuam continuamente, impedindo assim
+que se alcance uma mensurabilidade exata qualquer. Pois, ao contrário do que
+gostariam os materialistas e mecanicistas, ou mesmo do que eles acreditam, a
+matemática não está no cerne da estruturação da natureza, o que vale dizer que a
+natureza não se estrutura matematicamente, servindo apenas e tão somente como uma
+
+Alexandre Quaresma
+
+1
+3
+
+rota e aproximação da própria realidade que se busca compreender e mensurar, e não
+a própria realidade.
+Se, como sabemos, as primeiras inteligências artificiais surgiram justamente do
+comportamento emergente dos dispositivos balísticos da segunda grande guerra, os
+lançadores de mísseis, que calculavam autonomamente a localização futura do alvo em
+movimento com base na sua posição anterior, ainda hoje, para a nossa inteligência dita
+superior, não é possível depreender o exato comportamento da matéria viva –o das
+células, por exemplo– com base em sua exata posição atual, pois esse dado exato
+simplesmente inexiste.
+No que tange a organismos e tecidos celulares, então, não é possível sequer
+mensurar um número exato das populações de células, já que essas nascem e morrem
+o tempo todo, continuamente, impedindo assim a extração de uma quantia
+pretensamente exata qualquer. Mesmo porque, como esclarecem Jean-Pierre Changeux
+e Alain Connes, as células “formam um conjunto bastante organizado, que se divide,
+multiplica em virtude de interações bem específicas e intrincadas entre si, que ainda
+estamos muito longe de compreender em sus totalidade” (1995, p. 99).
+Edgar Morin a respeito disso, escreve que:
+Descobriu-se progressivamente que essa pequena coisa era um ser vivo
+completo e, no sentido unicelular, autônomo. Percebeu-se cada vez
+melhor que esse ser vivo de base nada tinha de elementar, antes
+constituía um microorganismo comportando microórgãos funcionalmente
+diferenciados e especializados. O microscópio eletrônico devia,
+finalmente, revelar que este microorganismo era um microcosmo
+comportando bilhões de moléculas individualizadas, que os microorgãos
+ou organitos eram sede de operações transformadoras, fabricadoras,
+comunicadoras, informadoras (2001, p. 123).
+De modo que a biologia –em um certo sentido– não se sujeita a uma
+representação formal finita e determinística, menos ainda se ela for mecanicista e
+matemática, e isso se dá devido justamente à sua inexorável complexidade viva
+evolutiva, sua estruturação orgânica intrincada e extremamente complexa, e sua fluidez
+bioquímica continuamente mutável e inconstante. E é nesse âmbito que reside a
+dificuldade de mensuração do humano, e da própria biologia de uma maneira geral.
+
+Sobre os limites da computação
+Em se tratando de computação, há limites irremovíveis no que tange ao âmbito da
+engenharia de software para sistemas de IA (Inteligências Artificiais). Um computador,
+seja ele qual for, é uma máquina concebida segundo a lógica de máquinas universais
+de Turing, o que vale dizer, que são modelos representativos abstratos, que operam
+segundo quatro regras básicas, a saber: avançar, recuar, incluir e excluir, que se dão
+numa espécie de fita infinita que é a memória. Grossíssimo modo, seus modos operantes
+se resumem a essas quatro operações básicas.
+Daí o fato de serem chamadas de máquinas universais. Em certo sentido, elas
+são abstrações descritivas conceituais, que são capazes de suportar outras
+representações descritivas abstratas, que são os programas, que, por sua vez, simulam
+de forma limitada e pré-programada tal ou qual inteligência, de acordo com as
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+14
+instruções inscritas em seu programa, ou seja, em seu software. Além disso, elas
+também operam segundo a arquitetura de Von Neumann, o que significa dizer que são
+compostas de unidades de memória, de controle e processamento.
+Trata-se de um sistema computacional que obedece a regras rígidas e
+invariáveis, que são expressas através do código que rege seu funcionamento. O que
+vale dizer que é um sistema também altamente determinístico e invariável, que trabalha
+com regras e dados estáticos explicitamente pré-implantados. Assim sendo, continua
+Frederick Brooks, “as descrições de uma entidade de software que abstraem sua
+complexidade geralmente abstraem sua essência” (1986, p. 11); ou seja, imaginar que
+um software ou programa pode adquirir inteligência e consciência por si, seria o mesmo
+que sugerir que ele pode atuar além de sua programação original, o que seria o mesmo
+que abstrair sua essência mais estruturante.
+Sim, pois há características intrínsecas à própria lógica de elaboração de
+programas (softwares), das quais não se pode escapar. Uma dessas características é a
+invisibilidade, o que vale dizer que como uma ideia abstrata é, não é visualizável nem
+muito menos materializável. Como qualquer modelo, que já é uma simplificação, é
+importante lembrar que um software é uma simplificação de uma simplificação, o que
+significa dizer, um modelo de um modelo. Sobre isso (invisibilidade), Frederick Brooks
+afirma que, “se alguém sobrepor todos os diagramas gerados pelas muitas visualizações
+relevantes [de um software], será difícil extrair qualquer visão global” (1986, p. 16).
+Outra característica da engenharia e arquitetura de software é a complexidade, o que
+faz referência explicita ao âmbito do grande número de variáveis dos protocolos,
+instruções e comandos necessários ao processamento, que podem estar presentes
+simultaneamente em diversas situações computacionais.
+Ainda assim, continua Frederick Brooks “estudo após estudo mostra que os
+melhores projetistas produzem estruturas mais rápidas, menores, mais simples, mais
+limpas e produzidas com menos esforço” (1986, p. 18). Mas isso não muda o fato de
+que a arquitetura e engenharia de software precisam se orientar no sentido de uma
+adequação aos limites conceituais da computação que acabamos de mencionar. O que
+significa dizer, que precisam ser amparadas pela mesma estrutura computacional que,
+por sua vez, estão contingenciadas às propriedades e faculdades passíveis de serem
+representadas algoritmicamente, enfim, adequar-se ao que pode ou não ser
+representado formalmente, matematicamente e assim por diante.
+Além disso, como sabemos, computadores concebidos como máquinas
+universais Turing e dotadas com a arquitetura Von Neumann, são sistemas cibernéticoinformacionais completamente determinísticos, que conduzem fórmulas, algoritmos e
+equações, que absolutamente não podem compreender. Nesse sentido, os sistemas
+conduzem códigos cujo conteúdo ignoram. Assim sendo, a evolução e sofisticação dos
+suportes, pouco ou nada significam diante dos limites intrínsecos à própria computação.
+Como recolhemos em Matéria e pensamento de Jean-Pierre Changeux e Alain Connes
+“as operações podem ser mais complicadas, mas pouco importa. Conta apenas o fato
+de que realizar essas operações não tem consequências práticas sobre a maneira pela
+qual elas são realizadas” (1995, p. 101), ou seja, não mudam o fato irremovível das
+limitações das máquinas universais de Turing e von Neumann.
+O que precisa ser retido é que uma Máquina Turing trabalha com um espectro
+limitado de números computáveis, ou seja, que estejam ao alcance dessas teorias. Para
+superar algo assim tão estruturante, tornar-se-ia necessário conceber um computador
+que fosse capaz de computar sentido, valor, significado e assim por diante. Na dicção
+Alexandre Quaresma
+
+1
+5
+
+de Jean-Pierre Changeux e Alain Connes, seria necessário “um computador que, no
+jogo de xadrez [por exemplo], conseguisse compreender seus erros para deixar de
+cometê-los depois, ou que inventasse uma estratégia. No lugar de ter na memória uma
+lista de aberturas, inventaria uma nova abertura” (1995, p. 103). Além disso, continuam
+Changeux e Connes,
+seria importante que o computador o vivenciasse [uma representação
+funcional do sentimento de frustação] quando se engana, perde no
+xadrez, ou quando a sua estratégia não é a melhor. Seria preciso que ele
+ficasse estressado ou, pelo contrário, que ele sentisse o prazer de ter
+encontrado um método mais eficaz, mais rápido. [...] Seria preciso que o
+próprio computador fosse capaz de melhorar o seu programa, coisa que
+o cérebro, é evidente, pode fazer. Mas os computadores atuais ainda
+estão longe disso. Isso porque se tem dificuldade em definir, de maneira
+autônoma, quantidades que engendrassem frustração ou prazer no
+computador, e que lhe permitissem virar-se por si mesmo. [...]
+Capacidade de construir hierarquias de valores, de utilizá-los e modificalos (1995, p. 103).
+Enfim, torna-se importante perceber que nem tudo é passível de computação.
+Nem tudo pode se tornar cômputo. Os limites da computação dizem respeito a
+fenômenos que, para serem computados, necessitariam de tantas possíveis variáveis
+que gerariam uma explosão combinatória que inviabilizaria o próprio processo
+computacional. A consciência, nesse sentido, é um exemplo emblemático desse tipo de
+limite que ainda não pode ser ultrapassado, pelo menos por enquanto.
+
+Últimas considerações
+Como sabemos desde a filosofia crítica, e como a ciência do
+cérebro confirma, o conhecimento não é uma projeção da
+realidade numa tela mental, mas uma organização cognitiva de
+dados sensoriais/memoriais que produzem simultaneamente a
+projeção e a tela.
+Edgar Morin (2001, p. 250)
+
+O fenômeno da consciência biológica, ainda hoje, segue sendo em grande medida algo
+a ser compreendido. Não é possível afirmar que a consciência e sua dinâmica cerebral
+seja hoje –mesmo com todos os avanços das neurociências– plenamente explicável. O
+cérebro, no âmbito do organismo, segue sendo a “última fronteira” do corpo a ser
+desvendada e compreendida. Isso é um fato dado um tanto quanto aceito, com o qual
+concordam teóricos e pesquisadores.
+E, como escreve António Damásio, “se não nos assombramos a todo momento
+com a consciência, é porque ela é muito disponível, fácil de usar, elegante em seus
+espetaculares aparecimentos e desaparecimentos diários” (2011, p. 17), ou seja,
+quando adormecemos e despertamos. Vale notar também que os cérebros são estes
+objetos fantásticos do mundo físico, dotados com faculdades e propriedades igualmente
+extraordinárias, mas que suas manifestações bioevolutivas envolvem necessariamente
+corpos vivos para gerá-los, envolvê-los, mediá-los e sustentá-los, de modo que seria
+totalmente impróprio pensar as manifestações do cérebro e da mente como fenômenos
+destacados dos organismos vivos que possuem cérebros.
+
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+16
+O pensamento materialista simplesmente não pode manejar conceitualmente
+representações de sistemas complexos que não podem decifrar e que não são passíveis
+de matematizações, como é o caso da biologia, que usa a matemática basicamente para
+aproximações, estimações probabilísticas, e nunca como medidas e quantidade exatas,
+redutíveis e reproduzíveis num modelo formal. Ainda assim, num contraponto
+interessante em relação às nossas próprias reflexões e argumentações até aqui, e
+também às de muitos autores citados, Paul Churchland sustenta que
+a efetiva entrada em cena de uma dinâmica e mecânica materialistas para
+descrever os estados psicológicos e processos cognitivos constituirá não
+uma escuridão na qual nossa vida interior será eclipsada ou suprimida,
+mas, antes, um alvorecer, no qual suas maravilhosas complexidades
+serão, por fim, reveladas – até mesmo, se nos empenharmos nisso, as
+relativas à introspecção autoconsciente (2004, p. 279).
+Talvez isso possa se concretizar, quem sabe, no futuro. Todavia, por ora,
+estamos bem longe disso. O que vale dizer, que estamos longe de poder aplicar
+rigorosamente a mecânica, o fisicalismo e o pensamento materialista, para poder
+explicar satisfatória e completamente os complexos e multifacetados fenômenos
+biológicos.
+A mente é – como sabemos – uma das últimas fronteiras inexploradas dos
+organismos biológicos. Mesmo porque, a mente não é (apenas) o cérebro; a mente não
+é (apenas) uma série de sinapses que conectam e se desconectam diversas áreas desse
+cérebro; nem muito menos ainda poderia ser (apenas) uma improvável descrição
+materialista, matemática ou mesmo mecanicista desses processos que acontecem
+dentro dessa extraordinária matéria viva chamada cérebro. O cérebro pode ser, quem
+sabe, tudo isso –desde que se descubra e se prove tais teorias e hipóteses num alto
+grau de razoabilidade–, mas é, necessária e inescapavelmente, a emanação dinâmica
+que emerge sistemicamente a partir dessas estruturas físicas de extremada
+complexidade que levamos dentro de nossas cabeças.
+Já para as inteligências artificiais (IA), por outro lado, a consciência é um
+tremendo problema a ser enfrentado, um obstáculo significativo, o que vale dizer que é
+dificílimo –senão impossível– replicá-la (consciência) a contento numa plataforma
+cibernético-informacional. No que tange a uma conversação articulada, esbarramos
+novamente no problema da ausência de consciência nos sistemas de IA. Quanto a isso,
+Roger Schank e Lawrence Birnbaum (1995:99) afirmam que “as pessoas raramente
+dizem algo que seja realmente novo ou que elas jamais tenham dito antes. Vista dessa
+forma, a conversação depende da arte de classificar, de descobrir a coisa certa para
+dizer no momento certo. [...] A fim de tornar as máquinas inteligentes é preciso tornálas capazes de acessar e modificar uma base de conhecimento tremendamente ampla.
+Não existe inteligência sem conhecimento”, e, de igual maneira, acrescentamos nós,
+conhecimento sem consciência.
+Além disso, a teoria atual nos informa que, “pode-se dizer que nosso cérebro é
+um ‘universo conexional’ [escreve Jean-Pierre Changeux (1992, p. 154)], e as células
+nervosas que o compõem constituem uma rede organizada em estruturas paralelas e
+hierárquicas formando um conjunto de extrema complexidade”.
+A biologia é sempre muito mais sutil do que parece. Daí a enormidade de teorias
+que não são capazes de explicá-la em sua extraordinária complexidade, muitas por
+questões de método, estruturação, ou mesmo ausência de vocabulário adequado, como
+Alexandre Quaresma
+
+1
+7
+
+tentamos demonstrar. Ademais, eis, então, o problema do consciência esmiuçado o
+quanto foi humanamente possível, dentro das nossas limitações de tempo e lauda;
+problema esse que se fundamenta e se origina na questão da imensurabilidade do
+humano aqui posta e exemplificada em alguns aspectos pontuais, mas definitivamente
+não esgotada, é claro; e por fim concluímos constatando o imenso abismo que ainda
+separa a consciência biológica mais rudimentar de uma pretensa inteligência artificial
+de extremada sofisticação.
+O que vale dizer que, em matéria de consciência, seres considerados por nós
+não tão complexos –como aves e peixes, por exemplo, e até insetos– exibem
+comportamentos muitíssimo mais complexos e eficientes do que qualquer computador
+ou programa que já foi criado até agora. O que não significa, absolutamente, que
+permanecerá assim para sempre.
+
+Referências
+Basbaum, S. (2018). Tecnoestese e infocgnição: Da ordem dos predicados dos
+acoplamentos na circunstância contemporânea. São Paulo.
+Bergson, H. (1979). A evolução criadora. Rio de Janeiro: Zahar Editores.
+Brooks, F. (1986). “No silver bullet – Essence and Accident in Software Engineering”. In
+Computer Review.
+Buzsáki, G. (2006). Rhythms of the Brain. Oxford University Press.
+Button, G.; Coulter, J.; Lee, J. e Sharrock, W. (1998). Computadores, mentes e conduta.
+São Paulo: Editora UNESP.
+Changeux, J.-P. e Connes, A. (1995). Matéria e pensamento. São Paulo: Editora
+UNESP/Cambriedge University Press.
+Churchland, Paul (2004). Matéria e consciência – Uma introdução contemporânea à
+filosofia da mente. São Paulo: Editora UNESP.
+Crevier, D. (1996). Inteligência artificial. Madri: Acento Editorial.
+Damásio, A. (2015). O mistério da consciência – Do corpo e das emoções ao
+conhecimento de si. São Paulo: Companhia das Letras.
+Damásio, A. (2011). E o cérebro criou o homem. São Paulo: Companhia das Letras.
+De Fernandes Teixeira, J. (2010). A mente pós-evolutiva – A filosofia da mente no
+universe do silício. Petrópolis: Editora Vozes.
+Descartes, R. (1979). Discurso do método. Coleção Os Pensadores. São Paulo: Abril
+Cultural.
+Dewey, J. (1974). Experiência e natureza. In coleção Os pensadores, São Paulo: Abril
+Cultural.
+Dreyfus, H. (1972). O que os computadores não podem fazer – Uma crítica da razão
+artificial. Rio de Janeiro: A Casa do Livro Eldorado.
+Galimberti, U. (2006). Psiche e techne – O homem na idade da técnica. São Paulo;
+Paulus.
+Henning, B. (2013). Of termites and men: On the ontology of collective individuals. In
+Beyond Mechanism – Putting life back into biology, orgs: Brian Henning and
+Adam Scarfe. Londres: Lexington Books.
+Merleau-Ponty, M. (2002). A prosa do mundo. São Paulo: Cosac & Naify.
+Minsky, M. (2006). La máquina de las emociones – Sentido común, inteligência artificial
+y el futuro de La mente humana. Buenos Aires, Sudamericana.
+
+Paakat: Revista de Tecnología y Sociedad
+Año 9, núm. 16, marzo-agosto 2019, e-ISSN: 2007-3607
+
+18
+Mithen, S. (1996). A pré-história da mente – Uma busca das origens da arte, da religião
+e da ciência. São Paulo: Editora UNESP.
+Morin, E. (2001). O método 2: A vida da vida. Porto Alegre: Sulina/Meridional.
+Nietzsche, F. (1974). Obras incompletas. Coleção Os Pensadores. São Paulo: Abril
+Cultural.
+Quintanilla, I. (2012). Techné – La filosofía y el sentido de la técnica. Madri: Common
+Ground Publishing.
+Ravoux, J.-P. (2000). A unidade das ciências – Explicar a natureza e compreender o
+homem. Lisboa: Instituto Piaget.
+Schank, R. e Birnbaum, L. (1995). Aumentando a inteligência. In A natureza da
+inteligência, Jean Khalfa (Org.) São Paulo: Editora UNESP/Cambridge University
+Press.
+Simon, H. A. (1992). Herbert A. Simon, O computador-rei. In Do caos à inteligência
+artificial – Quando os cientistas se interrogam, org: Guitta Pessis-Pasternak.
+São Paulo, Editora UNESP.
+Whitehead, A. N. (2009). O conceito de natureza. São Paulo: Martins Fontes.
+Wilson, E. O. (1999). A unidade do conhecimento – Consiliência. Seria a ciência capaz
+de explicar tudo? Rio de Janeiro: Campus.
+
+*1 Alexandre Quaresma. É escritor ensaísta e filósofo brasileiro, pesquisador de tecnologias e
+consequências socioambientais, com especial interesse na crítica da tecnologia. É membro da
+RENANOSOMA (Rede de Pesquisa em Nanotecnologia, Sociedade e Meio Ambiente) e vinculado à
+FDB (Fundação Amazônica de Defesa da Biosfera). Autor dos livros Humano-Pós-Humano –
+Bioética, conflitos e dilemas da Pós-modernidade (2014); Engenharia genética e suas
+implicações (org.), (2014); Nanotecnologias: Zênite ou Nadir? (2011); e Artificial Intelligences –
+Essays on Inorganic and Non-biological Systems (org.), (no prelo). Atualmente é Mestrando em
+Tecnologias da Inteligência e Design Digital pela PUC/SP, e pesquisa as controversas relações
+entre as Inteligências Artificiais (IA) complexas e as sociedades contemporâneas, tendo publicado
+diversos
+artigos
+sobre
+a
+referida
+temática: Determinados
+por
+nosso
+próprio
+determinismo (2012); Revolução robótica (2013); Auto-organização de quarto grau (2014); O
+tecnomito da caverna (2014); Hibridação ciborgue (2014); Deuses ou presas (2014); Corpomáquina? (2014); Sistemas complexos e emergência: Como se origina a inteligência e a
+vida (2015); Redes autoconscientes: As novas mentes cibernéticas globais (2015); Homo
+tecnológico (2015); Cumulonimbus-informaticos (2016); Rivais de silício(2017), Rivais de silício
+II (2017), e Jogos egoístas (2017). E-mail: a-quaresma@hotmail.com
+
+“O campo científico da inteligência artificial (IA) [informa-nos Edward Wilson (1999, p. 115)] surgiu na
+década de 1950 logo depois da invenção dos primeiros computadores eletrônicos. É definido por seus
+profissionais como o estudo da computação necessária para o comportamento inteligente e a tentativa de
+reproduzir tal comportamento usando computadores”. Ou ainda, nas palavras de Marvin Minsky apud Hebert
+A. Simon (1992, p. 223) e com uma boa dose de humor, IA é a “Ciência que faz as máquinas realizarem coisas
+que os homens [seres humanos] julgam inteligentes quando realizadas por eles”.
+3
+Abdução (conceito de) – Grosso modo, abdução é o mesmo que ‘intuir’. Além dos tipos mais universais de
+raciocínio, que são o indutivo e o dedutivo, é de Charles Sanders Peirce que provém, na história da lógica, a
+teoria da abdução como o tipo de inferência criativa que pode levar às descobertas, inclusive científicas. Partese de um certo efeito, e remete-se esse efeito a uma causa hipotética, ou seja: é o raciocínio de trás para a frente.
+2
+
+Alexandre Quaresma
+

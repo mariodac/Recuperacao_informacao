@@ -1,0 +1,1305 @@
+Revista Brasileira de Meteorologia, v. 33, n. 1, 115-129, 2018
+DOI: http://dx.doi.org/10.1590/0102-7786331005
+
+rbmet.org.br
+
+Artigo
+
+Proposta para Previsão de Velocidade do Vento Através de Modelagem
+Híbrida Elaborada a Partir dos Modelos ARIMAX e RNA
+Henrique do Nascimento Camelo1 , Paulo Sérgio Lucio1 , João Bosco Verçosa Leal Junior2 ,
+Paulo Cesar Marques de Carvalho3
+1
+
+Programa de Pós-Graduação em Ciências Climáticas,
+Universidade Federal do Rio Grande do Norte, Campus Lagoa Nova, Natal, RN, Brasil.
+2
+Mestrado Acadêmico em Ciências Física Aplicadas,
+Universidade Estadual do Ceará, Campus Itaperi, Fortaleza, CE, Brasil.
+3
+Programa de Pós-Graduação em Engenharia Elétrica,
+Universidade Federal do Ceará, Campus do Pici, Fortaleza, CE, Brasil.
+Recebido em 27 de Abril de 2017 – Aceito em 19 de Setembro de 2017
+
+Resumo
+No presente artigo é proposto um modelo híbrido capaz de realizar previsão de velocidade do vento (médias mensais e
+horárias) com boa acurácia em regiões do nordeste brasileiro. Este modelo é elaborado a partir da combinação entre dois
+modelos, o Auto-Regressivo Integrado de Médias Móveis com entradas de Variáveis Exógenas (ARIMAX) e Redes
+Neurais Artificias (RNA). A escolha por estes modelos foi motivada pelo fato de que os mesmos conseguem incorporar
+ambas características lineares (ARIMAX) e não-lineares (RNA) comumente existentes em séries temporais. O modelo
+híbrido relaciona pressão, temperatura e precipitação com velocidade do vento, a fim de considerar características
+meteorológicas locais importantes. É possível constatar a eficiência do modelo híbrido para fornecer bons ajustes aos dados observados das velocidades dos ventos, sendo esta afirmação baseada nos valores encontrados por medidas de
+acurácia, exemplo, com erro percentual médio de aproximadamente 5,0%, e valor do coeficiente de eficiência de
+Nash-Sutcliffe de 0,96. Estes resultados confirmam a existência de precisão para as velocidades dos ventos previstas
+acompanhando o perfil de suas observações, em especial é possível identificar semelhanças entre ambas as séries
+temporais (em termos de valores máximos e mínimos), mostrando assim, a capacidade do modelo em representar
+características de sazonalidade.
+Palavras-chave: séries temporais, Inteligência artificial, Modelo ARXAN, Energia eólica, Nordeste brasileiro.
+
+Proposal for Prediction of Wind Speed through Hybrid Modeling
+Elaborated from ARIMAX and ANN Models
+Abstract
+In this paper, a hybrid model capable of predicting wind speed (monthly and hourly averages) with good accuracy in regions of the Brazilian Northeast. This model is elaborated from the combination of two models, the Auto-Regressive Integrated Moving Average with eXogenous inputs (ARIMAX) and Artificial Neural Networks (ANN). The choice for
+these models was motivated by the fact that they can incorporate both linear (ARIMAX) and nonlinear (ANN) features
+commonly found in time series. The hybrid model correlates pressure, temperature and precipitation with wind speed in
+order to consider important local meteorological characteristics. It is possible to verify the efficiency of the hybrid model
+to provide good adjustments to the observed data of the winds speeds, being this affirmation based on the values found
+by means of accuracy measurements, with average percentage error of approximately 5.0%, and coefficient value of
+Nash-Sutcliffe efficiency of 0.96. These results confirm the existence of precision for the winds speeds predicted following the profile of their observations, in particular it is possible to identify similarities between both time series (in terms
+of maximum and minimum values), thus showing the capacity of the model in represent characteristics of seasonality.
+Keywords: time series, Artificial intelligence, Model ARXAN, Wind power, Northeast Brazil.
+Autor de correspondência: Henrique do Nascimento Camelo, henriquecamelo13@yahoo.com.br.
+
+116
+
+1. Introdução
+A necessidade de pesquisas que possam fornecer métodos capazes de atenuar poluentes atmosféricos vem crescendo ano após ano. Uma das estratégias para atenuar os
+gases do efeito estufa na atmosfera provenientes das atividades humanas é o incentivo ao uso dos recursos renováveis de energia, como é o caso da geração eólica (Dai,
+2013; Mcglade e Ekins, 2015; Crate e Nutall, 2016). O
+Painel Intergovernamental sobre Mudanças Climáticas (IPCC), em seu mais recente relatório lançado em 2014 (Pachauri et al., 2015), apontou que o aquecimento global é
+uma realidade e a contribuição do ser humano é significativa para a ocorrência de fenômenos ligados às mudanças climáticas. Na medida em que houver, cada vez mais,
+inserção de energias renováveis em matrizes energéticas de
+diversas nações pelo mundo afora poderá contribuir para
+ambientes mais saudáveis (Resch et al., 2008).
+Em termos de geração eólica na atualidade um método de pesquisa que vem sendo testado, a fim de identificar
+sua viabilidade trata-se da previsibilidade da intensidade da
+velocidade do vento local, seja através de médias mensais
+ou horárias (Liu et al., 2012; Camelo et al., 2015; Camelo et
+al., 2016). Essa estratégia poderá possibilitar conhecer o regime dos ventos de uma dada região no futuro, e assim,
+tentar fornecer garantias aos tomadores de decisão para a
+exploração eólica de uma dada região, e assim, otimizar a
+geração de energia elétrica local. Kavasseri e Seetharaman
+(2009) usam o modelo Auto Regressivo Integrado de Médias Móveis (ARIMA), também conhecido por modelagem
+Box-Jenkins (Box et al., 2015), para a previsão da velocidade do vento no horizonte de 24 h em quatro localidades
+da região de Dakota do Norte nos EUA.
+Cadenas e Rivera (2009) realizam previsão a curto
+prazo horária na região de La Venta, Oaxaca, México,
+através de Redes Neurais Artificiais (RNA). Outro modelo
+estudado para previsão da velocidade do vento é a Suavização Exponencial Simples (SES), que trabalha com médias ponderadas no sentido de fornecer pesos maiores às
+observações mais recentes. Cadenas et al. (2010) mostram
+que a SES fornece menores erros quando comparado aos
+modelos ARIMA e RNA aplicados em região litorânea do
+México. Também é possível encontrar trabalhos com a
+combinação dos modelos ARIMA e RNA para previsão de
+séries temporais, os chamados modelos híbridos. Liu et al.
+(2012) analisam a utilização desse tipo de modelagem na
+previsão da velocidade do vento em fazendas eólicas da
+China. Lydia et al. (2016) avaliam o uso do modelo ARIMAX para obter previsão de curto prazo da velocidade do
+vento em localidades da Índia usando vários parâmetros
+atmosféricos tais como temperatura, radiação solar e direção do vento. Os resultados foram satisfatórios, proporcionando uma boa precisão da velocidade do vento prevista.
+No entanto, os autores enfatizam a necessidade de promover a melhoria dos modelos multivariados de séries temporais, sendo este um campo de pesquisa em desenvolvimeto.
+
+Camelo et al.
+
+Este artigo tem como objetivo apresentar metodologia capaz de realizar previsões da intensidade da velocidade do vento local com boa acurácia em termos de médias
+mensais e horárias, em regiões do nordeste brasileiro. É
+proposta modelagem estatística, a partir da combinação de
+modelo de série temporal (envolvendo as variáveis exógenas pressão, temperatura e precipitação) com modelo de
+inteligência artificial computacional, sendo assim, trata-se
+de modelagem híbrida, a qual sugere incorporar importantes características meteorológicas das regiões de estudo,
+como tentativa de encontrar maior precisão da velocidade
+do vento prevista. Métodos para previsão de velocidade do
+vento poderão constituir em técnica útil no setor eólico,
+sendo possível obter informações necessárias para geração
+de eletricidade a partir do potencial eólico investigado. É
+importante destacar que conforme mencionado na literatura
+existem alguns trabalhos sobre previsão de velocidade do
+vento, porém, há necessidade de trabalhos que busquem
+relacionar a velocidade do vento com outras variáveis meteorológicas específicas da região de estudo a fim de fornecer melhores resultados.
+
+2. Materiais e Métodos
+Nesta secção comenta-se sobre os dados das regiões
+de estudo, e também sobre os modelos de previsões utilizados. São apresentadas as medidas de acurácia para identificar a qualidade dos ajustes produzidos pelos modelos
+quando comparado às séries temporais observadas. Todos
+os cálculos produzidos nesse estudo e da mesma forma a
+parte gráfica foram executados pelo software livre R, o qual
+vem sendo muito utilizado em diversas atividades
+acadêmicas.
+2.1. Região de estudo e dados de velocidade do vento
+As regiões de estudo nesse trabalho são Fortaleza
+(3.77° S - 38.53° W), Parnaíba (2.54° S - 41.46° W) e Natal
+(5.75° S - 35.35° W) todas localizadas no Nordeste do
+Brasil (NEB). Os dados meteorológicos usados foram: velocidade do vento (medida em m/s), pressão, temperatura e
+precipitação (medidas em hpa, °C e mm, respectivamente).
+Todos esses dados são constituídos de duas formas: (1) as
+variáveis (velocidade do vento, temperatura, pressão e precipitação) em termos de médias mensais são utilizadas 144
+medições de cada que começam em janeiro de 2003 e
+terminam em dezembro de 2014; e (2) em termos de médias
+horárias as variáveis (velocidade do vento, temperatura e
+pressão) são utilizadas com todos os horários relativo ao
+ano de 2014 que contém 8760 medições. Os dados de
+velocidade do vento são originalmente medidos ao nível de
+10 m de altura, e coletados em torres anemométricas dos
+aeroportos das respectivas localidades, assim como os dados de pressão, temperatura e precipitação. Os dados foram
+doados pelos aeroportos das reiões de estudo.
+Para aplicação dos dados meteorológicos sobre os
+modelos propostos neste artigo, com o objetivo de realizar
+
+Proposta para Previsão de Velocidade do Vento Através de Modelagem Híbrida Elaborada a Partir dos Modelos ARIMAX e RNA
+
+previsões de médias mensais e horárias da velocidade do
+vento, foram seguidas as etapas: (I) fase de ajuste – em
+termos de médias mensais consiste em introduzir os dados
+observados (velocidade do vento, pressão, temperatura e
+precipitação) nos modelos de previsão para que seja possível fornecer os respectivos ajustes utilizando o período de
+janeiro de 2003 até dezembro de 2014, e em termos de
+médias horárias consiste em introduzir os dados observados (velocidade do vento, pressão e temperatura) nos
+modelos de previsão para que seja possível fornecer os
+respectivos ajustes utilizando o período de 01/01/2014 até
+31/12/2014; (II) fase da qualidade dos ajustes – essa averiguação é realizada mediante a utilização de métodos de
+acurácia dos modelos, os quais serão comentados adiante;
+(III) fase de previsão – serve para ilustrar a capacidade dos
+modelos em realizar projeções da velocidade do vento para
+o período seguinte aos dados observados, através dos melhores modelos ajustados de duas formas: (1) em termos de
+médias mensais para os meses do ano de 2015; e (2) em
+termos de médias horárias para o dia 01/01/2015.
+2.2. Modelagem ARIMAX
+A metodologia de Box – Tiao, a qual é comumente
+chamada de ARIMAX (Box e Tiao, 1975), e representa
+uma expansão do modelo Auto-Regressivos Integrados à
+Média Móvel (ARIMA) da metodologia Box–Jenkins (Box
+et al., 2015). O modelo ARIMAX é considerado multivariado que acrescenta um componente linear em função
+das observações das covariáveis (também chamadas de
+variáveis exógenas). A principal diferença entre os dois
+modelos é que o ARIMAX possui, além dos parâmetros
+auto-regressivos e de médias móveis, a entrada exógena
+(Bennet, 2014). O modelo ARIMAX pode ser entendido
+como a combinação dos modelos Auto-Regressivo AR(p),
+Integrado (d), Média-Móvel MA(q) e Exógeno X(r), e que
+pode então ser simbolizado por ARIMAX(p,d,q,r). Uma
+forma simplificada de representar matematicamente esse
+modelo está descrita na Eq. (1):
+p
+
+r
+
+q
+
+i=1
+
+j=1
+
+j=1
+
+yt = r + å b i yt - i + å w j w j + å ( q j - e t - j ) + e t
+
+(1)
+
+em que yt é variável dependente no tempo t e que se
+pretende projetar (ou seja, a velocidade do vento); r é uma
+constante; yt-i é a variável dependente (que também é a
+velocidade do vento) defasada por i passos de tempo; bi é o
+coeficiente de yt-i; p é o número máximo de intervalos de
+tempo; wj representa as variáveis exógenas (nesse caso
+foram incluídas no modelo de duas formas: (I) - pressão,
+temperatura e precipitação para obtenção de ajustes e previsões ambos para médias mensais; (II) – pressão e temperatura para obtenção de ajustes e previsões ambos no caso de
+médias horárias); wj representa os coeficientes das variáveis exógenas; r é o número máximo de variáveis exógenas; qj é o coeficiente do termo de et-j que, por sua vez,
+
+117
+
+representa o erro no tempo t defasado de j. E et é a componente de erro do modelo, com et ~ N(o,s2). Os coeficientes
+dos modelos são estimados por regressão, maiores detalhes
+sobre a Eq. (2) é possível obter em (Yogarajah et al., 2013).
+As ordens dos modelos ARIMAX, ou seja, os números que darão origem ao funcionamento das funções foram
+encontrados através da função, auto.arima(...), essa função
+faz parte do pacote (forecast) do software R, o qual foi
+descrito por Hyndman e Khandakar (2008). A escolha dos
+melhores modelos ARIMAX para fornecer os melhores
+ajustes aos dados observados leva em consideração o critério Akaike (Akaike, 1973). Esse critério é baseado na identificação do menor valor para o coeficiente AIC (Akaike
+Information Criterion do iglês cuja a tradução em portugues é Critério de Informação Akaike), o qual teoricamente
+resulta no melhor modelo do ponto de vista estatístico
+(Brockwell e Davis, 1991). Na prática com o uso do AIC
+busca-se o modelo mais parcimonioso, isto é, o modelo que
+envolva o mínimo de parâmetros possíveis a serem estimados e que explique bem o comportamento da variável resposta. Ainda maiores detalhes sobre o AIC e propriamente
+maiores especificações obter através de Brockwell e Davis
+(1991).
+Para avaliar se os modelos da metodologia Box –
+Tiao, usado possui viabilidade para a previsão da velocidade do vento foi realizado uma análise de resíduos.
+Conforme Shumway e Stoffer (2006), para que os modelos
+ARIMAX sejam viáveis no tocante aos ajustes dos dados
+observados, o termo de erro et, desse modelo deve se
+comportar como um ruído branco, ou seja, possuir média
+zero, variância constante (são homocedásticos) e ser não
+correlacionado, ou seja, os erros são independentes. E ainda
+o termo et deve seguir uma distribuição normal. Para identificação desses pressupostos existem alguns testes possíveis
+de serem aplicados sobre os resíduos. Destaca-se o teste de
+verificação de normalidade dos resíduos a partir do Teste
+de Kolmogorov-Smirnov (KS) (Royston, 1983), teste de
+independência dos resíduos a partir do Teste de DurbinWatson (DW) (Montgomery, 2001), e o teste que verifica a
+igualdade da variância dos resíduos, ou seja, hipótese de
+homoscedasticidade a partir do Teste de Breusch-Pagan
+(BP) (Gujarati, 2009). Na Tabela 1, tem-se a representação
+resumida dos testes utilizados, sendo que os mesmos foram
+aplicados ao nível de significância de a = 0,05.
+Ainda sobre a escolha das variáveis exógenas aplicadas sobre o modelo ARIMAX, é importante dizer que a
+velocidade do vento está relacionada com deslocamentos
+de massas de ar que, por sua vez, esses deslocamentos
+ocorrem em virtude de diferenças de pressão na atmosfera
+(Burton et al., 2001). O movimento sempre acontece das
+zonas de alta para as zonas de baixa pressão e determinam,
+assim, a dinâmica geral da circulação atmosférica e as
+formações dos diferentes tipos climáticos (Ahrens, 2012).
+Ressalta-se que massas de arpodem ser definidas como
+porções ou volumes da atmosfera que possuem pratica-
+
+118
+
+Camelo et al.
+
+Tabela 1 - Apresentação dos testes que identificam ruído branco nos
+modelos de Box – Tiao.
+Teste de Kolmogorov-Smirnov (KS)
+H0: amostra provém de uma população Normal. H1: amostra não
+provém de uma população Normal.
+Teste Durbin-Watson (DW)
+H0: os resíduos são independentes. H1: os resíduos não são
+independentes.
+Teste Breusch-Pagan (BP)
+H0: os resíduos possuem homoscedasticidade. H1: os resíduos possuem
+heterocedasticidade.
+
+mente as mesmas características de pressão, temperatura e
+umidade por causa de sua localização e são bastante espessas e homogêneas (Ahrens, 2012). É importante destacar
+também que o ar é composto principalmente de nitrogênio,
+oxigênio e argônio, que juntos constituem a maior parte dos
+gases da atmosfera. Os demais gases incluem gases do
+efeito estufa como vapor de água, dióxido de carbono,
+metano, óxido nitroso e ozônio. Variáveis como pressão,
+volume e temperatura fisicamente são consideradas grandezas intrínsecas de quaisquer gases (Tsonis, 2002), dessa
+forma, pela importância das variáveis pressão e temperatura no tocante ao deslocamento de massas de ar, optou-se
+neste trabalho pela relação de ambas com a velocidade do
+vento na aplicação do modelo proposto.
+E para a escolha da precipitação uma das motivações
+é devido ao fato de que na literatura existem diversos
+trabalhos sobre potencial eólico que mostram diferenças na
+intensidade dos ventos sobre a região NEB nos distintos
+períodos chuvoso e seco, como em (SEINFRACE, 2001;
+Amarante et al., 2001; Amarante et al., 2003), e sendo assim, faz-se necessário a inclusão desta variável no modelo
+ARIMAX, para que o mesmo possa fornecer ajustes e
+previsões da velocidade do vento levando em consideração
+esses períodos. De acordo com Molion e Bernardo (2002),
+a Zona de Convergência Intertropical (ZCIT) pode ser
+considerada, como o principal mecanismo atmosférico de
+grande escala que associado à convergência de umidade
+são responsáveis pela produção de chuvas no Norte do
+Nordeste Brasileiro (NNE), em especial nas regiões litorâneas dos estados do Ceará, Rio Grande do Norte e Piauí
+entre o período de fevereiro a maio. Nesse período, sobre o
+oceano Atlântico a ZCIT migra para uma posição mais ao
+sul, cerca de 4° S favorecendo desta maneira a existência da
+estação chuvosa sobre o NNE. A ZCIT é considerada uma
+banda de nuvens que circunda a faixa equatorial do globo
+terrestre, formada principalmente pela confluência dos
+ventos alísios do hemisfério norte com os ventos alísios do
+hemisfério sul (Molion e Bernardo 2002).
+As variações dos alísios de nordeste e sudeste parecem ser uma das causas das alterações de intensidade e
+posicionamento da convergência na ZCIT (Namias, 1972).
+
+Outro destaque, além das características de posicionamento
+da ZCIT que influenciam diretamente no regime de ventos
+no NEB ao longo do ano, é possível citar circulações
+atmosféricas locais como as brisas terrestres e marítimas e
+ainda os efeitos locais da camada limite planetária, associados principalmente aos seus processos turbulentos,
+são também fatores de mudanças de direção e intensidade
+da velocidade dos ventos em escala diária (Kaimal e Finnigan, 1994; Barreto et al., 2002; Ferreira e Da Silva Mello,
+2005; Alcântara e Souza, 2008). Pelo que foi exposto as
+condições de ventos em toda região do NNE são conduzidas, principalmente pelo ciclo de posição e intensidade da
+ZCIT e pelas fortes ocorrências das brisas marítimas.
+2.3. Inteligência artificial
+As Redes Neurais Artificiais (RNA) fazem parte da
+chamadainteligência artificial computacional que se caracteriza por ser um ramo de pesquisa da ciência da computação, foram apresentadas pela primeira vez em 1943
+pelo neurofisiologista McCulloch, e pelo matemático Walter Pitts (McCulloch e Pitts, 1943). O modelo de Pitts e
+McCulloch era constituído de apenas uma saída e uma
+função de entrada, calculada através da soma ponderada de
+diversos valores. Esse modelo assemelha-se com o neurônio humano, onde sinais são recebidos pelo mesmo com
+intensidades diferentes, provocando uma determinada reação por parte da célula nervosa. Embora biologicamente
+inspiradas no neurônio humano, as RNA encontraram aplicações em diferentes áreas científicas.
+De acordo com Zhang et al. (1998), uma das técnicas
+de inteligência computacional, comumente usada na tentativa de prever séries temporais é o treinamento de RNA.
+Estas são baseadas na arquitetura e aprendizagem do cérebro humano. As RNA funcionam conceitualmente de forma similar ao cérebro humano, ou seja, tentando
+reconhecer regularidades e padrões de dados sendo capazes
+de aprender com a experiência e fazer generalizações baseadas no seu conhecimento previamente acumulado. As
+RNA em sua estrutura podem possuir ambos modelos nãolinear e linear e assim obter melhores resultados quando
+comparado com outros modelos de previsão (Zhang, 2003).
+Uma RNA pode ser pensada como uma rede de “neurônios” organizados em camadas. Os preditores (ou entradas yt-i) formam a camada inferior, e as previsões (ou saídas
+yt+h) formam a camada superior. Pode haver camadas intermediárias que contenham “neurônios ocultos”. A Fig. 1
+mostra um exemplo para a estrutura de uma RNA com 4
+entradas e com 1 camada oculta. Os coeficientes ligados
+aos preditores são chamados de “pesos” e comummente
+representado por wi, Os pesos são selecionados através de
+um “algoritmo de aprendizagem”, como é o caso do backpropagation (que surge do fato que o algoritmo se baseia na
+retropropagação dos erros para realizar os ajustes de pesos
+das camadas intermediárias), que minimiza o erro entre as
+
+Proposta para Previsão de Velocidade do Vento Através de Modelagem Híbrida Elaborada a Partir dos Modelos ARIMAX e RNA
+
+119
+
+utilizados são Adaline (Adaptive Linear Element), backpropagation, e RBF (Radial Basis Function).
+Ressalta-se que a utilização de RNA pelo software R
+é fornecida através do pacote forecast apresentados por
+Hyndman e Khandakar (2008), a partir da função
+nnetar(...), que por sua vez, as características da RNA
+simulada nesta função tem como resultado a simbolização
+de NNAR(p,P,k)(12), em que, p (representa quantidade de
+termos autoregressivo), P (é referente ao número de defasaegm sazonal usado na entrada), e k (representa o número
+de sub-camadas), e por fim, o número 12 é referente a
+quantidade de entradas yi(t) da primeira camada da RNA.
+Figura 1 - Ilustração de estrutura de RNA com algoritmo Backpropagation.
+
+séries temporais previstas e observadas (Zhang et al.,
+1998).
+Na estrutura da RNA as saídas de nós em uma camada
+são entradas para a próxima camada. O resultado é, em
+seguida, modificado por uma função não linear antes da
+saída. Por exemplo, as entradas em neurônios j em camadas
+ocultas podem ser linearmente combinadas a partir da expressão:
+3
+
+Z j = b j + å wi , j yi
+
+(2)
+
+i=1
+
+em que: bj, e wi,j são parâmetros descobertos na etapa de
+“aprendizagem” a partir dos dados observados da série
+temporal em questão. Vale ressaltar que os pesos inicialmente podem assumir valores aleatórios, por sua vez, serão
+atualizados usando os dados observados. Na camada
+oculta, a Eq. (2) é modificada utilizando uma função não
+linear, tal como um sigmóide dada pela seguinte expressão:
+s( z ) =
+
+1
+1+ e - z
+
+(3)
+
+A Eq. (3), por sua vez, serve de entrada para a camada
+seguinte, sendo que essa estratégia tende a reduzir o efeito
+de valores extremos de entrada, proporcionando um melhor
+funcionamento da RNA. Maiores detalhes sobre a utilização de RNA para previsão de séries temporais podem ser
+obtidos em (Zhang et al., 1998). Na literatura é possível
+destacar trabalhos sobre a utilização de RNA para previsão
+de série temporal da velocidade do vento, por exemplo, em
+Flores et al. (2005), os autores realizaram a previsão da
+velocidade dos ventos em uma fazenda eólica usando redes
+neurais artificiais. A RNA baseou-se no algoritmo de
+aprendizagem backpropagation, cuja avaliação foi realizada com medição de dados reais de duas diferentes localizações. Em Li e Jing Shi (2010) os autores utilizam três
+diferentes formas de RNA para previsão de velocidade do
+vento horária a partir de dados observados em duas localidade de Dakota do Norte dos EUA. Os três tipos de RNA
+
+2.4. Modelagem ARXAN
+O modelo híbrido proposto neste artigo é composto
+de uma componente linear (com o modelo ARIMAX que
+utiliza as variáveis exógenas pressão, temperatura e precipitação), e de outra componente não-linear com o modelo
+RNA. Esse modelo híbrido é denominado de Auto-Regressivo (AR), Exógeno (X), Artificial-Neural (AN), cuja abreviatura será dada por (ARXAN) e matematicamente representado pela seguinte expressão:
+ARXAN = ARIMAX previsão + RNA previsão/ ARIMAX
+
+(4)
+
+em que ARXAN, representa a previsão do modelo híbrido,
+o qual é resultado da adição da componente linear prevista
+pelo modelo ARIMAXprevisão, com a componente não linear
+prevista pelo modelo RNAprevisão/ARIMAX, sendo esta a componente que será modelada a partir dos resíduos do modelo
+ARIMAX.
+O modelo ARXAN pode ser considerado um modelo
+inovador na tentativa de realizar previsões de velocidade do
+vento em termos de médias mensais e horárias para regiões
+do nordeste brasileiro, sendo que ele é baseado no modelo
+híbrido de Zhang (2003), o qual trata-se da combinação dos
+modelos ARIMA com RNA, que se caracteriza por ser
+univariado, ou seja, é confeccionado baseado apenas na
+utilização da série temporal que se deseja realizar as previsões. Exemplo disso, em Liu et al. (2012) os autores mostram que o modelo híbrido ARIMA+RNA é capaz de realizar previsões de velocidade do vento com boa acurácia em
+regiões da China. A principal diferença do modelo híbrido
+ARXAN para o modelo híbrido ARIMA+RNA reside no
+fato de que no ARXAN, é possível relacionar variáveis
+exógenas como: pressão, temperatura e precipitação com a
+velocidade do vento com a finalidade de encontrar melhores ajustes. Com tudo, o modelo ARXAN se caracteriza
+por ser multivariado, ou seja, sendo possível relacionar
+outras variáveis dependentes da velocidade do vento para
+encontrar melhores ajustes.
+2.5. Medidas de acurácia
+Uma das formas de verificar acurácia dos modelos de
+previsão propostos é através de análise estatística de erros.
+O Erro Médio Absoluto mede o valor médio de erro entre as
+
+120
+
+Camelo et al.
+
+séries observadas e ajustadas. Nessa análise essa variável
+será representada por MAE, cuja representação matemática
+é dada por,
+MAE =
+
+1 n
+å | vadj - vobs |
+n i=1
+
+(5)
+
+em que vadj representa valor individual da série temporal da
+velocidade do vento ajustada e vobs representa valor individual da série temporal da velocidade do vento observada, e n
+é a ordem das séries. O MAE possui a unidade de medida
+neste estudo de metros por segundo (m/s). A Raiz do Erro
+Quadrático Médio (simbolizado por RMSE), representa as
+diferenças individuais quadráticas entre as séries temporais
+da velocidade do vento relativas as observações e ajustes.
+1 n
+å ( vadj - vobs )2
+n i=1
+
+RMSE =
+
+(6)
+
+Da mesma forma o RMSE na Eq. (6) possui unidade
+de (m/s). É importante ressaltar que o RMSE pode ainda ser
+interpretada da seguinte maneira: se houver grandes valores
+desta variável, os mesmos representam grandes erros nas
+variáveis ajustadas, e valores próximos de zero indicam um
+ajuste quase perfeito (Cochran, 1977). Outra forma de medida de erro é a Média do Erro Absoluto Percentual (simbolizado por MAPE). A grande vantagem de utilizar essa
+expressão está na sua representação em termos percentuais
+(%) que fornece um rápido entendimento. Já uma desvantagem que deve ser considerada está no sentido de que se,
+por acaso, o valor do observado for muito pequeno, qualquer discrepância faz o MAPE “explodir”. A expressão
+utilizada com essa variável é representada por,
+MAPE =
+
+1 n v adj - v obs
+´ 100
+å v
+n i=1
+obs
+
+(7)
+
+Maiores detalhes sobre a análise estatística de erros,
+em especial com o uso das Eqs. (5)-(6)-(7) em (Cochran,
+1977; Montgomery, 2008).
+O coeficiente de eficiência de Nash-Sutcliffe (NS) é
+frequentemente utilizado para quantificar a qualidade da
+série temporal ajustada (Nash e Sutcliffe, 1970). Esse coeficiente pode variar entre -¥ a 1, sendo o valor 1 indicativo
+de um perfeito ajuste. Conforme (Silva et al., 2008), quando o valor do NS resultar maior que 0,75 o desempenho do
+modelo é considerado bom. Para valores de NS entre 0,36 e
+0,75 o desempenho é considerado aceitável, enquanto valores de NS inferiores a 0,36 fazem com que o modelo seja
+julgado como inaceitável. A expressão utilizada para o
+cálculo de NS é dada por,
+
+NS = 1-
+
+i=1
+n
+
+å (v
+i=1
+
+obs
+
+- v obs ) 2
+
+3. Resultados
+A análise dos resíduos os quais são fornecidos pelas
+diferenças entre as séries temporais observadas e ajustadas
+pelos modelos ARIMAX é importante na identificação da
+qualidade dos modelos na tentativa de encontrar maiores
+precisões das previsões. A Tabela 2 mostra os resultados
+dos testes aplicados sobre os resíduos com a finalidade de
+identificar se os pressupostos dos modelos são atendidos,
+considerando o nível de significância de 0,05 sendo que os
+números mostrados são relativos ao (p-valor) que no caso
+dos dados mensais todos os pressupostos são atendidos,
+pelo motivo de serem superiores ao nível de significância.
+Porém, com respeito aos dados horários o mesmo não se
+pode dizer, principalmente no tocante ao teste de normalidade KS que não foi atendido nas três regiões de estudo,
+mas isso pode está relacionado ao fato de se tratar de uma
+grande quantidade de resíduos em torno de 8760 valores, e
+assim se configurar numa dificuldade para aplicação dos
+testes. No entanto, os resultados das análises da estatística
+de erros que serão apresentados adiante, também poderão
+auxiliar na confiabilidade dos modelos ARIMAX no caso
+horário.
+A Tabela 3 apresenta os resultados da análise estatística de erros no caso de médias mensais na comparação entre dados observados e ajustados. De acordo com essa
+análise o modelo que forneceu os menores valores de medidas de erros foi o ARXAN, significando dessa forma que
+este modelo produz os melhores valores das séries temporais ajustadas nas três regiões de estudo. Exemplo disso,
+o valor de MAPE em Parnaíba foi de 10,20% no uso do
+ARXAN, valor este que é menor do que os modelos que o
+compõe, ou seja, o ARIMAX e RNA, os quais possuem
+MAPE nos valores respectivos de 10,40% e 19,25%. É
+importante destacar que quanto menor forem as medidas de
+erros, isso poderá resultar em previsões mais precisas das
+séries temporais da velocidade do vento. Dessa maneira o
+
+Tabela 2 - Testes aplicados sobre os resíduos mensais para identificar se
+os pressupostos dos modelos ARIMAX são atendidos.
+Dados Mensais
+Local/ARIMAX
+
+DW
+
+BP
+
+0,970
+
+0,615
+
+0,551
+
+Natal
+
+0,987
+
+0,799
+
+0,509
+
+Parnaíba
+
+0,685
+
+0,456
+
+0,618
+
+Dados Horários
+DW
+
+BP
+
+-9
+
+0,489
+
+0,103
+
+Natal
+
+2,10
+
+-10
+
+0,516
+
+0,022
+
+Parnaíba
+
+5,10-7
+
+0,519
+
+0,053
+
+Fortaleza
+
+(8)
+
+KS
+
+Fortaleza
+
+Local/ARIMAX
+
+n
+
+å ( vobs - vadj )2
+
+em que v obs representa a média da série temporal observada.
+
+KS
+4,10
+
+Proposta para Previsão de Velocidade do Vento Através de Modelagem Híbrida Elaborada a Partir dos Modelos ARIMAX e RNA
+
+Tabela 3 - Análise estatísticas de erros para identificar acurácia dos
+modelos propostos, para dados mensais.
+Erro – ARIMAX
+
+Fortaleza
+
+Natal
+
+Parnaíba
+
+MAE (m/s)
+
+0,37
+
+0,37
+
+0,54
+
+RMSE (m/s)
+
+0,48
+
+0,45
+
+0,71
+
+MAPE (%)
+
+8,48
+
+8,47
+
+10,40
+
+Erro – RNA
+
+Fortaleza
+
+Natal
+
+Parnaíba
+
+MAE (m/s)
+
+0,46
+
+0,36
+
+0,93
+
+RMSE (m/s)
+
+0,66
+
+0,53
+
+1,29
+
+MAPE (%)
+
+10,29
+
+8,14
+
+19,25
+
+Fortaleza
+
+Natal
+
+Parnaíba
+
+MAE (m/s)
+
+0,36
+
+0,31
+
+0,51
+
+RMSE (m/s)
+
+0,46
+
+0,38
+
+0,68
+
+MAPE (%)
+
+8,03
+
+7,21
+
+10,20
+
+Erro – ARXAN
+
+modelo ARXAN poderá proporcionar maiores semelhanças das previsões em relação as observações, indicando que
+a proposta de modelagem híbrida que possa envolver, ambas características linear e não-linear comumente existentes em séries temporais auxilia na redução de medidas de
+erros.
+A Tabela 4 mostra os resultados da análise estatística
+de erros em termos de dados horários. É possível identificar
+que o modelo que apresentou os menores valores das medidas de erros, e portanto, o modelo que melhor se ajustou aos
+dados observados, trata-se do ARXAN. Exemplo disso, os
+valores da variável MAPE em Fortaleza, Natal e Parnaíba,
+são respectivamente de 7,0%; 7,22% e 8,65%. Por sua vez,
+esses valores encontrados são menores do que os apresentados pelos modelos em separados que compõem o
+ARXAN, exemplo, em Fortaleza os valores de MAPE
+através dos modelos ARIMAX e RNA são de 18,84% e
+14,93% respectivamente. A utilização de modelagem híbrida na tentativa de realizar previsões horárias das séries
+Tabela 4 - Análise estatísticas de erros para identificar acurácia dos
+modelos propostos, para dados horários.
+Erro – ARIMAX
+MAE (m/s)
+
+Fortaleza
+
+Natal
+
+Parnaíba
+
+0,89
+
+0,81
+
+0,92
+
+RMSE (m/s)
+
+1,19
+
+1,08
+
+1,23
+
+MAPE (%)
+
+18,84
+
+17,34
+
+17,19
+
+Erro – RNA
+
+Fortaleza
+
+Natal
+
+Parnaíba
+
+MAE (m/s)
+
+0,75
+
+0,71
+
+0,64
+
+RMSE (m/s)
+
+1,01
+
+0,96
+
+0,89
+
+MAPE (%)
+
+14,93
+
+15,30
+
+12,01
+
+Fortaleza
+
+Natal
+
+Parnaíba
+
+MAE (m/s)
+
+0,35
+
+0,32
+
+0,47
+
+RMSE (m/s)
+
+0,46
+
+0,41
+
+0,64
+
+MAPE (%)
+
+7,20
+
+7,22
+
+8,65
+
+Erro – ARXAN
+
+121
+
+temporais da velocidade do vento poderá favorecer em
+maiores precisões, tendo em vista que, é possível identificar redução de medidas de erros por parte desse modelo,
+e assim, fornecer maiores semelhanças entre as séries temporais observadas e ajustadas, em especial no que se refere
+aos valores de máximos e mínimos. Outro detalhe identificado para o caso horário é que as medidas de erros
+apresentam em sua maioria valores próximos aos encontrados no caso mensal, muito embora a quantidade de dados
+horários seja maior, em torno de 8760 medições da velocidade do vento em cada região de estudo, e dessa maneira
+poderia oferecer maiores variações desta variável, as quais
+resultariam em maiores erros.
+Os resultados encontrados na análise estatística de
+erros envolvendo os modelos ARXAN propostos para ajustes aos dados observados, mostram que são similares aos
+encontrados em alguns trabalhos da literatura, por exemplo, Cadenas e Rivera (2007) comparam a performance dos
+modelos ARIMA e RNA na tentativa de realizar previsões
+de médias mensais da velocidade do vento em região costeira do México. De acordo com os autores o modelo
+ARIMA apresentou maior sensibilidade ao ajuste e previsão da velocidade do vento para este caso em particular, o
+valor de MAPE encontrado foi de aproximadamente
+13,40%. No entanto, é provável que com o aumento do
+número de vetores de treinamento para o modelo RNA, seu
+desempenho melhore o ajuste fornecendo erros estatísticos
+menores do que é apresentado para o MAPE da ordem de
+20,70%.
+Em Kavasseri e Seetharaman (2009) propõe a utilização de modelos de previsão de séries temporais, como o
+ARIMA para estimativa da velocidade do vento para as 24
+h do dia seguinte aos dados observados em regiões de Minnesota-North Dakota nos EUA. A estatística de erros nesse
+trabalho apresentou valor de erros percentual da ordem de
+aproximadamente 12,00%. Em (Cadenas e Rivera, 2010),
+além da utilização do modelo ARIMA para previsão de
+velocidade do vento, os autores utilizam RNA e modelagem híbrida composta por esses dois modelos para três
+diferentes localidades do México na estimativa de médias
+horárias. A modelagem híbrida apresentou os menores valores da estatística de erros, por exemplo, para a variável
+MAE foi possível encontrar valor de 0,06 m/s, contra valores de 0,60 m/s e 0,67 m/s, respectivamente para os modelos ARIMA e RNA. Em termos de previsão da velocidade
+do vento para médias mensais com o uso do modelo
+ARIMA é possível citar (Hu et al., 2013), os autores avaliam a previsão para três fazendas eólicas localizadas no
+noroeste da China. Os resultados obtidos revelam valor de
+MAPE da ordem de aproximadamente 13,60% para o período entre janeiro de 2001 até dezembro de 2006 em
+termos de médias horárias.
+Fadare (2010) utilizou dados mensais da velocidade
+média do vento de 28 estações meteorológicas por um
+período de 20 anos. Nesse estudo, dados de 18 estações
+
+122
+
+foram utilizados para o treinamento do modelo e 10 estações para testá-lo. A RNA proposta consiste em 4 entradas,
+2 camadas ocultas e uma saída. O autor utilizou informações sobre a latitude, longitude, altitude e mês do ano
+como entradas do modelo proposto enquanto a velocidade
+do vento era a saída da RNA. Os resultados indicam que a
+topologia proposta mostra alta precisão na previsão da
+velocidade média mensal do vento, alcançando uma pontuação em termos de MAPE de 8,90%. Mais importante
+ainda, o coeficiente de correlação entre a previsão e observação é de 0,98 o que testemunha o desempenho deste
+modelo. Liu et al. (2012) apresentam modelo híbrido combinado dos modelos ARIMA e RNA para previsão da
+velocidade do vento em termos de médias horárias, sendo
+que a série temporal ajustada foi obtida a partir de 500
+medições. O modelo proposto apresentou boa acurácia, por
+exemplo, com valor de MAPE da ordem de aproximadamente 3,32%. O modelo ARIMAX utilizado em Lydia et
+al. (2016), o qual utiliza como variáveis exógenas temperatura, radiação solar e direção do vento, com a finalidade
+de fornecer previsões da velocidade do vento em termos de
+médias horárias em regiões da Índia, mostrou-se viável
+com baixos valores de erros, por exemplo, com valor de
+MAPE de aproximadamente 6,8%.
+A Fig. 2 apresenta comparações entre as médias mensais das séries temporais observadas e ajustadas pelo modelo ARXAN em cada localidade de estudo, ou seja, (Fortaleza) Fig. 2A, (Natal) Fig. 2B e (Parnaíba) Fig. 2C.
+Também são apresentados os respectivos coeficientes de
+eficiência de Nash-Sutcliffe (NS) nos valores de 0,86; 0,79;
+e 0,85 os quais demonstram a eficiência dos modelos
+ARXAN no fornecimento de bons ajustes aos dados observados. Nas três regiões é possível identificar a existência de
+semelhanças entre as duas séries temporais (observadas e
+ajustadas), em especial em termos de valores máximos e
+mínimos da velocidade do vento na maioria dos meses, esse
+resultado já era esperado em função dos bons valores mencionados do coeficiente NS. Por exemplo, em Fortaleza
+para as duas séries temporais (ajustada e observada) os
+valores de mínimo da velocidade do vento no ano de 2011
+ocorreram no mesmo mês de abril, e também coincidiram
+nos seus valores em aproximadamente 2,5 m/s. Em termos
+de valores de máximo da velocidade do vento para o ano de
+2011, o mês de setembro representa o período de ocorrência
+para as duas séries temporais (ajustada e observada) com
+valores próximos de 6,0 m/s.
+De acordo com estudo realizado a respeito da normal
+climatológica em todo território brasileiro pelo Instituto
+Nacional de Meteorologia (INMET) (INMET, 2016), para
+a cidade de Fortaleza os meses de maior precipitação ou
+também comumente chamados de períodos chuvosos estão
+entre fevereiro e maio, com pico no mês de abril. Nesse
+período segundo Camelo et al. (2008), a média mensal da
+intensidade da velocidade do vento em Fortaleza é menor,
+mas quando compara-se o período de baixa precipitação ou
+
+Camelo et al.
+
+também chamado de período seco entre os meses de
+setembro até dezembro, nesse caso a média mensal da
+intensidade da velocidade do vento é maior. Retornando as
+análises do modelo híbrido ARXAN, é possível identificar,
+por exemplo, ainda na Fig. 2A, que o mesmo consegue
+representar características sazonais da velocidade do vento
+em Fortaleza, ou seja, menores intensidades no período
+chuvoso, e também maiores intensidades para o período
+seco. Ainda de acordo com INMET (INMET, 2016), a
+respeito da série histórica de precipitação nas cidades de
+Natal e Parnaíba, ambas apresentam período chuvoso no
+primeiro semestre do ano, sendo em Natal entre março e
+julho (com pico em abril), e em Parnaíba entre fevereiro e
+maio (com pico também em abril). Da mesma forma que
+Fortaleza os ajustes pelo modelo ARXAN respectivamente
+em Natal e Parnaíba, também conseguiram representar as
+características sazonais da velocidade do vento existentes
+das séries observadas em ambas regiões, ou seja, menores
+intensidades ocorrendo no período chuvoso, e maiores intensidades no período seco.
+Uma vez comprovado a boa qualidade dos ajustes
+produzidos pelo modelo ARXAN, é possível esperar que
+ocorra precisão nas previsões da velocidade do vento, como
+se constata na Fig. 3. As séries temporais previstas para o
+ano de 2015, ano seguinte aos dados ajustados são comparadas as séries temporais observadas para o mesmo ano
+em (Fortaleza) Fig. 3A, (Natal) Fig. 3B, e (Parnaíba) Fig.
+3C. As previsões conseguem acompanhar o perfil das séries
+observadas nas três regiões, apresentando valores muito
+próximos entre si, por exemplo, em Fortaleza os valores de
+mínimo da previsão e observação ocorrem no mesmo mês
+em abril e são similares em aproximadamente 4,0 m/s, já os
+valores de máximo da previsão e observação também são
+semelhantes em aproximadamente 7,0 m/s ambos acontecendo no mesmo mês em outubro. Outro detalhe identificado a cerca das previsões, refere-se ao fato de que
+também conseguem representar as características de sazonalidades existentes das suas respectivas séries temporais
+observadas, ou seja, menores e maiores intensidades da
+velocidade do vento de acordo com os diferentes períodos
+chuvosos e secos.
+Com relação às médias horárias das séries temporais
+da velocidade do vento em termos das observações, ajustes
+e previsões ficou constatado pela análise estatística de erros
+que o modelo ARXAN é o que fornece os menores valores
+da estatística de erros em Fortaleza, Natal e Parnaíba. A
+Fig. 4 mostra as comparações para Fortaleza, sendo que nas
+Figs. 4A-B estão representados respectivamente as observações (linha cor preta) e ajustes (linha cor cinza), ambas
+para todos os horários relativos ao ano de 2015, e na Fig. 4C
+está representado a comparação (para o dia seguinte aos
+ajustes, ou seja, 01/01/2015) entre a série temporal prevista
+(círculos) e a série temporal observada (linha cor preta). Em
+termos da comparação entre ajustes e observações nas Figs.
+4A-B, muito embora trata-se de 8760 medições de ambas as
+
+Proposta para Previsão de Velocidade do Vento Através de Modelagem Híbrida Elaborada a Partir dos Modelos ARIMAX e RNA
+
+123
+
+Figura 2 - Média mensal da velocidade do vento em (A) Fortaleza, (B) Natal e (C) Parnaíba, comparação entre as séries temporais observada (em linha
+contínua na cor preta) e ajustada (em círculo). Informação sobre o valor do NS para identificar a qualidade do ajuste em cada região.
+
+séries, sendo que essa quantidade poderá dificultar na comparação visual, porém, mesmo assim é possível identificar
+semelhanças entre as duas séries em praticamente todo o
+período analisado. Exemplo disso, entre o período de 01 de
+junho as 0:00 h até 01 de agosto as 0:00 h a série ajustada
+consegue reproduzir o padrão existente na série observada
+com variação da velocidade do vento na maioria dos valores entre 5,0 m/s a 10,0 m/s.
+
+Outro detalhe relevante que ressalta a qualidade do
+modelo ARXAN proposto em Fortaleza para produzir bons
+ajustes no caso horário, refere-se ao fato de que é possível
+identificar a série temporal ajustada com as mesmas características de sazonalidade da velocidade do vento existentes nos dados observados que foram comentados, ou
+seja, os meses chuvosos (fevereiro a abril) apresentam valores de menor intensidade de médias horárias da veloci-
+
+124
+
+Camelo et al.
+
+que esses horários também estão de acordo com a maioria
+dos valores mais intensos encontrados para a série temporal
+observada. Ressalta-se que essa maior intensidade nas médias horárias da velocidade do vento no período diurno na
+região nordeste do Brasil explica-se pela presença de brisas
+marítimas, conforme exposto por Barreto et al. (2002) e por
+Molion e Bernardo (2002).
+
+Figura 3 - Comparações entre séries temporais previstas pelo modelo
+ARXAN (em X cor preta) com séries temporais observadas (círculo vazio)
+para os meses de 2015. (A) Fortaleza, (B) Natal e (C) Parnaíba.
+
+dade do vento, em contrapartida, para os meses mais secos
+variando entre (setembro a dezembro) apresentam valores
+de maior intensidade de médias horárias da velocidade do
+vento. Esse resultado mostra a capacidade do modelo também no caso horário, em representar as diferenças existentes na intensidade da velocidade do vento levando em
+consideração as característica sazonais desta variável em
+função dos meses, sendo que essa afirmativa pode está
+colaborando com o valor encontrado para o coeficiente de
+eficiência NS em 0,96 o qual garante o perfeito ajuste aos
+dados observados.
+Na Fig. 4C tem-se a representação da comparação entre observação (linha cor preta) e previsão em (formato de
+círculo), ambos relativo ao dia seguinte a série temporal
+ajustada, ou seja, o dia 01/01/2015 em termos de médias
+horárias. É possível identificar que a previsão consegue
+acompanhar o perfil da observação com valores muito
+próximos entre si em cada horário, por exemplo, o pico da
+previsão e observação coincidem para o mesmo horário de
+17:00 h nos valores respectivos de aproximadamente 8,5
+m/s e 8,0 m/s. Os valores mais intensos de médias horárias
+da previsão da velocidade do vento em sua maioria encontram-se nos horários diurnos entre 6:00 h e 17:00 h, sendo
+
+Para Natal em termos de médias horárias da intensidade da velocidade do vento, a Fig. 5 mostra comparativo
+entre as séries temporais: observada, representada na Fig.
+5A em linha cor preta; ajustada, conforme ilustração na Fig.
+5B em linha cor cinza; e também para os horários do dia
+01/01/2015 seguinte ao ajuste, relacionando para esse período a previsão (em círculos) e observação (linha cor preta)
+representados na Fig. 5C. O valor do coeficiente de eficiência NS é de 0,97 o que demostra o perfeito ajuste aos
+dados observados. E em função deste resultado é possível
+identificar que a série temporal ajustada consegue reproduzir padrões de máximos e mínimos da velocidade do
+vento da série temporal observada em praticamente todo o
+período. No tocante a previsão, é possível identificar que a
+mesma consegue acompanhar o perfil da observação com
+valores similares entre si em especial nos horários diurnos
+entre 8:00 h e 16:00 h, exemplo disso, as 8:00 h ocorre
+coincidência nos valores de mínimo em ambas as séries em
+aproximadamente 2,5 m/s. Os valores mais intensos de
+médias horárias da previsão da velocidade do vento em sua
+maioria encontram-se nos horários diurnos entre 6:00 h e
+10:00 h, e entre 12:00 h e 18:00 h, sendo que esses horários
+também estão de acordo com a maioria dos valores mais
+intensos encontrados para a série temporal observada.
+A Fig. 6 mostra as comparações entre as séries temporais de Parnaíba, sendo que na Fig. 6A estão representadas
+as observações (em linha cor preta), na Fig. 6B estão representados os ajustes (em linha cor cinza) fornecidos pelo
+modelo ARXAN, e já na Fig. 6C trata-se de comparativo
+para o dia 01/01/2015, dia seguinte aos ajustes do modelo
+ARXAN em Parnaíba, sendo que na linha cor preta é
+representada a série observada e em formato de círculos a
+previsão do modelo. O valor do coeficiente de eficiência
+NS é de 0,92 sendo que este valor demostra o perfeito ajuste
+aos dados observados. E conforme já comentado em Parnaíba, o período considerado chuvoso é relativo aos meses
+de fevereiro a maio, nesse período a média horária da
+velocidade do vento das observações é de menor intensidade quando comparada aos outros meses, por exemplo,
+entre agosto a novembro que possuem as maiores intensidades ao longo do ano. É possível identificar comportamento semelhante para a série temporal ajustada, ou seja, a
+mesma consegue acompanhar o perfil das observações indicando desta maneira a capacidade do modelo ARXAN na
+reprodução dos padrões de sazonalidade existente. Com
+respeito a comparação entre a previsão e observação possuem valores próximos entre si na maioria dos horários, por
+exemplo, as 15:00 h a média da velocidade do vento para as
+
+Proposta para Previsão de Velocidade do Vento Através de Modelagem Híbrida Elaborada a Partir dos Modelos ARIMAX e RNA
+
+125
+
+Figura 4 - Comparações entre as séries temporais em Fortaleza, em relação aos horários do ano de 2015. (A) Observações (linha cor preta), (B) Ajustes
+pelo modelo ARXAN (linha cor cinza) e (C) Para o dia seguinte, Observação (linha cor preta) e previsão pelo modelo ARXAN em (círculo).
+
+duas séries é de aproximadamente 8,0 m/s. É importante
+destacar que em ambas as séries temporais o período diurno
+mostra-se como sendo aquele que apresenta os valores de
+maiores intensidades da velocidade do vento, esse resultado está em conformidade com a literatura, ou seja, a
+maior intensidade nas médias horárias da velocidade do
+vento no período diurno novamente explica-se pela pre-
+
+sença de brisas marítimas, conforme exposto por Barreto et
+al. (2002) e por Molion e Bernardo (2002).
+Ressalta-se que muito embora os resultados para as
+previsões da velocidade do vento nesse artigo foram apresentados ao nível de 10 m de altura, e na atualidade os
+aerogeradores no Brasil estão sendo implantados acima de
+100 m de altura, conforme em (ABEEólica, 2017), os
+
+126
+
+Camelo et al.
+
+Figura 5 - Comparações entre as séries temporais em Natal, em relação aos horários do ano de 2015. (A) Observações (linha cor preta), (B) Ajustes pelo
+modelo ARXAN (linha cor cinza) e (C) Para o dia seguinte, Observação (linha cor preta) e previsão pelo modelo ARXAN (círculo).
+
+modelos apresentados para as previsões não possuem dependência de alturas, sendo assim, podem ser utilizados
+para qualquer nível de altura, bastando apenas entrar com
+as séries temporais observadas nos modelos para fornecer
+as possíveis projeções. Esse trabalho pode auxiliar como
+uma possível ferramenta a ser utilizada em diversas áreas,
+como no setor eólico, configurando-se em uma tentativa a
+mais de garantias aos tomadores de decisão do setor, tendo
+
+em vista, a possibilidade de realizar previsões da intensidade da velocidade do vento local.
+
+4. Conclusão
+O modelo híbrido proposto neste artigo, elaborado a
+partir dos modelos (ARIMAX e RNA), com a finalidade de
+realizar previsões de médias mensais e horárias da velocidade do vento, mostrou-se eficiente nas produções dos
+
+Proposta para Previsão de Velocidade do Vento Através de Modelagem Híbrida Elaborada a Partir dos Modelos ARIMAX e RNA
+
+127
+
+Figura 6 - Comparações entre as séries temporais em Parnaíba, em relação aos horários do ano de 2015. (A) Observações (linha cor preta), (B) Ajustes
+pelo modelo ARXAN (linha cor cinza) e (C) Para o dia seguinte, Observação (linha cor preta) e previsão pelo modelo ARXAN (círculo).
+
+ajustes aos dados observados. Essa afirmativa é baseada no
+cálculo do coeficiente de eficiência NS, cujos valores encontrados, por exemplo, foram 0,86; 0,79; e 0,5 respectivamente para Fortaleza, Natal e Parnaíba. Esses valores
+proporcionaram semelhanças de máximos e mínimos da
+velocidade do vento de ambas as séries temporais ajustadas
+e observadas de cada local de estudo. Outro fator conclusivo para a qualidade do modelo híbrido proposto é no
+
+tocante aos menores valores encontrados na análise estatística de erros, quando comparado com outros modelos,
+revelando valores de erro percentual, por exemplo, em Natal de aproximadamente 7,20% e 7,22% respectivamente
+em termos de médias mensais e horárias. Essa análise
+certamente é responsável por oferecer maiores precisões
+das séries temporais previstas nos dois casos, ou seja, médias mensais e horárias. Foi possível identificar também
+
+128
+
+que o modelo híbrido proposto consegue representar características sazonais da velocidade do vento das regiões de
+estudo, ou seja, menores intensidades no período chuvoso,
+e também maiores intensidades para o período seco. A
+maioria dos valores mais intensos de médias horárias da
+velocidade do vento das séries temporais previstas nas
+regiões de estudo encontram-se nos horários diurnos entre
+6:00 h e 18:00 h, sendo que esses horários também estão em
+conformidade com os valores mais intensos mostrados para
+as séries temporais observadas das regiões de estudo e, por
+sua vez, nesse último caso já era esperado de acordo com a
+literatura. Este trabalho pode auxiliar em diversas áreas de
+interesse em previsão de ventos, por exemplo, sendo possível adquirir informações importantes acerca do potencial
+eólico local, o qual pode ser aproveitado para geração de
+energia elétrica, ou seja, uma tentativa de fornecer garantias aos tomadores de decisão do setor na exploração dos
+ventos de uma dada região.
+
+Agradecimentos
+Os autores gostariam de agradecer ao Programa de
+Pós-Graduação em Ciências Climáticas (PPGCC) da Universidade Federal do Rio Grande do Norte (UFRN). Agradecimento por parte do autor correspondente ao apoio
+financeiro fornecido pela Agência Nacional de Petróleo
+(ANP) / PRH-51 a partir de bolsa de doutorado. Agradecimento por parte de co-autor ao apoio financeiro dado pelo
+Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) pela bolsa PQ2 - Proc. 301553/2016-5, e
+do Projeto de Pesquisa do CNPq - Proc. 400053/2014-4.
+
+Referências
+ABBEEólica, Associação Brasileira de Energia Eólica. 2017.
+Consultado na página eletrônica: http://www.portalabeeolica.org.br/noticias/5283-torres-mais-altas-elevam-e
+m-6-vezes-potencial-elico.html.
+Consultado
+em
+11/01/2017.
+AHRENS, C.D. Meteorology today: an introduction to weather, climate, and the environment. 9ª ed. Boston: Cengage Learning, 621 p., 2012.
+AKAIKE, H. Information theory and an extension of the maximum likelihood principle. Proc. 2a Inter. Symposium on
+Information Theory, 267-281, Budapest, 1973.
+AMARANTE, O.A.; BROWER, M.; ZACK, J.; EOLICA, C.S.E.;
+SOLUTIONS, T. (2001). Atlas do potencial eólico brasileiro. In Atlas do potencial eolico brasileiro. Ministerio
+de Minas e Energia Eletrobras.
+AMARANTE, O.D.; DA SILVA, F.J.L.; RIOS FILHO, L.G.;
+VIDAL, M. (2003). Atlas do potencial eólico do estado do
+Rio Grande do Norte. Camargo Schubert Engenharia Eólica, COSERN/Iberdrola Empreendimentos do Brasil, 47.
+Disponível
+em:
+http://www.cresesb.cepel.br/publicacoes/download/atlas_eolico/atlas_eolico_RN.pdf
+ALCÂNTARA, C.R.; SOUZA, E.P. Uma teoria termodinâmica
+para brisas: testes utilizando simulações numéricas. Revista
+Brasileira de Meteorologia, v.23, n.1, p.1-11, 2008.
+
+Camelo et al.
+
+BARRETO, A.B.; ARAGÃO, M.R.S.; BRAGA, C.C. Estudo do
+ciclo diário do vento à superfície no Nordeste do Brasil. In:
+CONGRESSO BRASILEIRO DE METEOROLOGIA,
+12, 2002, Foz de Iguaçu. Anais... XII Congresso Brasileiro
+de Meteorologia, 2002.
+BENNETT, C.; STEWART, R.A.; LU, J. Autoregressive with exogenous variables and neural network short-term load forecast models for residential low voltage distribution networks. Energies, v. 7, n. 5, p. 2938-2960, 2014.
+BOX, G.E.; TIAO, G.C. Intervention analysis with application to
+economic and enviromental problems. J. Am. Stat. Assoc.,
+v. 70, p. 70-79, 1975.
+BOX, G.E.; JENKINS, G.M.; REINSEL, G.C.; LJUNG, G.M.
+Time series analysis: forecasting and control. New York:
+John Wiley & Sons, 2015.
+BROCKWELL, P.J.; DAVIS, R.A. Time series: data analysis
+and theory. New York: Springer, 580 p., 1991.
+BURTON, T.; SHARPE, D.; JENKINS, N.; OSSANVI, E. Wind
+energy handbook. Chichester: John Wiley & Sons, 642 p.,
+2001.
+CADENAS, E.; RIVERA, W. Wind speed forecasting in the south
+coast of Oaxaca, Mexico. Renew. Energy, v. 32, n. 12,
+p. 2116-2128, 2007.
+CADENAS, E.; RIVERA, W. Short term wind speed forecasting
+in La Venta, Oaxaca, México, using artificial neural networks. Renew. Energy, v. 34, n. 1, p. 274–278, 2009.
+CADENAS, E; JARAMILHO, O.A; RIVERA, W. Analysis and
+forecasting of wind velocity in chetumal, quintana roo, using the single exponential smoothing method. Renew. Energy, v. 35, p. 925–930, 2010.
+CADENAS, E.; RIVERA, W. Wind speed forecasting in three
+different regions of Mexico, using a hybrid ARIMA–ANN
+model. Renew. Energy, v. 35, n. 12, p. 2732-2738, 2010.
+CAMELO, H.N.; CARVALHO, P.C.M.; LEAL JUNIOR, J.B.V.;
+ACCIOLY FILHO, B.P. Análise estatística da velocidade
+de vento do estado do Ceará. Revista Tecnologia, v. 29,
+n. 2, p. 211-223, 2008.
+CAMELO, H.N.; TEIXEIRA, W.F.; LUCIO, P.S; LEAL JUNIOR, J. B. V. Previsão de Velocidade Média do Vento
+através da utilização de modelagem Auto-Regressiva de
+Médias Móveis (ARMA) em Região Serrana no Estado do
+Ceará-Brasil. Revista Brasileira de Energias Renováveis,
+v. 4, n. 3, p. 17-29, 2015.
+CAMELO, H.N.; LUCIO, P.S; LEAL JUNIOR, J. B. V. Modelagem de média mensal de velocidade do vento para região
+litorânea no nordeste Brasileiro através do método aditivo
+Holt-Winters com vias a previsão de geração eólica. Revista
+Brasileira de Energias Renováveis, v. 5, n. 4, p. 17-29,
+p. 587-604, 2016.
+CRATE, S.A.; NUTTALL, M. Anthropology and climate change: from encounters to actions. London: Routledge,
+408 p., 2016.
+COCHRAN, W.G. Sampling techniques. 3ª ed. New York: John
+Wiley & Sons, 428 p., 1977.
+DAI, A. Increasing drought under global warming in observations
+and models. Nature Climate Change, v. 3, n. 1, p. 52-58,
+2013.
+FADARE, D.A. The application of artificial neural networks to
+mapping of wind speed profile for energy application in Nigeria. Appl. Energy, v. 87, n. 3, p. 934-942, 2010.
+
+Proposta para Previsão de Velocidade do Vento Através de Modelagem Híbrida Elaborada a Partir dos Modelos ARIMAX e RNA
+
+FERREIRA, A.G.; DA SILVA MELLO, N.G. Principais sistemas
+atmosféricos atuantes sobre a região Nordeste do Brasil e a
+influência dos oceanos Pacífico e Atlântico no clima da
+região.Revista Brasileira de Climatologia, v. 1, n. 1, 2005.
+FLORES, P.; TAPIA, A.; TAPIA, G. Application of a control algorithm for wind speed prediction and active power generation. Renew. Energy, v. 30, n. 4, p. 523-536, 2005.
+GUJARATI, D.N; PORTER, D.C. Basic Econometrics. 4ª ed.
+McGraw-Hill: New York; 922 p., 2009.
+HYNDMAN, R.J.; KHANDAKAR, Y. Automatic time series
+forecasting: the forecast package for R. J. Stat. Softw.,
+v. 23, n. 3, p. 1-22, 2008.
+HU, J.; WANG, J.; ZENG, G. A hybrid forecasting approach applied to wind speed time series. Renew. Energy, v. 60,
+p. 185-194, 2013.
+INMET, Instituto Nacional de Meteorologia. 2016. Normais Climatologicas do Brasil. Consultar na página eletrônica:
+http://www.inmet.gov.br/portal/index.php?r=clima/normaisclimatologicas. Consultado em
+11/05/2016.
+KAIMAL, J.C.; FINNIGAN, J.J.Atmospheric boundary layer
+flows: their structure and measurement. Oxford university press, 1994. 302 p.
+KAVASSERI, R.; SEETHARAMAN, K. Day-ahead wind speed
+forecasting using f-ARIMA models. Renew. Energy, v. 34,
+p. 1388–1393, 2009.
+LI, G., SHI, J. On comparing three artificial neural networks for
+wind speed forecasting. Appl. Energy, v. 87, p. 2313-2320,
+2010.
+LIU, H.; TIAN, H.; LI, Y. Comparison of two new ARIMA-ANN
+and ARIMA-Kalman hybrid methods for wind speed prediction, Appl. Energy, v. 98, p. 415-424, 2012.
+LYDIA, M.; KUMAR, S.S.; SELVAKUMAR, A.I.; KUMAR,
+G.E.P. Linear and non-linear autoregressive models for
+short-term wind speed forecasting. Energy Convers. Manage., v. 112, p. 115-124, 2016.
+MCCULLOCH, W.; PITTS, W. A. A Logical Calculus of Ideas
+Immanent in Nervous Activity. Bull. Math. Biophysics,
+v. 5, p. 115 – 133, 1943.
+MCGLADE, C.; EKINS, P. The geographical distribution of fossil fuels unused when limiting global warming to 2 [deg] C.
+Nature, v. 517, n. 7533, p. 187-190, 2015.
+MOLION, L.C.B.; BERNARDO, S.O. Uma revisão da dinamica
+das chuvas no Nordeste brasileiro. Brasil. Revista Brasileira de Meteorologia, v. 17, n. 1, p. 1-10, 2002.
+MONTGOMERY, D.C.; PECK, E.A.; VINING, G.G. Introduction to Linear Regression Analysis. 3ª ed. New York: John
+Wiley & Sons, 470 p., 2001.
+
+129
+
+MONTGOMERY, D.C.; JENNINGS, C.L.; KULAHCI, M. Introduction to Time Series Analysis and Forecasting. 6ª
+ed. New York: Wiley-Interscience, 469 p., 2008.
+NAMIAS, J. Influence of Northern Hemisphere General Circulation on Drought in Northeast Brazil. Tellus, v. 4, n. 24,
+p. 336-342, 1972.
+NASH, J.E.; SUTCLIFFE, J.V. River flow forecasting through
+conceptual models: a discussion of principles. J. Hydrol.,
+v. 10, p. 282-290, 1970.
+PACHAURI, R.K.; MEYER, L.; PLATTNER, G.K.; STOCKER,
+T. (2015). IPCC, 2014: Climate Change 2014: Synthesis
+Report. Contribution of Working Groups I, II and III to
+the Fifth Assessment Report of the Intergovernmental
+Panel on Climate Change. IPCC. Disponível através do
+link: http://boris.unibe.ch/71642/.
+RESCH, G.; HELD, A.; FABER, T.; PANZER, C.; TORO, F.;
+HAAS, R. Potentials and prospects for renewable energies
+at global scale. Energ. Policy, v. 36, n. 11, p. 4048-4056,
+2008.
+ROYSTON, J.B. Some techniques for assessing multivariate based on the Shapiro-Wilk W. Appl. Statistics, v. 32, p. 121133, 1983.
+SEINFRACE – Secretaria de Infraestrutura do Estado do Ceará.
+2001. Atlas do Potencial Eólico do Estado do Ceará.
+Fortaleza
+–
+CE,
+Brasil.
+Disponível
+em:
+http://www.seinfra.ce.gov.br/index.php/downloads/category/6-energia. (Consultado em 12/01/2015).
+SHUMWAY, R.H.; STOFFER, D.S. Time series analysis and
+its applications with R examples. New York: Springer,
+609 p., 2006.
+SILVA, P.M.O.; MELLO, C.R.; SILVA, A.M.; COELHO, G.
+Modelagem da hidrógrafa de cheia em uma bacia hidrográfica da região Alto Rio Grande. Revista Brasileira de
+Engenharia Agrícola e Ambiental, v. 12, n. 3, p. 258-265,
+2008.
+TSONIS, A.A. An introduction to atmospheric thermodynamics. Cambridge University Press, 199 p.,2002.
+YOGARAJAH, B.; ELANKUMARAN, C.; VIGNESWARAN,
+R. Application of ARIMAX model for forecasting paddy
+production in Trincomalee district in Sri Lanka. Proceedings of the Third International Symposium, SEUSL: 6-7
+July 2013, Oluvil, Sri Lanka.
+ZHANG, G; PATUWO, B.E; HU, Y.M. Forecasting with artificial neural networks: The state of the art. Int. J. Forecasting, v. 4, p. 35 – 62, 1998.
+ZHANG, G. Time series forecasting using a hybrid ARIMA and
+neural network model. Neurocomputing, v. 50, p. 159-175,
+2003.
+This is an Open Access article distributed under the terms of the Creative Commons Attribution
+Non-Commercial License which permits unrestricted non-commercial use, distribution, and
+reproduction in any medium provided the original work is properly cited.
+
+

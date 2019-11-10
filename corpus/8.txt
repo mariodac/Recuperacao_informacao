@@ -1,0 +1,373 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/329842441
+
+Aprendizado Profundo de Máquina aplicado ao diagnóstico de adenocarcinoma
+gástrico: um estudo preliminar
+Preprint · December 2018
+DOI: 10.13140/RG.2.2.34459.31520
+
+CITATIONS
+
+READS
+
+0
+
+119
+
+3 authors:
+Tatiana KLAUS Sansonowicz
+
+Jonas Kloeckner
+
+Grupo Hospitalar Conceição
+
+Universidade Federal do Rio Grande do Sul
+
+3 PUBLICATIONS 1 CITATION
+
+12 PUBLICATIONS 0 CITATIONS
+
+SEE PROFILE
+
+Áttila Leães Rodrigues
+Universidade Federal do Rio Grande do Sul
+21 PUBLICATIONS 45 CITATIONS
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Machine learning and pathology View project
+
+Machine Learning applied in Geostatistics View project
+
+All content following this page was uploaded by Áttila Leães Rodrigues on 21 December 2018.
+
+The user has requested enhancement of the downloaded file.
+
+SEE PROFILE
+
+APRENDIZADO PROFUNDO DE MÁQUINA APLICADO AO DIAGNÓSTICO
+DE ADENOCARCINOMA GÁSTRICO: UM ESTUDO PRELIMINAR
+
+DEEP LEARNING APPLIED TO THE DIAGNOSIS OF GASTRIC ADENOCARCINOMA: A PRELIMINARY STUDY
+
+Tatiana Klaus Sansonowicz*
+Jonas Kloeckner**
+Áttila Leães Rodrigues***
+Tatiana Wittée Neetzow Nunes****
+
+* Médica Residente do PRM de Patologia do Hospital Nossa Senhora da Conceição (HNSC)
+** Mestre Engenheiro e Doutorando pelo PPGE3M da UFRGS
+*** Pós-Doutorado pelo PPGE3M da UFRGS, Doutor em Física pelo IF da USP
+**** Doutora em Patologia pela UFCSPA, Médica do PRM de Patologia do Hospital Nossa Senhora da Conceição
+(HNSC)
+
+Endereço para correspondência: tatianasansonowicz@gmail.com
+
+1
+
+APRENDIZADO PROFUNDO DE MÁQUINA APLICADO AO DIAGNÓSTICO
+DE ADENOCARCINOMA GÁSTRICO: UM ESTUDO PRELIMINAR
+
+RESUMO:
+Introdução: Os patologistas enfrentam atualmente um aumento substancial na carga e
+na complexidade de seu trabalho diagnóstico de diferentes tipos de câncer. Isso ocorre devido
+ao aumento da incidência e detecção de neoplasias, associado a subespecialização diagnóstica e ao advento da medicina personalizada. Existem, nos dias de hoje, inúmeros tratamentos
+disponíveis para diferentes tipos de câncer, e o diagnóstico deve ser dado com celeridade e
+precisão para cada caso. O aprendizado de máquinas é uma ferramenta que vem sendo empregada no dia-a-dia, inclusive na detecção de imagens, e há crescente interesse em sua aplicação na Medicina e, em especial, na Patologia, onde apresenta potencial revolucionário.
+Objetivo: Neste artigo, apresentamos a “aprendizagem profunda de máquina”, em específico as redes neurais convolucionais, como uma potencial técnica para a análise de imagens digitalizadas de lâminas histopatológicas, detectando padrões identificáveis de forma automatizada, introduzindo a possibilidade de aplicação desta tecnologia como ferramenta auxiliar no diagnóstico de neoplasias, em especial, no adenocarcinoma gástrico, objeto deste estudo
+preliminar.
+Materiais e Métodos: Gerando um banco de dados de imagens digitalizadas de lâminas histopatológicas representativas de adenocarcinoma gástrico, identificamos três padrões
+morfológicos da neoplasia, bem como padrões de tecidos não neoplásicos, com os quais treinamos um algoritmo de rede neural convolucional, criado com a finalidade de identificar e categorizar imagens similares dentro desses padrões, de forma automatizada.
+Conclusão: Os resultados de identificação e classificação automática nas categorias
+definidas mostraram-se satisfatórios, evidenciando o potencial de aplicação das redes neurais
+convolucionais em lâminas digitalizadas de adenocarcinoma gástrico, consoantes com a literatura internacional.
+
+2
+
+Descritores: adenocarcinoma gástrico; aprendizado profundo de máquina; redes neurais convolucionais; Patologia Virtual.
+
+3
+
+DEEP LEARNING APPLIED TO THE DIAGNOSIS OF GASTRIC ADENOCARCINOMA: A PRELIMINARY STUDY
+
+ABSTRACT
+Introduction: Pathologists are nowadays facing a considerable increase in workload
+and complexity of their work diagnosing different types of cancer. This is due to the increased
+incidence and detection of neoplasms, associated with diagnostic sub-specialization and the
+advent of personalized medicine. There are currently numerous treatments available for different types of cancer, and the diagnosis should be given quickly and accurately for each case.
+Machine learning is a tool that is being used in daily life, including image detection, and there is
+an increasing interest in its application in Medicine and especially in Pathology, where it has a
+revolutionary potential.
+Objective: In this article, we present "deep learning", in particular convolutional neural
+networks, as a potential technique for digitally scanned images analysis of histopathological
+slides, detecting identifiable patterns automatically, introducing the possibility of applying this
+technology as an auxiliary tool in the diagnosis of neoplasias, especially in gastric adenocarcinoma, object of this preliminary study.
+Materials and Methods: Generating a database of digitally scanned images of
+histopathological slides representative of gastric adenocarcinoma, we identified three morphological patterns of neoplasia as well as non-neoplastic tissue patterns, which we used to train a
+convolutional neural network algorithm, created with the purpose of identifying and categorizing
+images within these standards, in an automated way.
+Conclusion: The results of identification and automatic classification of the defined
+categories were satisfactory; evidencing the potential of convolutional neural networks application for digitized slides of gastric adenocarcinoma, align with international literature findings.
+
+Key words: gastric adenocarcinoma; deep learning; convolutional neural network; Virtual Pathology
+
+4
+
+INTRODUÇÃO
+O diagnóstico anatomopatológico de lesões neoplásicas dá-se substancialmente pela
+da análise de lâminas coradas pelo método da hematoxilina-eosina (HE)(1), avaliadas através
+de um microscópio óptico por um patologista treinado. Tal método vem sendo usado e aperfeiçoado desde a segunda metade do século XIX(2). Devido à alta prevalência do câncer e sua
+elevada mortalidade na população mundial, responsável por 9 milhões de mortes no globo somente no ano de 2016(3), aliada a uma medicina cada vez mais personalizada, o trabalho do
+patologista tem encontrado inúmeros desafios. Os principais desafios detectados envolvem
+principalmente o aumento do volume de trabalho, consequência tanto da maior demanda devido ao crescimento populacional, quanto da intensa subespecialização da área em resposta à
+subespecialização cirúrgica(4). Da mesma forma, os avanços em relação ao conhecimento sobre diferentes tipos de câncer e a necessidade de maior precisão e celeridade na definição diagnóstica contribuem também para o aumento da carga de trabalho, sendo os dados fornecidos pelo exame anatomopatológico essenciais para a determinação do melhor tratamento disponível(4).
+Nesse âmbito, o advento de sistemas de escaneamento de lâminas de alta resolução
+já é uma tecnologia disponível em larga escala, permitindo a obtenção de lâminas histológicas
+virtuais totais (Whole Slide Image - WSI) de excelente qualidade e resolução, com ampla utilização no ensino, pesquisa e consultorias remotas, dando origem à Microscopia Virtual(5, 6, 7, 8, 9,
+10).
+
+Entretanto, ainda não se dispõe igualmente de programas de análise de tais imagens ou
+
+dados de forma automatizada, aplicáveis na rotina clínica, que auxiliem o patologista a acelerar
+o processo diagnóstico, o qual ainda depende da análise unitária caso a caso por um indivíduo
+treinado.
+O presente estudo trata de uma técnica que vem se popularizando nos últimos sete
+anos, chamada aprendizado profundo de máquina, aplicando-a a imagens histopatológicas, e
+será conduzido de maneira similar a Litjens et al(11). A técnica foi aqui utilizada para o diagnóstico de câncer de estômago, neoplasia epitelial maligna que afeta cerca de 990.000 pessoas a
+cada ano, no mundo, levando cerca de 738.000 dessas ao óbito, sendo o quarto tipo de câncer
+mais comum em termos de incidência global e a segunda maior causa de mortalidade por câncer, mundialmente(12). No Brasil, o INCA estimou em 13.540 novos casos de câncer de estômago entre homens e 7.750 em mulheres para o biênio de 2018-2019, sendo o quarto tipo mais
+incidente em homens e o sexto entre as mulheres(13).
+A técnica foi aplicada especificamente para o subtipo adenocarcinoma gástrico. Histologicamente, o diagnóstico deste tumor impõe desafios devido a sua heterogeneidade morfológica, refletida em parte na diversidade de esquemas de classificação histopatológicos. A Organização Mundial da Saúde adota uma subclassificação histológica estritamente descritiva, a
+qual reconhece cinco principais tipos de adenocarcinoma gástrico, sendo as categorias designadas: tubular, papilar, mucinoso, pouco coeso (incluindo a variante células em anel-de-sinete)
+e misto(14). Outros sistemas classificatórios utilizados pelos patologistas incluem o sistema de
+Láuren, com as seguintes subclassificações: tipos difuso, intestinal e indeterminado(15), consistindo a descrição microscópica do carcinoma tipo difuso em células pouco coesas com pouca
+ou nenhuma formação glandular; enquanto o tipo intestinal designa carcinomas com formação
+glandular com variados graus de diferenciação(14). Há também a classificação de Carneiro, a
+qual reconhece quatro categorias (glandular, células isoladas, sólido e misto)(16) . É preciso citar
+ainda as lesões pré-malignas, as quais compreendem proliferações epiteliais neoplásicas com
+atipias celulares e arquiteturais, porém sem evidência de invasão da lâmina própria(14). Uma
+combinação destas classificações foi utilizada no estudo e será descrita na seção metodológica.
+O aprendizado profundo de máquina, tecnologia que vem sendo aplicada em diversas
+áreas do conhecimento(17, 18, 19), como dito anteriormente, está se mostrando promissor como
+ferramenta auxiliar na detecção e diagnóstico histológico de determinados tipos de neoplasias,
+como adenocarcinoma de próstata e carcinoma mamário(11). Trata-se de uma família de algoritmos que utilizam grandes bases de dados para detectar e aprender a reconhecer padrões
+relevantes de maneira automática, sem depender de uma extração manual e trabalhosa de
+dados quantitativos para cada conjunto(18, 19). Esta família de algoritmos é dividida em dois grupos: aprendizado não supervisionado e supervisionado. O aprendizado supervisionado, utilizado no estudo, é aquele em que, para cada amostra de entrada, existe uma resposta correta
+que é apresentada ao algoritmo de treinamento.
+Foi utilizada para a modelagem uma técnica específica dentro da família de algoritmos
+de aprendizado profundo chamada rede neural convolucional. Seu diferencial está em conter uma ou mais camadas convolucionais em sua topologia, indicadas pela letra C na figura 1. O
+processo de aprendizado consiste na atualização dos pesos das ligações entre os nós das camadas da rede neural para o conjunto de amostras. Uma camada convolucional vai tentar
+aprender os padrões (“features”) das amostras apresentadas através do processo dinâmico de
+atualização dos seus pesos. O processo é repetido iterativamente, ou seja, se repete diversas
+vezes para se chegar a um resultado e a cada vez gera um resultado parcial que será usado
+na vez seguinte, e o operador do algoritmo estabelece um tempo para que o treinamento seja
+interrompido. O tempo é denominado época e cada unidade de época corresponde a uma passagem por todas as amostras disponíveis. Na época seguinte todas as amostras serão novamente revisitadas durante a atualização dos pesos.
+
+!
+Figura 1: Fluxo de processamento da rede neural convolucional utilizada para a detecção das
+cinco classes definidas para adenocarcinoma gástrico em lâminas de tecido coradas pelo HE,
+digitalizadas. As quatro camadas indicadas com C (camadas convolucionais) podem ser consideradas como estágios de extração de feições (“features”), em que características não definidas pelo usuário são consecutivamente extraídas do fragmento de imagem. As camadas indicadas pela letra M são camadas do tipo “max-pooling” e reduzem o tamanho da imagem, forçando ainda mais iterações entre os fragmentos. As últimas três camadas F são do tipo “classificação” que, com base nas características extraídas, indicam as classes finais de cada amostra.
+
+Por fim, nosso estudo investiga a aplicação da rede neural convolucional na identificação de adenocarcinoma gástrico em imagens escaneadas em alta resolução obtidas a partir de
+lâminas histopatológicas coradas pelo método HE. Assim sendo, investiga, por conseguinte, a possibilidade de associar tal método ao trabalho do patologista que, futuramente, poderá ser
+útil para enfrentar os desafios da prática atual.
+
+MATERIAIS E MÉTODOS
+Materiais: foram obtidas 55 imagens totais de lâminas histológicas (Whole Slide Images - WSI) através de um digitalizador de lâminas 3D Histech P250 provenientes do arquivo do
+Laboratório de Patologia do Instituto do Câncer do Estado de São Paulo (ICESP), com diagnóstico prévio de adenocarcinoma gástrico, utilizando uma objetiva de 40x, resultando em uma
+resolução de pixel de 0.19µm. Após a digitalização, para este estudo inicial, 6 lâminas com o
+mínimo de artefatos de processamento histológico e representativas das diferentes subclassificações de adenocarcinoma gástrico foram selecionadas e visualizadas através do software
+Pannoramic Viewer, versão 1.15.4. Destas, foram obtidas 251 áreas representativas, com aumento de 20x (1145x707 pixels), correspondentes às diferentes variações morfológicas do
+adenocarcinoma e também áreas representativas do epitélio gástrico normal e dos demais tecidos não epiteliais e não neoplásicos, conforme os critérios listados abaixo, e nomeadas doravante como nos parênteses:
+1. Tecidos Normais não epiteliais (TN): qualquer área da lâmina onde não há epitélio
+normal ou neoplásico, contendo ampla representatividade dos tecidos conectivos,
+musculares, vasculares, adiposo e lâmina própria. Foram selecionadas 50 áreas representativas;
+2. Epitélio gástrico normal (GN): Epitélio gástrico de tipos fúndico e pilórico sem alterações metaplásicas, displásicas ou neoplásicas. Foram selecionadas 50 áreas representativas;
+3. Epitélio gástrico neoplásico/Adenocarcinoma gástrico tubular (AGT): Epitélio gástrico
+com displasia moderada e adenocarcinoma gástrico com formação glandular. Foram
+selecionadas 50 áreas representativas.
+4. Adenocarcinoma gástrico de tipo sólido (AGS): Adenocarcinoma gástrico de tipo sólido, sem formação de glândulas. Foram selecionadas 41 áreas representativas;
+5. Adenocarcinoma gástrico de tipo descoeso/ difuso (AGD): Adenocarcinoma gástrico
+com células descoesas e células em anel-de-sinete. Foram selecionadas 60 áreas representativas.
+Tais categorias foram criadas com base nos diferentes sistemas classificatórios do
+adenocarcinoma gástrico, com o intuito de avaliar o poder discriminatório automatizado entre
+presença ou não de formação glandular neoplásica e não-neoplásica e presença ou não de
+células neoplásicas descoesas ou em anel-de-sinete. Em relação às áreas representativas com
+tecido neoplásico (designadas AGT, AGS e AGD), um mínimo de 70% da área total selecionada
+deveria conter o padrão histológico definido. A figura 2 ilustra uma entre as 60 áreas representativas para AGD selecionadas com no mínimo 70% da área contendo adenocarcinoma gástrico de tipo descoeso/ difuso. Este valor foi arbitrário, e o método de categorização por área foi
+escolhido por ser mais rápido em comparação ao método de separação de estrutura por estrutura através da marcação manual das lâminas. Essas áreas representativas deram origem às
+amostras utilizadas no presente estudo.
+
+Figura 2: Área representativa AGD selecionada para treinamento da rede neural convolucional
+com no mínimo 70% da imagem contendo adenocarcinoma gástrico de tipo descoeso/ difuso.
+Métodos: após a seleção dessas áreas representativas, essas foram separadas em
+dois grupos, designados training-set e testing-set. Com as imagens do conjunto de training-set
+procedeu-se o treinamento do algoritmo. A topologia da rede neural convolucional utilizada,
+figura 1, é similar à rede neural descrita em Litjens et al(11). As poucas diferenças são: a camada F3 é composta por 5 nós, uma vez que a modelagem neste trabalho leva em consideração
+5 tipos diferentes de classificações e a utilização de um regularizador do tipo “dropout” entre as
+camadas F2 e F3. Este regularizador têm como função impedir que a rede aprenda padrões
+muito específicos do conjunto de dados apresentado, gerando um modelo com “overfitting”, ou
+seja, um modelo que se ajusta muito bem ao conjunto de dados observado, mas se mostra
+pouco eficaz para prever novos resultados. O tensor de entrada dos dados tem a dimensão de
+uma amostra n x n pixels em 3 camadas correspondentes aos canais R (“red”), G (“green”) e B
+(“blue”), onde n é o número de pixels em linha e coluna. Essa matriz tridimensional de dimensões n x n x 3 e suas subsequentes transformações na rede são chamadas de tensores. As
+camadas C são convolucionais, enquanto as camadas M são do tipo “max-pooling”. As camadas de operação “max-pooling” reduzem efetivamente a área do tensor dando oportunidade
+para a próxima camada de convolução aprender um padrão relacionado a uma nova escala da
+imagem. Uma camada “max-pooling” com tamanho de janela 2x2 seleciona 1 pixel entre 4 para
+criar um novo tensor de área reduzida. Essa técnica de pooling possibilita a criação de topologia de rede com mais camadas, daí o termo conhecido como aprendizado profundo de máquina. A quantidade de “features” é um parâmetro utilizado nas camadas convolucionais e representa a quantidade de padrões diferentes que a rede vai considerar no aprendizado.
+Usualmente a maior parte do trabalho envolvendo redes neurais é determinar os parâmetros da rede nos quais o aprendizado é melhor de acordo com as métricas escolhidas. Uma
+rede demasiada complexa para uma determinada modelagem terá resultados insatisfatórios.
+Outro fator importante para o sucesso do treinamento para uma modelagem como o reconhecimento de padrões em imagens é a quantidade de amostras disponíveis para o aprendizado,
+onde muitas vezes o número de amostras adequado chega na ordem de milhões(19). Na interface entre as camadas F2 e F3 existe ainda a aplicação da função “softmax” que normaliza as
+probabilidades de cada classe. O modelo treinado é capaz de receber uma imagem de dimensões n x n x 3 e entregar um vetor de probabilidades com 5 entradas, uma para classe. O vetor
+de probabilidades é normalizado, ou seja, a soma das probabilidades de ocorrência é igual a 1.
+As métricas utilizadas para a avaliação do potencial classificatório do algoritmo foram
+sensibilidade e especificidade. A sensibilidade mede a fração da quantidade de amostras corretamente classificadas na classe escolhida sobre a quantidade total de amostras pertencentes à
+esta classe. A especificidade mede a fração da quantidade de amostras corretamente classificadas como não pertencentes à classe escolhida sobre a quantidade total de amostras que
+não pertencem à esta classe. A especificidade relaciona-se com a métrica falsos negativos de
+acordo com a equação FN = 1 - S. Onde FN é a taxa de falsos negativos e S é a sensibilidade.
+A métrica F1-score utilizada corresponde a uma média harmônica da sensibilidade e da precisão, correspondendo a uma medida de acurácia do teste, cujos valores variam de 0 a 1, sendo
+1 equivalente a precisão e sensibilidade perfeitas. A precisão mede a fração de verdadeiros
+positivos sobre a quantidade total de positivos previstos pelo teste (verdadeiros positivos e falsos positivos). Todos os resultados das métricas foram calculados a partir do testing-set (conjunto de amostras de teste não utilizadas no treinamento).
+Por fim, três resultados serão apresentados. A primeira etapa foi determinar o tamanho
+ideal das amostras a serem geradas a partir das áreas representativas que serão input para a
+rede neural convolucional. Amostras demasiadamente pequenas não apresentam estruturas
+que podem ser significativas para a determinação da classe. Por outro lado, amostras grandes
+demais demandam uma rede neural mais complexa e difícil de parametrizar, além de diminuir
+sensivelmente a quantidade de amostras disponíveis, e, conforme anteriormente comentado,
+milhares ou até mesmo milhões de amostras são necessárias. O segundo resultado buscado
+foram as curvas ROC (“receiver-operator curve”) satisfatórias para o tamanho de amostra obtida na primeira etapa. Essas são indicativas da capacidade discriminativa do algoritmo. A terceira e última etapa é a classificação das amostras utilizando os melhores parâmetros para a otimização da rede neural convolucional encontrados na etapa anterior.
+
+RESULTADOS
+O tamanho da amostra é um parâmetro relevante no planejamento da modelagem.
+Para determinar um tamanho ótimo para este estudo foi calculado o F1-score utilizando uma variedade de dimensões diferentes para as amostras e treinada uma rede neural em cada
+caso. As dimensões (em pixel x pixel) utilizadas foram: 8x8, 16x16, 32x32, 96x96, 128x128,
+148x148, 198x198 e 256x256. A figura 3 mostra os resultados do F1-score para todas as classes em função do tamanho lateral da amostra. Os resultados mostram que as melhores dimensões foram 128x128 e 148x148. Foi escolhido então o tamanho 128x128, pois mesmo havendo
+uma classe (GN) com valor maior de F1-score para a dimensão 148x148 do que para 128x128,
+as outras classes sofreram penalidade. Utilizando um tamanho de amostra de 128x128 o número total de amostras foi de 10.040 das quais 2.000 para GN, 2.000 para AGT, 1.640 para
+AGS, 2.400 para AGD e 2.000 para TN.
+
+!
+Figura 3: Curvas F1-score para todas as classes em função do tamanho lateral da amostra.
+
+As curvas ROC, indicativas da capacidade discriminativa do algoritmo, referentes às 5
+classes, são mostradas na figura 4. A classe com menor AUC (“area under the ROC curve”)
+(0,9795) foi o Epitélio gástrico normal (GN) o que pode ser considerado um valor excelente de
+performance, conclusão essa que se estende às outras classes.
+
+12
+Figura 4: Curvas ROC para as 5 classes definidas e suas respectivas AUC.
+
+Por fim, o terceiro resultado a ser apresentado são as áreas representativas classificadas. Após cada amostra receber um vetor de probabilidades para cada classe (sendo que os
+cinco vetores de probabilidades somados deve ser igual a 1), o maior vetor é então definidor da
+classe a qual a amostra pertence. É também interessante saber o grau de certeza da amostra
+classificada. A figura 5 ilustra os resultados para as cinco diferentes classes, sendo a primeira
+imagem de cada classe (marcadas pela letra A) as amostras sem classificação, a segunda
+imagem (marcadas com a letra B) com seus graus de certeza e a terceira imagem de cada
+classe (marcadas com a letra C) são as classificações geradas pelo algoritmo para as amostras do testing-set.
+
+13
+
+Figura 5: As imagens marcadas de 1 a 5 ilustram os resultados para as cinco diferentes classes. As imagens marcadas pela letra A são as amostras sem classificação, as marcadas com a
+letra B são as amostras e seus respectivos graus de certeza (conforme a gradação B cinza no
+código de cores na qual quanto mais escuro maior a incerteza) e as marcadas com a letra C
+são as classificações geradas pelo algoritmo, conforme o código de cores na legenda.
+
+DISCUSSÃO
+Neste trabalho foi estudada aplicação de redes neurais convolucionais para o reconhecimento de 5 classes presentes em imagens histológicas coradas pelo HE, digitalizadas, representativas de adenocarcinoma gástrico. Os resultados de identificação foram satisfatórios de
+acordo com as métricas da inspeção visual das curvas ROC e os valores AUC, uma vez que
+todas as curvas ROC apresentaram uma AUC acima de 0,97, indicando uma excelente capacidade discriminativa e classificatória do algoritmo para todas as 5 classes definidas. Comparando estes resultados com outros identificados na literatura(11) foram levantadas três hipóteses
+não-exclusivas para explicar a alta performance das métricas obtidas:
+1. Características específicas do Adenocarcinoma gástrico. O objeto de estudo pode
+ter um padrão particularmente fácil de identificação em relação à condição normal do
+tecido, quando analisadas para o tamanho ideal de amostra encontrado de 128 x 128
+pixels.
+2. Particularidade das amostras utilizadas, as quais foram selecionadas buscando representar ao máximo todas as possibilidades morfológicas do adenocarcinoma gástrico, evitando selecionar áreas com muitos artefatos de processamento ou outros possíveis fatores de confusão. Isso implica que as imagens escolhidas podem ter tornado a
+modelagem muito específica para esse conjunto de casos.
+3. Característica da metodologia de definição das imagens para amostragem. Para a
+definição das amostras de aprendizado foram procuradas imagens nas quais ao menos
+70% da área de interesse correspondesse somente a uma das classificações histológicas descritas, evitando capturar áreas com combinações das diferentes classes. É um
+processo diferente da marcação das classes em uma lâmina total digitalizada e uma
+posterior etapa de pós-processamento para definir as amostras e o vetor de probabilidades para serem utilizados no treinamento. De acordo com Litjens et al(11) essas duas
+definições não são equivalentes em relação à modelagem. Esse método de definição
+das amostras pode então implicar bons resultados usando como teste amostras extraídas com o mesmo método. Não necessariamente quer dizer que essa modelagem terá
+os bons resultados para uma previsão em uma imagem de lâmina total (WSI).
+
+Uma generalização mais abrangente da identificação necessita de um número maior
+de dados para treino com o máximo possível de diversidade. Sabe-se que, na confecção de
+uma simples lâmina histopatológica de HE, inúmeros fatores influenciam no resultado final do
+corte histológico em análise. A saber, a variação de intensidade das colorações utilizadas, artefatos de processamento e corte que podem produzir espaços vazios entre os tecidos, dobras e
+sobreposições, e mesmo o sentido longitudinal ou transversal do corte em relação à amostra de tecido geram padrões de imagens diferentes, facilmente reconhecidas pelo conjunto olhocérebro humano, mas um desafio para o algoritmo classificatório, se tais variações não forem
+previamente incluídas no treinamento. Além desses desafios técnicos, que geram uma diversidade de padrões, a própria natureza morfológica do adenocarcinoma gástrico é bastante heterogênea, com a possível presença de diferentes padrões na mesma lesão, tornando-se um desafio classificatório também para o patologista treinado(16). Tal limitação se estende para a definição e seleção das amostras e, consequentemente, para o sistema classificatório do algoritmo, predominantemente nos casos de lesões nas quais, quando analisadas em uma lâmina
+total, encaixem-se no subtipo misto. Assim sendo, as atuais definições classificatórias na seleção de amostras deste estudo poderão ser revistas em um estudo posterior, a ser aplicado não
+apenas em amostras representativas, mas em uma imagem de lâmina total (WSI).
+É razoável esperar que um conjunto maior de dados para o treinamento diminua a performance do modelo em relação às métricas apresentadas, porém a modelagem terá maior
+poder de generalização em relação aos dados que podem ser apresentados. Dentro do treinamento realizado, verificamos ainda uma robustez dos modelos de acordo com alguns casos
+nos quais uma amostra é informada ao treinamento como pertencente a uma determinada
+classe e a predição deste modelo informa outra classe, classificando-a de maneira correta,
+como pode ser observado na Figura 4. Nela, visualizamos que, dentro de uma imagem com
+classificação predominante de padrão AGD (Figura 4.5A), o algoritmo identificou uma área com
+glândula normal, classificando-a corretamente como GN (Figura 4.5C). Isso acontece pois as
+amostras (128x128 pixels) são obtidas a partir de uma área maior de uma imagem representativa (1145x707 pixels) onde somente a classe predominante da imagem maior é informada
+como presente no treinamento do algoritmo.
+
+CONCLUSÃO
+Este estudo preliminar demonstrou que, para um tamanho de amostra definido de 128
+pixels, o algoritmo é capaz de identificar de maneira satisfatória as diferentes estruturas relevantes na imagem de adenocarcinoma gástrico para a classificação dentro das 5 classes determinadas, e mostra que a aplicação de redes neurais convolucionais para a classificação de
+tecidos em lâminas anatomopatológicas digitalizadas é promissora. Um conjunto maior de amostras categorizadas por um grupo de profissionais e modeladas como neste trabalho pode
+apresentar uma predição sem enviesamento individual na seleção das amostras representativas, e definir critérios mais estritos para sua inclusão a fim de gerar uma classificação ainda
+mais robusta. O próximo passo para este estudo é então utilizar uma quantidade maior de
+amostras e alterar o método de definição das mesmas, marcando as regiões com classes diferentes na imagem total da lâmina (WSI)(11).
+
+ACKNOWLEDGMENTS
+Professor Doutor Evandro Sobroza de Mello, coordenador do Serviço de Patologia do
+ICESP, pelo fornecimento das imagens digitalizadas das lâminas histológicas, possibilitando a
+realização deste trabalho.
+
+REFERÊNCIAS BIBLIOGRÁFICAS
+1. FISCHER AH, JACOBSON KA, ROSE J, ZELLER R. Hematoxylin and eosin staining of tissue and cell sections. CSH Protocols; 2008.
+2. VAN DEN TWEEL JG, TAYLOR CR. A brief history of pathology: Preface to a forthcoming
+series that highlights milestones in the evolution of pathology as a discipline. Virchows Arch.
+2010;457(1):3-10.
+3. World Health Statistics 2018: Monitoring Health for the SDGs
+4. KAMEL HM. Trends and Challenges in Pathology Practice: Choices and necessities. Sultan
+Qaboos Univ Med J. 2011;11(1):38-44.
+5. BASHSHUR RL, KRUPINSKI EA, WEINSTEIN RS, DUNN MR, BASHSHUR N. The Empirical Foundations of Telepathology: Evidence of Feasibility and Intermediate Effects. Telemed J E
+Health. 2017;23(3):155-191.
+6. KAYSER K, BORKENFELD S, KAYSER G. How to introduce virtual microscopy (VM) in routine diagnostic pathology: constraints, ideas, and solutions. Anal Cell Pathol (Amst). 2011;35(1):
+3-10.
+7. WIENERT S, BEIL M, SAEGER K, HUFNAGL P, SCHRADER T. Integration and acceleration
+of virtual microscopy as the key to successful implementation into the routine diagnostic
+process. Diagn Pathol. 2009;4:3. Published 2009 Jan 9.
+
+17
+
+8. KAYSER K. Introduction of virtual microscopy in routine surgical pathology-a hypothesis and
+personal view from Europe. Diagn Pathol. 2012;7:48. Published 2012 Apr 30.
+9. JARA-LAZARO AR, THAMBOO TP, TEH M, TAN PH. Digital pathology: exploring its applications in diagnostic surgical pathology practice. Pathology. 2010;42(6), 512–518.
+10. MORI I, OZAKI T, MURAGAKI Y, ET AL. Construction of web-based remote diagnosis system using virtual slide for routine pathology slides of the rural hospital in Japan. Diagn Pathol.
+2013;8(Suppl 1):S4. Published 2013 Sep 30.
+11. LITJENS G, SÁNCHEZ CI, TIMOFEEVA N. et al. Deep learning as a tool for increased accuracy and efficiency of histopathological diagnosis. Sci. Rep. 2016 6(1), 262-286.
+12. KARIMI P, ISLAMI F, ANANDASABAPATHY S, FREEDMAN ND, KAMANGAR F. Gastric
+cancer: descriptive epidemiology, risk factors, screening, and prevention. Cancer Epidemiol Biomarkers Prev. 2014;23(5):700-713.
+13. Ministério da Saúde, Instituto Nacional do Câncer. Estimativa 2018: incidência de câncer no
+Brasil / Instituto Nacional de Câncer José Alencar Gomes da Silva. Coordenação de Prevenção
+e Vigilância. – Rio de Janeiro: INCA, 2017.
+14. CARNEIRO F, CURADO, MP, FRANCESCHI S, et al. Gastric carcinoma. In: Bosman FT,
+Carneiro F, Hruban R H, Theise N. WHO classification of tumours of the digestive system,
+fourth edition. France: IARC; 2010: 48-58
+15. SCHAEFFER DF, OWEN DA. Stomach. In: Sternberg, S. S., Mills, S. E., & Carter, D. Sternberg's diagnostic surgical pathology (6th ed.). Philadelphia: Wolters Kluwer Health/Lippincott
+Williams & Wilkins; 2015:1409-1446
+16. CARNEIRO F. Classification of gastric carcinomas. Current Diagnostic Pathology. 1997
+4(1), 51-59
+17. HASTIE T, TIBSHIRANI R, FRIEDMAN J. The elements of statistical learning: data mining,
+inference, and prediction. New York; Springer-Verlag, 2009.
+18. DEO RC. Machine learning in medicine. Circulation, 2015; 132(20): 1920-1930.
+19. CRUZ-ROA A. Data-driven Representation Learning from Histopathology Image Databases
+to Support Digital Pathology Analysis (Doctoral dissertation, PhD thesis, Universidad Nacional
+de Colombia). 2015: 48-117
+
+18
+
+View publication stats
+

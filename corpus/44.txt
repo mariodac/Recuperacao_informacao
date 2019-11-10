@@ -1,0 +1,1619 @@
+DOI: 10.1590/S1413-41522019183284
+
+Artigo Técnico
+
+Previsão de geração de resíduos
+sólidos para o aterro de Aparecida de
+Goiânia (GO) por séries temporais
+Forecasting of solid waste generation for the
+Aparecida de Goiânia (GO), Brazil, landfill by time series
+Leonardo Rodrigues de Oliveira Merelles1* , Cláudio de Oliveira e Silva1,
+Marta Pereira da Luz1, José Elmo de Menezes1, Viviane de Souza Dias1
+
+RESUMO
+
+ABSTRACT
+
+Um sistema eficaz e robusto de tratamento de resíduos sólidos urbanos
+
+An effective and robust municipal solid-waste-treatment system requires
+
+requer um modelo de previsão adequado para auxiliar seu gerenciamento.
+
+a suitable forecast model to assist in its management. This work was
+
+Neste trabalho foi realizada, utilizando séries temporais, a análise da projeção
+
+carried out, using time series, an analysis of the projection of solid waste
+
+de geração dos resíduos sólidos no aterro do município de Aparecida de
+
+generation in the landfill of Aparecida de Goiânia, located in the State of
+
+Goiânia, localizado no estado de Goiás. Para a compreensão da geração de
+
+Goiás. In order to understand the generation of residues, we analyzed the
+
+resíduos foram analisadas as influências exercidas por variáveis climáticas e
+
+influences exerted by climatic variables and governmental incentives.
+
+incentivos governamentais. O modelo que melhor se ajustou ao fenômeno
+
+The model that best fit the studied phenomenon was SARIMA, due
+
+estudado foi o autorregressivo integrado de média móvel sazonal (SARIMA),
+
+to the presence of seasonality in the analyzed time series. As a main
+
+em decorrência da existência de sazonalidade na série temporal analisada.
+
+result, the forecast for the generation of solid urban waste in Aparecida
+
+Como principal resultado, a previsão para a geração de resíduos sólidos
+
+de Goiânia projected a reduction of the volume produced until 2018.
+
+urbanos em Aparecida de Goiânia projetou redução do volume produzido
+
+Seasonality in the generation of municipal solid waste does not occur
+
+até 2018. A sazonalidade na geração de resíduos sólidos urbanos não ocorre
+
+due to the influence of climatic variables. The modeling of municipal
+
+por causa da influência de variáveis climáticas. A modelagem dos resíduos
+
+solid waste can aid in decision-making and collection management, as
+
+sólidos urbanos pode auxiliar na tomada de decisões e no gerenciamento
+
+well as in contributing to the environmental impacts control.
+
+da coleta, além de contribuir para o controle dos impactos ambientais.
+
+Keywords: solid waste; forecast; time series.
+
+Palavras-chave: resíduos sólidos; previsão; séries temporais.
+
+INTRODUÇÃO
+
+A previsão da geração de RSU é fundamental para o processo de
+
+A geração de resíduos sólidos urbanos (RSU) nos países em
+
+planejamento do volume de resíduos produzidos. A estimativa serve
+
+desenvolvimento tem acelerado por causa do aumento populacional,
+
+como base para adequação de infraestrutura, desenvolvimento sus-
+
+da expansão da economia, da rápida urbanização e da melhoria no
+
+tentável, otimização de recursos utilizados no tratamento dos RSU
+
+padrão de vida da sociedade (XU et al., 2013). Após a década de
+
+(ABBASI; EL HANANDEH, 2016) e tomada de decisão (DENAFAS
+
+1990, o aumento no volume gerado de RSU próximos aos centros
+
+et al., 2014). Entretanto, alcançar a previsão desejada é desafiador,
+
+urbanos tornou-se um problema ambiental, com elevado impacto
+
+pois envolve elementos importantes, como escala espacial, identi-
+
+negativo. A má gestão dos RSU pode gerar problemas, tais como o
+
+ficação temporal, fatores influentes e métodos de previsão (BEIGL;
+
+odor desagradável, a contaminação de água subterrânea e o risco de
+
+LEBERSORGER; SALHOFER, 2008), além de falta de dados his-
+
+explosão (ANTANASIJEVIĆ et al., 2013; MOR et al., 2006).
+
+tóricos em países em desenvolvimento (RIMAITYTĖ et al., 2012).
+
+1
+Pontifícia Universidade Católica de Goiás – Goiânia (GO), Brasil.
+*Autor correspondente: leonardotringo@gmail.com
+Recebido: 27/07/2017 – Aceito: 26/04/2018 – Reg. ABES: 183284
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+537
+
+Merelles, L.R.O. et al.
+
+As principais abordagens de previsão de geração de RSU utilizadas
+
+Para analisar a estacionariedade de uma série temporal, são calcu-
+
+em pesquisas realizadas sobre o tema a partir de 2010 foram: análise de
+
+lados os coeficientes da função de autocorrelação amostral (FAC) e a
+
+regressão (DENAFAS et al., 2014; RIMAITYTĖ et al., 2012), modelo de
+
+função de autocorrelação amostral parcial (FACP) com as suas defasa-
+
+fluxo de materiais (TONJES & GREENE, 2012; ZHANG et al., 2012),
+
+gens. Os coeficientes devem variar entre o intervalo de confiança (IC)
+
+sistema de modelos dinâmicos (KOLLIKKATHARA, FENG & YU,
+
+da estatística FAC e FACP, exceto para as primeiras defasagens. O IC
+
+2010), análise de séries temporais (RIMAITYTĖ et al., 2012; XU et al.,
+
+pode ser definido pela Equação 2.
+
+2013) e modelos de inteligência artificial (ABBASI; EL HANANDEH,
+2016; KUMAR; SUBBAIAH; PRASADA-RAO, 2011).
+Entre os modelos apresentados, a análise de regressão com dados
+
+ty
+IC = ⎯ (2)
+√N
+
+econômicos e geográficos (DENAFAS et al., 2014) é o mais frequente.
+
+Em que:
+
+Para Xu et al. (2013), isso está associado à simples aplicação do método.
+
+IC = intervalo de confiança;
+
+O modelo de fluxo de materiais consiste na análise de subgrupos e da
+
+tγ = valor da estatística t de Student com N-1 graus de liberdade (na
+
+influência de fatores que impactam a geração de RSU (ABDOLI et al.,
+
+prática, tγ é igual a 2 — MORETTIN & TOLOI, 2011);
+
+2012). A análise de séries temporais consiste em capturar a influência do
+
+N = tamanho da amostra.
+
+tempo na série analisada, possibilitando a sua projeção (RIMAITYTĖ
+et al., 2012). O modelo de inteligência artificial consiste em uma técnica
+
+Pode ser aplicado também o teste de Dickey e Fuller (1979) para
+
+de aprendizagem, na qual o desafio é determinar os pesos e o índice
+
+hipótese nula de existência de raiz unitária, confirmando, assim, o com-
+
+de aprendizagem (ABBASI; EL HANANDEH, 2016).
+
+portamento da série. Se uma série temporal Yt converge para t = ∞, ela
+
+No Brasil, de 2010 a 2014, a produção de RSU cresceu 29%
+
+será: estacionária para |ρ| < 1; não estacionária para |ρ| > 1; e passeio
+
+(ABRELPE, 2014), demandando mais serviços de logística (COUTO
+
+aleatório quando ρ = 1. No entanto, o teste Dickey-Fuller aumentado
+
+& LANGE, 2017), tratamento para redução dos impactos (GOMES
+
+(ADF) é recomendado para evitar autocorrelação dos resíduos, pois
+
+et al., 2017), infraestrutura, postos de trabalho diretos e recursos
+
+engloba a defasagem para eliminar os resíduos (DICKEY; FULLER, 1981).
+
+financeiros. No contexto da discussão apresentada anteriormente, os
+
+Quando a série temporal não apresenta sazonalidade e o seu
+
+objetivos deste trabalho foram modelar e realizar a previsão de gera-
+
+comportamento é não estacionário, pode ser aplicado o modelo
+
+ção de RSU na cidade de Aparecida de Goiânia, em Goiás, aplicando
+
+autorregressivo integrado de média móvel (ARIMA) (p, d, q)
+
+séries temporais considerando o horizonte de médio prazo; e verifi-
+
+(MONTGOMERY; JENNINGS; KULAHCI, 2015). Essas especificações
+
+car a influência da variabilidade de geração de resíduos sólidos em
+
+representam os parâmetros:
+
+função de variáveis climáticas (temperatura e precipitação) e incen-
+
+•
+
+(p) número de modelos autorregressivos;
+
+tivos governamentais.
+
+•
+
+(d) quantidade de diferenciações;
+
+•
+
+(q) número de média móvel aplicada.
+
+ANÁLISE DE SÉRIES TEMPORAIS
+
+O modelo pode ser representado pela Equação 3.
+
+Na aplicação dos modelos de Box e Jenkins, não é necessário que a série
+temporal estudada seja estacionária, podendo apresentar tendência ou
+
+ϕ(B)(1 – B)dYt = δ + θ(B)at(3)
+
+sazonalidade (MORETTIN & TOLOI, 2011). A série temporal pode
+ser decomposta como apresentado na Equação 1.
+
+Em que:
+ϕ(B) = polinômio autorregresivo de ordem (p) (1 – ϕ1B1 – ... ϕpBp);
+
+Yt = Tt + St + at(1)
+
+B = operador de retardo (BjYt = Tt – j);
+d = quantidade de diferenciações necessárias para tornar a série
+
+Em que:
+
+estacionária;
+
+Yt = série temporal, podendo assumir valores de t = 1, ..., n com n
+
+δ = média μ(1 – ϕ1 – ϕp);
+
+representando a observação no tempo;
+
+Θ(B) = polinômio de média móvel de ordem (q) (1 – ϕ1B1 – ... ϕqBq).
+
+Tt = tendência ao longo do período;
+A identificação do grau de diferenciação d ocorre através da FAC.
+
+St = sazonalidade ocorrida nos períodos;
+at = componente aleatória ou erro, que mostra as oscilações aleatórias
+
+Os valores da FAC precisam cair exponencialmente e estabilizar entre os
+
+irregulares com média zero e variância constante N(0, σ ). Para um
+
+limites, caracterizando, assim, a série estacionária. O teste de raiz unitá-
+
+bom ajuste do modelo, faz-se necessário que at seja um ruído branco.
+
+ria deve ser aplicado para identificar o número ideal de diferenciações.
+
+2
+
+538
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+Previsão de geração de resíduos sólidos
+
+As principais ferramentas para identificação do modelo ARIMA (p,
+
+P = ordem sazonal autorregressiva;
+
+0, q) são a FACP e FAC, em que se esperam o decaimento exponencial da
+
+D = diferença sazonal;
+
+FAC e o trancamento da FACP, o que dificulta a análise. Porém, podem
+
+Q = ordem sazonal de média-móvel;
+
+ser adotados os critérios de seleção Akaike’s Information Criterion (AIC)
+
+S = período sazonal.
+
+e o Bayesian Information Criterion (BIC), definidos pelas Equações 4 e 5.
+Para ajuste do modelo SARIMA são necessárias quatro etapas:
+
+AIC = δ + n + 2k (4)
+n
+
+análise dos valores da FAC e FACP; estimativa dos parâmetros des-
+
+(k + log(n)) (5)
+BIC = log(δk2) +
+n
+
+previsão (TSENG & TZENG, 2002).
+
+2
+k
+
+conhecidos; teste do ajuste de qualidade dos resíduos; e avaliação da
+Para realizar a análise da série temporal, a adoção de um software é
+
+Em que:
+
+fundamental para auxiliar na elaboração e interpretação dos resultados (R
+
+δk2 = SSE/N
+
+DEVELOPMENT CORE TEAM, 2016). Em alguns casos, essa aquisição
+
+_
+SSE = ΣNT=1(Yt – Y)2
+
+pode ser elevada, levando à busca de softwares livres como Octave ou R.
+
+SSE = soma do quadrado dos resíduos;
+δk2 = estimador da máxima verossimilhança;
+n = tamanho da amostra;
+
+METODOLOGIA
+
+k = número de parâmetros do modelo.
+
+Nesta seção serão apresentados os dados aplicados, a área de estudo,
+o método utilizado para determinar o modelo de previsão, o software
+
+Entre os vários modelos gerados, escolhe-se aquele que apresenta os
+menores valores de AIC e BIC. Vale salientar também, que a escolha deverá
+
+aplicado para realizar as análises das projeções e as medidas de desempenho utilizadas.
+
+levar em consideração os modelos que apresentam o menor número de
+parâmetros. Por fim, é recomendável que os critérios AIC e BIC sejam
+
+Dados e área de estudo
+
+avaliados conjuntamente, pois são complementares e não excludentes.
+
+Aparecida de Goiânia é uma das principais cidades do estado de
+
+Quando a série temporal apresenta um comportamento sazonal
+
+Goiás, com área de 290 km2. Está localizada na região metropoli-
+
+em determinado período, faz-se necessário acrescentar essa compo-
+
+tana de Goiânia, a 222 km de Brasília, Distrito Federal (capital do
+
+nente ao modelo. A distância entre os intervalos sazonais ao longo do
+
+Brasil), e é a segunda cidade mais populosa do estado, com mais de
+
+tempo pode ser determinada pela Equação 6.
+
+532 mil habitantes em 2016 e geração de 217 kg de RSU per capita
+(Companhia de Urbanização de Goiânia — COMURG), anual-
+
+∇S YS = (1 – B )YT = YT – YT–S
+
+(6)
+
+S
+
+mente. A cidade possui o terceiro maior polo industrial de Goiás,
+atrás de Goiânia e Anápolis. A sua arrecadação com os setores de
+
+Em que:
+
+serviços e indústria é de R$ 5.834.788 e 2.793.469, respectivamente
+
+∇S = diferença sazonal;
+
+(IBGE, 2017).
+
+YT = série temporal;
+
+Para desenvolver o modelo de previsão, um total de 151 registros
+
+YS = componente determinística com periodicidade s;
+
+mensais de dados de RSU foram coletados do município de Aparecida
+
+B = operador de retardo.
+
+de Goiânia por um período superior a 12 anos, a partir de 2004.
+Os dados climáticos da cidade foram obtidos na base de dados do
+
+Determinado o intervalo sazonal, o modelo SARIMA (p, d, q)
+(P, D, Q)s pode ser obtido pela equação multiplicativa (Equação 7).
+
+Instituto Nacional de Meteorologia (INMET, 2017) e National Oceanic
+and Atmospheric Administration (NOAA) (2017) para avaliar a hipótese
+de influência na geração de RSU. As falhas existentes nos dados foram
+
+ϕP(B)ϕP(BS)(1 – B)d (1 – BS)d Yt = θq(B)Θq(BS)at(7)
+
+corrigidas aplicando o método de Vicente-Serrano et al. (2010) e Ferrari
+e Ozaki (2014). Para testar a significância da variação na geração de
+RSU pela temperatura e precipitação acumulada mensal, foi aplicada
+
+Em que:
+Φp(B ) e ΘQ(B ) = polinômios sazonais autorregressivos e média móvel
+s
+
+s
+
+a medida de associação entre duas variáveis.
+
+de ordem (P) e (Q), respectivamente;
+p = número de modelos autorregressivos;
+
+Método aplicado
+
+d = quantidade de diferenciações;
+
+O algoritmo aplicado consiste em analisar a série temporal e iden-
+
+q = número de média-móvel aplicada;
+
+tificar se ela é estacionária ou não estacionária, e sazonal ou não
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+539
+
+Merelles, L.R.O. et al.
+
+sazonal. Caso ela seja não sazonal e não estacionária, aplica-se o
+
+RESULTADOS OBTIDOS
+
+modelo ARIMA (MONTGOMERY; JENNINGS; KULAHCI, 2015).
+Se for sazonal e não estacionária, é aplicado o modelo SARIMA
+
+Análise descritiva dos dados
+
+(TSENG; TZENG, 2002).
+
+As medidas de dispersão estão apresentadas na Tabela 1. O autovalor
+
+Para melhor compreender a geração de RSU, inicialmente foram
+
+para o desvio padrão e o coeficiente de variação indicam que a média
+
+determinadas suas medidas de dispersão. A análise corresponde ao RSU
+
+é pouco representativa, o que pode caracterizar a sazonalidade. A gera-
+
+gerado mensalmente na cidade de Aparecida de Goiânia; o intervalo de
+
+ção mensal máxima de resíduos sólidos ocorreu em janeiro de 2003 e
+
+tempo de modelagem foi compreendido entre 2004 e 2014 (com perio-
+
+a mínima, em julho de 2005.
+
+dicidade mensal, contendo 120 períodos); e a calibração do modelo
+ocorreu nos 31 meses seguintes.
+Neste artigo foi aplicado o software R, por permitir modificar e
+implementar suas rotinas, além de possuir diversos pacotes destinados a analisar séries temporais. Para ajustar os parâmetros da série, foi
+aplicado o algoritmo de Hyndman e Khandakar (2008). O algoritmo
+determina a quantidade de defasagens e os parâmetros autorregressivo e média móvel.
+
+dade do modelo de previsão (ABBASI; EL HANANDEH, 2016). Neste
+trabalho, a avaliação da performance do modelo de previsão proposta
+foi realizada aplicando as seguintes estatísticas: raiz do erro quadrático
+médio (RMSE; Equação 8); coeficiente de determinação (R2; Equação
+9); erro absoluto médio (MAE; Equação 10); e média absoluta percentual dos erros (MAPE; Equação 11).
+
+realizar testes estatísticos para confirmar essa hipótese. A geração de RSU
+apresenta maior concentração e variabilidade nos meses de dezembro e
+janeiro e se prolonga no início do ano, como representado na Figura 1B.
+Para identificar as componentes da geração de RSU, foram retirados a sazonalidade, a tendência e os resíduos da série (MORETTIN
+
+nal é idêntico ao longo do tempo. A tendência é de aumento até 2009
+e recuo no fim de 2010. Após isso, ocorre o retorno do crescimento
+até 2015, que, posteriormente, é reduzido em 2016.
+De acordo com Dias et al. (2012), o comportamento sazonal idêntico é justificado por causa do 13º salário e dos picos de tendência pelas
+medidas tomadas pelo governo para evitar crises financeiras. Esses elementos injetaram bilhões de reais na economia, aumentando o poder
+de compra e favorecendo a geração de RSU destinados aos aterros sanitários. O comportamento sazonal também ocorre devido às influências
+
+n
+
+∑
+
+sugerir que a série temporal possui tendência, porém, torna-se necessário
+
+na Figura 2. Nota-se que, na decomposição, o comportamento sazo-
+
+Existem alguns critérios que podem ser aplicados para avaliar a quali-
+
+1
+n
+
+temporal e o boxplot mensal dos RSU gerados. Na Figura 1A é possível
+
+& TOLOI, 2011). A decomposição de série temporal está apresentada
+
+Medidas de ajuste
+
+RMSE =
+
+Após realizar os cálculos das medidas de dispersão, foi plotada a série
+
+|wi – wi*|2 (8)
+
+i =1
+
+meteorológicas (ABDOLI et al., 2012) e climáticas. Em períodos de baixa
+temperatura acontecem reduções nas gerações de RSU, mas em períodos de temperaturas mais elevadas ocorre o inverso (XU et al., 2013).
+Pelo coeficiente de contingência, as variáveis climáticas apresenta-
+
+R2 = 1 –
+
+MAE =
+
+MAPE =
+
+∑ ni=1 (wi – wi*)2(9)
+wl)2
+∑ ni=1 (wi – ⎯
+
+1
+n
+
+1
+n
+
+|wi – wi*|(10)
+
+pelo teste de Tukey; com 95% de certeza o comportamento da série
+
+n
+
+∑
+i =1
+
+nessa ordem. Essa análise corrobora a hipótese de que a geração de
+RSU acompanha as medidas de incentivo governamental, porém, difere
+da hipótese de que os dados climáticos interferem na geração de RSU.
+
+i =1
+
+wi – wi* (11)
+wi
+
+Em que:
+W = valor previsto;
+W* = valor observado;
+n = tamanho da amostra.
+
+540
+
+e temperatura, nessa ordem. O pico de tendência de 2009 foi analisado
+não foi igual aos anos de 2008 e 2010 com valor p de 0,0004 e 0,0047,
+
+n
+
+∑
+
+ram associação moderada (p = 0,45) e baixa (p = 0,25) para precipitação
+
+Tabela 1 – Medidas descritivas dos resíduos sólidos urbanos gerados em
+Aparecida de Goiânia, Goiás.
+Medidas descritivas
+
+Valor
+
+Medidas descritivas
+
+Valor
+
+Média (tonelada)
+
+8.038,57
+
+Valor máximo (tonelada)
+
+13.223,81
+
+Mediana (tonelada)
+
+8.003,94
+
+Valor mínimo (tonelada)
+
+5.081,54
+
+Desvio padrão
+(tonelada)
+
+1.877,89
+
+Assimetria
+
+0,40
+
+Coeficiente de
+variação (%)
+
+23,36
+
+Curtose
+
+-0,16
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+Previsão de geração de resíduos sólidos
+
+A
+Resíduos sólidos (ton)
+
+13.000
+11.000
+9.000
+7.000
+5.000
+2004
+
+2005
+
+2006
+
+2007
+
+2008
+
+2009
+
+2010
+
+2011
+
+2012
+
+2013
+
+2014
+
+2015
+
+2016
+
+11
+
+12
+
+2017
+
+Tempo (anos)
+
+B
+Resíduos sólidos (ton)
+
+13.000
+11.000
+9.000
+7.000
+5.000
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Tempo (meses)
+
+12.000
+6.000
+
+Dados
+
+Figura 1 – Aterro sanitário de Aparecida de Goiânia, Goiás, 2004 a 2016. (A) Resíduo sólido urbano do aterro ao longo do tempo; (B) variabilidade dos
+resíduos sólidos.
+
+9.000
+6.000
+
+500
+-1.000
+
+Resíduos
+
+Tendência
+
+-1.000
+
+Sazonalidade
+
+2.000
+
+2004
+
+2006
+
+2008
+
+2010
+
+2012
+
+2014
+
+2016
+
+Tempo
+
+Figura 2 – Decomposição da série temporal da geração de resíduos sólidos urbanos no aterro de Aparecida de Goiânia, Goiás.
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+541
+
+Merelles, L.R.O. et al.
+
+Modelagem e previsão
+
+O número de defasagens foi determinado através da análise de
+
+A FAC e a FACP foram estimadas para dar início à modelagem. Na FAC é
+
+dispersão. A análise de dispersão de uma a quatro defasagens está
+
+apresentado um decaimento na correlação e também é observado compor-
+
+apresentada na Figura 4. Na análise de dependência entre as defasa-
+
+tamento sazonal (Figura 3A). Vê-se na, Figura 3B, que os lags 1 e 2 estão
+
+gens, verifica-se que a menor dispersão ocorre na primeira defasagem.
+
+fora dos limites. Esses lags aconteceram nos meses de janeiro e dezembro.
+
+O modelo ajustado pelo algoritmo foi o SARIMA (1,0,0)(2,1,1)
+
+Tal comportamento é considerado normal para as primeiras defasagens.
+
+[12]. Os parâmetros estimados, erro padrão e IC estão apresentados
+
+A
+
+B
+
+0,8
+
+0,5
+
+0,6
+
+FAC
+
+FAC parcial
+
+0,4
+
+0,2
+
+0,0
+
+0
+-0,5
+-0,2
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+0
+
+1
+
+Defasagem
+
+2
+
+3
+
+4
+
+5
+
+6
+
+Defasagem
+
+FAC: função de autocorrelação amostral.
+Figura 3 – Análise de correlação. (A) Análise da função de autocorrelação; (B) análise da função de autocorrelação parcial.
+
+8,0
+
+8,5
+
+9,0
+
+9,5
+
+10,0
+
+Yt
+
+Yt
+
+9,4
+
+9,0
+
+8,6
+lag 1
+
+lag 2
+
+Yt
+
+Yt
+
+9,4
+
+9,0
+
+8,6
+lag 3
+
+8,0
+
+8,5
+
+Figura 4 – Dependência entre as defasagens.
+
+542
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+9,0
+lag 4
+
+9,5
+
+10,0
+
+Previsão de geração de resíduos sólidos
+
+na Tabela 2. Os valores dos critérios de informações AIC e BIC foram
+
+observada na série histórica considerada. Nos últimos 12 meses, a média
+
+-471,52 e -456,84, nessa ordem.
+
+de geração de RSU foi de 18,083 kg.mês-1.per capita-1; na projeção, a
+
+Os resíduos do modelo estimado se acumulam próximo a zero,
+demonstrando bom ajuste aos dados. A análise dos resíduos está apre-
+
+média passa para 17,265 kg.mês-1.per capita-1. A previsão para o aterro
+de Aparecida de Goiânia, Goiás, está no Apêndice 1.
+
+sentada na Figura 5. Os resíduos podem ser vistos no histograma (ver
+
+Ao observar outros modelos, destacam-se Abdoli et al. (2012), que ana-
+
+Figura 5A). O gráfico QQ-plot está apresentado na Figura 5B. Nela, a
+
+lisaram o modelo de regressão e redes neurais e concluíram que as redes
+
+maioria dos resíduos se encontra em cima da reta, demonstrando que
+
+neurais artificiais são melhores. Adamović et al. (2017) e Antanasijević
+
+apresentam comportamento normal e apenas alguns desvios nas caudas.
+
+et al. (2013) também defendem a aplicação dos modelos de redes artificiais
+
+As estatísticas observadas foram RMSE, R , MAE e MAPE, com os
+
+para previsão dos RSU, entretanto Xu et al. (2013) e Denafas et al. (2014)
+
+valores 0,0385; 0,9742; 0,0134; e 0,1462, nessa ordem. O modelo SARIMA
+
+demonstram que a aplicação de séries temporais possui ótima performance
+
+explicou 97,42% do ocorrido na série, demonstrando ser adequado.
+
+ao modelar e realizar as previsões de RSU. Já Dias et al. (2012) mostram que
+
+2
+
+Após a validação, o modelo SARIMA (1,0,0)(2,1,1)[12] pode ser
+
+é possível modelar a geração de RSU por meio de índices socioeconômicos.
+
+aplicado para realizar previsões. A previsão realizada até junho de 2018
+
+Assim, Abbasi e El Hanandeh (2016) testaram quatro modelos de inte-
+
+está apresentada na Figura 6. É observado que haverá redução na gera-
+
+ligência artificial: artificial neural network; adaptive neuro-fuzzy inference
+
+ção de RSU no aterro. A previsão para dezembro e janeiro de 2018 é de
+
+systems; support vector machine; e k-nearest neighbours, que apresentaram
+
+11.372 toneladas. Essa quantidade é 2 mil toneladas abaixo da máxima
+
+coeficientes de determinação R2 de 0,46; 0,98; 0,71; e 0,51, nessa ordem.
+Também, Adamović et al. (2017) avaliaram as redes neurais em vários
+
+Tabela 2 – Modelo autorregressivo integrado de média móvel sazonal
+(SARIMA) ajustado.
+Descrição
+
+Parâmetro
+estimado
+
+Erro
+padrão
+
+Intervalo de confiança
+2,5%
+
+97,5%
+
+ϕ1
+
+0,9858
+
+0,0191
+
+0,9482
+
+1,0232
+
+Φ1
+
+-0,1382
+
+0,1472
+
+-0,4267
+
+0,1503
+
+Φ2
+
+0,1587
+
+0,1328
+
+-0,1015
+
+0,4190
+
+Θ1
+
+-0,8678
+
+0,1572
+
+-1,1759
+
+-0,5596
+
+países e chegaram ao melhor coeficiente de determinação (R2) de 0,981,
+no entanto não é fácil parametrizar as redes neurais. O modelo de série
+temporal abordado neste trabalho resultou em um R2 de 0,974, o que é próximo aos melhores modelos analisados aplicando redes neurais artificiais.
+Quando existe característica sazonal na geração de RSU, de acordo
+com Xu et al. (2013), não é rentável dividir os recursos de gestão
+igualmente em cada mês. Então, o modelo proposto pode captar essa
+dinâmica com base nas informações de geração de resíduos mensais e
+
+A
+
+0,2
+
+B
+
+120
+
+Quantis da amostra
+
+Frequência
+
+0,1
+
+80
+60
+
+0
+
+-0,1
+
+40
+-0,2
+
+20
+0
+-0,4
+
+-0,2
+
+0,0
+
+0,2
+
+0,4
+
+-2
+
+Resíduos
+
+-1
+
+0
+
+1
+
+2
+
+Quantis teórico
+
+Figura 5 – Análise dos resíduos. (A) Histograma dos resíduos; (B) quartil-quartil plot dos resíduos.
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+543
+
+Merelles, L.R.O. et al.
+
+13.000
+12.000
+
+Resíduos sólidos
+
+11.000
+10.000
+9.000
+8.000
+7.000
+6.000
+5.000
+2004 2005
+
+2006
+
+2007
+
+2008 2009
+
+2010
+
+2011
+
+2012
+
+2013
+
+2014
+
+2015
+
+2016
+
+2017
+
+2018
+
+2019
+
+Tempo (meses)
+
+Figura 6 – Previsão de geração de resíduos sólidos urbanos para o aterro de Aparecida de Goiânia, Goiás.
+
+auxiliar o tomador de decisão a planejar, organizar e gerenciar a coleta
+dos resíduos e controlar os impactos ambientais.
+
+O modelo SARIMA ajustou-se bem às previsões, forneceu valores próximos à série observada, reproduzindo a periodicidade e a tendência detectadas na série. O modelo SARIMA aplicado apresentou
+performance próxima a outros modelos presentes na literatura inter-
+
+CONCLUSÕES
+Existem vários métodos para realizar a previsão de geração de RSU. A partir
+de 2010, essa análise tem se concentrado em análise de regressão, modelo
+de fluxo de materiais, sistemas de modelos dinâmicos, análise de séries
+temporais e modelos de inteligência artificial. Em Aparecida de Goiânia,
+Goiás, o modelo SARIMA foi proposto devido à sazonalidade ocorrida
+
+nacional, confirmando seu poder de predição.
+A previsão para a geração de RSU no aterro de Aparecida de Goiânia,
+em Goiás, não é mais de crescimento em 2018, predominando a redução de RSU. Essa tendência provavelmente vai continuar até ocorrer
+interferência governamental na economia.
+
+na série, que pode estar correlacionada a incentivos governamentais. Os
+fatores climáticos não estão associados à alteração na geração de RSU, mas
+acredita-se que exista uma variável em comum, nesse caso, o tempo. Em
+
+FONTE DE FINANCIAMENTO
+
+outras regiões onde o clima é mais definido pode ocorrer sua influência.
+
+Fundação de Amparo à Pesquisa do Estado de Goiás (FAPEG).
+
+REFERÊNCIAS
+ABBASI, M.; EL HANANDEH, A. (2016) Forecasting municipal solid waste
+generation using artificial intelligence modelling approaches. Waste
+Management, v. 56, p. 13-22. https://doi.org/10.1016/j.wasman.2016.05.018
+ABDOLI, A.M.; NEZHAD, M.F.; SEDE, R.S.; BEHBOUDIAN, S. (2012)
+Longterm forecasting of solid waste generation by the artificial
+neural networks. Environmental Progress & Sustainable Energy,
+v. 31, n. 4, p. 628-636. http://dx.doi.org/10.1002/ep.10591
+ADAMOVIĆ, V.M.; ANTANASIJEVIĆ, D.Z.; RISTIĆ, M.D.; PERIĆ-GRUJIĆ
+A.A.; POCAJT, V.V. (2017) Prediction of municipal solid waste
+generation using artificial neural network approach enhanced
+by structural break analysis. Environmental Science and Pollution
+Research, v. 24, n. 1, p. 299-311.
+
+544
+
+ANTANASIJEVIĆ, D.; POCAJT, V.; POPOVIC, I.; REDZIC, N.; RISTIC,
+M. (2013) The forecasting of municipal waste generation using
+artificial neural networks and sustainability indicators. Sustainability
+Science, v. 8, n. 1, p. 37-46. http://dx.doi.org/10.1007/s11625-012-0161-9
+ASSOCIAÇÃO BRASILEIRA DE EMPRESAS DE LIMPEZA
+PÚBLICA E RESÍDUOS ESPECIAIS (ABRELPE). (2014) Panorama.
+Associação Brasileira de Empresas de Limpeza Pública e Resíduos
+Especiais. Disponível em: <http://www.abrelpe.org.br/Panorama/
+panorama2014.pdf>. Acesso em: 12 mar. 2017.
+BEIGL, P.; LEBERSORGER, S.; SALHOFER, S. (2008) Modelling
+municipal solid waste generation: a review. Waste Management,
+v. 28, n. 1, p. 200-214. https://doi.org/10.1016/j.wasman.2006.12.011
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+Previsão de geração de resíduos sólidos
+
+COUTO, M.C.L.; LANGE, L.C. (2017) Análise dos sistemas de logística
+reversa no Brasil. Engenharia Sanitária & Ambiental, v. 22, n. 5,
+p. 889-898. http://dx.doi.org/10.1590/s1413-41522017149403
+DENAFAS, G.; RUZGAS, T.; MARTUZEVICIUS, D.; SHMARIN, S.;
+HOFFMANN, M.; MYKHAYLENKO, V.; OGORODNIK, S.; ROMANOV,
+M.; NEGULIAEVA, E.; CHUSOV, A.; TURKADZE, T.; BOCHOIDZE,
+I.; LUDWIG, I. (2014) Seasonal variation of municipal solid waste
+generation and composition in four East European cities.
+Resources Conservation and Recycling, v. 89, p. 22-30. http://dx.doi.
+org/10.1016/j.resconrec.2014.06.001
+
+KUMAR, J.S.; SUBBAIAH, K.V.; PRASADA-RAO, P.V.V. (2011) Prediction
+of Municipal Solid Waste with RBF Net Work-A Case Study of Eluru,
+AP, India. International Journal of Innovation, Management and
+Technology, v. 2, n. 3, p. 238-243. https://doi.org/10.7763/IJIMT.2011.V2.138
+MONTGOMERY, D.C.; JENNINGS, C.L.; KULAHCI, M. (2015)
+Introduction to time series analysis and forecasting. 2. ed. New
+Jersey: John Wiley & Sons.
+MORETTIN, P.A.; TOLOI, C.M. (2011) Análise de series temporais. 2.
+ed. São Paulo: Edgard Blücher. 538p.
+
+DIAS, D.M.; MARTINEZ, C.B.; BARROS, R.T.V.; LIBÂNIO, M. (2012)
+Modelo para estimativa da geração de resíduos sólidos domiciliares
+em centros urbanos a partir de variáveis socioeconômicas
+conjunturais. Engenharia Sanitária & Ambiental, v. 17, n. 3, p. 325-332.
+http://dx.doi.org/10.1590/S1413-41522012000300009
+
+MOR, S.; RAVINDRA, K.; VISSCHER, A.; DAHIYA, R.P.; CHANDRA, A.
+(2006) Municipal solid waste characterization and its assessment
+for potential methane generation: a case study. Science of the
+Total Environment, v. 371, n. 1-3, p. 1-10. https://doi.org/10.1016/j.
+scitotenv.2006.04.014
+
+DICKEY, D.A.; FULLER, W.A. (1979) Distribution of the estimators
+for autoregressive time series with a unit root. Journal of the
+American Statistical Association, v. 74, n. 366, p. 427-431. http://
+dx.doi.org/10.2307/2286348
+
+NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION
+(NOAA). Data access - NOAA. National Oceanic and Atmospheric
+Administration. Disponível em: <https://www.ncdc.noaa.gov/>.
+Acesso em: 12 mar. 2017.
+
+DICKEY, D.A.; FULLER, W.A. (1981) Likelihood ratio statistics for
+autoregressive time series a unit root. Econometrica, v. 49, n. 4,
+p. 1052-1072. http://dx.doi.org/10.2307/1912517
+
+R DEVELOPMENT CORE TEAM. (2016) R: A language and
+environment for statistical computing. Viena: R Foundation for
+Statistical Computing. Disponível em: <https://www.r-project.org/>.
+Acesso em: 12 mar. 2017.
+
+FERRARI, G.T.; OZAKI, V. (2014) Missing data imputation of climate
+datasets: Implications to modeling extreme drought events.
+Revista Brasileira de Meteorologia, v. 29, n. 1, p. 21-28. http://dx.doi.
+org/10.1590/S0102-77862014000100003
+GOMES, S.; WEIRICH NETO, P.H.; da SILVA, D.A.; ANTUNES, S.R.M.;
+ROCHA, C.H. (2017) Potencial energético dos resíduos sólidos
+domiciliares do município de ponta grossa, PR, Brasil. Engenharia
+Sanitária & Ambiental, v. 22, n. 6, p. 1197-1202. http://dx.doi.
+org/10.1590/s1413-41522017143432
+
+RIMAITYTĖ, I.; RUZGAS, T.; DENAFAS, G.; RACYS, V.; MARTUZEVICIUS,
+C. (2012) Application and evaluation of forecasting methods for
+municipal solid waste generation in an eastern-European city.
+Waste Management Research, v. 30, n. 1, p. 89-98. https://doi.
+org/10.1177/0734242X10396754
+TONJES, D.J.; GREENE, K.L. (2012) A review of national
+municipal solid waste generation assessments in the USA.
+Waste Management Research, v. 30, n. 8, p. 758-771. https://doi.
+org/10.1177%2F0734242X12451305
+
+HYNDMAN, R.J.; KHANDAKAR, Y. (2008) Automatic Time Series
+Forecasting: The forecast Package for R. Journal of Statistical
+Software, v. 27, n. 3, p. 1-22. http://dx.doi.org/10.18637/jss.v027.i03
+
+TSENG, F.M.; TZENG, G.H. (2002) A fuzzy seasonal ARIMA model
+for forecasting. Fuzzy Sets and Systems, v. 126, n. 3, p. 367-376.
+https://doi.org/10.1016/S0165-0114(01)00047-1
+
+INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE).
+Cidades@. Instituto Brasileiro de Geografia e Estatística. Disponível
+em: <http://cidades.ibge.gov.br/xtras/perfil.php?codmun=520140>.
+Acesso em: mar. 2017.
+
+VICENTE-SERRANO, S.M.; BEGUERÍA, S.; LÓPEZ-MORENO, J.I.;
+GARCÍA-VERA, M.A.; STEPANEK, P. (2010) A complete daily
+precipitation database for northeast Spain: reconstruction, quality
+control, and homogeneity. International Journal of Climatology, v.
+30, n. 8, p. 1146-1163. https://doi.org/10.1002/joc.1850
+
+INSTITUTO NACIONAL DE METEOROLOGIA (INMET). (2017)
+Banco de dados meteorológicos para ensino e pesquisa. Instituto
+Nacional de Meteorologia. Disponível em: <http://www.inmet.gov.
+br/portal/index.php?r=bdmep/bdmep>. Acesso em: 12 mar. 2017.
+KOLLIKKATHARA, N.; FENG, H.; YU, D. (2010) A system dynamic
+modeling approach for evaluating municipal solid waste
+generation, landfill capacity and related cost management issues.
+Waste Management, v. 30, n. 11, p. 2194-2203. https://doi.org/10.1016/j.
+wasman.2010.05.012
+
+XU, L.; GAO, P.; CUI, S.; LIU, C. (2013) A hybrid procedure for MSW
+generation forecasting at multiple time scales in Xiamen City, China.
+Waste Management, v. 33, n. 6, p. 1324-1331. https://doi.org/10.1016/j.
+wasman.2013.02.012
+ZHANG, L.; YUAN, Z.; BI, J.; HUANG, L. (2012) Estimating future
+generation of obsolete household appliances in China. Waste
+Management Research, v. 30, n. 11 p. 1160-1168. https://doi.
+org/10.1177%2F0734242X12441238
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+545
+
+Merelles, L.R.O. et al.
+
+Apêndice 1 – Previsão para geração de resíduos sólidos urbanos no aterro de Aparecida de Goiânia, Goiás.
+Tempo
+
+Média
+
+Lo 80%
+
+Lo 95%
+
+Hi 80%
+
+Hi 95%
+
+Ago-16
+
+7.982,2
+
+7.376,3
+
+7.055,6
+
+8.588,1
+
+8.908,8
+
+Set-16
+
+7.998,6
+
+7.265,9
+
+6.878,0
+
+8.731,4
+
+9.119,3
+
+Out-16
+
+7.866,0
+
+7.030,9
+
+6.588,8
+
+8.701,0
+
+9.143,1
+
+Nov-16
+
+8.106,1
+
+7.184,8
+
+6.697,1
+
+9.027,5
+
+9.515,2
+
+Dez-16
+
+11.243,4
+
+10.247,4
+
+9.720,1
+
+12.239,4
+
+12.766,6
+
+Jan-17
+
+11.805,7
+
+10.744,0
+
+10.182,0
+
+12.867,4
+
+13.429,4
+
+Fev-17
+
+9.674,4
+
+8.554,2
+
+7.961,2
+
+10.794,6
+
+11.387,7
+
+Mar-17
+
+9.834,8
+
+8.662,0
+
+8.041,2
+
+11.007,7
+
+11.628,5
+
+Abr-17
+
+8.610,4
+
+7.390,0
+
+6.743,9
+
+9.830,9
+
+10.476,9
+
+Maio-17
+
+8.947,4
+
+7.683,6
+
+7.014,6
+
+10.211,2
+
+10.880,2
+
+Jun-17
+
+7.993,6
+
+6.690,2
+
+6.000,3
+
+9.297,0
+
+9.987,0
+
+Jul-17
+
+7.962,6
+
+6.622,9
+
+5.913,7
+
+9.302,3
+
+10.011,5
+
+Ago-17
+
+8.067,5
+
+6.673,9
+
+5.936,2
+
+9.461,0
+
+10.198,7
+
+Set-17
+
+8.084,8
+
+6.648,3
+
+5.887,9
+
+9.521,3
+
+10.281,7
+
+Out-17
+
+7.951,2
+
+6.475,3
+
+5.693,9
+
+9.427,1
+
+10.208,4
+
+Nov-17
+
+8.195,1
+
+6.682,9
+
+5.882,4
+
+9.707,4
+
+10.507,9
+
+Dez-17
+
+11.372,9
+
+9.827,1
+
+9.008,8
+
+12.918,6
+
+13.736,9
+
+Jan-18
+
+11.337,7
+
+9.761,0
+
+8.926,3
+
+12.914,5
+
+13.749,1
+
+Fev-18
+
+9.520,0
+
+7.914,6
+
+7.064,7
+
+11.125,5
+
+11.975,4
+
+Mar-18
+
+9.740,4
+
+8.108,3
+
+7.244,2
+
+11.372,6
+
+12.236,6
+
+Abr-18
+
+8.454,5
+
+6.797,6
+
+5.920,5
+
+10.111,5
+
+10.988,6
+
+Maio-18
+
+8.779,2
+
+7.099,2
+
+6.209,8
+
+10.459,3
+
+11.348,6
+
+Jun-18
+
+7.914,6
+
+6.213,0
+
+5.312,3
+
+9.616,2
+
+10.516,9
+
+Jul-18
+
+7.855,1
+
+6.133,5
+
+5.222,1
+
+9.576,8
+
+10.488,2
+
+Lo: limite inferior; Hi: limite superior.
+
+© 2019 Associação Brasileira de Engenharia Sanitária e Ambiental
+Este é um artigo de acesso aberto distribuído nos termos de licença Creative Commons.
+
+546
+
+Eng Sanit Ambient | v.24 n.3 | maio/jun 2019 | 537-546
+
+

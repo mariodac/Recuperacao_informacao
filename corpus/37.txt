@@ -1,0 +1,1609 @@
+346
+
+REVISÃO
+
+Possibilidades terapêuticas e risco toxicológico de Jatropha gossypiifolia L.: uma
+revisão narrativa
+MARIZ, S.R.1*; BORGES, A.C.R. 2; MELO-DINIZ, M.F.F. 3; MEDEIROS, I.A.3
+1
+Unidade Acadêmica de Medicina, Universidade Federal de Campinha Grande (UFCG), Avenida Juvêncio
+Arruda, 795, Bodocongó, CEP: 58.109-790, Campina Grande-Brasil *sjmariz22@hotmail.com 2Departamento
+de Ciências Fisiológicas, Universidade Federal do Maranhão (UFMA), Avenida dos Portugueses, s/n, Campus
+Universitário do Bacanga, CEP: 65080-040, São Luís-Brasil 3Departamento de Farmácia, Universidade Federal
+da Paraíba (UFPB). Campus I, CEP: 58.051-970, João Pessoa-Brasil
+
+RESUMO: A espécie Jatropha gossypiifolia L. (Euphorbiaceae), popularmente conhecida como
+pião-roxo, entre tantos outros nomes, é um bom exemplo do tênue limiar que separa o efeito
+terapêutico do tóxico. Apesar de ser classicamente conhecida como planta tóxica possui usos
+na medicina popular. Alguns desses efeitos têm sido comprovados em estudos experimentais,
+como os de antimicrobiano, antineoplásico, cicatrizante e hipotensor, sendo possivelmente
+explicados pela presença de substâncias como alcalóides, terpenóides, flavonóides, lignanas e
+taninos. Esta revisão aborda aspectos importantes, com ênfase na toxicidade crônica dessa
+espécie, de modo a servir de fonte de informação aos interessados em avaliar a relação risco/
+benefício do uso terapêutico de Jatropha gossypiifolia L.
+Palavras-chave: Jatropha gossypiifolia L., Euphorbiaceae, farmacologia, toxicologia
+
+ABSTRACT: Therapeutic possibilities and toxicological risk of Jatropha gossypiifolia L.: a
+narrative review. The species Jatropha gossypiifolia L. (Euphorbiaceae), popularly known as
+bellyache bush, among several other names, is an important example of the tenuous threshold
+that separates the therapeutic from the toxic effect. Although traditionally known as a toxic plant,
+it has been used in folk medicine. Some of its effects have been proved by experimental studies
+as antimicrobial, antineoplastic, healing and hypotensive, likely explained by the presence of
+substances such as alkaloids, terpenoids, flavonoids, lignans and tannins. This review deals with
+important aspects, focusing on the chronic toxicity of this species, in order to serve as an information
+source for those interested in evaluating the risk-benefit ratio of the therapeutic use of Jatropha
+gossypiifolia L.
+Key words: Jatropha gossypiifolia L., Euphorbiaceae, pharmacology, toxicology
+
+INTRODUÇÃO
+A pesquisa relacionada às plantas medicinais
+com vistas ao desenvolvimento de medicamentos
+f itoterápicos é atividade multiprof issional e
+interdisciplinar que pode melhorar a qualidade de vida
+das populações mais carentes. Isso se dá pela
+colaboração com o desenvolvimento de produtos de
+qualidade maior e com a divulgação de informações
+científicas que possibilitem o uso racional de
+fitomedicamentos e plantas medicinais (Brasil, 1998;
+Rezende & Ribeiro, 2005).
+A necessidade desse tipo de estudo é
+evidente. Apesar da grande tendência mundial de
+aumento na utilização de produtos fitoterápicos, o
+
+número de informações sobre plantas no Brasil, país
+com a maior biodiversidade do mundo, tem crescido
+apenas 8% ao ano nas últimas duas décadas (Brasil,
+1998; Rezende & Ribeiro, 2005; Mariz et al., 2006).
+O uso elevado de plantas medicinais pela
+população brasileira ocorre devido à imensa variedade
+de espécies vegetais com potencial terapêutico
+existentes em nosso território, além do custo dessa
+prática ser relativamente baixo e, até mesmo, por
+questões culturais (Oliveira et al., 2006; Mariz, 2007).
+Esse uso tem percorrido longa trajetória
+histórica, sempre na tênue linha divisória entre o bem
+e o mal, ou seja, entre a restauração da saúde e o
+
+Recebido para publicação em 11/03/2008
+Aceito para publicação em 05/05/2010
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+347
+
+surgimento de efeitos colaterais e/ou adversos. Isso
+talvez ocorra, principalmente, pelo fato de que o uso
+“terapêutico” de plantas e derivados se expandiram
+pelo inconsciente coletivo popular como algo
+inofensivo seguindo a máxima “se é natural, não faz
+mal”. Pensamento esse, incoerente com os registros
+de intoxicação humana por plantas, inclusive por
+aquelas usadas como medicinais (Lai et al., 2006;
+SINITOX, 2010).
+A Jatropha gossypiifolia L. é típico exemplo
+desse duplo aspecto (terapêutico/tóxico) que
+possuem certos produtos com atividade biológica.
+Essa planta pode ser encontrada em obras de
+referência como espécie vegetal de alta toxicidade.
+No entanto, existem relatos de uso na medicina
+popular de produtos dela originados, sendo que
+algumas dessas propriedades têm sido comprovadas,
+ao longo dos anos, através de estudos experimentais,
+inclusive químicos e farmacológicos (Tabelas 1 e 3).
+Porém, estudos toxicológicos realizados com
+preparações oriundas de Jatropha gossypiifolia L.
+apresentam resultados que apontam para significativa
+toxicidade da espécie, sobretudo, quando tais
+preparações são usadas por tempo prolongado
+(Mariz, 2007), conforme explicitado adiante.
+Esse artigo apresenta revisão de literatura
+científica sobre a espécie Jatropha gossypiifolia
+referente aos principais aspectos de interesse para o
+desenvolvimento de medicamentos fitoterápicos e
+promoção do uso racional de plantas medicinais.
+Destacam-se aspectos botânicos, químicos,
+farmacológicos e toxicológicos, de modo a apresentar
+fonte de informação atualizada aos interessados em
+desenvolver pesquisas que ajudem na complexa
+avaliação da relação risco/benefício do uso terapêutico
+de Jatropha gossypiifolia e, consequentemente, a
+promoção do uso racional dessa planta (e de
+derivados) na medicina popular.
+Aspectos botânicos
+A espécie Jatropha gossypiifolia L. pertence
+à família Euphorbiaceae; gênero Jatropha; subgênero
+Jatropha; secção Jatropha e subsecção Adenophorae.
+O gênero Jatropha é morfologicamente diverso
+possuindo de 165 a 175 espécies distribuídas por países
+de climas tropical, subtropical e tropical seco. Possui
+dois subgêneros, o Jatropha e o Curcas, 10 seções e
+10 subseções. O subgênero Jatropha é o mais
+amplamente distribuído possuindo espécies na África,
+Índia, América do Sul, Antilhas, América Central e
+Caribe. Esse gênero tem grande importância
+econômica, pois várias das espécies, como Jatropha
+gossypiifolia L., possuem além do emprego medicinal,
+o uso ornamental, inclusive como cercas-vivas, graças
+à propagação fácil das sementes (Olowokudejo, 1993;
+Silva, 1998; Leal & Agra, 2005; Vera et al., 2009).
+Essa espécie (Jatropha gossypiifolia) em
+
+nosso país é mais conhecida popularmente como piãoroxo, mas possui outros nomes comuns no Brasil e
+pelo mundo afora. Ainda convém ressaltar as diferentes
+grafias do nome científico dessa espécie, como
+Jatropha gossipifolia L.; Jatropha gossipyfolia L.;
+Jatropha gossypifollia L.; Jatropha gossypyfolia L.;
+Jatropha gossypifolia L. e Jatropha gossypiifolia L.,
+sendo as duas últimas as mais comumente usadas
+(Mariz, 2007).
+A Jatropha gossypiifolia apresenta-se como
+árvore de folhas alternas, revestidas de pelos,
+grandes, com partes lobadas. As flores são roxas,
+dispostas em cimeiras paniculadas, os frutos são
+pequenos (1 cm de comprimento) e capsulares
+contendo de 1 a 3 sementes escuras com pintas pretas
+e ricas em óleo (Corrêa, 1984; Schvartsman, 1992).
+Atrav és da microscopia eletrônica,
+Olowokudejo (1993) apresenta estudo comparativo da
+epiderme de folha de espécies de Jatropha como forma
+de contribuição para diferenciação taxonômica dentro
+do gênero. Segundo o referido trabalho, as folhas de
+Jatropha gossypiifolia sempre possuem cera, em pelo
+menos uma das superfícies (abaxial ou adaxial) sem a
+presença de sulcos. Existem estômatos paracíticos
+e/ou braquiparacíticos nas duas superfícies da folha.
+Tais estômatos possuem bordas cuticulares grossas.
+Ainda na epiderme, percebe-se a presença de pelos
+uniseriados e glândulas alongadas.
+Em função da finalidade de cada estudo, o
+período de coleta relatado é bastante variado.
+Contudo, o mais frequentemente citado é o
+correspondente aos meses do segundo semestre,
+principalmente de agosto a novembro (Adewunmi &
+Adesogan, 1986; Das et al., 1996a; 1996b; Das &
+Kashinatam, 1997; Das & Anjani, 1999; Mariz, 2007),
+mas também, em meses do primeiro semestre, como
+por exemplo, maio (Adewunmi & Marquis, 1983;
+Prasad et al., 1993; Awachie & Ugwu, 1997). Ainda
+existem relatos de coleta de partes da planta entre
+os meses de dezembro e janeiro (Taylor et al., 1996)
+e ao longo de todo o ano (Carbajal et al., 1991;
+Chariandy et al., 1999).
+Outro aspecto interessante é destacado pelos
+estudos de Bebawi & Campbell (2002), mostrando
+que o uso de queimadas, em áreas para cultivo onde
+a espécie é considerada como erva daninha, pode
+causar grave prejuízo no banco residual de sementes
+dessa planta, considerando-se a correlação negativa
+dos picos de temperatura tanto com a germinação
+quanto com a viabilidade de sementes.
+Aspectos químicos
+Vários estudos realizados nas últimas
+décadas atrav és de técnicas div ersas como
+cromatograf ia, espectroscopia, ressonância
+magnética nuclear, entre outras, têm contribuído
+significativamente para identificação qualitativa e
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+348
+
+quantitativa da diversificada composição química de
+Jatropha gossypiifolia e consequentemente, para a
+compreensão dos efeitos biológicos dessa espécie
+(Mariz, 2007). De um modo geral, é possível afirmar
+que os exemplares dessa planta possuem ácidos
+orgânicos, alcalóides, terpenóides, esteróides,
+flavonóides, lignanas e taninos (Tabela 1).
+A extração dos constituintes químicos de
+Jatropha gossypiifolia tem sido realizada de formas
+
+diferentes de acordo com a finalidade do estudo. O
+principal solvente extrator empregado é o etanol;
+entretanto, outros trabalhos apresentam substâncias
+diversas isoladas ou em misturas, tais como, acetato
+de etila; água destilada; água, etanol e acetato de
+etila; clorofórmio e metanol; etanol e acetona; éter
+de petróleo; éter de petróleo e clorofórmio; éter
+dietílico; hexano; hexano e etanol; metanol e ainda,
+metanol e butanol (Tabela 1).
+
+TABELA 1. Principais constituintes químicos de Jatropha gossypiifolia, com respectivos solventes extratores e
+partes vegetais.
+Grupo
+
+Ácidos
+graxos
+
+Açúcares
+
+Substância
+Ácido araquídico
+Ácido araquidônico
+Ácido beênico
+
+Parte vegetal
+
+Ácido caprílico
+
+Sementes
+
+Ácido esteárico
+
+Sementes
+
+Ácido lignocérico
+Ácido linoleico
+Ácido mirístico
+
+Sementes
+
+Éter de petróleo
+Éter de petróleo
+-
+
+Sementes
+
+-
+
+Ácido oleico
+
+Sementes
+
+Ácido palmítico
+
+Sementes
+
+Ácido palmitoleico
+Ácido ricinoleico
+
+Sementes
+Sementes
+
+Ácido vernólico
+
+Sementes
+
+Éter de petróleo
+Éter de petróleo
+Éter de petróleo
+-
+
+Arabinose
+Ramnose
+Xilose
+Jatrofina
+(Jatrophine)
+
+Sementes
+
+-
+
+Folhas
+Raiz
+
+Água
+
+Folhas
+
+Água
+Clorofórmio e
+metanol
+
+Sementes
+Látex
+
+Éter de petróleo
+-
+
+-
+
+Aminoácidos
+
+-
+
+Sementes
+
+Alcalóides
+
+Ácido aspártico
+Ácido glutámico
+Alanita
+Arginina
+Cistina
+Glicina
+Isoleucina
+Leucina
+Metionina
+Prolina
+Treonina
+Valina
+
+Solvente extrator Referência
+Matos (2004).
+Ogbobe & Akano (1993).
+Matos (2004).
+Ogbobe & Akano (1993);Matos (2004).
+Matos (2004).
+Prasad et al.(1993);Matos (2004).
+Ogbobe & Akano (1993).
+Matos (2004).
+Ogbobe & Akano (1993).
+Matos (2004).
+Matos (2004).
+Hosamani & Katagi (2008).
+Ogbobe & Akano (1993).
+Matos (2004).
+Prasad et al. (1993); Matos (2004).
+Gupta et al. (1979).
+Morton (1968).
+Coe & Anderson (1996a); Gupta et al. (1979).
+Coe & Anderson (1996b).
+Ogbobe & Akano (1993).
+Matos (2004).
+
+Prasad et al. (1993); Matos (2004).
+
+Matos (2004).
+Sementes
+
+Prasad et al. (1993); Matos (2004).
+Matos (2004).
+Prasad et al. (1993); Matos (2004).
+
+continua...
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+349
+
+TABELA 1. Principais constituintes químicos de Jatropha gossypiifolia, com respectivos solventes extratores e
+partes vegetais.
+...continuação
+Grupo
+
+Cumarinas
+
+Parte vegetal
+
+Substância
+Cleomiscosina A
+(Cleomiscosin A)
+Cumarina
+(7,8-dihidróxi-6metóxi-cumarina)
+Fraxetina
+Propacina
+(Propacin)
+Jatrofenona
+(Jatrophenone)
+Jatrofolona A
+(Jatropholone A)
+
+Diterpenos
+
+Jatrofolona B
+(Jatropholone B)
+Jatrofona
+2-OH-Jatrofona
+2-OH-Jatrofona
+2-OH-5,6Isojatrofona
+
+Caule
+
+Hexano-Etanol
+
+Das et al. (2003).
+
+Raiz
+
+Acetato de etila
+
+Das & Kashinatan (1997).
+
+Toda a planta
+
+Clorofórmio e
+metanol
+
+Das & Venkataiah (2001).
+
+Toda a planta
+
+Clorofórmio e
+metanol
+
+Ravindranath et al. (2003).
+
+Raiz e folhas
+Raiz
+Raiz e Folhas
+Raiz
+Raiz
+Raiz
+Toda a planta
+
+Etanol
+Etanol
+Acetato de etila
+Etanol
+-
+
+Raiz
+
+Caules e Folhas
+
+Etanol
+
+Abreu et al. (2003); Mariz et al. (2006); Mariz (2007).
+
+Raízes
+
+Acetato de etila
+
+Toda a planta
+
+-
+
+Raízes, caules e
+sementes
+Toda a planta
+
+Éter de petróleo
+
+Caule
+
+Hexano
+
+Partes aéreas
+Toda a planta
+Caule
+
+Éter de pretróleo
+Éter de petróleo
+
+Toda a planta
+
+-
+
+Fenóis
+
+-
+
+Fibras
+
+-
+
+Sementes
+
+Fitotoxinas
+
+-
+
+Folhas
+
+Apigenina
+
+Folhas
+
+Ácido ferúlico
+2,3-bis(hidroximetil)-6,7metilenodioxi-1(3’4’-dimetoxifenil)naftaleno
+Diidroprasantalina
+
+Gossypidieno
+(Gossypidien)
+Gossipifana
+(Gossypifan)
+Isogadaína
+
+Éter de petróleo e
+Taylor et al. (1983).
+clorofórmio
+Abreu et al. (2003); Mariz et al. (2006); Mariz (2007).
+Matos (2004).
+Abreu et al. (2003).
+Matos (2004).
+Ogbobe & Akano (1993).
+Matos (2004).
+Gupta et al. (1979).
+Subramanian et al. (1971).
+Matos (2004).
+
+-
+
+Flavonóides
+
+Adesina (1982); Matos (2004).
+Purushothaman & Chadrasekharan (1979).
+Adesina (1982); Matos (2004).
+Das & Kashinatam (1997).
+Purushothaman & Chadrasekharan (1979).
+Kupchan et al. (1976).
+Matos (2004).
+
+Etanol
+Etanol
+Éter de petróleo
+Água
+Etanol
+-
+
+Caules e Folhas
+Folhas
+Caules e Folhas
+Látex
+
+Esteróides
+
+Gadaína
+
+Solvente extrator Referência
+
+-
+
+Das & Kashinatan (1997).
+
+Matos (2004).
+
+Banerji et al. (1984).
+Matos (2004).
+Das & Anjani (1999).
+Das & Das (1995).
+Matos (2004).
+Das et al. (1996a); Das et al (1996b).
+Matos (2004).
+
+continua...
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+350
+
+TABELA 1. Principais constituintes químicos de Jatropha gossypiifolia, com respectivos solventes extratores e
+partes vegetais.
+...continuação
+Grupo
+
+Parte vegetal
+
+Substância
+Isovitexina
+Vitexina
+
+Folhas
+
+Jatrodieno
+
+Lignanas
+
+Jatrofana
+(Jatrophan)
+Jatrofatriona
+Lignana aril
+naftaleno
+2-Piperonilideno3-veritril-3R-ybutirolactona
+
+Caule
+Toda a planta
+Caule, raiz e
+sementes
+Raiz
+Caule, raiz e
+sementes
+
+Solvente extrator Referência
+Etanol
+Éter de petróleo
+-
+
+Subramanian et al. (1971).
+Matos (2004).
+Das et al. (1996a); Das et al. (1996b).
+Matos (2004).
+
+Éter de petróleo
+
+Chatterjee et al. (1981).
+
+Etanol
+Éter de petróleo
+
+Matos (2004).
+Das & Banerji (1988).
+
+Matos (2004).
+
+Toda a planta
+
+-
+
+Prasantalina
+
+Partes aéreas
+Toda a planta
+
+Éter de petróleo
+-
+
+Tetradecil ferrulato
+(Tetradecyl (E)ferulate)
+
+Raízes
+-
+
+Etanol
+-
+
+Raiz e folhas
+
+Látex
+
+Etanol
+Água
+Éter de petróleo
+-
+
+Sementes
+
+-
+
+Sementes
+
+Água
+
+Sementes
+
+-
+
+Prasad et al. (1993).
+
+Cicloglossina A
+
+Látex
+
+Água, etanol e
+acetato de etila
+
+Horsten et al. (1996).
+
+Cicloglossina B
+
+Látex
+-
+
+-
+
+-
+
+Sementes
+
+Saponinas
+
+-
+
+Sementes
+
+Taninos
+
+-
+
+Raiz e folhas
+Folhas
+
+Éter de petróleo
+Éter de petróleo
+Etanol e Butanol
+Etanol
+Água
+
+Caules e Folhas
+
+Etanol
+
+Folhas
+Caules e Folhas
+Folhas
+
+Etanol
+Etanol
+-
+
+Óleos
+
+Outros
+
+-
+
+Sementes
+
+Ácido ascórbico
+Amirina
+(-Amyrin)
+Forbol
+(12-dióxi,
+16hidróxiforbol)
+Sitosterol (Sitosterol)
+
+Proteínas
+
+Triterpenóides
+
+-
+
+Chatterjee et al. (1988).
+Matos (2004).
+Das & Kashinatham (1997).
+Kavitha et al. (1999).
+Adesina (1982).
+Adolf et al. (1984).
+Ogbobe & Akano (1993).
+Matos (2004).
+Matos (2004).
+Prasad et al. (1993).
+
+Adolf et al. (1984).
+
+Matos (2004).
+Matos (2004).
+Auvin-Guette et al. (1997).
+Ogbobe & Akano (1993).
+Matos (2004).
+Ogbobe & Akano (1993).
+Sukumaran et al. (1995).
+Matos (2004).
+Adesina (1982).
+Gupta et al (1979).
+Abreu et al. (2003).
+Mariz et al. (2006); Mariz (2007).
+Tinto & John (1992).
+Abreu et al. (2003).
+Matos (2004).
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+351
+
+O principal constituinte ativo do pião-roxo é
+o diterpeno chamado jatrofona, cujas propriedades
+químicas e físicas já foram bem investigadas (Matos,
+2004). A Tabela 1 relaciona, além desse, outros
+constituintes importantes de Jatropha gossypiifolia
+identificados até o momento, sendo que, em alguns
+trabalhos também existe o relato acerca do órgão
+vegetal onde foram identificados tais constituintes, e
+ainda, o(s) solvente(s) empregado(s) na extração
+(Mariz, 2007).
+Etnofarmacologia e outros usos populares
+A utilização de plantas na terapêutica,
+enquanto elemento cul tural de um pov o é
+importante fonte preliminar de informação na
+pesquisa com v istas ao desenv olv imento e
+promoção do uso racional de fitoterápicos (Mariz,
+2007).
+As espécies do gênero Jatropha vêm
+sendo utilizadas popularmente, ao longo dos anos,
+no tratamento de males diversos (Mariz, 2007). A
+Jatropha gossypiifolia, apesar de ter alta toxicidade
+principalmente devido às propriedades cáusticas
+e inflamatórias de algumas das partes, como por
+exemplo, o látex (Correa, 1984), também possui
+ampla variedade de indicações terapêuticas na
+medicina popular, algumas destas relacionadas na
+Tabela 2.
+Outros usos dessa espécie vegetal, além dos
+terapêuticos, são citados na literatura. É fato a
+utilidade ornamental da planta devido à coloração
+arroxeada das folhas (Matos, 2004). Também são
+comuns os relatos de que preparados de Jatropha
+gossypiifolia seriam úteis em rituais religiosos contra
+os maus espíritos ou para a população em geral com
+finalidades místicas diversas, como a crença de que
+seria uma das plantas que protegem caçadores e
+cães de caça de venenos animais (Camargo, 1998;
+Lans et al., 2001). Ainda destaca-se o cultivo desta
+planta em sequência para a construção de cercasvivas contra incêndios e relâmpagos e a fixação de
+dunas (Lorenzi & Matos, 2002; Matos, 2004). Outros
+benefícios para o ser humano seriam o uso, por
+algumas populações, como inseticida (Sievers et al.,
+1949); o emprego do óleo da semente tanto na
+preparação de tintas e sabões quanto como
+lubrificante e combustível para motores tipo Diesel
+(Lorenzi & Matos, 2002; Matos, 2004) e, ainda, na
+iluminação (Lorenzi & Matos, 2002; Matos, 2004).
+Efeitos biológicos estudados
+A avaliação experimental dos efeitos
+biológicos de espécie vegetal, geralmente se
+desenvolve a partir dos relatos populares de utilização
+ou com base em outros estudos feitos em espécies
+do mesmo gênero. Quanto à Jatropha gossypiifolia,
+há algum tempo, algumas das propriedades
+
+terapêuticas já vêm sendo avaliadas. A Tabela 3
+resume alguns dados a respeito de estudos que
+demonstram alguns dos efeitos biológicos do piãoroxo.
+Apesar de todas as perspectivas de efeitos
+prev entiv os e/ou terapêuticos de Jatropha
+gossypiifolia, convém ressaltar que a validação do
+emprego de uma espécie vegetal na terapêutica não
+pode se dar apenas pela demonstração da atividade
+e eficácia. Há que se considerar, prioritariamente, a
+possibilidade de efeitos tóxicos, principalmente com
+relação a essa espécie, devido à reconhecida
+toxicidade, pois o látex é cáustico para pele e
+mucosas (Schvartsman, 1992; Mariz, 2007).
+De um modo geral, a ingestão de partes do
+vegetal pode produzir efeitos purgativos e depressores
+dos sistemas respiratório e cardiovascular. Na
+intoxicação surgem, inicialmente, distúrbios do
+sistema digestório, acompanhados por dores
+intensas, desidratação, insuficiência renal e agravo
+cardiovascular. A evolução do quadro traz danos
+neurológicos, inclusive com torpor e possibilidade de
+coma e morte (Adolf et al., 1984; Guirola et al., 1992;
+Schvartsman, 1992; Mariz, 2007).
+No entanto, devemos considerar que na
+terapêutica popular, as partes das plantas medicinais
+raramente são usadas in natura, mas sim, sob forma
+de preparações diversas como, por exemplo, chás,
+inf usos e decoctos. Para obtenção dessas
+preparações as partes v egetais podem ser
+submetidas a processos tais como dessecação,
+trituração e maceração o que, muito provavelmente,
+irá alterar a composição química original do órgão
+vegetal utilizado, possibilitando a eliminação de
+constituintes tóxicos e a obtenção de produto menos
+prejudicial ou, até mesmo, relativamente inócuo, em
+relação à planta in natura.
+Desse modo, convém destacar alguns dos
+estudos sobre avaliação de toxicidade com extratos
+de Jatropha gossypiifolia. Inicialmente GasperiCampani et al. (1980) demonstraram que o extrato
+etéreo de sementes de Jatropha gossypiifolia
+possuiria baixa toxicidade demonstrada pela fraca
+inibição da síntese protéica em reticulócitos de coelho.
+Ainda nesse sentido, estudos de avaliação de toxicidade
+in vitro, usando-se larva de camarão (Artemia salina
+Leach) e testando extratos de 41 espécies de
+Euforbiáceas, evidenciaram que os extratos etanólico
+e metanólico de Jatropha gossypiifolia apresentaram
+baixa toxicidade indicada por uma concentração letal
+mediana (CL50) superior a 1.000 g mL-1, para a referida
+espécie animal (Meyer et al., 1982; Awachie & Ugnu,
+1997). Rocha et al. (1995) relataram que o tratamento
+de ratos com o extrato etanólico de partes aéreas da
+planta por 30 dias (avaliação subcrônica) não produziu
+alterações bioquímicas e/ou hematológicas
+significativas nesses animais.
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+352
+
+TABELA 2. Relação dos usos de Jatropha gossypiifolia na medicina popular.
+Uso popular
+
+Referência
+
+Anticonvulsivante
+
+Adesina (1982).
+
+Antidiabético
+
+Coe & Anderson (1996a); Coe & Anderson (1996b); Obatomi et al. (1994).
+
+Antidiarréico
+
+Coe & Anderson (1996a); Coe & Anderson (1996b); Costa et al. (2001); Vale et al. (2006).
+
+Anti-helmíntico
+
+Gupta et al. (1979); Joshi (1991); Olowkudejo (1993).
+
+Anti-hemorrágico
+
+Coe & Anderson (1996a); Coe & Anderson (1996b); Matos (2004).
+
+Anti-hipertensivo
+
+Abreu et al. (2003); Matos (2004); Aquino et al. (2006); Santos et al. (2006); Vale et al. (2006).
+
+Antimicrobiano
+
+Macrae et al. (1988); Bhat et al. (1990); Barrett (1994); Coe & Anderson (1996a); Coe & Anderson
+(1996b); Awachi & Ugnu (1997); Chariandy et al. (1999); Kumar et al. (2006).
+
+Antiinflamatório
+
+Le Grand & Wondergem (1987); Coe & Anderson (1996a); Coe & Anderson (1996b); Kumar et
+al. (2006); Santos et al. (2006); Servin et al. (2006).
+
+Antitérmico
+
+Adesina (1982); Santos et al. (2006).
+
+Antiviral
+
+Taylor et al. (1996) ; Santos et al. (2006).
+
+Broncodilatador
+
+Carbajal et al. (1991).
+
+Câncer (tratamento)
+
+Kupchan et al. (1976); Gupta et al. (1979); Macrae et al. (1988); Taylor et al. (1996).
+
+Cicatrizante
+
+Le Grand (1989); Coe & Anderson (1996a); Coe & Anderson (1996b); Matos (2004); Aquino et
+al. (2006); Maia et al. (2006); Santos et al. (2006); Vale et al. (2006).
+
+Cólicas (tratamento)
+
+Barrett (1994).
+
+Depurativo
+
+Gupta et al. (1979).
+
+Dermatológico
+(tratamento de lesões)
+
+Ajose (2007).
+
+Digestivo, purgativo e laxativo
+
+Gupta et al. (1979); Macrae et al. (1988); Barret (1994); Coe & Anderson (1996a); Coe &
+Anderson (1996b); Matos (2004); Aquino et al. (2006).
+
+Diurético
+
+Matos (2004); Aquino et al. (2006); Vale et al. (2006).
+
+Dores de estômago
+e abdominais (tratamento);
+Edema (tratamento).
+
+Weniger et al. (1986).
+
+Emenagogo
+
+Saha et al. (1961)
+
+Emético
+
+Barret (1994).
+
+Fluxo menstrual
+irregular (tratamento)
+
+Bhat et al. (1990).
+
+Imunomodulador
+
+Vale et al. (2006).
+
+Reumatismo (tratamento)
+
+Matos (2004); Santos et al. (2006); Vale et al. (2006).
+
+Vermífugo
+
+Adesina (1982).
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+353
+
+TABELA 3. Estudos sobre efeitos biológicos de Jatropha gossypiifolia L.
+Efeito biológico
+
+Parte vegetal
+
+Solvente extrator
+
+Referência
+
+Antimalárico
+
+Folhas
+
+Água
+
+Gbeassor et al. (1989).
+
+Folhas
+
+Diclorometano e metanol (1:1)
+
+Kumar et al. (2006).
+
+Folhas
+
+Etanol
+
+Awaiche & Ugnu, (1997).
+
+Folhas
+
+Água
+
+Nair et al. (2007).
+
+-
+
+-
+
+Dabur et al. (2007).
+
+Raiz
+
+Clorofórmio
+
+Taylor et al. (1983).
+
+Etanol
+
+Kupchan et al. (1976); Matos (2004).
+
+Metanol
+
+Macrae et al. (1988); Taylor et al. (1996).
+
+Antimicrobiano
+
+Antitumoral e
+Antineoplásico
+Antiviral
+
+Folha e caule
+Córtex
+
+Aquino et al. (2006); Maia et al. (2006); Santos et
+Cicatrizante
+
+Folha e caule
+
+Etanol
+
+Hipotensor
+
+Folha e caule
+
+Etanol
+
+Abreu et al. (2003).
+
+Folhas
+
+-
+
+Phowichit et al. (2008).
+
+Inseticida
+Larvicida
+
+al. (2006); Servin et al. (2006); Vale et al. (2006).
+
+Acetato de etila, acetona, éter
+
+-
+
+de petróleo, hexano e metanol.
+
+(combate a vetores)
+
+Abdul et al. (2008).
+Adewunmi & Marquis (1980); Adewunmi &
+
+Etanol ou Metanol
+
+Fruto
+
+& Adesogan (1986); Adewunmi & Marquis
+
+Moluscicida
+
+(1987a); Adewunmi & Marquis (1987b).
+
+(combate a vetores)
+Látex
+
+Água
+
+Singh & Agarwal (1988); Matos (2004).
+
+Sementes
+
+Metanol e n-Butanol
+
+Sukumaran et al. (1995).
+
+Raiz e folhas
+
+-
+
+Adesina (1982).
+
+Sementes
+
+Éter
+
+Gasperi-Campani et al. (1980).
+
+Sementes
+
+Etanol
+
+Meyer et al. (1982).
+
+Sementes
+
+Água
+
+Adolf et al. (1984).
+
+-
+
+-
+
+Hecker (1984).
+
+Fruto
+
+-
+
+Guirola et al. (1992).
+
+Folha e caule
+
+Etanol
+
+Rocha et al. (1995).
+
+Folha
+
+Etanol
+
+Awachie & Ugnu (1997).
+
+-
+
+-
+
+Norhanoma & Yadav (1995).
+
+Látex
+
+Água
+
+Singh & Singh (2005).
+
+Folhas
+
+-
+
+Siriarcharungroj et al. (2008).
+
+Folha e caule
+
+Etanol
+
+Mariz et al. (2006); Mariz (2007); Mariz et al. (2008).
+
+Sedativo e
+antileptazol
+
+Toxicidade
+
+Marquis (1983); Adewunmi (1984); Adewunmi
+
+Entretanto, outros estudos que apresentam
+indícios de toxicidade de extratos orgânicos dessa
+planta, merecem destaque. Devido à presença de
+compostos com ação repelente de insetos, essa
+espécie foi avaliada quanto ao potencial de toxicidade
+ambiental apresentando concentração letal mediana
+
+(CL50) de 3.100 PPM em bioensaio com Poecilia
+reticulata, todavia sem mortalidade mesmo na
+concentração máxima (Siriarcharungroj et al., 2008).
+Há algum tempo, a suspeita de carcinogenicidade
+da J. gossypiifolia tem sido levantada não somente
+por essa espécie conter substâncias conhecidas
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+354
+
+como “fatores jatropha”, mas também por estar entre
+as mais usadas por populações com alta prevalência
+de neoplasias. Isso justificaria a investigação do poder
+carcinogênico da espécie (Hecker, 1984; Norhanoma
+& Yadav, 1995). Singh & Singh (2005) demonstraram
+a capacidade de Jatropha gossypiifolia em causar
+redução dose-dependente da atividade das enzimas
+fosfatase ácida e fosfatase alcalina, bem como
+bloqueio da acetilcolinesterase em tecido nervoso de
+peixes (Channa marulius).
+Todavia, os dados mais preocupantes são
+mais recentes. Em estudos toxicológicos pré-clínicos
+em ratos tratados com o extrato etanólico de partes
+aéreas (folhas e caules) do pião roxo, foi demonstrada
+toxicidade aguda oral relativamente baixa (Mariz et
+al., 2006), entretanto, uma importante toxicidade
+crônica (Mariz et al., 2008). O tratamento prolongado
+com o extrato, em doses muito próximas de eventual
+nível terapêutico, promoveu letalidade estatisticamente
+significativa (Mariz, 2007). Além disso, produziu
+indícios de danos hepáticos, renais e pulmonares
+(Mariz, 2007; Mariz et al., 2008).
+
+CONSIDERAÇÕES FINAIS
+Diante do exposto, e considerando-se que o
+extrato avaliado pelos estudos anteriormente citados
+é bem próximo das formas populares de utilização
+dessa planta na terapêutica, é possível afirmar que o
+uso na medicina popular de Jatropha gossypiifolia
+deve ser desaconselhado pelos fortes indícios de
+relação risco/benefício desfavorável. Além disso, o
+desenvolvimento de medicamentos fitoterápicos a
+partir dessa espécie precisa priorizar o refinamento
+químico do extrato etanólico para obtenção de frações,
+as quais deverão ser novamente testadas quanto à
+sua segurança e eficácia terapêutica.
+
+AGRADECIMENTO
+Os autores agradecem a CAPES que,
+através do Programa de Qualificação Interinstitucional
+(PQI), financiou essa pesquisa e ao Prof. Dr. José
+Maria Barbosa Filho pela pesquisa no banco de dados
+NAPRALERT (Natural Products Alert Database).
+
+REFERÊNCIA
+ABDUL, R.A. et al. Isolation and identification of mosquito
+larvicidal compound from Abutilon indicum (Linn.) Sweet.
+Parasitology Research, v.102, n.5, p.981-8, 2008.
+ABREU, I.C. et al. Hypotensive and vasorelaxant effects
+of the ethanolic extract from Jatropha gossypiifolia L. in
+rats. Fitoterapia, v.74, n.7/8, p.650-7, 2003.
+ADESINA, S.K. Studies on some plants used as
+anticonvulsants in amerindian and african tradicional
+medicine. Fitoterapia, v.53, p.147-62, 1982.
+
+ADEW UNMI, C.O. Natural products as agents of
+schistosomiasis control in Nigéria: a review of progress.
+International Journal of Crude Drug Research, v.22, n.4,
+p.161-6, 1984.
+ADEWUNMI, C.O.; ADESOGAN, E.K. Toxicology of some
+nigerian plants used in schistosomiasis control. 1. The effect
+of molluscicides on molluscan hearts. Fitoterapia, v.57,
+n.5, p.353-8, 1986.
+ADEWUNMI, C.O.; MARQUIS, V.O. Molluscicidal evaluation
+of some Jatropha species grown in Nigeria. Quarterly
+Journal of Crude Drug Research, v.18, p.141-5, 1980.
+ADEWUNMI, C.O.; MARQUIS, V.O. A rapid in vitro screening
+method for detecting schistosomicidal activity of some
+nigerian medicinal plants. International Jornal of Crude
+Drug Research, v.214, p.157-9, 1983.
+ADEW UNMI, C.O.; MARQUIS, V.O. Comparative
+evaluation of the molluscicidal properties of aridan
+(Tetrapleura tetraptera ), lapalapa pupa (Jatropha
+gossypyfolia), endod (Phytolacca dodecandra) and
+bayluscide. Fitoterapia, v.58, n.5, p.325-8, 1987a.
+ADEWUNMI, C.O.; MARQUIS, V.O. Evaluation of the effects
+of environmental factors on molluscicidal properties of
+Aridan (Tetrapleura tetraptera), Lapalapa Pupa (Jatropha
+gossypyfolia), Endod (Phytolacca dodecandra) and
+Bayluscide. Phytotherapy Research, v.1, n.2, p.69-72,
+1987b.
+ADOLF, W.; OPFERKUCH, H.J.; HECKER, E. Irritant
+phorbol derivates from four Jatropha species.
+Phytochemistry, v.23, n.1, p.129-32, 1984.
+AJOSE, F.O. Some Nigerian plants of dermatologic
+importance. Interntational Journal of Dermatology, v.46,
+p.48-55, 2007.
+AQUINO, J.U. et al. Avaliação fitoterápica da Jatropha
+gossypiifolia L. na cicatrização de suturas na parede
+abdominal ventral de ratos. Acta Cirúrgica Brasileira, v.21,
+n.2, p.61-6, 2006.
+AUVIN-GUETTE, C. et al. Cyclogossine B, a cyclic
+octapeptide from Jatropha gossypifolia. Journal of Natural
+Products, v.60, p.1155-7, 1997.
+AWACHIE, P.I.A.; UGWU, F.O. Preliminary investigation of
+the antimicrobial and Brine Shrimp lethality properties of
+some nigerian mecidinal plants. International Journal of
+Pharmacognosy, v.35, n.5, p.338-43, 1997.
+BANERJI, J. et al. Gadain, a lignan from Jatropha
+Gossypifolia. Phytochemistry, v.23, n.10, p.2323-7, 1984.
+BARRETT, B. Medicinal plants of Nicaragua’s atlantic
+coast. Economic Botany, v.48, n.1, p.8-20, 1994.
+BEBAW I, F.F.; CAMPBELL, S.D. Effects of fire on
+germination and viability of bellyache bush (Jatropha
+gossypiifolia) seeds. Australian Journal of Experimental
+Agriculture, v.42, p.1063-9, 2002.
+BHAT, R.B.; ETEJERE, E.O.; OLADIPO, V.T. Ethnobotanical
+studies from central Nigeria. Economic Botany, v.44, n.3,
+p.382-90, 1990.
+BRASIL. Primeiro relatório nacional para a conservação
+sobre diversidade biológica: Brasil. Ministério do Meio
+Ambiente, dos Recursos Hídricos e da Amazônia Legal,
+Brasília, 1998. 284p.
+CAMARGO, M.T.L.A. Plantas medicinais e de rituais afrobrasileiros. II: estudo etnofarmacobotânico. São Paulo:
+Ícone. 1998. 232p.
+CARBAJAL, D. et al. Pharmacological screening of plant
+decoctions commonly used in Cuban folk medicine. Journal
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+355
+of Ethnopharmacology, v.33, p.21-4, 1991.
+CHARIANDY, C.M. et al. Screening of medicinal plants from
+Trinidad and Tobago for antimicrobial and isecticidal
+properties. Journal of Ethnopharmacology, v.64, p.26570, 1999.
+CHATTERJEE, A. et al. Crystal structure of a lignan from
+Jatropha gossypifolia. Phytochemistry, v.20, n.8, p.20478, 1981.
+CHATTERJEE, A. et al. Prasanthaline: a new lignan from
+Jatropha gossypifolia Linn. Indian Journal of Chemistry,
+v.27B, p.740-1, 1988.
+COE, F.G.; ANDERSON, G.J. Ethnobotany of the Garífuna
+of eastern Nicaragua. Economic Botany, v.50, n.1, p.71107, 1996a.
+COE, F.G.; ANDERSON, G.J. Screening of medicinal
+plants used by the Garífuna of eastern Nicaragua for
+bioactive compounds. Journal of Ethnopharmacology,
+v.53, p.29-50, 1996b.
+CORRÊA, M.P. Dicionário de plantas úteis do Brasil e
+das exóticas cultivadas. Rio de Janeiro: Ministério da
+Agricultura / Instituto Brasileiro de Desenvolvimento
+Florestal, 1984, v.5, n.2, 485p.
+COSTA, L.C.B. et al. Plantas medicinais mais utilizadas
+pelas populações rurais da região cacaueira da Bahia.
+Revista Brasileira de Farmácia, v.82, n.1/2, p.73-7, 2001.
+DABUR, R. et al. Antimicrobial activity of some Indian
+medicinal plants. African Journal of Traditional,
+Complementary, and Alternative Medicines, v.4, n.3,
+p.313-8, 2007.
+DAS, B.; BANERJI, J. Arylnaphthalene lignan from
+Jatropha gossypifolia. Phytochemistry, v.27, n.11,
+p.3684-6, 1988.
+DAS, B.; DAS, R. Gossypifan, a lignan from Jatropha
+gossypifolia. Phytochemistry, v.40, n.3, p.931-2, 1995.
+DAS, B.; KASHINATHAM, A. Studies on phytochemicals:
+Part XVII – Phenolics from the roots of Jatropha
+gossypifolia. Indian Journal of Chemistry, v.36B, p.10778, 1997.
+DAS, B.; ANJANI, G. Gossypidien, a lignan from stems
+of Jatropha gossypifollia. Phytochemistry, v.51, p.1157, 1999.
+DAS, B.; VENKATAIAH, B. A minor coumarino-lignoid from
+Jatropha gossypiifolia. Biochemical Systematics and
+Ecology, v.29, p.213-4, 2001.
+DAS, B.; RAO, S.P.; SRINIVAS, K.V.N.S. Jatrodien, a lignan
+from stems of Jatropha gossypifolia. Phytochemistry, v.41,
+n.3, p.985-7, 1996a.
+DAS, B.; RAO, S.P.; SRINIVAS, K.V.N.S. Isolation of
+Isogadain from Jatropha gossypifolia. Planta Medica, v.62,
+p.90,1996b.
+DAS, B. et al. Cleomiscosin A, a coumariono-lignoid from
+Jatropha gossypiifolia. Biochemical Systematics and
+Ecology, v.31, n.10, p.1189-91, 2003.
+GASPERI-CAMPANI, A. et al. Seed extracts inhibiting protein
+synthesis in vitro. Biochemical Journal, v.186, p.439-41,
+1980.
+GBEASSOR, M. et al. Antimalarial effects of eight African
+medicinal plants. Journal of Ethnopharmacology, v.25,
+p.115-8, 1989.
+GUIROLA, L.; GARCIA, G.; TORREALBA, A. Acute renal
+failure from the ingestion of toxic plants. Veterinary and
+Human Toxicology, v.34, n.6, p.548, 1992.
+GUPTA, M.P.;ARIAS,T.D.; CORREA, M. Ethnopharmacognostic
+
+observations on Panamanian medicinal plants. Part I.
+Quarterly Journal of Crude Drug Research, v.17, n.3/4,
+p.115-30, 1979.
+HECKER, E. Co-Carcinogenic diterpene esters as
+principal risk factors in local life style esophageal cancer
+in Curacao. Acta Pharmacologica et Toxicologica, v.55,
+p.148-53, 1984.
+HORSTEN, S.F.A. et al. Cyclogossine A: a novel cyclic
+heptapeptide isolated from the latex of Jatropha
+gossypifolia. Planta Medica, v.62, n.1, p.46-50, 1996.
+HOSAMANI, K.M.; KATAGI, K.S. Characterization and
+structure elucidation of 12-hydroxyoctadec-cis-9-enoic
+acid in Jatropha gossypifolia and Hevea brasiliensis seed
+oils: a rich source of hydroxy fatty acid. Chemistry and
+Physics of Lipids, v.152, n.1, p.9-12, 2008.
+JOSHI, P. Herbal drugs used in Guinea worm disease
+by the tribals of southern Rajasthan (India). International
+Journal of Pharmacognosy, v.29, n.1, p.33-8, 1991.
+KAVITHA, J.; RAIASEKHAR, D.; SUBBARAJU, G.V.
+Synthesis of tetradecyl (E)-ferulate, a metabolite of
+Jatropha gossypifolia. Journal of Asian Natural Products
+Research, v.2, n.1, p.51-4, 1999.
+KUMAR, V.P. et al. Search for antibacterial and antifungal
+agents from selected indian medicinal plants. Journal
+of Ethnopharmacology, v.107, n.2, p.182-8, 2006.
+KUPCHAN, S.M. et al. Structure and stereochemistry of
+Jatrophone, a novel macrocyclic diterpenoid tumor
+inhibitor. Journal of the American Chemical Society,
+v.98, n.8, p.2295-300, 1976.
+LAI, M.W. et al. Annual report of the American Association
+of Poison Control Centers´ national poisoning and
+exposure database. Clinical Toxicology, v.44, p.803932, 2006.
+LANS, C. et al. Medicinal and ethnoveterinary remedies of
+hunters in Trinidad. BMC C om pl e me n ta ry an d
+Alternative Medicine, v.1, n.10, p.1-17, 2001.
+LEAL, C.K.A.; AGRA, M.F. Estudo farmacobotânico
+comparativo das folhas de Jatropha molissima (Pohl)
+Baill. e Jatropha ribifolia (Pohl) Baill. Acta Farmaceutica
+Bonaerense, v.24, n.1, p.5-13, 2005.
+LE GRAND, A. Les phytothérapies anti-infectieuses
+de la Foret Savane, Sénégal (Afrique Occidentale) III:
+U n résu me d es su bstanc es p hyt oc himiqu es et
+l’activité anti-microbienne de 43 spécies. Journal of
+Ethnopharmacology, v.25, p.315-38, 1989.
+LE GRAND, A.; WONDERGEM, P.A. Les phytothérapies
+anti-infectieuses de la Foret Savane, Sénégal (Afrique
+Occidentale). I: Un Inventaire. Journal of
+Ethnopharmacology, v.21, p.109-25, 1987.
+LORENZI, H.; MATOS, F.J.A. Plantas medicinais no Brasil:
+nativas e exóticas. Nova Odessa: Instituto Plantarium, 2002.
+512p.
+MACRAE, W.D.; HUDSON, J.B.; TOWERS, G.H.N. Studies
+on the pharmacological activity of amazonian
+Euphorbiaceae. Journal of Ethnopharmacology, v.22,
+p.143-72, 1988.
+MAIA, J.M. et al. Estudo da cicatrização de suturas na
+bexiga urinária de ratos com e sem a utilização de extrato
+bruto de Jatropha gossypiifolia L. intraperitoneal. Acta
+Cirúrgica Brasileira, v.21, n.2, p.23-30, 2006.
+MARIZ, S.R. Estudo toxicológico pré-clínico de Jatropha
+gossypiifolia L. 2007. 186p. Tese (Doutorado em produtos
+naturais e sintéticos bioativos - Área de concentração
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+356
+em Farmacologia) - Laboratório de Tecnologia
+Farmacêutica, Universidade Federal da Paraíba, João
+Pessoa.
+MARIZ, S.R. et al. Avaliação histopatológica em ratos após
+tratamento agudo com o extrato etanólico de partes aéreas
+de Jatropha gossypiifolia L. Revista Brasileira de
+Farmacognosia, v.18, n.2, p.213-6, 2008.
+MARIZ, S.R. et al. Estudo toxicológico agudo do extrato
+etanólico de partes aéreas de Jatropha gossypiifolia L.
+em ratos. Revista Brasileira de Farmacognosia, v.16,
+n.3, p.372-8, 2006.
+MATOS, F.J.A. Constituintes químicos ativos e
+propriedades biológicas de plantas medicinais
+brasileiras. Fortaleza: Editora UFC, 2004. 448p.
+MEYER, B.N. et al. Brine shrimp: a convenient general
+bioassay for active plant constituents. Journal of Medical
+Plant Research, v.45, p.31-4, 1982
+MORTON, J.F. A survey of medicinal plants of Curacao.
+Economic Botany, v.22, p.87-102, 1968.
+NAIR, R.; KALARIYA, T.; CHANDA, S. Antibacterial activity
+of some plant extracts used in folk medicine. Journal of
+Herbal Pharmacotherapy, v.7, n.3-4, p.191-201, 2007
+NORHANOMA, W.; YADAV, M. Tumour promoter activity in
+Malaysian Euphorbiaceae. British Journal of Cancer,
+v.71, n.4, p.776-9, 1995.
+OBATOMI, D.K.; BIKOMO, E.O.; TEMPLE, V.J. Anti-diabetic
+properties of the African mistletoe in streptozotocininduced diabetic rats. Journal of Ethnopharmacology,
+v.43, p.13-7, 1994.
+OGBOBE, O.; AKANO, V. The physico-chemical properties
+of the seed and seed oil of Jatropha gossipifolia. Plant
+Foods for Human Nutrition, v.43, n.3, p.197-200, 1993.
+OLIVEIRA, M.J.R.; SIMÕES, M.J.S.; SASSI, C.R.R.
+Fitoterapia no Sistema de Saúde Pública (SUS) no
+Estado de São Paulo, Brasil. Revista Brasileira de
+Plantas Medicinais, v.8, n.2, p.39-41, 2006.
+OLOW OKUDEJO, J.D. Comparative epidermal
+morphology of West African species of Jatropha L.
+(Euphorbiaceae). Botanical Journal of L inne an
+Society, v.111, p.139-54, 1993.
+PHOW ICHIT, S.; BUATIPPAWAN, S.; BULLANGPOTI,
+V. Insecticidal activity of Jatropha gossypifolia L.
+(Eu ph orbiac eae) an d C le ome v is co sa
+L.
+(Capparidacae) on Spodoptera litura (Lepidoptera:
+N oc tu id ae). To xicity an d carb oxylest erase an d
+g lu tath io ne-S-tran sf erase
+act ivit ies
+stu dies.
+Commu nication s in Agricultura l and Ap plied
+Biological Science, v.73, n.3, p.611-9, 2008.
+PRASAD, Y.R.; ALANKARARAO, G.S.J.G.; BABY, P.
+Constituents of the seeds of Jatropha gossypifolia.
+Fitoterapia, v.64, n.4, p.376, 1993.
+PURUSHOTHAMAN, K.K.; CHANDRASEKHARAN, S.
+Jatropholones A and B, new diterpenoids from the roots
+of Jatropha gossypiifolia (Euphorbiaceae) – crystal
+structure analysis of Jatropholone B. Tetrahedron
+Letters, n.11, p.979-80, 1979.
+RAVINDRANATH, N. et al. Jatrophenone, a novel
+macrocyclic bioactive diterpene from Jatropha
+gossypifolia. Chemical & Pharmaceutical Bulletin, v.51,
+n.7, p.870, 2003.
+REZENDE, E.A.; RIBEIRO, M.T.F. Conhecimento
+tradicional, plantas medicinais e propriedade intelectual:
+biopirataria ou bioprospecção? Revista Brasileira de
+
+Plantas Medicinais, v.7, n.3, p.37-44, 2005.
+ROCHA, M.O. et al. Avaliação toxicológica do tratamento
+sub-crônico com o extrato de Cecropia adenopus Mart.,
+Sechium edule e Jatropha gossypiifolia L. nos compostos
+bioquímicos do sangue. In: REUNIÃO ANUAL DA SBPC,
+47., 1995, São Luís. Anais... São Luís: UFMA, p.905. 1995.
+SAHA, J.C.; SAVINI, E.C.; KASINATHAN, S. Ecbolic
+properties of Indian medicinal plants. Indian Journal of
+Medical Research, v.49, n.1, p.130-51, 1961.
+SANTOS, M.F. et al. Avaliação do uso do extrato bruto
+de Jatropha gossypiifolia L. na cicatrização de feridas
+cutâneas em ratos. Acta Cirúrgica Brasileira, v.21,
+n.3, p.2-7, 2006.
+SCHVARTSMAN, S. Plantas venenosas e animais
+peçonhentos. 2.ed. São Paulo: Sarvier, 1992. 288p.
+SERVIN, S.C. et al. Ação do extrato de Jatropha
+g os sy pi i fo li a L . (p ião ro xo ) na cicatrizaç ão d e
+anastomose colônica: estudo experimental em ratos
+Acta Cirúrgica Brasileira, v.21, n.3, p.89-96, 2006.
+SIEVERS, A.F. et al. Inseticidal tests of plants from
+tropical America. Journal of Economic Entomology,
+v.42, n.3, p.549-51, 1949.
+SILVA, I.S. Euphorbiaceae da Caatinga: distribuição
+de espécies e potencial oleaginoso. 1998. 132p.
+Tese (Doutorado - Área de concentração em Botânica)
+- Instituto de Biociências, Universidade de São Paulo
+(USP), São Paulo.
+SINGH, A.; AGARWAL, R.A. Possibility of using latex
+of Euphorbiales for snail control. The Science of the
+Total Environement, v.77, p.231-6, 1988.
+SINGH, D.; SINGH, A. The toxicity of four native Indian
+plants: effect on AChE and acid/alkaline phosphatase
+level in fish Channa marulius. Chemosphere, v.60, n.1,
+p.135-40, 2005.
+SINITOX. SISTEMA NACINAL DE INFORMAÇÕES
+TÓXICO-FARMACOLÓGICAS. Tabela 10. Evolução dos
+casos registrados de intoxicação humana por agente
+tóxico, Brasil 2005. Disponível em: <http://www.fiocruz.br/
+sinitox>. Acesso em: 05 jan. 2010.
+SIRIARCHARUNGROJ, S. et al. Investigation of acute
+toxicity of Jatropha gossypifolia L. (Euphorbiaceae) and
+Cleome viscosa L. (Capparidacae) extract on guppies,
+Poecilia reticulate. Communications in Agricultural and
+Applied Biological Science, v.73, n.4, p.871-4, 2008.
+SUBRAMANIAN, S.S.; NAGARAJAN, S.; SULOCHANA, N.
+Flavonoids of the leaves of Jatropha gossypifolia.
+Phytochemistry, v.10, p.1690, 1971.
+SUKUMARAN, D.; PARASHAR, B.D.; RAO, K.M. Toxicity of
+Jatropha gossypiifolia and Vaccaria pyramidata against
+freshwater snails vectors of animal schistosomiasis.
+Fitoterapia, v.66, n.5, p.393-8, 1995.
+TAYLOR, M.D. et al. New antileukemic Jatrophone
+derivatives from Jatropha gossypiifolia: structural and
+stereochemical assignment through nuclear magnetic
+resonance spectroscopy. Journal of the American
+Chemical Society, v.105, p.3177-83, 1983.
+TAYLOR, R.S.L. et al. Antiviral activities of medicinal plants
+of southern Nepal. Journal of Ethnopharmacology, v.53,
+p.97-104, 1996.
+TINTO, W.F.; JOHN, L.M.D. Triterpenoids of Jatropha
+gossypiifolia. Journal of Natural Products, v.55, n.6,
+p.807-9, 1992.
+VALE, J.R. et al. Estudo comparativo da cicatrização de
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+357
+gastrorrafias com e sem o uso do extrato de Jatropha
+gossypiifolia L. (pião roxo) em ratos. Acta Cirúrgica
+Brasieira, v.21, n.3, p.40-8, 2006.
+VERA, A. et al. Floristic and physiognomic characteristics
+of disturbed thorny xerophytic scrubland in Punta de
+
+Piedras, Miranda Municipality, Zulia State, Venezuela.
+Revista de Biologia Tropical, v.57, n.1-2, p.271-81, 2009.
+WENIGER, B. et al. La medicine populaire dans le plateau
+central d’Haiti. 2 Inventaire ethnopharmacologique.
+Journal of Ethnopharmacology, v.17, p.13-30, 1986.
+
+Rev. Bras. Pl. Med., Botucatu, v.12, n.3, p.346-357, 2010.
+
+

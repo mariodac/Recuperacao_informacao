@@ -1,0 +1,198 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/269929591
+
+Reconhecimento de Faces Utilizando Redes Neurais MLP
+Conference Paper · October 2014
+DOI: 10.13140/2.1.4875.6809
+
+CITATIONS
+
+READS
+
+0
+
+371
+
+1 author:
+Adilmar Coelho Dantas
+Universidade Federal de Uberlândia (UFU)
+22 PUBLICATIONS 9 CITATIONS
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Emotion recognition in real time View project
+
+All content following this page was uploaded by Adilmar Coelho Dantas on 23 December 2014.
+The user has requested enhancement of the downloaded file.
+
+Reconhecimento de Faces Utilizando Redes Neurais MLP
+Autor: Adilmar Coelho Dantas1 ,
+Orientador: Márcia Aparecida Fernandes1
+1
+
+Programa de Pós-Graduação em Ciência da Computação
+Universidade Federal do Uberlândia (UFU)
+Uberlândia – MG – Brasil
+adilmar@mestrado.ufu.br
+
+Nível: Mestrado
+Resumo. Este artigo apresenta um algoritmo usando técnicas de redes neurais para
+reconhecimento de faces. Este problema consiste na entrada de imagens contendo faces associadas com um identificador, tais características são extraídas para o correto
+reconhecimento de padrões após passar pela rede neural que são modelos computacionais inspirados pelo sistema nervoso central de um animal (em particular o cérebro)
+que é capaz de realizar o aprendizado de máquina bem como o reconhecimento de padrões, neste trabalho são analisadas variações da própria rede neural e comparação
+com outras técnicas apresentadas como solução para este problema.
+Palavras-Chave. Reconhecimento de Faces, Reconhecimento de Facial , Redes Neurais.
+
+1. Introdução e Motivação
+As pesquisas em reconhecimento de faces são tão antigas quanto à própria área de Visão Computacional, com trabalhos datados a mais de trinta anos, assim a literatura sobre o assunto é
+bastante extensa e contém as mais variadas técnicas e também muitas aplicações [1].
+Dentre as motivações deste artigo proposto pode-se citar: autenticação para sistemas
+biométricos passaportes e fichas criminais; sistemas de segurança e controles de acesso; monitoramento de multidões em estações, shoppings, criação de retratos falados, exploração, comparação de técnicas para esse tipo de aplicação.
+
+2. Fundamentação Teórica
+Segundo (Sung et al., 1994), o reconhecimento de faces está diretamente relacionado à detecção de tais objetos dentro das imagens apresentadas como entrada de um sistema reconhecedor. Uma primeira etapa para um reconhecedor automático de faces é portanto a detecção da
+presença de um rosto na imagem e, a partir daí, a comparação de tal rosto com os modelos
+conhecidos pelo sistema.
+O reconhecimento consiste em confirmar se uma imagem de face é conhecida pelo sistema. Não é necessário realizar a ligação da face a um nome e sim atribuir-lhe uma classificação: conhecida ou desconhecida. A identificação deve realizar o reconhecimento e associar
+uma identidade à face apresentada.
+Redes Neurais Artificiais ou simplesmente Redes Neurais, são sistemas computacionais
+que procuram reproduzir, através de programas de computadores ou circuitos eletrônicos, de
+maneira simplificada, o funcionamento de uma rede neural biológica do cérebro humano.
+
+As redes neurais artificiais têm contribuído no desenvolvimento de sistemas de reconhecimento e classificação de padrões em processamento de imagens e são utilizadas em vários
+trabalhos voltados ao reconhecimento de expressões faciais [2].
+As mais variadas topologias e arquiteturas de redes neurais artificiais são utilizadas nesses tipos de sistemas, dentre as quais destacamos a MLP (Multi-Layer Perceptron) [3], RBF
+(Radial Base Fuction) [4] e também trabalhos que usam redes de Hopfield, com o objetivo
+de detectar mudanças de expressões em uma face [5] [6] e classificação apenas de cores em
+imagens [7].
+Dentre outras técnica para reconhecimento e classificação de sistemas diversos inclusive de reconhecimento facial podemos citar a análise dos componentes principais (PCA) é um
+meio de se identificar padrões em um conjunto de dados e expressar suas similaridades e diferenças. Também é um método bastante eficaz para quando há a necessidade da caracterização
+de padrões a partir de dados com alta dimensionalidade.
+Todas essas técnicas têm como objetivo comum aumentar a precisão e reduzir o tempo
+de execução. Segundo (Ben-Yacoub et al., 1999) a confiabilidade e o tempo de resposta de um
+sistema de detecção de rostos influencia diretamente no desempenho e emprego desse sistema.
+De forma geral, sistemas de reconhecimento facial devem passar pelas seguintes etapas,
+descritas na figura 1, essas estapas serão descritas mais adiante no artigo.
+
+Figura 1. Etapas para reconhecimento automático de faces
+
+Primeiro e definida uma base de dados para os experimentos,neste artigo a base de dados
+selecionada é a ORL composta por 400 images ao todo, e com 40 faces diferentes, após este
+proceso extrai-se dessas imagens as informações pertinentes para o sistema, cria-se uma base
+contendo esses padrões que através de alguma técnica será capaz de realizar o reconhecimento,
+identificação ou categorização das mesmas.
+
+3. Contribuição do Trabalho
+O reconhecimento de faces por se tratar de um sistema biométrico traz grandes contribuições
+para a área de sistemas de segurança. Uma vez que estes sistemas podem utilizar desta técnica ou de um conjunto delas para garantir a eficiência e eficácia deste sistema, ou até mesmo
+combiná-las com outras técnicas existentes.
+Outra grande contribuição forte é que o trabalho proposto demostra que com técnicas
+simples, sem envolver funções complexas de processamento de imagens é possível desenvolver
+um sistema com tal funcionalidade e alcançar resultados significantes em combinação com
+redes neurais.
+
+4. Estado atual do Trabalho
+Dentre os problemas encontrados durante a reprodução do trabalho podemos citar que algumas
+especificações das técnicas e da própria configuração da rede neural não constavam ou estavam
+incompletas ou até mesmo não foram descritas.
+Para sanar algumas das dificuldades da técnica utilizada no trabalho para converter a
+imagem em entrada para a rede neural, foi experimentada duas técnicas, a primeira delas a
+transformada discreta do cosseno. A mesma realiza o acúmulo dos coeficientes mais significativos no canto superior direito da imagem, proporcionando melhor capacidade de compressão
+da informações antes de repassar como entrada para a rede neural.
+A segunda técnica testada utiliza todas as informações de cada pixel pertencentes a imagem extraída da base de dados ORL que possuem 23 colunas por 28 linhas, nota-se este apresentou ser mais similar ao artigo proposto para reprodução, na figura 2 temos a representação
+desta conversão.
+
+Figura 2. Converção da imagem em RGB para entrada na rede neural
+
+Nos testes realizados para a classificação da face, as duas técnicas obtiveram praticamente os mesmos resultados, a grande diferença está neste pre processamento realizado pela
+técnica da transformada discreta de cosseno, reduzindo o volume de dados gerados quando
+processado as 400 imagens, ao todo pertencentes a base de dados um uso.
+Outra dificuldade foi a escolha do ambiente para desenvolvimento da rede neural, o qual
+não foi citado, optamos por questões de maior experiência de uso e pelo fato das ferramentas
+ligadas para a área de redes neurais disponíveis a plataforma Matlab.
+Sanada essas dificuldade foi desenvolvida a rede neural MLP, este tipo de rede durante o
+treinamento com o algoritmo backpropagation, a rede opera em uma sequência de dois passos.
+Primeiro, um padrão é apresentado à camada de entrada da rede. A atividade resultante flui
+através da rede, camada por camada, até que a resposta seja produzida pela camada de saída.
+No segundo passo, a saída obtida é comparada à saída desejada para esse padrão particular. Se
+esta não estiver correta, o erro é calculado. O erro é propagado a partir da camada de saída até
+a camada de entrada, e os pesos das conexões das unidades das camadas internas vão sendo
+modificados conforme o erro é retropropagado.
+Os primeiros testes os resultados não bateram justamente pelo fato de no trabalho proposto não conter a configuração ideal para a rede neural desenvolvida, especificadamente para
+este problema de reconhecimento facial.
+Para sanar essa dificuldade e consequentemente obter melhores resultados a rede neural
+foi testada exaustivamente com diversas configurações no número de camadas ocultas, uma vez que o número de neurônios da saída é o número de classificações possíveis, neste caso 40. A
+melhor configuração encontrada para o número de neurônios da camada oculta foi de 90 neurônios, a camada de entrada mesmo passando todos os 644, ou seja, cada pixel pertencente da
+imagem de dimensões 28x23. A função do Matlab determina automaticamente esses neurônios
+de entrada quando este é muito grande, a figura 3 demostra com mais detalhes a rede neural e
+suas configurações finais.
+
+Figura 3. Rede neural MLP e suas configurações
+
+5. Análise de Resultados
+Para se chegar na configuração ideal para rede neural, em específico o número de neurônios
+da camada oculta foi testado valores em um intervalo de 10 até 100 neurônios e analisado o
+tempo de execução da rede neural, a partir destes dados foi possível montar o seguinte gráfico,
+apresentado na figura 4, o qual demostra essa relação entre números de neurônios e o tempo de
+treinamento da rede neural.
+
+Figura 4. Relação: Neurônios da camada oculta x Tempo de execução
+
+Com base nestes resultados optamos por fixar o número de neurônios da camada oculta
+em 90 neurônios, garantindo assim um bom tempo de execução e uma boa convergência.
+Para testes da rede neural, utilizamos a seguinte configuração: quantidade de imagens
+para treino, teste e validação. Os testes foram realizados com 1-2-7, 3-2-5, 5-2-3, 7-2-1 , a tabela 1 demostras esses experimentos e suas respectivas taxas de acerto. Os experimentos
+foram executados em um total de 10 execuções.
+Relação
+1-2-7
+3-2-5
+5-2-3
+7-2-1
+
+Taxa de Acerto
+64,11%
+89,15%
+93,66%
+98,33%
+
+Tabela 1. Resultados com os dez experimentos
+
+Podemos observar pelos resultados que a relação 7-2-1 obteve a melhor taxa de reconhecimento foi a 7-2-1 um pouco melhor do que a encontrada no artigo mesmo que relativamente pequena a diferença. A pior taxa de acerto foi para a configuração 1-2-7 onde a rede
+neural chegou a errar 130 vezes durantes os testes, pois a base de dados contém imagens de
+diversas posições com e sem acessórios como por exemplo óculos.
+Como o algoritmo PCA não utiliza imagens para validação, os testes foram realizados
+somando as quantidades das imagens de treino e validação das relações utilizadas para o treino
+das Redes Neurais, onde estas imagens foram transformadas nos vetores de características (base
+de treino). Para cada pessoa testada a imagem é transformada pelo PCA também no vetor de
+característica e comparado através da menor Distância Euclidiana encontrada na base de treino.
+O número de características utilizadas para o cálculo da Distância Euclidiana foi fixado
+em 10. Na figura 5 temos um comparativo entre as taxas de acerto utilizando redes neurais MLP
+e a técnica de PCA.
+
+Figura 5. Performace entre MLP e PCA
+
+Para uma melhor facilidade de realização de teste foi desenvolvida uma interface para
+treinamento e para o reconhecimento da face, essa interface pode ser observada na figura 6.
+Apesar de simples, ela facilita o acesso ao sistema tanto na parte de MLP e PCA.
+
+Figura 6. Interface desenvolvida
+
+6. Referências
+1-Haykin, S.; Neural networks: a comprehensive foundation, 2/E; Prentice Hall, 1999.
+2-Neto, E.; Ling, L. Lee; Sistema de Reconhecimento Facial Baseado em Análise de
+Componentes Principais; SBT 97, 1997.
+3-Neto, E.; Sistema de Identificação Pessoal Utilizando Técnicas de Reconhecimento
+e Verificação Facial Automáticas. Tese de Mestrado, 1997.
+4-Bianchi, R.;Visão Computacional Aplicada ao Controle de Micro Robôs. São Paulo, 2001.
+5-Feitosa, R.; Vellasco, M.; Oliveira, D.; Andrade, D.; Maffra, S.; Classificação de Expressões Faciais Utilizando Redes Neurais Backpropagation e RBF. Rio de Janeiro, 1999.
+6-Tiscione, J.; Projeto OCHRE. Avaliado como http://www.hhs.net/tiscione/applets/ochre.html.
+7-Universidade Estadual de Maringá.
+como http://www.din.uem.br/ia/pca/.
+
+Análise de Componentes Principais, Avaliado
+
+Sung, KK.; Poggio, T., Example-Based Learning for View-Based Human Face
+Detection,IEEE- Transactions on Pattern Analysis and Machine Intelligence, vol.
+20, No 1, janeiro de 1998.
+
+View publication stats

@@ -1,0 +1,3133 @@
+Ciência Florestal, Santa Maria, v. 28, n. 2, p. 613-623, abr .- jun., 2018
+ISSN 1980-5098
+DOI: http://dx.doi.org/10.5902/1980509832049
+
+613
+
+EFICIÊNCIA DE UTILIZAÇÃO DE MACRONUTRIENTES EM EUCALIPTO POR MÉTODO
+NÃO DESTRUTIVO ESTIMADOS POR REDES NEURAIS ARTIFICIAIS
+MACRONUTRIENTS USE EFFICIENCY IN EUCALYPT BY NON-DESTRUCTIVE METHODS
+ESTIMATED BY ARTIFICIAL NEURAL NETWORKS
+Bruno Oliveira Lafetá1 Reynaldo Campos Santana2 Gilciano Saraiva Nogueira2
+Júlio César Lima Neves3 Tamires Mousslech Andrade Penido4
+RESUMO
+A Amostragem Não Destrutiva (AND) permite uma caracterização eficiente, simples e segura das
+propriedades químicas do vegetal, como o Coeficiente de Utilização Biológico (CUB). A associação da
+AND com a técnica de Redes Neurais Artificiais (RNA) pode ser uma alternativa potencial em substituição
+às equações de regressão e aos métodos tradicionais de interpolação. Portanto, o presente trabalho objetivou
+avaliar a eficiência da RNA e da amostragem não destrutiva para estimar a eficiência de uso de nutrientes no
+tronco. O experimento foi instalado em blocos ao acaso, sendo estudado, em três blocos, o efeito de cinco
+espaçamentos de plantio: T1 – 3,0 m x 0,5 m; T2 – 3,0 m x 1,0 m; T3 – 3,0 m x 1,5 m; T4 – 3,0 m x 2,0 m
+e T5 – 3,0 m x 3,0 m. Uma árvore-amostra foi abatida para realizar a cubagem rigorosa e quantificar a
+matéria seca de casca e lenho por unidade experimental, totalizando-se 15 árvores. As árvores-amostras
+foram pesadas no campo e subamostras de casca e lenho foram coletadas ao longo do fuste para compor
+uma amostra composta por árvore. Também foi retirada uma amostra simples de cada componente obtidas
+com auxílio de um formão e martelo na região do DAP nas mesmas árvores-amostras. As amostras foram
+secas a 65ºC até peso constante. O material vegetal foi moído e submetido à análise química. Ajustaramse modelos de regressão e aplicação de RNA para estimação do CUBTronco a partir do CUBDAP Casca e
+CUBDAP Lenho. As RNA apresentaram maior precisão e confiabilidade do que a regressão. A modelagem
+por redes neurais artificiais utilizando-se apenas uma amostra da casca na região do DAP demonstrou ser
+adequada para a estimativa do coeficiente de utilização biológico do tronco.
+Palavras-chave: CUB; RNA; amostragem não destrutiva; densidade de plantio.
+ABSTRACT
+The Non-Destructive Sampling (NDS) provides an efficient, simple and safe characterization of chemical
+properties of the plant, as the Coefficient of Biological Use (CBU). The association of NDS with the technique
+of Artificial Neural Networks (ANN) can be a potential alternative to replace the regression equations and
+the traditional methods of interpolation. Therefore, this work aimed to evaluate the efficiency of ANN and
+non-destructive sampling for the efficiency of nutrient use in the trunk. The research plot was installed in
+a randomized block being studied, in three blocks, the effect of five planting spacing: T1 – 3,0 m x 0,5 m,
+T2 – 3,0 m x 1,0 m, T3 – 3,0 m x 1,5 m, T4 – 3,0 m x 2,0 m e T5 – 3,0 m x 3,0 m. A sample-tree was felled to
+1 Engenheiro Florestal, MSc., Professor de Engenharia Florestal, Instituto Federal de Educação, Ciência e Tecnologia
+de Minas Gerais, Av. Primeiro de Junho 1043, Centro, CEP 39100-000, São João Evangelista (MG), Brasil. bruno.
+lafeta@ifmg.edu.br
+2 Engenheiro Florestal, Dr., Professor Adjunto do Departamento de Engenharia Florestal, Universidade Federal
+dos Vales do Jequitinhonha e Mucuri, Rod. MGT 367, Km 583, Alto Jacuba, CEP 39100-000, Diamantina (MG),
+Brasil. silviculturaufvjm@yahoo.com.br / nogueirags@yahoo.com.br
+3 Engenheiro Agrônomo, Dr., Professor Associado do Departamento de Solos, Universidade Federal de Viçosa, Av.
+Peter Henry Rolfs, s/n, CEP 36570-000, Viçosa (MG), Brasil. julio_n2003@yahoo.com.br
+4 Engenheira Florestal, Drª., Programa de Pós-Graduação em Ciência Florestal, Universidade Federal dos Vales
+do Jequitinhonha e Mucuri, Rod. MGT 367, Km 583, Alto Jacuba, CEP 39100-000, Diamantina (MG), Brasil.
+penidotma@gmail.com
+Recebido para publicação em 10/03/2013 e aceito em 4/04/2017
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+
+Lafetá, B. O. et al
+
+614
+
+make the cubage and quantify the dry bark and wood per experimental plot, totaling 15 trees. The sampletrees were weighed in the field and subsamples of bark and wood were collected along the stem to form a
+composite sample per tree. Also removed was a single sample of each component obtained with the aid of a
+chisel and hammer in DBH in the same sample-trees. The samples were dried at 65°C until constant weight.
+The material was ground and subjected chemical analysis. Adjusted regression models and application of
+ANN to estimation of CBUTrunk from the CBUDBH Bark and CBUDBH Wood. The ANN had a higher accuracy and
+reliability of the regression. Modeling by artificial neural networks using only sample in the DBH region
+proved to be adequate for estimating the coefficient of biological use of stem.
+Keywords: CBU; ANN; non-destructive sampling; planting density.
+INTRODUÇÃO
+A produtividade de uma floresta pode ser influenciada pela fertilização, principalmente, em condições
+tropicais que possui solos muito intemperizados. A definição da quantidade de nutrientes aplicada pode ser
+realizada por diferentes métodos. Um ponto crítico na definição de fertilizações pauta-se na quantificação
+dos nutrientes que são exportados do sítio pela colheita, pois, para manter um sistema sustentável, o nutriente
+exportado deverá ser reposto. A relação entre produção de biomassa e conteúdo de nutrientes contidos nesta
+é bem conhecida. Segundo Santana et al. (2008), a distribuição relativa de macronutrientes e de biomassa
+na parte aérea de eucalipto ao longo dos anos aumenta linear e proporcionalmente.
+A reposição de nutrientes exportados pela colheita poderá variar em função da intensidade de uso do
+solo, dos componentes da biomassa que são colhidos e pela interação dos fatores que afetam a produtividade
+como a disponibilidade da água, energia radiante, temperatura e gás carbônico (ALMEIDA et al., 2007;
+COSTA et al., 2009; MENDES et al., 2010). A adoção de práticas silviculturais pode ser diferenciada entre
+materiais genéticos diante da definição da sua exigência e tolerância ao deficit de nutrientes.
+A eficiência de utilização de nutriente pode ser definida como quantidade de matéria seca produzida
+por grama do nutriente ou o inverso da concentração do nutriente nos tecidos (CHAPIN, 1980), ou ainda,
+como o Coeficiente de Utilização Biológico (CUB) dos nutrientes. O CUB é uma medida ecológica que
+integra uma variedade de processos fisiológicos, bem como, a forma em que os nutrientes absorvidos
+pelas plantas são geralmente usados para a produção de biomassa (ALONGI; CLOUGH; ROBERTSON,
+2005), podendo ser usado para auxiliar a seleção de materiais genéticos indicados em diferentes condições
+edafoclimáticas e para a recomendação de fertilizantes (BARROS et al., 1986; 1995).
+O conhecimento do CUB é importante para seleção de genótipos e indicar o tipo de solo mais
+adequado para a sua adaptação e crescimento. Conhecendo-se o CUB de um nutriente e a expectativa de
+produção de biomassa é possível estimar a quantidade de nutrientes necessária para um adequado balanço
+nutricional do próximo ciclo (SAIDELES et al., 2010), sendo este o método mais utilizado para estimar a
+reposição de nutrientes em plantações de eucalipto.
+Atualmente, essa eficiência é obtida abatendo-se árvores-amostras, quantificando a matéria seca
+e realizando análises químicas de nutrientes em amostras compostas dos seus componentes. Após a fase
+destrutiva calcula-se o CUB e a partir de então este valor é utilizado para estimar a demanda de nutrientes,
+pois pelo inventário florestal é possível obter estimativas precisas de biomassa. Entretanto, podem ocorrer
+variações na eficiência para um mesmo material genético em função das condições edafoclimáticas
+(SANTANA; BARROS; NEVES, 2002) exigindo constante aferição do CUB. Considerando a escala
+operacional das grandes empresas florestais, esta aferição é muito importante para obter adequada produção
+e otimizar a aplicação de fertilizantes. O custo da amostragem destrutiva sempre é superior ao que se pode
+obter por processos não destrutivos e este aumenta à medida que se amplia a área a ser amostrada.
+Na busca por novas opções para caracterização eficiente, simples e segura das propriedades
+químicas do vegetal, destacam-se as Amostragens Não Destrutivas (AND). Nestas, as informações sobre o
+material de interesse são obtidas por medidas indiretas, sendo versátil para se adequar a uma rotina adotada
+operacionalmente, reduzindo o volume de trabalho, tempo e custo. A obtenção do CUB empregando-se
+apenas uma amostra de determinada posição na árvore pode não ser representativa, visto que, o teor de
+nutrientes pode variar ao longo do fuste das árvores conforme mobilidade de redistribuição característica
+de cada nutriente (SAIDELES et al., 2010). Entretanto, essa diferença pode ser corrigida parametrizando
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+
+Eficiência de utilização de macronutrientes em eucalipto...
+
+615
+
+através da associação da AND com métodos matemáticos e, também, validada pelo método tradicional
+destrutivo.
+Existem diversas ferramentas de natureza estatística que podem ser adotadas para auxiliar no
+processamento de dados oriundos da AND, dentre as mais empregadas estão a regressão e a interpolação.
+Embora a estimação por regressão permita a determinação de uma equação que expresse o comportamento
+de uma dada variável dependente com menos complexidade e fácil interpretação, pode haver situações que
+estas são incapazes de denotar esse desempenho pela falta de qualidade no ajustamento ou ausência do
+mesmo.
+A inteligência artificial é uma técnica que permite análises flexíveis e obtenção de estimativas
+confiáveis. Seu uso é crescente e proporciona adequados resultados na Ciência Florestal como, por exemplo,
+na estimação de volume, altura de árvores e na modelagem do crescimento e produção florestal (GORGENS
+et al., 2009; BINOTI, 2010).
+As Redes Neurais Artificiais (RNA, Artificial Neural Network), ou conexionismo, são modelos
+computacionais que simulam grosseiramente a estrutura, o processamento de informações e a aquisição
+de conhecimento do cérebro humano e sistema nervoso, apresentando uma memória associativa e
+distribuída capaz de estabelecer relações entre variáveis independentes para estimar variáveis dependentes
+(COELHO; SILVA; PROTIL, 2007). Matematicamente, é um sistema massivo e paralelo, cujas unidades de
+processamento simples são os neurônios artificiais, dispostos em uma ou mais camadas e interligados entre
+si com ponderações ajustáveis por um grande número de conexões (GORGENS et al., 2009; BULLINÁRIA,
+2011). As RNA possuem as seguintes características: analogia neurobiológica, mapeamento de entrada e
+saída, tolerância a falhas e ruídos, adaptabilidade dos pesos das conexões às modificações do ambiente
+e capacidade de generalizar o conhecimento assimilado por aprendizagem para um conjunto de dados
+desconhecidos (BINOTI, 2010).
+Conforme exposto, a AND permite analisar um maior número de informações e estabelecer critérios
+práticos de caracterização e classificação do material vegetal com uma dada precisão, cuja associação
+com a técnica de redes neurais artificiais pode ser uma alternativa potencial em substituição às equações
+de regressão e aos métodos tradicionais de interpolação, conforme descrito por Silva e Cecílio (2010).
+Portanto, o presente trabalho objetivou avaliar a eficiência da RNA e da amostragem não destrutiva para
+estimar a eficiência de uso de nutrientes no tronco.
+MATERIAIS E MÉTODOS
+O estudo foi conduzido a 17º50’ de latitude Sul e 42º49’ de longitude Oeste em área da Aperam
+Bioenergia, antiga ACESITA Energética, no município de Itamarandiba-MG. O clima predominante na
+região é do tipo Cwa, segundo a classificação de Köppen, com verões quentes e chuvosos e invernos
+amenos e secos com estação seca bem definida de abril a setembro e deficit hídrico mensal de 30 a
+50 mm (INSTITUTO NACIONAL DE METEOROLOGIA, 2010) e com médias anuais de temperatura e
+precipitação pluviométrica de 20ºC e 1160 mm, respectivamente (PULROLNIK et al., 2009).
+O experimento foi instalado em dezembro de 2002, utilizando-se um híbrido de Eucalyptus grandis
+W. Hill ex Maiden x Eucalyptus camaldulensis Dehnh sobre Latossolo Vermelho-Amarelo em relevo plano
+a 1097 m de altitude. Adotou-se o delineamento em blocos ao acaso, com três blocos, sendo estudado o
+efeito de cinco tratamentos constituídos pelos seguintes espaçamentos de plantio: T1 – 3,0 m x 0,5 m; T2 –
+3,0 m x 1,0 m; T3 – 3,0 m x 1,5 m; T4 – 3,0 m x 2,0 m e T5 – 3,0 m x 3,0 m, sendo 3 m a distância fixa entre
+linhas de plantio. Em cada tratamento foram estabelecidas seis linhas de plantio com 28 árvores, totalizando
+168 indivíduos, dos quais 48 foram mensurados, por ter sido adotada a bordadura dupla.
+Aos oito anos de idade mensurou-se o diâmetro a 1,30 m de altura do solo (DAP) e altura total (Ht)
+de todas as árvores. Uma árvore-amostra, árvore com diâmetro médio quadrático, foi abatida para realizar a
+cubagem rigorosa empregando-se o método de Smalian e para quantificar a matéria seca de casca e lenho por
+unidade experimental, totalizando 15 árvores. As árvores-amostras foram pesadas no campo e subamostras
+de casca e lenho foram coletadas, de 50 em 50 cm, ao longo do fuste para compor uma amostra composta por
+árvore. Também foi retirada uma amostra simples de cada componente obtidas com auxílio de um formão
+e martelo no DAP nas mesmas árvores-amostras. As dimensões da casca foram de 10,0 cm x 10,0 cm e
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+
+Lafetá, B. O. et al
+
+616
+
+do lenho de 5,0 cm x 10,0 cm, cujo comprimento foi no sentido vertical, e de, aproximadamente, 2,5 cm
+de profundidade interiorizando no lenho. As amostras foram secas a 65ºC até peso constante em estufa
+com circulação forçada de ar. O material vegetal foi moído e submetido à digestão nítrico-perclórica para
+realizar a análise química de macronutrientes. Os teores de P foram determinados por colorimetria, de K
+por fotometria de emissão de chama, de S por turbidimetria, Ca e Mg por espectrofotometria de absorção
+atômica. O N total foi determinado pelo método Kjeldhal, após digestão sulfúrica.
+O coeficiente de utilização biológico do tronco foi calculado pela relação kg matéria seca por
+kg de nutrientes e foi denominado “CUBTronco” para cada macronutriente. Como o CUB pode ser obtido
+pelo inverso da concentração do nutriente, foi estimado utilizando-se o resultado analítico obtido pela
+amostragem pontual de casca e lenho no DAP. Estes dados foram utilizados para estimar o CUBTronco pelo
+seguinte modelo:
+Em que: x = nutriente (N, P, K, Ca, Mg, S); = erro aleatório.
+
+Em função da possível falta de ajuste pela regressão quando se relaciona um ponto do tronco em
+relação à amostragem por toda a sua extensão, incorporaram-se mais variáveis independentes para estimar
+o CUBTronco pelo método Stepwise backward. Os inputs analisados foram assim definidos: CUB no DAP para
+a casca e lenho, DAP sem casca(cm) (DAPsc), espessura da casca (cm), DAPsc/DAP, espessura da casca/DAP,
+DAP(cm) e Ht(m).
+Almejando-se obter um modelo generalista para o CUB do tronco, os macronutrientes foram
+agrupados em uma única variável denominada NID (nutrients identification) e assim categorizados N – 1; P
+– 2; K – 3;–Ca
+– 4;– Mg
+– 6. É importante
+salientar
+usotrabalho
+restritodasa este
+trabalho
+equações
+4; Mg
+5 e S–– 56.eÉSimportante
+salientar o uso
+restrito aoeste
+equações
+geradasdas
+pelos
+modelos 2geradas
+e
+pelos modelos
+e 3, cuja
+comparativa
+do desempenho
+dascom
+redes
+neurais
+artificiais
+a
+3, cuja2finalidade
+foi finalidade
+comparativa foi
+do desempenho
+das redes
+neurais artificiais
+a regressão
+de forma
+direta com
+e
+queforma
+integre direta
+os macronutrientes
+analisados
+em um único modelo
+estatístico:em um único modelo estatístico:
+regressão de
+e que integre
+os macronutrientes
+analisados
+Modelo 2 (GT):
+Modelo 3 (GC):
+
+,
+,
+
+Em que: x = nutriente
+(N, P,
+Ca, Mg,
+= erro
+aleatório.
+Em que:
+x =K,nutriente
+(N,S);
+P, K,
+Ca, Mg,
+S); = erro aleatório.
+
+Estimaram-se
+os CUB
+para para
+cadacada
+modelo
+mínimosquadrados
+quadrados
+utilizando
+o
+Estimaram-se
+os CUB
+modelopelo
+pelométodo
+método dos
+dos mínimos
+utilizando
+o
+procedimento
+iterativo
+Levenberg-Marquardt
+e
+por
+redes
+neurais
+artificiais
+(RNA).
+procedimento iterativo Levenberg-Marquardt e por redes neurais artificiais (RNA).
+O treinamento
+de uma
+rede
+artificial,
+também
+denominado
+aprendizagem,
+consiste
+O treinamento
+de uma
+redeneural
+neural artificial,
+também
+denominado
+aprendizagem,
+consiste no ajuste
+dos no
+da rede
+(pesos(pesos
+e Bias)e através
+de um algoritmo
+de aprendizagem.
+Neste processo, Neste
+os dados
+de
+ajuste dos parâmetros
+parâmetros
+da rede
+Bias) através
+de um algoritmo
+de aprendizagem.
+processo,
+treinamento
+(conjunto
+de exemplos)
+são apresentados
+a uma arquitetura
+preestabelecida,
+ou seja, um ou
+os dados de
+treinamento
+(conjunto
+de exemplos)
+são apresentados
+a uma arquitetura
+preestabelecida,
+determinado número
+de arranjos
+de neurônios
+em camadas.
+o algoritmo E
+de otreinamento
+características aextrai
+seja, um determinado
+número
+de arranjos
+de neurônios
+emE camadas.
+algoritmoextrai
+de treinamento
+fim
+de
+representar
+a
+informação
+fornecida
+e
+desempenhar
+uma
+determinada
+tarefa.
+As
+variáveis
+utilizadas como
+características a fim de representar a informação fornecida e desempenhar uma determinada
+tarefa. As
+entrada das RNA para estimação dos CUB por macronutriente foram numéricas e categórica, conforme modelos
+variáveis utilizadas como entrada das RNA para estimação dos CUB por macronutriente foram numéricas e
+1, 2 e 3.
+categórica, conforme
+1, 2 e 3. ao método de regressão na AND, foram utilizadas redes anteroalimentadas
+Como modelos
+possível alternativa
+Como
+possíveltreinadas
+alternativa
+ao método
+de regressão
+na AND,doforam
+utilizadas redes ou
+anteroalimentadas
+(feedforward),
+por meio
+do algoritmo
+da retropropagação
+erro (backpropagation),
+seja, durante
+(feedforward),
+treinadas
+por foram
+meiorealizados
+do algoritmo
+retropropagação
+do erro
+(backpropagation),
+ou seja,
+o treinamento
+da rede
+cálculosda
+a partir
+da camada de entrada
+da rede
+para a de saída e o erro
+durante o propagado
+treinamento
+da redeanteriores.
+foram realizados
+a partirfoidarealizada
+camada
+de entradae da
+rede para a
+para camadas
+Em todos os cálculos
+pré-processamentos
+a normalização
+equalização
+dadospropagado
+visando a uma
+sensibilidade
+da rede
+variação
+dos mesmos e captar melhor
+seu
+de saída edos
+o erro
+para maior
+camadas
+anteriores.
+Em àtodos
+os pré-processamentos
+foi realizada
+a
+comportamento.
+Os
+dados
+foram
+divididos
+em
+grupos
+de
+calibração
+(60%
+das
+amostras),
+validação
+(20%)
+e
+teste
+normalização e equalização dos dados visando a uma maior sensibilidade da rede à variação dos mesmos e
+(20%),
+utilizando
+o método randômico
+de amostragem.
+captar melhor
+seu
+comportamento.
+Os dados
+foram divididos em grupos de calibração (60% das amostras),
+Foram
+treinadas
+800
+RNA
+do
+tipo
+Multilayer
+Perceptron
+(MLP): 600 para estimar o CUBTronco
+validação (20%) e teste (20%), utilizando o método
+randômico
+de amostragem.
+conforme modelo 1 (100 para cada macronutriente) e 100 para cada modelo restante (modelos 2 e 3). Destas
+Foram treinadas 800 RNA do tipo Multilayer Perceptron (MLP): 600 para estimar o CUBTronco
+foram selecionadas duas com base nos desvios dos valores estimados e observados, sendo, portanto,
+conforme selecionadas
+modelo 1 (100
+para
+macronutriente)
+100
+para
+modelo
+restante de
+(modelos
+2 e 3).
+16 redes
+paracada
+o estudo.
+A escolha do etipo
+MLP
+estácada
+relacionada
+à atribuição
+uma maior
+Destas foram
+selecionadas
+duas
+com
+base
+nos
+desvios
+dos
+valores
+estimados
+e
+observados,
+sendo,
+portanto,
+complexidade das RNA face ao maior número de entradas, o que aumenta o número de parâmetros ajustados
+selecionadas
+16 redes
+o estudo.
+A escolha
+tipo MLP
+está relacionada
+atribuição
+decamadas
+uma maior
+conforme
+Braga,para
+Carvalho
+e Ludermir
+(2007). Adodefinição
+da arquitetura
+das redes, ouà seja,
+número de
+complexidade
+das RNA
+face aopor
+maior
+número
+de entradas,
+o que aumenta
+númeroSolver
+de parâmetros
+ajustados
+e o número
+de neurônios
+camada
+foi otimizada
+pela ferramenta
+IntelligentoProblem
+(IPS) do software
+Statistica 7.0 (STATSOFT, 2007).
+A avaliação da acurácia e precisão das equações ajustadas e do resultado do treinamento das redes
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+neurais artificiais foram realizadas por meio do erro%, teste de RMSE%, teste de Bias% e análise de resíduos
+percentuais. As estimativas das técnicas estatísticas relacionadas à regressão e das RNA foram comparadas por
+meio do teste t pareado a 5% de probabilidade com os valores observados, conforme Gorgens et al. (2009). O
+
+comportamento.
+dados
+foram
+divididos
+em (modelos
+grupos de2calibração
+(60% das amo
+conforme modelo 1 (100 para cada macronutriente)
+e 100Ospara
+cada
+modelo
+restante
+e 3). Destas
+(20%),
+utilizando
+o métodoestimados
+randômicoe deobservados,
+amostragem.sendo, portanto,
+foram selecionadas duas com base nos
+desvios
+dos valores
+treinadas
+800relacionada
+RNA do tipo
+Multilayer
+selecionadas 16 redes para o estudo. A escolhaForam
+do tipo
+MLP está
+à atribuição
+de Perceptron
+uma maior (MLP): 60
+conforme
+modelo
+1
+(100
+para
+cada
+macronutriente)
+e
+100
+cada modelo res
+complexidade das RNA face ao maior número de entradas, o que aumenta o número de parâmetrospara
+ajustados
+foram
+selecionadas
+duas
+com
+base
+nos
+desvios
+dos
+valores
+estimados e o
+conforme Braga, Carvalho e Ludermir (2007). A definição da arquitetura das redes, ou seja, número de camadas
+selecionadas
+16
+redes
+para
+o
+estudo.
+A
+escolha
+do
+tipo
+MLP
+está
+relacionada
+e o número de neurôniosEficiência
+por camada
+otimizadadepela
+ferramenta Intelligent
+Problem Solver (IPS) do software
+defoi
+utilização
+macronutrientes
+em eucalipto...
+617
+complexidade
+das
+RNA
+face
+ao
+maior
+número
+de
+entradas,
+o
+que
+aumenta
+o núm
+Statistica 7.0 (STATSOFT, 2007).
+conforme
+Braga, Carvalho
+(2007).
+definição dadas
+arquitetura
+A avaliação da acurácia e precisão
+das equações
+ajustadase eLudermir
+do resultado
+doAtreinamento
+redes das redes
+e o número
+de
+neurônios
+por camada
+foide
+otimizada
+pela
+ferramenta
+Pro
+conforme
+Braga, Carvalho
+e Ludermir
+definição
+das
+redes,
+número
+deIntelligent
+caneurais artificiais
+foram realizadas
+por (2007).
+meio
+doAerro
+dearquitetura
+RMSE
+Bias%oue seja,
+análise
+de resíduos
+%, testeda
+%, teste
+Statistica
+7.0
+(STATSOFT,
+2007).
+percentuais.
+As
+estimativas
+das
+técnicas
+estatísticas
+relacionadas
+à
+regressão
+e
+das
+RNA
+foram
+comparadas
+por
+madas e o número de neurônios por camada foi otimizada pela ferramenta Intelligent Problem Solver (IPS)
+A avaliação
+acurácia e conforme
+precisão das
+equações
+do teste
+t pareado
+5% de probabilidade
+os valoresdaobservados,
+Gorgens
+et al. ajustadas
+(2009). Oe do resulta
+domeio
+software
+Statistica
+7.0a(STATSOFT,
+2007). com
+neurais artificiais foram realizadas por meio do erro%, teste de RMSE%, teste d
+erro foiAassim
+definido
+avaliação da acurácia e precisão
+das equações ajustadas e do resultado do treinamento das
+percentuais. As estimativas das técnicas estatísticas relacionadas à regressão e das
+redes neurais artificiais
+foram
+realizadasmeio
+por do
+meio
+dot erro
+, teste
+, teste com
+de Bias
+e análise
+de
+teste
+pareado
+a 5%dedeRMSE
+probabilidade
+os valores
+observados,
+confo
+%
+%
+%
+(( ̂
+)⁄ )
+,
+resíduos percentuais. As estimativas daserro
+técnicas
+estatísticas
+foi assim
+definido relacionadas à regressão e das RNA foram
+comparadas
+por meio
+testedo
+t pareado
+5% de do
+probabilidade
+os valores observados, conforme
+enquanto
+que do
+a raiz
+quadradoa médio
+erro (RMSEcom
+%) e a tendenciosidade (Bias%) foram
+((
+)
+⁄
+)
+̂
+, enquanto que a raiz do quadrado
+Gorgens
+et
+al.
+(2009).
+O
+erro
+foi
+assim
+definido
+determinadas segundo Mabvurira e Miina (2002):
+
+médio do erro (RMSE%) e a tendenciosidade (Bias%) foram determinadas segundo Mabvurira e Miina
+quadradô médio
+do ̂erro
+) e a ten
+))enquanto
+⁄ ),(RMSE
+))⁄ )⁄(∑
+(√∑(
+̂) (
+⁄(∑ ̂ ⁄ )que
+e a raiz do ((∑(
+(2002):
+e, em%
+determinadas segundo Mabvurira e Miina (2002):
+que
+são os valores observados e preditos, respectivamente.
+̂ são
+os valores
+observadosee treinamento
+preditos, respectivamente.
+que edos
+Osemajustes
+modelos
+de regressão
+das
+RNA ̂foram
+do
+))⁄(∑
+⁄ do
+) auxílio
+((∑(
+) ( realizados
+(√∑(
+̂com
+e software
+Os
+ajustes
+dos
+modelos
+de
+regressão
+e
+treinamento
+das
+RNA
+foram
+realizados
+com
+auxílio
+software Statistica 7.0 (STATSOFT, 2007).
+Statistica 7.0 (STATSOFT, 2007).
+
+em que e ̂ são os valores observados e preditos, respectivamente.
+Os ajustes dos modelos de regressão e treinamento das RNA foram realiz
+Statistica
+7.0 ficaram
+(STATSOFT,
+2007).
+Os coeficientes de determinação das
+equações
+próximos
+à unidade e os parâmetros associados a
+coeficientes
+de determinação
+equações
+ficaram estatística
+próximos(Tabela
+à unidade
+e os asparâmetros
+todas Os
+variáveis
+independentes
+apresentaramdas
+elevada
+significância
+1). Entre
+variáveis
+RESULTADOS
+avaliadas apela
+Stepwise,
+a relação
+diâmetro
+do lenho comEelevada
+oDISCUSSÃO
+DAP foi
+a melhor para
+as estimativas
+associados
+todas
+variáveis
+independentes
+apresentaram
+significância
+estatística
+(Tabelados
+1). CUB
+Entre
+Os
+coeficientes
+de
+determinação
+das
+equações
+ficaram
+próximos
+individuais
+para
+N,
+P,
+K
+e
+Ca.
+Para
+o
+Mg
+foi
+a
+relação
+espessura
+da
+casca
+com
+DAP
+e
+para
+o
+S
+mais
+de
+uma à unidade
+as variáveis avaliadas pela Stepwise, a relação diâmetro do lenho com o DAP foi a melhor para as estimativas
+todas
+variáveis
+independentes
+apresentaram
+elevada
+significância
+(T
+variável
+explicativa.
+A
+variável
+categórica
+para
+as
+equações
+generalistas
+mostrou-se
+eficiente
+porque
+apresentou
+dos CUB individuais para N, P, K e Ca. Para o Mg foi a relação espessura da casca com DAP e para o estatística
+S
+avaliadas
+pela Stepwise,
+a ao
+relação
+diâmetro
+do lenho
+com o DAPno
+foi a melhor
+alta
+significância.
+Verificaram-se
+melhorias
+na
+precisão
+estatística
+incorporar
+entradas
+dendrométricas
+mais de uma variável explicativa. A variável categórica para as equações generalistas mostrou-se eficiente
+para
+N,que
+P, K
+Ca. Para
+o Mg foi de
+a relação
+espessura
+da casca com
+modelo de estimação do CUB na região doindividuais
+tronco, haja
+vista
+os emaiores
+coeficientes
+determinação
+foram
+porque
+apresentou
+significância.
+Verificaram-se
+melhorias na precisão estatística ao incorporar entradas
+observados
+para asalta
+equações
+específicas
+por macronutriente.
+
+RESULTADOS
+RESULTADOSEEDISCUSSÃO
+DISCUSSÃO
+
+dendrométricas no modelo de estimação do CUB na região do tronco, haja vista que os maiores coeficientes
+deTABELA
+determinação
+forampara
+observados
+equações
+específicas por macronutriente.
+1: Equações
+estimar opara
+CUBas
+para macronutrientes.
+Tronco
+
+TABLE 1: Equations to estimate CBUTrunk for macronutrients.
+TABELA 1: Equações para estimar o CUBTronco para macronutrientes.
+TABLE 1:
+Equations to estimate CBUTrunk for macronutrients.
+n
+
+̅
+
+Equações ajustadas
+
+N
+
+15
+
+P
+
+15
+
+K
+
+15
+
+Ca
+
+15
+
+Mg
+
+15
+
+S
+
+15
+
+GT
+
+90
+
+0,946
+
+GC
+
+90
+
+0,875
+
+(
+
+⁄
+
+(
+
+⁄
+
+(
+
+(
+
+⁄
+
+(
+
+)
+)
+)
+
+0,992
+⁄
+
+0,967
+
+)
+
+0,968
+0,968
+
+⁄
+
+)
+
+0,980
+0,989
+
+Em que: GT = Modelo 2; GC = Modelo 3; n = número de observações; x = N, P, K, Ca, Mg ou S; ** = significativo
+GT = Modelo
+2; GC = Modelo 3; de
+n =determinação
+número de observações;
+x =K,N,Ca,
+P, Mg,
+K, Ca,
+Mg ou
+S; **pelo
+=
+a Em
+1%; que:
+* = significativo
+corrigido. N, P,
+S foram
+obtidos
+* a 5%; R ̅^2 = coeficiente
+̅ = coeficiente de determinação corrigido. N, P, K, Ca, Mg, S foram
+significativo
+a
+1%;
+=
+significativo
+a
+5%;
+Modelo 1/Stepwise. Espessura de casca; DAP e DAPsc expressos em cm. CUB expresso em kg de biomassa kg de
+obtidos pelo
+Modelo
+1/Stepwise.
+Espessurabiológico.
+de casca; DAP e DAPsc expressos em cm. CUB expresso em kg de
+nutriente-1;
+CUB
+= Coeficiente
+de utilização
+biomassa kg de nutriente-1; CUB = Coeficiente de utilização biológico.
+
+A semelhança dos dados estimados e observados pelas regressões foi evidenciada pela ausência de
+significância estatística no teste t pareado (Tabela 2). As equações para estimação do CUBTronco do N, Mg e S
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+apresentaram os menores desvios expressos pela RMSE%, tendenciosidades e erros relativos médios. A
+utilização da regressão como ferramenta estatística para criar uma equação generalista para todos os
+macronutrientes categorizados não apresentou adequada acurácia e precisão (GT e GC), apesar de ter
+
+Lafetá, B. O. et al
+
+618
+
+A semelhança dos dados estimados e observados pelas regressões foi evidenciada pela ausência de
+significância estatística no teste t pareado (Tabela 2). As equações para estimação do CUBTronco do N, Mg
+e S apresentaram os menores desvios expressos pela RMSE%, tendenciosidades e erros relativos médios.
+A utilização da regressão como ferramenta estatística para criar uma equação generalista para todos os
+macronutrientes categorizados não apresentou adequada acurácia e precisão (GT e GC), apesar de ter
+apresentado baixo Bias%. A precisão das equações para estimação dos CUB (Tabela 2) não foi comprovada
+pela análise gráfica, pois a maioria foi heterocedástica (Figura 1).
+TABELA 2: Precisão das equações obtidas para os CUB do tronco.
+TABLE 2:
+Equation precisions obtained for CBUs in the trun
+CUB RMSE%
+
+Bias%
+
+RMSE%0,00
+Bias%
+N CUB8,40
+P N18,60
+8,40 0,00
+0,00
+K P 18,21
+18,60 -0,09
+0,00
+Ca K18,20
+18,21 -0,08
+-0,09
+Mg Ca14,33
+18,20 0,00
+-0,08
+14,33 0,43
+0,00
+S Mg10,58
+S
+10,58
+0,43
+GT 31,05
+-1,08
+GT
+31,05
+-1,08
+GC 49,05
+2,06
+GC
+
+49,05
+
+2,06
+
+Erros Relativos (%)
+Teste t
+Máximo
+Médio
+Mínimo
+p
+Erros Relativos (%)
+Teste t
+14,46
+0,66
+-12,44
+0,9990
+Máximo
+Médio
+Mínimo
+p
+38,36
+-26,98
+14,46
+0,663,12 -12,44
+0,99901,0000
+60,33
+-24,43 1,00000,9857
+38,36
+3,123,74 -26,98
+50,28
+-24,20 0,98570,9870
+60,33
+3,743,54 -24,43
+49,92
+-22,69 0,98701,0000
+50,28
+3,542,27 -24,20
+49,92
+2,27
+14,22
+-0,55 -22,69-19,92 1,00000,8764
+14,22
+165,84 -0,55
+19,28 -19,92-43,26 0,87640,7413
+165,84
+19,28
+159,69
+19,51 -43,26-67,70 0,74130,6908
+159,69
+
+19,51
+
+-67,70
+
+0,6908
+
+Emnsque:
+= p >no
+0,05
+no teste
+t pareado;
+GTModelo
+= Modelo
+2; GC
+= Modelo
+RMSE==Root
+Rootmean
+mean square error
+Em que:
+= pns
+> 0,05
+teste
+t pareado;
+GT =
+2; GC
+= Modelo
+3;3;RMSE
+error (raiz
+que: ns = p > 0,05 no teste t pareado; GT = Modelo 2; GC = Modelo 3; RMSE = Root mean square error
+(raizEm
+domédio
+quadrado
+médioedo
+erro);
+e Bias = tendenciosidade.
+do quadrado
+do
+erro);
+Bias
+=
+tendenciosidade.
+(raiz do quadrado médio do erro); e Bias = tendenciosidade.
+
+FIGURA 1: Representação da distribuição dos resíduos percentuais (eixos y) em função dos CUB no tronco
+(eixos x, kg de biomassa kg de nutriente-1) pelas regressões.
+FIGURA
+1: 1:
+Representação
+daofdistribuição
+dos resíduos
+percentuais
+(eixos
+eminfunção
+dos(xCUB
+no
+FIGURE
+Representation
+residuals distribution
+(y axis)
+as a function
+of y)
+CBU
+the
+trunk
+kg tronco
+FIGURA 1: Representação
+da distribuição
+dos resíduos
+percentuais
+(eixos
+y) em
+função
+dosaxis,
+CUB
+no tronco
+-1
+-1 kg de nutriente ) pelas regressões.
+(eixos
+x,
+kg
+de
+biomassa
+biomass kg of nutrient ) by regressions.-1
+
+x, kg de biomassa
+kg de nutriente
+regressões.
+FIGURE(eixos
+1: Representation
+of residuals
+distribution) pelas
+(y axis)
+as a function of CBU in the trunk (x axis, kg
+-1 distribution (y axis) as a function of CBU in the trunk (x axis, kg biomass
+Representation
+of nutrient
+residuals
+kg redes
+of
+) byfunções
+regressions.
+A biomass
+maioria das
+apresentou
+de ativação de base não linear nas camadas intermediárias e de
+
+FIGURE 1:
+
+-1
+of nutrient
+) by
+regressions.
+saídakg
+(Tabela
+3). Maior
+complexidade
+foi observada para as redes generalistas que apresentaram mais neurônios
+nas camadas
+intermediárias.
+As amplitudes
+de variação
+do RMSE
+fasesnas
+de treino,
+teste
+e validação e de
+% entre
+A maioria das redes apresentou
+funções
+de ativação
+de base
+nãoaslinear
+camadas
+intermediárias
+observadas
+nasMaior
+redes complexidade
+por nutriente foram
+muito superiores
+às dasgeneralistas
+redes generalistas
+(Tabela 4). Diante
+da
+saída
+(Tabela
+3).
+foi
+observada
+para
+as
+redes
+que
+apresentaram
+maisintermediárias
+neurônios
+A maioria das
+redes apresentou
+funções
+de ativação
+deRelativos
+base não
+linear nas camadas
+observada entreAs
+os valores
+de RMSE
+e Erros
+(%) dentro de um mesmo tipo de
+%, Bias% do
+nas semelhança
+camadas intermediárias.
+amplitudes
+de variação
+RMSE
+% entre as fases de treino, teste e validação
+e de saídarede,
+(Tabela
+3). Maior
+complexidade
+observada
+para teste
+as redes
+generalistas
+que
+apresentaram
+mais
+a escolha
+da melhor
+rede baseou-se foi
+probabilidades
+t. Estas
+probabilidades
+para
+as redes
+observadas
+nas redes
+por nutriente
+foram nas
+muito
+superiores do
+às das redes
+generalistas
+(Tabela
+4). Diante da
+generalistas
+e
+por
+nutriente
+apresentaram
+semelhança
+entre
+si
+superior
+a
+70%
+para
+GC,
+P
+e
+Mg,
+neurônios
+nas camadas
+intermediárias.
+As amplitudes
+de
+variação
+do RMSE
+entredeasum
+fases
+de treino, teste
+semelhança
+observada
+entre os valores
+RMSE
+Relativos
+(%)S%dentro
+mesmo
+%, Bias
+% e Erros
+consequentemente,
+procedeu-se
+a análisedegráfica
+destas
+(Figura
+2). Para
+o N, K, Ca,
+e GT optaram-se
+apenastipo de
+e validação
+nas
+redes
+por
+nutriente
+foram
+muito
+superiores
+às
+das
+redes
+generalistas
+rede,pela
+aobservadas
+escolha
+da
+melhor
+rede
+baseou-se
+nas
+probabilidades
+do
+teste
+t.
+Estas
+probabilidades
+para
+as(Tabela
+redes 4).
+análise gráfica da melhor rede, pois as RNA N2, K1, Ca1, S2 e GT2 apresentaram uma probabilidade
+porcomparativamente
+nutriente apresentaram
+semelhança
+si superior
+a Tronco
+70%
+para pelas
+GC,
+P e Mg,
+Diantegeneralistas
+dainferior
+semelhança
+observada
+entrea os
+de RMSE
+,
+Bias
+e
+Erros
+Relativos
+(%)
+dentro
+de um
+a e70%,
+sua valores
+correspondente.
+Asentre
+estimativas
+do
+CUB
+obtidas
+RNA
+%
+%
+procedeu-se
+a análiserede
+gráfica
+destasprecisas
+(Figura
+2). Para o2N,e K,4),Ca,
+S e GT
+comparativamente
+às dasdaregressões
+foram
+mais
+(Tabelas
+dat. optaram-se
+tendência
+àapenas
+mesmoconsequentemente,
+tipo
+de rede, a escolha
+melhor
+baseou-se
+nas probabilidades
+doalém
+teste
+Estas
+probabilidades
+pelahomocedasticidade
+análise gráfica da
+melhor
+(Figura
+2). rede, pois as RNA N2, K1, Ca1, S2 e GT2 apresentaram uma probabilidade
+
+inferior a 70%, comparativamente a sua correspondente. As estimativas do CUBTronco obtidas pelas RNA
+TABELA 3: Características
+das redes neurais
+(RNA) selecionadas
+o CUB
+dos
+comparativamente
+às das regressões
+foramartificiais
+mais precisas
+(Tabelas para
+2 e projetar
+4), além
+daTronco
+tendência
+à
+macronutrientes.
+homocedasticidade
+(Figura 2).
+
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+
+TABELA 3: Características das redes neurais artificiais (RNA) selecionadas para projetar o CUB Tronco dos
+macronutrientes.
+
+Eficiência de utilização de macronutrientes em eucalipto...
+
+619
+
+para as redes generalistas e por nutriente apresentaram semelhança entre si superior a 70% para GC, P e
+Mg, consequentemente, procedeu-se a análise gráfica destas (Figura 2). Para o N, K, Ca, S e GT optaramse apenas pela análise gráfica da melhor rede, pois as RNA N2, K1, Ca1, S2 e GT2 apresentaram uma
+probabilidade inferior a 70%, comparativamente a sua correspondente. As estimativas do CUBTronco obtidas
+pelas RNA comparativamente às das regressões foram mais precisas (Tabelas 2 e 4), além da tendência à
+homocedasticidade (Figura 2).
+TABELA 3: Características das redes neurais artificiais (RNA) selecionadas para projetar o CUBTronco dos
+macronutrientes.
+TABLE
+3: 3:
+Characteristics
+of artificial
+neuralneural
+networks
+(ANN)(ANN)
+selectedselected
+to project
+CBUTrunk
+macronutrient.
+TABLE
+Characteristics
+of artificial
+networks
+to the
+project
+the ofCBU
+Trunk of
+macronutrient.
+
+RNA
+
+n
+
+TIPO
+
+Arquitetura
+
+N1
+
+MLP
+
+2-8-1
+
+15
+
+N2
+
+MLP
+
+2-6-1
+
+P1
+
+MLP
+
+P2
+
+----- Entradas ----Numéricas
+
+-- Função de Ativação --
+
+Categórica
+
+Intermediária
+
+Saída
+
+CUBDAP Casca, CUBDAP Lenho
+
+Tangencial
+
+Identidade
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Tangencial
+
+Identidade
+
+2-9-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Logística
+
+Logística
+
+MLP
+
+2-5-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Logística
+
+Logística
+
+K1
+
+MLP
+
+2-3-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Logística
+
+Logística
+
+K2
+
+MLP
+
+2-3-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Tangencial
+
+Logística
+
+Ca1
+
+MLP
+
+2-9-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Tangencial
+
+Exponencial
+
+Ca2
+
+MLP
+
+2-7-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Tangencial
+
+Exponencial
+
+Mg1
+
+MLP
+
+2-9-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Exponencial
+
+Logística
+
+Mg2
+
+MLP
+
+2-6-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Logística
+
+Logística
+
+S1
+
+MLP
+
+2-9-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Exponencial
+
+Tangencial
+
+S2
+
+MLP
+
+2-9-1
+
+15
+
+CUBDAP Casca, CUBDAP Lenho
+
+Tangencial
+
+Tangencial
+
+GT1
+
+MLP
+
+8-7-1
+
+90
+
+CUBDAP Casca, CUBDAP Lenho
+
+Nid
+
+Exponencial
+
+Tangencial
+
+GT2
+
+MLP
+
+8-10-1
+
+90
+
+CUBDAP Casca, CUBDAP Lenho
+
+Nid
+
+Identidade
+
+Identidade
+
+GC1
+
+MLP
+
+7-12-1
+
+90
+
+CUBDAP Casca
+
+Nid
+
+Tangencial
+
+Identidade
+
+GC2
+
+MLP
+
+7-12-1
+
+90
+
+CUBDAP Casca
+
+Nid
+
+Logística
+
+Identidade
+
+Em que: GT = Modelo 2; GC = Modelo 3; n = número de observações; MLP = Multilayer Perceptron (múltiplas
+Em que:
+GT = Casca
+Modelo
+2; GC = Modelo
+3; n =biológico
+número no
+de DAP
+observações;
+MLP CUBDAP
+= Multilayer
+Perceptron
+camadas);
+CUBDAP
+= coeficiente
+de utilização
+para a casca;
+Lenho
+= coeficiente
+(múltiplas
+camadas);
+CUB
+=
+coeficiente
+de
+utilização
+biológico
+no
+DAP
+para
+a
+casca;
+CUB
+DAP
+Casca
+DAP Lenho = CUB
+de utilização biológico no DAP para o lenho; e Nid = nutrients identification (identificação de nutrientes).
+coeficiente de utilização biológico no DAP para o lenho; e Nid = nutrients identification (identificação de
+expresso em kg de biomassa kg de nutriente-1.
+-1
+nutrientes). CUB expresso em kg de biomassa kg de nutriente .
+
+TABELA
+4: Precisão
+dasdas
+redes
+neurais
+artificiais
+TABELA
+4: Precisão
+redes
+neurais
+artificiais(RNA).
+(RNA).
+TABLE
+4:
+Precision
+of
+artificial
+neural
+networks
+TABLE 4: Precision of artificial neural networks(ANN).
+(ANN).
+RNA
+N1
+
+Fases
+
+Calibração
+Teste
+Validação
+N2
+Calibração
+Teste
+Validação
+P1
+Calibração
+Teste
+Validação
+P2
+Calibração
+Teste
+Validação
+Ci. Fl., K1
+v. 28, n. 2, abr
+.- jun., 2018
+Calibração
+Teste
+Validação
+
+RMSE%
+4,37
+6,49
+2,29
+2,88
+5,54
+1,88
+17,59
+25,86
+0,10
+17,98
+26,86
+0,11
+9,45
+26,54
+0,60
+
+Bias%
+0,39
+2,66
+3,66
+-0,01
+2,97
+7,60
+1,48
+-20,59
+4,86
+2,72
+-21,81
+2,40
+-0,63
+-20,51
+-17,68
+
+Erros Relativos (%)
+Teste t
+Máximo
+Médio
+Mínimo
+p
+5,39
+-0,24
+-8,13
+3,14
+-2,42
+-7,15
+0,2572
+3,74
+-3,5
+-8,57
+4,67
+0,10
+-6,46
+1,59
+-2,93
+-6,90
+0,086
+-2,84
+-7,04
+-9,22
+40,16
+1,15
+-18,00
+30,20
+25,65
+19,46
+0,5399
+19,42
+-2,39
+-18,59
+39,07
+-0,16
+-19,16Continuação...
+30,04
+27,86
+26,51
+0,5327
+20,91
+-0,17
+-15,68
+22,72
+2,36
+-12,91
+37,38
+26,36
+13,05
+0,0258
+41,34
+22,66
+9,58
+
+Erros Relativos (%)
+Teste t
+Médio
+Mínimo
+p
+620
+N1
+Calibração
+4,37
+0,39
+5,39
+-0,24
+-8,13
+TABELA. 4: Continuação...
+Teste
+6,49
+2,66
+3,14
+-2,42
+-7,15
+0,2572
+TABLE.4: Continued...
+Validação
+2,29
+3,66
+3,74
+-3,5
+-8,57
+N2
+Calibração
+2,88
+-0,01
+4,67
+0,10
+-6,46
+Erros Relativos
+(%)
+Teste
+Teste
+5,54
+2,97
+1,59
+-2,93
+-6,90
+0,086t
+RNA
+Fases
+RMSE%
+Bias%
+Máximo
+Médio
+Mínimo
+p
+Validação
+1,88
+7,60
+-2,84
+-7,04
+-9,22
+N1
+Calibração
+4,37
+0,39
+5,39
+-0,24
+-8,13
+P1
+17,59
+1,48
+40,16
+1,15
+-18,00
+Teste
+6,49
+2,66
+3,14
+-2,42
+-7,15
+0,2572
+25,86
+-20,59
+30,20
+25,65
+19,46
+0,5399
+Validação
+2,29
+3,66
+3,74
+-3,5
+-8,57
+0,10
+4,86
+19,42
+-2,39
+-18,59
+N2
+Calibração
+2,88
+-0,01
+4,67
+0,10
+-6,46
+P2
+17,98
+2,72
+39,07
+-0,16
+-19,16
+Teste
+5,54
+2,97
+1,59
+-2,93
+-6,90
+0,086
+26,86
+-21,81
+30,04
+27,86
+26,51
+0,5327
+Validação
+1,88
+7,60
+-2,84
+-7,04
+-9,22
+0,11
+2,40
+20,91
+-0,17
+-15,68
+P1
+Calibração
+17,59
+1,48
+40,16
+1,15
+-18,00
+K1
+9,45
+-0,63
+22,72
+2,36
+-12,91
+Teste
+25,86
+-20,59
+30,20
+25,65
+19,46
+0,5399
+26,54
+-20,51
+37,38
+26,36
+13,05
+0,0258
+Validação
+0,10
+4,86
+19,42
+-2,39
+-18,59
+0,60
+-17,68
+41,34
+22,66
+9,58
+P2
+17,98
+2,72
+39,07
+-0,16
+-19,16
+K2
+Calibração
+11,14
+4,37
+17,85
+-3,06
+-15,03
+26,86
+-21,81
+30,04
+27,86
+26,51
+0,5327
+Teste
+26,84
+-20,67
+37,90
+26,62
+12,67
+0,1492
+0,11
+2,40
+20,91
+-0,17
+-15,68
+Validação
+0,59
+-17,70
+41,78
+22,72
+8,64
+K1
+9,45
+-0,63
+22,72
+2,36
+-12,91
+Ca1
+Calibração
+8,75
+-1,06
+20,01
+2,01
+-15,67
+26,54
+-20,51
+37,38
+26,36
+13,05
+0,0258
+Teste
+28,64
+-9,05
+44,93
+17,84
+-15,99
+0,4551
+0,60
+-17,68
+41,34
+22,66
+9,58
+Validação
+1,76
+-0,84
+8,30
+1,46
+-11,65
+K2
+11,14
+4,37
+17,85
+-3,06
+-15,03
+Ca2
+Calibração
+7,76
+-0,61
+14,20
+1,46
+-12,63
+26,84
+-20,67
+37,90
+26,62
+12,67
+0,1492
+Teste
+30,78
+-7,88
+44,09
+16,91
+-19,27
+0,8221
+0,59
+-17,70
+41,78
+22,72
+8,64
+Validação
+0,98
+16,03
+0,93
+-13,40
+-21,84
+Ca1
+8,75
+-1,06
+20,01
+2,01
+-15,67
+Mg1
+Calibração
+11,56
+2,57
+10,91
+-1,43
+-19,38
+28,64
+-9,05
+44,93
+17,84
+-15,99
+0,4551
+Teste
+16,83
+-7,15
+37,45
+11,63
+-4,25
+0,6446
+1,76
+-0,84
+8,30
+1,46
+-11,65
+Validação
+0,10
+8,16
+18,42
+-7,31
+-30,42
+Ca2
+7,76
+-0,61
+14,20
+1,46
+-12,63
+Mg2
+Calibração
+11,11
+1,47
+14,28
+-0,37
+-18,70
+Teste
+30,78
+-7,88
+44,09
+16,91
+-19,27
+0,8221
+Teste
+21,72
+-1,27
+38,23
+6,83
+-12,76
+0,6163
+Validação
+0,98
+16,03
+0,93
+-13,40
+-21,84
+0,10
+6,71
+19,75
+-6,04
+-30,11
+Mg1
+Calibração
+11,56
+2,57
+10,91
+-1,43
+-19,38
+S1
+Calibração
+6,69
+-0,14
+13,23
+0,61
+-11,23
+Teste
+16,83
+-7,15
+37,45
+11,63
+-4,25
+0,6446
+5,56
+2,38
+2,95
+-2,27
+-5,89
+0,8547
+Validação
+0,10
+8,16
+18,42
+-7,31
+-30,42
+Validação
+0,25
+-4,24
+16,96
+4,44
+-20,12
+Mg2
+Calibração
+11,11
+1,47
+14,28
+-0,37
+-18,70
+S2
+8,10
+-0,73
+11,46
+1,42
+-13,17
+Teste
+21,72
+-1,27
+38,23
+6,83
+-12,76
+0,6163
+9,92
+7,44
+-2,77
+-6,87
+-8,94
+0,4833
+Validação
+0,10
+6,71
+19,75
+-6,04
+-30,11
+Validação
+0,32
+3,67
+16,04
+-3,13
+-15,75
+S1
+Calibração
+6,69
+-0,14
+13,23
+0,61
+-11,23
+GT1
+25,42
+1,00
+54,07
+4,10
+-30,64
+Teste
+5,56
+2,38
+2,95
+-2,27
+-5,89
+0,8547
+Teste
+21,51
+0,39
+55,97
+0,64
+-39,49
+0,7801
+Validação
+0,25
+-4,24
+16,96
+4,44
+-20,12
+Validação
+24,71
+-4,96
+85,83
+8,75
+-33,56
+S2
+Calibração
+8,10
+-0,73
+11,46
+1,42
+-13,17
+GT2
+Calibração
+24,32
+-6,28
+49,62
+3,07
+-28,43
+Teste
+9,92
+7,44
+-2,77
+-6,87
+-8,94
+0,4833
+Teste
+24,78
+0,03
+48,57
+6,25
+-23,02
+0,2833
+Validação
+0,32
+3,67
+16,04
+-3,13
+-15,75
+Validação
+27,03
+-6,76
+52,91
+10,87
+-35,88
+GT1
+Calibração
+25,42
+1,00
+54,07
+4,10
+-30,64
+GC1
+Calibração
+24,33
+-0,09
+53,90
+2,25
+-25,27
+Teste
+21,51
+0,39
+55,97
+0,64
+-39,49
+0,7801
+Teste
+28,55
+-6,49
+34,47
+3,87
+-26,15
+0,3041
+Validação
+24,71
+-4,96
+85,83
+8,75
+-33,56
+Validação
+25,68
+-5,91
+53,26
+10,14
+-35,56
+GT2
+Calibração
+24,32
+-6,28
+49,62
+3,07
+-28,43
+GC2
+Calibração
+29,95
+-5,27
+57,29
+2,54
+-24,46
+Teste
+24,78
+0,03
+48,57
+6,25
+-23,02
+0,2833
+Teste
+24,33
+0,30
+35,54
+3,07
+-25,91
+0,4073
+Validação
+27,03
+-6,76
+52,91
+10,87
+-35,88
+Validação
+25,96
+-5,64
+59,13
+9,51
+-35,53
+GC1
+Calibração
+24,33
+-0,09
+53,90
+2,25
+-25,27
+Em que: ns =nsp > 0,05
+no teste t pareado;28,55
+GT = Modelo
+2; GC = Modelo
+3; RMSE3,87
+= Root mean-26,15
+square error
+(raiz do
+-6,49
+0,3041
+Em que: = p >Teste
+0,05 no teste t pareado;
+GT = Modelo
+2; GC =34,47
+Modelo 3; RMSE
+= Root mean square
+error
+quadrado
+médio
+do
+erro);
+e
+Bias
+=
+tendenciosidade.
+Validação
+25,68
+-5,91
+53,26
+10,14
+-35,56
+(raiz do quadrado
+médio do erro); e Bias
+= tendenciosidade.
+GC2
+Calibração
+29,95
+-5,27
+57,29
+2,54
+-24,46
+Teste
+24,33
+0,30
+35,54
+3,07
+-25,91
+0,4073
+Validação
+25,96
+-5,64
+59,13
+9,51
+-35,53
+RNA
+
+Fases
+
+RMSE%
+
+Bias% B. O. et al
+Lafetá,
+Máximo
+
+Em que: ns = p > 0,05 no teste t pareado; GT = Modelo 2; GC = Modelo 3; RMSE = Root mean square error
+(raiz do quadrado médio do erro); e Bias = tendenciosidade.
+
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+
+Eficiência de utilização de macronutrientes em eucalipto...
+
+621
+
+FIGURA 2: Representação
+da distribuição
+dos resíduos
+percentuais
+(eixos
+y)y)ememfunção
+CUBnonotronco
+tronco (eixos
+FIGURA 2: Representação
+da distribuição
+dos resíduos
+percentuais
+(eixos
+função dos
+dos CUB
+-1
+(eixos x,kg
+kg de
+kg-1)depelas
+nutriente
+) pelas redes.
+x, kg de biomassa
+debiomassa
+nutriente
+redes.
+FIGURE 2: Representation of residual distributions (y axis) as a function of CBU in the trunk (x axis, kg
+FIGURE 2: Representation
+of residual distributions (y axis) as a function of CBU in the trunk (x axis, kg biomass
+biomass kg of nutrient-1) by networks.
+kg of nutrient-1) by networks.
+A superioridade da inteligência artificial por meio das RNA foi verificada em relação aos algoritmos de
+
+regressão (Tabelas
+2 e 4; Figuras
+1 e 2) para
+o CUB
+Tronco. Além disso, foi precisa na estimação
+A superioridade
+da inteligência
+artificial
+porestimar
+meio das
+RNA
+foi verificada em relação aos algoritmos
+simultânea e generalista do CUBTronco de todos o macronutrientes, baseando-se apenas na amostragem da casca
+de regressão (Tabelas
+e 4; Salienta-se
+Figuras 1que
+e 2)
+para estimar
+. Além
+disso, foi
+precisa
+na estimação
+na região do2 DAP.
+a eficiência
+das RNAo jáCUB
+foi comprovada
+na predição
+variáveis
+químicas
+e
+Tronco
+físicas do solo
+para locais de
+nãotodos
+amostrados,
+análises químicasbaseando-se
+analíticas e identificação
+de deficiências da casca
+simultânea e generalista
+do CUB
+o
+macronutrientes,
+apenas
+na
+amostragem
+nutricionais (SENA et Tronco
+al., 2000; ANGELICO, 2005; SARTIN, 2014). De acordo Haykin (2001), as RNA
+na região do DAP.
+Salienta-se
+a eficiência
+RNA
+comprovada
+na predição
+variáveis
+possibilitam
+a obtençãoque
+de estimativas
+maisdas
+precisas
+quejáo foi
+ajuste
+de modelos matemáticos
+convencionais,
+fatoquímicas
+e físicas do solo
+analíticaso eestabelecimento
+identificação
+deficiências
+que apara
+tornalocais
+atrativanão
+para amostrados,
+solução de umaanálises
+série de químicas
+problemas. Entretanto,
+de de
+relações
+funcionaisetentre
+e atributos
+do povoamento
+ainda
+é incipiente.2014). De acordo Haykin (2001), as RNA
+nutricionais (SENA
+al.,CUB
+2000;
+ANGELICO,
+2005;
+SARTIN,
+A precisão das RNA foi considerada satisfatória, em virtude da complexidade e quantidade de processos
+possibilitam abiológicos
+obtenção
+estimativas
+maisTrata-se
+precisas
+quecoeficiente
+o ajuste que
+de modelos
+matemáticos
+convencionais,
+quedeinfluenciam
+o CUB.
+de um
+pode ser afetado
+por características
+morfológicas
+(relação
+raiz-parte
+aérea,
+eficiência
+e
+extensão
+do
+sistema
+radicular)
+e
+fisiológicas
+fato que a torna atrativa para solução de uma série de problemas. Entretanto, o estabelecimento(taxa
+de relações
+fotossintética e a capacidade de manter o metabolismo normal com baixo teor de nutrientes nos tecidos)
+funcionais entre
+CUB
+e
+atributos
+do
+povoamento
+ainda
+é
+incipiente.
+(NOVAIS et al., 2007). A capacidade das redes oriundas do Modelo 3 (GC) de estabelecer relações funcionais
+A precisão
+das RNA
+foi considerada
+em pela
+virtude
+e quantidade
+de
+entre variáveis
+dependentes
+e independentessatisfatória,
+não foi prejudicada
+funçãoda
+de complexidade
+ativação do tipo identidade
+na
+camada de saída.
+verificada a utilização
+de funções
+não de
+lineares
+camadas intermediárias
+paraser
+a maioria
+processos biológicos
+que Foi
+influenciam
+o CUB.
+Trata-se
+umnascoeficiente
+que pode
+afetado por
+das RNA (Tabela 3). Segundo Braga, Carvalho e Ludermir (2007), esta tendência permite que a composição das
+característicasfunções
+morfológicas
+(relação
+raiz-parte
+aérea, eficiência
+extensão
+radicular)
+e fisiológicas
+nas camadas
+sucessivas
+tenha capacidade
+de resolver eos
+problemasdo
+desistema
+maior ordem
+no espaço
+de
+entrada. Haja
+que a modelagem
+por RNA
+visa ao levantamento
+de parâmetros
+físicos
+do sistema,
+mas
+(taxa fotossintética
+e a vista
+capacidade
+de manter
+o não
+metabolismo
+normal
+com baixo
+teor
+de nutrientes
+nos
+sim, prover um modelo que descreva o seu comportamento. A habilidade da rede em modelar qualquer processo
+tecidos) (NOVAIS
+et
+al.,
+2007).
+A
+capacidade
+das
+redes
+oriundas
+do
+Modelo
+3
+(GC)
+de
+estabelecer
+relações
+não linear está relacionada ao seu sistema de processamento simples interligado por neurônios artificiais, que
+funcionais entre
+variáveis
+dependentes
+independentes
+nãopor
+foiuma
+prejudicada
+pela função
+de ativação
+aceitam
+inputs únicos
+ou múltiplose para
+produzir uma saída
+função de transferência
+(BEHERA;
+RENE; do tipo
+PARK, 2012).
+identidade na camada
+de saída. Foi verificada a utilização de funções não lineares nas camadas intermediárias
+Embora as redes generalistas tenham apresentado um RMSE% em torno de 25, o melhor treino e pior
+para a maioriavalidação
+das RNA
+(Tabela
+3). Segundo
+Braga,
+Carvalho
+e Ludermir
+(2007),
+tendência
+da rede
+GC1 (Tabela
+3) não implicou
+em uma
+memorização
+excessiva dos
+dados deesta
+treinamento,
+pois permite
+não
+foram
+utilizados
+muitos
+neurônios
+na
+camada
+intermediária
+e
+aplicou-se
+uma
+normalização
+dos
+dados
+como
+que a composição das funções nas camadas sucessivas tenha capacidade de resolver os problemas de maior
+ordem no espaço de entrada. Haja vista que a modelagem por RNA não visa ao levantamento de parâmetros
+físicos do sistema, mas sim, prover um modelo que descreva o seu comportamento. A habilidade da rede em
+modelar qualquer processo não linear está relacionada ao seu sistema de processamento simples interligado
+por neurônios artificiais, que aceitam inputs únicos ou múltiplos para produzir uma saída por uma função
+de transferência (BEHERA; RENE; PARK, 2012).
+Embora as redes generalistas tenham apresentado um RMSE% em torno de 25, o melhor treino e pior
+validação da rede GC1 (Tabela 3) não implicou em uma memorização excessiva dos dados de treinamento,
+pois não foram utilizados muitos neurônios na camada intermediária e aplicou-se uma normalização dos
+dados como heurística. Esta normalização é um recurso muito utilizado no processamento estatístico com
+RNA visando a uma aproximação da solução ideal dos problemas minimizando os erros (STATSOFT, 2007;
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+
+Lafetá, B. O. et al
+
+622
+
+SOARES et al., 2011). É importante ressaltar que não existe um método generalizado para determinar
+valores ótimos para o número de camadas intermediárias ou de neurônios na mesma, pois estas ocorrem em
+função da inteligência esperada. Considera-se-, ainda, que a variância total de ensaios experimentais não
+está isenta de erros, sendo parte atribuída a fatores controlados de causas conhecidas e outra, a fatores de
+natureza aleatória.
+A capacidade de generalização e conectividade das RNA permitiu que se utilizasse apenas uma rede
+para realizar a estimação simultânea dos CUB do tronco, demonstrando que pode captar o realismo biológico
+dos dados. O desempenho das RNA generalistas foi mais conciso e consistente que as construídas por
+macronutriente, apresentando melhor distribuição das estatísticas de precisão entre as fases de treino, teste
+e validação (Tabela 4). Isto se deve, provavelmente, ao maior número de observações e representatividade
+no processamento das redes generalistas.
+As redes GC foram construídas com apenas o CUBDAP Casca como variável mensurada em relação
+à GT1, que também necessita do CUBDAP Lenho. Esta diferença possui grande significado prático, pois
+necessita-se amostrar apenas a casca na região do DAP e não casca e lenho. Consequentemente, o processo
+de amostragem em campo é muito mais rápido, menos oneroso e reduz à metade o custo analítico, além
+de ser menos laboriosa pela possibilidade de utilização de equipamentos mais simples e de fácil manuseio,
+como o facão para coletar a casca. Uma constante aferição nos valores do CUBTronco em condições de campo
+é necessária porque variações podem ocorrer para um mesmo material genético em função das condições
+edafoclimáticas (SANTANA; BARROS; NEVES, 2002). Desta forma, um modelo generalista como o
+obtido pelas redes reduz as atividades operacionais para obtenção do CUBTronco.
+O CUB é a base da recomendação de fertilizantes e o método não destrutivo proposto pelo presente
+trabalho forneceu estimativas precisas. Apesar de ser mais complexa que a regressão, a implementação
+das redes neurais como ferramenta demonstrou ser uma adequada opção para estimar o CUB. Esta é uma
+ferramenta que carece ser mais bem explorada nas áreas de pesquisa e nutrição florestal.
+CONCLUSÃO
+A modelagem por redes neurais artificiais utilizando-se apenas amostra da casca na região do DAP
+demonstrou ser adequada para a estimativa do coeficiente de utilização biológico do tronco em eucalipto.
+AGRADECIMENTOS
+À CAPES, ao CNPq, à Aperam Bioenergia, à UFVJM e à UFV por toda assistência, auxílio
+financeiro e apoio.
+REFERÊNCIAS
+ALMEIDA, A. C. et al. Growth and water balance of Eucalyptus grandis hybrids plantations in Brazil
+during a rotation for pulp production. Forest Ecology and Management, Amsterdam, v. 251, n. 1-2,
+p. 10-21, out. 2007.
+ALONGI, D. M.; CLOUGH, B. F.; ROBERTSON, A. I. Nutrient use efficiency in arid-zone forests of the
+mangroves Rhizophora stylosa and Avicennia marina. Aquatic Botany, Amsterdam, v. 82, n. 2, p. 121-131,
+jun. 2005.
+ANGELICO, J. C. Desempenho das redes neurais artificiais na estimativa das variáveis físicas e
+químicas do solo. 2005. 160 f. Tese (Doutorado em Agronomia) – Universidade Estadual Paulista, Botucatu,
+2005.
+BARROS, N. F. et al. Classificação nutricional de sítios florestais - Descrição de uma metodologia. Revista
+Árvore, Viçosa, MG, v. 10, n. 2, p. 112-120, 1986.
+BARROS, N. F. et al. Nutricalc 2.0 – Sistema para cálculo del balance nutricional y recomendación de
+fertilizantes para el cultivo de eucalipto. Bosque, Santiago, v. 16, n. 1, p. 129-131, 1995.
+BEHERA, S. K.; RENE, E. R.; PARK, H. S. Neural network modeling of sorption of pharmaceuticals
+in engineered floodplain filtration system. Expert Systems with Applications, Amsterdam, v. 39, n. 5,
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+
+Eficiência de utilização de macronutrientes em eucalipto...
+
+623
+
+p. 6052-6060, abr. 2012.
+BINOTI, M. L. M. S. Redes neurais artificiais para prognose da produção de povoamentos não
+desbastados de eucalipto. 2010. 54 f. Dissertação (Mestrado em Ciência Florestal) – Universidade Federal
+de Viçosa, Viçosa, MG, 2010.
+BRAGA, A. P.; CARVALHO, A. P.; LUDERMIR, T. B. Redes neurais artificiais: teoria e aplicações.
+2. ed. Rio de Janeiro: LTC, 2007. 226 p.
+BULLINÁRIA, J. A. Introduction to Neural Computation. Notas de aula. 2011. Disponível em: <http://
+www.cs.bham.ac.uk/~jxb/inc.html>. Acesso em: 8 de nov. 2011.
+CHAPIN, F. S. The mineral nutrition of wild plants. Annual Review of Ecology and Systematics, Palo
+Alto, v. 11, p. 233-260, 1980.
+COELHO, L. S.; SILVA, W. V.; PROTIL, R. M. Previsão não-linear dos preços de troncos de eucalipto
+baseada em uma abordagem neuroevolutiva. Gestão & Produção, São Carlos, v. 14, n. 1, p. 139-154, jan./
+abr. 2007.
+COSTA, A. M. et al. Avaliação do risco de anoxia para o cultivo do eucalipto no Rio Grande do Sul
+utilizando-se levantamento de solos. Scientia Forestalis, Piracicaba, v. 37, n. 84, p. 367-375, dez. 2009.
+GORGENS, E. B. et al. Estimação do volume de árvores utilizando redes neurais artificiais. Revista
+Árvore, Viçosa, mg, v. 33, n. 6, p. 1141-1147, nov./dez. 2009.
+HAYKIN, S. Redes Neurais: princípios e prática. 2. ed. Porto Alegre: Bookman, 2001. 900 p.
+INSTITUTO NACIONAL DE METEOROLOGIA (Brasil). INMET: Instituto Nacional de Meteorologia.
+[2010]. Disponível em: <http://www.inmet.gov.br>. Acesso em: 16 out. 2010.
+MABVURIRA, D.; MIINA, J. Individual-tree growth and mortality models for Eucalyptus grandis (Hill)
+Maiden plantations in Zimbabwe. Forest Ecology and Management, Amsterdam, v. 161, n. 1-3, p. 231245, maio 2002.
+MENDES, S. C. et al. Absorção e distribuição de nutrientes em plantios comerciais de bambu (Bambusa
+vulgaris) no nordeste do Brasil. Árvore, Viçosa, MG, v. 34, n. 6, p. 991-999, nov./dez. 2010.
+NOVAIS, R. F. et al. Fertilidade do solo. 1. ed. Viçosa, MG: Sociedade Brasileira de Ciência do Solo,
+2007. 1017 p.
+PULROLNIK, K. et al. Estoques de carbono e nitrogênio em frações lábeis e estáveis da matéria orgânica
+de solos sob eucalipto, pastagem e cerrado no Vale do Jequitinhonha-MG. Revista Brasileira de Ciência
+do Solo, Viçosa, MG, v. 33, n. 5, p. 1125-1136, set./out. 2009.
+SAIDELES, F. L. F. et al. Determinação do ponto de amostragem para a quantificação de macronutrientes
+em Acacia mearnsii de Wild. Revista Floresta, Curitiba, v. 40, n. 1, p. 49-62, jan./mar. 2010.
+SANTANA, R. C. et al. Alocação de nutrientes em plantios de eucalipto no Brasil. Revista Brasileira de
+Ciência do Solo, Viçosa, MG, v. 32, p. 2723-2733, 2008.
+SANTANA, R. C.; BARROS, N. F.; NEVES, J. C. L. Eficiência de utilização de nutrientes e sustentabilidade
+da produção em procedências de Eucalyptus grandis e Eucalyptus saligna em sítios florestais do estado de
+São Paulo. Revista Árvore, Viçosa, MG, v. 26, n. 4, p. 447-457, jul./ago. 2002.
+SARTIN, M. A. Projeto e implementação de redes neurais artificiais em distintos níveis de abstrações
+para o reconhecimento de deficiências de diversos macronutrientes e cultivares. 2014. 252 f.
+Tese (Doutorado em Engenharia Elétrica) – Universidade Estadual Paulista, Ilha Solteira, 2014.
+SENA, M. M. et al. Avaliação do uso de métodos quimiométricos em análise de solos. Química Nova,
+São Paulo, v. 23, n. 4, p. 547-556, 2000.
+SILVA, K. S.; CECÍLIO. R. A. Uso de redes neurais artificiais para a estimativa das temperaturas do ar
+médias, máximas e mínimas, mensais e anuais no estado do Espírito Santo. Caminhos de Geografia,
+Uberlândia, v. 11, n. 34, p. 84-92, jun. 2010.
+SOARES, F. A. A. M. N. et al. Recursive diameter prediction and volume calculation of eucalyptus trees
+using Multilayer Perceptron Networks. Computers and Electronics in Agriculture, Amsterdam, v. 78,
+n. 1, p. 19-27, ago. 2011.
+STATSOFT. Statistica (data analysis software system), version 7. [2007]. Disponível em: <http://www.
+statsoft.com>. Acesso em: 2007.
+
+Ci. Fl., v. 28, n. 2, abr .- jun., 2018
+
+

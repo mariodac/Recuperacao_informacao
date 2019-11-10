@@ -1,0 +1,2068 @@
+Artigo Original
+Volume 28, Número 2, p. 140-154, 2012
+
+http://dx.doi.org/10.4322/rbeb.2012.019
+
+Análise do desempenho de um eletrocardiógrafo interpretativo para
+utilização em um sistema computacional de auxílio diagnóstico em
+síndromes coronarianas agudas
+Manoel Gadêlha de Freitas Junior*, Denys Emilio Campion Nicolosi,
+Francisco Faustino de Albuquerque Carneiro de França
+Resumo O eletrocardiograma (ECG) registra a atividade elétrica cardíaca de forma não invasiva e permite obter uma
+avaliação rápida do ritmo cardíaco, muito útil na definição da conduta terapêutica imediata em pacientes com
+suspeita de síndrome coronariana aguda (SCA), que é uma entidade clínica que engloba a angina instável e os
+infartos agudos do miocárdio com e sem supra-desnível do segmento ST. Atualmente, eletrocardiógrafos de
+diversos fabricantes são capazes de fornecer diagnósticos automáticos dos ECGs, mas, apesar disso, existem
+poucos estudos publicados acerca do desempenho desses equipamentos. O objetivo deste trabalho é avaliar
+o desempenho de um eletrocardiógrafo interpretativo para determinar sua adequabilidade para uso em um
+sistema computacional que utiliza informações da história clínica obtida pelo médico generalista e do laudo
+eletrocardiográfico emitido pelo equipamento avaliado, permitindo auxiliar no diagnóstico de síndromes
+coronarianas agudas, quando o paciente não é atendido por cardiologistas. Foi utilizado um eletrocardiógrafo
+interpretativo Nihon Kohden Cardiofax 9620 que foi testado com um simulador de sinais eletrocardiográficos
+Metron PS 420 e, ainda, teve seu desempenho comparado com um sistema de telemedicina disponível em
+uma região semi-rural brasileira. Os testes resultaram em 93,8% de sensibilidade e 83,3% de especificidade,
+que foram considerados satisfatórias em situações clínicas compatíveis com isquemia miocárdica aguda,
+validando a sua utilização em um sistema de inteligência artificial para auxílio ao diagnóstico em SCA.
+Palavras-chave Eletrocardiograma (ECG), Eletrocardiógrafo interpretativo, Síndrome Coronariana
+Aguda (SCA).
+
+Performance analysis of an interpretive electrocardiograph for use in a
+computer-aided diagnostic system for acute coronary syndromes
+Abstract The electrocardiogram (ECG) is the recording of the heart’s electrical activity from the surface of the body
+and has been worldwide used in routine medical practice since the last century. This is a first-rate tool for a
+rapid interpretation of cardiac rhythm and for assessment and immediate therapeutic management in patients
+with suspected acute coronary syndrome, which is a clinical entity that includes unstable angina and acute
+myocardial infarction with and without ST-segment elevation. Currently, electrocardiographs from various
+manufacturers are capable of providing automatic diagnosis of ECGs, but there are few published studies
+about the performance of these equipments. The objective of this paper is to evaluate the performance of an
+interpretive electrocardiograph in order to determine their suitability for use in a computer system that uses
+the medical history information obtained by the general practitioner and the electrocardiographic report
+emitted by the equipment evaluated to aid the diagnosis of acute coronary syndromes, when the patient is
+not treated by cardiologists. We used an interpretive electrocardigraph Nihon Kohden Cardiofax 9620. The
+electrocardiograph simulator Metron PS 420 was the choice for the simulated tests, and also we compared
+the performance of the Cardiofax with a telemedicine system available in a semi-rural area in Brazil. The
+tests resulted in 93.8% sensitivity and 83.3% specificity that were considered satisfactory in clinical situations
+compatible with acute myocardial ischemia, validating their use in an artificial intelligence system for the
+diagnosis of ACS.
+Keywords
+
+Electrocardiogram (ECG), Interpretive electrocardiograph, Acute Coronary Syndrome (ACS).
+
+*e-mail: manoelgadelha@hotmail.com
+Recebido: 08/05/2011 / Aceito: 09/02/2012
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Desempenho de um eletrocardiógrafo interpretativo em síndromes coronarianas agudas
+
+Extended Abstract
+Introduction
+The electrocardiogram (ECG) is the recording of the heart’s
+electrical activity from the surface of the body and has been
+used worldwide in medical routine since the last century. This
+is a first-rate tool for a rapid interpretation of cardiac rhythm
+and for assessment and immediate therapeutic management
+in patients with suspected acute coronary syndrome, which
+is a clinical entity that includes unstable angina and acute
+myocardial infarction with and without ST-segment elevation.
+Currently, electrocardiographs from various manufacturers are
+capable of providing automatic diagnosis of ECGs, but there are
+few published studies about their performance. The objective
+of this paper is to evaluate the performance of an interpretive
+electrocardiograph in order to determine their suitability for
+use in a computer system to aid the diagnosis of acute coronary
+syndromes, when the patient is not treated by cardiologists.
+
+Material and Methods
+The interpretive electrocardiograph under test is the Cardiofax
+Nihon Kohden Model 9620, using the interpretation software
+ECAPS 12C, and was tested with an equipment capable of
+simulating various electrocardiographic signals, the Metron
+model PS-420 Patient Simulator. Tests were also made with
+patients in medical units of the brazilian semi-rural areas to
+assess whether the sample size of in simulated tests had statistical
+validity, comparing the proportions of correct interpretive
+electrocardiograph with a system of telemedicine available in the
+medical facility. The automatic interpretations were submitted
+for analysis to an experienced electrocardiograph (third author),
+considered the “gold standard” who did not know what was
+the result of the interpretation made by the equipment and the
+selection of the ECG signal simulated by Metron. To validate
+the interpretation “gold standard”, the first author analyzed
+the results of the electrocardiograph automatic interpretations,
+based on Cardiofax User’s Guide and watching the brazilian
+guidelines, besides counting with the aid of textbooks in the
+area and his own experience in Cardiology. The validation
+criteria of the cases were the agreement between the ECG
+interpretation of the “gold standard” and the first author. Tests
+were accomplished using the ECG simulator Metron, totaling
+33 different waveforms, whose respective electric signals were
+applied to the Cardiofax involving multiple values (in mV) of
+ST segment slopes (above and below), ventricular tachycardia/
+supraventricular tachycardia, ventricular premature complexes,
+atrial fibrillation/ventricular, atrial flutter, missed beat, atrial
+tachycardia, nodal rhythm, bundle branch block left/right and
+tachycardia and sinus bradycardia. Besides these, tests were
+performed with 419 patients who underwent examination with
+the interpretive electrocardiograph in various clinical situations,
+outpatient and emergency.
+
+Results
+The statistical parameters obtained with the electrocardiograph
+interpretation are summarized in Tables 2-6, highlighting the
+sensitivity of 93.8% (95% CI 81.9 - 105.6) and specificity of
+83.3% (95% CI 66.1 - 100.6) for electrocardiographic findings
+consistent with ACS. In order to calculate the minimum
+number of samples required for validation, the performance
+of interpretive electrocardiograph was compared with that of
+a system of telemedicine available in a medical facility in a
+brazilian semi-rural area, whereas, in theory, this would be the
+best electrocardiographic interpretive capacity of a general
+physician in the emergency room. A total of 26 ECGs interpreted
+via telemedicine randomly chosen were analyzed and the results
+are shown in Tables 7 and 8. The difference between the rates
+of correct interpretation of the electrocardiogram and the
+telemedicine available was 35.65% (α = 0.05, β = 0.9) in favor
+of Cardiofax. This is far superior the difference considered
+for the purposes of this study as statistically significant (15%)
+for comparison of both diagnostic methods in order to make
+the calculation of the number of samples.
+
+Discussion
+Although only thirty three (33) tests were performed with the
+interpretative ECG, the results can be considered valid since
+that number was higher than the necessary to achieve statistical
+significance (25), considering the system of telemedicine
+available, used for comparison. Nevertheless, one cannot infer
+that an interpretive electrocardiograph always presents a better
+performance than a system of telemedicine. It is possible that,
+in this case, we have a comparison between an interpretive
+electrocardiograph of acceptable quality and a low quality
+telemedicine. Table 4 shows that all the statistics are within
+the confidence interval 95% and the kappa statistics (0.77) can
+be considered satisfactory.
+
+Conclusion
+This paper demonstrates that the equipment under test has
+a rated performance that makes it suitable as an element
+of a computer-aided diagnostic system in acute coronary
+syndromes to be used in emergency situations where there
+are deficiencies in the interpretation of electrocardiograms.
+Moreover, the American Heart Association (AHA) and American
+College of Cardiology (ACC) consider reasonable the use
+of electrocardiograms which have validated algorithms to
+interpret computer generated for the pre-hospital diagnosis
+of acute coronary syndromes, with the level of evidence B,
+class IIa, (procedures categorized as “it is reasonable”, “may
+be useful/effective/beneficial”, “is probably recommended or
+indicated”). Additionally, it was identified a qualitative deficiency
+in a private telemedicine service, suggesting that this kind of
+medical service should be subjected to certification procedures
+and evaluated by a public audit mechanism.
+
+141
+
+142
+
+Freitas Junior MG, Nicolosi DEC, França FFAC
+
+Introdução
+As síndromes coronarianas agudas (SCAs) são
+entidades mórbidas que decorrem de processos
+isquêmicos no miocárdio, os quais, por sua vez, se
+devem a distúrbios do fluxo sanguíneo coronariano.
+Estas síndromes são responsáveis pela maior causa
+de mortalidade no mundo e a segunda no Brasil
+(Instituto Nacional de Cardiologia, 2008). A elevada
+taxa de mortalidade global, possivelmente, apresenta
+um componente que decorre de falhas diagnósticas,
+principalmente se for considerado que tipicamente o
+paciente com um quadro isquêmico cardíaco agudo
+é atendido em serviços de pronto-socorro (PS) por
+clínicos gerais, ou seja, em unidades de emergência
+não especializadas em Cardiologia.
+Como o eletrocardiograma (ECG) é um meio
+prático, confiável e de baixo custo para obter uma
+interpretação rápida do ritmo cardíaco, surgiram
+nos últimos anos diversos sistemas de telemedicina
+capazes de interpretar remotamente esse exame,
+embora não possuam a capacidade de sugerir o
+diagnóstico da condição patológica que acomete o
+paciente; esse diagnóstico seria feito pelo médico
+in loco, considerando a história clínica e o resultado
+da interpretação remota do ECG. Apesar desta
+limitação, a telemedicina pode disponibilizar para
+situações emergenciais, valiosas informações quanto
+à avaliação da situação cardiovascular do paciente,
+desde que os eletrocardiogramas recebidos sejam
+interpretados corretamente (exigindo que seja feita
+por um cardiologista experiente) e que o seu resultado
+seja remetido em tempo hábil, pois em síndromes
+coronarianas agudas existe a máxima: “tempo é
+músculo [cardíaco]”. Assim sendo, sistemas de
+telemedicina com deficiências qualitativas podem
+apresentar erros interpretativos e atrasos no envio do
+laudo eletrocardiográfico, com graves conseqüências
+para os pacientes com isquemia miocárdica aguda,
+pois uma parcela significativa deles morre na primeira
+hora decorrida desde o início dos sintomas (Oliveira e
+Spiandorello, 2001). A literatura mostra a dificuldade
+em identificar rapidamente tais pacientes, relatando
+que dos cerca de 8 milhões de casos anuais de dor
+torácica relatados em serviços de emergência, 50%
+foram diagnosticados como SCA e os outros 50%
+tiveram alta, sendo que, destes últimos, entre 2 e 5%
+correspondem às chamadas altas inadvertidas por
+falhas diagnósticas (Selker et al., 1993). Entretanto,
+enquanto muitos pacientes com isquemia miocárdica
+aguda são corretamente internados em um hospital, os
+que são liberados (altas inadvertidas) apresentam um
+risco de morte - no domicílio ou no retorno à unidade
+hospitalar - em torno de 25%, que é o dobro do índice
+dos que foram internados (Pope et al., 2000).
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Por outro lado, há que se mencionar que existem
+situações onde os sistemas de telemedicina não
+poderiam ser implantados, como em localidades
+com deficiências de recursos financeiros ou de
+infra‑estrutura em sistemas de telecomunicação e/ou
+de energia elétrica. Adicionalmente, os médicos que
+lidam com pacientes com quadro clínico de SCA a
+bordo de navios, de plataformas marítimas de petróleo,
+de aeronaves comerciais e de resgate aeromédico, além
+das ambulâncias do SAMU (Serviço de Atendimento
+Móvel de Urgência) se beneficiariam do fato possuir
+um eletrocardiógrafo interpretativo capaz de interpretar
+corretamente e apenas alguns segundos um ECG
+compatível com isquemia miocárdica aguda. Como
+em síndromes coronarianas agudas é importante que se
+faça o seu diagnóstico – e consequente tratamento – no
+menor tempo possível, essa disponibilidade imediata
+do laudo eletrocardiográfico pode ser considerada
+como uma vantagem sobre a telemedicina cardiológica,
+em que o tempo de envio da interpretação do ECG
+é, geralmente, significativamente maior.
+Por sua vez, os eletrocardiógrafos interpretativos
+possuem capacidade computacional de análise
+do ECG desenvolvida a partir de métodos
+estatísticos, inteligência artificial ou de regras
+pré-estabelecidas (Kors e van Bemmel, 1990).
+Os resultados interpretativos automáticos que
+dependem de medidas precisas das amplitudes
+e das durações do ECG, como, por exemplo, a
+detecção da hipertrofia ventricular esquerda, podem
+se aproximar bastante das interpretações feitas por
+cardiologistas experientes, em termos de sensibilidade,
+especificidade e reprodutibilidade (Jakobsson et al.,
+1989; Willems et al., 1991). Esta característica, por
+si só, aumenta a consistência do reconhecimento do
+infarto agudo do miocárdio, muito embora algoritmos
+para quantificação dessa condição clínica sejam
+fortemente dependentes de análise computacional
+para sua efetividade (Kligfield, 2005). Entretanto,
+interpretações que dependem da configuração da forma
+de onda, como alterações de repolarização, relações
+entre formas de onda e irregularidades na onda P, não
+foram consideradas muito precisas por alguns autores
+(Taha et al., 2000; Thomson et al., 1989) de tal forma
+que esforços foram feitos pelos fabricantes no sentido
+de melhorar o desempenho dos eletrocardiógrafos
+interpretativos nessas situações (Rautaharju, 1993;
+Taha et al., 2000; Wooley et al., 1992) com relativo
+sucesso (Farrell et al., 2003; Reddy et al., 1998;
+Spodick e Bishop, 1997; Taha et al., 2000).
+O objetivo deste trabalho é avaliar o desempenho de
+um eletrocardiógrafo interpretativo para determinar sua
+adequabilidade para uso em um sistema computacional
+que utiliza informações da história clínica obtida pelo
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Desempenho de um eletrocardiógrafo interpretativo em síndromes coronarianas agudas
+
+médico generalista e do laudo eletrocardiográfico
+emitido pelo equipamento avaliado, permitindo auxiliar
+no diagnóstico de síndromes coronarianas agudas,
+quando o paciente não é atendido por cardiologistas,
+estudando o seu desempenho na identificação de
+registros de ECG que possam ser compatíveis com
+quadros de síndromes coronarianas agudas, além
+de outros traçados relacionados com as falhas em
+diagnosticar essas síndromes. Uma importante fonte
+de falha diagnóstica nesses casos, detectada em estudo
+realizado nos Estados Unidos da América, correspondeu
+à inabilidade dos médicos do pronto-socorro em
+detectar elevações de 1 a 2 mm no segmento ST em
+ECGs de pacientes com infarto agudo do miocárdio
+(IAM), o que foi notado em 11% dos casos (Pope et al.,
+2000). Isso não ocorre com um eletrocardiógrafo
+interpretativo, pois a mensuração que ele faz dessas
+elevações do segmento ST é a partir de medidas reais
+de diferença da tensão elétrica entre a linha que precede
+o complexo QRS e a que o sucede, não dependendo
+das condições visuais (luz ambiental, acuidade da
+visão próxima ou presbiopia) que influenciam a
+análise do traçado do ECG feita por médico. Outros
+achados eletrocardiográficos, relacionadas com
+altas indevidas, em síndromes coronarianas agudas,
+são: 1) alterações inespecíficas de segmento ST ou
+anormalidades de onda T; 2) anormalidades secundárias
+de segmento ST (hipertrofia ventricular esquerda,
+bloqueio de ramo esquerdo, variante de repolarização
+precoce ou pericardite); 3) cicatriz miocárdica prévia;
+e 4) eletrocardiograma com ritmo sinusal normal
+(Pope et al., 2000). Para todas essas situações,
+espera-se um desempenho que seja considerado
+aceitável para o eletrocardiógrafo interpretativo
+que esteja sendo utilizado por clínicos gerais no
+diagnóstico de síndromes coronarianas agudas. Por
+outro lado, como existem síndromes coronarianas
+agudas com eletrocardiograma normal, fica evidente
+que fazer o diagnóstico correto de um ritmo sinusal
+normal faz parte das características desejáveis para
+o equipamento, havendo relato, na literatura, de
+valores significativamente elevados de sensibilidade,
+especificidade, valor preditivo positivo e negativo
+para as interpretações automáticas de ritmo sinusal
+com esse tipo de eletrocardiógrafo (Poon et al., 2005).
+A avaliação eletrocardiógrafo interpretativo sob
+teste também objetiva verificar sua adequação a um
+sistema computacional para auxílio ao diagnóstico de
+síndromes agudas coronarianas, em desenvolvimento,
+para ser utilizado por médicos não cardiologistas,
+atuando em locais com poucos recursos, especialmente
+aqueles sem capacidade de dosar marcadores de necrose
+miocárdica e sem acesso a sistemas de telemedicina
+de boa qualidade. Este sistema extrapola o simples
+fornecimento de um laudo eletrocardiográfico, ao
+
+agregar a interpretação do ECG com dados da história
+clínica do paciente, fornecendo, assim, uma sugestão
+diagnóstica para o seu quadro clínico, auxiliando
+in loco o médico generalista na tomada de decisão e
+subsequente conduta terapêutica. Por sua aplicabilidade
+em serviços médicos de emergência sem especialistas
+em Cardiologia, fixos ou móveis, terrestres ou não, o
+sistema em desenvolvimento poderá contribuir para
+reduzir a taxa de mortalidade cardiovascular global,
+especialmente nas regiões mais carentes do Brasil
+e do Mundo, através da minimização do índice de
+falhas diagnósticas dos casos de SCA atendidos por
+esses serviços.
+
+Materiais e Métodos
+Os materiais e os métodos utilizados neste
+trabalho foram analisados pelo Comitê de Ética
+em Pesquisa (CEP) do Instituto Dante Pazzanese
+de Cardiologia, consistindo de registros de sinais
+eletrocardiográficos de pacientes ou simulados. O
+eletrocardiógrafo interpretativo avaliado foi da marca
+Nihon Kohden modelo Cardiofax 9620, cuja acurácia
+atende aos padrões internacionais IEC6061-2-51.
+Trata-se de registrador em tempo real com 3 canais
+do sinal de ECG, o qual apresenta simultaneamente
+as formas de onda desse sinal em 12 derivações, com
+capacidade de armazenar até 8 registros em uma
+memória interna. É um equipamento compacto, cujas
+maiores dimensões externas (largura × comprimento)
+correspondem ao tamanho de uma folha de papel A4,
+e que imprime tanto o ECG quanto sua interpretação
+em rolo de papel termo‑sensível de 63 mm de
+largura, facilmente disponível em lojas de material
+médico-hospitalar. Possui, ainda, uma tela de cristal
+liquido que possibilita um preview a cada 2,8 s do
+eletrocardiograma, podendo, assim, funcionar, também,
+como monitor de 12 derivações em tempo real,
+com a característica adicional de possuir comandos
+operacionais extremamente simples, permitindo
+o treinamento rápido de quem vai fazer uso do
+equipamento. Outra característica bastante interessante
+é a capacidade do equipamento de operar com uma
+bateria interna, capacitando-o a efetuar até 60 exames
+em situações de indisponibilidade de energia elétrica
+ou de deficiências de aterramento que aumentem
+significativamente o ruído de 60 Hz.
+O programa de interpretação do ECG usado no
+citado equipamento é próprio da Nihon Kohden,
+tendo recebido a denominação de ECAPS 12C.
+O fabricante adverte que o mesmo só é aplicável
+para pacientes com idades acima de três anos e que
+a interpretação resultante do programa deve ser
+submetida ao julgamento de um médico qualificado,
+para a sua validação. Essa validação tornar-se-ia
+
+143
+
+144
+
+Freitas Junior MG, Nicolosi DEC, França FFAC
+
+necessária considerando que um programa de análise
+computacional baseia-se em uma coleção de critérios
+de avaliação de ECG estabelecido por médicos, de
+tal forma que, eventualmente, pode não ser possível
+para esse programa julgar corretamente determinado
+registro eletrocardiográfico em uma hipotética situação
+em que um médico habilitado o faria de maneira
+consistente. As limitações do programa ECAPS 12C
+incluem (Nihon Kohden, 2009):
+• não compensa a influência de uso de
+determinados medicamentos; a influência
+de digitálicos pode ser notada no registro, por
+exemplo, pelo diagnóstico de fibrilação atrial;
+• não considera distúrbios hidroeletrolíticos,
+recomendando, no julgamento médico do
+ECG, fazer a leitura do intervalo QTc, onda T
+e onda U, juntamente com outros elementos
+relevantes;
+• não classifica complexos prematuros como
+trigeminados, “short-run”, etc.
+• não é capaz de identificar batimentos de escape
+e para-arritmias, sendo esses considerados
+como “ritmos indeterminados”;
+• não diagnostica a Síndrome de Lown-GaningLevine; esses casos devem ser considerados a
+partir do diagnóstico de “intervalo PR curto”;
+• não identifica marcapassos do tipo “wandering”
+(atrial migratório).
+Considerando a utilização que se pretende fazer do
+equipamento, essas limitações não foram consideradas
+como significativas, pois é requerida primariamente
+a correta identificação de desníveis de segmento ST
+e de outras anomalias eletrocardiográficas passíveis
+de serem encontradas em síndromes coronarianas
+agudas, as quais não se inserem, em princípio, nessas
+restrições do desempenho interpretativo.
+O Cardiofax foi testado nos Laboratórios de
+Bioengenharia do Instituto Dante Pazzanese de
+Cardiologia, utilizando um equipamento capaz de
+simular diversos sinais eletrocardiográficos, incluindo
+aqueles apresentados nas síndromes coronarianas
+agudas, o Metron modelo PS-420 Patient Simulator.
+Também foram realizados testes com pacientes em
+unidades médicas semi-rurais (pequenas cidades)
+do Nordeste, estes para avaliar se o tamanho da
+amostra da simulação com o Metron possuía validade
+estatística, comparando as proporções de acerto
+do eletrocardiógrafo interpretativo com as de um
+sistema de telemedicina disponível na unidade.
+As interpretações automáticas foram submetidas à
+apreciação de um eletrocardiografista experiente,
+responsável pelo Serviço de Telemedicina do Instituto
+Dante Pazzanese de Cardiologia, considerado como
+“gold standard”, resultando em um teste cego, por
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+não saber qual era o resultado da interpretação feita
+pelo equipamento nem a seleção do sinal elétrico
+simulado pelo Metron. A título de validação dos
+padrões de interpretação, além do julgamento do
+eletrocardiografista experiente (“gold standard”),
+o primeiro autor analisou os resultados das
+interpretações automáticas do eletrocardiógrafo,
+baseando‑se nas orientações contidas no User’s Guide
+do Cardiofax 9620 e respeitando as diretrizes brasileiras
+vigentes para a interpretação de eletrocardiogramas
+(Sociedade Brasileira de Cardiologia, 2009), além de
+contar com as orientações obtidas de livros texto na
+área (Deccache, 2006; Frieden e Ira, 1974; Hampton e
+Adlam, 2009) e com a própria experiência médica em
+Cardiologia. A mesma sistemática foi adotada para a
+análise dos laudos eletrocardiográficos emitidos pela
+telemedicina. Foram aceitos como válidos os casos em
+que houve concordância entre as opiniões do “gold
+standard” e do primeiro autor quanto à interpretação
+do ECG, tanto nas interpretações automáticas quanto
+naquelas do sistema de telemedicina.
+Com relação aos testes feitos em pacientes, o
+eletrocardiógrafo interpretativo foi utilizado para
+obter ECGs de pessoas que se apresentaram em
+ambulatórios ou em serviços de emergência urbanos
+(capital) e semi-rurais (pequenas cidades) em um
+estado da região Nordeste do Brasil. Esses exames,
+solicitados por ordem médica, eram realizados de forma
+duplicada, um contendo a identificação completa do
+paciente, que era entregue ao médico e outro, contendo
+apenas as iniciais, o sexo e a idade do mesmo, além
+de dados essenciais quanto ao quadro clínico, que
+era retido para a pesquisa.
+Os diagnósticos eletrocardiográficos gerados
+pelo Cardiofax em pacientes foram classificados
+em cinco categorias, adaptando uma padronização
+disponível na literatura (Snyder et al., 2003)
+considerando as peculiaridades do eletrocardiógrafo
+em uso, cujos laudos são impressos em inglês, de
+modo que alguns diagnósticos sofreram alteração
+na sua tradução, visando um melhor entendimento
+na linguagem médica brasileira. Além disso, para
+facilitar o trabalho estatístico, diagnósticos com
+determinadas similaridades foram agrupados em um
+único bloco (exemplo: extra-sístoles ventriculares
+e supra-ventriculares, consideradas apenas como
+“extra-sístoles”).
+O programa ECAPS 12C do Cardiofax utiliza uma
+modificação do Código de Minnesota (Nihon Kohden,
+2009) adotado pela Organização Mundial de Saúde para
+a classificação de formas de onda eletrocardiográficas,
+de modo que as interpretações do programa podem
+diferir daquelas estabelecidas nesse código. Além disso,
+as interpretações automáticas desse equipamento são
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Desempenho de um eletrocardiógrafo interpretativo em síndromes coronarianas agudas
+
+frequentemente apresentadas na forma de uma lista – às
+vezes extensa – de diagnósticos eletrocardiográficos,
+de modo que, em certos casos, aqueles precedidos das
+palavras “possível”, “provável” foram desconsiderados,
+atendo-se no máximo a dois diagnósticos relevantes
+(o próprio programa ECAPS 12C os lista em ordem
+decrescente de importância clínica) e à conclusão final
+se o ECG era “normal”, “anormal” ou “limítrofe”.
+Na operação do eletrocardiógrafo interpretativo, a
+presença de “artefatos” (ruído de 60 Hz, deslocamento
+da linha de base, sinais eletromiográficos, etc.) pode
+conduzir a diagnósticos errôneos, de modo que técnicas
+adequadas de manuseio devem ser obedecidas pelos
+operadores do equipamento, visando minimizar esses
+efeitos deletérios.
+Por outro lado, as Diretrizes da AHA/ACC para o
+manejo de pacientes com infarto agudo do miocárdio
+(Anderson et al., 2007) estabelecem, em algoritmo
+para o manejo de pacientes com sintomatologia
+compatível com doença miocárdica aguda de caráter
+isquêmico, que uma das primeiras condutas médicas
+seja a avaliação do ECG de 12 derivações inicial, o qual
+pode se apresentar em uma das seguintes situações:
+• elevação do segmento ST;
+• bloqueio de ramo novo ou presumivelmente
+novo, usualmente comprometendo o ramo
+esquerdo do Feixe de His;
+• depressão de ST, inversão de onda T (forte
+suspeita de isquemia miocárdica);
+• normal ou não diagnóstico.
+De modo a abranger todos esses diagnósticos
+eletrocardiográficos, foram feitos testes com o
+equipamento simulador de sinais eletrocardiográficos
+Metron, totalizando 33 formas de onda
+eletrocardiográficas geradas por esse equipamento,
+cujos respectivos sinais elétricos foram aplicadas aos
+cabos do Cardiofax, englobando diversos valores (em
+mV) de desníveis de segmento ST (supra e infra),
+taquicardia ventricular/supraventricular, complexos
+ventriculares prematuros, fibrilação atrial/ventricular,
+flutter atrial, “missed beat”, taquicardia atrial,
+ritmo nodal, bloqueios de ramo direito/esquerdo
+e taquicardia e bradicardia sinusal. Além desses,
+foram realizados testes com 419 pacientes que
+foram submetidos ao exame com o eletrocardiógrafo
+interpretativo, em diversas situações clínicas,
+ambulatoriais e emergenciais. As figuras de mérito
+estatístico consideradas foram a sensibilidade, a
+especificidade, o valor preditivo positivo, o valor
+preditivo negativo, a acurácia, o odds pré-teste,
+as relação de verossimilhanças (likelihood ratios)
+pré‑teste positivo e pré-teste negativo, além da
+estatística kappa. Todas elas foram obtidas a partir de
+uma planilha Excel de cálculos estatísticos disponível
+
+na internet (Braile e Godoy, 1999), simplesmente
+lançando na mesma os valores da matriz de confusão
+dos testes, composta pelos falsos positivos e negativos
+e verdadeiros positivos e negativos, resultantes
+das comparações dos resultados das interpretações
+automáticas com aquelas do “gold standard” validadas
+pelo primeiro autor.
+Para verificar se a quantidade de amostras obtidas
+(33) para este teste seria estatisticamente significante,
+existe a necessidade de verificar se ela atende ao critério
+do tamanho mínimo de amostras, discutido mais adiante
+neste trabalho. Para tanto, foi feita a comparação do
+desempenho do eletrocardiógrafo interpretativo com
+aquele de um sistema de telemedicina disponível
+em uma unidade médica semi-rural do Brasil,
+considerando que, em tese, essa seria a melhor
+capacidade interpretativa eletrocardiográfica do
+médico clínico geral em um pronto socorro não
+especializado, levando em conta que geralmente
+eles possuem pouca habilidade nesse particular e
+que uma interpretação via telemedicina seria o ápice
+da capacidade de diagnóstico eletrocardiográfico do
+serviço médico semi‑rural brasileiro. Um total de
+26 eletrocardiogramas interpretados através do sistema
+de telemedicina disponível foi escolhido aleatoriamente
+e submetidos ao eletrocardiografista “gold standard”,
+número que, conforme se verá mais adiante, atende ao
+critério do tamanho mínimo de amostras. O interesse
+doravante limita-se à determinação das taxas de
+acertos dos testes diagnósticos eletrocardiográficos
+avaliados, para poder efetuar o cálculo do tamanho
+mínimo de amostras, e, assim, caso satisfeito esse
+número, aceitar os resultados dos testes simulados
+com o Metron.
+
+Critérios de inclusão
+Foram incluídos registros eletrocardiográficos de
+pacientes:
+• de ambos os sexos, com idade superior a
+3 anos, sem limite superior de idade;
+• assintomáticos ou sintomáticos; e
+• em situações ambulatoriais ou emergenciais.
+
+Critérios de exclusão
+Foram excluídos desta investigação os casos em que
+o eletrocardiograma:
+• apresentasse evidências de ter havido a
+colocação incorreta de eletrodos;
+• contivesse um nível de ruído capaz de
+comprometer a interpretação automática; e
+• estivesse ilegível, na forma de onda registrada
+ou no(s) diagnóstico(s) resultante(s) da
+interpretação automática.
+
+145
+
+146
+
+Freitas Junior MG, Nicolosi DEC, França FFAC
+
+Cálculo do tamanho mínimo de amostras
+Este trabalho apresenta características compatíveis com
+um experimento clínico controlado que não submete o
+paciente a efeitos terapêuticos de medicamentos, mas
+ainda assim retém elementos delineativos desse tipo de
+estudo. Existe, portanto, a necessidade de se conhecer
+o tamanho mínimo das amostras estatisticamente
+significante, antes de realizar a casualização dos
+grupos, um submetido ao método diagnóstico A
+(eletrocardiógrafo interpretativo) e outro ao método
+diagnóstico B, que, no caso, seria a interpretação
+feita por um clínico geral atuando em uma unidade
+médica com poucos recursos diagnósticos. Na ausência
+de estatísticas nacionais a respeito do desempenho
+desses profissionais, a interpretação do ECG dada
+por um serviço de telemedicina disponível na região
+semi‑rural foi assumida como sendo igual à do médico
+que estaria atendendo ao paciente, e esse serviço foi
+considerado como sendo o método B. Desta forma, há
+a necessidade que se estabeleça as seguintes definições,
+considerando-se eventos que, estatisticamente, tenham
+uma distribuição normal: a) qual é a proporção de
+acertos diagnósticos com o método B; b) qual é
+a diferença mínima, entre a proporção de acertos
+com o novo método A e o método B, considerado
+como de significado clínico para que se recomende
+o método A; c) definição da probabilidade de erro
+tipo I (α) e erro tipo II (β). Desta forma, os parâmetros
+utilizados para o cálculo do tamanho mínimo da
+amostra foram: a) proporção dos grupos (A = 89,5%
+e B = 53,85%), b) nível de significância de 5%,
+c) poder do teste de 90%, e d) teste de hipótese
+monocaudal, pois se trata de um teste cuja hipótese
+alternativa é uma desigualdade, ou seja, deseja-se
+testar se o valor observado é maior ou menor que o
+valor crítico correspondente à hipótese nula (Instituto
+Dante Pazzanese de Cardiologia, 2010).
+Assim sendo, a determinação do tamanho
+mínimo de amostras, neste estudo, enquadra-se
+como “comparação de duas proporções”, no caso,
+aquela dos acertos do método A quando comparados
+a dos acertos do método B. Na comparação de
+proporções de duas populações, o pesquisador observa
+as proporções em dois grupos distintos e as compara
+com o objetivo de saber se os grupos diferem ou não
+em relação à resposta de interesse. Para este tipo de
+análise é assumido que o número de observações
+seria o mesmo nas duas amostras. As proporções de
+acerto associadas aos métodos, acima mencionadas,
+foram obtidas através das observações feitas sobre o
+desempenho dos mesmos, detalhadas mais adiante. O
+resultado para o tamanho mínimo da amostra, com os
+parâmetros acima, pode ser obtido diretamente no site
+http://www.lee.dante.br (Instituto Dante Pazzanese de
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Cardiologia, 2010), sendo, no presente caso, apenas
+25 pacientes por grupo, para α = 0,05 e β = 0,9.
+
+Resultados
+Na Tabela 7 nota-se um baixo índice global de acertos
+da interpretação dos eletrocardiogramas, quando
+emitida por determinado serviço de telemedicina
+contratado por uma unidade médica semi-rural,
+contrapondo-se com o percentual razoável de
+acertos dos laudos emitidos pelo eletrocardiógrafo
+interpretativo, índices esses obtidos de informações
+que serão apresentadas mais adiante.
+Analisando-se os resultados da Tabela 1, percebe‑se
+que, para as situações de eletrocardiograma com
+supra‑desnível de ST, o eletrocardiógrafo interpretativo
+acerta sete em oito situações, ou seja, uma sensibilidade
+de 87,5%. É notável o erro do “gold standard” quando
+o supra-desnível simulado pelo Metron é muito
+pequeno (0,1 mV ou 1 mm), considerando o ECG
+como “normal”. O eletrocardiógrafo interpretativo,
+por mensurar voltagem diretamente, ao rotular esse
+caso como “anormalidade inespecífica de ST e
+anormalidade da onda T”, consegue, neste caso, superar
+o desempenho do cardiologista experiente devido às
+dificuldades de visualização de um desnível desta
+ordem de grandeza quando impresso em um papel.
+Na Tabela 2 são apresentados os resultados obtidos
+com os sinais simulados com o Metron para as situações
+de infra-desnível de ST, com um índice de acertos
+diagnósticos (sensibilidade) de 100%.
+Além dessas situações compatíveis com isquemia
+miocárdica, outras condições clínicas foram simuladas,
+e em um total de 33 casos, 16 correspondiam a
+formas de onda encontradas em isquemia miocárdica
+aguda, com as demais simulando outras condições
+patológicas. Das condições compatíveis com isquemia
+houve apenas um falso positivo, enquanto nas outras
+condições (não-isquemia) foram constatados três
+falsos negativos.
+De posse dessas informações, foi possível
+efetuar os cálculos estatísticos básicos para o teste
+do eletrocardiógrafo interpretativo, cujos resultados
+estão apresentados na Tabela 3.
+Observando o desempenho global em pacientes,
+(Tabelas 5 e 7) observa-se que há uma diferença
+significativa nas porcentagens globais de acerto do
+Cardiofax (89,50%) e do serviço de telemedicina
+(53,85%) utilizado para comparação. Isso confirma
+a adequabilidade do tamanho mínimo de amostras
+de 25 para cada grupo, previamente calculado neste
+trabalho. Esse número foi atendido tanto para o sistema
+de telemedicina observado (26 amostras) quanto para o
+eletrocardiógrafo interpretativo (419 amostras obtidas
+em pacientes e 33 amostras obtidas por simulação), o
+que confere validade estatística aos resultados obtidos
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Desempenho de um eletrocardiógrafo interpretativo em síndromes coronarianas agudas
+
+Tabela 1. Desempenho do eletrocardiógrafo interpretativo na detecção de supra-desnível simulado de segmento ST (significância clínica
+definitiva).
+Table 1. Performance of interpretive electrocardiograph to detect simulated ST elevation (definite clinical significance).
+
+Resultado da análise do ECG
+Sinal eletrocardiográfico
+simulado (supra-desnível
+de ST em mV)
+
+0,8
+
+0,7
+
+0,6
+
+0,5
+0,4
+0,3
+0,2
+0,1
+
+Interpretação automática
+
+Gold Standard
+
+Lesão ou infarto ântero-lateral e Corrente de lesão
+inferior. ECG anormal
+sub‑epicárdica anterior
+extensa e inferior.
+Lesão ou infarto ântero-lateral. Corrente de lesão
+Possível lesão septal ou IAM,
+sub‑epicárdica anterior
+lesão ou IAM inferior. ECG
+extensa e inferior.
+anormal
+Lesão ou infarto ântero-lateral. Corrente de lesão
+Possível lesão septal ou IAM,
+sub‑epicárdica anterior
+lesão ou IAM inferior. ECG
+extensa e inferior.
+anormal
+Lesão ou infarto ântero-Lateral. Corrente de lesão
+Lesão ou infarto inferior. ECG sub‑epicárdica anterior
+anormal
+extensa e inferior.
+Lesão ou infarto ântero-Lateral. Corrente de lesão
+Lesão ou infarto inferior. ECG sub‑epicárdica anterior
+anormal
+extensa e inferior.
+Possível lesão ântero-lateral ou Corrente de lesão
+infarto agudo. Lesão inferior ou sub‑epicárdica anterior
+infarto agudo. ECG anormal
+extensa e inferior.
+Possível pericardite aguda.
+Corrente de lesão
+ECG anormal
+sub‑epicárdica anterior
+extensa e inferior.
+Anormalidade inespecífica de
+Normal.
+ST e anormalidade da onda T.
+ECG anormal
+
+quanto ao desempenho do Cardiofax, mostrado na
+Tabela 3, para as condições de trabalho em unidades
+médicas com deficiências na capacidade de diagnóstico
+eletrocardiográfico em síndromes coronarianas agudas.
+É notável, dos resultados acima mostrados, o fato
+de que o índice global de acertos do eletrocardiógrafo
+interpretativo representou uma diferença, para melhor,
+de 35,65% (α = 5%, β = 90%), quando comparada
+com aquele do sistema de telemedicina disponível
+na unidade médica semi-rural observada.
+
+Discussão
+Evidentemente, dos resultados encontrados neste
+trabalho, não se pode inferir que um eletrocardiógrafo
+interpretativo apresentaria sempre um desempenho
+melhor do que um sistema de telemedicina; é possível
+que, neste caso, tenha existido a comparação entre
+um eletrocardiógrafo interpretativo de qualidade
+aceitável e uma telemedicina com sérias deficiências
+operacionais.
+
+Concordância
+do autor com
+o diagnóstico
+do Gold
+Standard e da
+interpretação
+automática
+
+Resultado
+final da
+interpretação
+automática
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Não
+
+Erro
+
+Não
+
+Acerto
+
+A diferença encontrada entre as taxas de acertos
+dos métodos, a favor do Cardiofax - quando
+comparada com o melhor método de interpretação
+eletrocardiográfica disponível para um paciente
+atendido por um clínico geral em um hospital semi-rural
+em uma região carente  é muito superior à diferença
+considerada para os propósitos deste trabalho como
+estatisticamente significante para a comparação dos
+métodos diagnósticos, tornando aceitáveis os testes
+do eletrocardiógrafo interpretativo feitos com o
+simulador de sinais de ECG, pois, apesar do número
+aparentemente pequeno de testes simulados (33),
+este é superior ao número mínimo de amostras para
+se obter significância estatística (25). Mais ainda,
+é razoável pensar que o desempenho sofrível dos
+profissionais que interpretaram os eletrocardiogramas
+do serviço de telemedicina observado, seria o ápice
+do desempenho de um clínico geral, em uma unidade
+médica semi‑rural, na interpretação de um ECG sem
+o auxílio de telemedicina, conferindo consistência
+à escolha do método comparativo e às conclusões
+deste trabalho.
+
+147
+
+148
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Freitas Junior MG, Nicolosi DEC, França FFAC
+
+Tabela 2. Desempenho do eletrocardiógrafo interpretativo na detecção de infra-desnível simulado de segmento ST (significância clínica
+definitiva).
+Table 2. Performance of interpretive electrocardiograph to detect simulated ST depression (definite clinical significance).
+
+Resultado da análise do ECG
+Sinal eletrocardiográfico
+simulado (infra-desnível
+de ST em mV)
+
+0,8
+0,7
+0,6
+
+0,5
+
+0,4
+0,3
+0,2
+0,1
+
+Interpretação automática
+
+Gold Standard
+
+Infradesnível significativo
+de ST, compatível com lesão
+sub‑endocárdica. ECG anormal
+Infradesnível significativo de
+ST, compatível com lesão subendocárdica. ECG anormal
+Infradesnível significativo de
+ST, compatível com lesão subendocárdica. ECG anormal
+Infradesnível significativo de
+ST, compatível com lesão subendocárdica. ECG anormal
+
+Corrente de lesão
+sub‑endocárdica anterior
+extensa e inferior
+Corrente de lesão
+sub‑endocárdica anterior
+extensa e inferior
+Corrente de lesão
+sub‑endocárdica anterior
+extensa e inferior
+Corrente de lesão
+sub‑endocárdica anterior
+extensa e inferior
+
+Infradesnível significativo de
+ST, compatível com lesão subendocárdica. ECG anormal
+Infradesnível significativo
+de ST. Possível lesão
+subendocárdica. ECG anormal
+Infradesnível significativo
+de ST. Possível lesão
+subendocárdica. ECG anormal
+Depressão moderada de ST.
+ECG anormal
+
+Corrente de lesão
+sub‑endocárdica anterior
+extensa e inferior
+Corrente de lesão
+sub‑endocárdica anterior
+extensa e inferior
+Corrente de lesão
+sub‑endocárdica anterior
+extensa e inferior
+Normal
+
+Concordância
+do autor com o
+diagnóstico do
+Gold Standard e
+da interpretação
+automática
+
+Resultado
+final da
+interpretação
+automática
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Sim
+
+Acerto
+
+Não
+
+Acerto
+
+Tabela 3. Estatísticas do teste do eletrocardiógrafo interpretativo.
+Table 3. Statistics of interpretive electrocardiograph test.
+
+Parâmetro
+Sensibilidade
+Especificidade
+Valor preditivo positivo
+Valor preditivo negativo
+Acurácia
+Odds pré-teste
+Likelihood ratio pré-teste positivo
+Likelihood ratio pré-teste negativo
+Estatística kappa (grau de concordância corrigido)
+
+Por outro lado, analisando as informações
+constantes da Tabela 3, é possível constatar que
+todos os números encontrados para os parâmetros
+avaliados estão dentro do intervalo de confiança
+95% e que o grau de concordância corrigido (0,77)
+pode ser considerado bom. Em síntese, os cálculos
+estatísticos básicos, cujos resultados estão sumarizados
+nessa tabela mostram que o equipamento avaliado
+apresenta um desempenho que o torna recomendável
+como elemento constitutivo de um sistema de auxílio
+
+Resultado
+
+Intervalo de confiança 95%
+
+93,80%
+83,30%
+83,30%
+97,80%
+88,20%
+0,889
+5,6
+0,1
+0,77
+
+81,9-105,6
+66,1-100,6
+66,1-100,6
+81,9-105,6
+77,4-99,1
+0,55-0,98
+
+ao diagnóstico em síndromes coronarianas agudas
+que será utilizado em situações emergenciais nas
+quais existam deficiências na interpretação de
+eletrocardiogramas e sem dispor de sistemas de
+telemedicina.
+Uma informação importante, obtida da Tabela 1,
+que simulou ECGs compatíveis com infarto agudo do
+miocárdio com supra-desnível de ST (de mortalidade
+elevada na primeira hora decorrida desde o início dos
+sintomas), é que todos os registros interpretativos
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Desempenho de um eletrocardiógrafo interpretativo em síndromes coronarianas agudas
+
+do Cardiofax finalizaram com a indicação “ECG
+anormal”, o que, mesmo no único caso de erro
+interpretativo encontrado (“possível pericardite
+aguda”), esse erro pode ser minimizado, pois no
+sistema de auxílio ao diagnóstico que fará uso do
+eletrocardiógrafo interpretativo a situação “ECG
+
+anormal” receberá uma pontuação diferente de
+zero. Além disso, o diagnóstico eletrocardiográfico
+“alterações inespecíficas de ST-T”, associado ao
+supra-desnível mínimo de ST simulado no Metron,
+pode ser encontrado em casos de isquemia miocárdica
+aguda (Pope et al., 2000).
+
+Tabela 4. Resultados dos diagnósticos eletrocardiográficos automáticos em pacientes, por classe de significância.
+Table 4. Results of automated electrocardiograph diagnoses for patients, by class of significance.
+
+Classe
+
+I
+
+II
+
+III
+
+IV
+
+V
+
+Diagnóstico
+Normal
+Ritmo sinusal
+Total
+Significância mínima
+Bradicardia sinusal
+Taquicardia sinusal
+Arritmia sinusal
+Desvio do eixo elétrico com significância mínima
+Bloqueio incompleto de ramo
+Distúrbio de condução/ repolarização precoce
+Artefato
+Anormalidade inespecífica de ST-T
+Atraso de condução inespecífico
+Total
+Significância clínica indeterminada
+Bloq. divisional/desvio anormal de eixo à esquerda
+Aumento de dimensões atriais
+Hipertrofia ventricular
+Bloqueio completo de ramo direito
+Bloqueio AV de 1º grau
+Extra-sístoles
+Ritmo juncional
+QRS de baixa voltagem
+Elevação/depressão inespecífica/repol. precoce ST
+Inversão de onda T
+PR curto
+Atraso de condução em VD (RSR em V1/V2)
+Total
+Significância clínica definitiva
+Infarto agudo do miocárdio
+QTc longo
+QTc curto
+Ritmo indeterminado
+Infarto do miocárdio recente, antigo ou de idade
+indeterminada
+Fibrilação atrial
+Marca passo eletrônico (funcionamento normal)
+Bloqueio de ramo esquerdo
+Isquemia (possível)
+Alteração de nível de ST (supra/infra)
+Total
+Impossível de analisar
+Posicionamento incorreto de eletrodos, excesso de
+artefatos
+Total
+
+Quantidades
+
+Porcentagem (%)
+
+Acertos
+
+Erros
+
+Total
+
+Acertos
+
+Erros
+
+385
+385
+
+0
+0
+
+385
+385
+
+100,00
+100,00
+
+0,00
+0,00
+
+4
+20
+33
+4
+12
+19
+135
+49
+3
+279
+
+2
+0
+0
+0
+4
+4
+7
+9
+0
+26
+
+6
+20
+33
+4
+16
+23
+142
+58
+3
+305
+
+66,67
+100,00
+100,00
+100,00
+75,00
+82,16
+95,07
+88,48
+100,00
+91,48
+
+33,33
+0,00
+0,00
+0,00
+25,00
+17,39
+4,93
+15,52
+0,00
+8,52
+
+29
+16
+27
+9
+11
+13
+2
+3
+3
+16
+8
+35
+172
+
+4
+15
+19
+3
+1
+1
+3
+0
+1
+3
+1
+5
+56
+
+33
+31
+46
+12
+12
+14
+5
+3
+4
+19
+9
+40
+228
+
+87,88
+51,61
+58,07
+75,00
+91,67
+92,86
+40,00
+100,00
+75,00
+84,21
+88,89
+87,50
+75,44
+
+12,12
+48,39
+41,30
+25,00
+8,33
+7,14
+60,00
+0,00
+25,00
+15,79
+11,11
+12,50
+24,56
+
+0
+3
+2
+1
+
+3
+0
+1
+0
+
+3
+0
+3
+1
+
+0,00
+100,00
+66,67
+100,00
+
+100,00
+0,00
+33,33
+0,00
+
+19
+
+12
+
+31
+
+61,29
+
+38,71
+
+3
+2
+2
+12
+9
+53
+
+0
+0
+0
+2
+1
+19
+
+3
+2
+2
+14
+10
+72
+
+100,00
+100,00
+100,00
+85,71
+90,00
+73,16
+
+0,00
+0,00
+0,00
+14,29
+10,00
+23,69
+
+9
+
+0
+
+9
+
+100,00
+
+0,00
+
+9
+
+0
+
+9
+
+100,00
+
+0,00
+
+149
+
+150
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Freitas Junior MG, Nicolosi DEC, França FFAC
+
+Chama atenção, nos casos avaliados com o
+simulador de sinais eletrocardiográficos, a elevada
+sensibilidade (100%) do eletrocardiógrafo interpretativo
+quando existe infra-desnível de segmento ST,
+compatível com quadros isquêmicos miocárdicos
+menos dramáticos que aqueles com supra-desnível,
+porém não necessariamente menos mórbidos. Além
+disso, considerando os casos simulados com o Metron,
+a sensibilidade (93,8%) e a especificidade (83,3%)
+para eletrocardiogramas compatíveis com isquemia
+miocárdica aguda são perfeitamente aceitáveis e, ainda,
+são consistentes com o desempenho do Cardiofax com
+pacientes, sumarizado nas Tabelas 4 e 5. Por outro lado,
+observou-se que as falhas diagnósticas em arritmias
+cardíacas são coerentes com aquelas já relatadas na
+literatura para os eletrocardiógrafos interpretativos
+(Kors e van Bemmel, 1990; Poon et al., 2005).
+Conforme mencionado, uma das condições
+que sugere a existência de um processo isquêmico
+agudo do miocárdio é surgimento de um bloqueio
+de ramo esquerdo novo ou possivelmente novo
+(Anderson et al., 2007). O Metron ao ser programado
+Tabela 5. Resultados dos diagnósticos eletrocardiográficos automáticos
+em pacientes, por categoria diagnóstica.
+Table 5. Results of automated electrocardiograph diagnosis for
+patients, by diagnostic category.
+
+Normal
+Anormal
+Limítrofe
+Total
+
+Porcentagem
+(%)
+
+Quantidades
+
+Categoria
+
+Acertos
+
+Erros
+
+Total
+
+Acertos
+
+Erros
+
+163
+124
+88
+375
+
+3
+23
+18
+44
+
+166
+147
+106
+419
+
+98,19
+84,35
+83,02
+89,50
+
+1,81
+15,65
+16,98
+10,50
+
+para produzir uma forma de onda compatível com esse
+distúrbio induziu o Cardiofax a informar o seguinte
+diagnóstico: “Ritmo sinusal, bloqueio inespecífico
+de condução intraventricular, desvio anormal do
+eixo para a esquerda, ECG anormal”, enquanto que o
+eletrocardiografista “gold standard” entendeu tratar-se
+de “bloqueio divisional antero-superior esquerdo”. Foi
+constatado que a forma de onda resultante do simulador
+(Figura 1) realmente não reproduz exatamente um
+bloqueio de ramo esquerdo (BRE), de modo que o
+autor concorda com o diagnóstico do “gold standard”
+e descarta a avaliação simulada desse parâmetro.
+É notável, ainda que a interpretação emitida pelo
+Cardiofax como “ritmo sinusal, bloqueio inespecífico
+de condução intraventricular, desvio anormal do eixo
+à esquerda, ECG anormal” possa ser considerada
+compatível com a interpretação de um BRE, embora
+utilize uma nomenclatura diversa daquela das diretrizes
+brasileiras.
+A Figura 2 apresenta a situação em que o
+desnível de ST era tão pequeno que, a olho nu, o
+eletrocardiografista experiente considerou o exame
+como ritmo sinusal normal, embora o equipamento
+o tenha detectado e identificado corretamente como
+um distúrbio eletrocardiográfico.
+Da exposição feita, fica evidente que o desempenho
+do eletrocardiógrafo interpretativo avaliado é adequado
+para detectar as alterações eletrocardiográficas
+clássicas associadas às síndromes isquêmicas
+agudas do miocárdio. Entretanto, existem outras
+anormalidades eletrocardiográficas, atípicas, mas
+que podem se relacionar com as altas indevidas
+(falhas diagnósticas) em síndromes coronarianas
+agudas (Pope et al., 2000). É possível avaliar a
+capacidade do eletrocardiógrafo interpretativo em
+
+Figura 1. Eletrocardiograma interpretativo resultante dos sinais elétricos de um “bloqueio de ramo esquerdo” simulado.
+Figure 1. Electrocardiogram interpretation of electrical signals resulting from a “left branch block” simulated.
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Desempenho de um eletrocardiógrafo interpretativo em síndromes coronarianas agudas
+
+identificar essas situações (verdadeiros positivos),
+fazendo aproveitamento, especialmente, dos 419 ECGs
+obtidos de pacientes, apresentados na Tabela 4.
+Estas situações incluem os ECGs interpretados
+
+pelo equipamento como pequenos desníveis de
+segmento ST (100% de capacidade de detecção
+nos testes simulados), alterações inespecíficas de
+segmento ST ou anormalidades de onda T (84% de
+
+Figura 2. Eletrocardiograma interpretativo resultante dos sinais elétricos de um pequeno (0,1 mV) infra-desnível de ST simulado, que induziu
+o eletrocardiografista “gold standard” a considerar o ECG como normal.
+Figure 2. Electrocardiogram interpretation of electrical signals resulting from a small (0.1 mV) below ST-elevation simulated, which induces
+the “gold standard” electrocardiographist to consider the ECG as normal.
+Tabela 6. Resultados dos diagnósticos eletrocardiográficos de um serviço de telemedicina disponível em unidade médica semi-rural brasileira,
+por classe de significância.
+Table 6. Results of the electrocardiographic diagnosis of a telemedicine service from a medical service of a semi-rural brazilian region, by
+class of significance.
+
+Classe
+
+I
+
+II
+
+III
+
+IV
+
+V
+
+Diagnóstico
+Normal
+Ritmo sinusal
+Total
+Significância mínima
+Taquicardia sinusal
+Arritmia sinusal
+Disturbio de condução/ repolarização precoce
+Anormalidade inespecífica de ST-T
+Artefato
+Total
+Significância clínica indeterminada
+Hipertrofia/sobrecarga ventricular
+Bloqueio completo de ramo direito
+Extra-sístoles
+Total
+Significância clínica definitiva
+Fibrilação atrial
+Bloqueio de ramo esquerdo
+Bloqueio AV avançado
+Total
+Impossível de analisar
+Posicionamento incorreto de eletrodos, excesso de
+artefatos
+Total
+
+Quantidades
+
+Porcentagem (%)
+
+Acertos
+
+Erros
+
+Total
+
+Acertos
+
+Erros
+
+4
+4
+
+2
+2
+
+6
+6
+
+66,67
+66,67
+
+33,33
+33,33
+
+3
+0
+2
+0
+0
+5
+
+0
+1
+4
+1
+1
+7
+
+3
+1
+6
+1
+1
+12
+
+100,00
+0,00
+33,33
+0,00
+0,00
+41,67
+
+0,00
+100,00
+66,67
+100,00
+100,00
+58,33
+
+3
+1
+5
+9
+
+0
+1
+1
+2
+
+3
+2
+6
+11
+
+100,00
+50,00
+83,33
+81,82
+
+0,00
+50,00
+18,18
+18,18
+
+1
+0
+1
+2
+
+0
+1
+0
+1
+
+1
+1
+1
+3
+
+100,00
+0,00
+100,00
+66,67
+
+0,00
+100,00
+0,00
+333,33
+
+0
+
+0
+
+0
+
+-
+
+-
+
+0
+
+0
+
+0
+
+-
+
+-
+
+151
+
+152
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Freitas Junior MG, Nicolosi DEC, França FFAC
+
+capacidade de detecção nos testes com pacientes),
+anormalidades secundárias de segmento ST (hipertrofia
+ventricular esquerda [58% de capacidade de detecção
+nos testes com pacientes], bloqueio de ramo esquerdo
+[100% de capacidade de detecção nos testes com
+pacientes] e variante de repolarização precoce [82%
+de capacidade de detecção nos testes com pacientes]),
+cicatrizes miocárdicas prévias relatadas como infarto
+não agudo (61% de capacidade de detecção nos testes
+com pacientes) e ECG normal (100% de detecção nos
+testes com pacientes). É notável, ainda, a capacidade
+do equipamento em identificar nos pacientes as
+situações de ECGs verdadeiramente normais (98,19%),
+anormais (84,35%) e limítrofes (83,02%), com uma
+taxa total de acertos de 89,50%, conforme mostrada
+na Tabela 5. Além disso, no decorrer dos testes com
+pacientes não foram detectados casos de IAM, mas
+ocorreram três situações em que o eletrocardiógrafo
+interpretou como sendo infarto, correspondendo a
+falsos positivos, o que não prejudica a avaliação
+do equipamento, considerando que nas situações
+simuladas, compatíveis com IAM a acurácia foi
+aceitável.
+Por outro lado, chama atenção o desempenho
+inadequado do serviço de telemedicina disponível
+no hospital semi-rural (Tabelas 6 e 7) utilizado para
+calcular o tamanho da amostragem para o teste do
+Cardiofax. Isso pode ser demonstrado pelo diagnóstico
+incorreto de um traçado eletrocardiográfico como
+sendo um “bloqueio de ramo esquerdo de 2º grau”
+(Figura 3). Segundo o eletrocardiografista “gold
+standard” que avaliou os ECGs neste trabalho, esse
+registro corresponde a uma “sobrecarga de ventrículo
+esquerdo associado a uma área inativa septal”. Tal
+erro não foi observado com as interpretações feitas
+pelo programa ECAPS 12C do Cardiofax, conforme
+se constata comparando-se as Tabelas 4 e 6, onde o
+equipamento acertou todos os 3 casos de “bloqueio
+de ramo esquerdo” que se lhe apresentaram (dentre
+as 419 amostras obtidas em pacientes), enquanto
+que o serviço de telemedicina observado errou (falso
+positivo) a única interpretação de bloqueio de ramo
+esquerdo (dentre 26 amostras de pacientes). Como
+um bloqueio de ramo esquerdo (BRE) novo ou
+presumivelmente novo é uma das condições a ser
+levada em conta no diagnóstico de um infarto agudo
+do miocárdio, essa situação é preocupante. Além disso,
+nota-se, no citado serviço de telemedicina, que, nesse
+caso, o exame chegou às 09:45 h e teve seu resultado
+enviado às 10:06 h, ou seja, um tempo resposta de
+21 minutos para disponibilizar a interpretação, que
+é significativamente maior que aquele do Cardiofax
+(tipicamente alguns segundos). Como a maioria dos
+óbitos por infarto ocorre na primeira hora do início
+dos sintomas (Oliveira e Spiandorello, 2001), esses
+
+Tabela 7. Resultados dos diagnósticos de um serviço de telemedicina
+disponível em unidade médica semi-rural brasileira, por categoria
+diagnóstica.
+Table 7. Results of the electrocardiographic diagnosis of a telemedicine
+service from a medical service of a semi-rural brazilian region, by
+diagnostic category.
+
+Normal
+Anormal
+Limítrofe
+Total
+
+Porcentagem
+(%)
+
+Quantidades
+
+Categoria
+
+Acertos
+
+Erros
+
+Total
+
+Acertos
+
+Erros
+
+6
+6
+2
+14
+
+1
+1
+10
+12
+
+7
+7
+12
+26
+
+85,17
+85,17
+16,67
+53,85
+
+14,29
+14,29
+83,33
+46,15
+
+Figura 3. Bloqueio de ramo esquerdo do 2º grau erroneamente
+diagnosticado por sistema de telemedicina disponível para uma unidade
+médica semi-rural brasileira (por questões éticas, as informações que
+permitissem identificar a empresa, o hospital, o paciente, interpretador
+e a tecnologia foram suprimidas após a digitalização do documento).
+Figure 3. Left bundle branch block of 2nd degree misdiagnosed
+by a system of telemedicine from a medical service of a semi-rural
+brazilian region, (for ethical reasons, information that might have
+identified the company, the hospital, the patient, the interpreter and
+the technology was suppressed after scanning the document).
+
+21 minutos perdidos, aguardando o diagnóstico,
+podem fazer a diferença entre a vida e a morte do
+paciente, caso, realmente, o diagnóstico da telemedicina
+estivesse correto. Mais ainda, considerando que esse
+falso bloqueio de ramo esquerdo poderia reforçar
+uma hipótese diagnóstica de isquemia miocárdica
+aguda, se o clínico geral tiver aceitado o diagnóstico
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Desempenho de um eletrocardiógrafo interpretativo em síndromes coronarianas agudas
+
+da telemedicina, a sua conduta médica talvez não
+tenha sido a mais apropriada para a situação clínica
+presente no paciente.
+
+Conclusões
+Em função dos resultados dos testes realizados neste
+trabalho, é possível afirmar que é adequado o uso
+do eletrocardiógrafo interpretativo Cardiofax 9620
+da Nihon Kohden como elemento de um sistema
+computacional de auxílio ao diagnóstico em síndrome
+coronariana aguda. Isto é coerente com as diretrizes
+da American Heart Association (AHA) e do American
+College of Cardiology (ACC) quando recomendam
+que sejam feitos ECGs no atendimento pré-hospitalar,
+na triagem dos pacientes com dor torácica sugestiva
+de síndrome coronariana aguda, considerando
+razoável o uso de eletrocardiógrafos que disponham
+de algoritmos validados de interpretação gerados
+por computador para estes casos, com o nível de
+evidência B, classe IIa (Anderson et al., 2007). Este
+nível de evidência corresponde a avaliações feitas
+em estratos populacionais limitados, enquanto que a
+classe especificada indica que os benefícios da adoção
+do procedimento superam em muito os riscos. Essas
+associações norte-americanas de Cardiologia, sugerem
+as seguintes frases para o uso de procedimentos médicos
+com o nível de evidência B, classe IIa: “é razoável”,
+“pode ser útil/efetivo/benéfico”, “é provavelmente
+recomendado ou indicado” (Anderson et al., 2007).
+Em que pese o desempenho aceitável do
+eletrocardiógrafo interpretativo testado em situações
+compatíveis com síndromes coronarianas agudas, o
+uso indiscriminado desse tipo de equipamento é ainda
+objeto de controvérsia na classe médica brasileira,
+possivelmente pelo seu desempenho sofrível em
+arritmias cardíacas relatado na literatura (Kors e
+van Bemmel, 1990; Poon et al., 2005). Entretanto,
+é necessário considerar que, tipicamente, um
+paciente com síndrome coronariana aguda é atendido
+inicialmente em hospitais gerais por um clínico com
+limitados conhecimentos de eletrocardiografia e não
+por um cardiologista. Nessas condições, onde são
+importantes achados tais como desvios de segmento ST,
+inversão de onda T e a presença de onda Q, existe
+recomendação na literatura estrangeira no sentido de
+que o clínico geral reavalie sua interpretação do ECG
+quando o eletrocardiógrafo interpretativo reportar
+essas condições, como uma forma de reduzir a taxa de
+falso-negativos (Jensen et al., 2005). Isso, juntamente
+com as mencionadas recomendações da AHA/ACC
+quanto ao benefício do uso de eletrocardiógrafos
+interpretativos nesses casos (Anderson et al., 2007),
+torna interessante o emprego desse tipo de equipamento
+no manejo inicial das doenças isquêmicas agudas do
+
+coração, o que está perfeitamente dentro do escopo
+deste trabalho.
+Adicionalmente, este trabalho identificou uma
+deficiência qualitativa – que pode ser isolada ou
+mesmo temporária – em um serviço de telemedicina
+privado disponível em uma unidade médica semi‑rural
+do Brasil. Isto sugere que tal tipo de serviço,
+especialmente quando dedicado à interpretação
+remota de eletrocardiogramas, deva ser submetido a
+processos de certificação e avaliação periódicos por
+uma entidade pública competente, e que, para tanto,
+sejam estabelecidos parâmetros de desempenho a serem
+obedecidos, de modo a viabilizar uma sistemática de
+fiscalização da telemedicina eletrocardiográfica, para
+que este método possa, efetivamente, contribuir para
+a redução da mortalidade por doença cardiovascular.
+
+Referências
+Anderson JL, Adams CD, Antman EM, Bridges CR, Califf
+RM, Casey DE, Chavey II WE, Fesmire FM, Hochman JS,
+Levin TN, Lincoff AM, Peterson ED, Theroux P, Wenger NK,
+Wright RS. ACC/AHA 2007 Guidelines for the management
+of patients with unstable angina/non‑ST‑elevation myocardial
+infarction: executive summary. Circulation. 2007; 116:803-77.
+http://dx.doi.org/10.1161/CIRCULATIONAHA.107.185752
+Braile DM, Godoy MF. Cálculos estatísticos básicos para
+testes diagnósticos [Internet]. Brasil; 1999 [acesso em 2011
+jan. 20]. Disponível em: www.braile.com.br/download/
+download.htm
+Deccache W. Eletrocardiograma revisitado e facilitado. Rio
+de Janeiro: Revinter; 2006.
+Farrell RM, XueJQ,Young BJ. Enhanced rhythm analysis
+for resting ECG using spectral and time-domain techniques.
+Computers in Cardiology. 2003; 30:733-6.
+Frieden J, Ira LR. ECG case studies: 100 new challenging
+ECGs. 2nd ed. New York: Medical Examination; 1974.
+Hampton JR, Adlam D. ECG na prática. 5. ed. Rio de
+Janeiro: Elsevier; 2009.
+Instituto Nacional de Cardiologia. INC: Relatório de gestão
+do exercício 2008 [Internet]. Brasil; 2008 [acesso em 2011
+mar. 06]. Disponível em: http://www.inc.saude.gov.br/
+paginas/transparencia_publica/Processos_Contas/relat2008/
+Relatorio_Gest%C3%A3o_2008.pdf.
+Instituto Dante Pazzanese de Cardiologia. Laboratório de
+epidemiologia e estatística [Internet]. São Paulo, Brasil:
+LEE; 2010. [acesso em 2010 nov. 10]. Disponível em:
+www.lee.dante.br/pesquisa.html
+Jakobsson A, Pahim O, Reichert L, Edenbrandt L,
+Nilsson B. On the consistency of ECG reports from
+two different computer-based ECG records. Clinical
+Physiology. 1989; 9:289-94. PMid:2663333. http://dx.doi.
+org/10.1111/j.1475-097X.1989.tb00981.x
+
+153
+
+154
+
+Freitas Junior MG, Nicolosi DEC, França FFAC
+
+Jensen MSA, Thomsen JL, Jensen SE, Laurentzen T, Engber
+M. Electrocardiogram interpretation in general practice.
+Family Practice. 2005; 22(1):100-13.
+Kligfield P. Automated analysis of ECG rhytm. Clinical
+Window Web Journal: Window on Cardiology. 2005; 5:20.
+Kors JA, Van Bemmel JH. Classification methods for
+computerized interpretation of the electrocardiogram.
+Methods of Information in Medicine.1990; 29:336.
+Nihon Kohden. Users’s guide: ECG interpretation program
+ECAPS 12C. 9th ed. Tokyo: Nihon Kohden; 2009.
+Oliveira EM, Spiandorello FSA. Síndromes coronarianas
+agudas: protocolo de avaliação e manejo inicial de pacientes
+com dor torácica. Revista Científica da AMECS. 2001; 1-2.
+Poon K, Okin PM, KligfieldP. Diagnostic performance
+of a computer-based ECG rhythm algorithm. Journal of
+Electrocardiology. 2005; 38:235-8. PMid:16003708. http://
+dx.doi.org/10.1016/j.jelectrocard.2005.01.008
+Pope HJ, Aufderheide TP, Ruthazer R, Woolard RH,
+Feldman JA, Beshansky JR, Griffith JL, Selker HP.
+Missed diagnoses of acute cardiac ischemia in the
+emergency department. New England Journal of
+Medicine. 2000; 342(16):1163‑70. PMid:10770981. http://
+dx.doi.org/10.1056/NEJM200004203421603
+Rautaharju PM. Will the electrocardiograph replace the
+electrocardiographers. Journal of Electrocardiology.
+1993; 26:158-63.
+Reddy BR,Taha B, Swiryn S, Silbermann R, Childers
+R. Prospective evaluation of a microprocessor assisted
+cardiac rhythm algorithm: results from one clinical center.
+Journal of Electrocardiology. 1998; 30:28-33. http://dx.doi.
+org/10.1016/S0022-0736(98)80016-2
+Selker HPI, McCarthy BD, Beshansky R, D’Agostino RB.
+Missed diagnoses of acute myocardial infarction in the
+emergency department: Results from a multicenter study.
+Annals of Emergency Medicine. 1993; 22(3):579-82. http://
+dx.doi.org/10.1016/S0196-0644(05)81945-6
+
+Rev. Bras. Eng. Biom., v. 28, n. 2, p. 140-154, jun. 2012
+Braz. J. Biom. Eng., 28(2), 140-154, June 2012
+
+Snyder CS, Fenrich AL, Friedman RA, Macias C, O’Reilly
+K, Kertsez NJ. The emergency department versus the
+computer: which is the better electrocardiographer? Pediatric
+Cardiology. 2003; 24:364-8. PMid:12457259. http://dx.doi.
+org/10.1007/s00246-002-0332-z
+Sociedade Brasileira de Cardiologia. Diretrizes da Sociedade
+Brasileira de Cardiologia sobre análise e emissão de
+laudos eletrocardiográficos. Arquivos Brasileiros de
+Cardiologia. 2009; 93(supl. 2):1-19.
+Spodick DH, Bishop RL. Computer treason: intraobserver
+variability of an electrocardiograph computer system.
+American Journal of Cardiology. 1997;80:102-3. http://
+dx.doi.org/10.1016/S0002-9149(97)00296-8
+Taha B, Reddy S, Xue Q, Swiryn S. Automated
+discrimination between atrial fibrillation and atrial flutter
+in the resting 12-lead electrocardiogram. Journal of
+Electrocardiology. 2000; 33:123-5. PMid:11265711. http://
+dx.doi.org/10.1054/jelc.2000.20303
+Thomson A, Mitchell S, Harris PJ. Computerized
+electrocardiographic interpretation: an analysis of clinical
+utility in 5110 electrocardiograms. Medical Journal of
+Australia. 1989; 151:428-30. PMid:2593957.
+Willems JL, Abreu-Lima C, Arnaud P, van Bemmel JH,
+Brohet C, Degani R, Denis B, Gehring J, Graham I, van
+Herpen G, Machado H, Macfarlane PW, Michaelis J,
+Moulopoulos SD, Rubel P, Zywietz C. The diagnostic
+performance of computer programs for the interpretation
+of electrocardiograms. New England Journal of Medicine.
+1991; 325:1767-73. PMid:1834940. http://dx.doi.org/10.1056/
+NEJM199112193252503
+Wooley D, Henck M, Luck J. Comparison of
+electrocardiogram interpretations by family physicians,
+a computer and a cardiology service. Journal of Family
+Practice. 1992; 34:428-32. PMid:1556536.
+
+Autores
+Manoel Gadêlha de Freitas Junior*, Denys Emilio Campion Nicolosi,
+Francisco Faustino de Albuquerque Carneiro de França
+Programa de Pós-Graduação em Medicina/Tecnologia e Intervenção em Cardiologia,
+Instituto Dante Pazzanese de Cardiologia – IDPC, Universidade de São Paulo – USP,
+Av. Dr. Dante Pazzanese, 500, Vila Mariana, CEP 04012-909, São Paulo, SP, Brasil.
+

@@ -1,0 +1,622 @@
+Inteligência Artificial e Medicina
+Artificial Intelligence and Medicine
+Luiz Carlos LoboI
+
+RESUMO
+
+Ao mesmo tempo em que se discutem problemas na relação médico-paciente e a deficiência do exame
+clínico na atenção médica, que torna o diagnóstico clínico mais dependente de exames complementares, enfatiza-se cada vez mais a importância do computador em medicina e na saúde pública. Isto
+se dá seja pela adoção de sistemas de apoio à decisão clínica, seja pelo uso integrado de novas tecnologias, incluindo as tecnologias vestíveis/corporais (wearable devices), seja pelo armazenamento de
+grandes volumes de dados de saúde de pacientes e da população. A capacidade de armazenamento e
+processamento de dados aumentou exponencialmente ao longo dos recentes anos, criando o conceito
+de big data. A Inteligência Artificial processa esses dados por meio de algoritmos, que tendem a se
+aperfeiçoar pelo seu próprio funcionamento (self learning) e a propor hipóteses diagnósticas cada vez
+mais precisas. Sistemas computadorizados de apoio à decisão clínica, processando dados de pacientes,
+têm indicado diagnósticos com elevado nível de acurácia. O supercomputador da IBM, denominado
+Watson, armazenou um volume extraordinário de informações em saúde, criando redes neurais de
+processamento de dados em vários campos, como a oncologia e a genética. Watson assimilou dezenas
+de livros-textos em medicina, toda a informação do PubMed e Medline, e milhares de prontuários de
+pacientes do Sloan Kettering Memorial Cancer Hospital. Sua rede de oncologia é hoje consultada por
+especialistas de um grande número de hospitais em todo o mundo. O supercomputador inglês Deep
+Mind, da Google, registrou informações de 1,6 milhão de pacientes atendidos no National Health
+Service (NHS), permitindo desenvolver novos sistemas de apoio à decisão clínica, analisando dados
+desses pacientes, permitindo gerar alertas sobre a sua evolução, evitando medicações contraindicadas
+ou conflitantes e informando tempestivamente os profissionais de saúde sobre seus pacientes. O Deep
+Mind, ao avaliar um conjunto de imagens dermatológicas na pesquisa de melanoma, mostrou um
+desempenho melhor do que o de especialistas (76% versus 70,5%), com uma especificidade de 62%
+versus 59% e uma sensibilidade de 82%. Mas se o computador fornece o know-what, caberá ao médico discutir o problema de saúde e suas possíveis soluções com o paciente, indicando o know-why do
+seu caso. Isto requer uma contínua preocupação com a qualidade da educação médica, enfatizando o
+conhecimento da fisiopatologia dos processos orgânicos e o desenvolvimento das habilidades de ouvir,
+examinar e orientar um paciente e, consequentemente, propor um diagnóstico e um tratamento de seu
+problema de saúde, acompanhando sua evolução.
+
+PALAVRAS-CHAVE
+–– Relação Médico-Paciente.
+–– Exame Clínico.
+–– Sistemas de Apoio à Decisão.
+–– Inteligência Artificial.
+–– Dispositivos Corporais.
+–– Educação Médica.
+
+185
+
+Revista Brasileira de Educação Médica
+41 (2) : 185-193; 2017
+
+I
+
+Professor Honoris Causa da UnB, Professor aposentado da UFRJ e Consultor Sênior da Unasus-Fiocruz.
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
+
+ABSTRACT
+KEYWORDS
+–– Doctor-Patient Relationship.
+–– Clinical Examination.
+–– Decision Support Systems.
+–– Artificial Intelligence.
+–– Wearable Devices.
+–– Medical Education.
+
+While discussions develop regarding problems in the doctor-patient relationship and the deficiency of
+the clinical examination in medical practice, which leaves diagnoses more dependent of complementary tests, the importance of the computer in medicine and public health is highlighted. This is happening, either through the adoption of clinical decision support systems, the use of new technologies,
+such as wearable devices, or the storage and processing of large volumes of patient and population
+data. Data storage and processing capacity has increased exponentially over recent years, creating the
+concept of “big data”. Artificial Intelligence processes such data using algorithms that continually
+improve through intrinsic self-learning, thus proposing increasingly precise diagnostic hypotheses.
+Computerized clinical decision support systems, analyzing patient data, have achieved a high degree
+of accuracy in their diagnoses. IBM’s supercomputer, named “Watson”, has stored an extraordinary
+volume of health information, creating a neural network of data processing in several fields, such as
+oncology and genetics. Watson has assimilated dozens of medical textbooks, all the information from
+PubMed and Medline, and thousands of medical records from the Sloan Kettering Cancer Memorial
+Hospital. Its oncology network is now consulted by numerous specialists from all over the world. The
+English supercomputer Deep-Mind, by Google, has stored data from 1.6 million National Health
+Service patients, enabling the development of new clinical decision support systems, analysis of these
+patient data and generating alerts on their evolution in order to avoid contraindicated or conflicting
+medications, whilst also sending timely updates to the physicians about the health of their patients.
+Analyzing a set of dermatological images in a melanoma study, Deep-Mind showed a higher level of
+performance than that of specialists (76% versus 70.5%), with a specificity of 62% versus 59% and
+a sensitivity of 82%. Nevertheless, whereas the computer provides the know-what, it is the physician that will discuss the medical problem and the possible solutions with the patient, indicating the
+know-why of his or her case. This area requires continuous focus on the quality of medical training,
+emphasizing knowledge of the physiopathology of the organic processes and the development of the
+abilities to listen to, examine and advise a patient and, consequently, propose a diagnosis and treatment, accompanying his or her evolution.
+
+Recebido em: 08/06/2017
+Aprovado em: 12/06/2017
+
+INTRODUÇÃO
+
+
+
+Ao longo de sua evolução, o homem adquiriu uma série de
+extensões. Com o desenvolvimento da oposição do polegar
+pôde segurar um porrete e aumentar o tamanho de seu braço
+ou atirar pedras para se defender de agressores. Com o uso de
+ondas de rádio pôde atingir populações distantes e com o microscópio ver dimensões muito pequenas, como as bactérias.
+Se o telefone permitiu a conversa entre pessoas que residem em qualquer lugar do planeta, estendendo a capacidade
+de ouvir, a televisão permitiu ver fatos distantes e no momento em que se produzem, aumentando a capacidade de ver.
+O advento do computador trouxe uma enorme ampliação da dimensão do homem, aumentando sua capacidade de
+calcular e armazenar grandes volumes de informação, e isso
+em nanossegundos. Ampliou sua memória e o tempo de recuperação de uma informação. O “aqui e agora” passou a ser o mote do mundo atual, caracterizando uma sociedade em mudança rápida e constante.
+
+186
+
+A criação de redes que interligam computadores, ensejando a comunicação rápida entre pessoas, de certo modo
+fragmentou e segmentou a sociedade em grupos de interesses
+semelhantes.
+Conversa-se mais através de smartphones do que presencialmente. A oferta contínua de vídeos e áudios em streaming
+reforça esse processo de individualização e isolamento. Talvez
+isso explique o fato de ser a depressão um dos grandes problemas médicos da atualidade.
+Ao mesmo tempo, houve um grande avanço nas tecnologias médicas voltadas ao diagnóstico pela imagem: o ecocardiograma, que, alguns acham, tornará obsoleto o estetoscópio,
+o ultrassom, que substitui, dizem, a palpação e a percussão do
+abdome, a ressonância, que substitui os exames de radiologia
+
+Revista Brasileira de Educação Médica
+41 (2) : 185 – 193 ; 2017
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
+
+contrastada, e o PET, que permite verificar as áreas envolvidas em várias atividades cerebrais, vieram substituir o exame
+clínico dos pacientes e a relação médico-paciente. Hoje, faz-se
+diagnóstico pelos exames e não pelo raciocínio e julgamento
+clínico. Para que avaliar a expansão torácica, auscultar, sentir
+o frêmito toracovocal ou fazer uma percussão para diagnosticar uma pneumonite, se um raio X simples de tórax pode fazer
+o diagnóstico?
+Trabalhos recentes1 enfatizam “the fading art of the clinical
+examination” e ressaltam a necessidade de olhar, ouvir e examinar o paciente e só então pedir exames para comprovar a
+hipótese diagnóstica.
+INTELIGÊNCIA ARTIFICIAL E MEDICINA
+Inteligência Artificial em medicina é o uso de computadores
+que, analisando um grande volume de dados e seguindo algoritmos definidos por especialistas na matéria, são capazes de
+propor soluções para problemas médicos.
+Computadores podem armazenar e recuperar dados sobre imagens, como lesões dermatológicas ou exames radiológicos, de ultrassom, de ressonância magnética, de tomografia
+por emissão de pósitrons (PET), de ecocardiogramas, de eletroencefalogramas, eletrocardiogramas, dados de dispositivos
+vestíveis/corporais (wearable devices) e gerar probabilidades
+de diagnóstico baseadas em algoritmos de decisão estabelecidos e que podem se automodificar em decorrência de resultados obtidos (self improvement).
+Dados de pacientes podem ser coletados seja diretamente
+de prontuários médicos eletrônicos, seja por meio da digitação
+de informações de anamnese, de exame clínico do paciente,
+exames complementares, evolução da enfermidade e medicamentos prescritos e usando algoritmos definidos e que podem
+ser atualizados com a análise desses dados e propor diagnósticos diferenciais de enfermidades, com as respectivas probabilidades de ocorrência.
+Atualmente, o uso de wearable devices tem sido introduzido na prática médica, obtendo informações contínuas sobre
+glicemia, ECG e movimento, por exemplo, que podem gerar
+ações automatizadas, como injetar insulina, dar uma descarga elétrica de um desfibrilador subcutâneo ou variar a dose
+de um medicamento em pacientes com doença de Parkinson.
+Informações desses gadjets são capturadas pelo celular do paciente e podem ser transmitidas ao seu médico.
+Desde algum tempo, busca-se desenvolver sistemas
+computadorizados de apoio ao diagnóstico clínico. Howard
+Bleish2, há mais de 50 anos, já oferecia um sistema que, avaliando dados de um paciente, sugeria ações para restabelecer
+seu equilíbrio hidroeletrolítico.
+
+187
+
+Vários sistemas3 foram desenvolvidos com o objetivo de
+oferecer uma lista de possíveis diagnósticos para um problema de saúde, com as probabilidades de acerto, usando dados
+da gênese e evolução desse problema, avaliando sinais e sintomas de pacientes, analisando resultados de exames realizados
+e propondo possibilidades diagnósticas.
+Recente trabalho4 selecionou quatro sistemas, após eles terem analisado dados de 20 casos clínicos apresentados no New
+England Medical Journal e no Medical Knowledge Self Assessment
+Program (MKSAP) do American College of Physicians, que
+visa avaliar os conhecimentos de medicina interna de estudantes do terceiro ano de Medicina de escolas dos EUA. Dois
+desses sistemas de diagnósticos diferenciais – DDX (DXPlain,
+de Harvard, e Isabel, privado) – indicaram acertos significativos, ainda que não tenham acertado o diagnóstico de dois
+casos do MKSAP.
+Berner e col.5 discutiram a relevância de se ter uma lista de
+hipóteses diagnósticas, seja para o clínico, seja para estudantes
+de Medicina. Uma lista de possíveis diagnósticos, aceitos de forma acrítica, poderia resultar no pedido de muitos exames para
+esclarecer o caso, tornando mais caro o tratamento do paciente.
+Recente trabalho6 analisa a adoção de sistemas de apoio à
+decisão clínica para melhorar a acurácia da medicina, considerando o aumento da carga de trabalho de médicos em emergências e clínicas de família. A Associação Americana de Escolas de
+Medicina (AAMC) estima uma demanda de 130.600 médicos
+até 2025, o que justificaria a adoção de programas de apoio à decisão como forma de diminuir a possibilidade de erros médicos.
+Em 2009, verificou-se que 32% dos erros médicos nos EUA
+resultavam da diminuição do tempo de interação do médico
+com os pacientes, produzindo diagnósticos equivocados, não
+reconhecimento da urgência ou piora da evolução do paciente que demandariam prescrever ou realizar ações pertinentes.
+Mesmo em hospitais que disponham de prontuários médicos
+eletrônicos7, com a possibilidade de melhor coleta de dados,
+admite-se que 78,9% dos erros médicos estariam relacionados
+a problemas na relação médico-paciente, exame clínico deficiente, falha de avaliação dos dados do paciente ou falta de
+exames que comprovassem a hipótese diagnóstica.
+O uso de sistemas que cruzam remédios prescritos e dados do paciente, evitando interações ou doses inapropriadas,
+está disponível e se reflete numa melhor e mais segura prescrição medicamentosa. Médicos e farmacêuticos se beneficiam
+muito com esses sistemas que confrontam dados e prescrições, evitando casos de medicações inadequadas a mulheres
+grávidas, doentes com insuficiência renal, alérgicos à droga
+prescrita e interações entre medicações feitas por mais de um
+profissional.
+
+Revista Brasileira de Educação Médica
+41 (2) : 185 – 193 ; 2017
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
+
+CRÍTICAS AO USO DE SISTEMA DE APOIO À
+DECISÃO CLÍNICA
+A tomada de decisão em medicina depende, essencialmente,
+da proposta de hipóteses diagnósticas sugeridas pelo médico
+após colher e avaliar dados sobre os problemas de saúde de
+um paciente. Essas hipóteses seriam avaliadas e indicariam a
+necessidade de ter novas informações sobre o caso ou a realização de exames complementares que permitam eleger a melhor opção na solução do problema.
+A experiência obtida após anos de trabalho clínico permitiria ao profissional avaliar melhor essas hipóteses diagnósticas fazendo perguntas ao paciente ou sugerindo exames a
+serem realizados.
+Um trabalho clássico de Elstein e cols.8 indicava, após longa pesquisa registrando o processo de solução de problemas
+em várias situações controladas, o seguinte:
+1. Hipóteses de solução de problemas, com frequência,
+são geradas precocemente ao se entrevistar um paciente, seja porque o médico se lembra de casos semelhantes, seja porque leu um artigo que discutia situações
+com as mesmas características;
+2. Hipóteses são, de regra, apresentadas em número limitado, mesmo em casos complexos; não obstante, hipóteses gerais, como dor abdominal, podem ser propostas junto com outras;
+3. Como consequência da proposição precoce de hipóteses, os médicos podem buscar novos dados para
+comprovar suas hipóteses e não para reavaliá-las, necessitando de muito mais informação ou resultados de
+exames para rever essas hipóteses;
+4. A solução de um caso está, de regra, relacionada à
+competência do profissional em relação ao problema
+apresentado pelo paciente. Como dizia Claude Bernard, “quem não sabe o que procura não entende o que
+encontra”.
+Estudos de Rimoldi9 mostraram que o número de dados
+de anamnese, exame físico e exames complementares requisitados por internos, residentes e especialistas para resolver
+um caso varia significativamente, indicando a importância
+da experiência na proposição de possíveis diagnósticos. O
+reconhecimento de padrões (pattern recognition) e de critérios de diagnóstico (combinação de sintomas, sinais e resultados de exames) é usado na determinação de um diagnóstico correto.
+Um trabalho da Universidade Estadual de Londrina sobre o raciocínio clínico dos estudantes de Medicina 10 indicou
+dois processos de elaboração de hipóteses diagnósticas entre
+
+188
+
+os alunos: hipotético-dedutivo e indutivo. Mostrou predominância de alunos (69%) induzindo um diagnóstico. Esses
+processos ressaltam dois tipos de pensar: o teórico-dedutivo
+(que vai do geral ao particular), mais comum entre latinos, e o
+empírico-indutivo (que vai do particular ao geral), que caracteriza, em geral, os anglo-saxões 11.
+Sistemas de suporte à decisão clínica podem assistir o
+profissional nesse processo de tomada de decisão. Esses sistemas podem sugerir hipóteses, com suas probabilidades de
+ocorrência, mas não explicam o porquê dessas hipóteses. Informam o know-what, mas não o know-why.
+Por outro lado, o sistema de tomada de decisão, dependendo da capacidade de perceber o que ocorre com o paciente,
+pode levar a erros na conduta proposta.
+Uma menina de 14 anos procurou o Hospital de Sobradinho em Brasília com amenorreia primária. Queixava-se de
+“ainda não ter ficado moça”. Mas o residente que a atendeu
+observou a icterícia da paciente e, após exames, fez um diagnóstico de anemia falciforme. Tratou a paciente e deu-lhe alta,
+mas a paciente, chorando, dizia ao médico que não a tinham
+tratado porque “ainda não tinha ficado moça”.
+Para obviar essa distorção na percepção de um caso,
+Weed12 propôs em 1964 a adoção do “Prontuário Orientado
+para Problemas”, em que, após ouvir e examinar o paciente,
+o médico deveria listar os problemas apresentados seja de ordem somática, seja de ordem psicológica e mesmo de ordem
+social, e propor um plano de ação para cada problema apresentado13.
+O “Prontuário Médico Orientado para Problemas” foi
+adotado em poucos hospitais, talvez porque, reconhecendo os
+problemas do paciente e propondo um plano de diagnóstico e
+tratamento para cada problema, a competência médica fique
+sujeita a uma clara avaliação por seus pares.
+USO DE SUPERCOMPUTADORES EM INTELIGÊNCIA
+ARTIFICIAL E MEDICINA
+Inteligência Artificial (IA) é um ramo da ciência da computação que se propõe a desenvolver sistemas que simulem a
+capacidade humana de percepção de um problema, identificando seus componentes para, com isso, resolver problemas e
+propor/tomar decisões.
+Outra definição de Inteligência Artificial indica que seria
+a criação de sistemas inteligentes de computação capazes de
+realizar tarefas sem receber instruções diretas de humanos (os
+“robôs” são exemplos disso).
+Usando diferentes algoritmos e estratégias de tomada de
+decisões e um grande volume de dados, sistemas de IA são
+capazes de propor ações, quando solicitados.
+
+Revista Brasileira de Educação Médica
+41 (2) : 185 – 193 ; 2017
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
+
+A Inteligência Artificial envolve várias etapas ou competências, como reconhecer padrões e imagens, entender linguagem aberta escrita e falada, perceber relações e nexos, seguir
+algoritmos de decisão propostos por especialistas, ser capaz
+de entender conceitos e não apenas processar dados, adquirir
+“raciocínios” pela capacidade de integrar novas experiências
+e, assim, se autoaperfeiçoar, resolvendo problemas ou realizando tarefas.
+Os primórdios da IA datam de 1950, quando Alan Turing
+publicou seu artigo “Computing Machinery and Intelligence”14
+e propôs o teste (hoje nomeado TT em sua homenagem) que
+compara a performance de um computador e de uma pessoa
+na solução de um problema.
+O termo Inteligência Artificial foi cunhado numa conferência no Dartmouth College em 195615 por McCarthy e cols.,
+e a sua aplicação em medicina iniciou-se com o artigo de Shortlife em 196316.
+Szlovits, em publicação de 200917, admite que atualmente
+a IA em medicina está se tornando não apenas uma parte, mas
+um componente essencial da informática médica e um recurso
+importante na solução de problemas em atenção à saúde.
+As pesquisas iniciais visavam capturar o conhecimento
+de especialistas no desenvolvimento de sistemas de apoio ou
+proposta de soluções clínicas.
+Atualmente, o problema é processar um grande volume de
+informações, seja por meio de prontuários eletrônicos com dados dos pacientes, resultados de seus exames, diagnóstico proposto, prescrição e resultados dessas medicações, seja por digitação, considerando que dados podem não estar disponíveis
+ou podem estar incompletos. Deve-se considerar também que
+informações ainda podem ter que ser digitadas em decorrência
+da incompatibilidade de sistemas onde elas estejam registradas. Há que se considerar, no entanto, que essa digitação poderá eventualmente introduzir um componente de erro humano.
+Sistemas que funcionam em background podem ser utilizados para verificar dados de pacientes, como interação e
+incompatibilidade de medicamentos, dados de exames complementares discrepantes, exames solicitados e/ou a serem
+realizados.
+O problema da perda de confidencialidade dos dados armazenados tem sido ressaltado e deve ser sempre discutido,
+mas sistemas de saúde, como o NHS da Inglaterra, indicam que
+o benefício da troca de experiências excede problemas eventuais
+decorrentes da quebra de confidencialidade. A troca de informações já é feita entre pacientes com websites, como PatientsLikeMe, Acor (association of cancer online), CrowdMed, SmartPatients.
+Várias empresas estão muito engajadas em projetos de IA,
+como IBM, Google, Apple, Microsoft e Amazon.
+
+189
+
+Com a disseminação dos smartphones, sistemas como o
+Apple Siri, Microsoft Cortana e Google Now permitem interação em linguagem aberta, funcionando como um assistente
+pessoal, dando informações ao usuário, lembrando ações a
+serem tomadas, fazendo postagens no Facebook ou Twitter e
+conversando com o usuário como um amigo virtual.
+Duas das mais importantes experiências no uso de IA em
+vários campos, inclusive medicina, são a plataforma Watson
+Health, da IBM, e o Deep Mind, da Inglaterra, que processam
+informações armazenadas na “nuvem” de oncologia e de avaliação de risco e evolução de pacientes.
+Registrando um grande número de casos com seu esquema de diagnóstico, tratamentos prescritos e resultados obtidos, esses sistemas permitem uma expansão do conhecimento
+médico e a sugestão de condutas a serem seguidas, nesse caso
+com embasamento probabilístico.
+Pesquisadores da IBM, usando redes neurais, conseguiram obter uma acurácia de 86% no diagnóstico de retinopatia
+diabética feito em 35 mil imagens de retina acessadas através
+da tecnologia EyePACs da IBM de identificação de lesões e
+outros sinais observados em vasos sanguíneos.
+Ao contrário do Watson, que processa mais demandas específicas, o Deep Mind, criado em 2010 e comprado pela Google em 2014, também usando uma rede neural, pretende não
+ser programado com fins predefinidos, “aprendendo” com a
+experiência na solução de problemas.
+O Deep Mind tem sido usado em medicina na avaliação
+de scans visuais, buscando causas de cegueira. Em 2016, estabeleceu um projeto com o Royal Free London NHS Foundation Trust e com o Imperial College Health Care NHS Trust
+para acessar os prontuários eletrônicos de pacientes e avaliar
+seus dados, o que tem gerado grande controvérsia no país. O
+problema da confidencialidade dos dados tem sido questionado, sobretudo pelo fato de eles serem processados livremente
+por uma empresa privada (Google).
+No Brasil, em 2016, a Fiocruz criou o Centro de Integração de Dados e Conhecimentos para Saúde (Cidacs), buscando integrar dados de saúde e políticas sociais de mais de cem
+milhões de brasileiros contemplados no Programa Bolsa Família e outros programas de proteção social numa única base
+de dados, mas preservando a confidencialidade desses dados.
+Também foram criadas plataformas de vigilância em saúde, estudos genéticos (Epigen), de incorporação de tecnologias e inovações em sistemas de informação para apoiar o SUS
+e de Estudos de Equidade e Sustentabilidade Urbana e seus
+efeitos em saúde. Essa iniciativa deverá ser o começo de um
+programa de integração de dados sobre as condições de saúde
+de indivíduos e da população do País.
+
+Revista Brasileira de Educação Médica
+41 (2) : 185 – 193 ; 2017
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
+
+EXPERIÊNCIAS EM INTELIGÊNCIA ARTIFICIAL EM
+SAÚDE
+Em trabalho recente, Mukherjee18 relata a experiência de Sebastian Thrun, da Universidade de Stanford, que armazena,
+numa rede neural de computação, 130 mil imagens de lesões
+da pele classificadas por dermatologistas. O sistema usa algoritmos que reconhecem imagens e suas características (pattern
+recognition). Em junho de 2015, Thrun e equipe começaram a
+validar o sistema usando um conjunto de 14 mil imagens que
+haviam sido diagnosticadas por dermatologistas, solicitando que o sistema reconhecesse três tipos de lesão: benignas,
+malignas e crescimentos não cancerosos. O sistema acertou
+72% das vezes, comparado com um acerto de 66% obtido por
+dermatologistas qualificados. A experiência de Thrun foi ampliada para incluir 25 dermatologistas e uma amostra de 2 mil
+casos biopsiados. A máquina continuou sendo mais acurada.
+Outra experiência relatada por Mukherjee foi desenvolvida na Universidade de Columbia: uma radiologista discutia
+a importância de diagnosticar precocemente um AVC numa
+tomografia computadorizada (CT scan), permitindo a destruição oportuna de um coágulo no cérebro. É fácil diagnosticar
+um AVC quando o cérebro já está morto e cinzento, dizia ela.
+O desafio é diagnosticar e intervir precocemente. O reconhecimento de imagens feito por IA poderia obviar esse desafio
+pelo reconhecimento de pequenos detalhes indicando áreas
+suspeitas em cortes de CT que poderiam passar despercebidas.
+Uma pesquisa realizada na USP19 mostrou que a geração
+de hipóteses e diagnósticos diferenciais, em geral, é feita pelo
+reconhecimento visual imediato de determinadas lesões. A
+experiência foi realizada com 25 radiologistas que tentaram
+reconhecer imagens do pulmão apresentadas a eles dentro de
+um tubo de ressonância magnético funcional. O tempo médio para propor um diagnóstico foi de 1,33 segundo, ativando
+sempre a mesma área do cérebro. O importante parece ter sido
+o conhecimento prévio da forma e características da lesão, o
+que poderia ser feito por Inteligência Artificial.
+O dermatologista Lindsay Bordone, da Universidade de
+Columbia18, tinha 49 pacientes agendados no dia. Examinados
+em sequência, todos saíam felizes. É que o computador pode
+acertar o know-what, mas o médico, conversando com seu paciente, explica o know-why. Isto indica por que os médicos nunca serão substituídos por uma máquina. Elas não explicam o
+porquê nem aliviam a angústia do paciente.
+O apoio à decisão clínica disponível por meio de consultores on-line, como oferecido no Brasil pelo Telessaúde/TeleMedicina, favorece a prática em lugares remotos onde a disponibilidade de recursos e a possibilidade de discutir o caso in
+loco são escassas ou inexistentes. A disponibilização contínua
+de sistemas computadorizados de apoio à decisão clínica seria
+outra alternativa a ser postulada.
+INTEGRAÇÃO DE BASE DE DADOS – BIG DATA
+A capacidade de armazenar dados aumentou de forma exponencial nas últimas décadas. De armazenamento em fitas
+e discos móveis, passou-se a armazenar via internet em sistemas de grande capacidade (warehouses) e, atualmente, em
+redes de computadores ditos “na nuvem”.
+O armazenamento de dados passou a ser gigantesco, levando ao conceito de big data. Estima-se em 2,5 exabytes (um
+exabyte corresponde a 10 à potência 18; para comparação, um
+gigabyte é 10 à potência 9), com um crescimento anual previsto de 57% no período de 2014-201920, chegando a 24,3 exabytes
+em 2019, admitindo-se ainda que em 2019 vídeos deverão corresponder a 50% do tráfego na internet.
+Big data está sendo gradualmente introduzido no sistema
+de atenção à saúde. Dados de prevalência, incidência e evolução de enfermidades permitiriam gerar dados estatísticos, antecipar surtos epidemiológicos e prescrever ações preventivas.
+Dados de pacientes, como idade, sexo, etnia, local de residência, antecedentes pessoais e familiares, sintomas e sinais
+apresentados, exames realizados ou obtidos por meios eletrônicos (wearable devices), diagnósticos feitos, tratamento e evolução coletados, permitiriam estabelecer uma base de dados e
+aprimorar condutas estabelecidas.
+Esses dados deveriam ser disponibilizados ao paciente,
+que poderia participar de decisões que envolvessem ações
+médicas, já que as consequências dessas ações seriam sofridas
+por ele.
+Eric Topol fala em empoderar o paciente21 na discussão de
+seu problema de saúde, sobretudo se se considerar que outros
+sistemas como o Google já oferecem dados sobre problemas
+médicos, mas sem uma análise criteriosa dessa informação. O
+médico poderá discutir o caso agregando seu know-why.
+O problema passou a ser dispor de processos de integração e pesquisa em diferentes bases de dados. Sistemas integrados e universais de atenção à saúde, como o National Health
+Service, da Inglaterra, facilitam a pesquisa por constituírem
+uma base de dados única. Discute-se a abertura desses dados
+a toda a comunidade médica, com a certeza de que o benefício
+de trocar e compartilhar experiências é muito maior que a preservação de sua confidencialidade.
+Um sistema único e padronizado de dados em saúde poderia ser o trunfo essencial a garantir a qualidade da atenção
+prestada em saúde no Brasil.
+
+Revista Brasileira de Educação Médica
+41 (2) : 185 – 193 ; 2017
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
+
+Integrar diferentes sistemas de registro eletrônico de dados em medicina e saúde é o grande desafio. A adoção de
+diferentes sistemas informatizados nos estados e municípios
+brasileiros e a baixa integração com os sistemas privados de
+saúde dificultam a criação de uma base de dados única e nacional e a possibilidade de estabelecer condutas e diretrizes
+para os principais problemas de saúde do País22.
+A obtenção de dados colhidos no Datasus com o fim de
+pagar contas hospitalares e que seriam processados, eventualmente, no sistema de computação do Cidacs-Fiocruz poderia
+iniciar um programa de racionalização e melhoria da atenção
+médica no País, seja pelo conhecimento da frequência de ações
+adotadas para resolver casos clínicos e custos envolvidos, seja
+pela possibilidade de verificar os resultados dos procedimentos realizados e tratamentos prescritos, evitando recorrências
+e sugerindo ações preventivas.
+Integrar dados dos vários níveis de atenção à saúde, analisando-os por região e complexidade, incentivar a troca on-line
+de experiências, discutir o uso de novas tecnologias na prática
+médica, não só em grandes centros, mas, sobretudo, em áreas
+remotas, são imperativos a serem discutidos.
+Dados de notificações de doenças processados tempestivamente pela vigilância em saúde permitem estudar não só o
+diagnóstico desses casos, como os desvios em sua evolução,
+prever a possibilidade de surtos e epidemias, e propor as medidas necessárias de prevenção e proteção da saúde da população.
+Afortunadamente, a informação científica tende a ser padronizada. A Organização Mundial da Saúde e o Instituto de
+Saúde dos EUA (NIH) desenvolveram padrões, como a Classificação Internacional de Doenças (CID) e a International Health
+Terminology Standards Development Organization (Snomed). A integração de dados genômicos é feita por meio de sistemas de
+nomenclatura como o Gene Ontology. Sem uma padronização
+de dados fica difícil a integração e a adoção de sistemas de
+apoio à decisão clínica e em sistemas de saúde.
+Big data que agregam informações sobre saúde, determinantes genéticos de doenças, estudos de órgãos, células, moléculas, e até átomos, de mecanismos de transcrição e repressão do DNA e como modificá-los, de proteínas e metabólitos
+e a interação de indivíduos com o ecossistema ensejam um
+conhecimento de possíveis agravos à saúde do indivíduo e da
+população e como controlá-los e resolvê-los.
+Nos EUA, o programa de pesquisa em câncer estabeleceu o projeto NCI-Match, que busca parear tipos de tumor e
+terapias prescritas. O projeto envolveu mil pacientes que apresentavam um tumor que não havia respondido a tratamentos
+padrões para o caso. Usando marcadores genéticos, buscou-se
+
+191
+
+propor drogas mais bem ajustadas e observar a evolução do
+paciente.
+O programa Precision Medicine Initiative prevê estabelecer
+uma base de dados genéticos de um milhão de pessoas para
+avaliar a eficácia de drogas em condições específicas.
+Um volume muito grande de informações médicas (80%
+segundo a IBM) já está armazenado nos bancos de dados do
+Watson23, supercomputador da empresa. O sistema Watson de
+oncologia é hoje usado em um grande número de instituições
+de saúde dos EUA24.
+No Brasil, o Fleury Medicina e Saúde é o primeiro parceiro da unidade IBM Watson em Saúde na América Latina25,
+iniciando, sobretudo, estudos com o Watson Genomics para auxiliar médicos a identificar medicamentos e ensaios clínicos
+relevantes com base em alterações genômicas de um indivíduo e dados extraídos da literatura médica. O Watson na área
+de saúde fornece a oncologistas conhecimentos advindos dos
+mais importantes centros de pesquisa e tratamento de câncer
+no mundo.
+Esperamos que outras instituições brasileiras sigam a experiência do Fleury e que passem a intercambiar informações
+sobre problemas de atenção à saúde em nível individual e coletivo.
+CONCLUSÃO
+A deficiência na interação com o paciente, a falta de seu exame
+clínico e a dependência de exames complementares no diagnóstico médico irão aumentar cada vez mais o uso do computador em medicina.
+A disponibilidade de sistemas de apoio à decisão clínica
+com grande acurácia, o uso de dispositivos vestíveis/corporais (wearable devices), o aumento exponencial da capacidade
+de armazenar e processar dados de pacientes e da população
+(big data) são fatos que já se integraram à realidade em muitos
+países.
+A Inteligência Artificial processa esses dados por meio
+de algoritmos que tendem a se aperfeiçoar pelo seu próprio
+funcionamento (self learning) e a propor hipóteses diagnósticas
+cada vez mais precisas.
+O sistema de computação Deep Mind inglês, recentemente adquirido pela Google, processa atualmente 1,6 milhão de
+prontuários de pacientes atendidos nos hospitais do Serviço
+Nacional de Saúde da Inglaterra (NHS), buscando desenvolver uma nova geração de sistemas de apoio à decisão clínica,
+analisando dados desses pacientes e gerando alertas sobre a
+sua evolução, evitando medicações contraindicadas ou conflitantes e informando tempestivamente os profissionais de
+saúde sobre seus pacientes.
+
+Revista Brasileira de Educação Médica
+41 (2) : 185 – 193 ; 2017
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
+
+A IBM, por sua vez, criou um supercomputador – o Watson – com capacidade de armazenar dados médicos num volume extraordinário. O Watson assimilou dezenas de livros-textos em medicina, toda a informação do PubMed e Medline, e milhares de prontuários de pacientes do Sloan Kettering
+Memorial Cancer Hospital. Segundo a revista Forbes, o Watson analisou 25 mil casos clínicos com a assistência de 14.770
+médicos para buscar melhorar sua acurácia diagnóstica e está
+ficando mais inteligente a cada ano. Sua rede de oncologia é
+hoje consultada por especialistas de um grande número de
+hospitais.
+O programa Precision Medicine Initiative prevê estabelecer
+uma base de dados genéticos de um milhão de pessoas para
+avaliar a eficácia de drogas em condições específicas.
+O processamento de um grande volume de informações
+em saúde permitirá melhorar a compreensão da gênese, diagnóstico e tratamento de problemas de saúde não só do indivíduo, como da população. Permitirá, em consequência, propor
+novas ações voltadas à promoção, prevenção e recuperação da
+saúde, o que incluiria a necessidade de eventual reestruturação dos sistemas voltados a desenvolver essas ações.
+Mas se o computador fornece o know-what, caberá ao médico discutir o problema de saúde e suas possíveis soluções
+com o paciente, indicando o know-why do seu caso. Isto requer
+uma contínua preocupação com a qualidade da formação
+médica e o entendimento de que o médico talvez seja o mais
+importante agente terapêutico, pela orientação que dá a seu
+paciente e, consequentemente, pelo alívio de suas tensões e
+necessidades.
+REFERÊNCIAS
+1. Knox R. The Fading Art of the Physical Exam. National
+Public Radio [internet]. 2010 Sep 20;Science. Disponível em: http://www.npr.org/templates/story/story.
+php?storyId=129931999
+2. Bleish H. Computer Evaluation of Acid-Base Disorders,
+JClinInv. 1972;53:285-291.
+3. Wikipedia contributors. Clinical decision support system. Wikipedia, The Free Encyclopedia [capturado
+5 mai. 2017]. Disponível em: https://en.wikipedia.
+org/w/index.php?title=Clinical_decision_support_
+system&oldid=778842100.
+4. Bond WF, Schartz LM, Weaver KR, Levick D, Giuliano M,
+Graber ML. Differential Diagnosis Generators: an evaluation of currently available computer programs. JGenIntern
+Med. 2011;27(2):213-319.
+5. Berner ES. Clinical Decision Support Systems: theory and
+practice.New York:Springer; 1999.
+
+192
+
+6. Wikipedia contributors. Clinical decision support system.
+Wikipedia, The Free Encyclopedia [capturado 6 mai. 2017].
+Disponível em: https://en.wikipedia.org/wiki/Clinical_
+decision_support_system
+7. Castaneda C, Nafley K, Mannion C, Bhattacharyya P,
+Blake P, Pecora A, Goy A, Suh KS. Clinical Decision Support Systems for Improving Diagnostic Accuracy and
+Achieving Precision Medicine. JClin Bioinforma. 2015:5(4).
+Disponível em: www.ncbi.nlm.nih.gov/pmc/articles/
+PMC4381462/.
+8. Elstein AS, Shulman LS. Sprafka SA. Medical Problem
+Solving: an analysis of clinical reasoning. Cambridge
+(MA):Harvard University Press; 1978.
+9. Rimoldi HJA. Diagnosing the Diagnostic Process. Medical
+Education.1988;22(4):270-278.
+10. Fornaziero CC, Gordan PA, Garanhani ML. O raciocínio
+clínico dos estudantes de medicina em uma universidade
+pública do Brasil. Rev Bras Educ Med. 2012;36(4):463-469.
+11. Conant JB. Two Modes of Thought. New York: Trident
+Press; 1964.
+12. Weed LL. Medical Records, patient care and medical education. Irish J Med Sci.1964;6:271-282.
+13. Lobo LCG. Prontuário Médico Orientado para Problemas.
+Rev Hosp Clin Fac Med S Paulo.1976;31:67-72.
+14. Turing AM. Computing Machinery and Intelligence.
+Mind.1950;49:433-460.
+15. McCarthy J, Minsky ML, Rochester N, Shanon CE. A Proposal of the Dartmouth Summer Research Project on Artificial Intelligence. Disponível em:http://en.wikipedia.
+org/wiki/History_of_artificial_intelligence
+16. Shortlife EH. The Adolescence of AI in medicine: will the
+field come of age in the ‘90s. Artif Intell Med. 1993;5(2):93-166.
+17. Patel VL, Shortlife EH, Stefanelli M, Szolovits P, Berthold
+MR, Bellazi R, Abu-Hanna A. The Coming Age of Artificial
+Intelligence in Medicine. Artif Intell Med 2009;46(1):5-17.
+18. Mukherjee S. A.I. Versus M.D: what happens when diagnosis is automated? The New Yorker [on line] 2010 april
+3. [capturado 3 mai. 2017] Disponível em: <http://www.
+newyorker.com/magazine/2017/04/03/ai-versus-md>.
+19. MeloM, ScarpinDJ, Amaro JR,EPassos, RBD, SatoJR, Friston KJ,Price CJ. How Doctors Generete Diagnostic Hypotheses: Study of Radiological Diagnosis with Functional
+Magnetic Ressonance Imaging. Disponível em: http://
+journal.plos.org/plosone/article?id=10.1371/journal.
+pone.0028752
+20. CISCO VNI Mobile,2015, Cyber Academy. Global Mobile
+Traffic ForecastCAGR = Computed Annual Growth Rate.
+Edinburgh.
+
+Revista Brasileira de Educação Médica
+41 (2) : 185 – 193 ; 2017
+
+Luiz Carlos Lobo ﻿	
+
+DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
+
+21. Topol E. The Patient Will See You Now:the future of medicine is in your hands. New York:Basic Books,2015.
+22. LoboL CG. Sistemas de Informação e Planejamento de
+Saúde. Brasília: Ed.Univ. Brasília,1993.
+23. IBM. IBM’s Watson Supercomputer May Soon be the Best
+Doctor in the World, Busines Insider [capturado 8 mai.
+2017] Disponível em: Wikipedia contributors. Clinical decision support system. Wikipedia, The Free Encyclopedia
+[capturado 5 mai. 2017]. Disponível em: http://www.
+businessinsider.com/ibms-watson-may-soon-be-the-best-doctor-in-the-world-2014-4
+24. IBM. Como o Watson, a plataforma de computação cognitiva da IBM, está ajudando a revolucionar o perfil de cinco
+verticais econômicas, IDGNOW [capturado 6 Mai.2017]
+Disponível
+em:
+http://idgnow.com.br/ti-corporativa/2016/06/20/como-o-watson-a-plataforma-de-computacao-cognitiva-da-ibm-esta-ajudando-a-revolucionar-o-perfil-de-cinco-verticais-economicas
+
+193
+
+25. Merker J. Fleury Testa Watson para Saúde. Baguete [capturado 7 mai. 2017] Disponível em: https://www.baguete.
+com.br/noticias/04/10/2016/fleury-testa-watson-para-saude
+CONFLITO DE INTERESSES
+O autor negou haver qualquer conflito de interesses.
+ENDEREÇO PARA CORRESPONDÊNCIA
+Luiz Carlos Lobo
+Rua Raul Pompéia, 94 – apto 1007
+Copacabana – Rio de Janeiro
+CEP 22080-002 – RJ
+E-mail: luizcarloslobo@gmail.com
+
+Revista Brasileira de Educação Médica
+41 (2) : 185 – 193 ; 2017
+
+
