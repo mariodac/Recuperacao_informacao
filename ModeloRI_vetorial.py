@@ -13,16 +13,16 @@ class ModeloVetorial:
     def carregarCorpus(self):
         pass
     def analiseLexica(self):
-        textoAL = self.texto_original.lower() #letras minusculas
+        textoAL = self.texto_original.lower() #texto para letras minusculas
         textoAL = normalize('NFKD', textoAL).encode('ASCII', 'ignore').decode('ASCII')#retirada de acentuações
         textoAL = re.sub('[^a-zA-Z0-9 ]', '', textoAL) #retirada de caracteres especiais
         self.texto_analise_lexica = textoAL.split()
         return self.texto_analise_lexica
 
     def retiraStopWord(self):
-        stop_words = stopwords.words('portuguese')
+        stop_words = stopwords.words('portuguese') #obtendo lista de stopwords da lingua portuguesa
         for palavra in self.texto_analise_lexica:
             if palavra not in stop_words:
-                self.texto_stop_words.append(palavra)
+                self.texto_stop_words.append(palavra) #lista com somente a palavra que não são stopwords
         return self.texto_stop_words
 
