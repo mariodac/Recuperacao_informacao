@@ -1,7 +1,7 @@
 from ModeloRI_vetorial import ModeloVetorial
 if __name__ == "__main__":
     print(":"*40+"MODELO VETORIAL"+":"*40)
-    ri = ModeloVetorial('De pé , à cabeceira da cama , com os olhos estúpidos , a boca entreaberta , a orelhas gigante')
+    ri = ModeloVetorial('Clarissa risca com giz no quadro-negro a paisagem que os alunos devem copiar . Uma casinha de porta e janela , em cima duma coxilha .')
     analise_lexica = ri.analiseLexica()
     print("análise léxica: ",analise_lexica)
     stop_word = ri.retiraStopWord()
