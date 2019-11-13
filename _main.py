@@ -1,8 +1,11 @@
 from ModeloRI_vetorial import ModeloVetorial
 if __name__ == "__main__":
     print(":"*40+"MODELO VETORIAL"+":"*40)
-    ri = ModeloVetorial('De pé , à cabeceira da cama , com os olhos estúpidos , a boca entreaberta , a orelhas')
+    ri = ModeloVetorial('De pé , à cabeceira da cama , com os olhos estúpidos , a boca entreaberta , a orelhas gigante')
     analise_lexica = ri.analiseLexica()
     print("análise léxica: ",analise_lexica)
     stop_word = ri.retiraStopWord()
     print("stop_words: ", stop_word)
+    ri.carregarCorpus()
+    radicalizados = ri.radicalizacao()
+    print("radicalização: ",radicalizados)
