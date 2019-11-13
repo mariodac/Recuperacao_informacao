@@ -3,7 +3,7 @@ from nltk.stem import RSLPStemmer
 from unicodedata import normalize
 import re
 
-texto_original = "De pé , à cabeceira da cama , com os olhos estúpidos , a boca entreaberta , a orelhas"
+texto_original = "De pé , à cabeceira da cama , com os olhos estúpidos , a boca entreaberta , a orelhas gigante"
 
 stop_words = (stopwords.words('portuguese')) #lista de stopwords
 print(texto_original)
@@ -21,34 +21,58 @@ for palavra in palavras:
         sem_stopwords.append(palavra)
 
 print('remoção stopword: ', sem_stopwords)
-""" 
+ 
 radicalizacao = []
 
 rslp = RSLPStemmer()
 rules = []
-teste = rslp.read_rule('step2.pt')
 for i in range(0, 7):
     rules.append(rslp.read_rule('step{}.pt'.format(i)))
 # print(rules)
 lista = []
-excessao = []
+excessoes = []
+sufixos = open("sufixos.txt", "w")
+arquivo = open("excessoes.txt", "w")
+lista_sufixo = []
 for rule in rules:
     for r in rule:
-        lista.append(normalize('NFKD', r[0]).encode('ASCII', 'ignore').decode('ASCII'))
+        sufixo = normalize('NFKD', r[0]).encode('ASCII', 'ignore').decode('ASCII')
+        lista.append(sufixo)
+        lista_sufixo.append(sufixo)
+        sufixos.writelines(sufixo + '\n')
         if r[2]:
-            lista.append(normalize('NFKD', r[2]).encode('ASCII', 'ignore').decode('ASCII'))
+            sufixo = normalize('NFKD', r[2]).encode('ASCII', 'ignore').decode('ASCII')
+            lista.append(sufixo)
+            lista_sufixo.append(sufixo)
+            sufixos.writelines(sufixo + '\n')
         if r[3][0] != '':
-            excessao.append(r[3])
+            excessoes.extend(r[3])
     # lista.append(excessao)
     lista_sufixos.append(lista)
     lista = []
-
+excessoes = list(filter(None, excessoes))
+for e in range(0, len(excessoes)):
+    excessoes[e] = normalize('NFKD', excessoes[e]).encode('ASCII', 'ignore').decode('ASCII')
+    arquivo.writelines(excessoes[e]+'\n')
+arquivo.close()
+sufixos.close()
 for i in range(0,len(sem_stopwords)):
-    for sufixo in lista_sufixos:
+    if sem_stopwords[i][-1] == 's':
+        sufixos = rules[0]  
+    if sem_stopwords[i][-1] == 'a':
+        sufixos = rules[1]
+    for rule in sufixos:
+            
+        print()
+for i in range(0,len(sem_stopwords)):
+    for sufixo in lista_sufixo:
         resultado = re.search('{}$'.format(sufixo), sem_stopwords[i])
         if resultado: 
-            sem_stopwords[i] = (re.sub('{}$'.format(sufixo), '', sem_stopwords[i]))
+            if sem_stopwords[i] not in excessoes:
+                if len(sem_stopwords[i]) > len(sufixo):
+                    op_sw = (re.sub('{}$'.format(sufixo), '', sem_stopwords[i]))
+                    if len(op_sw) >= 2:
+                        sem_stopwords[i] = op_sw
 
 print("radicalização: ", sem_stopwords)
 
- """
