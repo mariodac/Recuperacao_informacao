@@ -3,7 +3,7 @@ TEMPORAL: SUBSÍDIOS PARA SUMARIZAÇÃO
 AUTOMÁTICA MULTIDOCUMENTO
 Jackson Wilke da Cruz SOUZA *
 Ariani Di FELIPPO **
-▪▪ RESUMO: A complementaridade é um fenômeno multidocumento comumente observado entre
+RESUMO: A complementaridade é um fenômeno multidocumento comumente observado entre
 notícias que versam sobre um mesmo evento. A partir de um corpus em português composto
 por um conjunto de pares de sentenças manualmente anotadas com as relações da CrossDocument Structure Theory (CST) que explicitam a complementaridade temporal (Historical
 background e Follow-up), identificou-se um conjunto potencial de atributos linguísticos desse
@@ -16,7 +16,7 @@ do classificador indicam que o atributo ocorrência de expressão temporal na se
 o mais relevante para a tarefa. Como contribuição, salienta-se que o classificador JRip aqui
 gerado pode ser utilizado nos analisadores discursivos multidocumento para o português do
 Brasil que são baseados na CST.
-▪▪ PALAVRAS-CHAVE: Descrição linguística. Complementaridade. CST. Sumarização
+PALAVRAS-CHAVE: Descrição linguística. Complementaridade. CST. Sumarização
 Multidocumento. Processamento Automático de Língua Natural.
 
 Introdução
@@ -44,7 +44,7 @@ Esta obra está licenciada com uma Licença Creative Commons Atribuição 4.0 In
 
 125
 
-fonte, advindos de fontes distintas, que abordam um mesmo assunto (MANI, 2001). A
+fonte, advindos de fontes distintas, que abordam um mesmo assunto (MANI, 2001). A
 SAM tem visado majoritariamente à produção de sumários extrativos (ou extratos), que
 são comumente compostos por sentenças copiadas integralmente dos textos-fonte. Tais
 sumários tendem a ser informativos, já que veiculam o conteúdo central da coleção a
@@ -88,7 +88,7 @@ S2: Os candidatos José Maria Eymael (PSDC) e Ruy Pimenta (PCO) não pontuaram.
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-Entre as sentenças de (1), há uma relação de redundância, já que o conteúdo de
+Entre as sentenças de (1), há uma relação de redundância, já que o conteúdo de
 ambas é bastante semelhante. Entre as sentenças de (2), estabelece-se uma relação
 de complementaridade, pois S2 detalha uma informação contida em S1. No caso, S2
 fornece informações adicionais não relatadas em S1. Especificamente, o S1 fornece
@@ -131,7 +131,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 127
 
-(SAM), que visa produzir um único sumário a partir do conteúdo de vários textos-fonte.
+(SAM), que visa produzir um único sumário a partir do conteúdo de vários textos-fonte.
 Como resultado das referidas investigações, identificou-se um conjunto de relações
 retóricas que se estabelecem entre sentenças de textos semanticamente relacionados.
 Essas relações baseiam-se no modelo CST (RADEV, 2000).
@@ -197,7 +197,7 @@ de palavras do centroide. Os conceitos de cluster e centroide podem ser conferid
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-O trabalho de Jorge e Pardo (2010), voltado para o português, é outro em que a
+O trabalho de Jorge e Pardo (2010), voltado para o português, é outro em que a
 CST é aplicada à SAM. Nele, as sentenças são ranqueadas exclusivamente com base na
 quantidade de relações CST existentes na coleção. Mais recentemente, Cardoso (2014),
 também para o português, aplicou a CST em combinação com a Rethorical Structure
@@ -254,7 +254,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 129
 
-Kumar, Salim e Raza (2012) utilizaram atributos linguísticos (como similaridade
+Kumar, Salim e Raza (2012) utilizaram atributos linguísticos (como similaridade
 entre verbos de um par de sentenças), estruturais (como tamanho de sentenças) e
 estatísticos (como quantidade de palavras em comum entre as sentenças) para identificar
 automaticamente as relações Identity, Overlap, Subsumption, e Description. Para avaliar
@@ -301,7 +301,7 @@ frequência no corpus utilizado para treinamento.
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-da localização das sentenças em seus respectivos textos-fonte, exploraram-se vários
+da localização das sentenças em seus respectivos textos-fonte, exploraram-se vários
 tipos de atributos, a saber: (i) sobreposição de palavra6, (ii) sobreposição de nome e
 verbo, (iii) sobreposição de padrão morfossintático (p.ex.: nome+preposição+nome),
 (iv) sobreposição de sujeito (isto é, ocorrência de sujeitos idênticos), (v) sobreposição
@@ -350,7 +350,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 131
 
-onde, etc.) em um dos sumários manuais multidocumento, (x) anotação discursiva dos
+onde, etc.) em um dos sumários manuais multidocumento, (x) anotação discursiva dos
 textos-fonte via RST8 (MANN; THOMPSON, 1987), e (xi) anotação de subtópicos
 dos textos-fonte. A anotação CST, em especial, foi feita por 4 linguistas computacionais
 durante o período de 3 meses. Essa anotação foi feita com o auxílio do editor CSTTool
@@ -418,7 +418,7 @@ Disponível em: <http://nilc.icmc.usp.br/CSTNews/>.
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-A complementaridade do tipo (i) é ilustrada por um par de sentenças provenientes
+A complementaridade do tipo (i) é ilustrada por um par de sentenças provenientes
 de textos distintos que relatam um acidente aéreo no Congo. Especificamente, as
 sentenças do par apresentam conteúdo comum (em negrito), sendo que S2 veicula
 informação histórica (sublinhada) sobre esse conteúdo, que é a ocorrência frequente
@@ -468,7 +468,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 133
 
-Tabela 1 – A complementaridade no corpus CSTNews.
+Tabela 1 – A complementaridade no corpus CSTNews.
 Complementaridade
 
 Relação CST
@@ -530,7 +530,7 @@ proximidade posicional no texto-fonte e (iii) sobreposição de subtópico. A so
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-de nome se mostra eficiente porque as palavras da classe nominal ocorrem em maior
+de nome se mostra eficiente porque as palavras da classe nominal ocorrem em maior
 quantidade nos textos. Esse atributo é comumente especificado pela adaptação da
 medida estatística overlap, que recebe o nome noun overlap (Nol). Em (4), tem-se a
 equação utilizada para calcular o atributo Nol. Da aplicação da medida Nol, obtém-se um
@@ -574,7 +574,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 135
 
-de subtópico textual é uma estratégia relevante para capturar a redundância porque
+de subtópico textual é uma estratégia relevante para capturar a redundância porque
 independe da posição ocupada pelas sentenças. Ademais, por ser de natureza semântica,
 ela é mais informativa que a sobreposição de nomes, pautada na forma das expressões
 linguísticas. Especificamente, para capturar a similaridade com base nos subtópicos,
@@ -616,7 +616,7 @@ complementaridade temporal, especificaram-se mais 4 atributos binários: ocorrê
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-ET em S1 (doravante, ETS1), ocorrência de ET em S2 (doravante, ETS2), ocorrência
+ET em S1 (doravante, ETS1), ocorrência de ET em S2 (doravante, ETS2), ocorrência
 de advérbio em S1 (ADVS1) e ocorrência de advérbio em S2 (ADVS2).
 No Quadro 4, sintetiza-se o conjunto total de 7 atributos.
 Quadro 4 – Atributos para a caracterização da complementaridade temporal.
@@ -699,7 +699,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 137
 
-foram herdados da anotação morfossintática (ou tagging) do CSTNews realizada pelo
+foram herdados da anotação morfossintática (ou tagging) do CSTNews realizada pelo
 analisador sintático (ou parser10) PALAVRAS (BICK, 2000). Para tanto, a anotação
 morfossintática das sentenças do subcorpus foi manualmente revisada, o que consistiu
 em excluir da caracterização os casos de ruído11 (isto é, erros de anotação) e inserir os
@@ -759,7 +759,7 @@ subtópico”> TOP= “número do tópico na coleção”> (CARDOSO et al., 2011
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-1 da coleção, rotulado por acidente aéreo e a S2, cujo texto-fonte anotado está no
+1 da coleção, rotulado por acidente aéreo e a S2, cujo texto-fonte anotado está no
 Quadro 7, veicula o subtópico 2 da mesma coleção, representado pelo rótulo histórico.
 Quadro 6 – Exemplo de anotação de subtópicos do
 CSTNews (Documento 2 do Cluster 1).
@@ -800,7 +800,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 139
 
-S7: Aviões são usados extensivamente para transporte na República Democrática do Congo,
+S7: Aviões são usados extensivamente para transporte na República Democrática do Congo,
 um vasto país no qual há poucas estradas pavimentadas.
 S8: Em março, a União Européia proibiu quase todas as companhias aéreas do Congo de
 operar na Europa.
@@ -836,7 +836,7 @@ numéricos Nol e Distância.
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-Quadro 8 – Caracterização das sentenças para o cálculo dos atributos numéricos.
+Quadro 8 – Caracterização das sentenças para o cálculo dos atributos numéricos.
 Descrição linguística
 
 Corpus
@@ -934,7 +934,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 141
 
-Quadro 10 – Cálculo dos atributos dos pares de sentenças.
+Quadro 10 – Cálculo dos atributos dos pares de sentenças.
 Atributos
 
 Corpus
@@ -1025,7 +1025,7 @@ resultado da normalização, obtém-se valores entre 0 e 1.
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-cada exemplo de treinamento é constituído por um objeto de entrada (isto é, um par de
+cada exemplo de treinamento é constituído por um objeto de entrada (isto é, um par de
 sentenças e seus atributos) e por um objetivo de saída ou classe (isto é, a relação CST
 do par). O objetivo do algoritmo de indução é construir um classificador que possa
 determinar corretamente a classe de novos exemplos ainda não rotulados.
@@ -1073,7 +1073,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 143
 
-o nó inicial da árvore e os nós-filhos são os menos discriminativos em comparação
+o nó inicial da árvore e os nós-filhos são os menos discriminativos em comparação
 ao(s) anterior(es).
 Os algoritmos J48 e PART geraram os maiores conjuntos de regras (13 e 8,
 respectivamente) com precisão geral bastante similar. No caso, ambos obtiveram
@@ -1142,7 +1142,7 @@ dados e gerar modelos mais simples.
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-1 e 2 para Follow-up e a regra 5 para a relação Historical background. Na Tabela 3,
+1 e 2 para Follow-up e a regra 5 para a relação Historical background. Na Tabela 3,
 tem-se a matriz de confusão gerada pelo JRip quando da aplicação das regras, por meio
 da qual é possível verificar como o classificar lida especificamente com cada classe
 (relação CST). Cada coluna da matriz representa as instâncias (pares) preditas para uma
@@ -1200,9 +1200,9 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 145
 
-SOUZA, J.; Di FELIPPO, A. Characterization of temporal complementarity: fundamentals for
+SOUZA, J.; Di FELIPPO, A. Characterization of temporal complementarity: fundamentals for
 multi-document summarization. Alfa, São Paulo, v.62, n.1, p.125-150, 2018.
-■■
+
 
 ABSTRACT: Complementarity is a usual multi-document phenomenon that commonly occurs
 among news texts about the same event. From a set of sentence pairs (in Portuguese) manually
@@ -1216,7 +1216,7 @@ to the rules, the occurrence of temporal expression in sentence 2 is the most di
 feature in the task. As a contribution, the JRip classifier can improve the performance of the
 CST-discourse parsers for Portuguese.
 
-■■
+
 
 KEYWORDS: Linguistic description. Complementarity. CST. Multi-document Summarization.
 Natural Language Processing.
@@ -1245,7 +1245,7 @@ Brazil. p.88-105.
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-CARROL, J. Parsing. In: MITKOV, R. (Ed.). The Oxford handbook of computational
+CARROL, J. Parsing. In: MITKOV, R. (Ed.). The Oxford handbook of computational
 linguistics. Oxford/USA. Ed. Oxford University Express, 2004. p.233-248.
 COHEN, W. Fast effective rule induction. In: 12th International Conference on
 International Conference on Machine Learning, 1995. Proceedings... California/USA.
@@ -1284,7 +1284,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 147
 
-KUMAR, Y. J.; SALIM, N.; RAZA, B. Cross-document structural relationship
+KUMAR, Y. J.; SALIM, N.; RAZA, B. Cross-document structural relationship
 identification using supervised machine learning. Applied Soft Computing, v.12,
 n.10, p.3124-3131, out. 2012.
 LAGE, N. Estrutura da notícia. São Paulo: Ed. Ática, 2002.
@@ -1324,7 +1324,7 @@ one: cross-document structure. In: 1st SIGdial workshop on Discourse and dialogu
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-2000. Proceedings… Hong Kong/China: Association for Computational Linguistics,
+2000. Proceedings… Hong Kong/China: Association for Computational Linguistics,
 2000. p.74-83.
 RADEV, D. R.; JING, H.; BUDZIKOWSKA, M. Centroid-based summarization of
 multiple documents: sentence extraction, utility-based evaluation and user studies. In:
@@ -1364,7 +1364,7 @@ Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
 149
 
-ZHANG, Z.; RADEV, D. Combining labeled and unlabeled data for learning crossdocument structural relationships. In: Natural Language Processing – I JCNLP.
+ZHANG, Z.; RADEV, D. Combining labeled and unlabeled data for learning crossdocument structural relationships. In: Natural Language Processing – I JCNLP.
 Springer, p.32-41, 2005.
 ZHANG, Z.; OTTERBACHER, J.; REDEV, D. R. Learning cross-document structural
 relationships using boosting. In: International Conference on Information and
@@ -1379,4 +1379,3 @@ Aprovado em 30 de julho de 2017
 
 Alfa, São Paulo, v.62, n.1, p.125-150, 2018
 
-

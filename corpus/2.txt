@@ -30,13 +30,7 @@ conhecimento da fisiopatologia dos processos orgânicos e o desenvolvimento das 
 examinar e orientar um paciente e, consequentemente, propor um diagnóstico e um tratamento de seu
 problema de saúde, acompanhando sua evolução.
 
-PALAVRAS-CHAVE
-–– Relação Médico-Paciente.
-–– Exame Clínico.
-–– Sistemas de Apoio à Decisão.
-–– Inteligência Artificial.
-–– Dispositivos Corporais.
-–– Educação Médica.
+PALAVRAS-CHAVE: Relação Médico-Paciente.Exame Clínico.Sistemas de Apoio à Decisão.Inteligência Artificial.Dispositivos Corporais.Educação Médica.
 
 185
 
@@ -47,7 +41,7 @@ I
 
 Professor Honoris Causa da UnB, Professor aposentado da UFRJ e Consultor Sênior da Unasus-Fiocruz.
 
-Luiz Carlos Lobo ﻿	
+Luiz Carlos Lobo ﻿	
 
 DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
 
@@ -116,7 +110,7 @@ abdome, a ressonância, que substitui os exames de radiologia
 Revista Brasileira de Educação Médica
 41 (2) : 185 – 193 ; 2017
 
-Luiz Carlos Lobo ﻿	
+Luiz Carlos Lobo ﻿	
 
 DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
 
@@ -192,7 +186,7 @@ profissional.
 Revista Brasileira de Educação Médica
 41 (2) : 185 – 193 ; 2017
 
-Luiz Carlos Lobo ﻿	
+Luiz Carlos Lobo ﻿	
 
 DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
 
@@ -268,7 +262,7 @@ capazes de propor ações, quando solicitados.
 Revista Brasileira de Educação Médica
 41 (2) : 185 – 193 ; 2017
 
-Luiz Carlos Lobo ﻿	
+Luiz Carlos Lobo ﻿	
 
 DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
 
@@ -345,7 +339,7 @@ de indivíduos e da população do País.
 Revista Brasileira de Educação Médica
 41 (2) : 185 – 193 ; 2017
 
-Luiz Carlos Lobo ﻿	
+Luiz Carlos Lobo ﻿	
 
 DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
 
@@ -419,7 +413,7 @@ prestada em saúde no Brasil.
 Revista Brasileira de Educação Médica
 41 (2) : 185 – 193 ; 2017
 
-Luiz Carlos Lobo ﻿	
+Luiz Carlos Lobo ﻿	
 
 DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
 
@@ -498,7 +492,7 @@ saúde sobre seus pacientes.
 Revista Brasileira de Educação Médica
 41 (2) : 185 – 193 ; 2017
 
-Luiz Carlos Lobo ﻿	
+Luiz Carlos Lobo ﻿	
 
 DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
 
@@ -585,7 +579,7 @@ Edinburgh.
 Revista Brasileira de Educação Médica
 41 (2) : 185 – 193 ; 2017
 
-Luiz Carlos Lobo ﻿	
+Luiz Carlos Lobo ﻿	
 
 DOI: http://dx.doi.org/10.1590/1981-52712015v41n2esp
 
@@ -619,4 +613,3 @@ E-mail: luizcarloslobo@gmail.com
 Revista Brasileira de Educação Médica
 41 (2) : 185 – 193 ; 2017
 
-

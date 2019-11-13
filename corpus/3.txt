@@ -411,23 +411,23 @@ registro eletrocardiográfico em uma hipotética situação
 em que um médico habilitado o faria de maneira
 consistente. As limitações do programa ECAPS 12C
 incluem (Nihon Kohden, 2009):
-• não compensa a influência de uso de
+ não compensa a influência de uso de
 determinados medicamentos; a influência
 de digitálicos pode ser notada no registro, por
 exemplo, pelo diagnóstico de fibrilação atrial;
-• não considera distúrbios hidroeletrolíticos,
+ não considera distúrbios hidroeletrolíticos,
 recomendando, no julgamento médico do
 ECG, fazer a leitura do intervalo QTc, onda T
 e onda U, juntamente com outros elementos
 relevantes;
-• não classifica complexos prematuros como
+ não classifica complexos prematuros como
 trigeminados, “short-run”, etc.
-• não é capaz de identificar batimentos de escape
+ não é capaz de identificar batimentos de escape
 e para-arritmias, sendo esses considerados
 como “ritmos indeterminados”;
-• não diagnostica a Síndrome de Lown-GaningLevine; esses casos devem ser considerados a
+ não diagnostica a Síndrome de Lown-GaningLevine; esses casos devem ser considerados a
 partir do diagnóstico de “intervalo PR curto”;
-• não identifica marcapassos do tipo “wandering”
+ não identifica marcapassos do tipo “wandering”
 (atrial migratório).
 Considerando a utilização que se pretende fazer do
 equipamento, essas limitações não foram consideradas
@@ -542,13 +542,13 @@ compatível com doença miocárdica aguda de caráter
 isquêmico, que uma das primeiras condutas médicas
 seja a avaliação do ECG de 12 derivações inicial, o qual
 pode se apresentar em uma das seguintes situações:
-• elevação do segmento ST;
-• bloqueio de ramo novo ou presumivelmente
+ elevação do segmento ST;
+ bloqueio de ramo novo ou presumivelmente
 novo, usualmente comprometendo o ramo
 esquerdo do Feixe de His;
-• depressão de ST, inversão de onda T (forte
+ depressão de ST, inversão de onda T (forte
 suspeita de isquemia miocárdica);
-• normal ou não diagnóstico.
+ normal ou não diagnóstico.
 De modo a abranger todos esses diagnósticos
 eletrocardiográficos, foram feitos testes com o
 equipamento simulador de sinais eletrocardiográficos
@@ -612,19 +612,19 @@ com o Metron.
 Critérios de inclusão
 Foram incluídos registros eletrocardiográficos de
 pacientes:
-• de ambos os sexos, com idade superior a
+ de ambos os sexos, com idade superior a
 3 anos, sem limite superior de idade;
-• assintomáticos ou sintomáticos; e
-• em situações ambulatoriais ou emergenciais.
+ assintomáticos ou sintomáticos; e
+ em situações ambulatoriais ou emergenciais.
 
 Critérios de exclusão
 Foram excluídos desta investigação os casos em que
 o eletrocardiograma:
-• apresentasse evidências de ter havido a
+ apresentasse evidências de ter havido a
 colocação incorreta de eletrodos;
-• contivesse um nível de ruído capaz de
+ contivesse um nível de ruído capaz de
 comprometer a interpretação automática; e
-• estivesse ilegível, na forma de onda registrada
+ estivesse ilegível, na forma de onda registrada
 ou no(s) diagnóstico(s) resultante(s) da
 interpretação automática.
 

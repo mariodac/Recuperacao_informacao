@@ -39,7 +39,7 @@ e de computadores capazes de reduzir o tempo necessário para realizar o process
 
 63
 
-Tópicos em Gerenciamento de Dados e Informações 2017
+Tópicos em Gerenciamento de Dados e Informações 2017
 
 SBC, 1a ed. – ISBN 978-85-7669-400-7
 
@@ -76,7 +76,7 @@ para estudos relacionados a RNNs. Para o estudo de Autoencoders, recomendamos [2
 e [14], e para o estudo de Redes Geradoras Adversariais (Generative Adversarial Networks, GANs) [15]. Acreditamos que a leitura desse material será de grande ajuda para o
 64
 
-Tópicos em Gerenciamento de Dados e Informações 2017
+Tópicos em Gerenciamento de Dados e Informações 2017
 
 SBC, 1a ed. – ISBN 978-85-7669-400-7
 
@@ -113,7 +113,7 @@ Exemplo 2 — detecção de anomalias em sinais de fala : deseja-se receber como
 dizer se a entrada representa um caso normal ou anômalo (e.g. uma função que permita
 responder para anomalias na fala de uma pessoa que indique alguma enfermidade ou sín65
 
-Tópicos em Gerenciamento de Dados e Informações 2017
+Tópicos em Gerenciamento de Dados e Informações 2017
 
 SBC, 1a ed. – ISBN 978-85-7669-400-7
 
@@ -283,8 +283,8 @@ imagens no batch. Assim a Equação 1 pode ser detalhada da seguinte forma:
 w0,0 w0,1 ... w0,9
 x0,0 x0,1 x0,2 ... x0,783 
 
- x1,0 x0,1 x1,2 ... x0,783   w1,0 w1,1 ... w1,9  
-
+ x1,0 x0,1 x1,2 ... x0,783   w1,0 w1,1 ... w1,9  
+
 
  
 
@@ -350,11 +350,11 @@ SBC, 1a ed. – ISBN 978-85-7669-400-7
 
 A título de exemplo sejam os seguintes vetores de distribuição de probabilidade
 de classes (note que ambas classe real e predita são a classe 7):
-
-
+
+
 y = 0.00 0.00 0.00 0.00 0.00 0.00 1.00 0.00 0.00 0.00
-
-
+
+
 ŷ = 0.18 0.00 0.00 0.02 0.00 0.00 0.65 0.05 0.10 0.00
 
 Então a entropia cruzada para esse exemplo seria:
@@ -921,8 +921,8 @@ Tópicos em Gerenciamento de Dados e Informações 2017
 SBC, 1a ed. – ISBN 978-85-7669-400-7
 
 feita adicionando-se um tipo de momentum:
-
-
+
+
 η∇L (Wt )
 Wt+1 = Wt + α(Wt −Wt−1 ) + (1 − α) − √
 ,

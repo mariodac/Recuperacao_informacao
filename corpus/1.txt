@@ -98,7 +98,7 @@ variação deste modelo bem como a técnica das redes neurais artificiais.
 2.1. Procedimento de previsão
 De maneira bem simples, o procedimento de previsão de vazão visa estimar o valor da
 vazão Q no período t + H, onde t é o mês atual e H é o horizonte de previsão, em função de
-valores de chuva (P) e deflúvio em períodos passados (t – 1, t – 2, etc.). Seja y  Q(t  H ) a
+valores de chuva (P) e deflúvio em períodos passados (t – 1, t – 2, etc.). Seja y  Q(t  H ) a
 
 Rev. Ambient. Água vol. 9 n. 3 Taubaté - Jul / Sep. 2014
 
@@ -106,15 +106,15 @@ José Rafael Santana Santos et al.
 
 490
 
-vazão a ser prevista e X  P(t  1), P(t  2),, P(t   P ),Q(t  1),Q(t  2),, Q(t   Q ) o chamado
+vazão a ser prevista e X  P(t  1), P(t  2),, P(t   P ),Q(t  1),Q(t  2),, Q(t   Q ) o chamado
 vetor de atributos de entrada, i.e., os valores passados de chuva e vazão usados para prever o
 deflúvio futuro. O objetivo é encontrar uma função f que mapeie a entrada X com a saída y da
-forma y  f (X) de modo que:
+forma y  f (X) de modo que:
 
 
 
 
-Q(t  H )  f P(t  1), P(t  2),, P(t   P ), Q(t  1), Q(t  2),, Q(t   Q )
+Q(t  H )  f P(t  1), P(t  2),, P(t   P ), Q(t  1), Q(t  2),, Q(t   Q )
 
 
 
@@ -125,7 +125,7 @@ Q(t  H )  f P(t  1), P(t  2),, P(t   P ), Q(t  1), Q(
 A função f pode ser qualquer estratégia de aprendizado de máquina como uma ANN ou
 um modelo KNN, utilizados neste trabalho. Esta pesquisa usou H = 0, i.e., a vazão do mês
 atual foi prevista com base em chuvas e vazões passadas.
-Cada elemento xj do vetor X  x1,, xn  é um atributo. As séries históricas de chuva e
+Cada elemento xj do vetor X  x1,, xn  é um atributo. As séries históricas de chuva e
 vazão permitem formar um conjunto de treinamento com vários vetores de atributos
 (Quadro 1).
 Quadro 1. Vetores de atributos para treinamento.
@@ -339,20 +339,20 @@ vazão correspondente yq é determinada combinando os k valores de saída dos ve
 Uma norma Euclidiana ponderada é geralmente usada para medir a proximidade
 (similaridade) dos vetores Xi e Xq:
 
-
 
- 
 
-d X q , Xi 
+ 
+
+d X q , Xi 
 
 n
-j 1
+j 1
 
-
+
 
 w Aj xij  xqj
 
-
+
 
 2
 
@@ -364,13 +364,13 @@ w Aj é o peso do j-ésimo atributo. Com os valores de saída yi dos k pontos ma
 (vizinhos), o valor previsto para yq é calculado por:
 
 
-
+
 
 k
 
 yq
 
-i 1
+i 1
 k
 
 wiV yi
@@ -378,48 +378,48 @@ wiV yi
 (3)
 
 wV
-i 1 i
+i 1 i
 
 em que:
-wiV é o peso do i-ésimo vizinho. Na sua forma mais simples, o modelo KNN usa wiV  1 e
+wiV é o peso do i-ésimo vizinho. Na sua forma mais simples, o modelo KNN usa wiV  1 e
 
 a estimativa é o valor médio dos k vizinhos mais próximos. Na versão melhorada, entretanto,
-cada vizinho possui um peso baseado na distância d Xq , Xi . Um vizinho mais longe recebe
+cada vizinho possui um peso baseado na distância d Xq , Xi . Um vizinho mais longe recebe
 um peso menor, o que reduz seu efeito sobre a previsão em comparação com outros vizinhos
 mais próximos. Desta forma, algumas funções kernel, que decrescem monotonicamente à
 medida que a distância aumenta, têm sido utilizadas (Akbari et al., 2011):
 
-
 
-
+
+
 
 Linear:
 
-wiV  1 d Xq , Xi
+wiV  1 d Xq , Xi
 
 Inversa:
 
-wiV  d Xq , Xi
+wiV  d Xq , Xi
 
 Inversa quadrática:
 
-wiV  d X q , Xi
+wiV  d X q , Xi
 
 Exponencial:
 
-wiV  exp  d Xq , Xi
+wiV  exp  d Xq , Xi
 
 Gaussiana:
 
-wiV  exp  d Xq , Xi
+wiV  exp  d Xq , Xi
 
-
+
 
-
+
 
- 
+ 
 
- 
+ 
 
 (4)
 
@@ -431,13 +431,13 @@ wiV  exp  d Xq , Xi
 
 (6)
 
- 
+ 
 
-
+
 
-
+
 
- 
+ 
 
 (7)
 2
@@ -461,25 +461,25 @@ José Rafael Santana Santos et al.
 494
 
 
-R 1
+R 1
 
 n
 
-i 1
+i 1
 
-
+
 
 
 max X q (i )  X NN (i),0
 
-
+
 
 n
 
 (9)
 
 X (i )
-i 1 NN
+i 1 NN
 
 em que:
 Xq(i) é o i-ésimo componente do vetor de consulta e XNN(i) é o i-ésimo componente do
@@ -497,13 +497,13 @@ As equações a seguir mostram como calcular essas medidas:
  Q
 T
 
-RMSE 
-MAE 
+RMSE 
+MAE 
 
 1
 T
 
-t 1
+t 1
 
 obs (t )  Qprev (t )
 
@@ -521,17 +521,17 @@ obs (t )  Qprev (t )
 (10)
 (11)
 
-t 1
+t 1
 
  Q
-E 1
+E 1
  Q
 T
 
-t 1
+t 1
 T
 
-t 1
+t 1
 
 
 (t )
