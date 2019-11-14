@@ -1,7 +1,7 @@
 from nltk.corpus import stopwords
 from nltk.stem import RSLPStemmer
 from unicodedata import normalize
-from os import listdir
+from os import listdir, path
 from nltk.stem import RSLPStemmer
 import re
 
@@ -9,7 +9,7 @@ class ModeloVetorial:
     __rlsp = RSLPStemmer()
     __regras = []
     def __init__(self, texto_original):
-        self.texto_original = texto_original
+        self.texto_original = texto_original.split()
         self.texto_stop_words = []
         self.texto_analise_lexica = []
         self.texto_radicalizado = []
@@ -17,16 +17,19 @@ class ModeloVetorial:
 
     def regras(self):
         for i in range(0, 7):
-            regras = self.__rlsp.read_rule('step{}.pt'.format(i))
+            regras = self.__rlsp.read_rule('step{}.pt'.format(i)) #lendo regras de sufixos
             for j in range (0, len(regras)):
-                regras[j][0] = normalize('NFKD', regras[j][0]).encode('ASCII', 'ignore').decode('ASCII')
+                #retirando acentuação dos sufixos
+                regras[j][0] = normalize('NFKD', regras[j][0]).encode('ASCII', 'ignore').decode('ASCII') 
                 regras[j][2] = normalize('NFKD', regras[j][2]).encode('ASCII', 'ignore').decode('ASCII')
                 for k in range (0, len(regras[j][3])):
+                    #retirando acentuação das excessões
                     regras[j][3][k] = normalize('NFKD', regras[j][3][k]).encode('ASCII', 'ignore').decode('ASCII')
             self.__regras.append(regras)
-            arquivo = open('regras.txt', 'w')
-            arquivo.writelines(str(self.__regras))
-            arquivo.close()
+            if not path.isfile('./regras.txt'): #verifica se arquivo existe
+                arquivo = open('regras.txt', 'w')
+                arquivo.writelines(str(self.__regras))
+                arquivo.close()
 
     def carregarCorpus(self):
         dir = './corpus'
@@ -38,7 +41,7 @@ class ModeloVetorial:
             texto = arquivo.readlines()
             self.representacao.update({file: None})
             for t in texto:
-                resultado = re.search('^(Palavra(s)?|palavra(s)?|PALAVRA(s)?|Unitermos|UNITERMOS)', t)
+                resultado = re.search('^(Palavra(s)?|palavra(s)?|PALAVRA(s)?|Unitermos|UNITERMOS)', t) #procurando palavra chaves
                 if resultado:
                     c += 1
                     files.append(file)
@@ -53,10 +56,13 @@ class ModeloVetorial:
         arquivo.close()
         print(len(files_sorted))
     def analiseLexica(self):
-        textoAL = self.texto_original.lower() #texto para letras minusculas
-        textoAL = normalize('NFKD', textoAL).encode('ASCII', 'ignore').decode('ASCII')#retirada de acentuações
-        textoAL = re.sub('[^a-zA-Z ]', '', textoAL) #retirada de caracteres especiais
-        self.texto_analise_lexica = textoAL.split()
+        for p in self.texto_original:
+            textoAL = p.lower() #texto para letras minusculas
+            textoAL = normalize('NFKD', textoAL).encode('ASCII', 'ignore').decode   ('ASCII')#retirada de acentuações
+            textoAL = re.sub('[^a-zA-Z ]', '', textoAL) #retirada de caracteres especiais
+            self.texto_analise_lexica.append(textoAL)
+        while('' in self.texto_analise_lexica) : 
+            self.texto_analise_lexica.remove('') 
         return self.texto_analise_lexica
 
     def retiraStopWord(self):
@@ -65,6 +71,7 @@ class ModeloVetorial:
             if palavra not in stop_words:
                 self.texto_stop_words.append(palavra) #lista com somente a palavra que não são stopwords
         return self.texto_stop_words
+        
     
     def radicalizacao(self):
         self.regras()
@@ -93,7 +100,7 @@ class ModeloVetorial:
     def reducao_plural(self, palavra):
         regras = self.__regras[0] #carregando regras para sufixo do plural
         for regra in regras:
-            resultado = re.search('{}$'.format(regra[0]), palavra)
+            resultado = re.search('{}$'.format(regra[0]), palavra) #busca sufixo na palavra
             if resultado:
                 tamanho_sufixo = len(regra[0])
                 if len(palavra) >= tamanho_sufixo + regra[1]:
@@ -106,75 +113,75 @@ class ModeloVetorial:
     def reducao_feminino(self, palavra):
         regras = self.__regras[1] #carregando regras para sufixo do feminino
         for regra in regras:
-            resultado = re.search('{}$'.format(regra[0]), palavra)
-            if resultado:
-                tamanho_sufixo = len(regra[0])
-                if len(palavra) >= tamanho_sufixo + regra[1]:
-                    if palavra not in regra[3]:
-                        palavra = re.sub('{}$'.format(regra[0]), '', palavra)
-                        palavra += regra[2]
+            resultado = re.search('{}$'.format(regra[0]), palavra) #busca sufixo na palavra
+            if resultado: #se resultado encontrado
+                tamanho_sufixo = len(regra[0]) 
+                if len(palavra) >= tamanho_sufixo + regra[1]: #verifica se o radical possui o tamanho minimo
+                    if palavra not in regra[3]: #verifica se a palavra não está na lista de excessões
+                        palavra = re.sub('{}$'.format(regra[0]), '', palavra) #retira o sufixo
+                        palavra += regra[2] #junta o radical com sufixo de substituição
                         break
         return palavra
     def reducao_aumentativo(self, palavra):
         regras = self.__regras[3] #carregando regras para sufixo do aumentativo
         for regra in regras:
-            resultado = re.search('{}$'.format(regra[0]), palavra)
-            if resultado:
+            resultado = re.search('{}$'.format(regra[0]), palavra) #busca sufixo na palavra
+            if resultado: #se resultado encontrado
                 tamanho_sufixo = len(regra[0])
-                if len(palavra) >= tamanho_sufixo + regra[1]:
-                    if palavra not in regra[3]:
-                        palavra = re.sub('{}$'.format(regra[0]), '', palavra)
-                        palavra += regra[2]
+                if len(palavra) >= tamanho_sufixo + regra[1]: #verifica se o radical possui o tamanho minimo
+                    if palavra not in regra[3]: #verifica se a palavra não está na lista de excessões
+                        palavra = re.sub('{}$'.format(regra[0]), '', palavra) #retira o sufixo
+                        palavra += regra[2] #junta o radical com sufixo de substituição
                         break
         return palavra
     def reducao_adverbio(self, palavra):
         regras = self.__regras[2] #carregando regras para sufixo adverbial
         for regra in regras:
-            resultado = re.search('{}$'.format(regra[0]), palavra)
-            if resultado:
+            resultado = re.search('{}$'.format(regra[0]), palavra) #busca sufixo na palavra
+            if resultado: #se resultado encontrado
                 tamanho_sufixo = len(regra[0])
-                if len(palavra) >= tamanho_sufixo + regra[1]:
-                    if palavra not in regra[3]:
-                        palavra = re.sub('{}$'.format(regra[0]), '', palavra)
-                        palavra += regra[2]
+                if len(palavra) >= tamanho_sufixo + regra[1]: #verifica se o radical possui o tamanho minimo
+                    if palavra not in regra[3]: #verifica se a palavra não está na lista de excessões
+                        palavra = re.sub('{}$'.format(regra[0]), '', palavra) #retira o sufixo
+                        palavra += regra[2] #junta o radical com sufixo de substituição
                         break
         return palavra
     def reducao_nominal(self, palavra):
         removido = False #verificador para sufixo removido
         regras = self.__regras[4] #carregando regras para sufixo nominal
         for regra in regras:
-            resultado = re.search('{}$'.format(regra[0]), palavra)
-            if resultado:
+            resultado = re.search('{}$'.format(regra[0]), palavra) #busca sufixo na palavra
+            if resultado: #se resultado encontrado
                 tamanho_sufixo = len(regra[0])
-                if len(palavra) >= tamanho_sufixo + regra[1]:
-                    if palavra not in regra[3]:
-                        palavra = re.sub('{}$'.format(regra[0]), '', palavra)
-                        palavra += regra[2]
+                if len(palavra) >= tamanho_sufixo + regra[1]: #verifica se o radical possui o tamanho minimo
+                    if palavra not in regra[3]: #verifica se a palavra não está na lista de excessões
+                        palavra = re.sub('{}$'.format(regra[0]), '', palavra) #retira o sufixo
+                        palavra += regra[2] #junta o radical com sufixo de substituição
                         break
         return palavra, removido
     def reducao_verbo(self, palavra):
         removido = False #verificador para sufixo removido
         regras = self.__regras[5] #carregando regras para sufixo verbial
         for regra in regras:
-            resultado = re.search('{}$'.format(regra[0]), palavra)
-            if resultado:
+            resultado = re.search('{}$'.format(regra[0]), palavra) #busca sufixo na palavra
+            if resultado: #se resultado encontrado
                 tamanho_sufixo = len(regra[0])
-                if len(palavra) >= tamanho_sufixo + regra[1]:
-                    if palavra not in regra[3]:
-                        palavra = re.sub('{}$'.format(regra[0]), '', palavra)
-                        palavra += regra[2]
+                if len(palavra) >= tamanho_sufixo + regra[1]: #verifica se o radical possui o tamanho minimo
+                    if palavra not in regra[3]: #verifica se a palavra não está na lista de excessões
+                        palavra = re.sub('{}$'.format(regra[0]), '', palavra) #retira o sufixo
+                        palavra += regra[2] #junta o radical com sufixo de substituição
                         break
         return palavra, removido
     def remove_vogal(self, palavra):
         regras = self.__regras[6] #carregando regras para sufixo vogais
         for regra in regras:
-            resultado = re.search('{}$'.format(regra[0]), palavra)
-            if resultado:
+            resultado = re.search('{}$'.format(regra[0]), palavra) #busca sufixo na palavra
+            if resultado: #se resultado encontrado
                 tamanho_sufixo = len(regra[0])
-                if len(palavra) >= tamanho_sufixo + regra[1]:
-                    if palavra not in regra[3]:
-                        palavra = re.sub('{}$'.format(regra[0]), '', palavra)
-                        palavra += regra[2]
+                if len(palavra) >= tamanho_sufixo + regra[1]: #verifica se o radical possui o tamanho minimo
+                    if palavra not in regra[3]: #verifica se a palavra não está na lista de excessões
+                        palavra = re.sub('{}$'.format(regra[0]), '', palavra) #retira o sufixo
+                        palavra += regra[2] #junta o radical com sufixo de substituição
                         break
         return palavra
     

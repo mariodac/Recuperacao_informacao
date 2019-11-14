@@ -7,7 +7,7 @@ if __name__ == "__main__":
         texto += linha
 
     print(":"*40+"MODELO VETORIAL"+":"*40)
-    ri = ModeloVetorial(texto)
+    ri = ModeloVetorial('De pé , à cabeceira da cama , com os olhos estúpidos , a boca entreaberta , a orelhas gigante')
     analise_lexica = ri.analiseLexica()
     print("análise léxica: ",analise_lexica)
     stop_word = ri.retiraStopWord()
