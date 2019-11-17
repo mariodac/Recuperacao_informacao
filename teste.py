@@ -76,3 +76,4 @@ for i in range(0,len(sem_stopwords)):
 
 print("radicalização: ", sem_stopwords)
 
+
