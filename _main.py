@@ -5,9 +5,11 @@ if __name__ == "__main__":
     ri.carregarCorpus()
     busca = input('Digite o(s) termo(s) de busca\n>> ')
     nova_busca = ri.operacoes_texto(busca)
-    print(nova_busca)
+    # print(nova_busca)
     # ri.carregarRepresentacao()
     resultado = ri.similaridade(nova_busca)
+    print(resultado)
     print('Foram encontrados: {} documentos.'.format(len(resultado)))
+    # ordenando os documentos
     for item in sorted(resultado, key = resultado.get, reverse = True):
         print (item)

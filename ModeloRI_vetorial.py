@@ -58,8 +58,8 @@ class ModeloVetorial:
                 tf_idf = ''
                 termos = ''
     def carregarRepresentacao(self):
-        dados = pd.read_csv('representacao.csv')
-        df = dados.T
+        dados = pd.read_csv('representacao.csv') #lendo arquivo invertido
+        df = dados.T #transpondo a tabela
         representacao = {}
         dic_tf_idf = {}
         for c in df.columns:
@@ -101,6 +101,7 @@ class ModeloVetorial:
                 arq.close()
             #salvando dicionario de termos
             self.salvarDocs(self.dic_documentos)
+            #armazenando representação dos documentos
             self.representacao = self.tf(self.dic_documentos)
             self.salvarRepresentacao(self.representacao)
             millis = int((time.time () - t_o) * 1000)
@@ -161,21 +162,27 @@ class ModeloVetorial:
     def similaridade(self, consulta):
         dic_busca = self.peso_consulta(consulta)
         # self.representacao = self.carregarRepresentacao()
+        # dicionario para armazenar q*d do documento e consulta, i sendo o nome do documento
         qd = {i : [] for i in self.representacao}
+        # norma da consulta
         normaQ = {i : [] for i in self.representacao}
+        # norma da consulta
         normaD = {i : [] for i in self.representacao}
         similaridade = 0
+        #dicionario para armazenar resultado da busca
         resultado = {}
         lista = []
-        for b in dic_busca:
-            for i in dic_busca[b]:
+        for b in dic_busca: #percorrendo termos da busca
+            for i in dic_busca[b]: #percorrendo nome dos documentos
                 try:
                     lista = [(dic_busca[b][i] * self.representacao[i][0][b])]
+                    #unindo lista
                     qd[i] += lista
                     lista =  [pow(dic_busca[b][i], 2)]
                     normaD[i] += lista
                     lista = [pow(self.representacao[i][0][b], 2)]
                     normaQ[i] += lista
+                # se esse termo não está no documento então o seu peso é zero
                 except KeyError:
                     lista = [0]
                     qd[i] += lista
@@ -185,32 +192,44 @@ class ModeloVetorial:
             try:
                 similaridade = sum(qd[c])/(sqrt(sum(normaQ[c])) * sqrt(sum(normaD[c])))
                 resultado.update({c : similaridade})
+            #se ocorrer divisão por zero então documento é irrelevante
             except ZeroDivisionError:
                 pass
         return resultado
 
     def peso_consulta(self, consulta):
+        #carregando representação do arquivo csv
         self.representacao = self.carregarRepresentacao()
+        # dicionario para armazenar frequencia
         dic_freq = {}
+        #dicionario para armazenar dicionario 
         dic_busca = {}
+        # numero total de documentos
         N = len(self.representacao)
+        # c -> para cada documento, ni-> numero de documento que o termo da busca ocorre
         ni, c = 0, 0
         for b in consulta:
             # dic_busca.update({b: []})
             dic_busca.update({b: {}})
             for d in self.representacao:
+                #armazenando em lista os termos do documentos
                 termos = list(set(self.representacao[d][1].split(',')))
+                #unindo todas os termos em unica string
                 texto = ' '.join(map(str, termos))
+                #armazenando frequencia do termo no documento
                 for t in termos:
                     dic_freq.update({t : len(re.findall(t, texto))})
+                #obtendo maior frequencia
                 max_freq = dic_freq[max(dic_freq, key=dic_freq.get)]
                 freq = len(re.findall(b, self.representacao[d][1]))
+                # contando documentos que possuem o termo de busca
                 if b in termos:
                     c += 1
                 ni = c
                 c = 0
                 try:
                     peso = (0.5 + ((0.5 * freq)/max_freq)) * log10(N/ni)
+                #se ocorrer divisão por zero então documento é irrelevante
                 except ZeroDivisionError:
                     peso = 0
                 dic_busca[b].update({d : peso})
