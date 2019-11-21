@@ -5,8 +5,9 @@ from os import listdir, path
 from nltk.stem import RSLPStemmer
 import re
 import time
-from math import log10
+from math import log10, sqrt, pow
 import csv
+import pandas as pd
 
 class ModeloVetorial:
     __rlsp = RSLPStemmer()
@@ -41,61 +42,78 @@ class ModeloVetorial:
                 arquivo.writelines('{} : {}\n'.format(d, documentos[d][0]))
             arquivo.close()
     def salvarRepresentacao(self, dic):
-        # if not path.isfile('./representacao.csv'):
+        if not path.isfile('./representacao.csv'):
             #criando arquivo csv
             arquivo = csv.writer(open('representacao.csv', 'w'))
-            arquivo.writerow(['', 'TF-IDF', 'TERMOS'])
+            arquivo.writerow(['DOCS','TF-IDF', 'TERMOS'])
             tf_idf = ''
             for d in dic:
                 #convertendo lista de string em uma unica string
-                termos = ', '.join(dic[d][0])
+                termos = ','.join(dic[d][0])
                 for p in dic[d][1]:
                     #salvando palavra e seu idf
-                    tf_idf += p + ' : ' + str(dic[d][1][p][3]) + ', ' 
+                    tf_idf += p + ':' + str(dic[d][1][p][3]) + ',' 
                     #escrevendo um linha no arquivo csv
                 arquivo.writerow([d, tf_idf, termos])
                 tf_idf = ''
+                termos = ''
+    def carregarRepresentacao(self):
+        dados = pd.read_csv('representacao.csv')
+        df = dados.T
+        representacao = {}
+        dic_tf_idf = {}
+        for c in df.columns:
+            doc = df[c].values
+            palavras = doc[1].split(',')
+            for palavra in palavras:
+                if palavra:
+                    tf_idf = float(palavra.split(':')[1])
+                    dic_tf_idf.update({palavra.split(':')[0] : tf_idf})
+            representacao.update({doc[0] : [dic_tf_idf, doc[2]]})
+            dic_tf_idf = {}
+        return representacao
     def carregarCorpus(self):
-        dir = './corpus'
-        diretorio = listdir(dir)
-        texto_completo = ''
-        t_o = time.time () 
-        for arquivo in diretorio:
-            t_o2 = time.time ()
-            arq = open('{}/{}'.format(dir, arquivo), 'r')
-            linhas = arq.readlines()
-            #tranforma lista de string em uma única string
-            texto_completo = ' '.join(map(str, linhas)) 
-            #aplicando todas as operações no texto
-            texto_final = self.operacoes_texto(texto_completo)
+        if not path.isfile('./documentos.txt'):
+            dir = './corpus'
+            diretorio = listdir(dir)
             texto_completo = ''
-            millis = int((time.time () - t_o2) * 1000)
+            t_o = time.time () 
+            for arquivo in diretorio:
+                t_o2 = time.time ()
+                arq = open('{}/{}'.format(dir, arquivo), 'r')
+                linhas = arq.readlines()
+                #tranforma lista de string em uma única string
+                texto_completo = ' '.join(map(str, linhas)) 
+                #aplicando todas as operações no texto
+                texto_final = self.operacoes_texto(texto_completo)
+                texto_completo = ''
+                millis = int((time.time () - t_o2) * 1000)
+                hours = int(millis / 3.6e+6)
+                x = millis % 3.6e+6
+                minutes = int(x / 60000)
+                y = x % 60000
+                seconds = int(y / 1000)
+                k = y % 1000
+                milliseconds = int(k)
+                print('CONCLUÍDO ' + str(arquivo)+' executado em ' + str(hours) + ' hora(s) ' + str(minutes) + ' minuto(s) ' + str(seconds) + ' segundos(s) e ' + str(milliseconds) + ' milisegundo(s).')
+                #criando dicionario com os termos 
+                self.dic_documentos.update({arquivo : [texto_final]})
+                arq.close()
+            #salvando dicionario de termos
+            self.salvarDocs(self.dic_documentos)
+            self.representacao = self.tf(self.dic_documentos)
+            self.salvarRepresentacao(self.representacao)
+            millis = int((time.time () - t_o) * 1000)
             hours = int(millis / 3.6e+6)
             x = millis % 3.6e+6
             minutes = int(x / 60000)
             y = x % 60000
             seconds = int(y / 1000)
             k = y % 1000
-            milliseconds = k
-            print('CONCLUÍDO ' + str(arquivo)+' executado em ' + str(hours) + ' hora(s) ' + str(minutes) + ' minuto(s) ' + str(seconds) + ' segundos(s) e ' + str(milliseconds) + ' milisegundo(s).')
-            #criando dicionario com os termos 
-            self.dic_documentos.update({arquivo : [texto_final]})
-            arq.close()
-        #salvando dicionario de termos
-        self.salvarDocs(self.dic_documentos)
-        self.tf()
-        self.salvarRepresentacao(self.representacao)
-        millis = int((time.time () - t_o) * 1000)
-        hours = int(millis / 3.6e+6)
-        x = millis % 3.6e+6
-        minutes = int(x / 60000)
-        y = x % 60000
-        seconds = int(y / 1000)
-        k = y % 1000
-        milliseconds = k
-        print('CONCLUÍDO ' + str(len(diretorio))+' arquivos executados em ' + str(hours) + ' hora(s) ' + str(minutes) + ' minuto(s) ' + str(seconds) + ' segundos(s) e ' + str(milliseconds) + ' milisegundo(s).')
-    def tf(self):
-        dic_documentos = self.dic_documentos
+            milliseconds = int(k)
+            print('CONCLUÍDO ' + str(len(diretorio))+' arquivos executados em ' + str(hours) + ' hora(s) ' + str(minutes) + ' minuto(s) ' + str(seconds) + ' segundos(s) e ' + str(milliseconds) + ' milisegundo(s).')
+    def tf(self, dic_documentos):
+        # dic_documentos = self.dic_documentos
         freq = {}
         for d in dic_documentos:
             #eliminando termos repetidos
@@ -116,7 +134,7 @@ class ModeloVetorial:
             #adicionando no dicionario dos documentos
             dic_documentos[d] = [dic_documentos[d][0], freq]
             freq = {}
-        self.idf(dic_documentos, freq)
+        return self.idf(dic_documentos, freq)
     def idf(self,docs_texto, freq):
         c = 0
         #obtendo numero total de documentos
@@ -137,9 +155,68 @@ class ModeloVetorial:
                 #calculando e armazenando o calculo do tf-idf
                 docs_texto[doc][1][t].append(docs_texto[doc][1][t][1] * idf)
         #salvando no dicionario a representacao
-        self.representacao = docs_texto
+        # self.representacao = docs_texto
         #dicionario onde cada chave (nome do documento) possui um vetor de 2 posições na posição 0 é armazenado os resultado da operação do texto sobre o documento, na posição 1 está outro dicionario onde cada chave (palavra) possui um vetor de 4 posições na posição 0 armazena a frequencia da palavra naquele documento, na posição 1 armazena o tf, na posição 2 armazena o idf, na posição 3 armazena o calculo do tf-idf
-    
+        return docs_texto
+    def similaridade(self, consulta):
+        dic_busca = self.peso_consulta(consulta)
+        # self.representacao = self.carregarRepresentacao()
+        qd = {i : [] for i in self.representacao}
+        normaQ = {i : [] for i in self.representacao}
+        normaD = {i : [] for i in self.representacao}
+        similaridade = 0
+        resultado = {}
+        lista = []
+        for b in dic_busca:
+            for i in dic_busca[b]:
+                try:
+                    lista = [(dic_busca[b][i] * self.representacao[i][0][b])]
+                    qd[i] += lista
+                    lista =  [pow(dic_busca[b][i], 2)]
+                    normaD[i] += lista
+                    lista = [pow(self.representacao[i][0][b], 2)]
+                    normaQ[i] += lista
+                except KeyError:
+                    lista = [0]
+                    qd[i] += lista
+                    normaD[i] += lista
+                    normaQ[i] += lista
+        for c in qd.keys():
+            try:
+                similaridade = sum(qd[c])/(sqrt(sum(normaQ[c])) * sqrt(sum(normaD[c])))
+                resultado.update({c : similaridade})
+            except ZeroDivisionError:
+                pass
+        return resultado
+
+    def peso_consulta(self, consulta):
+        self.representacao = self.carregarRepresentacao()
+        dic_freq = {}
+        dic_busca = {}
+        N = len(self.representacao)
+        ni, c = 0, 0
+        for b in consulta:
+            # dic_busca.update({b: []})
+            dic_busca.update({b: {}})
+            for d in self.representacao:
+                termos = list(set(self.representacao[d][1].split(',')))
+                texto = ' '.join(map(str, termos))
+                for t in termos:
+                    dic_freq.update({t : len(re.findall(t, texto))})
+                max_freq = dic_freq[max(dic_freq, key=dic_freq.get)]
+                freq = len(re.findall(b, self.representacao[d][1]))
+                if b in termos:
+                    c += 1
+                ni = c
+                c = 0
+                try:
+                    peso = (0.5 + ((0.5 * freq)/max_freq)) * log10(N/ni)
+                except ZeroDivisionError:
+                    peso = 0
+                dic_busca[b].update({d : peso})
+                # dic_busca[b].append([peso, d])
+        return dic_busca
+
     def operacoes_texto(self, texto):
         self.texto_original = texto.split()
         self.analiseLexica()
@@ -148,10 +225,6 @@ class ModeloVetorial:
         for t in self.radicalizacao():
             if len(t) > 1: #pegando somente palavra maior que 1
                 texto_final.append(t)
-        # for a in range(0, tamanho-1):
-        #     texto_final[a] = texto_final[a].strip(' ')
-        #     if len(texto_final[a]) == 1:
-        #         texto_final.remove(texto_final[a])
         return texto_final
     def analiseLexica(self):
         self.texto_analise_lexica = []
