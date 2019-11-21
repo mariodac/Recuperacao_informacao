@@ -3,7 +3,7 @@ if __name__ == "__main__":
     print(':'*50, 'MODELO VETORIAL', ':'*50)
     ri = ModeloVetorial()
     ri.carregarCorpus()
-    busca = 'Inteligência Artificial'#input('Digite o(s) termo(s) de busca\n>> ')
+    busca = input('Digite o(s) termo(s) de busca\n>> ')
     nova_busca = ri.operacoes_texto(busca)
     print(nova_busca)
     # ri.carregarRepresentacao()
