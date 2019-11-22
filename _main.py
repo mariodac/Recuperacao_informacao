@@ -4,10 +4,11 @@ if __name__ == "__main__":
     ri = ModeloVetorial()
     ri.carregarCorpus()
     busca = input('Digite o(s) termo(s) de busca\n>> ')
-    nova_busca = ri.operacoes_texto(busca)
+    lista_busca = ri.operacoes_texto(busca)
+    bf = ri.buscaFacetada()
     # print(nova_busca)
     # ri.carregarRepresentacao()
-    resultado = ri.similaridade(nova_busca)
+    resultado = ri.similaridade(lista_busca, bf)
     print(resultado)
     print('Foram encontrados: {} documentos.'.format(len(resultado)))
     # ordenando os documentos

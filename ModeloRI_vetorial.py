@@ -104,6 +104,7 @@ class ModeloVetorial:
             #armazenando representação dos documentos
             self.representacao = self.tf(self.dic_documentos)
             self.salvarRepresentacao(self.representacao)
+            self.salvarRepresentacaoCompleta(self.representacao)
             millis = int((time.time () - t_o) * 1000)
             hours = int(millis / 3.6e+6)
             x = millis % 3.6e+6
@@ -159,7 +160,10 @@ class ModeloVetorial:
         # self.representacao = docs_texto
         #dicionario onde cada chave (nome do documento) possui um vetor de 2 posições na posição 0 é armazenado os resultado da operação do texto sobre o documento, na posição 1 está outro dicionario onde cada chave (palavra) possui um vetor de 4 posições na posição 0 armazena a frequencia da palavra naquele documento, na posição 1 armazena o tf, na posição 2 armazena o idf, na posição 3 armazena o calculo do tf-idf
         return docs_texto
-    def similaridade(self, consulta):
+    def salvarRepresentacaoCompleta(self, dicionario):
+        arquivo = open('documentosCompleto.txt', 'w')
+        arquivo.writelines(str(dicionario))
+    def similaridade(self, consulta, buscaFacetada):
         dic_busca = self.peso_consulta(consulta)
         # self.representacao = self.carregarRepresentacao()
         # dicionario para armazenar q*d do documento e consulta, i sendo o nome do documento
@@ -188,14 +192,38 @@ class ModeloVetorial:
                     qd[i] += lista
                     normaD[i] += lista
                     normaQ[i] += lista
-        for c in qd.keys():
+        for c in normaQ.keys():
             try:
-                similaridade = sum(qd[c])/(sqrt(sum(normaQ[c])) * sqrt(sum(normaD[c])))
-                resultado.update({c : similaridade})
+                if normaQ[c]:
+                    if buscaFacetada:
+                        for i in buscaFacetada:
+                            resultado2 = re.search(i, self.representacao[c][1])
+                            if resultado2:
+                                similaridade = sum(qd[c])/(sqrt(sum(normaQ[c])) * sqrt(sum(normaD[c])))
+                                resultado.update({c : similaridade})
+                    else:
+                        similaridade = sum(qd[c])/(sqrt(sum(normaQ[c])) * sqrt(sum(normaD[c])))
+                        resultado.update({c : similaridade})
             #se ocorrer divisão por zero então documento é irrelevante
             except ZeroDivisionError:
                 pass
         return resultado
+    def buscaFacetada(self):
+        areas = ['aprendizado de máquina', 'robotica', 'previsão de série temporais', 'aprendizado profundo', 'processamento da linguagem natural']
+        buscaFacetada = []
+        for i in areas:
+            buscaFacetada.append(self.operacoes_texto(i))
+        print("*"*40+"BUSCA FACETADA"+"*"*40)
+        print("0 -  Sem filtro")
+        print("1 -  Filtrar por subárea aprendizado de máquina")
+        print("2 -  Filtrar por subárea robotica")
+        print("3 -  Filtrar por subárea previsão de série temporais")
+        print("4 -  Filtrar por subárea aprendizado profundo")
+        print("5 -  Filtrar por subárea processamento da linguagem natural")
+        escolha = int(input("Digite a opção\n>> "))
+        if escolha == 0:
+            return []
+        return (buscaFacetada[escolha-1])
 
     def peso_consulta(self, consulta):
         #carregando representação do arquivo csv
@@ -212,28 +240,30 @@ class ModeloVetorial:
             # dic_busca.update({b: []})
             dic_busca.update({b: {}})
             for d in self.representacao:
-                #armazenando em lista os termos do documentos
-                termos = list(set(self.representacao[d][1].split(',')))
-                #unindo todas os termos em unica string
-                texto = ' '.join(map(str, termos))
-                #armazenando frequencia do termo no documento
-                for t in termos:
-                    dic_freq.update({t : len(re.findall(t, texto))})
-                #obtendo maior frequencia
-                max_freq = dic_freq[max(dic_freq, key=dic_freq.get)]
-                freq = len(re.findall(b, self.representacao[d][1]))
-                # contando documentos que possuem o termo de busca
-                if b in termos:
-                    c += 1
-                ni = c
-                c = 0
-                try:
-                    peso = (0.5 + ((0.5 * freq)/max_freq)) * log10(N/ni)
-                #se ocorrer divisão por zero então documento é irrelevante
-                except ZeroDivisionError:
-                    peso = 0
-                dic_busca[b].update({d : peso})
-                # dic_busca[b].append([peso, d])
+                # if d == '50.txt':
+                    #armazenando em lista os termos do documentos
+                    termos = list(set(self.representacao[d][1].split(',')))
+                    #unindo todas os termos em unica string
+                    texto = ' '.join(map(str, termos))
+                    #armazenando frequencia do termo no documento
+                    for t in termos:
+                        dic_freq.update({t : len(re.findall(t, texto))})
+                    #obtendo maior frequencia
+                    max_freq = dic_freq[max(dic_freq, key=dic_freq.get)]
+                    # print(dic_freq)
+                    freq = len(re.findall(b, self.representacao[d][1]))
+                    # contando documentos que possuem o termo de busca
+                    if b in termos:
+                        c += 1
+                    ni = c
+                    c = 0
+                    try:
+                        peso = (0.5 + ((0.5 * freq)/max_freq)) * log10(N/ni)
+                    #se ocorrer divisão por zero então documento é irrelevante
+                    except ZeroDivisionError:
+                        peso = 0
+                    dic_busca[b].update({d : peso})
+                    # dic_busca[b].append([peso, d])
         return dic_busca
 
     def operacoes_texto(self, texto):
