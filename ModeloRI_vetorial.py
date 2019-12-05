@@ -220,10 +220,14 @@ class ModeloVetorial:
         print("3 -  Filtrar por subárea previsão de série temporais")
         print("4 -  Filtrar por subárea aprendizado profundo")
         print("5 -  Filtrar por subárea processamento da linguagem natural")
-        escolha = int(input("Digite a opção\n>> "))
-        if escolha == 0:
-            return []
-        return (buscaFacetada[escolha-1])
+        try:
+            escolha = int(input("Digite a opção\n>> "))
+            if escolha == 0:
+                return ""
+            return (buscaFacetada[escolha-1])
+        except Exception:
+            return ""
+        
 
     def peso_consulta(self, consulta):
         #carregando representação do arquivo csv
